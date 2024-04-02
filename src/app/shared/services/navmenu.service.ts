@@ -33,7 +33,6 @@ export class NavmenuService {
   MENUITEMS: Menu[] = [
     {
       headTitle1: "General",
-      line: false
     },
     {
       id: 1,
@@ -46,7 +45,7 @@ export class NavmenuService {
       children: [
         { path: "/dashboard/default", color: 'primary', title: "Default", type: "link" },
         { path: "/dashboard/ecommerce", color: 'primary', title: "Ecommerce", type: "link" },
-        { path: "/dashboard/project", color: 'primary', title: "Project", type: "link" },
+        { path: "/dashboard/education", color: 'primary', title: "Education", type: "link" },
       ],
     },
     {
@@ -63,7 +62,6 @@ export class NavmenuService {
     },
     {
       headTitle1: "Applications",
-      line: true
     },
     {
       id: 3,
@@ -166,7 +164,6 @@ export class NavmenuService {
     { level: 1, id: 15, path: "/search-pages", title: "Search Result", color: 'secondary', icon: "Search", type: "link" },
     {
       headTitle1: "Components",
-      line: true
     },
     {
       id: 16,
@@ -258,7 +255,6 @@ export class NavmenuService {
     },
     {
       headTitle1: "Forms & Table",
-      line: true
     },
     {
       id: 21,
@@ -320,7 +316,6 @@ export class NavmenuService {
     },
     {
       headTitle1: "Pages",
-      line: true
 
     },
     { level: 1, id: 24, path: "/sample-page", title: "Sample Page", color: 'primary', icon: "Paper-plus", type: "link" },
@@ -537,7 +532,6 @@ export class NavmenuService {
     },
     {
       headTitle1: "Miscellaneous",
-      line: true
     },
     {
       id: 26,

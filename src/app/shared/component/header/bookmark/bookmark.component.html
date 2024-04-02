@@ -1,0 +1,55 @@
+<a (click)="openBookMark()">
+    <svg>
+        <use href="assets/svg/iconly-sprite.svg#bookmark"></use>
+    </svg>
+</a>
+<div class="custom-menu bookmark-dropdown py-0 overflow-hidden" [class.show]="bookmark">
+    <h5 class="title bg-primary-light">Bookmark</h5>
+    <ul>
+        <li>
+            <form class="mb-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search Bookmark..." /><span
+                        class="input-group-text">
+                        <svg class="svg-color">
+                            <use href="assets/svg/iconly-sprite.svg#Search"></use>
+                        </svg>
+                    </span>
+                </div>
+            </form>
+        </li>
+        <li class="d-flex align-items-center">
+            <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="index.html">
+                    <svg class="svg-color">
+                        <use href="assets/svg/iconly-sprite.svg#cube"></use>
+                    </svg></a></div>
+            <div class="d-flex justify-content-between align-items-center w-100"><a href="index.html">Dashboard</a>
+                <svg class="svg-color icon-star">
+                    <use href="assets/svg/iconly-sprite.svg#star"></use>
+                </svg>
+            </div>
+        </li>
+        <li class="d-flex align-items-center">
+            <div class="flex-shrink-0 me-2 btn-activity-secondary"><a href="to-do.html">
+                    <svg class="svg-color">
+                        <use href="assets/svg/iconly-sprite.svg#check"></use>
+                    </svg></a></div>
+            <div class="d-flex justify-content-between align-items-center w-100"><a href="to-do.html">To-do</a>
+                <svg class="svg-color icon-star">
+                    <use href="assets/svg/iconly-sprite.svg#star"></use>
+                </svg>
+            </div>
+        </li>
+        <li class="d-flex align-items-center">
+            <div class="flex-shrink-0 me-2 btn-activity-danger"><a href="apex_chart.html">
+                    <svg class="svg-color">
+                        <use href="assets/svg/iconly-sprite.svg#pie"></use>
+                    </svg></a></div>
+            <div class="d-flex justify-content-between align-items-center w-100"><a href="apex_chart.html">Chart</a>
+                <svg class="svg-color icon-star">
+                    <use href="assets/svg/iconly-sprite.svg#star"></use>
+                </svg>
+            </div>
+        </li>
+    </ul>
+</div>
