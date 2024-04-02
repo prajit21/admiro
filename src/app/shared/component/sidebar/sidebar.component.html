@@ -1,0 +1,69 @@
+<div class="logo-wrapper d-flex align-items-center">
+    <a href="index.html">
+        <img src="assets/images/logo/logo1.png" alt="logo" /></a>
+    <a class="close-btn sidebar-close" href="javascript:void(0)">
+        <svg class="svg-color svg-white">
+            <use href="assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
+        </svg>
+    </a>
+</div>
+<div class="user-wrap">
+    <app-user-profile></app-user-profile>
+</div>
+<div class="left-arrow" id="left-arrow">
+    <app-feathericon [icon]="'arrow-left'"></app-feathericon>
+</div>
+<div class="main-sidebar" id="main-sidebar">
+    <ul class="sidebar-menu" id="simple-bar">
+        <li class="pin-title sidebar-main-title">
+            <div>
+                <h5 class="sidebar-title f-w-700">Pinned</h5>
+            </div>
+        </li>
+        <ng-container *ngTemplateOutlet="recursiveMenu; context: { $implicit: menuItems }"></ng-container>
+        <ng-template #recursiveMenu let-menuItems>
+            @for(item of menuItems; track item){
+            <li [ngClass]="{'sidebar-list':item.level == 1,'sidebar-main-title':item.headTitle1 }">
+                @if(item.headTitle1){
+                <div>
+                    <h5 class="lan-1 f-w-700 sidebar-title">{{item.headTitle1 }}</h5>
+                </div>
+                }
+                @else{
+                <a [ngClass]="{'sidebar-link' : item.level == 1, 
+                       'submenu-title' : item.level == 2 ,'active': item.active && item.level === 1}"
+                    [routerLink]="item.path" (click)="toggleMenu(item)" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">
+                    @if(item.icon && item.level == 1){
+                    <app-svg-icon [icon]="item.icon"></app-svg-icon>
+                    }
+                    @if(item.level == 1){
+                    <h6>{{item.title }}</h6>
+                    @if(item.badge == true){
+                    <span class="badge">3</span>
+                    }
+                    }@else{
+                    {{item.title }}
+                    }
+                    <div class="according-menu">
+                        @if(item.children){
+                        <i class="fa fa-angle-{{ item.active ? 'down' : 'right' }} pull-right"></i>
+                        }
+                    </div>
+                </a>
+                }
+                @if(item.children){
+                <ul [ngClass]="{ 'sidebar-submenu': item.level == 1, 'according-submenu' : item.level == 2 }"
+                    [style.display]="item.active  ? 'block' : 'none'">
+                    <ng-container
+                        *ngTemplateOutlet="recursiveMenu; context: { $implicit: item.children }"></ng-container>
+                </ul>
+                }
+            </li>
+            }
+        </ng-template>
+    </ul>
+</div>
+<div class="right-arrow" id="right-arrow">
+    <app-feathericon [icon]="'arrow-right'"></app-feathericon>
+</div>
