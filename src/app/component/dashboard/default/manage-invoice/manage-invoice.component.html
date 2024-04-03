@@ -1,0 +1,58 @@
+<div class="card height-equal">
+    <div class="card-header card-no-border pb-0">
+        <h3>Manage Invoice</h3>
+    </div>
+    <div class="card-body pt-0 manage-invoice filled-checkbox">
+        <div class="table-responsive theme-scrollbar">
+            <table class="table display table-bordernone mt-0" id="manage-invoice" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="form-check checkbox checkbox-solid-primary">
+                                <input class="form-check-input" id="solid" type="checkbox" />
+                                <label class="form-check-label" for="solid"> </label>
+                            </div>
+                        </th>
+                        <th>Client</th>
+                        <th>Date</th>
+                        <th>Payment</th>
+                        <th>Id No</th>
+                        <th>Amount</th>
+                        <th class="text-center">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(data of MangeInvoice;track data){
+                    <tr>
+                        <td>
+                            <div class="form-check checkbox checkbox-solid-primary">
+                                <input class="form-check-input" id="{{data.for}}" type="checkbox"  [(ngModel)]="data.check"/>
+                                <label class="form-check-label" for="{{data.for}}"> </label>
+                            </div>
+                        </td>
+                        <td><a href="list-products.html">
+                                <h6 class="f-w-600">{{data.client}}</h6>
+                            </a></td>
+                        <td>
+                            <p class="f-w-600">{{data.date}}</p>
+                        </td>
+                        <td>
+                            <h6 class="f-w-600">{{data.payment}}</h6>
+                        </td>
+                        <td>
+                            <p class="f-w-600">{{data.IdNo}}</p>
+                        </td>
+                        <td>
+                            <h6 class="f-w-600">${{data.amount}}</h6>
+                        </td>
+                        <td class="text-end">
+                            <div class="btn bg-light-{{data.class}} border-light-{{data.class}} text-{{data.class}}">
+                                {{data.status}}</div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

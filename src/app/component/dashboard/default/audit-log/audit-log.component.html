@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>Audit log</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown4" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown4"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body audit-log">
+        <ul>
+            @for( data of auditLogData;track data){
+            <li class="d-flex align-items-center gap-2">
+                <div class="flex-shrink-0 bg-{{data.class}}">
+                    <img src="{{data.img}}" alt="" />
+                </div>
+                <div class="flex-grow-1"><a href="product-page.html">
+                        <h6>{{data.title}}</h6>
+                    </a>
+                    <p>{{data.name}}</p>
+                </div>
+                @if(data.hours){
+                <span>{{data.hours}} hours</span>
+                }@else{
+                <span>{{data.date}}</span>
+                }
+            </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>User Status</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown1" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown1"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body pt-0 user-status">
+        <div class="table-responsive theme-scrollbar">
+            <table class="table display table-bordernone" id="user-status" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>country</th>
+                        <th class="text-center">Popular</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for( data of UserStatus;track data){
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="flex-shrink-0 comman-round"><img src="{{data.img}}" alt="" /></div>
+                                <div class="flex-grow-1"><a href="product-page.html">
+                                        <h6>{{ data.name }} <span>{{ data.status }}</span></h6>
+                                    </a></div>
+                            </div>
+                        </td>
+                        <td>
+                            <h3>{{ data.country }}</h3>
+                        </td>
+                        <td>
+                            <div class="progress bg-light-{{data.class}}">
+                                <div class="progress-bar bg-{{data.class}}" role="progressbar"  [style.width]="data.progress"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="card value-chart">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <div class="visitor-chart" id="visitor-chart">
+                    <apx-chart [series]="data.series" [chart]="data.chart" [plotOptions]="data.plotOptions"
+                        [grid]="data.grid" [states]="data.states" [dataLabels]="data.dataLabels" [legend]="data.legend"
+                        [colors]="data.colors" [yaxis]="data.yaxis" [xaxis]="data.xaxis" [responsive]="data.responsive"
+                        [tooltip]="data.tooltip">
+                    </apx-chart>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="valuechart-detail">
+                    <div class="text-center">
+                        <div class="badge badge-{{data.class}}">{{data.badge}}</div>
+                        <h2>${{data.price}} </h2>
+                        <p>{{ data.des}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

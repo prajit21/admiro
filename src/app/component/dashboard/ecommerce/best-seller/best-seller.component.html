@@ -1,0 +1,47 @@
+<div class="card best-sell">
+    <div class="card-header card-no-border pb-0">
+        <h3>Best Seller</h3>
+    </div>
+    <div class="card-body pt-0">
+        <div class="table-responsive theme-scrollbar">
+            <table class="table display table-bordernone mt-0" id="best-sell" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Product</th>
+                        <th>Country</th>
+                        <th>Total</th>
+                        <th class="text-center">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(data of Bestseller;track data){
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="flex-shrink-0 comman-round">
+                                    <img src="{{ data.img }}" alt="img" />
+                                </div>
+                                <div class="flex-grow-1"><a href="product-page.html">
+                                        <h6>{{ data.customer }}</h6>
+                                    </a>
+                                    <p>{{ data.year }}</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> {{data.date }}</td>
+                        <td> {{ data.product }}</td>
+                        <td><img class="img-fluid" src="{{ data.flagImg }}" alt="" /></td>
+                        <td>${{ data.total }}</td>
+                        <td class="text-end">
+                            <div class="btn bg-light-{{data.class}} border-light-{{data.class}} text-{{data.class}}">
+                                {{data.status}}</div>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

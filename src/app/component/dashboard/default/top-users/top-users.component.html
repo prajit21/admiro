@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>Top Users</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown7" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown7"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body top-user pt-2">
+        <ul>
+            @for(data of TopUser;track data){
+            <li class="d-flex align-items-center justify-content-between gap-2">
+                <div class="d-flex gap-2">
+                    <div class="flex-shrink-0 comman-round">
+                        <img src="{{data.img}}" alt="img" />
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h6>{{data.name}}</h6>
+                        </a>
+                        <p>
+                            <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#map-icon"></use>
+                            </svg>Texas
+                        </p>
+                    </div>
+                </div>
+                <button
+                    class="btn bg-light-{{data.class}} border-light-{{data.class}} text-{{data.class}}">{{data.status}}</button><span>${{
+                    data.texas}}.00</span>
+            </li>
+            }
+        </ul>
+    </div>
+</div>

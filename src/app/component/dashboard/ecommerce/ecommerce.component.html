@@ -1,0 +1,29 @@
+<div class="container-fluid dashboard-2">
+    <div class="row">
+        <div class="col-xxl-5 col-xl-7 col-lg-12 box-col-7">
+            <app-sales-analytics></app-sales-analytics>
+        </div>
+        <div class="col-xxl-4 col-xl-5 col-md-7 box-col-5">
+            <app-user-status></app-user-status>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-5 col-sm-6 box-col-4">
+            <app-top-ecommerce-chart></app-top-ecommerce-chart>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-7 col-sm-6 box-col-4">
+            <app-top-selling-products></app-top-selling-products>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-5 box-col-4">
+            <div class="row">
+                <div class="col-sm-6 col-md-12">
+                    <app-common-value-chart [data]="salesValueChart"></app-common-value-chart>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <app-common-value-chart [data]="visitorChart"></app-common-value-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-6 col-xl-7 order-xl-1 order-xxl-0 box-col-12">
+            <app-best-seller></app-best-seller>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="card selling-product">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>Top Selling Products</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown3" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown3"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <ul>
+            @for( data of TopsellingProduct;track data){
+            <li class="d-flex align-items-center gap-2">
+                <div class="flex-shrink-0 bg-light-{{data.class}} border-light-{{data.class}}">
+                    <svg class="stroke-icon stroke-{{data.class}}">
+                        <use attr.xlink:href="assets/svg/icon-sprite.svg#{{data.icon}}"></use>
+                    </svg>
+                </div>
+                <div class="flex-grow-1"><a href="product-page.html">
+                        <h6>{{ data.title }}</h6>
+                    </a>
+                    <p>Art.{{ data.art}}</p>
+                </div>
+                <div class="recent-text">
+                    <h5>${{data.price}}.00</h5>
+                    <p>{{ data.sales }} Sales</p>
+                </div>
+            </li>
+            }
+        </ul>
+    </div>
+</div>

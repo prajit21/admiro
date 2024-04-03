@@ -1,0 +1,40 @@
+<div class="card sale-card overflow-hidden">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <div>
+                <h3>$1500.89K</h3><span>Sales last 5 Months</span>
+            </div>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown2"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <div class="current-sale-container order-container">
+            <div class="overview-wrapper" id="orderoverview">
+                <apx-chart [series]="orverViewChart.series" [chart]="orverViewChart.chart"
+                    [annotations]="orverViewChart.annotations" [dataLabels]="orverViewChart.dataLabels"
+                    [stroke]="orverViewChart.stroke" [fill]="orverViewChart.fill" [colors]="orverViewChart.colors"
+                    [grid]="orverViewChart.grid" [yaxis]="orverViewChart.yaxis"
+                    [plotOptions]="orverViewChart.plotOptions" [responsive]="orverViewChart.responsive"
+                    [xaxis]="orverViewChart.xaxis" [tooltip]="orverViewChart.tooltip" [legend]="orverViewChart.legend">
+                </apx-chart>
+            </div>
+            <div class="back-bar-container">
+                <div id="order-bar">
+                    <apx-chart [series]="orderBarChart.series" [chart]="orderBarChart.chart"
+                        [plotOptions]="orderBarChart.plotOptions" [colors]="orderBarChart.colors"
+                        [grid]="orderBarChart.grid" [dataLabels]="orderBarChart.dataLabels"
+                        [stroke]="orderBarChart.stroke" [xaxis]="orderBarChart.xaxis" [yaxis]="orderBarChart.yaxis"
+                        [tooltip]="orderBarChart.tooltip" [states]="orderBarChart.states"
+                        [legend]="orderBarChart.legend" [fill]="orderBarChart.fill">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
