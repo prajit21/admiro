@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <h3>Student Details</h3>
+    </div>
+    <div class="card-body pt-0 details-table">
+        <div class="table-responsive theme-scrollbar">
+            <table class="table display table-bordernone mt-0" id="student-detail" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Poduct</th>
+                        <th>QTY</th>
+                        <th>Attendance</th>
+                        <th class="text-center">rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for( data of studentDeatils;track data){
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="flex-shrink-0 comman-round">
+                                    <img src="{{ data.img }}" alt="img" />
+                                </div>
+                                <div class="flex-grow-1"><a href="product-page.html">
+                                        <h6>{{ data.customer }}</h6>
+                                    </a>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <h6 class="f-w-600">{{ data.product }}</h6>
+                        </td>
+                        <td class="f-w-600">QTY:{{ data.qty }}</td>
+                        <td class="f-w-600 text-center">{{ data.attendance }}</td>
+                        <td class="text-end">
+                            <div
+                                class="btn bg-light-{{ data.class }} border-light-{{ data.class }} text-{{ data.class }}">
+                                {{ data.rating }}</div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>Notice Board</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown5" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown5"><a class="dropdown-item"
+                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
+                        href="#">Yearly</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body notice-board">
+        <ul>
+            @for( data of noticeBoard;track data){
+            <li class="d-flex gap-2">
+                <div class="flex-shrink-0">
+                    <img class="img-fluid" src="{{ data.img }}" alt="img" />
+                </div>
+                <div class="flex-grow-1">
+                    <h6>{{ data.title }}</h6>
+                    <p class="text-truncate">{{ data.timeline }}</p>
+                </div>
+            </li>
+            }
+        </ul>
+    </div>
+</div>

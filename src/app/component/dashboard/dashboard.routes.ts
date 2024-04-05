@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { DefaultComponent } from './default/default.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
+import { EducationComponent } from './education/education.component';
 
 export const dashboard: Routes = [
     {
@@ -20,6 +21,14 @@ export const dashboard: Routes = [
                 data: {
                     title: 'Ecommerce Dashboard',
                     breadcrumb: 'E-Commerce'
+                },
+            },
+            {
+                path: 'education',
+                component: EducationComponent,
+                data: {
+                    title: 'Education Dashboard',
+                    breadcrumb: 'Education'
                 },
             },
 

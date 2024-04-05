@@ -1,0 +1,51 @@
+<div class="card graphic-design overflow-hidden">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <div class="d-flex align-items-center gap-2">
+                <div class="flex-shrink-0">
+                    <div class="icon">
+                        <img class="img-fluid" src="{{ data.img }}" alt="chair" />
+                    </div>
+                </div>
+                <div class="flex-grow-1">
+                    <h5>{{ data.title }}</h5>
+                    <p class="mb-0">{{data.name}}</p>
+                </div>
+            </div>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown1" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="#">Weekly</a>
+                    <a class="dropdown-item" href="#">Monthly</a>
+                    <a class="dropdown-item" href="#">Yearly</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <ul>
+            <li><i class="iconly-Document icli me-1"></i>
+                <h5>{{data.lessons}} Lessons</h5>
+            </li>
+            <li><i class="iconly-Time-Square icli me-1"></i>
+                <h5>{{data.hours }} Hours</h5>
+            </li>
+            <li><i class="iconly-User3 icli me-1"></i>
+                <h5>{{ data.students }} Students</h5>
+            </li>
+            <li><i class="iconly-Star icli me-1"></i>
+                <h5>{{ data.rating }}</h5>
+            </li>
+        </ul>
+        <div class="crypto-dashborad-chart">
+            <div class="bitcoin-chart" id="bitcoin-chart">
+                <apx-chart [series]="data.series" [annotations]="data.annotations" [chart]="data.chart"
+                    [dataLabels]="data.dataLabels" [stroke]="data.stroke" [tooltip]="data.tooltip" [xaxis]="data.xaxis"
+                    [yaxis]="data.yaxis" [colors]="data.colors" [grid]="data.grid" [legend]="data.legend"
+                    [fill]="data.fill">
+                </apx-chart>
+            </div>
+        </div>
+    </div>
+</div>

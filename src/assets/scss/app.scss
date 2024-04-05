@@ -1,5 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// owl-carousel-o sccss//
+
+@import"../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss";
+@import "../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss";
+
 @import "../scss/feather-icon.scss";
 @import "../scss/icoicon/icons";
 @import "../scss/fontawesome.scss";

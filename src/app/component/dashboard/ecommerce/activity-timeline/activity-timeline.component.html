@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header card-no-border pb-0">
+        <div class="header-top">
+            <h3>Activity Timeline</h3>
+            <div class="dropdown icon-dropdown">
+                <button class="btn" id="userdropdown5" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="fa-solid fa-ellipsis"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown5">
+                    <a class="dropdown-item" href="#">Weekly</a>
+                    <a class="dropdown-item" href="#">Monthly</a>
+                    <a class="dropdown-item" href="#">Yearly</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body timeline-card">
+        <div class="activity-timeline">
+            @for(data of activityTimeline; track data){
+            <div class="d-flex align-items-start">
+                @if( data.line == true ){
+                <div class="activity-line"></div>
+                }
+                <div class="activity-dot-{{data.class}}"></div>
+                <div class="flex-grow-1">
+                    <p class="mt-0 todo-font">
+                        <span class="font-{{data.class}}">{{ data.date }}</span>&nbsp;{{ data.time }}
+                    </p>
+
+                    <span class="f-w-700">{{ data.title }}</span>
+                    <p class="mb-0 activity-text">{{ data.activity }}</p>
+                    @if( data.data){
+                    <ul class="img-wrapper">
+                        @for( item of data.data;track item ){
+                        <li><img class="img-fluid" src="{{ item.img}}" alt="" /></li>
+                        }
+                    </ul>
+                    }
+                </div><i class="fa-solid fa-circle circle-dot-{{data.class}} pull-right"></i>
+            </div>
+            }
+        </div>
+    </div>
+</div>
