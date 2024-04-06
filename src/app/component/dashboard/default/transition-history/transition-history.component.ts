@@ -10,6 +10,6 @@ import { TransitionHistory } from '../../../../shared/data/dashboard/default/def
 })
 export class TransitionHistoryComponent {
 
-  public transitionHistory = TransitionHistory;
+    public transitionHistory = TransitionHistory;
 
 }

@@ -11,6 +11,6 @@ import { TotalInvestment } from '../../../../shared/data/dashboard/default/defau
 })
 export class TotalInvestmentComponent {
 
-  public InvestmentChart = TotalInvestment
+  public InvestmentChart = TotalInvestment;
 
 }

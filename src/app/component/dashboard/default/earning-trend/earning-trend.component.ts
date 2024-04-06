@@ -11,6 +11,6 @@ import { EarningsTrend } from '../../../../shared/data/dashboard/default/default
 })
 export class EarningTrendComponent {
 
-  public earningChart = EarningsTrend
+  public earningChart = EarningsTrend;
 
 }
