@@ -4,7 +4,7 @@
         <p class="text-center">Enter your email &amp; password to login</p>
         <div class="form-group">
             <label class="col-form-label">Email Address</label>
-            <input class="form-control" type="email" required="" placeholder="Test@gmail.com" formControlName="email">
+            <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
         </div>
         <div class="form-group">
             <label class="col-form-label">Password</label>
@@ -22,10 +22,9 @@
             <div class="form-check checkbox-solid-info">
                 <input class="form-check-input" id="solid6" type="checkbox">
                 <label class="form-check-label" for="solid6">Remember password</label>
-                <a class="link-two" [routerLink]="['/authentication/forgot-password']">Forgot password?</a>
-            </div>
+            </div><a class="link" [routerLink]="['/authentication/forgot-password']">Forgot password?</a>
             <div class="text-end mt-3">
-                <a class="btn btn-primary btn-block w-100 text-white" [routerLink]="['/dashboard/default']">Sign in</a>
+                <button class="btn btn-primary btn-block w-100" type="submit">Sign in </button>
             </div>
         </div>
         <div class="login-social-title">
@@ -33,14 +32,13 @@
         </div>
         <div class="form-group">
             <ul class="login-social">
-                <li><a href="https://www.linkedin.com/login" target="_blank"><i class="icon-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/login?lang=en" target="_blank"><i class="icon-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="icon-linkedin"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></li>
             </ul>
         </div>
-        <p class="mt-4 mb-0 text-center">Don't have account?
-            <a class="ms-2" [routerLink]="['/authentication/simple']">Create Account</a>
-        </p>
+        <p class="mt-4 mb-0 text-center">Don't have account?<a class="ms-2"
+                [routerLink]="['/authentication/simple']">Create Account</a></p>
     </form>
 </div>

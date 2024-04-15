@@ -1,10 +1,10 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Switch sizing</h4>
-        <p class="desc mb-0 mt-1"><span>Use the</span><code>.switch-sm-*.switch-lg-*</code><span>class through
-                defined switch sizing.</span></p>
+    <div class="card-header">
+        <h3>Switch sizing</h3>
+        <p class="mt-1 mb-0">
+            Use the <code>.switch-sm</code> and <code>.switch-lg </code>class through defined switch sizing.</p>
     </div>
-    <div class="card-body common-flex switch-wrapper">
+    <div class="card-body common-flex switch-wrapper switch-size">
         @for(item of sizeingData; track item){
         <div class="d-flex">
             <label class="col-form-label m-r-10">{{item.text}}</label>

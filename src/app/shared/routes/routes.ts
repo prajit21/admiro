@@ -167,42 +167,42 @@ export const dashData: Routes = [
         },
         loadChildren: () => import('../../component/charts/charts.module').then(m => m.ChartsModule),
     },
-    // {
-    //     path: 'form-controls',
-    //     data: {
-    //         breadcrumb: "Form Controls"
-    //     },
-    //     loadChildren: () => import('../../component/form-controls/form-controls.module').then(m => m.FormControlsModule),
-    // },
-    // {
-    //     path: 'form-widgets',
-    //     data: {
-    //         breadcrumb: "Form Widgets"
-    //     },
-    //     loadChildren: () => import('../../component/form-widgets/form-widgets.module').then(m => m.FormWidgetsModule),
-    // },
-    // {
-    //     path: 'table/bootstrap-tables',
-    //     data: {
-    //         breadcrumb: 'Table'
-    //     },
-    //     loadChildren: () => import('../../component/table/bootstrap-tables/bootstrap-tables.module').then(m => m.BootstrapTablesModule),
-    // },
-    // {
-    //     path: 'table/datatable',
-    //     data: {
-    //         title: "Data Table",
-    //         breadcrumb: "Data Table",
-    //     },
-    //     loadChildren: () => import('../../component/table/data-table/data-table.module').then(m => m.DataTableModule),
-    // },
-    // {
-    //     path: 'sample-page',
-    //     data: {
-    //         breadcrumb: 'Pages'
-    //     },
-    //     loadChildren: () => import('../../component/sample-page/sample-page.module').then(m => m.SamplePageModule),
-    // },
+    {
+        path: 'form-controls',
+        data: {
+            breadcrumb: "Form Controls"
+        },
+        loadChildren: () => import('../../component/form-controls/form-controls.module').then(m => m.FormControlsModule),
+    },
+    {
+        path: 'form-widgets',
+        data: {
+            breadcrumb: "Form Widgets"
+        },
+        loadChildren: () => import('../../component/form-widgets/form-widgets.module').then(m => m.FormWidgetsModule),
+    },
+    {
+        path: 'table/bootstrap-tables',
+        data: {
+            breadcrumb: 'Table'
+        },
+        loadChildren: () => import('../../component/table/bootstrap-tables/bootstrap-tables.module').then(m => m.BootstrapTablesModule),
+    },
+    {
+        path: 'table/datatable',
+        data: {
+            title: "Data Table",
+            breadcrumb: "Data Table",
+        },
+        loadChildren: () => import('../../component/table/data-table/data-table.module').then(m => m.DataTableModule),
+    },
+    {
+        path: 'sample-page',
+        data: {
+            breadcrumb: 'Pages'
+        },
+        loadChildren: () => import('../../component/sample-page/sample-page.module').then(m => m.SamplePageModule),
+    },
     // {
     //     path: 'gallary',
     //     data: {

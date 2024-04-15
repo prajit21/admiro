@@ -1,15 +1,15 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Default Radio</h4>
-        <p class="desc mb-0 mt-1"><span>Use the</span><code>.checkbox-solid-* ,.checkbox-* </code><span>for
-                bordered checkbox </span></p>
+    <div class="card-header">
+      <h3>Default radio</h3>
+      <p class="mt-1 mb-0">
+         Use the<code>.form-check-input </code>and <code>.form-check-label </code>for radios.</p>
     </div>
-    <div class="card-body checkbox-checked">
+    <div class="card-body">
         <div class="row g-3">
             @for( item of redio; track item){
-            <div class="col-sm-6 col-xl-4">
-                <div class="card-wrapper solid-border rounded-3">
-                    <h6 class="sub-title f-w-500">Custom Radios </h6>
+                <div class="col-sm-6 col-xl-4">
+                <div class="card-wrapper border rounded-3 checkbox-checked default-radio">
+                    <h6 class="sub-title">Custom Radios </h6>
                     @for( Data of item.data; track Data){
                     <div class="form-check" [class.form-check-reverse]="item.id == 3">
                         <input class="form-check-input" id="{{Data.for}}" type="radio" name="radio2"

@@ -1,18 +1,17 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Default touchspin</h4>
-        <p class="desc mb-0 mt-1"><span>Use
-                the</span><code>.decrement-touchspin-*.increment-touchspin-*</code><span>class.</span></p>
+    <div class="card-header">
+        <h3>Default touchspin</h3>
+        <p class="mt-1 mb-0">Use the <code>.decrement-touchspin  </code>and <code>.increment-touchspin </code>class.</p>
     </div>
     <div class="card-body common-flex">
         @for(data of TouchspinData; track data){
         <div class="touchspin-wrapper">
             <button class="decrement-touchspin btn-touchspin touchspin-{{data.class}}" (click)="decrement(data.id)">
-                <i class="fa fa-minus"></i>
+                <i class="fa-solid fa-minus"></i>
             </button>
             <input class="input-touchspin spin-outline-{{data.class}}" type="number" value="{{data.value}}">
             <button class="increment-touchspin btn-touchspin touchspin-{{data.class}}" (click)="increment(data.id)">
-                <i class="fa fa-plus"></i>
+                <i class="fa-solid fa-plus"></i>
             </button>
         </div>
         }

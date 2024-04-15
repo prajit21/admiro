@@ -1,30 +1,27 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Animated Buttons</h4>
-        <p class="desc mb-0 mt-1"><span>Use the</span><code>.radio_animated </code><span>through animated
-                checkbox and radios.</span></p>
+    <div class="card-header">
+        <h3>Animated buttons</h3>
+        <p class="mt-1 mb-0">
+            Use the<code>.radio_animated</code>through animated checkbox and radios.</p>
     </div>
-    <div class="card-body checkbox-checked">
+    <div class="card-body">
         <div class="row g-3">
             <div class="col-sm-6">
-                <div class="card-wrapper solid-border rounded-3">
-                    <h6 class="sub-title f-w-500">Select your payment method</h6>
+                <div class="card-wrapper border rounded-3 checkbox-checked animated-button">
+                    <h6 class="sub-title">Select your payment method</h6>
                     @for(item of payment; track item){
-                    <label class="d-block">
-                        <input class="radio-{{item.class}}" id="radio-ani_1" type="radio" name="radio-animation"
-                            [checked]="item.value">{{item.text}}
-                    </label>
+                    <label class="d-block" for="edo-ani"></label>
+                    <input class="radio_animated" id="edo-ani" type="radio" name="rdo-ani"
+                        [checked]="item.value">{{item.text}}
                     }
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card-wrapper solid-border rounded-3">
-                    <h6 class="sub-title f-w-500">What is your favorite social media? </h6>
+                <div class="card-wrapper border rounded-3 checkbox-checked animated-button">
+                    <h6 class="sub-title">What is your favorite social media? </h6>
                     @for(item of SoicalmidiaData; track item){
-                    <label class="d-block">
-                        <input class="checkbox-{{item.class}}" id="chk-ani_2" type="checkbox"
-                            [(ngModel)]="item.value">{{item.text}}
-                    </label>
+                    <label class="d-block" for="chk-ani"></label>
+                    <input class="checkbox_animated" id="chk-ani" type="checkbox" [(ngModel)]="item.value">{{item.text}}
                     }
                 </div>
             </div>

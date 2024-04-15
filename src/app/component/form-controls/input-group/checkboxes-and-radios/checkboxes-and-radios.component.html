@@ -1,24 +1,23 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Checkboxes and radios</h4>
-        <p class="desc mb-0 mt-1"><span>Place any checkbox or radio option within an input group addon instead
-                of text. We recommend adding</span><code>  .mt-0 to the .form-check-input </code><span>when there
-                is no visible text next to the input. </span></p>
+    <div class="card-header">
+        <h3>Checkboxes and radios</h3>
+        <p class="mt-1 mb-0">Place any checkbox or radio option within an input group's addon instead of text. We
+            recommend adding </p>
     </div>
-    <div class="card-body card-wrapper input-group-wrapper checkbox-checked">
-        <form class="theme-form row g-5">
-            <div class="input-group">
-                <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox">
-                </div>
-                <input class="form-control" type="text">
+    <div class="card-body checkbox-checked card-wrapper input-group-wrapper checkbox-radios">
+        <div class="input-group">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for following text input">
             </div>
-            <div class="input-group">
-                <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="radio"  checked="">
-                </div>
-                <input class="form-control" type="text">
+            <input class="form-control" type="text" aria-label="Text input with checkbox">
+        </div>
+        <div class="input-group">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="radio" value=""
+                    aria-label="Radio button for following text input" checked="">
             </div>
-        </form>
+            <input class="form-control" type="text" aria-label="Text input with radio button">
+        </div>
     </div>
 </div>

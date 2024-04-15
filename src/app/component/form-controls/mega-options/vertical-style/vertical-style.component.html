@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-header pb-0">
-        <h4>Vertical style</h4>
-        <p class="desc mb-0 mt-1"><span>vertical style in mega-options. Use
-                the</span><code>.mega-vertical</code><span>class through created vertical alignments.</span></p>
+        <h3>Vertical style</h3>
+        <p class="mt-1 mb-0">vertical style in mega-options. Use the <code>.mega-vertical </code>class through
+            created vertical alignments.</p>
     </div>
     <div class="card-body">
         <form class="mega-vertical">
@@ -13,64 +13,76 @@
                 @for(Data of verticalstyleData; track Data){
                 <div class="col-sm-6">
                     <div class="card">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="{{Data.id}}">
-                                <input class="radio radio-border-{{Data.class}} radio-{{Data.class}}" id="{{Data.id}}"
-                                    type="radio" name="radio5" [checked]="Data.check">{{Data.title}}
-                            </label>
-                            <div class="flex-grow-1"><span
-                                    class="badge badge-{{Data.class}} pull-right digits">{{Data.digit}}</span></div>
-                        </div><span class="p-20 pt-0">{{Data.lable}}</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-primary m-0 w-100">
+                                <input class="form-check-input" id="{{Data.id}}" type="radio" name="radio5"
+                                    [checked]="Data.check">
+                                <label class="form-check-label mb-0 w-100" for="{{Data.id}}"><span
+                                        class="flex-grow-1 megaoption-space"><span
+                                            class="mt-0 mega-title-badge">{{Data.title}}<span
+                                                class="badge badge-{{Data.class}} pull-right digits">{{Data.digit}}</span></span>
+                                        {{Data.lable}}<span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 }
                 <div class="col-sm-12">
-                    <p class="mega-title m-b-5">Buying Option</p>
+                    <p class="mega-title mb-3">Buying Option</p>
                 </div>
                 <div class="col-sm-6">
                     <div class="card mb-0">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="radio26">
-                                <input class="radio radio-border-warning radio-warning" id="radio26" type="radio"
-                                    name="radio7" value="option1" checked="">Pixelstrap
-                            </label>
-                            <div class="flex-grow-1"><span class="badge badge-warning pull-right digits">250 INR</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-warning m-0 w-100">
+                                <input class="form-check-input" id="radio26" type="radio" name="radio7" value="option1"
+                                    checked="">
+                                <label class="form-check-label mb-0 w-100" for="radio26"><span class="flex-grow-1">
+                                        <span class="mt-0 mega-title-badge">Pixelstrap
+                                            <span class="badge badge-warning pull-right digits">250
+                                                INR</span></span>
+                                        <span class="rating-star-wrapper">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning m-r-5"></i>
+                                            5 start rating</span>
+                                    </span>
+                                </label>
                             </div>
-                        </div><span class="p-20 pt-0 rating-star-wrapper">
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star font-warning"></i>
-                            5 start rating
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card mb-0">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="radio27">
-                                <input class="radio radio-border-danger radio-danger" id="radio27" type="radio"
-                                    name="radio7" value="option1">Multikart
-                            </label>
-                            <div class="flex-grow-1">
-                                <span class="badge badge-danger pull-right digits">150 INR</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-danger m-0 w-100">
+                                <input class="form-check-input" id="radio27" type="radio" name="radio7" value="option1">
+                                <label class="form-check-label mb-0 w-100" for="radio26"><span class="flex-grow-1">
+                                        <span class="mt-0 mega-title-badge">Multikart
+                                            <span class="badge badge-danger pull-right digits">150 INR </span>
+                                        </span>
+                                        <span class="rating-star-wrapper">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star m-r-5"></i>
+                                            2 start rating</span>
+                                    </span>
+                                </label>
                             </div>
-                        </div><span class="p-20 pt-0 rating-star-wrapper">
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star font-warning"></i>
-                            <i class="icofont icofont-star"></i>
-                            <i class="icofont icofont-star"></i>
-                            <i class="icofont icofont-star m-r-5"></i>
-                            2 start rating
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
-        <div class="card-footer text-end">
-            <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-            <button class="btn bg-light" type="submit">Cancel</button>
-        </div>
+    </div>
+    <div class="card-footer text-end">
+        <button class="btn btn-primary m-r-15" type="submit">Submit</button>
+        <button class="btn btn-light text-dark" type="submit">Cancel</button>
     </div>
 </div>

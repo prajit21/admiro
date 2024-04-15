@@ -1,13 +1,12 @@
 <div class="card">
     <div class="card-header">
-        <h4>Basic Table With Border Bottom Color</h4>
-        <p class="desc mb-0 mt-1"><span>use a class</span><code>table-*.border-bottom-*</code><span>class for Border
-                bottom color</span></p>
-    </div>
+        <h3>Basic Table With Border Bottom Color</h3>
+        <p class="desc mb-0 mt-1"><span>use a class</span><code>table-*.border-bottom-*</code><span>class for Border bottom color</span></p>
+      </div>
     <div class="table-responsive">
         <table class="table">
             <thead>
-                <tr class="b-b-primary">
+                <tr class="border-bottom-secondary border-top-0">
                     <th scope="col">Id</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
@@ -20,7 +19,7 @@
             </thead>
             <tbody>
                 @for(table of basicTable; track table){
-                <tr class="b-b-{{table.class}}">
+                <tr class="border-bottom-{{table.class}}">
                     <th scope="row">{{table.id}}</th>
                     <td> <img class="img-30 me-2" src="{{table.img}}" alt="profile">{{table.name}}</td>
                     <td>{{table.lastname}}</td>

@@ -1,14 +1,14 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Default Switch</h4>
-        <p class="desc mb-0 mt-1"><span>Use the</span><code>.checkbox-solid-* ,.checkbox-* </code><span>for
-                bordered checkbox </span></p>
-    </div>
-    <div class="card-body checkbox-checked">
+    <div class="card-header">
+        <h3>Default switches</h3>
+        <p class="mt-1 mb-0">
+           Use the <code>.form-switch</code> and <code>.form-check-label</code>for switches.</p>
+      </div>
+    <div class="card-body">
         <div class="row g-3">
             @for(item of switches; track item){
             <div class="{{item.class}}">
-                <div class="card-wrapper solid-border rounded-3 rtl-input">
+                <div class="card-wrapper border rounded-3 rtl-input checkbox-checked">
                     <h6 class="sub-title">{{item.title}}</h6>
                     @for(Data of item.data; track Data){
                     <div class="form-check form-switch" [class.form-check-reverse]="item.id == 3">

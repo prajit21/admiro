@@ -272,10 +272,11 @@ export class NavmenuService {
           active: false,
           children: [
             { path: "/form-controls/base-input", title: "Base Input", type: "link" },
-            { path: "/form-controls/checkbox-radio", title: "Checkbox Radio", type: "link" },
-            { path: "/form-controls/input-groups", title: "Input Groups", type: "link" },
-            { path: "/form-controls/mega-options", title: "Mega Options", type: "link" },
             { path: "/form-controls/validation", title: "Form Validation", type: "link" },
+            { path: "/form-controls/checkbox-radio", title: "Checkbox & Radio", type: "link" },
+            { path: "/form-controls/input-groups", title: "Input Groups", type: "link" },
+            { path: "/form-controls/input-mask", title: "Input Mask", type: "link" },
+            { path: "/form-controls/mega-options", title: "Mega Options", type: "link" },
           ],
         },
         {

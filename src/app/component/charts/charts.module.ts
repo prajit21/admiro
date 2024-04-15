@@ -12,23 +12,15 @@ import { ChartistChartComponent } from './chartist-chart/chartist-chart.componen
 import { ChartjsChartComponent } from './chartjs-chart/chartjs-chart.component';
 import { BasicLineChartComponent } from './apex-chart/basic-line-chart/basic-line-chart.component';
 import { BasicAreaChartComponent } from './apex-chart/basic-area-chart/basic-area-chart.component';
-import { DumbbellChartComponent } from './apex-chart/dumbbell-chart/dumbbell-chart.component';
 import { ColumnChartComponent } from './apex-chart/column-chart/column-chart.component';
 import { MixedChartComponent } from './apex-chart/mixed-chart/mixed-chart.component';
-import { PyramidChartComponent } from './apex-chart/pyramid-chart/pyramid-chart.component';
 import { BubbleChartComponent } from './apex-chart/bubble-chart/bubble-chart.component';
-import { PolarChartComponent } from './apex-chart/polar-chart/polar-chart.component';
 import { CandlestickChartComponent } from './apex-chart/candlestick-chart/candlestick-chart.component';
 import { PieChartComponent } from './apex-chart/pie-chart/pie-chart.component';
 import { DountChartComponent } from './apex-chart/dount-chart/dount-chart.component';
 import { RadialChartComponent } from './apex-chart/radial-chart/radial-chart.component';
 import { RadarChartComponent } from './apex-chart/radar-chart/radar-chart.component';
-import { BasicBarChartComponent } from './chartjs-chart/basic-bar-chart/basic-bar-chart.component';
 import { RadarGraphComponent } from './chartjs-chart/radar-graph/radar-graph.component';
-import { RadarGraph2Component } from './chartjs-chart/radar-graph2/radar-graph2.component';
-import { RadarGraph3Component } from './chartjs-chart/radar-graph3/radar-graph3.component';
-import { DonutGraphComponent } from './chartjs-chart/donut-graph/donut-graph.component';
-import { BasicLinesChartComponent } from './chartjs-chart/basic-lines-chart/basic-lines-chart.component';
 import { AdvancedSmilAnimationsComponent } from './chartist-chart/advanced-smil-animations/advanced-smil-animations.component';
 import { LinesChartComponent } from './chartist-chart/lines-chart/lines-chart.component';
 import { DountSvgAnimateComponent } from './chartist-chart/dount-svg-animate/dount-svg-animate.component';
@@ -53,6 +45,14 @@ import { PieChart2Component } from './google-chart/pie-chart-2/pie-chart-2.compo
 import { PieChart3Component } from './google-chart/pie-chart-3/pie-chart-3.component';
 import { PieChart4Component } from './google-chart/pie-chart-4/pie-chart-4.component';
 import { SvgPathAnimationComponent } from './chartist-chart/svg-path-animation/svg-path-animation.component';
+import { ApexBarChartComponent } from './apex-chart/apex-bar-chart/apex-bar-chart.component';
+import { SteplineChartComponent } from './apex-chart/stepline-chart/stepline-chart.component';
+import { ApexColumnChartComponent } from './apex-chart/apex-column-chart/apex-column-chart.component';
+import { ChartjsBarChartComponent } from './chartjs-chart/chartjs-bar-chart/chartjs-bar-chart.component';
+import { ChartjsLineChartComponent } from './chartjs-chart/chartjs-line-chart/chartjs-line-chart.component';
+import { ChartjsLineGraphComponent } from './chartjs-chart/chartjs-line-graph/chartjs-line-graph.component';
+import { ChartjsDoughnutChartComponent } from './chartjs-chart/chartjs-doughnut-chart/chartjs-doughnut-chart.component';
+import { ChartjsPolarChartComponent } from './chartjs-chart/chartjs-polar-chart/chartjs-polar-chart.component';
 
 @NgModule({
   declarations: [
@@ -61,23 +61,15 @@ import { SvgPathAnimationComponent } from './chartist-chart/svg-path-animation/s
     ChartjsChartComponent,
     BasicLineChartComponent,
     BasicAreaChartComponent,
-    DumbbellChartComponent,
     ColumnChartComponent,
     MixedChartComponent,
-    PyramidChartComponent,
     BubbleChartComponent,
-    PolarChartComponent,
     CandlestickChartComponent,
     PieChartComponent,
     DountChartComponent,
     RadialChartComponent,
     RadarChartComponent,
-    BasicBarChartComponent,
     RadarGraphComponent,
-    RadarGraph2Component,
-    RadarGraph3Component,
-    DonutGraphComponent,
-    BasicLinesChartComponent,
     AdvancedSmilAnimationsComponent,
     LinesChartComponent,
     DountSvgAnimateComponent,
@@ -102,7 +94,14 @@ import { SvgPathAnimationComponent } from './chartist-chart/svg-path-animation/s
     PieChart3Component,
     PieChart4Component,
     SvgPathAnimationComponent,
-  
+    ApexBarChartComponent,
+    ApexColumnChartComponent,
+    SteplineChartComponent,
+    ChartjsBarChartComponent,
+    ChartjsLineChartComponent,
+    ChartjsLineGraphComponent,
+    ChartjsDoughnutChartComponent,
+    ChartjsPolarChartComponent
   ],
   imports: [
     CommonModule,

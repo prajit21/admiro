@@ -10,7 +10,7 @@ export class SegmentedButtonsComponent {
   public show: boolean = false;
   public show2: boolean = false;
   public show3: boolean = false;
-
+  public show4: boolean = false;
 
   openMenu() {
     this.show = !this.show
@@ -22,5 +22,9 @@ export class SegmentedButtonsComponent {
 
   openMenu3() {
     this.show3 = !this.show3
+  }
+  
+  openMenu4() {
+    this.show4 = !this.show4
   }
 }

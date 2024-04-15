@@ -59,8 +59,7 @@ function generateData(baseval: any, count: any, yrange: any) {
 
 let primary_color = localStorage.getItem('primary_color') || '#308e87';
 let secondary_color = localStorage.getItem('secondary_color') || '#f39159';
-let tertiary_color = '#FD7E40'
-let info_color = '#2E8DD3'
+
 
 export let basicArea: ChartOptions | any = {
     chart: {
@@ -137,85 +136,197 @@ export const basicAreachart: ChartOptions | any = {
     },
 }
 
-export const DumbbellChart: ChartOptions | any = {
-    series: [
-        {
-            data: [
-                {
-                    x: "2017",
-                    y: [280, 450],
-                },
-                {
-                    x: "2018",
-                    y: [320, 410],
-                },
-                {
-                    x: "2019",
-                    y: [295, 780],
-                },
-                {
-                    x: "2020",
-                    y: [300, 460],
-                },
-                {
-                    x: "2021",
-                    y: [350, 410],
-                },
-                {
-                    x: "2022",
-                    y: [450, 650],
-                },
-                {
-                    x: "2023",
-                    y: [410, 560],
-                },
-            ],
-        },
-    ],
+export let barChart: ChartOptions | any = {
     chart: {
         height: 350,
-        type: "rangeBar",
+        type: "bar",
         toolbar: {
             show: false,
-        },
-        zoom: {
-            enabled: false,
         },
     },
     plotOptions: {
         bar: {
-            isDumbbell: true,
-            columnWidth: 3,
-            dumbbellColors: [[primary_color, secondary_color]],
+            horizontal: true,
         },
     },
-    legend: {
-        show: false,
+    dataLabels: {
+        enabled: false,
     },
-    fill: {
-        type: "gradient",
-        gradient: {
-            type: "vertical",
-            gradientToColors: [secondary_color],
-            inverseColors: true,
-            stops: [0, 100],
+    series: [
+        {
+            data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
         },
+    ],
+    xaxis: {
+        categories: [
+            "South Korea",
+            "Canada",
+            "United Kingdom",
+            "Netherlands",
+            "Italy",
+            "France",
+            "Japan",
+            "United States",
+            "China",
+            "Germany",
+        ],
+    },
+    colors: [primary_color]
+}
+
+
+export let steplineChart: ChartOptions | any = {
+    chart: {
+        type: "line",
+        height: 350,
+        toolbar: {
+            show: false,
+        },
+    },
+    stroke: {
+        curve: "stepline",
+    },
+    dataLabels: {
+        enabled: false,
+    },
+    series: [
+        {
+            data: [34, 44, 54, 21, 12, 43, 33, 23, 66, 66, 58],
+        },
+    ],
+    title: {
+        text: "Stepline Chart",
+        align: "left",
+    },
+    markers: {
+        hover: {
+            sizeOffset: 4,
+        },
+    },
+    colors: [primary_color],
+}
+
+export let columnChart2: ChartOptions | any = {
+    series: [
+        {
+            name: "series",
+            data: [8107.85, 8128.0, 8122.9, 8165.5, 8340.7, 8423.7, 8423.5, 8514.3, 8481.85, 8487.7, 8506.9, 8626.2, 8668.95, 8602.3, 8607.55, 8512.9, 8496.25, 8600.65, 8881.1, 9340.85]
+        }
+    ],
+    colors: [primary_color],
+    chart: {
+        height: 350,
+        type: "line",
+        toolbar: {
+            show: false
+        },
+    },
+    annotations: {
+        yaxis: [
+            {
+                y: 8200,
+                borderColor: "#00E396",
+                label: {
+                    borderColor: "#00E396",
+                    style: {
+                        color: "#fff",
+                        background: "#00E396"
+                    },
+                    text: "Support"
+                }
+            },
+            {
+                y: 8600,
+                y2: 9000,
+                borderColor: "#000",
+                fillColor: "#FEB019",
+                opacity: 0.2,
+                label: {
+                    borderColor: "#333",
+                    style: {
+                        fontSize: "10px",
+                        color: "#333",
+                        background: "#FEB019"
+                    },
+                    text: "Y-axis range"
+                }
+            }
+        ],
+        xaxis: [
+            {
+                x: new Date("23 Nov 2017").getTime(),
+                strokeDashArray: 0,
+                borderColor: "#775DD0",
+                label: {
+                    borderColor: "#775DD0",
+                    style: {
+                        color: "#fff",
+                        background: "#775DD0"
+                    },
+                    text: "Anno Test"
+                }
+            },
+            {
+                x: new Date("26 Nov 2017").getTime(),
+                x2: new Date("28 Nov 2017").getTime(),
+                fillColor: "#B3F7CA",
+                opacity: 0.4,
+                label: {
+                    borderColor: "#B3F7CA",
+                    style: {
+                        fontSize: "10px",
+                        color: "#fff",
+                        background: "#00E396"
+                    },
+                    offsetY: -10,
+                    text: "X-axis range"
+                }
+            }
+        ],
+        points: [
+            {
+                x: new Date("01 Dec 2017").getTime(),
+                y: 8607.55,
+                marker: {
+                    size: 8,
+                    fillColor: "#fff",
+                    strokeColor: "red",
+                    radius: 2,
+                    cssClass: "apexcharts-custom-class"
+                },
+                label: {
+                    borderColor: "#FF4560",
+                    offsetY: 0,
+                    style: {
+                        color: "#fff",
+                        background: "#FF4560"
+                    },
+
+                    text: "Point Annotation"
+                }
+            }
+        ]
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        curve: "straight"
     },
     grid: {
-        xaxis: {
-            lines: {
-                show: true,
-            },
-        },
-        yaxis: {
-            lines: {
-                show: false,
-            },
-        },
+        padding: {
+            right: 30,
+            left: 20
+        }
     },
+    title: {
+        text: "Line with Annotations",
+        align: "left"
+    },
+    labels: ["13 Nov 2017", "14 Nov 2017", "15 Nov 2017", "16 Nov 2017", "17 Nov 2017", "20 Nov 2017", "21 Nov 2017", "22 Nov 2017", "23 Nov 2017", "24 Nov 2017", "27 Nov 2017", "28 Nov 2017", "29 Nov 2017", "30 Nov 2017", "01 Dec 2017", "04 Dec 2017", "05 Dec 2017", "06 Dec 2017", "07 Dec 2017", "08 Dec 2017"],
     xaxis: {
-        tickPlacement: "on",
-    },
+        type: "datetime"
+    }
 }
 
 export let columnChart: ChartOptions | any = {
@@ -281,158 +392,92 @@ export let columnChart: ChartOptions | any = {
 }
 
 export const MixedChart: ChartOptions | any = {
-    series: [
-        {
-            name: "TEAM A",
-            type: "column",
-            data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30],
-        },
-        {
-            name: "TEAM B",
-            type: "area",
-            data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43],
-        },
-        {
-            name: "TEAM C",
-            type: "line",
-            data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39],
-        },
-    ],
     chart: {
         height: 350,
         type: "line",
         stacked: false,
         toolbar: {
-            show: false,
+          show: false,
         },
-    },
-    stroke: {
+      },
+      stroke: {
         width: [0, 2, 5],
         curve: "smooth",
-    },
-    plotOptions: {
+      },
+      plotOptions: {
         bar: {
-            columnWidth: "50%",
+          columnWidth: "50%",
         },
-    },
-    colors: [
-        primary_color,
-        secondary_color,
-        tertiary_color,
-    ],
-    fill: {
+      },
+      series: [
+        {
+          name: "Column",
+          type: "column",
+          data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30],
+        },
+        {
+          name: "Area",
+          type: "area",
+          data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43],
+        },
+        {
+          name: "Line",
+          type: "line",
+          data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39],
+        },
+      ],
+      fill: {
         opacity: [0.85, 0.25, 1],
         gradient: {
-            inverseColors: false,
-            shade: "light",
-            type: "vertical",
-            opacityFrom: 0.85,
-            opacityTo: 0.55,
-            stops: [0, 100, 100, 100],
+          inverseColors: false,
+          shade: "light",
+          type: "vertical",
+          opacityFrom: 0.85,
+          opacityTo: 0.55,
+          stops: [0, 100, 100, 100],
         },
-    },
-    labels: [
-        "01/01/2023",
-        "02/01/2023",
-        "03/01/2023",
-        "04/01/2023",
-        "05/01/2023",
-        "06/01/2023",
-        "07/01/2023",
-        "08/01/2023",
-        "09/01/2023",
-        "10/01/2023",
-        "11/01/2023",
-    ],
-    markers: {
+      },
+      labels: [
+        "01/01/2003",
+        "02/01/2003",
+        "03/01/2003",
+        "04/01/2003",
+        "05/01/2003",
+        "06/01/2003",
+        "07/01/2003",
+        "08/01/2003",
+        "09/01/2003",
+        "10/01/2003",
+        "11/01/2003",
+      ],
+      markers: {
         size: 0,
-    },
-    xaxis: {
+      },
+      xaxis: {
         type: "datetime",
-    },
-    yaxis: {
-        title: {
-            text: "Points",
-        },
+      },
+      yaxis: {
         min: 0,
-    },
-    tooltip: {
+      },
+      tooltip: {
         shared: true,
         intersect: false,
         y: {
-            formatter: function (y: number) {
-                if (typeof y !== "undefined") {
-                    return y.toFixed(0) + " points";
-                }
-                return y;
-            },
+          formatter: function (y:any) {
+            if (typeof y !== "undefined") {
+              return y.toFixed(0) + " views";
+            }
+            return y;
+          },
         },
-    },
+      },
+      legend: {
+        labels: {
+          useSeriesColors: true,
+        },
+      },
+      colors: [secondary_color, "#51bb25", primary_color],
 }
-
-export const PyramidChart: ChartOptions | any = {
-    series: [
-        {
-            name: "",
-            data: [200, 330, 548, 740, 880, 990, 1100, 1380],
-        },
-    ],
-    chart: {
-        type: "bar",
-        height: 350,
-        toolbar: {
-            show: false,
-        },
-    },
-    plotOptions: {
-        bar: {
-            borderRadius: 0,
-            horizontal: true,
-            distributed: true,
-            barHeight: "80%",
-            isFunnel: true,
-        },
-    },
-    colors: [
-        "#F44F5E",
-        "#E55A89",
-        "#D863B1",
-        "#CA6CD8",
-        "#B57BED",
-        "#8D95EB",
-        "#62ACEA",
-        "#4BC3E6",
-    ],
-    dataLabels: {
-        enabled: true,
-        formatter: function (val: string, opt: any) {
-            return opt.w.globals.labels[opt.dataPointIndex];
-        },
-        dropShadow: {
-            enabled: true,
-        },
-    },
-    title: {
-        text: "Pyramid Chart",
-        align: "middle",
-    },
-    xaxis: {
-        categories: [
-            "Sweets",
-            "Processed Foods",
-            "Healthy Fats",
-            "Meat",
-            "Beans & Legumes",
-            "Dairy",
-            "Fruits & Vegetables",
-            "Grains",
-        ],
-    },
-    legend: {
-        show: false,
-    },
-}
-
 
 export const bubbleChart: ChartOptions | any = {
     chart: {
@@ -515,47 +560,6 @@ export const bubbleChart: ChartOptions | any = {
             );
         },
     },
-}
-
-export const Polar: ChartOptions | any = {
-    series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
-    chart: {
-        height: 385,
-        type: "polarArea",
-    },
-    stroke: {
-        colors: ["#fff"],
-    },
-    fill: {
-        opacity: 0.8,
-    },
-    legend: {
-        show: false
-    },
-    colors: [
-        primary_color,
-        secondary_color,
-        tertiary_color,
-        info_color,
-        primary_color,
-        secondary_color,
-        tertiary_color,
-        info_color,
-    ],
-    responsive: [
-        {
-            breakpoint: 480,
-            options: {
-                chart: {
-                    width: 300,
-                    height: 250,
-                },
-                legend: {
-                    show: false,
-                },
-            },
-        },
-    ],
 }
 
 export const candleChart: ChartOptions | any = {
@@ -730,7 +734,6 @@ export const candleChart: ChartOptions | any = {
     },
 }
 
-
 export const pieChart: ChartOptions | any = {
     series: [44, 55, 13, 43, 22],
     chart: {
@@ -741,9 +744,9 @@ export const pieChart: ChartOptions | any = {
     colors: [
         primary_color,
         secondary_color,
-        tertiary_color,
-        info_color,
-        '#C42A02',
+        "#3eb95f",
+        "#ea9200",
+        "#e74b2b",
     ],
     responsive: [
         {
@@ -761,54 +764,28 @@ export const pieChart: ChartOptions | any = {
 }
 
 export const donutChart: ChartOptions | any = {
-    series: [44, 55, 41, 17, 15],
     chart: {
         width: 380,
-        type: "donut",
+        type: 'donut',
     },
-    plotOptions: {
-        pie: {
-            startAngle: -90,
-            endAngle: 270,
-        },
-    },
-    dataLabels: {
-        enabled: false,
-    },
-    fill: {
-        type: "gradient",
-    },
-    legend: {
-        formatter: function (val: string, opts: any) {
-            return val + " - " + opts.w.globals.series[opts.seriesIndex];
-        },
-    },
-    colors: [
-        primary_color,
-        tertiary_color,
-        info_color,
-        secondary_color,
-        "#dc3545",
-    ],
-    title: {
-        text: "Gradient Donut with custom Start-angle",
-    },
-    responsive: [
-        {
-            breakpoint: 480,
-            options: {
-                chart: {
-                    width: 200,
-                },
-                legend: {
-                    show: false,
-                },
-                title: {
-                    text: "",
-                },
+    series: [44, 55, 41, 17, 15],
+    responsive: [{
+        breakpoint: 480,
+        options: {
+            chart: {
+                width: 200
             },
-        },
-    ],
+            legend: {
+                show: false
+            }
+        }
+    }],
+    colors: ["#308e87",
+        "#f39159",
+        "#3eb95f",
+        "#ea9200",
+        "#e74b2b"]
+
 }
 
 export const radarChart: ChartOptions | any = {

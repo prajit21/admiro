@@ -1,29 +1,28 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Custom file input</h4>
-        <p class="desc mb-0 mt-1"><span>Input groups include support for custom selects and
-                custom</span><code> file uploads. </code><span>Browser default versions of these are not
-                supported. </span></p>
+    <div class="card-header">
+        <h3>Custom file input</h3>
+        <p class="mt-1 mb-0">
+            Input groups include support for custom selects and custom <code>file uploads</code></p>
     </div>
-    <div class="card-body card-wrapper input-group-wrapper">
-        <form class="theme-form row g-3">
-            <div class="input-group">
-                <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                <input class="form-control" id="inputGroupFile01" type="file">
-            </div>
-            <div class="input-group">
-                <input class="form-control" id="inputGroupFile02" type="file">
-                <label class="input-group-text" for="inputGroupFile02">Verify</label>
-            </div>
-            <div class="input-group">
-                <button class="btn btn-outline-success" id="inputGroupFileAddon03" type="button"><i
-                        class="icofont icofont-ui-copy"></i></button>
-                <input class="form-control" id="inputGroupFile03" type="file">
-            </div>
-            <div class="input-group">
-                <input class="form-control" id="inputGroupFile04" type="file">
-                <button class="btn btn-outline-success" id="inputGroupFileAddon04" type="button">Submit</button>
-            </div>
-        </form>
+    <div class="card-body main-custom-form input-group-wrapper custom-input-file">
+        <div class="input-group">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input class="form-control" id="inputGroupFile01" type="file">
+        </div>
+        <div class="input-group">
+            <input class="form-control" id="inputGroupFile02" type="file">
+            <label class="input-group-text" for="inputGroupFile02">Verify</label>
+        </div>
+        <div class="input-group">
+            <button class="btn btn-outline-success" id="inputGroupFileAddon03" type="button"><i
+                    class="fa-solid fa-file"></i></button>
+            <input class="form-control" id="inputGroupFile03" type="file" aria-describedby="inputGroupFileAddon03"
+                aria-label="Upload">
+        </div>
+        <div class="input-group">
+            <input class="form-control" id="inputGroupFile04" type="file" aria-describedby="inputGroupFileAddon04"
+                aria-label="Upload">
+            <button class="btn btn-outline-success" id="inputGroupFileAddon04" type="button">Submit</button>
+        </div>
     </div>
 </div>

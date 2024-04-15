@@ -5,6 +5,7 @@ import { CheckboxRadioComponent } from './checkbox-radio/checkbox-radio.componen
 import { InputGroupComponent } from './input-group/input-group.component';
 import { MegaOptionsComponent } from './mega-options/mega-options.component';
 import { FormsValidationComponent } from './forms-validation/forms-validation.component';
+import { InputMaskComponent } from './input-mask/input-mask.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,14 @@ const routes: Routes = [
         data: {
           title: "Input Groups",
           breadcrumb: "Input Groups",
+        }
+      },
+      {
+        path: 'input-mask',
+        component: InputMaskComponent,
+        data: {
+          title: "Input Mask",
+          breadcrumb: "Input Mask",
         }
       },
       {

@@ -1,10 +1,10 @@
 <div class="card">
     <div class="card-header">
-        <h4>Breckpoint Specific</h4>
+        <h3>Breckpoint Specific</h3>
         <p class="desc mb-0 mt-1">
-            <span>use</span><code>.table-responsive&quot;❴-sm|-md|-lg|-xl|-xxl❵&quot;</code><span>functions like a
-                heading for a table. It helps users with screen readers to find a table and understand what it is about
-                and decide if they want to read it.</span></p>
+            <span>use</span><code>.table-responsive&quot;&#x2774;-sm|-md|-lg|-xl|-xxl&#x2775;&quot;</code><span>functions
+                like a heading for a table. It helps users with screen readers to find a table and understand what it is
+                about and decide if they want to read it.</span></p>
     </div>
     <div class="card-block row">
         <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -22,13 +22,13 @@
                     </thead>
                     <tbody>
                         @for(item of breckpointData; track item){
-                            <tr>
-                                <th scope="row">{{item.id}}</th>
-                                @for(i of item.data; track i){
-                                  <td>{{i}}</td>
-                                }
-                            </tr>
-                      }
+                        <tr>
+                            <th scope="row">{{item.id}}</th>
+                            @for(i of item.data; track i){
+                            <td>{{i}}</td>
+                            }
+                        </tr>
+                        }
                     </tbody>
                 </table>
             </div>

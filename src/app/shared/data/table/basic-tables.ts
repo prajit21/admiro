@@ -2,7 +2,7 @@ export const basictable = [
     {
         id: 1,
         class: 'secondary',
-        img: 'assets/images/avatar/1.jpg',
+        img: 'assets/images/avtar/3.jpg',
         name: 'Ram Jacob',
         lastname: 'Wolfe',
         username: 'RamJacob@twitter',
@@ -15,7 +15,7 @@ export const basictable = [
     {
         id: 2,
         class: 'success',
-        img: 'assets/images/avatar/2.jpg',
+        img: 'assets/images/avtar/4.jpg',
         name: 'John Deo',
         lastname: 'Gummer',
         username: 'JohnDeo@twitter',
@@ -27,8 +27,8 @@ export const basictable = [
     },
     {
         id: 3,
-        class: 'info',
-        img: 'assets/images/avatar/3.jpg',
+        class: 'warning',
+        img: 'assets/images/avtar/7.jpg',
         name: 'Elana John',
         lastname: 'Cazale',
         username: 'ElanaJohn@twitter',
@@ -40,8 +40,8 @@ export const basictable = [
     },
     {
         id: 4,
-        class: 'warning',
-        img: 'assets/images/avatar/4.jpg',
+        class: 'danger',
+        img: 'assets/images/avtar/11.jpg',
         name: 'Meryl Streep',
         lastname: 'Roberts',
         username: 'MerylStreep@twitter',
@@ -53,8 +53,8 @@ export const basictable = [
     },
     {
         id: 5,
-        class: 'danger',
-        img: 'assets/images/avatar/5.jpg',
+        class: 'secondary',
+        img: 'assets/images/avtar/16.jpg',
         name: 'Emma Stone',
         lastname: 'Stone',
         username: 'EmmaStone@twitte',
@@ -66,8 +66,8 @@ export const basictable = [
     },
     {
         id: 6,
-        class: 'light',
-        img: 'assets/images/avatar/6.jpg',
+        class: 'primary',
+        img: 'assets/images/avtar/3.jpg',
         name: 'Eliana Jons',
         lastname: 'Jons',
         username: 'ElianaJons@twitter',
@@ -79,7 +79,8 @@ export const basictable = [
     },
     {
         id: 7,
-        img: 'assets/images/avatar/7.jpg',
+        class: 'primary',
+        img: 'assets/images/avtar/4.jpg',
         name: 'Ram Jacob',
         lastname: 'Ottandy',
         username: 'ElianaJons@twitter',
@@ -452,6 +453,7 @@ export const customHover = [
     {
         id: 1,
         title: 'Frozen',
+        class: 'alert-light-primary',
         released: '2023',
         studio: 'Disney',
         budget: '$150,000,000',
@@ -460,6 +462,7 @@ export const customHover = [
     {
         id: 2,
         title: 'Minions',
+        class: 'bg-primary',
         released: '2023',
         studio: 'Universal',
         budget: '$74,000,000',
@@ -468,6 +471,7 @@ export const customHover = [
     {
         id: 3,
         title: 'Zootopia',
+        class: 'alert-light-primary',
         released: '2023',
         studio: 'Disney',
         budget: '$150,000,000',
@@ -476,6 +480,7 @@ export const customHover = [
     {
         id: 4,
         title: 'Finding Dory',
+        class: 'bg-primary',
         released: '2023',
         studio: 'Disney	Pixar',
         budget: '$175,000,000',
@@ -484,6 +489,7 @@ export const customHover = [
     {
         id: 5,
         title: 'Toy Story 3',
+        class: 'alert-light-primary',
         released: '2023',
         studio: 'Disney',
         budget: '$200,000,000',

@@ -50,6 +50,7 @@ import { FormsValidationComponent } from './forms-validation/forms-validation.co
 import { TooltipFormValidationComponent } from './forms-validation/tooltip-form-validation/tooltip-form-validation.component';
 import { BrowserComponent } from './forms-validation/browser/browser.component';
 import { ValidationFormComponent } from './forms-validation/validation-form/validation-form.component';
+import { InputMaskComponent } from './input-mask/input-mask.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { ValidationFormComponent } from './forms-validation/validation-form/vali
     TooltipFormValidationComponent,
     BrowserComponent,
     ValidationFormComponent,
+    InputMaskComponent,
   ],
   imports: [
     CommonModule,

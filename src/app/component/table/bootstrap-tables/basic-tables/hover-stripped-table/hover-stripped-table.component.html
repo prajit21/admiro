@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h4>Custom Table Color With Hover And Stripped</h4>
+        <h3>Custom Table Color With Hover And Stripped</h3>
         <p class="desc mb-0 mt-1"><span>Use
                 class</span><code>table-hover, table-striped table-*table-info,table-success,table-success,table-info,table-danger,table-primary,table-secondary,table-light,table-active</code><span>inside
                 table element.</span></p>
@@ -9,24 +9,24 @@
         <table class="table table-striped bg-primary hover">
             <thead class="tbl-strip-thad-bdr">
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Film Title</th>
-                    <th scope="col">Released</th>
-                    <th scope="col">Studio</th>
-                    <th scope="col">Budget </th>
-                    <th scope="col">Domestic Gross</th>
+                    <th class="bg-primary" scope="col">Id</th>
+                    <th class="bg-primary" scope="col">Film Title</th>
+                    <th class="bg-primary" scope="col">Released</th>
+                    <th class="bg-primary" scope="col">Studio</th>
+                    <th class="bg-primary" scope="col">Budget </th>
+                    <th class="bg-primary" scope="col">Domestic Gross</th>
                 </tr>
             </thead>
             <tbody>
                 @for( table of customhoverData; track table){
-                    <tr>
-                        <th scope="row">{{table.id}}</th>
-                        <td>{{table.title}} </td>
-                        <td>{{table.released}}</td>
-                        <td>{{table.studio}}</td>
-                        <td>{{table.budget}}</td>
-                        <td>{{table.domesticgross}}</td>
-                    </tr>
+                <tr>
+                    <th class="{{ table.class }}">{{table.id}}</th>
+                    <td class="{{ table.class }}">{{table.title}} </td>
+                    <td class="{{ table.class }}">{{table.released}}</td>
+                    <td class="{{ table.class }}">{{table.studio}}</td>
+                    <td class="{{ table.class }}">{{table.budget}}</td>
+                    <td class="{{ table.class }}">{{table.domesticgross}}</td>
+                </tr>
                 }
             </tbody>
         </table>

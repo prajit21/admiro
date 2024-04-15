@@ -138,7 +138,7 @@ export const themeSales = [
         check: false
     },
     {
-        list: 'Riho',
+        list: 'Admiro',
         sales: '4.8K Sales',
         check: false
     },
@@ -250,33 +250,6 @@ export const HorizontalStylelDelivery: horizontal[] = [
         ]
     },
 ]
-export const Buyingoptions: horizontal[] = [
-    {
-        title: 'Buying Option',
-        item: [
-            {
-                border: 'success',
-                badge: 'Pixelstrap',
-                name:'radio2',
-                digits: 250,
-                rating: 5,
-                for: 'radio32',
-                value: true,
-                des: 'Estimated 5 Day Shipping ( Duties end tax may be due delivery )'
-            },
-            {
-                border: 'info',
-                badge: 'Tivo',
-                name:'radio2',
-                digits: 150,
-                rating: 2,
-                for: 'radio33',
-                value: false,
-                des: 'Estimated 1 Day Shipping ( Duties end tax may be due delivery )',
-                class: 'offset-sm-3'
-            },
-        ]
-    },
-]
+
   
 

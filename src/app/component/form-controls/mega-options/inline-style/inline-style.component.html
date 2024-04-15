@@ -1,8 +1,8 @@
 <div class="card">
-    <div class="card-header pb-0">
-        <h4>Inline style</h4>
-        <p class="desc mb-0 mt-1"><span>For Create inline megaoption add</span><code>.mega-inline</code><span>class in
-                form tag</span></p>
+    <div class="card-header">
+        <h3>Inline style</h3>
+        <p class="mt-1 mb-0">
+            For Create inline megaoption add <code>.mega-inline</code> class in form tag</p>
     </div>
     <div class="card-body megaoptions-border-space-sm">
         <form class="mega-inline">
@@ -10,14 +10,18 @@
                 @for(item of inlineData; track item){
                 <div class="col-sm-6">
                     <div class="card">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="{{item.id}}">
-                                <input class="radio radio-border-{{item.class}} radio-{{item.class}}" id="{{item.id}}"
-                                    type="radio" name="radio1" [checked]="item.check">{{item.title}}
-                            </label>
-                            <div class="flex-grow-1"><span
-                                    class="badge badge-{{item.class}} pull-right digits">{{item.digit}}</span></div>
-                        </div><span class="p-20 pt-0">{{item.lable}}</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-{{item.class}} m-0 w-100">
+                                <input class="form-check-input" id="{{item.id}}" type="radio" name="radio1"
+                                    [checked]="item.check">
+                                <label class="form-check-label mb-0 w-100" for="{{item.id}}"><span
+                                        class="flex-grow-1"><span class="mt-0 mega-title-badge">{{ item.title }}<span
+                                                class="badge badge-{{item.class}} pull-right digits">{{item.digit}}</span></span><span>
+                                            {{item.lable}}</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 }

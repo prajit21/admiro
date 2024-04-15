@@ -191,7 +191,7 @@ export const BorderedRadio = [
     {
         text: 'Voxo Theme',
         check: false,
-        class: 'warning',
+        class: 'danger',
         id: 'radio33'
 
     },
@@ -294,7 +294,7 @@ export const FilledRadio = [
     {
         class: 'primary',
         text: 'Product',
-        check: false,
+        check: true,
         id: 'radio111'
     },
     {
@@ -320,17 +320,20 @@ export const FilledRadio = [
 export const BorderCheckbox = [
     {
         class: 'primary',
+        for:'checkbox-primary-1',
         text: 'Primary - checkbox-primary',
         value: true
     },
     {
         class: 'secondary',
+        for:'checkbox-secondary-1',
         text: 'Secondary - checkbox-secondary',
         value: false
 
     },
     {
         class: 'success',
+        for:'checkbox-success-1',
         text: 'Success - checkbox-success',
         value: false
 
@@ -340,42 +343,50 @@ export const BorderCheckbox = [
 export const IconsCheckbox = [
     {
         text: 'Sliders',
-        icon: 'sliders',
+        for:'checkbox-1',
+        icon: 'fa-solid fa-sliders',
         value: false
     },
     {
         text: 'User',
-        icon: 'user',
+        for:'checkbox-2',
+        icon: 'fa-solid fa-user',
         value: true
     },
     {
         text: 'Tags',
-        icon: 'tags',
+        for:'checkbox-3',
+        icon: 'fa-solid fa-tag',
         value: false
     },
     {
         text: 'Android',
-        icon: 'android',
+        for:'checkbox-4',
+        icon: 'fa-brands fa-android',
         value: false
     },
     {
         text: 'Hidden',
-        icon: 'eye-slash',
+        for:'checkbox-5',
+        icon: 'fa-regular fa-eye-slash',
         value: false
     },
     {
         text: 'Folder',
-        icon: 'folder-open',
+        for:'checkbox-6',
+        icon: 'fa-regular fa-folder-open',
         value: false
     },
     {
         text: 'Send',
-        icon: 'paper-plane',
+        for:'checkbox-7',
+        icon: 'fa-solid fa-paper-plane',
         value: false
     },
     {
         text: 'Upload',
-        icon: 'cloud-upload',
+        for:'checkbox-8',
+        icon: 'fa-solid fa-cloud-arrow-up',
         value: false
     },
 
@@ -383,12 +394,14 @@ export const IconsCheckbox = [
 export const FilledCheckbox = [
     {
         class: 'solid-warning',
+        for:'filed-checkbox1',
         text: 'Warning-checkbox-solid-warning',
         value: true,
         id: 'solid4'
     },
     {
         class: 'solid-danger',
+        for:'filed-checkbox2',
         text: 'Danger- checkbox-solid-dangery',
         value: true,
         id: 'solid5'
@@ -396,6 +409,7 @@ export const FilledCheckbox = [
     },
     {
         class: 'solid-info',
+        for:'filed-checkbox3',
         text: 'Info - checkbox-solid-info',
         value: true,
         id: 'solid6'

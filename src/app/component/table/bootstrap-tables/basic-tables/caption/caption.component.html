@@ -1,9 +1,9 @@
 <div class="card">
     <div class="card-header">
-        <h4>Caption</h4>
+        <h3>Caption</h3>
         <p class="desc mb-0 mt-1"><span>A</span><code>&lt;caption&gt;</code><span>functions like a heading for a table.
-                It helps users with screen readers to find a table and understand what it’s about and decide if they
-                want to read it.</span></p>
+                It helps users with screen readers to find a table and understand what it&rsquo;s about and decide if
+                they want to read it.</span></p>
     </div>
     <div class="card-block row">
         <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -23,16 +23,16 @@
                     </thead>
                     <tbody>
                         @for( item of captionData; track item){
-                            <tr>
-                                <th scope="row">{{item.id}}</th>
-                                <td>{{item.name}}</td>
-                                <td>{{item.email}}</td>
-                                <td>{{item.exp}}</td>
-                                <td>{{item.sex}}</td>
-                                <td>{{item.contact}}</td>
-                                <td>{{item.age}}</td>
-                            </tr>
-                            }
+                        <tr>
+                            <th scope="row">{{item.id}}</th>
+                            <td>{{item.name}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.exp}}</td>
+                            <td>{{item.sex}}</td>
+                            <td>{{item.contact}}</td>
+                            <td>{{item.age}}</td>
+                        </tr>
+                        }
                     </tbody>
                 </table>
             </div>

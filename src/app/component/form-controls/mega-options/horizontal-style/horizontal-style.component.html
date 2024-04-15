@@ -1,8 +1,8 @@
-<div class="card">
-    <div class="card-header pb-0">
-        <h4>Horizontal style</h4>
-        <p class="desc mb-0 mt-1"><span>horizontal style in mega-options. Use
-                the</span><code>.mega-horizontal</code><span>class through created horizontal alignments.</span></p>
+<div class="card height-equal">
+    <div class="card-header">
+        <h3>Horizontal style</h3>
+        <p class="mt-1 mb-0">horizontal style in mega-options. Use the <code>.mega-horizontal</code> class
+            through created horizontal alignments.</p>
     </div>
     <div class="card-body">
         <form class="mega-horizontal">
@@ -14,47 +14,77 @@
                 @for(data of item.item; track data){
                 <div class="col-sm-9 {{data.class}}">
                     <div class="card">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="{{data.for}}">
-                                <input class="radio radio-border-{{data.border}} radio-{{data.border}}"
-                                    id="{{data.for}}" type="radio" name="{{data.name}}"
-                                    [checked]="data.value">{{data.badge}}
-                            </label>
-                            <div class="flex-grow-1"><span
-                                    class="badge badge-{{data.border}} pull-right digits">{{data.digits}} INR</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-{{data.border}} m-0 w-100">
+                                <input class="form-check-input" id="{{data.for}}" type="radio" name="{{data.name}}"
+                                    [checked]="data.value">
+                                <label class="form-check-label mb-0 w-100" for="{{data.for}}"><span
+                                        class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">{{
+                                            data.badge }}<span
+                                                class="badge badge-{{data.border}} pull-right digits">{{data.digits}}
+                                                INR</span></span>
+                                        <span>{{data.des}}</span>
+                                    </span>
+                                </label>
                             </div>
                         </div>
-                        <span class="p-20 pt-0">{{data.des}}</span>
                     </div>
                 </div>
                 }
                 }
-                @for(item of BuyingoptionsData; track item){
                 <div class="col-sm-3">
-                    <p class="mega-title">{{item.title}}</p>
+                    <p class="mega-title">Buying Option</p>
                 </div>
-                @for(data of item.item; track data){
-                <div class="col-sm-9 {{data.class}}">
+                <div class="col-sm-9">
                     <div class="card">
-                        <div class="d-flex p-20 pb-0">
-                            <label class="d-block" for="{{data.for}}">
-                                <input class="radio radio-border-{{data.border}} radio-{{data.border}}"
-                                    id="{{data.for}}" type="radio" name="{{data.name}}" [checked]="data.value">{{data.badge}}
-                            </label>
-                            <div class="flex-grow-1">
-                                <span class="badge badge-{{data.border}} pull-right digits">{{data.digits}} INR</span>
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-success m-0 w-100">
+                                <input class="form-check-input" id="radio32" type="radio" name="radio23"
+                                    value="option1">
+                                <label class="form-check-label mb-0 w-100" for="radio32">
+                                    <span class="flex-grow-1">
+                                        <span class="mt-0 mega-title-badge">Pixelstrap
+                                            <span class="badge badge-success pull-right digits">250 INR</span>
+                                        </span>
+                                        <span class="rating-star-wrapper">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning m-r-5"></i>
+                                            5 start rating
+                                        </span>
+                                    </span>
+                                </label>
                             </div>
                         </div>
-                        <span class="p-20 pt-0">{{data.des}}</span>
-                        @if( data.rating){
-                        <span class="p-20 pt-0 rating-star-wrapper">
-                            <ngb-rating [rate]="data.rating" class="font-warning"></ngb-rating>
-                        </span>
-                        }
                     </div>
                 </div>
-                }
-             }
+                <div class="col-sm-9 offset-sm-3">
+                    <div class="card mb-0">
+                        <div class="d-flex p-20">
+                            <div class="form-check radio radio-info m-0 w-100">
+                                <input class="form-check-input" id="radio33" type="radio" name="radio23" value="option1"
+                                    checked="">
+                                <label class="form-check-label mb-0 w-100" for="radio33">
+                                    <span class="flex-grow-1">
+                                        <span class="mt-0 mega-title-badge">Tivo<span
+                                                class="badge badge-info pull-right digits">150 INR</span>
+                                        </span>
+                                        <span class="rating-star-wrapper">
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star m-r-5"></i>
+                                            5 start rating
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
     </div>

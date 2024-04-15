@@ -23,6 +23,16 @@
 @import 'dropzone/dist/min/dropzone.min.css';
 
 
+
+@import "@ng-select/ng-select/themes/default.theme.css";
+
+
+//charitst chart //
+
+@import "chartist/chartist-settings";
+@import "chartist/chartist";
+
+
 //todo//
 @import "./vendors/todo.scss";
 
@@ -32,7 +42,7 @@
 @import "../scss/feather-icon.scss";
 @import "../scss/icoicon/icons";
 @import "../scss/fontawesome.scss";
-@import "./whether-icon.scss"; 
+@import "./whether-icon.scss";
 @import "../scss/themify.scss";
 
 // Icon
