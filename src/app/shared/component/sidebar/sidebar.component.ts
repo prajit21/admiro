@@ -1,24 +1,25 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { SvgIconComponent } from '../svg-icon/svg-icon.component';
-import { FeathericonComponent } from '../feathericon/feathericon.component';
 import { Menu, NavmenuService } from '../../services/navmenu.service';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  standalone: true,
-  imports: [CommonModule, NgbModule,RouterModule,SvgIconComponent,FeathericonComponent,UserProfileComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 
   public menuItems = this.navServices.MENUITEMS;
+  public margin: number = 0;
+  public width: number = window.innerWidth;
+  public leftArrowNone: boolean = true;
+  public rightArrowNone: boolean = false;
+  public screenWidth: number;
+  public screenHeight: number;
+  public pined: boolean = false;
+  public pinedItem: number[] = [];
 
-  constructor(private router: Router, public navServices: NavmenuService,) {
+  constructor(private router: Router, public navServices: NavmenuService) {
     this.navServices.item.subscribe((menuItems: Menu[]) => {
       this.menuItems = menuItems;
       this.router.events.subscribe((event) => {
@@ -49,9 +50,9 @@ export class SidebarComponent {
         }
       });
     });
-   }
+  }
 
-   setNavActive(item: Menu) {
+  setNavActive(item: Menu) {
     this.menuItems.filter(menuItem => {
       if (menuItem !== item) {
         menuItem.active = false;
@@ -91,6 +92,46 @@ export class SidebarComponent {
       });
     }
     item.active = !item.active;
+  }
+
+  scrollToLeft() {
+    if (this.margin >= -this.width) {
+      this.margin = 0;
+      this.leftArrowNone = true;
+      this.rightArrowNone = false;
+    } else {
+      this.margin += this.width;
+      this.rightArrowNone = false;
+    }
+  }
+
+  scrollToRight() {
+    if (this.margin <= -3700) {
+      this.margin = -3200;
+      this.leftArrowNone = false;
+      this.rightArrowNone = true;
+    } else {
+      this.margin += -this.width;
+      this.leftArrowNone = false;
+    }
+  }
+
+  isPined(itemid:number) {
+    return this.pinedItem.includes(itemid);
+  }
+
+  togglePined(id:number): void {
+    const index = this.pinedItem.indexOf(id);
+    if (index !== -1) {
+      this.pinedItem.splice(index, 1);
+    } else {
+      this.pinedItem.push(id);
+    }
+    if (this.pinedItem.length <= 0) {
+      this.pined = false;
+    } else {
+      this.pined = true;
+    }
   }
 
 }

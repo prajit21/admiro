@@ -5,5 +5,36 @@ import { Injectable } from '@angular/core';
 })
 export class LayoutService {
 
-  constructor() { }
+  public customizer: string = '';
+
+  public config = {
+    settings: {
+      layout_type: 'ltr',
+      layout_version: 'light',
+      sidebar_type: 'compact-wrapper sidebar-open',
+      icon: "stroke-svg",
+    },
+    color: {
+      primary_color: '#308e87',
+      secondary_color: '#f39159',
+    },
+  };
+
+  constructor() {
+    if (this.config.settings.layout_type == 'box-layout') {
+      document.body.classList.add('box-layout');
+    }
+    document
+      .getElementsByTagName('html')[0]
+      .setAttribute('dir', this.config.settings.layout_type);
+
+    document.documentElement.style.setProperty(
+      '--theme-deafult',
+      this.config.color.primary_color
+    );
+    document.documentElement.style.setProperty(
+      '--theme-secondary',
+      this.config.color.secondary_color
+    );
+  }
 }

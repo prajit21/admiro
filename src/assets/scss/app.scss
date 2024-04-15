@@ -1,13 +1,38 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import"../../../node_modules/ngx-bar-rating/themes/br-default-theme.scss";
+@import"../../../node_modules/ngx-bar-rating/themes/br-horizontal-theme.scss";
+@import"../../../node_modules/ngx-bar-rating/themes/br-movie-theme.scss";
+@import"../../../node_modules/ngx-bar-rating/themes/br-square-theme.scss";
+@import"../../../node_modules/ngx-bar-rating/themes/br-stars-theme.scss";
+@import"../../../node_modules/ngx-bar-rating/themes/br-vertical-theme.scss";
+
+
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import "../node_modules/flatpickr/dist/flatpickr.css";
+
 // owl-carousel-o sccss//
 
 @import"../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss";
 @import "../../../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss";
 
+//gallary//
+@import '../node_modules/@angular/cdk/overlay-prebuilt.css';
+
+//dropzone//
+@import 'dropzone/dist/min/dropzone.min.css';
+
+
+//todo//
+@import "./vendors/todo.scss";
+
+//icon scss//
+
+@import "./flag-icon";
 @import "../scss/feather-icon.scss";
 @import "../scss/icoicon/icons";
 @import "../scss/fontawesome.scss";
+@import "./whether-icon.scss"; 
 @import "../scss/themify.scss";
 
 // Icon

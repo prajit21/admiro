@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Left Border Alert</h3>
+        <p class="mt-1 mb-0">Use the <code>.border-left-wrapper </code>to change border-left radius.</p>
+    </div>
+    <div class="card-body live-dark">
+        <div class="alert alert-light-dark light alert-dismissible fade  text-dark border-left-wrapper mb-0"
+            [ngClass]="alerts3 ?'show':'hide'">
+            <i class="fa-solid fa-circle-info"> </i>
+            <p class="mb-0">You can check in on some of those fields below. </p>
+            <button class="btn-close" type="button" (click)="close3()"></button>
+        </div>
+    </div>
+</div>

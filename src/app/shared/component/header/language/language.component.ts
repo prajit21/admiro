@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavmenuService } from '../../../services/navmenu.service';
+import { TranslateService } from '@ngx-translate/core';
+import { NavmenuService } from '../../../../shared/services/navmenu.service';
 
 interface selectedlanguage {
   language?: string;
@@ -10,8 +11,6 @@ interface selectedlanguage {
 
 @Component({
   selector: 'app-language',
-  standalone: true,
-  imports: [],
   templateUrl: './language.component.html',
   styleUrl: './language.component.scss'
 })
@@ -49,10 +48,15 @@ export class LanguageComponent {
     icon: 'us'
   }
   
-  constructor(public navServices: NavmenuService) { }
+  constructor(public navServices: NavmenuService, private translate: TranslateService) { }
 
   ngOnInit() {}
 
-
+  changeLanguage(lang: selectedlanguage) {
+    this.translate.use(lang.code)
+    this.selectedLanguage = lang;
+  }
+  
+ 
 
 }

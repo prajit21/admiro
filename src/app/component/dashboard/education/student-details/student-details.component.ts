@@ -3,8 +3,6 @@ import { StudentDetails } from '../../../../shared/data/dashboard/education/educ
 
 @Component({
   selector: 'app-student-details',
-  standalone: true,
-  imports: [],
   templateUrl: './student-details.component.html',
   styleUrl: './student-details.component.scss'
 })

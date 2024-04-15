@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-header pb-0">
+        <h3>Badges With Buttons</h3>
+        <p class="mt-1 mb-0"> Add icons as a badge inside the button with the help of <code>.btn</code> class.</p>
+    </div>
+    <div class="card-body button-badge">
+        <div class="badge-spacing flex-column align-items-start">
+            @for(badgesitem of buttonspartData; track badgesitem){
+            <button class="btn btn-{{badgesitem.color}} d-flex align-items-center rounded-1" type="button">
+                {{badgesitem.text}}
+                <span class="badge rounded-circle btn-p-space btn-light text-dark ms-2">
+                    <i class="{{badgesitem.icon}}"> </i>
+                </span>
+            </button>
+            }
+        </div>
+    </div>
+</div>

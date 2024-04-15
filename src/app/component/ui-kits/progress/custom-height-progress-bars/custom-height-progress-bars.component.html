@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Custom Sizes</h3>
+        <p class="mt-1 mb-0">
+            customize the progress bar height with the help of giving height to bar.</p>
+    </div>
+    <div class="card-body progress-showcase">
+        <div class="row">
+            <div class="col">
+                @for(customheightitem of customheightData; track customheightitem){
+                <div class="progress" [ngStyle]="{'height':customheightitem.value1}">
+                    <div class="progress-bar {{customheightitem.class}}" role="progressbar"
+                        [ngStyle]="{'width':customheightitem.value2}" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

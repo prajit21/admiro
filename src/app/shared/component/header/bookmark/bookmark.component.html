@@ -22,7 +22,9 @@
             <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="index.html">
                     <svg class="svg-color">
                         <use href="assets/svg/iconly-sprite.svg#cube"></use>
-                    </svg></a></div>
+                    </svg>
+                </a>
+            </div>
             <div class="d-flex justify-content-between align-items-center w-100"><a href="index.html">Dashboard</a>
                 <svg class="svg-color icon-star">
                     <use href="assets/svg/iconly-sprite.svg#star"></use>
@@ -53,3 +55,78 @@
         </li>
     </ul>
 </div>
+<!-- <a href="javascript:void(0)">
+    <svg class="svg-color" (click)="openBookMark()">
+        <use href="assets/svg/iconly-sprite.svg#Star"></use>
+    </svg>
+</a>
+<div class="custom-menu bookmark-dropdown py-0 overflow-hidden" [class.show]="bookmark">
+    <h5 class="title bg-primary-light">Bookmark</h5>
+    <div class="back">
+        <ul>
+            <li>
+                <div class="bookmark position-relative">
+                    <form class="mb-3">
+                        <div class="input-group ">
+                            <input class="form-control" [(ngModel)]="text" [ngModelOptions]="{ standalone: true }"
+                                (keyup)="searchTerm(text)" placeholder="Search Bookmark...">
+                            <span class="input-group-text">
+                                <svg class="svg-color">
+                                    <use href="assets/svg/iconly-sprite.svg#Search"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        @if(menuItems.length){
+                        <div class="Typeahead-menu custom-scrollbar" [class.is-open]="searchResult"
+                            id="boomark-search-outer">
+                            @for(item of menuItems | slice : 0 : 8; track item){
+                            <div class="ProfileCard u-cf">
+                                <div class="ProfileCard-avatar">
+                                    <svg class="svg-color stroke-primary">
+                                        <use attr.xlink:href="assets/svg/iconly-sprite.svg#{{item.icon}}"></use>
+                                    </svg>
+                                </div>
+                                <div class="ProfileCard-details">
+                                    <div class="ProfileCard-realName d-flex align-items-center gap-1">
+                                        <a [routerLink]="item.path" (click)="removeFix()">{{ item?.title }}</a>
+                                        <span class="pull-right ms-auto" (click)="addToBookmark(item)">
+                                            <svg class="svg-color icon-star" [class.starred]="item.bookmark">
+                                                <use href="assets/svg/iconly-sprite.svg#Star"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        }
+                        <div class="Typeahead-menu is-open" [class.is-open]="searchResultEmpty">
+                            <div class="tt-dataset tt-dataset-0">
+                                <div class="EmptyMessage">Opps!! There are no result found.</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            @for(item of bookmarkItems; track item){
+            <li class="d-flex align-items-center bg-light-{{item.color}}">
+                <div class="flex-shrink-0 me-2">
+                    <a [routerLink]="item.path">
+                        <svg class="svg-color stroke-{{item.color}}">
+                            <use attr.xlink:href="assets/svg/iconly-sprite.svg#{{item.icon}}"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <a [routerLink]="item.path">{{ item.title }}</a>
+                    <span class="pull-right ms-auto" (click)="addToBookmark(item)">
+                        <svg class="svg-color icon-star" [class.starred]="item.bookmark">
+                            <use href="assets/svg/iconly-sprite.svg#Star"></use>
+                        </svg>
+                    </span>
+                </div>
+            </li>
+            }
+        </ul>
+    </div>
+</div> -->

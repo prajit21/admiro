@@ -11,12 +11,12 @@
         justify-content: center;
     }
     .icons-item{
-        display: block;
-        text-align: center;
-        border: 1px solid var(--light-semi-gray);
-        padding: 20px;
-        border-radius: 4px;
-        width: calc(20% - 10px);
+		display: block;
+		text-align: center;
+		border: 1px solid var(--light-semi-gray);
+		padding: 20px;
+		border-radius: 4px;
+		width: calc(20% - 10px);
         @media (max-width:1399px) {
             width: calc(25% - 10px);            
         }

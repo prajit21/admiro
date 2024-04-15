@@ -3,8 +3,6 @@ import { Assignments } from '../../../../shared/data/dashboard/education/educati
 
 @Component({
   selector: 'app-assignments',
-  standalone: true,
-  imports: [],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.scss'
 })

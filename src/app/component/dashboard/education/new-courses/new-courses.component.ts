@@ -3,8 +3,6 @@ import { NewCourses } from '../../../../shared/data/dashboard/education/educatio
 
 @Component({
   selector: 'app-new-courses',
-  standalone: true,
-  imports: [],
   templateUrl: './new-courses.component.html',
   styleUrl: './new-courses.component.scss'
 })

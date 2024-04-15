@@ -1,0 +1,22 @@
+<div class="card height_equal">
+    <div class="card-header pb-0">
+        <h4>Live alert</h4>
+        <p class="desc mb-0 mt-1"><span>Click the button below to show an alert,then dismiss it with the built-in close
+                button.</span><code></code>
+            <span></span>
+        </p>
+    </div>
+    <div class="card-body live-dark">
+        @for( data of array; track data){
+        @if(showLog == true){
+        <div id="liveAlertPlaceholder">
+            <div class="alert alert-light-info mb-3 alert-dismissible fade" [ngClass]="alerts2 ? 'show':'hide'">
+                <div>Nice, you triggered this alert message!</div>
+                <button type="button" class="btn-close" (click)="close(data)"></button>
+            </div>
+        </div>
+         }
+        }
+        <button class="btn btn-dark mt-3 rounded-2" id="liveAlertBtn" type="button" (click)="onShowLog()">Show live alert</button>
+    </div>
+</div>

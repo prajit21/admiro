@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header pb-0">
+        <h3>Flush Accordion </h3>
+        <p class="mt-1 mb-0">Add <code>.accordion-flush</code> to remove the default background-color, border,
+            etc.</p>
+    </div>
+    <div class="card-body">
+        <div class="accordion accordion-flush dark-accordion" ngbAccordion [closeOthers]="true">
+            @for( fulshitem of flushAccordionData; track fulshitem){
+            <div class="accordion-item" ngbAccordionItem [collapsed]="fulshitem.panel !== 'First'">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed {{fulshitem.class}}" type="button"
+                        ngbAccordionButton>{{fulshitem.title}}</button>
+                </h2>
+                <div class="accordion-collapse collapse" ngbAccordionCollapse>
+                    <div class="accordion-body" ngbAccordionBody>
+                        <ng-template>
+                            <ul class="d-flex flex-column gap-1 accordions-content">
+                                @for( fulshData of fulshitem.dis; track fulshData){
+                                <li [innerHTML]="fulshData.list"></li>
+                                }
+                            </ul>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

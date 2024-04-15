@@ -3,8 +3,6 @@ import { UpcomingClasses } from '../../../../shared/data/dashboard/education/edu
 
 @Component({
   selector: 'app-upcoming-classes',
-  standalone: true,
-  imports: [],
   templateUrl: './upcoming-classes.component.html',
   styleUrl: './upcoming-classes.component.scss'
 })

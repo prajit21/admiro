@@ -3,13 +3,11 @@ import { TransitionHistory } from '../../../../shared/data/dashboard/default/def
 
 @Component({
   selector: 'app-transition-history',
-  standalone: true,
-  imports: [],
   templateUrl: './transition-history.component.html',
   styleUrl: './transition-history.component.scss'
 })
 export class TransitionHistoryComponent {
 
-    public transitionHistory = TransitionHistory;
+  public transitionHistory = TransitionHistory;
 
 }

@@ -3,8 +3,6 @@ import { BestSeller } from '../../../../shared/data/dashboard/ecommerce/ecommerc
 
 @Component({
   selector: 'app-best-seller',
-  standalone: true,
-  imports: [],
   templateUrl: './best-seller.component.html',
   styleUrl: './best-seller.component.scss'
 })

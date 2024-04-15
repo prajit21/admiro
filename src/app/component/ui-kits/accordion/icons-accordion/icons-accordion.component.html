@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header">
+        <h3>With Icons Accordion </h3>
+        <p class="mt-1 mb-0">
+            Use <code>icons </code>with <code>.accordion  </code> to give better look.</p>
+    </div>
+    <div class="card-body accordion-border">
+        <div class="accordion" ngbAccordion [closeOthers]="true">
+            @for(accordionitem of iconaccordionData; track accordionitem){
+            <div class="accordion-item" ngbAccordionItem>
+                <h2 class="accordion-header" ngbAccordionHeader>
+                    <button class="accordion-button collapsed gap-2 accordion-light-secondary active text-secondary"
+                        type="button" ngbAccordionButton>
+                        <i class="fa-regular fa-{{accordionitem.icon}}"></i>
+
+                        {{accordionitem.title}}
+                        <i class="iconly-Arrow-Down-2 icli ms-auto icon"></i>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse show" ngbAccordionCollapse>
+                    <div class="accordion-body" ngbAccordionBody>
+                        <p [innerHTML]="accordionitem.text"></p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

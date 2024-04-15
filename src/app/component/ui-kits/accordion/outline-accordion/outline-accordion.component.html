@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Outline Accordion </h3>
+        <p class="mt-1 mb-0">
+            Set border outline with accordion using <code>.accordion-wrapper</code> class.</p>
+    </div>
+    <div class="card-body">
+        <div class="accordion dark-accordion" id="simpleaccordion" ngbAccordion [closeOthers]="true">
+            @for( outlineitem of OutlineAccordionData; track outlineitem){
+            <div class="accordion-item accordion-wrapper accordion-left-border" ngbAccordionItem>
+                <h2 ngbAccordionHeader class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed accordion-light-primary text-primary" type="button"
+                        ngbAccordionButton>{{outlineitem.title}}
+                        <i class="iconly-Arrow-Down-2 icli ms-auto icon"></i>  
+                    </button>
+                </h2>
+                <div class="accordion-collapse {{outlineitem.class}}" id="collapseOne" ngbAccordionCollapse>
+                    <div class="accordion-body" ngbAccordionBody>
+                        <ng-template>
+                            <p [innerHTML]="outlineitem.text"></p>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

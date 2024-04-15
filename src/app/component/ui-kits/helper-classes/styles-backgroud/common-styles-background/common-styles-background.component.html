@@ -1,0 +1,11 @@
+@for( borders of data; track borders){
+<div class="border-wrapper h-100 border">
+    <h5 class="f-w-600 mb-3">{{borders.mainTitle}}</h5>
+    @for(item of borders.item; track item){
+    <div class="d-flex align-items-center mb-2 gap-2">
+        <div class="{{item.class}}"></div>
+        <span>{{item.title}}</span>
+    </div>
+    }
+</div>
+}

@@ -73,6 +73,16 @@ pre[class*=language-] {
 .swal2-checkbox {
     background: var(--white) !important;
 }
+
+.page-sidebar {
+	.sidebar-link.actived {
+		background-color: rgba($primary-color,0.3);
+        stroke: $primary-color;
+        color:$primary-color;
+	}
+}
+
+
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

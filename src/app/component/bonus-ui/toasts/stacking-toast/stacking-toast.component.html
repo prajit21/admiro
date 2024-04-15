@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Stacking Toasts</h3>
+        <p class="mb-0 mt-1">
+            You can stack toasts by wrapping them in a toast container, which will vertically add some
+            spacing.<code>[toast-*]</code>through change icons colors.</p>
+    </div>
+    <div class="card-body toast-rtl">
+        <div class="toast-container position-static">
+            @for(stackingitem of stackingData; track stackingitem){
+            @if(stackingitem.data == true){
+            <div class="toast show">
+                <div class="toast-header">
+                    <div class="feather toast-icons toast-{{stackingitem.class}}">
+                        <app-feathericon [icon]="'bell'"></app-feathericon>
+                    </div>
+                    <strong class="me-auto">{{stackingitem.theme}}</strong><small>{{stackingitem.time}}</small>
+                    <button class="btn-close" type="button" (click)="close(stackingitem.id)"></button>
+                </div>
+                <div class="toast-body toast-dark">{{stackingitem.dis}}</div>
+            </div>
+            }
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Collapse Accordion </h3>
+        <p class="mt-1 mb-0">
+            Use a link with the href attribute <code>(and a role="button"). </code>In both cases, the
+            <code>data-bs-toggle="collapse"  </code>is required.
+        </p>
+    </div>
+    <div class="card-body">
+        <p class="mb-2 common-flex"><a class="btn btn-info rounded-1" (click)="toggle()">Link with href</a>
+            <button class="btn btn-info rounded-1" type="button" (click)="open()">Button
+                with data-bs-target</button>
+        </p>
+        <div class="collapse" id="collapseExample" [class.show]="togglecollpese">
+            <div class="card card-body border mb-0">Some placeholder content for the collapse component. This
+                panel is hidden by default but revealed when the user activates the relevant trigger.</div>
+        </div>
+    </div>
+</div>

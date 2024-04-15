@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Icons With Tabs</h3>
+        <p class="mt-1 mb-0">Add icons with tabs using <code>.nav-link  </code>class.</p>
+    </div>
+    <div class="card-body">
+        <ul class="nav nav-tabs" ngbNav #nav="ngbNav" [(activeId)]="active">
+            <li class="nav-item" [ngbNavItem]="1">
+                <a class="nav-link active text-secondary" ngbNavLink>
+                    <i class="iconly-Home icli me-0"> </i>
+                    Home
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="tab-pane fade show " id="icon-home">
+                        <p class="pt-3"> Not limited to any states, boundaries. All over India providing cutting-edge
+                            design and website development services for over 12 years. We provide end to end digital
+                            solutions,right from designing your website/application development: Domain, Web Hosting,
+                            Email Hosting
+                            Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services
+                            timely and
+                            effectively.
+                        </p>
+                    </div>
+                </ng-template>
+            </li>
+            <li class="nav-item" [ngbNavItem]="2">
+                <a class="nav-link text-secondary" ngbNavLink>
+                    <i class="iconly-Profile icli"></i>Profile</a>
+                <ng-template ngbNavContent>
+                    <div class="flex-space flex-wrap align-items-center"><img class="tab-image"
+                            src="assets/images/avtar/7.jpg" alt="profile">
+                        <ul class="d-flex flex-column gap-1">
+                            <li><strong>Visit Us: </strong> 278 Green Avenue Oakland, CA 94612</li>
+                            <li><strong>Mail Us:</strong> MichaelMMcGowan&#64;teleworm.us</li>
+                            <li><strong>Contact Number: </strong> 510-767-0025</li>
+                        </ul>
+                    </div>
+                </ng-template>
+            </li>
+            <li class="nav-item" [ngbNavItem]="3">
+                <a class="nav-link text-secondary" ngbNavLink>
+                    <i class="iconly-Call icli"></i>Contact
+                </a>
+                <ng-template ngbNavContent>
+                    <p class="pt-3 mb-2">Us Technology offers web &amp; mobile development solutions for all industry
+                        verticals.Include a short form using fields that&apos;ll help your business understand
+                        who&apos;s contacting them.</p>
+                    <label class="form-label" for="exampleFormControlone">Email address</label>
+                    <input class="form-control" type="email" placeholder="youremail&#64;gmail.com">
+                </ng-template>
+            </li>
+        </ul>
+        <div class="tab-content" id="icon-tabContent">
+            <div [ngbNavOutlet]="nav" class="mt-4"></div>
+        </div>
+    </div>
+</div>

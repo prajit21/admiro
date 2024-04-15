@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Simple Accordion</h3>
+        <p class="mt-1 mb-0 mb-0">Using the <code>.accordion   </code>class to expand/collapse to accordion
+            content.</p>
+    </div>
+    <div class="card-body">
+        <div class="accordion dark-accordion" ngbAccordion [closeOthers]="true">
+            @for(simpleaccordionitem of simpleAccordionData; track simpleaccordionitem){
+            <div class="accordion-item" ngbAccordionItem [collapsed]="simpleaccordionitem.panel !== 'First'">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed {{simpleaccordionitem.class}}" type="button"
+                        ngbAccordionButton>{{simpleaccordionitem.title}}
+                        <i class="iconly-Arrow-Down-2 icli ms-auto icon"></i></button>
+                </h2>
+                <div class="accordion-collapse collapse" ngbAccordionCollapse>
+                    <div class="accordion-body" ngbAccordionBody>
+                        <ng-template>
+                            @if(simpleaccordionitem.link == true){
+                            <p>The web design process allows designers to adjust to any preferences and provide
+                                effective
+                                solutions. There are many standard components of every web design, including:</p>
+                            <ul class="d-flex flex-column gap-2 accordions-content">
+                                <li>1. Layout</li>
+                                <li>2. Images</li>
+                                <li>3. Visual hierarchy</li>
+                                <li>4. Color scheme</li>
+                                <li>5. Typography</li>
+                                <li>6. Navigation</li>
+                                <li>7. Readability</li>
+                                <li>8. Content</li>
+                            </ul>
+                            }@else{
+                            <p class="mb-0" [innerHTML]="simpleaccordionitem.text"></p>
+                            }
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

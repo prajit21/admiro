@@ -1,0 +1,18 @@
+<div class="row">
+    @for(cardData of InfoData; track cardData){
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-header {{ cardData.headerClass }}">
+                <h3 class="{{ cardData.textClass}}">{{ cardData.heading }}</h3>
+            </div>
+            <div class="card-body {{ cardData.bodyClass }}">
+                <h5 class="pb-2 f-w-500">{{ cardData.title }} </h5>
+                <p class="mb-0">{{ cardData.desc }}</p>
+            </div>
+            <div class="card-footer {{ cardData.footerClass }}">
+                <h6 class="mb-0 text-end">{{ cardData.FooterTitle }}</h6>
+            </div>
+        </div>
+    </div>
+    }
+</div>

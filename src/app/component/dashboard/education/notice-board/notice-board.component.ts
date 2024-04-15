@@ -3,13 +3,12 @@ import { NoticeBoard } from '../../../../shared/data/dashboard/education/educati
 
 @Component({
   selector: 'app-notice-board',
-  standalone: true,
-  imports: [],
   templateUrl: './notice-board.component.html',
   styleUrl: './notice-board.component.scss'
 })
 export class NoticeBoardComponent {
 
   public noticeBoard = NoticeBoard;
+
 
 }

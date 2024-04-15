@@ -3,8 +3,6 @@ import { LatestActivity } from '../../../../shared/data/dashboard/default/defaul
 
 @Component({
   selector: 'app-letest-activity',
-  standalone: true,
-  imports: [],
   templateUrl: './letest-activity.component.html',
   styleUrl: './letest-activity.component.scss'
 })

@@ -1,16 +1,19 @@
-<div class="translate_wrapper">
-    <div class="current_lang"><a class="lang" href="javascript:void(0)"><i class="flag-icon flag-icon-us"></i>
-        <h6 class="lang-txt f-w-700">ENG</h6>
-      </a></div>
-    <ul class="custom-menu profile-menu language-menu py-0 more_lang">
-      <li class="d-block"><a class="lang" href="#" data-value="English"><i class="flag-icon flag-icon-us"></i>
-          <div class="lang-txt">English</div>
-        </a></li>
-      <li class="d-block"><a class="lang" href="#" data-value="fr"><i class="flag-icon flag-icon-fr"></i>
-          <div class="lang-txt">Français</div>
-        </a></li>
-      <li class="d-block"><a class="lang" href="#" data-value="es"><i class="flag-icon flag-icon-es"></i>
-          <div class="lang-txt">Español</div>
-        </a></li>
-    </ul>
-  </div>
+<div class="translate_wrapper" [class.active]="navServices.language">
+    <div class="current_lang">
+        <div class="lang">
+            <i class="flag-icon flag-icon-{{selectedLanguage.icon}}"></i>
+        </div>
+    </div>
+    <div class="more_lang" [class.active]="navServices.language">
+        @for(lang of languages; track lang){
+        <div class="lang" data-value="en" (click)="changeLanguage(lang)">
+            <i class="flag-icon flag-icon-{{lang.icon}}"></i>
+            <span class="lang-txt">{{lang.language}}
+                @if(lang.type){
+                <span>({{lang.type}})</span>
+                }
+            </span>
+        </div>
+        }
+    </div>
+</div>
