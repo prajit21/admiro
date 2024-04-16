@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
-import { jobCardsData } from '../../../../shared/data/job-search/job-search';
+import { jobcardsDetails } from '../../../../shared/data/job-search/job-search';
 
 @Component({
   selector: 'app-similar-jobs',
@@ -9,7 +9,7 @@ import { jobCardsData } from '../../../../shared/data/job-search/job-search';
 })
 export class SimilarJobsComponent {
 
-  public jobCardsData = jobCardsData;
+  public jobCardsData = jobcardsDetails;
   public rating = 3;
 
   constructor(public config: NgbRatingConfig) {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { jobCardsData } from '../../../shared/data/job-search/job-search';
+import { jobCardviewData } from '../../../shared/data/job-search/job-search';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -9,7 +9,7 @@ import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CardsViewComponent {
 
-  public jobCardsData = jobCardsData;
+  public jobCardsData = jobCardviewData;
 
   constructor(public config: NgbRatingConfig) {
     config.max = 5;

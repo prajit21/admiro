@@ -1,16 +1,16 @@
 @for( allData of questionData; track allData){
- @if(allData.heading){
-  <div class="faq-title">
-     <h6>{{ allData.heading }}</h6>
-  </div>
- }
+@if(allData.heading){
+<div class="faq-title">
+    <h3 class="f-w-700 mb-3">{{ allData.heading }}</h3>
+</div>
+}
 <div ngbAccordion [closeOthers]="true">
     @for( data of allData.data; track data){
     <div class="card" ngbAccordionItem [collapsed]="data.panel !== 'First'">
         <div class="card-header" ngbAccordionHeader>
             <h5 class="mb-0">
-                <button class="accordion-button btn btn-link collapsed" ngbAccordionButton>
-                    <i class="fa-regular fa-circle-question"></i> {{ data.title }}
+                <button class="btn btn-link collapsed ps-0" ngbAccordionButton>
+                    <i data-feather="help-circle"> </i>{{ data.title }}
                 </button>
             </h5>
         </div>

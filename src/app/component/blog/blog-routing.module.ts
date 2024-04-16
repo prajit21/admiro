@@ -13,7 +13,7 @@ const routes: Routes = [
         path : 'blog-details',
         component : BlogDetailsComponent,
         data : {
-          title : 'Blog Details',
+          title : 'Blog details',
           breadcrumb : 'Blog Details'
         }
       },

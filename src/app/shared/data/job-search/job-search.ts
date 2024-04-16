@@ -8,7 +8,7 @@ export interface Filter {
 
 export interface checkBoxData {
    checkTitle: string;
-   subTitle?: string;
+   for:string;
 }
 
 export interface jobdata {
@@ -34,24 +34,28 @@ export const filterData: Filter[] = [
       isCollapsed: false,
       checkBoxs: [
          {
-            checkTitle: 'New York',
-            subTitle: 'NY (399)'
+            for:'chk-ani10',
+            checkTitle: ' New York (399)',
+
          },
          {
-            checkTitle: 'San Francisco',
-            subTitle: 'CA (252)'
+            for:'chk-ani11',
+            checkTitle: 'San Francisco (252)',
+
          },
          {
-            checkTitle: 'Washington',
-            subTitle: 'DC (226)'
+            for:'chk-ani12',
+            checkTitle: 'Washington (226)',
+
          },
          {
-            checkTitle: 'Seattle',
-            subTitle: 'WA (242)'
+            for:'chk-ani13',
+            checkTitle: 'Seattle (242)',
+
          },
          {
-            checkTitle: 'Chicago',
-            subTitle: 'IL (187)'
+            for:'chk-ani14',
+            checkTitle: 'Chicago  (187)',
          }
       ],
       button: 'All Locations'
@@ -62,18 +66,23 @@ export const filterData: Filter[] = [
       isCollapsed: false,
       checkBoxs: [
          {
+            for:'chk-ani15',
             checkTitle: 'UI/Ux designer(25)',
          },
          {
+            for:'chk-ani16',
             checkTitle: 'Graphic designer(10)',
          },
          {
+            for:'chk-ani17',
             checkTitle: 'Front end designer(15)',
          },
          {
+            for:'chk-ani18',
             checkTitle: 'PHP developer(42)',
          },
          {
+            for:'chk-ani19',
             checkTitle: 'React Developer(5)',
          }
 
@@ -86,18 +95,23 @@ export const filterData: Filter[] = [
       isCollapsed: false,
       checkBoxs: [
          {
+            for:'chk-ani20',
             checkTitle: 'Computer Software(14)',
          },
          {
+            for:'chk-ani21',
             checkTitle: ' IT Engineer(10)',
          },
          {
+            for:'chk-ani22',
             checkTitle: 'Service industry(20)',
          },
          {
+            for:'chk-ani123',
             checkTitle: 'Accounting(34)',
          },
          {
+            for:'chk-ani24',
             checkTitle: ' Financial Services(5)',
          }
 
@@ -110,18 +124,23 @@ export const filterData: Filter[] = [
       isCollapsed: false,
       checkBoxs: [
          {
+            for:'chk-ani25',
             checkTitle: 'HTML,scss & sass',
          },
          {
+            for:'chk-ani26',
             checkTitle: 'Javascript',
          },
          {
+            for:'chk-ani27',
             checkTitle: ' Node.js',
          },
          {
+            for:'chk-ani28',
             checkTitle: 'Gulp & Pug',
          },
          {
+            for:'chk-ani29',
             checkTitle: 'Angular.js',
          }
 
@@ -132,68 +151,67 @@ export const filterData: Filter[] = [
 
 export const filterChackBox = [
    {
-
       id: "chk-ani",
       label: "Full-time",
       vacancy: 8688
    },
    {
-      id: "chk-ani1",
+      id: "chk-ani11",
       label: "Contract",
       vacancy: 503
    },
    {
-      id: "chk-ani2",
+      id: "chk-ani12",
       label: "Part-time",
       vacancy: 288
    },
    {
-      id: "chk-ani3",
+      id: "chk-ani13",
       label: "Internship",
       vacancy: 236
    },
    {
-      id: "chk-ani4",
+      id: "chk-ani14",
       label: "Temporary",
       vacancy: 146
    },
    {
-      id: "chk-ani5",
+      id: "chk-ani15",
       label: "Commission",
       vacancy: 25
    }
 ]
 
-export const jobCardsData: jobdata[] = [
+export const jobCardviewData: jobdata[] = [
    {
       id: 1,
       rating: 5,
       image: 'assets/images/job-search/1.jpg',
       title: 'UI/UX IT Frontend Developer',
       subTitle: '(L6) Salt Lake City, UT',
-      desc: 'We are looking for an experienced and Edmin designer and/or frontend engineer with expertise in accessibility to join our team , 3+ years of experience working in as a Frontend Engineer or comparable role. You won’t be a team of one though — you’ll be collaborating closely with other...',
+      desc: 'We are looking for an experienced and Admiro designer and/or frontend engineer with expertise in accessibility to join our team , 3+ years of experience working in as a Frontend Engineer or comparable role.',
       tagTitle: 'New',
       tagColor: 'primary',
       ribbion: false,
    },
    {
       id: 2,
-      rating: 4,
+      rating: 5,
       image: 'assets/images/job-search/2.jpg',
       title: 'React/React Native Developer',
       subTitle: 'San Diego, CA',
-      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface',
+      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercia.',
       tagTitle: 'New',
       tagColor: 'primary',
       ribbion: false,
    },
    {
       id: 3,
-      rating: 3,
+      rating: 5,
       image: 'assets/images/job-search/3.jpg',
       title: 'Senior UX designer',
       subTitle: 'Minneapolis, MN',
-      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.',
       tag: false,
       ribbion: true,
       ribbinIcon: 'love',
@@ -201,7 +219,195 @@ export const jobCardsData: jobdata[] = [
    },
    {
       id: 4,
-      rating: 4,
+      rating: 5,
+      image: 'assets/images/job-search/4.jpg',
+      title: 'Front end web developer',
+      subTitle: 'Cisco Lelystad, Netherlands',
+      desc: 'Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you.',
+      tag: false,
+      ribbion: false,
+      time: '3 days ago',
+   },
+   {
+      id: 5,
+      rating: 5,
+      image: 'assets/images/job-search/5.jpg',
+      title: 'Graphic designer',
+      subTitle: 'Infosys Lelystad, Netherlands',
+      desc: 'Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted.',
+      tag: false,
+      ribbion: false,
+      time: '3 days ago',
+   },
+   {
+      id: 6,
+      rating: 5,
+      image: 'assets/images/job-search/6.jpg',
+      title: 'Designer, CRM',
+      subTitle: 'Citrix Lelystad, Netherlands',
+      desc: 'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave.',
+      tag: false,
+      ribbion: false,
+      ribbinIcon: '',
+      time: '3 days ago',
+   },
+   {
+      id: 7,
+      rating: 5,
+      image: 'assets/images/job-search/2.jpg',
+      title: 'React/React Native Developer',
+      subTitle: 'San Diego, CA',
+      desc: 'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention.',
+      tag: false,
+      ribbion: true,
+      ribbinIcon: 'love',
+      time: '5 days ago',
+   },
+   {
+      id: 8,
+      rating: 5,
+      image: 'assets/images/job-search/2.jpg',
+      title: 'React/React Native Developer',
+      subTitle: 'San Diego, CA',
+      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial.',
+      tag: false,
+      ribbion: true,
+      ribbinIcon: 'love',
+      time: '5 days ago',
+   },
+   {
+      id: 9,
+      rating: 5,
+      image: 'assets/images/job-search/3.jpg',
+      title: 'Senior UX designer',
+      subTitle: 'Minneapolis, MN',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.',
+      tag: false,
+      ribbion: false,
+      ribbinIcon: 'love',
+      time: '5 days ago',
+   },
+   {
+      id: 10,
+      rating: 5,
+      image: 'assets/images/job-search/3.jpg',
+      title: 'Senior UX designer',
+      subTitle: 'Minneapolis, MN',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.',
+      tag: false,
+      ribbion: false,
+      ribbinIcon: 'love',
+      time: '5 days ago',
+   },
+   {
+      id: 11,
+      rating: 5,
+      image: 'assets/images/job-search/5.jpg',
+      title: 'Graphic designer',
+      subTitle: 'Infosys Lelystad, Netherlands',
+      desc: 'Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted.',
+      tag: false,
+      ribbion: false,
+      time: '3 days ago',
+   },
+   {
+      id: 12,
+      rating: 5,
+      image: 'assets/images/job-search/6.jpg',
+      title: 'Designer, CRM',
+      subTitle: 'Citrix Lelystad, Netherlands',
+      desc: 'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave.',
+      tag: false,
+      ribbion: false,
+      ribbinIcon: '',
+      time: '3 days ago',
+   },
+   {
+      id: 13,
+      rating: 5,
+      image: 'assets/images/job-search/1.jpg',
+      title: 'UI/UX IT Frontend Developer',
+      subTitle: '(L6) Salt Lake City, UT',
+      desc: 'We are looking for an experienced and Admiro designer and/or frontend engineer with expertise in accessibility to join our team , 3+ years of experience working in as a Frontend Engineer or comparable role.',
+      tagTitle: 'New',
+      tagColor: 'primary',
+      ribbion: false,
+   },
+   {
+      id: 14,
+      rating: 5,
+      image: 'assets/images/job-search/2.jpg',
+      title: 'React/React Native Developer',
+      subTitle: 'San Diego, CA',
+      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercia.',
+      tagTitle: 'New',
+      tagColor: 'primary',
+      ribbion: false,
+   },
+   {
+      id: 15,
+      rating: 5,
+      image: 'assets/images/job-search/4.jpg',
+      title: 'Front end web developer',
+      subTitle: 'Cisco Lelystad, Netherlands',
+      desc: 'Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects.',
+      tag: false,
+      ribbion: false,
+      time: '3 days ago',
+   },
+   {
+      id: 16,
+      rating: 5,
+      image: 'assets/images/job-search/3.jpg',
+      title: 'Senior UX designer',
+      subTitle: 'Minneapolis, MN',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience.',
+      tag: false,
+      ribbion: true,
+      ribbinIcon: 'love',
+      time: '2 days ago',
+   },
+
+
+]
+export const jobcardsListView: jobdata[] = [
+   {
+      id: 1,
+      rating: 5,
+      image: 'assets/images/job-search/1.jpg',
+      title: 'UI/UX IT Frontend Developer',
+      subTitle: '(L6) Salt Lake City, UT',
+      desc: 'We are looking for an experienced and Admiro designer and/or frontend engineer with expertise in accessibility to join our team , 3+ years of experience working in as a Frontend Engineer or comparable role. You won’t be a team of one though — you’ll be collaborating closely with other...',
+      tagTitle: 'New',
+      tagColor: 'primary',
+      ribbion: false,
+   },
+   {
+      id: 2,
+      rating: 5,
+      image: 'assets/images/job-search/2.jpg',
+      title: 'React/React Native Developer',
+      subTitle: 'San Diego, CA',
+      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface components and',
+      tagTitle: 'New',
+      tagColor: 'primary',
+      ribbion: false,
+   },
+   {
+      id: 3,
+      rating: 5,
+      image: 'assets/images/job-search/3.jpg',
+      title: 'Senior UX designer',
+      subTitle: 'Minneapolis, MN',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.',
+      tag: false,
+      ribbion: true,
+      ribbinIcon: 'love',
+      time: '2 days ago',
+   },
+   {
+      id: 4,
+      rating: 5,
       image: 'assets/images/job-search/4.jpg',
       title: 'Front end web developer',
       subTitle: 'Cisco Lelystad, Netherlands',
@@ -212,7 +418,7 @@ export const jobCardsData: jobdata[] = [
    },
    {
       id: 5,
-      rating: 3,
+      rating: 5,
       image: 'assets/images/job-search/5.jpg',
       title: 'Graphic designer',
       subTitle: 'Infosys Lelystad, Netherlands',
@@ -223,42 +429,65 @@ export const jobCardsData: jobdata[] = [
    },
    {
       id: 6,
-      rating: 3,
+      rating: 5,
       image: 'assets/images/job-search/6.jpg',
       title: 'Designer, CRM',
       subTitle: 'Citrix Lelystad, Netherlands',
       desc: 'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.',
       tag: false,
       ribbion: false,
-      ribbinIcon: '',
       time: '3 days ago',
    },
    {
       id: 7,
-      rating: 4,
-      image: 'assets/images/job-search/2.jpg',
-      title: 'React/React Native Developer',
-      subTitle: 'San Diego, CA',
-      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive',
+      rating: 5,
+      image: 'assets/images/job-search/5.jpg',
+      title: 'UI designer E-commerce',
+      subTitle: 'EricssonLelystad, Netherlands',
+      desc: 'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.',
       tag: false,
       ribbion: true,
-      ribbinIcon: 'love',
-      time: '5 days ago',
+      time: '3 days ago',
    },
    {
       id: 8,
-      rating: 3,
+      rating: 5,
       image: 'assets/images/job-search/3.jpg',
       title: 'Senior UX designer',
       subTitle: 'Minneapolis, MN',
-      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards',
+      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.',
       tag: false,
       ribbion: false,
       time: '5 days ago',
    },
+]
+
+export const jobcardsDetails: jobdata[] = [
    {
-      id: 9,
-      rating: 3,
+      id: 1,
+      rating: 5,
+      image: 'assets/images/job-search/2.jpg',
+      title: 'React/React Native Developer',
+      subTitle: 'San Diego, CA',
+      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface components and',
+      tagTitle: 'New',
+      tagColor: 'primary',
+      ribbion: false,
+   },
+   {
+      id: 2,
+      rating: 5,
+      image: 'assets/images/job-search/4.jpg',
+      title: 'Front end web developer',
+      subTitle: 'Cisco Lelystad, Netherlands',
+      desc: 'Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become.',
+      tag: false,
+      ribbion: false,
+      time: '3 days ago',
+   },
+   {
+      id: 3,
+      rating: 5,
       image: 'assets/images/job-search/5.jpg',
       title: 'Graphic designer',
       subTitle: 'Infosys Lelystad, Netherlands',
@@ -268,8 +497,8 @@ export const jobCardsData: jobdata[] = [
       time: '3 days ago',
    },
    {
-      id: 10,
-      rating: 3,
+      id: 4,
+      rating: 5,
       image: 'assets/images/job-search/6.jpg',
       title: 'Designer, CRM',
       subTitle: 'Citrix Lelystad, Netherlands',
@@ -277,53 +506,6 @@ export const jobCardsData: jobdata[] = [
       tag: false,
       ribbion: false,
       time: '3 days ago',
-   },
-   {
-      id: 11,
-      rating: 5,
-      image: 'assets/images/job-search/1.jpg',
-      title: 'UI/UX IT Frontend Developer',
-      subTitle: '(L6) Salt Lake City, UT',
-      desc: 'We are looking for an experienced and riho designer and/or frontend engineer with expertise in accessibility to join our team , 3+ years of experience working in as a Frontend Engineer or comparable role. You won’t be a team of one though — you’ll be collaborating closely with other...',
-      tagTitle: 'New',
-      tagColor: 'primary',
-      ribbion: false,
-   },
-   {
-      id: 12,
-      rating: 4,
-      image: 'assets/images/job-search/2.jpg',
-      title: 'React/React Native Developer',
-      subTitle: 'San Diego, CA',
-      desc: 'Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface',
-      tagTitle: 'New',
-      tagColor: 'primary',
-      ribbion: false,
-      // time: false,
-   },
-   {
-      id: 13,
-      rating: 4,
-      image: 'assets/images/job-search/4.jpg',
-      title: 'Front end web developer',
-      subTitle: 'Cisco Lelystad, Netherlands',
-      desc: 'Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become.',
-      tag: false,
-      ribbion: false,
-      ribbinIcon: '',
-      time: '3 days ago',
-   },
-   {
-      id: 14,
-      rating: 3,
-      image: 'assets/images/job-search/3.jpg',
-      title: 'Senior UX designer',
-      subTitle: 'Minneapolis, MN',
-      desc: 'The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards',
-      tag: false,
-      ribbion: true,
-      ribbinIcon: 'love',
-      time: '2 days ago',
    },
 ]
 

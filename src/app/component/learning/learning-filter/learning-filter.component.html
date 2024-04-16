@@ -1,7 +1,9 @@
 <div class="md-sidebar" (clickOutside)="clickOutside()">
-    <a class="btn btn-primary email-aside-toggle md-sidebar-toggle" (click)="openFilter()">Learning filter</a>
+    <a class="btn btn-primary email-aside-toggle md-sidebar-toggle" (click)="openFilter()">
+        Learning filter
+    </a>
     <div class="md-sidebar-aside job-sidebar" [class.open]="isCollapsed">
-        <div class="default-according style-1 faq-accordion job-accordion">
+        <div class="default-according style-1 faq-accordion job-accordion accordion learning-card accordion-flush" id="accordionoc">
             <div class="row">
                 <div class="col-xl-12">
                     <app-find-cource></app-find-cource>

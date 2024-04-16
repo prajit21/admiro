@@ -8,23 +8,30 @@
                 <div class="job-search">
                     <div class="card-body">
                         <div class="d-flex">
-                            <img class="img-40 img-fluid m-r-20" src="assets/images/job-search/1.jpg"   alt="job">
-                            <div class="flex-grow-1">
-                                <h6 class="f-w-600"><a class="font-primary" href="#">Product Designer (UI/UX
-                                        Designer)</a><span class="pull-right">
-                                        <button class="btn btn-primary" type="button">Apply</button></span></h6>
-                                <p>Endless - United States<span><i class="fa fa-star font-warning"></i>
-                                        <i class="fa fa-star font-warning"></i>
-                                        <i class="fa fa-star font-warning"></i>
-                                        <i class="fa fa-star font-warning"></i>
-                                        <i class="fa fa-star font-warning"></i>
+                            <img class="img-40 img-fluid m-r-20" src="assets/images/job-search/1.jpg" alt="">
+                            <div class="flex-grow-1 w-100">
+                                <div>
+                                    <h5>
+                                        <a class="f-w-700" href="#">Product Designer (UI/UX Designer)</a>
+                                        <span class="pull-right">
+                                            <button class="btn btn-primary" type="button">Apply </button>
+                                        </span>
+                                    </h5>
+                                </div>
+                                <p>Endless - United States
+                                    <span>
+                                        <i class="fa-solid fa-star font-secondary"></i>
+                                        <i class="fa-solid fa-star font-secondary"> </i>
+                                        <i class="fa-solid fa-star font-secondary"> </i>
+                                        <i class="fa-solid fa-star font-secondary"> </i>
+                                        <i class="fa-solid fa-star font-secondary"> </i>
                                     </span>
                                 </p>
                             </div>
                         </div>
                         @for(jobData of jobDetail | slice:0:4; track jobData){
                         <div class="job-description">
-                            <h6>{{ jobData.title }}</h6>
+                            <h4 class="mb-2">{{ jobData.title }}</h4>
                             @if(jobData.liClass === true){
                             <ul>
                                 @for(data of jobData.data; track data){
@@ -34,7 +41,7 @@
                             }
                             @else{
                             @for(data of jobData.data; track data){
-                            <li> {{ data.desctiption }}</li>
+                            <p> {{ data.desctiption }}</p>
                             }
                             }
                         </div>
@@ -43,14 +50,14 @@
                             <button class="btn btn-primary" type="button">
                                 <span><i class="fa fa-check"></i></span> Save this job</button>
                             <button class="btn btn-primary" type="button"><span>
-                                <i class="fa fa-share-alt"></i></span>Share
+                                    <i class="fa fa-share-alt"></i></span>Share
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header-faq">
-                <h6 class="mb-0 f-w-600">Similar jobs</h6>
+                <h4 class="mb-0 mb-700"> Similar jobs</h4>
             </div>
             <app-similar-jobs></app-similar-jobs>
         </div>

@@ -62,7 +62,7 @@
                     <td>{{ data.experience}}</td>
                     <td>
                         <i class="fa-solid fa-eye font-primary pe-2"></i>
-                        <i class="icofont icofont-close-circled font-danger ps-2" (click)="removeItem(data.id)"></i>
+                        <i class="icofont icofont-close-circled font-danger ps-2"></i>
                     </td>
                 </tr>
                 }
@@ -74,8 +74,13 @@
                 }
             </tbody>
         </table>
-        <ngb-pagination class="ms-3" [collectionSize]="(total$ | async)!" [(page)]="service.page"
-            [pageSize]="service.pageSize">
-        </ngb-pagination>
+        <div class="dataTables_paginate paging_simple_numbers  d-flex justify-content-between">
+            <span class="mt-4">Showing {{ getStartingIndex() }} to {{ getEndingIndex() }} of {{ filteredData.length
+                }}
+                entries</span>
+            <ngb-pagination class="ms-3" [collectionSize]="(total$ | async)!" [(page)]="service.page"
+                [pageSize]="service.pageSize">
+            </ngb-pagination>
+        </div>
     </div>
 </div>

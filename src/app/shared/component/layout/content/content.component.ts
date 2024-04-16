@@ -11,7 +11,6 @@ export class ContentComponent {
 
   constructor(  public layout:LayoutService ,public navmenu:NavmenuService){}
 
-
   @HostListener('window:resize', ['$event'])
 
   onResize(event: number) {

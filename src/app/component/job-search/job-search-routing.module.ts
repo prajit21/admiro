@@ -13,8 +13,8 @@ const routes: Routes = [
         path : 'cards-view',
         component : CardsViewComponent,
         data : {
-          title : 'Cards View',
-          breadcrumb : 'Cards View',
+          title : 'Card View',
+          breadcrumb : 'Card View',
         }
       },
       {

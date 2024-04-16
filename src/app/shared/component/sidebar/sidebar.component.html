@@ -1,7 +1,7 @@
 <div class="logo-wrapper d-flex align-items-center">
     <a href="index.html">
         <img src="assets/images/logo/logo1.png" alt="logo" /></a>
-    <a class="close-btn sidebar-close" href="javascript:void(0)">
+    <a class="close-btn sidebar-close" (click)="openMenu()">
         <svg class="svg-color svg-white">
             <use href="assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
         </svg>
@@ -24,10 +24,18 @@
         <ng-template #recursiveMenu let-menuItems>
             @for(item of menuItems; track item){
             <li [ngClass]="{'sidebar-list':item.level == 1,'sidebar-main-title':item.headTitle1 }">
+                @if(item.level == 1){
+                    <i class="fa-solid fa-thumbtack"></i>
+                }
                 @if(item.headTitle1){
                 <div>
                     <h5 class="lan-1 f-w-700 sidebar-title">{{item.headTitle1 }}</h5>
                 </div>
+                }
+                @if(item.type === 'extTabLink'){
+                <a href="{{ !item.type ? null : item.path }}">
+                    {{ item.title | translate }}
+                </a>
                 }
                 @else{
                 <a [ngClass]="{'sidebar-link' : item.level == 1, 'submenu-title' : item.level == 2 ,'actived': item.active && item.level === 1}"
@@ -44,11 +52,9 @@
                     }@else{
                     {{ item.title }}
                     }
-                    <div class="according-menu">
-                        @if(item.children){
-                        <i class="fa fa-angle-{{ item.active ? 'down' : 'right' }} pull-right"></i>
-                        }
-                    </div>
+                    @if(item.children){
+                    <i class="iconly-Arrow-Right-2 icli"></i>
+                    }
                 </a>
                 }
                 @if(item.children){

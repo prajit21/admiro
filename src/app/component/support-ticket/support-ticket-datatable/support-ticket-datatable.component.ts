@@ -14,6 +14,7 @@ export class SupportTicketDatatableComponent {
   public countries$: Observable<supportDB[]>;
   public Data: supportDB[];
   public total$: Observable<number>;
+  public supportData = SUPPORTDB;
 
   @ViewChildren(NgbdSortableHeader2) headers: QueryList<NgbdSortableHeader2>;
 
@@ -29,6 +30,30 @@ export class SupportTicketDatatableComponent {
     });
   }
 
+
+  get filteredData(): supportDB[] {
+    return this.supportData.filter((person: { img: string, position: string, name: string, office: string, email: string }) => {
+      return person.img.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+        person.position.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+        person.name.toLowerCase().includes(this.service.searchTerm.toLowerCase())    ||
+        person.office.toLowerCase().includes(this.service.searchTerm.toLowerCase())    ||
+        person.email.toLowerCase().includes(this.service.searchTerm.toLowerCase())    
+    });
+  }
+
+
+  getStartingIndex(): number {
+    if (this.filteredData.length === 0) {
+      return 0;
+    }
+    return (this.service.page - 1) * this.service.pageSize + 1;
+  }
+
+  getEndingIndex(): number {
+    const endIndex = this.service.page * this.service.pageSize;
+    return endIndex > this.filteredData.length ? this.filteredData.length : endIndex;
+  }
+
   onSort({ column, direction }: SortEvent) {
     this.headers.forEach(header => {
       if (header.sortable !== column) {
@@ -39,12 +64,5 @@ export class SupportTicketDatatableComponent {
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
   }
-
-  removeItem(id: number) {
-    this.countries$.subscribe((data: supportDB[]) => {
-      data.map((elem: supportDB, i: number) => { elem.id == id && data.splice(i, 1) })
-    })
-  }
-
 
 }

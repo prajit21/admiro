@@ -4,20 +4,19 @@
             <app-job-filter></app-job-filter>
         </div>
         <div class="col-xxl-9 col-xl-8 box-col-12">
-            @for(cardData of jobCardsData | slice:0:8; track cardData){
+            @for(cardData of jobcardsListView; track cardData){
             <div class="card" [class.ribbon-vertical-left-wrapper]="cardData.ribbion == true">
                 @if(cardData.ribbion === true){
-                <div class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary">
-                    <i class="icofont icofont-love"></i>
-                </div>
+                <div class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"><i
+                        class="fa-regular fa-heart"></i></div>
                 }
                 <div class="job-search">
                     <div class="card-body">
                         <div class="d-flex">
                             <img class="img-40 img-fluid m-r-20" src="{{ cardData.image }}" alt="">
                             <div class="flex-grow-1">
-                                <h6 class="f-w-600">
-                                    <a class="font-primary" href="#">
+                                <h5 class=f-w-700>
+                                    <a class="text-primary" href="#">
                                         {{ cardData.title }}
                                     </a>
                                     @if(cardData.tagTitle){
@@ -26,7 +25,7 @@
                                     @else{
                                     <span class="pull-right">{{ cardData.time}}</span>
                                     }
-                                </h6>
+                                </h5>
                                 <p>{{ cardData.subTitle }}
                                     <span>
                                         <ngb-rating [rate]=" cardData.rating" class="font-warning"></ngb-rating>

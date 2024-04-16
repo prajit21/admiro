@@ -203,67 +203,67 @@ export const dashData: Routes = [
         },
         loadChildren: () => import('../../component/sample-page/sample-page.module').then(m => m.SamplePageModule),
     },
-    // {
-    //     path: 'gallary',
-    //     data: {
-    //         breadcrumb: 'Gallery'
-    //     },
-    //     loadChildren: () => import('../../component/gallery/gallery.module').then(m => m.GalleryModule),
-    // },
-    // {
-    //     path: 'blog',
-    //     data: {
-    //         breadcrumb: 'Blog'
-    //     },
-    //     loadChildren: () => import('../../component/blog/blog.module').then(m => m.BlogModule),
-    // },
-    // {
-    //     path: 'faq',
-    //     data: {
-    //         breadcrumb: 'FAQ'
-    //     },
-    //     loadChildren: () => import('../../component/faq/faq.module').then(m => m.FaqModule),
-    // },
-    // {
-    //     path: 'job',
-    //     data: {
-    //         breadcrumb: 'Job Search'
-    //     },
-    //     loadChildren: () => import('../../component/job-search/job-search.module').then(m => m.JobSearchModule),
-    // }, 
-    // {
-    //     path: 'learning',
-    //     data: {
-    //         breadcrumb: 'Learning'
-    //     },
-    //     loadChildren: () => import('../../component/learning/learning.module').then(m => m.LearningModule),
-    // },
-    // {
-    //     path: 'maps',
-    //     data: {
-    //         breadcrumb: 'Maps'
-    //     },
-    //     loadChildren: () => import('../../component/maps/maps.module').then(m => m.MapsModule),
-    // },
-    // {
-    //     path: 'editors',
-    //     data: {
-    //         breadcrumb: 'Editors'
-    //     },
-    //     loadChildren: () => import('../../component/editors/editors.module').then(m => m.EditorsModule),
-    // },
-    // {
-    //     path: 'knowledgebase',
-    //     data: {
-    //         breadcrumb: 'knowledgebase'
-    //     },
-    //     loadChildren: () => import('../../component/knowledgebase/knowledgebase.module').then(m => m.KnowledgebaseModule),
-    // },
-    // {
-    //     path: 'support-ticket',
-    //     data: {
-    //         breadcrumb: 'Apps'
-    //     },
-    //     loadChildren: () => import('../../component/support-ticket/support-ticket.module').then(m => m.SupportTicketModule),
-    // }
+    {
+        path: 'gallary',
+        data: {
+            breadcrumb: 'Gallery'
+        },
+        loadChildren: () => import('../../component/gallery/gallery.module').then(m => m.GalleryModule),
+    },
+    {
+        path: 'blog',
+        data: {
+            breadcrumb: 'Blog'
+        },
+        loadChildren: () => import('../../component/blog/blog.module').then(m => m.BlogModule),
+    },
+    {
+        path: 'faq',
+        data: {
+            breadcrumb: 'FAQ'
+        },
+        loadChildren: () => import('../../component/faq/faq.module').then(m => m.FaqModule),
+    },
+    {
+        path: 'job',
+        data: {
+            breadcrumb: 'Job Search'
+        },
+        loadChildren: () => import('../../component/job-search/job-search.module').then(m => m.JobSearchModule),
+    }, 
+    {
+        path: 'learning',
+        data: {
+            breadcrumb: 'Learning'
+        },
+        loadChildren: () => import('../../component/learning/learning.module').then(m => m.LearningModule),
+    },
+    {
+        path: 'maps',
+        data: {
+            breadcrumb: 'Maps'
+        },
+        loadChildren: () => import('../../component/maps/maps.module').then(m => m.MapsModule),
+    },
+    {
+        path: 'editors',
+        data: {
+            breadcrumb: 'Editors'
+        },
+        loadChildren: () => import('../../component/editors/editors.module').then(m => m.EditorsModule),
+    },
+    {
+        path: 'knowledgebase',
+        data: {
+            breadcrumb: 'knowledgebase'
+        },
+        loadChildren: () => import('../../component/knowledgebase/knowledgebase.module').then(m => m.KnowledgebaseModule),
+    },
+    {
+        path: 'support-ticket',
+        data: {
+            breadcrumb: 'Apps'
+        },
+        loadChildren: () => import('../../component/support-ticket/support-ticket.module').then(m => m.SupportTicketModule),
+    }
 ]

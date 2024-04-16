@@ -116,6 +116,10 @@ export class SidebarComponent {
     }
   }
 
+  openMenu() {
+    this.navServices.closeSidebar = !this.navServices.closeSidebar;
+  }
+
   isPined(itemid:number) {
     return this.pinedItem.includes(itemid);
   }

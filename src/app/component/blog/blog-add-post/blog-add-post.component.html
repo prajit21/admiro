@@ -2,9 +2,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-                <div class="card-header pb-0">
-                    <h4>Post Edit</h4>
-                    <p class="desc mb-0 mt-1"><span></span><code></code><span></span></p>
+                <div class="card-header">
+                    <h3>Post Edit</h3>
                 </div>
                 <div class="card-body add-post">
                     <form class="row needs-validation" novalidate="">
@@ -16,21 +15,21 @@
                                 <div class="valid-feedback">Looks good!</div>
                             </div>
                             <div class="mb-3">
-                                <label>Type:</label>
+                                <label class="mb-2">Type:</label>
                                 <div class="m-checkbox-inline">
                                     <label for="edo-ani">
-                                        <input class="radio-primary" id="edo-ani" type="radio" name="rdo-ani"
+                                        <input class="radio_animated" id="edo-ani" type="radio" name="rdo-ani"
                                             checked="">Text
                                     </label>
                                     <label for="edo-ani1">
-                                        <input class="radio-primary" id="edo-ani1" type="radio" name="rdo-ani">Image
+                                        <input class="radio_animated" id="edo-ani1" type="radio" name="rdo-ani">Image
                                     </label>
                                     <label for="edo-ani2">
-                                        <input class="radio-primary" id="edo-ani2" type="radio" name="rdo-ani"
+                                        <input class="radio_animated" id="edo-ani2" type="radio" name="rdo-ani"
                                             checked="">Audio
                                     </label>
                                     <label for="edo-ani3">
-                                        <input class="radio-primary" id="edo-ani3" type="radio" name="rdo-ani">Video
+                                        <input class="radio_animated" id="edo-ani3" type="radio" name="rdo-ani">Video
                                     </label>
                                 </div>
                             </div>
@@ -51,12 +50,15 @@
                             </div>
                         </div>
                     </form>
-                    <div class="dropzone border-0 dropzone-bg">
-                        <dropzone [config]="Config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
-                    </div>
+                    <form class="dropzone">
+                        <div class="dropzone-wrapper">
+                            <dropzone [config]="Config" (error)="onUploadError($event)"
+                                (success)="onUploadSuccess($event)"></dropzone>
+                        </div>
+                    </form>
                     <div class="btn-showcase text-end blog-btn">
                         <button class="btn btn-primary" type="submit">Post</button>
-                        <input class="btn bg-light" type="reset" value="Discard">
+                        <input class="btn bg-light font-dark" type="reset" value="Discard">
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ const routes: Routes = [
         data: {
           title: 'Ecommerce Dashboard',
           breadcrumb: 'Ecommerce Dashboard',
-          des:'Welcome back! Continue your journey.'
+          des:'"Welcome back! Continue your journey."'
         }
       },
       {

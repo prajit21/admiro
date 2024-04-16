@@ -1,19 +1,19 @@
 export const imgData = [
     {
-      srcUrl: 'assets/images/lightgallery/1.jpg',
-      previewUrl: 'assets/images/lightgallery/1.jpg'
+      srcUrl: 'assets/images/lightgallry/08.jpg',
+      previewUrl: 'assets/images/big-lightgallry/08.jpg'
     },
     {
-      srcUrl: 'assets/images/lightgallery/2.jpg',
-      previewUrl: 'assets/images/lightgallery/2.jpg'
+      srcUrl: 'assets/images/lightgallry/09.jpg',
+      previewUrl: 'assets/images/big-lightgallry/09.jpg'
     },
     {
-      srcUrl: 'assets/images/lightgallery/3.jpg',
-      previewUrl: 'assets/images/lightgallery/3.jpg'
+      srcUrl: 'assets/images/lightgallry/010.jpg',
+      previewUrl: 'assets/images/big-lightgallry/010.jpg'
     },
     {
-      srcUrl: 'assets/images/lightgallery/4.jpg',
-      previewUrl: 'assets/images/lightgallery/4.jpg'
+      srcUrl: 'assets/images/lightgallry/011.jpg',
+      previewUrl: 'assets/images/big-lightgallry/011.jpg'
     }
 ]
 
