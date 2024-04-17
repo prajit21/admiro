@@ -1,19 +1,9 @@
 <div class="Typeahead Typeahead--twitterUsers">
     <div class="u-posRelative d-flex align-items-center">
-        <input class="demo-input py-0 Typeahead-input form-control-plaintext w-100" type="text"
-            placeholder="Type to Search..." name="q" title="" />
-            <i class="search-bg iconly-Search icli"></i>
-    </div>
-</div>
-<!-- <form class="search-form mb-0" (clickOutside)="clickOutside()">
-    <div class="input-group">
-        <span class="input-group-text pe-0">
-            <svg class="search-bg svg-color">
-                <use href="assets/svg/iconly-sprite.svg#Search"></use>
-            </svg>
-        </span>
-        <input class="form-control" type="text" placeholder="Search anything..." [class.open]="open" [(ngModel)]="text"
-            [ngModelOptions]="{ standalone: true }" (keyup)="searchTerm(text)" name="q" title="" autocomplete="off">
+        <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+            placeholder="Search Admiro .." [(ngModel)]="text" [ngModelOptions]="{ standalone: true }"
+            (keyup)="searchTerm(text)" type="text" name="q" title="" autocomplete="off" />
+        <i class="search-bg iconly-Search icli" (click)="openSearch()"></i>
     </div>
     @if(menuItems.length){
     <div class="Typeahead-menu custom-scrollbar" [class.is-open]="searchResult" id="search-outer" [class.open]="open">
@@ -37,4 +27,4 @@
             <div class="EmptyMessage">Opps!! There are no result found.</div>
         </div>
     </div>
-</form> -->
+</div>

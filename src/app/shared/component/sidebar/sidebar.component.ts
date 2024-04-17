@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Menu, NavmenuService } from '../../services/navmenu.service';
 import { NavigationEnd, Router } from '@angular/router';
+import { LayoutService } from '../../services/layout.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,14 +13,14 @@ export class SidebarComponent {
   public menuItems = this.navServices.MENUITEMS;
   public margin: number = 0;
   public width: number = window.innerWidth;
-  public leftArrowNone: boolean = true;
-  public rightArrowNone: boolean = false;
+  public leftArrow: boolean = false;
+  public rightArrow: boolean = true;
   public screenWidth: number;
   public screenHeight: number;
   public pined: boolean = false;
   public pinedItem: number[] = [];
 
-  constructor(private router: Router, public navServices: NavmenuService) {
+  constructor(private router: Router, public navServices: NavmenuService , public layout: LayoutService) {
     this.navServices.item.subscribe((menuItems: Menu[]) => {
       this.menuItems = menuItems;
       this.router.events.subscribe((event) => {
@@ -52,6 +53,10 @@ export class SidebarComponent {
     });
   }
 
+  ngOnInit() {
+    this.screenWidth = window.innerWidth;
+    this.screenHeight = window.innerHeight;
+  }
   setNavActive(item: Menu) {
     this.menuItems.filter(menuItem => {
       if (menuItem !== item) {
@@ -93,28 +98,29 @@ export class SidebarComponent {
     }
     item.active = !item.active;
   }
+  // For Horizontal Menu
 
   scrollToLeft() {
-    if (this.margin >= -this.width) {
-      this.margin = 0;
-      this.leftArrowNone = true;
-      this.rightArrowNone = false;
-    } else {
-      this.margin += this.width;
-      this.rightArrowNone = false;
+    this.rightArrow = true;
+    if (this.layout.margin != 0) {
+      this.layout.margin = this.layout.margin + 500;
+    }
+
+    if (this.layout.margin == 0) {
+      this.leftArrow = false;
     }
   }
 
   scrollToRight() {
-    if (this.margin <= -3700) {
-      this.margin = -3200;
-      this.leftArrowNone = false;
-      this.rightArrowNone = true;
-    } else {
-      this.margin += -this.width;
-      this.leftArrowNone = false;
+    this.leftArrow = true;
+    if (this.layout.margin != -3500) {
+      this.layout.margin = this.layout.margin - 500;
+    }
+    if (this.layout.margin == -3500) {
+      this.rightArrow = false;
     }
   }
+
 
   openMenu() {
     this.navServices.closeSidebar = !this.navServices.closeSidebar;

@@ -17,13 +17,13 @@ export class LayoutTypeComponent {
     this.layoutService.config.settings.layout_type = val;
     if (val == 'rtl') {
       document.getElementsByTagName('html')[0].setAttribute('dir', val);
-      document.body.className = 'rtl';
+      document.body?.classList.remove("box-layout")
     } else if (val == 'box-layout') {
-      document.getElementsByTagName('html')[0].setAttribute('dir', val);
-      document.body.className = 'box-layout';
-    } else {
       document.getElementsByTagName('html')[0].removeAttribute('dir');
-      document.body.className = '';
+      document.body?.classList.add("box-layout")
+    } else {
+      document.getElementsByTagName('html')[0].setAttribute('dir', val);
+      document.body?.classList.remove("box-layout")
     }
   }
 

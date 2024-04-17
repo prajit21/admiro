@@ -811,7 +811,7 @@ export const sellingchart: ChartOptions | any =
           endAngle: 135,
           hollow: {
               size: "75%",
-              image: "../assets/images/apexchart/radial-image.png",
+              image: "assets/images/apexchart/radial-image.png",
               imageWidth: 210,
               imageHeight: 210,
               imageClipped: false,

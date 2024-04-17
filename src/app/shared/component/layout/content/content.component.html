@@ -1,6 +1,6 @@
 <div [ngClass]="layout.config.settings.layout_type" [class]="layout.config.settings.layout_version"></div>
 <div class="page-wrapper" id="pageWrapper" [ngClass]="layout.config.settings.sidebar_type"
-    [class.sidebar-open]="navmenu.closeSidebar">
+    [class.sidebar-open]="!navmenu.closeSidebar">
     <app-header></app-header>
     <div class="page-body-wrapper">
         <div class="overlay"></div>

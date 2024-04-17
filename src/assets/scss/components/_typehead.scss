@@ -43,6 +43,7 @@
 .ProfileCard-avatar {
     svg {
         height: 18px;
+        width: 22px;
         vertical-align: bottom;
         path {
             color: #7e7c7c !important;
@@ -117,6 +118,7 @@
 .ProfileCard-details {
     padding-left: 35px;
     float: left;
+    width: 100%;
 }
 .ProfileCard-realName {
     display: inline-block;
@@ -231,6 +233,30 @@ $background-color_4: #eee;
     box-shadow: 1px 0px 1px;
     padding: 7px;
 }
+
+
+.bookmark-flip{
+    .Typeahead-menu{
+      overflow: auto;
+      height: 114px;
+      top: 106px;
+      padding: 0px;
+    }
+  }
+  
+  header {
+    .custom-menu {
+      .back .bookmark {
+        .Typeahead-menu{
+          &.is-open{
+            z-index: 0;
+            overflow: auto;
+            height: 180px !important;
+          }
+        }
+      }
+    }
+  }
 /**=====================
   2.35 Typeahead-search CSS Ends
-==========================**/
+==========================**/   

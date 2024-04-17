@@ -1,13 +1,13 @@
 <div class="sidebar-pannle-main" (click)="Customizer('layout')">
     <ul>
-        <li class="cog-click icon-btn btn-primary" id="cog-click"><i class="fa fa-spin fa-cog"></i></li>
+        <li class="cog-click icon-btn btn-primary" id="cog-click"><i class="fa-solid fa-spin fa-cog"></i></li>
     </ul>
 </div>
 <section class="setting-sidebar" [ngClass]="{'open' : layoutService.customizer != '' }">
     <div class="customizer-header">
         <div class="theme-title">
             <div>
-                <h4>Preview Settings</h4>
+                <h3>Preview Settings</h3>
                 <p class="mb-0">Try It Real Time<i class="fa-solid fa-thumbs-up fa-fw"></i></p>
             </div>
             <div class="flex-grow-1">
@@ -19,35 +19,35 @@
         </div>
     </div>
     <div class="customizer-body">
-        <div class="mb-3 p-2 rounded-3 default-border b-t-primary">
+        <div class="mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="color-header mb-2">
                 <h4>Theme color mode:</h4>
-                <p class="font-light">Choose between 3 different mix layout.</p>
+                <p>Choose between 3 different mix layout.</p>
             </div>
             <app-theme-mode></app-theme-mode>
         </div>
-        <div class="mb-3 p-2 rounded-3 default-border b-t-primary">
+        <div class="mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="sidebar-icon mb-2">
                 <h4>Sidebar icon:</h4>
-                <p class="font-light">Choose between 2 different sidebar icon.</p>
+                <p>Choose between 2 different sidebar icon.</p>
             </div>
             <app-sidebar-icon></app-sidebar-icon>
         </div>
-        <div class="mb-3 p-2 rounded-3 default-border b-t-primary">
+        <div class="mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="theme-layout mb-2">
                 <h4>Layout type:</h4>
-                <p class="font-light">Choose between 3 different layout types.</p>
+                <p>Choose between 3 different layout types.</p>
             </div>
             <app-layout-type></app-layout-type>
         </div>
-        <div class="mb-3 p-2 rounded-3 default-border b-t-primary">
+        <div class="mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="sidebar-type mb-2">
                 <h4>Sidebar type:</h4>
-                <p class="font-light">Choose between 2 different sidebar types.</p>
+                <p>Choose between 2 different sidebar types.</p>
             </div>
             <app-sidebar-type></app-sidebar-type>
         </div>
-        <div class="customizer-color mb-3 p-2 rounded-3 default-border b-t-primary">
+        <div class="customizer-color mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="color-picker mb-3">
                 <h4>Color Picker:</h4>
             </div>

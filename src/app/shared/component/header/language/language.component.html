@@ -2,18 +2,19 @@
     <div class="current_lang">
         <div class="lang">
             <i class="flag-icon flag-icon-{{selectedLanguage.icon}}"></i>
+            <h6 class="lang-txt f-w-700">{{selectedLanguage.language}}</h6>
         </div>
     </div>
-    <div class="more_lang" [class.active]="navServices.language">
+    <ul class="custom-menu profile-menu language-menu py-0 more_lang" [class.active]="navServices.language">
         @for(lang of languages; track lang){
-        <div class="lang" data-value="en" (click)="changeLanguage(lang)">
-            <i class="flag-icon flag-icon-{{lang.icon}}"></i>
-            <span class="lang-txt">{{lang.language}}
-                @if(lang.type){
-                <span>({{lang.type}})</span>
+        <li class="d-block">
+            <a class="lang" (click)="changeLanguage(lang)" data-value="English">
+                <i class="flag-icon flag-icon-{{lang.icon}}"></i>
+                @if(lang.language){
+                <div class="lang-txt">{{lang.language}}</div>
                 }
-            </span>
-        </div>
+            </a>
+        </li>
         }
-    </div>
+    </ul>
 </div>

@@ -9,15 +9,47 @@ import { NavmenuService } from '../../../services/navmenu.service';
 })
 export class ContentComponent {
 
-  constructor(  public layout:LayoutService ,public navmenu:NavmenuService){}
+  constructor(public layout: LayoutService, public navmenu: NavmenuService) {
+    if ((window.innerWidth < 1185)|| window.innerWidth < 992) {
+      navmenu.closeSidebar = true;
+    }
+    if (window.innerWidth <= 1185) {
+      this.layout.config.settings.sidebar_type = 'compact-wrapper'
+    } else {
+      this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
+    }
+
+  }
 
   @HostListener('window:resize', ['$event'])
 
-  onResize(event: number) {
-    this.navmenu.closeSidebar = window.innerWidth < 1200 ? true : false;
-    if (window.innerWidth < 1200) {
-      this.layout.config.settings.sidebar_type = 'compact-wrapper sidebar-open'
+  onResize() {
+    if ((window.innerWidth < 1185)|| window.innerWidth < 992) {
+      this.navmenu.closeSidebar = true;
+    } else {
+      this.navmenu.closeSidebar = false;
     }
+
+    if (window.innerWidth <= 1185) {
+      this.layout.config.settings.sidebar_type = 'compact-wrapper';
+    } else {
+      this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
+    }
+
+    // if(window.innerWidth <= 992){
+    //   this.navmenu.close
+    // }
   }
+
+  // constructor(  public layout:LayoutService ,public navmenu:NavmenuService){}
+
+  // @HostListener('window:resize', ['$event'])
+
+  // onResize(event: number) {
+  //   this.navmenu.closeSidebar = window.innerWidth < 1200 ? true : false;
+  //   if (window.innerWidth < 1200) {
+  //     this.layout.config.settings.sidebar_type = 'compact-wrapper'
+  //   }
+  // }
 
 }

@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
 
   public show: boolean = false;
   public loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, public router: Router) {
+
+  constructor(private fb: FormBuilder, public router: Router ,private toast: ToastrService) {
 
     const userData = localStorage.getItem('user');
     if (userData?.length != null) {
@@ -40,6 +42,12 @@ export class LoginComponent {
 
       localStorage.setItem("user", JSON.stringify(user));
       this.router.navigate(["/dashboard/default"]);
+      this.toast.success("Login Success...!", '',
+        {
+          positionClass: 'toast-top-right',
+          closeButton: true,
+          timeOut: 2000
+        })
     }
   }
 

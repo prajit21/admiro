@@ -108,14 +108,7 @@ $gray-700: #495057;
 $gray-60 : #cccccc;
 $dark:#292929;
 
-body[class='dark-only'],
-[class='dark-only modal-open'],
-[class='box-layout dark-only'],
-[class='dark-only box-layout'],
-[class='dark-only swal2-shown swal2-height-auto'],
-[class='dark-only swal2-toast-shown swal2-shown'],
-[class='rtl dark-only'],
-[class='rtl dark-only modal-open']{
+.dark-only{
     --black: #ffffff;
     --white: #181919;
     --font-color: #7c7a7a;
@@ -159,7 +152,7 @@ body[class='dark-only'],
     --bs-btn-active-color: #B6B0B0;
     --bs-nav-tabs-link-hover-border-color: #e9ecef;
 }
-body[class="dark-sidebar"]{
+.dark-sidebar{
     .logo-wrapper,
     .page-sidebar{
     --black: #ffffff;

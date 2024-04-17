@@ -82,6 +82,134 @@ pre[class*=language-] {
 	}
 }
 
+.bookmark-dropdown {
+    .flip-card {
+        width: 300px;
+        height: 278px;
+        background-color: transparent;
+        .flip-card-inner{
+            position: relative;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            .front,.back{
+                position: absolute;
+                backface-visibility: hidden;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+                width: 300px;
+                height: 278px;
+            }
+            .front {
+                background-color: var(--card-color);
+                transition: 0.3s;
+                .bookmark-dropdown {
+                    li {
+                        &:last-child {
+                            padding-bottom: 15px;
+                        }
+                        .custom-bookmark-content {
+                            justify-content: center !important;
+                            padding: 0 8px;
+                        }
+                        .bookmark-content{
+                            text-align: center;
+                            
+                            .bookmark-icon{
+                                width: 44px;
+                                height: 44px;
+                                border-radius: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+                            span{
+                                font-family: $body-font;
+                                font-size: 14px;
+                                font-weight: 600;
+                                letter-spacing: 0.5px;
+                                margin-top: 4px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                text-overflow:ellipsis;
+                                display: -webkit-box !important;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                white-space: normal;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .back{
+                background-color: var(--card-color);
+                transform: rotateY(180deg);
+                ul{
+                    li{
+                        &:first-child{
+                            margin-top: 20px;
+                            height: 140px !important;
+                        }
+                        &:last-child{
+                            margin-top: 34px !important; 
+                        }
+                        .ProfileCard {
+                            &:hover {
+                                svg {
+                                    stroke: var(--theme-deafult);
+                                }
+                                a {
+                                    color: var(--theme-deafult);
+                                }
+                            }
+                        }
+                        .flip-back-content{
+                            input{
+                                background-color: var(--light-color);
+                                border: none;
+                                border-radius: 0;
+                            }
+                        }
+                        .custom-scrollbar{
+                            padding: 10px 16px;
+                            top: 80px;
+                            box-shadow: none;
+                            height: 120px;
+                            overflow: auto;
+                            min-height: 0 !important;
+                        }
+                    }
+                }
+            }
+            &.flipped {
+                transform: rotateY(180deg);
+                .front {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .custom-scrollbar {
+        height: 140px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .flip-btn{
+        justify-content: center;
+        font-family: $body-font;
+    }
+    &.custom-menu {
+        @media (max-width: 575px) {
+            width: unset !important;
+
+        }
+    }
+}
+
 
 /**=====================
     4.3 Update CSS Ends

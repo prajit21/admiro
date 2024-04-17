@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavmenuService ,Menu } from '../../../services/navmenu.service';
+import { NavmenuService, Menu } from '../../../services/navmenu.service';
 
 @Component({
   selector: 'app-search',
@@ -13,12 +13,13 @@ export class SearchComponent {
   public searchResult: boolean = false;
   public searchResultEmpty: boolean = false;
   public text: string = '';
-  public open = false
+  public open = false;
+  public show = false;
 
   constructor(public navServices: NavmenuService) {
-    this.navServices.item.subscribe((menuItems: Menu[]) => 
-         this.item = menuItems
-     );
+    this.navServices.item.subscribe((menuItems: Menu[]) =>
+      this.item = menuItems
+    );
   }
 
   openMenu() {
@@ -30,26 +31,27 @@ export class SearchComponent {
     if (!term) return this.menuItems = [];
     let items: Menu[] = [];
     term = term.toLowerCase();
-      this.item?.filter(menuItems => {
-        if (menuItems.title?.toLowerCase().includes(term) && menuItems.type === 'link') {
-          items.push(menuItems);
+    this.item?.filter(menuItems => {
+      if (menuItems.title?.toLowerCase().includes(term) && menuItems.type === 'link') {
+        items.push(menuItems);
+        console.log(menuItems)
+      }
+      menuItems.children?.filter(subItems => {
+        if (subItems.title?.toLowerCase().includes(term) && subItems.type === 'link') {
+          subItems.icon = menuItems.icon
+          items.push(subItems);
         }
-        menuItems.children?.filter(subItems => {
-          if (subItems.title?.toLowerCase().includes(term) && subItems.type === 'link') {
-            subItems.icon = menuItems.icon
-            items.push(subItems);
+        subItems.children?.filter(suSubItems => {
+          if (suSubItems.title?.toLowerCase().includes(term)) {
+            suSubItems.icon = menuItems.icon
+            items.push(suSubItems);
           }
-          subItems.children?.filter(suSubItems => {
-            if (suSubItems.title?.toLowerCase().includes(term)) {
-              suSubItems.icon = menuItems.icon
-              items.push(suSubItems);
-            }
-          })
-          return
         })
-        this.checkSearchResultEmpty(items)
-        this.menuItems = items
+        return
       })
+      this.checkSearchResultEmpty(items)
+      this.menuItems = items
+    })
     return
   }
 
@@ -60,10 +62,17 @@ export class SearchComponent {
       this.searchResultEmpty = false;
   }
 
+  openSearch() {
+    this.show = !this.show
+    this.searchResult = false;
+  }
+
+
+
   addFix() {
     this.searchResult = true;
-    document.body.classList.add('offcanvas')
   }
+
 
   removeFix() {
     this.searchResult = false;
@@ -71,11 +80,10 @@ export class SearchComponent {
     document.body.classList.remove('offcanvas')
   }
 
-  clickOutside():void { 
+  clickOutside(): void {
     this.searchResultEmpty = false;
     this.searchResult = false
     document.body.classList.remove('offcanvas')
   }
-
 
 }

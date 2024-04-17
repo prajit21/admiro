@@ -10,4 +10,14 @@ export class NewsUpdateComponent {
 
   public NewsUpdate = newsupdate;
 
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
+
 }

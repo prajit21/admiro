@@ -6,12 +6,13 @@ import { Injectable } from '@angular/core';
 export class LayoutService {
 
   public customizer: string = '';
+  public margin: number = 0;
 
   public config = {
     settings: {
       layout_type: 'ltr',
       layout_version: 'light',
-      sidebar_type: 'compact-wrapper sidebar-open',
+      sidebar_type: 'compact-wrapper',
       icon: "stroke-svg",
     },
     color: {

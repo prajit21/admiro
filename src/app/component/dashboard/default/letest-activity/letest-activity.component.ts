@@ -9,5 +9,14 @@ import { LatestActivity } from '../../../../shared/data/dashboard/default/defaul
 export class LetestActivityComponent {
 
   public letestActivity = LatestActivity;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

@@ -10,5 +10,15 @@ export class TotalInvestmentComponent {
 
   public InvestmentChart = TotalInvestment;
 
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
+
 
 }

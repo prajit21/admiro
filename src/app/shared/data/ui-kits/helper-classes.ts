@@ -116,7 +116,7 @@ export const TextColor = [
             {
                 text: 'A',
                 class: 'helper-box helper-text border text-primary',
-                title: '.text--primar'
+                title: '.text--primary'
             },
             {
                 text: 'A',
@@ -131,7 +131,7 @@ export const TextColor = [
             {
                 text: 'A',
                 class: 'helper-box helper-text border  text-danger',
-                title: '.text-danget'
+                title: '.text-danger'
             },
             {
                 text: 'A',

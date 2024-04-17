@@ -1,13 +1,16 @@
-<div class="card">
+<div class="card" (clickOutside)="clickOutside()">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>Top Users</h3>
             <div class="dropdown icon-dropdown">
-                <button class="btn" id="userdropdown7" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-ellipsis"></i></button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown7"><a class="dropdown-item"
-                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
-                        href="#">Yearly</a></div>
+                <button class="btn" id="userdropdown4" type="button" (click)="open()">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
+                </div>
             </div>
         </div>
     </div>
@@ -25,7 +28,7 @@
                         </a>
                         <p>
                             <svg class="stroke-icon">
-                                <use href="../assets/svg/icon-sprite.svg#map-icon"></use>
+                                <use href="assets/svg/icon-sprite.svg#map-icon"></use>
                             </svg>Texas
                         </p>
                     </div>

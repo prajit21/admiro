@@ -1,13 +1,14 @@
-<div class="card earning-card">
+<div class="card earning-card" (clickOutside)="clickOutside()">
     <div class="card-header pb-0 card-no-border">
         <div class="header-top">
             <h3>Earnings Trend </h3>
             <div class="dropdown">
-                <button class="btn dropdown-toggle" id="userdropdown3" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Monthly</button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown3"><a class="dropdown-item"
-                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
-                        href="#">Yearly</a></div>
+                <button class="btn dropdown-toggle" id="userdropdown3" type="button"(click)="open()">Monthly</button>
+                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
+                </div>
             </div>
         </div>
     </div>

@@ -18,6 +18,7 @@ export class LanguageComponent {
 
   public language: boolean = false;
 
+
   public languages: selectedlanguage[] = [{
     language: 'English',
     code: 'en',
@@ -42,11 +43,12 @@ export class LanguageComponent {
   }]
 
   public selectedLanguage: selectedlanguage = {
-    language: 'English',
+    language: 'ENG',
     code: 'en',
     type: 'US',
     icon: 'us'
   }
+  
   
   constructor(public navServices: NavmenuService, private translate: TranslateService) { }
 

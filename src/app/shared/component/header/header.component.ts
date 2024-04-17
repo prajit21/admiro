@@ -1,6 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { LayoutService } from '../../services/layout.service';
-import { NavmenuService, Menu } from '../../services/navmenu.service';
+import { Menu, NavmenuService } from '../../services/navmenu.service';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -11,8 +10,19 @@ import { DOCUMENT } from '@angular/common';
 export class HeaderComponent {
 
   public elem: any
+  public menuItems: Menu[] = [];
+  public item: Menu[] = [];
+  public open = false;
+  public searchResult: boolean = false;
+  public searchResultEmpty: boolean = false;
+  public text: string = '';
+  public show = false;
 
-  constructor(public navmenu: NavmenuService ,@Inject(DOCUMENT) private document: any) {  }
+  constructor(public navmenu: NavmenuService, @Inject(DOCUMENT) private document: any) {
+    this.navmenu.item.subscribe((menuItems: Menu[]) =>
+      this.item = menuItems
+    );
+  }
 
   ngOnInit(): void {
     this.elem = document.documentElement;
@@ -57,5 +67,66 @@ export class HeaderComponent {
     this.navmenu.language = !this.navmenu.language;
   }
 
+  openSearch() {
+    this.show = true;
+  }
+
+  closeSearch() {
+    this.show = false;
+  }
+
+  searchTerm(term: any) {
+    term ? this.addFix() : this.removeFix();
+    if (!term) return this.menuItems = [];
+    let items: Menu[] = [];
+    term = term.toLowerCase();
+    this.item.forEach((data) => {
+      if (data.title?.toLowerCase().includes(term) && data.type === 'link') {
+        items.push(data);
+      }
+      data.children?.filter(subItems => {
+        if (subItems.title?.toLowerCase().includes(term) && subItems.type === 'link') {
+          subItems.icon = data.icon
+          items.push(subItems);
+        }
+        subItems.children?.filter(suSubItems => {
+          if (suSubItems.title?.toLowerCase().includes(term)) {
+            suSubItems.icon = data.icon
+            items.push(suSubItems);
+          }
+        })
+        return
+      })
+      this.checkSearchResultEmpty(items)
+      this.menuItems = items
+    })
+    return
+  }
+
+  checkSearchResultEmpty(items: Menu[]) {
+    if (!items.length)
+      this.searchResultEmpty = true;
+    else
+      this.searchResultEmpty = false;
+  }
+
+  addFix() {
+    this.searchResult = true;
+  }
+
+  removeFix() {
+    document.body.classList.remove('offcanvas')
+    this.searchResult = false;
+    this.text = "";
+  }
+
+  clickOutside(): void {
+    this.show = false;
+    this.open = false;
+    this.searchResult = false;
+    this.searchResultEmpty = false;
+    this.navmenu.language = false;
+    document.body.classList.remove('offcanvas')
+  }
 
 }
