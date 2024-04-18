@@ -10,5 +10,10 @@ export class MonthlyRevenueGrowthComponent {
 
   public GrowthChart = growthChart;
 
+  public openTab: string = "Weekly";
+
+  tab(value: string) {
+    this.openTab = value
+  }
 
 }

@@ -1,6 +1,6 @@
 export interface knowledgebase {
    title: string;
-   colClass: string;
+   colClass?: string;
    desc: string;
    icon: string;
 }
@@ -27,20 +27,19 @@ export interface articlesAndVideos {
 export const knowledgebaseData: knowledgebase[] = [
    {
       title: 'Articles',
-      colClass: '',
-      desc: "How little experience or technical knowledge you currently have. The web is a very big place, and if you are the typical internet user, you probably visit several websites every day.",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..",
       icon: 'book-open',
    },
    {
       title: 'Knowledgebase',
       colClass: 'col-sm-6',
-      desc: "A Website Designing course enables learners to use essential and designing and programming tools required to do the job. The curriculum is a blend of various themes.",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..",
       icon: 'aperture'
    },
    {
       title: 'Support',
       colClass: 'col-sm-6',
-      desc: "The customer support industry is renaissance. Customer support as a specialty is coming into its own, offering companies a competitive advantage that’s difficult to copy.",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..",
       icon: 'file-text'
    }
 ]

@@ -7,8 +7,8 @@ const routes: Routes = [
     path: '',
     component: FileManagerComponent,  
     data: {
-      title: "File Manger",
-      breadcrumb: "File Manger",
+      title: "File manager",
+      breadcrumb: "File manager",
     }
   }
 ];

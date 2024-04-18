@@ -167,6 +167,7 @@ export const educationchart1: ChartOptions | any = {
             stops: [0, 90, 100],
         },
     },
+    id: 1,
     img: 'assets/images/dashboard-3/user/20.png',
     title: 'Graphic Design',
     name: 'Alice Goodwin',
@@ -290,6 +291,7 @@ export const educationchart2: ChartOptions | any = {
             stops: [0, 90, 100],
         },
     },
+    id: 2,
     img: 'assets/images/dashboard-3/user/21.png',
     title: 'Design Thinking',
     name: 'Alice Goodwin',
@@ -410,6 +412,7 @@ export const educationchart3: ChartOptions | any = {
             stops: [0, 90, 100],
         },
     },
+    id: 3,
     img: 'assets/images/dashboard-3/user/22.png',
     title: 'Graphic Design',
     name: 'Alice Goodwin',
@@ -548,17 +551,33 @@ export const SchoolPerformance: ChartOptions | any = {
 }
 
 export const Learningchart: ChartOptions | any = {
-    chart: {
-        width: 350,
-        height:300,
-        type: 'donut',
-    },
-    series: [80, 50, 30, 60],
     labels: ["Reading", "Writing", "Video", "Assignments"],
-    colors: [
-        primary_color,
+    series: [80, 50, 30, 60],
+    chart: {
+        type: "donut",
+        height: 370,
+    },
+    legend: {
+        show: true,
+        position: "bottom",
+    },
+    dataLabels: {
+        enabled: false,
+    },
+    states: {
+        hover: {
+            filter: {
+                type: "darken",
+                value: 1,
+            },
+        },
+    },
+    stroke: {
+        width: 0,
+    },
+    colors: [primary_color,
         secondary_color,
         "#E6B54D",
-        "#E74B2B",
-    ],
+        "#E74B2B"
+    ]
 }

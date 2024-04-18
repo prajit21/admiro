@@ -9,5 +9,15 @@ import { Learningchart } from '../../../../shared/data/dashboard/education/educa
 export class LearningChartComponent {
 
   public learningChart = Learningchart;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
+
 
 }

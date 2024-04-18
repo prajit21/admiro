@@ -9,5 +9,15 @@ import { UpcomingClasses } from '../../../../shared/data/dashboard/education/edu
 export class UpcomingClassesComponent {
 
   public upCommingclasses = UpcomingClasses;
+  public isopen:boolean = false;
+
+  open(){
+   this.isopen = !this.isopen
+  }
+
+  clickOutside():void { 
+    this.isopen = false;
+  }
+
 
 }

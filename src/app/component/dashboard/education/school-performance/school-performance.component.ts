@@ -10,4 +10,11 @@ export class SchoolPerformanceComponent {
 
   public schoolPerformance = SchoolPerformance;
 
+  public openTab: string = "Weekly";
+
+  tab(value: string) {
+    this.openTab = value
+  }
+
+
 }

@@ -9,5 +9,14 @@ import { userStatus } from '../../../../shared/data/dashboard/ecommerce/ecommerc
 export class UserStatusComponent {
 
   public UserStatus = userStatus;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

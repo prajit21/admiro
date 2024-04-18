@@ -9,4 +9,14 @@ export class TopCommonEducationchartComponent {
 
   @Input() data: any
 
+  public isopen:boolean = false;
+
+  open(){
+   this.isopen = !this.isopen
+  }
+
+  clickOutside():void { 
+    this.isopen = false;
+  }
+
 }

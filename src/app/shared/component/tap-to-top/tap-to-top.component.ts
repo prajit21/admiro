@@ -8,7 +8,7 @@ import { ViewportScroller } from '@angular/common';
 })
 export class TapToTopComponent {
 
-    public show: boolean = false;
+  public show: boolean = false;
 
   constructor(private viewScroller: ViewportScroller) { }
 

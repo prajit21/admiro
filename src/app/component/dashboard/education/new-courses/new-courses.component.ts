@@ -9,5 +9,14 @@ import { NewCourses } from '../../../../shared/data/dashboard/education/educatio
 export class NewCoursesComponent {
 
   public NewCouresData = NewCourses;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

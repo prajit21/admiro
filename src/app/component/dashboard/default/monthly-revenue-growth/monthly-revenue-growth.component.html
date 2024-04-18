@@ -4,13 +4,16 @@
             <h3>Monthly Revenue Growth</h3>
             <ul class="simple-wrapper nav nav-pills" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link" id="home-tab">Yearly</a>
+                    <a class="nav-link" id="home-tab" (click)="tab('timeline')"
+                        [ngClass]="{'active': openTab == 'timeline'}">Yearly</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tabs">Monthly</a>
+                    <a class="nav-link" id="profile-tabs" (click)="tab('Monthly')"
+                        [ngClass]="{'active': openTab == 'Monthly'}">Monthly</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" id="contact-tab">Weekly</a>
+                    <a class="nav-link active" id="contact-tab" (click)="tab('Weekly')"
+                        [ngClass]="{'active': openTab == 'Weekly'}">Weekly</a>
                 </li>
             </ul>
         </div>

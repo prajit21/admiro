@@ -28,7 +28,6 @@ export class BreadcrumbComponent {
       }))
       .pipe(filter(route => route.outlet === PRIMARY_OUTLET))
       .subscribe(route => {
-        // let snapshot = this.router.routerState.snapshot;
         let title = route.snapshot.data['title'];
         let des = route.snapshot.data['des'];
         let parent = route.parent?.snapshot.data['breadcrumb'];

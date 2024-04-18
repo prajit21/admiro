@@ -9,6 +9,14 @@ import { NoticeBoard } from '../../../../shared/data/dashboard/education/educati
 export class NoticeBoardComponent {
 
   public noticeBoard = NoticeBoard;
+  public show: boolean = false;
 
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

@@ -1,22 +1,26 @@
 <div class="table-responsive custom-scrollbar">
     <div class="datatable-wrapper datatable-loading no-footer sortable searchable fixed-columns">
         <form>
-            <div class="d-flex justify-content-between mt-3 mb-3">
-                <select class="form-select" style="width: auto" name="pageSize" [(ngModel)]="service.pageSize">
-                    <option [ngValue]="10">10</option>
-                    <option [ngValue]="25">25</option>
-                    <option [ngValue]="50">50</option>
-                    <option [ngValue]="100">100</option>
-                </select>
-                <div class="mb-3 row justify-content-end">
-                    @if(service.loading$ | async){
-                    <span class="col col-form-label text-end">Loading...</span>
-                    }
+            <div class="d-flex justify-content-between p-2">
+                <div class="dataTables_length" id="basic-6_length" >
+                    <label>Show
+                        <select name="pageSize" [(ngModel)]="service.pageSize">
+                            <option [ngValue]="10">10</option>
+                            <option [ngValue]="15">15</option>
+                            <option [ngValue]="20">20</option>
+                            <option [ngValue]="25">25</option>
+                        </select> entries
+                    </label>
+                </div>
+                <div class="mb-3 row">
                     <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
                     <div class="col-xs-3 col-sm-auto">
                         <input id="table-complete-search" type="text" class="form-control" name="searchTerm"
-                            [(ngModel)]="service.searchTerm" autocomplete="off">
+                            [(ngModel)]="service.searchTerm" autocomplete="off" />
                     </div>
+                    @if(service.loading$ | async){
+                    <span class="col col-form-label">Loading...</span>
+                    }
                 </div>
             </div>
         </form>
@@ -26,8 +30,8 @@
                     <th scope="col">#</th>
                     <th sortable="name" (sort)="onSort($event)">Name</th>
                     <th sortable="position" (sort)="onSort($event)">Position.</th>
-                    <th sortable="salary" (sort)="onSort($event)" >Salary</th>
-                    <th sortable="office" (sort)="onSort($event)" >Office </th>
+                    <th sortable="salary" (sort)="onSort($event)">Salary</th>
+                    <th sortable="office" (sort)="onSort($event)">Office </th>
                     <th sortable="skill" (sort)="onSort($event)">Skill </th>
                     <th sortable="extn" (sort)="onSort($event)">Extn.</th>
                     <th sortable="email" (sort)="onSort($event)">E-mail </th>

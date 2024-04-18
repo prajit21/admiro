@@ -17,5 +17,9 @@ export class ScheduleLessonComponent {
    this.isopen = !this.isopen
   }
 
+  clickOutside(): void {
+    this.isopen = false
+  }
+
 
 }

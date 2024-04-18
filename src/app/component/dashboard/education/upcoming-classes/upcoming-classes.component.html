@@ -1,11 +1,12 @@
-<div class="card upcoming-card">
+<div class="card upcoming-card" (clickOutside)="clickOutside()">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>Upcoming Classes</h3>
             <div class="dropdown icon-dropdown">
-                <button class="btn" id="userdropdown4" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-ellipsis"></i></button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown4">
+                <button class="btn" id="userdropdown1" type="button" (click)="open()">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" [class.show]="isopen">
                     <a class="dropdown-item" href="#">Weekly</a>
                     <a class="dropdown-item" href="#">Monthly</a>
                     <a class="dropdown-item" href="#">Yearly</a>

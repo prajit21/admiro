@@ -1,18 +1,22 @@
 <div class="card">
     <div class="card-header">
         <h3>Datatable order history</h3>
-        <div class="d-flex justify-content-between mt-2">
-            <select class="form-select" style="width: auto" name="pageSize" [(ngModel)]="service.pageSize">
-                <option [ngValue]="10">10</option>
-                <option [ngValue]="25">25</option>
-                <option [ngValue]="50">50</option>
-                <option [ngValue]="10">100</option>
-            </select>
+        <div class="d-flex justify-content-between p-2">
+            <div class="dataTables_length" id="basic-6_length">
+                <label>Show
+                    <select name="pageSize" [(ngModel)]="service.pageSize">
+                        <option [ngValue]="10">10</option>
+                        <option [ngValue]="15">15</option>
+                        <option [ngValue]="20">20</option>
+                        <option [ngValue]="25">25</option>
+                    </select> entries
+                </label>
+            </div>
             <div class="mb-3 row">
                 <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
                 <div class="col-xs-3 col-sm-auto">
-                    <input type="text" class="form-control" name="searchTerm" [(ngModel)]="service.searchTerm"
-                        autocomplete="off">
+                    <input id="table-complete-search" type="text" class="form-control" name="searchTerm"
+                        [(ngModel)]="service.searchTerm" autocomplete="off" />
                 </div>
             </div>
         </div>

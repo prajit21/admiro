@@ -9,5 +9,15 @@ import { Todolist } from '../../../../shared/data/dashboard/education/education'
 export class ToDoListComponent {
   
   public TodoList = Todolist;
+  public isopen:boolean = false;
+
+  open(){
+   this.isopen = !this.isopen
+  }
+
+  clickOutside():void { 
+    this.isopen = false;
+  }
+
 
 }

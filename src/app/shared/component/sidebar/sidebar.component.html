@@ -1,6 +1,7 @@
 <div class="logo-wrapper d-flex align-items-center">
-    <a href="index.html">
-        <img src="assets/images/logo/logo1.png" alt="logo" /></a>
+    <a [routerLink]="['/dashboard/default']">
+        <img src="assets/images/logo/logo1.png" alt="logo" />
+    </a>
     <a class="close-btn sidebar-close" (click)="openMenu()">
         <svg class="svg-color svg-white">
             <use href="assets/svg/iconly-sprite.svg#Arrow---Left-2"></use>
@@ -32,7 +33,7 @@
                 }
                 @if(item.headTitle1){
                 <div>
-                    <h5 class="lan-1 f-w-700 sidebar-title">{{item.headTitle1  | translate }}</h5>
+                    <h5 class="lan-1 f-w-700 sidebar-title">{{item.headTitle1 | translate }}</h5>
                 </div>
                 }
                 @if(item.type === 'extTabLink'){
@@ -48,12 +49,12 @@
                     <app-svg-icon [icon]="item.icon"></app-svg-icon>
                     }
                     @if(item.level == 1){
-                    <h6>{{item.title  | translate }}</h6>
+                    <h6>{{item.title | translate }}</h6>
                     @if(item.badge == true){
                     <span class="badge">3</span>
                     }
                     }@else{
-                    {{ item.title  | translate }}
+                    {{ item.title | translate }}
                     }
                     @if(item.children){
                     <i class="iconly-Arrow-Right-2 icli"></i>

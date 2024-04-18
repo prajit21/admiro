@@ -9,6 +9,15 @@ import { TopSellingProducts } from '../../../../shared/data/dashboard/ecommerce/
 export class TopSellingProductsComponent {
 
   public TopsellingProduct = TopSellingProducts;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 
 }

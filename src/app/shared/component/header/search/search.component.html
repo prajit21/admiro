@@ -1,4 +1,4 @@
-<div class="Typeahead Typeahead--twitterUsers">
+<div class="Typeahead Typeahead--twitterUsers"  (clickOutside)="clickOutside()">
     <div class="u-posRelative d-flex align-items-center">
         <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
             placeholder="Search Admiro .." [(ngModel)]="text" [ngModelOptions]="{ standalone: true }"

@@ -1,23 +1,24 @@
-<div class="card pie-card">
+<div class="card pie-card" (clickOutside)="clickOutside()">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>Time Spent on Learning</h3>
             <div class="dropdown icon-dropdown">
-                <button class="btn" id="userdropdown8" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-ellipsis"></i>
+                <button class="btn" id="userdropdown4" type="button" (click)="open()">
+                    <i class="fa-solid fa-ellipsis"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown8">
-                    <a class="dropdown-item" href="#">Weekly</a>
-                    <a class="dropdown-item" href="#">Monthly</a>
-                    <a class="dropdown-item" href="#">Yearly</a>
+                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="card-body revenue-category">
         <div class="pie-chart" id="pie-chart">
-            <apx-chart [chart]="learningChart.chart" [colors]="learningChart.colors" [series]="learningChart.series"
-                [labels]="learningChart.labels">
+            <apx-chart [legend]="learningChart.legend" [series]="learningChart.series" [chart]="learningChart.chart"
+                [labels]="learningChart.labels" [dataLabels]="learningChart.dataLabels" [states]="learningChart.states"
+                [stroke]="learningChart.stroke" [colors]="learningChart.colors" [responsive]="learningChart.responsive">
             </apx-chart>
         </div>
     </div>

@@ -19,6 +19,42 @@
         </div>
     </div>
     <div class="customizer-body">
+        <button class="btn btn-primary plus-popup mt-2 mb-3" (click)="openModal(popup)">Configuration</button>
+        <ng-template #popup let-modal>
+            <div class="modal-header modal-copy-header">
+                <h3 class="headerTitle mb-0">Customizer configuration</h3>
+                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body config-popup">
+                    <div class="row">
+
+                        <p>To replace our design with your desired theme. Please do configuration as mention </p>
+                        <p> <b> Path : src > app > shared > services > layout.services.ts </b> </p>
+                        <div>
+                            <pre>
+  <code>
+     public config = &#123;  
+        settings&#58; &#123;
+           layout_type&#58; '{{layoutService.config.settings.layout_type}}',
+           layout_version&#58; '{{layoutService.config.settings.layout_version}}',
+           sidebar_type&#58; '{{layoutService.config.settings.sidebar_type}}',
+        &#125;,
+        color&#58; &#123;
+           primary_color&#58; '{{layoutService.config.color.primary_color}}',
+           secondary_color&#58; '{{layoutService.config.color.secondary_color}}'
+        &#125;
+     &#125;
+  </code>
+                       </pre>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-2" (click)="copyText(this.layoutService.config)">Copy
+                    Json</button>
+            </div>
+        </ng-template>
         <div class="mb-3 p-2 rounded-3 b-t-primary border-3">
             <div class="color-header mb-2">
                 <h4>Theme color mode:</h4>

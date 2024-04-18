@@ -31,7 +31,6 @@ import { TapToTopComponent } from './component/tap-to-top/tap-to-top.component';
 import { ClickOutsideDirective } from './directives/outside.directive';
 import { UserProfileComponent } from './component/sidebar/user-profile/user-profile.component';
 
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -57,7 +56,7 @@ import { UserProfileComponent } from './component/sidebar/user-profile/user-prof
     LoaderComponent,
     LanguageComponent,
     TapToTopComponent,
-    UserProfileComponent,
+    UserProfileComponent
   ],
   imports: [
     CommonModule,

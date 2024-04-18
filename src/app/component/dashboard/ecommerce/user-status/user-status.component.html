@@ -1,13 +1,15 @@
-<div class="card">
+<div class="card" (clickOutside)="clickOutside()">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>User Status</h3>
             <div class="dropdown icon-dropdown">
-                <button class="btn" id="userdropdown1" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                        class="fa-solid fa-ellipsis"></i></button>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown1"><a class="dropdown-item"
-                        href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item"
-                        href="#">Yearly</a>
+                <button class="btn" id="userdropdown4" type="button" (click)="open()">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
                 </div>
             </div>
         </div>
@@ -28,7 +30,7 @@
                         <td>
                             <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0 comman-round"><img src="{{data.img}}" alt="" /></div>
-                                <div class="flex-grow-1"><a href="product-page.html">
+                                <div class="flex-grow-1"><a [routerLink]="['/ecommerce/product-page']">
                                         <h6>{{ data.name }} <span>{{ data.status }}</span></h6>
                                     </a></div>
                             </div>

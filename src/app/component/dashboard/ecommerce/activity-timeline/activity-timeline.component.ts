@@ -9,5 +9,14 @@ import { ActivityTimeline } from '../../../../shared/data/dashboard/ecommerce/ec
 export class ActivityTimelineComponent {
 
   public activityTimeline = ActivityTimeline;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

@@ -11,8 +11,8 @@ const routes: Routes = [
         path: 'list',
         component: ProjectListComponent,
         data: {
-          title: "Project List",
-          breadcrumb: "Project List",
+          title: "Project list",
+          breadcrumb: "Project list",
         }
       },
       {

@@ -10,4 +10,10 @@ export class SalesAnalyticsComponent {
 
   public salesAnalytics = SalesAnalytics;
 
+  public openTab: string = "Weekly";
+
+  tab(value:string){
+      this.openTab = value
+  }
+
 }

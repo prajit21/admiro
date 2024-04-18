@@ -293,3 +293,9 @@ export const recentOrder = [
         votes: 86,
     },
 ]
+
+export const SalesAnalyticsTabs = [
+    {
+
+    }
+]

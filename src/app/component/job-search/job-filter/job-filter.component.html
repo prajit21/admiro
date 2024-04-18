@@ -1,4 +1,5 @@
-<div class="md-sidebar"><a class="btn btn-primary email-aside-toggle md-sidebar-toggle" (click)="openFilter()">Job
+<div class="md-sidebar" (clickOutside)="clickOutside()">
+    <a class="btn btn-primary email-aside-toggle md-sidebar-toggle" (click)="openFilter()">Job
         filter</a>
     <div class="md-sidebar-aside job-sidebar" [class.open]="Open">
         <div class="default-according style-1 faq-accordion job-accordion">
@@ -14,14 +15,14 @@
                         <div class="card-body filter-cards-view animate-chk basic-form">
                             <div class="job-filter mb-2">
                                 <div class="faq-form">
-                                    <input class="form-control" type="text" placeholder="Search.."><i
-                                        class="search-icon" data-feather="search"></i>
+                                    <input class="form-control" type="text" placeholder="Search..">
+                                    <app-feathericon [icon]="'search'" class="search-icon"></app-feathericon>
                                 </div>
                             </div>
                             <div class="job-filter">
                                 <div class="faq-form">
-                                    <input class="form-control" type="text" placeholder="location.."><i
-                                        class="search-icon" data-feather="map-pin"></i>
+                                    <input class="form-control" type="text" placeholder="location..">
+                                    <app-feathericon [icon]="'map-pin'" class="search-icon"></app-feathericon>
                                 </div>
                             </div>
                             <div class="checkbox-animated">
@@ -52,7 +53,8 @@
                             <div class="location-checkbox">
                                 @for( data of allData.checkBoxs; track data){
                                 <label class="d-block" for="{{ data.for }}">
-                                    <input class="checkbox_animated" type="checkbox" id="{{ data.for}}">{{ data.checkTitle}}
+                                    <input class="checkbox_animated" type="checkbox" id="{{ data.for}}">{{
+                                    data.checkTitle}}
                                 </label>
                                 }
                             </div>

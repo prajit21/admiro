@@ -10,5 +10,14 @@ export class TopEcommerceChartComponent {
 
   public orverViewChart = overviewChart;
   public orderBarChart = orderBarchart;
+  public show: boolean = false;
+
+  open() {
+    this.show = !this.show
+  }
+
+  clickOutside(): void {
+    this.show = false
+  }
 
 }

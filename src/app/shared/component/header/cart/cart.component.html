@@ -64,8 +64,9 @@
             <h6 class="mb-0">Order Total : <span class="f-w-600">$1000.00</span></h6>
         </li>
         <li class="text-center">
-            <a class="d-block mb-3 view-cart f-w-700 text-primary" href="cart.html">Go to your cart</a>
-            <a class="btn btn-primary view-checkout text-white" href="checkout.html">Checkout</a>
+            <a class="d-block mb-3 view-cart f-w-700 text-primary" [routerLink]="['/ecommerce/cart']">Go to your
+                cart</a>
+            <a class="btn btn-primary view-checkout text-white" [routerLink]="['/ecommerce/checkout']">Checkout</a>
         </li>
     </ul>
 </div>
