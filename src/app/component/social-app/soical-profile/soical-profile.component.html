@@ -4,17 +4,23 @@
             <div class="cardheader socialheader"></div>
             <div class="user-image">
                 <div class="avatar">
-                    <img alt="img" src="assets/images/avatar/1.jpg">
+                    <img alt="img" src="assets/images/user/1.jpg">
                 </div>
                 <div class="icon-wrapper">
                     <i class="icofont icofont-pencil-alt-5"></i>
                 </div>
                 <ul class="share-icons">
-                    <li><a class="social-icon bg-primary" href="javascript:void(0)"><i
-                                class="fa-regular fa-face-smile"></i></a></li>
-                    <li><a class="social-icon bg-secondary" href="javascript:void(0)"><i
-                                class="fa-brands fa-weixin"></i></a></li>
-                    <li><a class="social-icon bg-warning" href="javascript:void(0)"><i class="fa fa-share-alt"></i></a>
+                    <li>
+                        <a class="social-icon bg-primary" href="javascript:void(0)"><i
+                                class="fa-regular fa-face-smile"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-icon bg-secondary" href="javascript:void(0)"><i
+                                class="fa-brands fa-weixin"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-icon bg-warning" href="javascript:void(0)"><i class="fa-solid fa-share-nodes"></i></a>
                     </li>
                 </ul>
             </div>
@@ -33,9 +39,9 @@
                         <div class="title"><a>ElANA</a></div>
                         <div class="desc mt-2">general manager</div>
                     </li>
-                    <li class="nav-item"><a class="nav-link"  (click)="tab('friends')"
+                    <li class="nav-item"><a class="nav-link" (click)="tab('friends')"
                             [ngClass]="{'show active': openTab == 'friends'}">Friends</a></li>
-                    <li class="nav-item"><a class="nav-link"  (click)="tab('photos')"
+                    <li class="nav-item"><a class="nav-link" (click)="tab('photos')"
                             [ngClass]="{'show active': openTab == 'photos'}">Photos</a></li>
                 </ul>
             </div>

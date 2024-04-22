@@ -148,9 +148,9 @@ export const educationchart1: ChartOptions | any = {
     grid: {
         show: false,
         padding: {
-            top: -40,
+            top: -20,
             right: 0,
-            bottom: -40,
+            bottom: -20,
             left: 0,
         },
     },
@@ -272,9 +272,9 @@ export const educationchart2: ChartOptions | any = {
     grid: {
         show: false,
         padding: {
-            top: -40,
+            top: -20,
             right: 0,
-            bottom: -40,
+            bottom: -20,
             left: 0,
         },
     },
@@ -393,9 +393,9 @@ export const educationchart3: ChartOptions | any = {
     grid: {
         show: false,
         padding: {
-            top: -40,
+            top: -20,
             right: 0,
-            bottom: -40,
+            bottom: -10,
             left: 0,
         },
     },

@@ -1,7 +1,7 @@
 <div class="row g-3 custom-input">
     <div class="col-sm-6">
         <label class="form-label">Stock Availability</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select">
             <option selected="">In stock</option>
             <option value="1">Out of stock</option>
             <option value="2">Pre-order</option>
@@ -9,7 +9,7 @@
     </div>
     <div class="col-sm-6">
         <label class="form-label">Low Stock</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select">
             <option selected="">Low Stock (5 or less)</option>
             <option value="1">Low Stock (10 or less)</option>
             <option value="2">Low Stock (20 or less)</option>
@@ -20,27 +20,27 @@
     <div class="col-lg-3 col-sm-6">
         <label class="form-label" for="exampleFormControlInput1">SKU <span
                 class="txt-danger">*</span></label>
-        <input class="form-control" id="exampleFormControlInput1" type="text">
+        <input class="form-control" id="exampleFormControlInput1" type="text" name="sku">
     </div>
     <div class="col-lg-3 col-sm-6">
         <label class="form-label" for="exampleFormControlInputa">Stock Quantity <span
                 class="txt-danger">*</span></label>
-        <input class="form-control" id="exampleFormControlInputa" type="number" value="7" min="0">
+        <input class="form-control" id="exampleFormControlInputa" type="number" value="7" min="0" name="Stockquantity">
     </div>
     <div class="col-lg-3 col-sm-6">
         <label class="form-label" for="exampleFormControlInputb">Restock Date <span
                 class="txt-danger">*</span></label>
-        <input class="form-control" id="exampleFormControlInputb" type="number">
+        <input class="form-control" id="exampleFormControlInputb" type="number" name="date">
     </div>
     <div class="col-lg-3 col-sm-6">
         <label class="form-label" for="exampleFormControlInputc">Pre-Order <span
                 class="txt-danger">*</span></label>
-        <input class="form-control" id="exampleFormControlInputc" type="number">
+        <input class="form-control" id="exampleFormControlInputc" type="number" name="Pre-Order">
     </div>
     <div class="col-12">
         <label class="form-label">Allow Backorders</label>
         <div class="form-check">
-            <input class="form-check-input" id="gridCheck" type="checkbox">
+            <input class="form-check-input" id="gridCheck" type="checkbox" name="allowbackorder">
             <label class="form-check-label m-0" for="gridCheck">This is a digital Product</label>
             <p class="f-light">Decide if the product is a digital or physical item. Shipping may be
                 necessary for real-world items.

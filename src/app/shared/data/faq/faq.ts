@@ -295,7 +295,7 @@ export const questionData = [
 export const LatestUpdates = [
    {
       icon: 'rotate-cw',
-      des: '<a class="font-primary" href="javascript:void(0)">David Linner </a>requested money back for a double debit card charge',
+      des: '<a class="font-primary">David Linner </a>requested money back for a double debit card charge',
       time: '10 minutes ago'
    },
    {
@@ -305,12 +305,12 @@ export const LatestUpdates = [
    },
    {
       icon: 'link',
-      des: 'User Christopher <a class="font-primary" href="javascript:void(0)">Wallace</a> is on hold and awaiting for staff reply',
+      des: 'User Christopher <a class="font-primary">Wallace</a> is on hold and awaiting for staff reply',
       time: '45 minutes ago',
    },
    {
       icon: 'check',
-      des: 'Ticket #43683 has been closed by <a class="font-primary" href="javascript:void(0)">Victoria Wilson</a>',
+      des: 'Ticket #43683 has been closed by <a class="font-primary">Victoria Wilson</a>',
       time: 'Dec 7, 11:48',
    },
 ]

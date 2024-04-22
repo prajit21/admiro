@@ -10,7 +10,7 @@ export class AddProductsDetailsComponent {
 
   public validate: boolean = false;
   public activeStep: number = 1;
-  public htmlContent = '';
+
 
   @Output() activeSteps = new EventEmitter<number>();
 

@@ -14,6 +14,7 @@ export interface video{
 }
 export interface videos{
     youtubeUrl : string;
+    des?:string;
     rating : number;
     votes : number;
     type : string;
@@ -87,18 +88,21 @@ export const videosData : video[] = [
         heading : 'About 6,000 results (0.60 seconds)',
         data : [
             {
+                des:'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
                 youtubeUrl : 'https://www.youtube.com/embed/CJnfAXlBRTE',
                 rating : 3,
                 votes : 590,
                 type : 'Theme'
             },
             {
+                des:'Lorem Ipsum is simply dummy text of the printing.',
                 youtubeUrl : 'https://www.youtube.com/embed/wpmHZspl4EM',
                 rating : 3,
                 votes : 590,
                 type : 'Theme'
             },
             {
+                des:'Morbi eget quam et purus commodo dapibus.',
                 youtubeUrl : 'https://www.youtube.com/embed/-L4gEk7cOfk',
                 rating : 3,
                 votes : 590,
@@ -110,18 +114,21 @@ export const videosData : video[] = [
         heading : 'About 6,000 results (0.60 seconds)',
         data : [
             {
+                des:'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
                 youtubeUrl : 'https://www.youtube.com/embed/CJnfAXlBRTE',
                 rating : 3,
                 votes : 590,
                 type : 'Theme'
             },
             {
+                des:'Morbi eget quam et purus commodo dapibus.',
                 youtubeUrl : 'https://www.youtube.com/embed/-L4gEk7cOfk',
                 rating : 3,
                 votes : 590,
                 type : 'Theme'
             },
             {
+                des:'Lorem Ipsum is simply dummy text of the printing.',
                 youtubeUrl : 'https://www.youtube.com/embed/wpmHZspl4EM',
                 rating : 3,
                 votes : 590,

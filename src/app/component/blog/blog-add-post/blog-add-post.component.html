@@ -11,7 +11,7 @@
                             <div class="mb-3">
                                 <label for="validationCustom01">Title:</label>
                                 <input class="form-control" id="validationCustom01" type="text" placeholder="Post Title"
-                                    required="">
+                                    required="" name="title">
                                 <div class="valid-feedback">Looks good!</div>
                             </div>
                             <div class="mb-3">
@@ -43,8 +43,7 @@
                                 <div class="theme-form">
                                     <div class="mb-3">
                                         <label>Content:</label>
-                                        <angular-editor [placeholder]="'Enter text here...'"
-                                            [(ngModel)]="htmlContent"></angular-editor>
+                                        <angular-editor [placeholder]="'Enter text here...'"></angular-editor>
                                     </div>
                                 </div>
                             </div>

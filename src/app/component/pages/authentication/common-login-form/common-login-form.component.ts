@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class CommonLoginFormComponent {
 
-
   public show: boolean = false;
 
   showPassword() {
