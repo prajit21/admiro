@@ -21,7 +21,6 @@ export class UserDetailsComponent {
   ngOnDestroy(): void {
     this.editor.destroy();
   }
-  // public htmlContent = '';
 
   openMenu() {
     this.isOpen = !this.isOpen;

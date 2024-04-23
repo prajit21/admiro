@@ -31,9 +31,9 @@ export class BookmarkSidemenuComponent {
 
   openModal(value: string){
     if(value == 'add_bookmark'){
-      this.modal.open(NewBookmarkComponent, { size: 'lg', windowClass: 'modal-bookmark'})
+      this.modal.open(NewBookmarkComponent, { size: 'lg'})
     }else if(value == 'add_tag'){
-      this.modal.open(AddTagComponent, { size: 'lg', windowClass: 'modal-bookmark'})
+      this.modal.open(AddTagComponent, { size: 'lg',})
     }
   }
 

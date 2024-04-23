@@ -175,7 +175,7 @@ export const NewCourses = [
     },
     {
         img: 'assets/images/dashboard-3/user/18.png',
-        name: 'Fenter Jessy',
+        name: 'Alice Hogan',
         courses: 'Art.2738979',
         class: 43,
         hours: 78,
@@ -183,7 +183,7 @@ export const NewCourses = [
     },
     {
         img: 'assets/images/dashboard-3/user/19.png',
-        name: 'Fenter Jessy',
+        name: 'Aaron Hors',
         courses: 'Art.7438378',
         class: 20,
         hours: 40,

@@ -175,11 +175,7 @@ export const AdditiveBorderData: titleData[] = [
             {
                 class: 'helper-box bg-light border-start',
                 title: '.border-start'
-            },
-            {
-                class: 'helper-box bg-light border-end',
-                title: '.border-end'
-            },
+            }
 
 
         ]

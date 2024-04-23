@@ -16,7 +16,6 @@ export class DataTableComponent {
 
   public tableData$: Observable<supportDB[]>;
   public tableData =  SUPPORTDB;
-  public  Data: supportDB[];
   public total$: Observable<number>;
 
   @ViewChildren(NgbdSortableHeader) headers: QueryList<NgbdSortableHeader>;
@@ -25,15 +24,7 @@ export class DataTableComponent {
     this.tableData$ = service.supportdata$;
     this.total$ = service.total$;
   }
-
-  ngOnInit() {
-    this.tableData$.subscribe((res) => {
-      this.Data = res;
-    });
-  }
-
- 
-
+  
   onSort({ column, direction }: SortEvent) {
     this.headers.forEach((header) => {
       if (header.sortable !== column) {

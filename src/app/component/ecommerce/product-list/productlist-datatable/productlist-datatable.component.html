@@ -6,7 +6,7 @@
                     <option [ngValue]="10">10</option>
                     <option [ngValue]="25">25</option>
                     <option [ngValue]="50">50</option>
-                    <option [ngValue]="10">100</option> 
+                    <option [ngValue]="10">100</option>
                 </select>
                 <div class="mb-3 row">
                     <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Search:</label>
@@ -24,9 +24,11 @@
                                 <input class="form-check-input checkbox-primary" type="checkbox">
                             </div>
                         </th>
-                        <th sortable="name" (sort)="onSort($event)"> <span class="f-light f-w-600">Product Name</span></th>
+                        <th sortable="name" (sort)="onSort($event)"> <span class="f-light f-w-600">Product Name</span>
+                        </th>
                         <th sortable="sku" (sort)="onSort($event)"> <span class="f-light f-w-600">SKU</span></th>
-                        <th sortable="category" (sort)="onSort($event)"> <span class="f-light f-w-600">Category</span></th>
+                        <th sortable="category" (sort)="onSort($event)"> <span class="f-light f-w-600">Category</span>
+                        </th>
                         <th sortable="price" (sort)="onSort($event)"> <span class="f-light f-w-600">Price</span></th>
                         <th sortable="qty" (sort)="onSort($event)"> <span class="f-light f-w-600">Qty</span></th>
                         <th sortable="status" (sort)="onSort($event)"> <span class="f-light f-w-600">Status</span></th>
@@ -44,7 +46,8 @@
                         </td>
                         <td>
                             <div class="product-names">
-                                <div class="light-product-box"><img class="img-fluid" src="{{item.img}}" alt="laptop"></div>
+                                <div class="light-product-box"><img class="img-fluid" src="{{item.img}}" alt="laptop">
+                                </div>
                                 <p>{{item.name}}</p>
                             </div>
                         </td>
@@ -80,8 +83,7 @@
                             </div>
                         </td>
                     </tr>
-                    }
-                    @if(!Data.length){
+                    }@empty{
                     <tr class="odd">
                         <td colspan="8" class="dataTables_empty" style="text-align: center;">Opps! There are no result
                             found.</td>

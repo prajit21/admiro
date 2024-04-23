@@ -4,6 +4,7 @@
 .btn {
     font-size: 14px;
     font-weight: 600;
+    --bs-btn-border-radius: unset;
 }
 $colors: (
   primary: var(--theme-default),

@@ -13,7 +13,6 @@ export class CategoryDataTableComponent {
 
   public Category$: Observable<Category[]>;
   public total$: Observable<number>;
-  public Data: Category[];
   public CategoryList = CategoryData;
 
   @ViewChildren(CategoriesDirective)
@@ -23,12 +22,6 @@ export class CategoryDataTableComponent {
   constructor(public service: CategoriesService) {
     this.Category$ = service.support$;
     this.total$ = service.total$;
-  }
-
-  ngOnInit() {
-    this.Category$.subscribe((res) => {
-      this.Data = res;
-    });
   }
 
 

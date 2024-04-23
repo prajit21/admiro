@@ -150,7 +150,7 @@ export const educationchart1: ChartOptions | any = {
         padding: {
             top: -20,
             right: 0,
-            bottom: -20,
+            bottom: -8,
             left: 0,
         },
     },

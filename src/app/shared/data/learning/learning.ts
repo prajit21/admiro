@@ -188,7 +188,7 @@ export const learningTopData = [
     title: "Java Language",
     by: "Paige Turner",
     hits: "15",
-    desc: "Multi-threading Support: Java has built-in support for multi-threading, allowing developers to create concurrent applications that can perform tasks simultaneously, thereby improving performance in certain scenarios."
+    desc: "Java is an object-oriented programming language. Sun Microsystems first released Java in the year 1995. It is popularly used for developing Java applications in data centers, laptops, cell phones, game consoles, and scientific supercomputers. There are multiple"
   },
   {
     id: 2,
@@ -198,7 +198,7 @@ export const learningTopData = [
     title: "Web Development",
     by: "Paige Turner",
     hits: "34",
-    desc: "CSS (Cascading Style Sheets): Controls the presentation and layout of web pages, including fonts, colors, and positioning of elements."
+    desc: "Web development is the work involved in developing a website for the Internet or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social"
   }
 ]
 

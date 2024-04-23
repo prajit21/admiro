@@ -36,8 +36,7 @@ function matches(country: supportDB, term: string, pipe: PipeTransform) {
     country.position.toLowerCase().includes(term.toLowerCase()) ||
     country.office.toLowerCase().includes(term.toLowerCase()) ||
     country.email.toLowerCase().includes(term.toLowerCase()) ||
-    country.experience.toLowerCase().includes(term.toLowerCase()) ||
-    pipe.transform(country.salary).includes(term)
+    country.experience.toLowerCase().includes(term.toLowerCase())
   );
 }
 

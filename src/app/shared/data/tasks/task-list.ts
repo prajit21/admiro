@@ -68,6 +68,12 @@ export const TaskData: Tasklist[] = [
                 subtitle: 'General',
                 text: "There are many tools available for testing websites, we’ve chosen classics: Chrome dev tools.."
             },
+            {
+                id:8,
+                title: 'Email newsletter',
+                subtitle: 'General',
+                text: "There is some Console error in user profile page."
+            }
         ]
     },
     {

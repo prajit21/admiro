@@ -400,52 +400,129 @@ export const orderBarchart: ChartOptions | any = {
 }
 
 export const salesvaluechart: ChartOptions | any = {
-  series: [{
-      name: "Statistics",
-      data: [20, 60, 50, 70, 40, 80, 10],
-  },
-  {
-      name: "Statistics",
-      data: [80, 40, 50, 30, 60, 20, 10],
-  },
+//   series: [{
+//       name: "Statistics",
+//       data:[20, 60, 50, 70, 40, 80, 5],
+//   },
+//   {
+//       name: "Statistics",
+//       data: [80, 40, 50, 30, 60, 20, 10],
+//   },
+//   ],
+//   chart: {
+//       type: 'bar',
+//       offsetY: -10,
+//       toolbar: {
+//           show: false
+//       },
+//       height: 203,
+//       stacked: true,
+//   },
+//   states: {
+//       hover: {
+//           filter: {
+//               type: 'darken',
+//               value: 1,
+//           }
+//       }
+//   },
+//   plotOptions: {
+//       bar: {
+//           horizontal: false,
+//           s̶t̶a̶r̶t̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
+//           e̶n̶d̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
+//           borderRadius: 3,
+//           columnWidth: '35%',
+//       }
+//   },
+//   dataLabels: {
+//       enabled: false
+//   },
+//   grid: {
+//       yaxis: {
+//           lines: {
+//               show: false
+//           }
+//       },
+//   },
+//   xaxis: {
+//       labels: {
+//           show: false,
+//       },
+//       axisBorder: {
+//           show: false,
+//       },
+//       axisTicks: {
+//           show: false,
+//       },
+//   },
+//   yaxis: {
+//       show: false,
+//   },
+//   fill: {
+//       opacity: 1,
+//       colors: [primary_color, "#D5E8E6"],
+//   },
+//   legend: {
+//       show: false
+//   },
+//   tooltip: {
+//       custom: function ({ series, seriesIndex, dataPointIndex, }: any) {
+//           return '<div class="apex-tooltip p-2">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Expenses' + '<h3>' + '$' + series[seriesIndex][dataPointIndex] + '<h3/>' + '</span>' + '</div>';
+//       },
+//   },
+
+  series: [
+      {
+          name: "Statistics",
+          data: [20, 60, 50, 70, 40, 80, 5],
+      },
+      {
+          name: "Statistics",
+          data: [80, 40, 50, 30, 60, 20, 10],
+      },
   ],
   chart: {
-      type: 'bar',
-      offsetY: -10,
-      toolbar: {
-          show: false
-      },
-      height: 203,
+      type: "bar",
+      height: 153,
       stacked: true,
-  },
-  states: {
-      hover: {
-          filter: {
-              type: 'darken',
-              value: 1,
-          }
-      }
+      stackType: "100%",
+      toolbar: {
+          show: false,
+      },
   },
   plotOptions: {
       bar: {
           horizontal: false,
-          s̶t̶a̶r̶t̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-          e̶n̶d̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-          borderRadius: 3,
-          columnWidth: '35%',
-      }
-  },
-  dataLabels: {
-      enabled: false
-  },
-  grid: {
-      yaxis: {
-          lines: {
-              show: false
-          }
+          columnWidth: "7px",
+          borderRadius: 2,
       },
   },
+  grid: {
+      show: false,
+      xaxis: {
+          lines: {
+              show: false,
+          },
+      },
+  },
+  states: {
+      hover: {
+          filter: {
+              type: "darken",
+              value: 1,
+          },
+      },
+  },
+  dataLabels: {
+      enabled: false,
+  },
+  legend: {
+      show: false,
+  },
+  colors: [primary_color, "#D5E8E6"],
   xaxis: {
+      show: false,
       labels: {
           show: false,
       },
@@ -457,135 +534,58 @@ export const salesvaluechart: ChartOptions | any = {
       },
   },
   yaxis: {
-      show: false,
-  },
-  fill: {
-      opacity: 1,
-      colors: [primary_color, "#D5E8E6"],
-  },
-  legend: {
-      show: false
-  },
-  tooltip: {
-      custom: function ({ series, seriesIndex, dataPointIndex, }: any) {
-          return '<div class="apex-tooltip p-2">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Expenses' + '<h3>' + '$' + series[seriesIndex][dataPointIndex] + '<h3/>' + '</span>' + '</div>';
+      labels: {
+          show: false,
       },
   },
-
-  // series: [
-  //     {
-  //         name: "Statistics",
-  //         data: [20, 60, 50, 70, 40, 80, 5],
-  //     },
-  //     {
-  //         name: "Statistics",
-  //         data: [80, 40, 50, 30, 60, 20, 10],
-  //     },
-  // ],
-  // chart: {
-  //     type: "bar",
-  //     height: 153,
-  //     stacked: true,
-  //     stackType: "100%",
-  //     toolbar: {
-  //         show: false,
-  //     },
-  // },
-  // plotOptions: {
-  //     bar: {
-  //         horizontal: false,
-  //         columnWidth: "40px",
-  //         borderRadius: 2,
-  //     },
-  // },
-  // grid: {
-  //     show: false,
-  //     xaxis: {
-  //         lines: {
-  //             show: false,
-  //         },
-  //     },
-  // },
-  // states: {
-  //     hover: {
-  //         filter: {
-  //             type: "darken",
-  //             value: 1,
-  //         },
-  //     },
-  // },
-  // dataLabels: {
-  //     enabled: false,
-  // },
-  // legend: {
-  //     show: false,
-  // },
-  // colors: [primary_color, "#D5E8E6"],
-  // xaxis: {
-  //     show: false,
-  //     labels: {
-  //         show: false,
-  //     },
-  //     axisBorder: {
-  //         show: false,
-  //     },
-  //     axisTicks: {
-  //         show: false,
-  //     },
-  // },
-  // yaxis: {
-  //     labels: {
-  //         show: false,
-  //     },
-  // },
-  // tooltip: {
-  //     marker: {
-  //         show: false,
-  //     },
-  //     fixed: {
-  //         enabled: false,
-  //         position: "bottomRight",
-  //         offsetX: 0,
-  //         offsetY: 0,
-  //     },
-  // },
-  // responsive: [
-  //     {
-  //         breakpoint: 1661,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 offsetX: -30,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 1451,
-  //         options: {
-  //             chart: {
-  //                 width: 130,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 1400,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 height: 140,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 576,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 height: 130,
-  //             },
-  //         },
-  //     },
-  // ],
+  tooltip: {
+      marker: {
+          show: false,
+      },
+      fixed: {
+          enabled: false,
+          position: "bottomRight",
+          offsetX: 0,
+          offsetY: 0,
+      },
+  },
+  responsive: [
+      {
+          breakpoint: 1661,
+          options: {
+              chart: {
+                  width: 150,
+                  offsetX: -30,
+              },
+          },
+      },
+      {
+          breakpoint: 1451,
+          options: {
+              chart: {
+                  width: 130,
+              },
+          },
+      },
+      {
+          breakpoint: 1400,
+          options: {
+              chart: {
+                  width: 150,
+                  height: 140,
+              },
+          },
+      },
+      {
+          breakpoint: 576,
+          options: {
+              chart: {
+                  width: 150,
+                  height: 130,
+              },
+          },
+      },
+  ],
   badge: '80%',
   class: 'primary',
   price: 376793,
@@ -593,52 +593,57 @@ export const salesvaluechart: ChartOptions | any = {
 }
 
 export const visitorchart: ChartOptions | any = {
-  series: [{
-      name: "Statistics",
-      data: [20, 60, 50, 70, 40, 80, 10],
-  },
-  {
-      name: "Statistics",
-      data: [80, 40, 50, 30, 60, 20, 10],
-  },
+  series: [
+      {
+          name: "Statistics",
+          data: [20, 60, 50, 70, 40, 80, 5],
+      },
+      {
+          name: "Statistics",
+          data: [80, 40, 50, 30, 60, 20, 10],
+      },
   ],
   chart: {
-      type: 'bar',
-      offsetY: -10,
-      toolbar: {
-          show: false
-      },
-      height: 203,
+      type: "bar",
+      height: 153,
       stacked: true,
-  },
-  states: {
-      hover: {
-          filter: {
-              type: 'darken',
-              value: 1,
-          }
-      }
+      stackType: "100%",
+      toolbar: {
+          show: false,
+      },
   },
   plotOptions: {
       bar: {
           horizontal: false,
-          s̶t̶a̶r̶t̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-          e̶n̶d̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-          borderRadius: 3,
-          columnWidth: '35%',
-      }
-  },
-  dataLabels: {
-      enabled: false
-  },
-  grid: {
-      yaxis: {
-          lines: {
-              show: false
-          }
+          columnWidth: "7px",
+          borderRadius: 0,
       },
   },
+  grid: {
+      show: false,
+      xaxis: {
+          lines: {
+              show: false,
+          },
+      },
+  },
+  states: {
+      hover: {
+          filter: {
+              type: "darken",
+              value: 1,
+          },
+      },
+  },
+  dataLabels: {
+      enabled: false,
+  },
+  legend: {
+      show: false,
+  },
+  colors: [secondary_color, "#faded1"],
   xaxis: {
+      show: false,
       labels: {
           show: false,
       },
@@ -650,134 +655,58 @@ export const visitorchart: ChartOptions | any = {
       },
   },
   yaxis: {
-      show: false,
-  },
-  fill: {
-      opacity: 1,
-      colors: [secondary_color, "#faded1"],
-  },
-  legend: {
-      show: false
-  },
-  tooltip: {
-      custom: function ({ series, seriesIndex, dataPointIndex, }: any) {
-          return '<div class="apex-tooltip p-2">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Expenses' + '<h3>' + '$' + series[seriesIndex][dataPointIndex] + '<h3/>' + '</span>' + '</div>';
+      labels: {
+          show: false,
       },
   },
-  // series: [
-  //     {
-  //         name: "Statistics",
-  //         data: [20, 60, 50, 70, 40, 80, 5],
-  //     },
-  //     {
-  //         name: "Statistics",
-  //         data: [80, 40, 50, 30, 60, 20, 10],
-  //     },
-  // ],
-  // chart: {
-  //     type: "bar",
-  //     height: 153,
-  //     stacked: true,
-  //     stackType: "100%",
-  //     toolbar: {
-  //         show: false,
-  //     },
-  // },
-  // plotOptions: {
-  //     bar: {
-  //         horizontal: false,
-  //         columnWidth: "40px",
-  //         borderRadius: 0,
-  //     },
-  // },
-  // grid: {
-  //     show: false,
-  //     xaxis: {
-  //         lines: {
-  //             show: false,
-  //         },
-  //     },
-  // },
-  // states: {
-  //     hover: {
-  //         filter: {
-  //             type: "darken",
-  //             value: 1,
-  //         },
-  //     },
-  // },
-  // dataLabels: {
-  //     enabled: false,
-  // },
-  // legend: {
-  //     show: false,
-  // },
-  // colors: [secondary_color, "#faded1"],
-  // xaxis: {
-  //     show: false,
-  //     labels: {
-  //         show: false,
-  //     },
-  //     axisBorder: {
-  //         show: false,
-  //     },
-  //     axisTicks: {
-  //         show: false,
-  //     },
-  // },
-  // yaxis: {
-  //     labels: {
-  //         show: false,
-  //     },
-  // },
-  // tooltip: {
-  //     marker: {
-  //         show: false,
-  //     },
-  //     fixed: {
-  //         enabled: false,
-  //         position: "bottomRight",
-  //         offsetX: 0,
-  //         offsetY: 0,
-  //     },
-  // },
-  // responsive: [
-  //     {
-  //         breakpoint: 1601,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 offsetX: -30,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 1451,
-  //         options: {
-  //             chart: {
-  //                 width: 130,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 1400,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 height: 140,
-  //             },
-  //         },
-  //     },
-  //     {
-  //         breakpoint: 576,
-  //         options: {
-  //             chart: {
-  //                 width: 150,
-  //                 height: 130,
-  //             },
-  //         },
-  //     },
-  // ],
+  tooltip: {
+      marker: {
+          show: false,
+      },
+      fixed: {
+          enabled: false,
+          position: "bottomRight",
+          offsetX: 0,
+          offsetY: 0,
+      },
+  },
+  responsive: [
+      {
+          breakpoint: 1601,
+          options: {
+              chart: {
+                  width: 150,
+                  offsetX: -30,
+              },
+          },
+      },
+      {
+          breakpoint: 1451,
+          options: {
+              chart: {
+                  width: 130,
+              },
+          },
+      },
+      {
+          breakpoint: 1400,
+          options: {
+              chart: {
+                  width: 150,
+                  height: 140,
+              },
+          },
+      },
+      {
+          breakpoint: 576,
+          options: {
+              chart: {
+                  width: 150,
+                  height: 130,
+              },
+          },
+      },
+  ],
   badge: '60%',
   class: 'secondary',
   price: 426876,

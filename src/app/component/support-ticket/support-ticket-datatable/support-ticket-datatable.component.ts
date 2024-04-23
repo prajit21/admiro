@@ -12,7 +12,6 @@ import { SupportTicketService } from '../../../shared/services/support-ticket.se
 export class SupportTicketDatatableComponent {
 
   public countries$: Observable<supportDB[]>;
-  public Data: supportDB[];
   public total$: Observable<number>;
   public supportData = SUPPORTDB;
 
@@ -23,20 +22,13 @@ export class SupportTicketDatatableComponent {
     this.total$ = service.total$;
   }
 
-
-  ngOnInit() {
-    this.countries$.subscribe((res) => {
-      this.Data = res;
-    });
-  }
-
-
   get filteredData(): supportDB[] {
-    return this.supportData.filter((person: { img: string, position: string, name: string, office: string, email: string }) => {
+    return this.supportData.filter((person: { img: string, position: string, name: string, office: string, email: string ,experience:string }) => {
       return person.img.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
         person.position.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.name.toLowerCase().includes(this.service.searchTerm.toLowerCase())    ||
-        person.office.toLowerCase().includes(this.service.searchTerm.toLowerCase())    ||
+        person.name.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
+        person.office.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
+        person.experience.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
         person.email.toLowerCase().includes(this.service.searchTerm.toLowerCase())    
     });
   }

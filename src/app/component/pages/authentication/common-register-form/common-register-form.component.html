@@ -1,7 +1,13 @@
 <div class="login-main">
     <form class="theme-form">
+        @if(center == true ){
+        <h2 class="text-center">Create your account</h2>
+        <p class="text-center">Enter your personal details to create account</p>
+        }
+        @else{
         <h2>Create your account</h2>
         <p>Enter your personal details to create account</p>
+        }
         <div class="form-group">
             <label class="col-form-label pt-0">Your Name</label>
             <div class="row g-2">

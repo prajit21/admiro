@@ -43,7 +43,7 @@ export const userStatus = [
         img: 'assets/images/dashboard-2/user/06.png',
         name: 'Wilson Pipes',
         status: '(213+ Online)',
-        country: 'australia',
+        country: 'Australia',
         progress: '60%',
         class: 'warning'
     },

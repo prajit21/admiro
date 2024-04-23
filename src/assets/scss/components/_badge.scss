@@ -50,6 +50,7 @@
     padding: 0.44em 0.7em;
     // font-family: $font-roboto, $font-serif;
     font-weight: 500;
+    --bs-badge-border-radius: unset;
   
     &+.badge {
       margin-left: 5px;

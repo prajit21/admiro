@@ -139,19 +139,19 @@ export const lightThemeAlert: alert[] = [
             {
                 title: 'Danger Light Alert',
                 class: 'light-danger',
-                text: 'danger alert',
+                text: 'Danger alert',
                 color: 'txt-danger'
             },
             {
                 title: 'White Light alert',
                 class: 'light-light',
-                text: 'light alert',
+                text: 'Light alert',
                 color: 'txt-dark'
             },
             {
                 title: 'Dark Light Alert',
                 class: 'light-dark',
-                text: 'dark alert',
+                text: 'Dark alert',
                 color: 'txt-dark'
             },
 
