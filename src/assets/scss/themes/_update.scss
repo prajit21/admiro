@@ -1,7 +1,6 @@
 /**=====================
   4.3 Update CSS Start
 ==========================**/
-// Animated modal
 .animate-img {
     .card {
         box-shadow: 0px 4px 15px rgba($black, 0.05);
@@ -74,18 +73,10 @@ pre[class*=language-] {
     background: var(--white) !important;
 }
 
-.page-sidebar {
-	.sidebar-link.actived {
-		background-color: rgba($primary-color,0.3);
-        stroke: $primary-color;
-        color:$primary-color;
-	}
-}
-
 .bookmark-dropdown {
     .flip-card {
         width: 300px;
-        height: 278px;
+        height: 260px;
         background-color: transparent;
         .flip-card-inner{
             position: relative;
@@ -100,13 +91,15 @@ pre[class*=language-] {
                 overflow: hidden;
                 box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
                 width: 300px;
-                height: 278px;
+                height: 260px;
             }
             .front {
                 background-color: var(--card-color);
                 transition: 0.3s;
                 .bookmark-dropdown {
+                    padding: 15px;
                     li {
+                        padding: 15px;
                         &:last-child {
                             padding-bottom: 15px;
                         }
@@ -116,10 +109,11 @@ pre[class*=language-] {
                         }
                         .bookmark-content{
                             text-align: center;
-                            
+                            margin-bottom: 8px;
+
                             .bookmark-icon{
-                                width: 44px;
-                                height: 44px;
+                                width: 52px;
+                                height: 52px;
                                 border-radius: 100%;
                                 display: flex;
                                 align-items: center;
@@ -142,6 +136,13 @@ pre[class*=language-] {
                                 width: 100%;
                             }
                         }
+                        .bookmark-scroll{
+                            max-height: 85px;
+                            overflow: auto;
+                        }
+                        + li{
+                            margin-top: 15px;
+                        }
                     }
                 }
             }
@@ -149,38 +150,34 @@ pre[class*=language-] {
                 background-color: var(--card-color);
                 transform: rotateY(180deg);
                 ul{
+                    padding: 15px;
                     li{
-                        &:first-child{
-                            margin-top: 20px;
-                            height: 140px !important;
-                        }
-                        &:last-child{
-                            margin-top: 34px !important; 
+                        padding: 15px;
+                        &:first-child{  
+                            height: 195px!important;
                         }
                         .ProfileCard {
                             &:hover {
                                 svg {
-                                    stroke: var(--theme-deafult);
+                                    stroke: var(--theme-default);
                                 }
                                 a {
-                                    color: var(--theme-deafult);
+                                    color: var(--theme-default);
+                                }
+                            }
+                            .ProfileCard-details{
+                                i{
+                                    font-size: 13px;
                                 }
                             }
                         }
                         .flip-back-content{
                             input{
-                                background-color: var(--light-color);
-                                border: none;
-                                border-radius: 0;
+                                border-radius: 25px;
+                                padding: 10px 20px;
+                                width: 100%;
+                                border: 1px solid #ddd;
                             }
-                        }
-                        .custom-scrollbar{
-                            padding: 10px 16px;
-                            top: 80px;
-                            box-shadow: none;
-                            height: 120px;
-                            overflow: auto;
-                            min-height: 0 !important;
                         }
                     }
                 }
@@ -191,16 +188,19 @@ pre[class*=language-] {
                     opacity: 0;
                 }
             }
+                .custom-bookmark-content{
+                    svg{
+                        vertical-align: -2px;
+                        width: 22px;
+                        height: 18px;
+                    }
+                }
         }
-    }
-    .custom-scrollbar {
-        height: 140px;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
     .flip-btn{
         justify-content: center;
         font-family: $body-font;
+        color: var(--theme-default);
     }
     &.custom-menu {
         @media (max-width: 575px) {
@@ -209,7 +209,13 @@ pre[class*=language-] {
         }
     }
 }
-
+.bookmark-flip{
+    .Typeahead-menu{
+        overflow: auto;
+        height: 153px;
+        padding: 0;
+    }
+}
 
 /**=====================
     4.3 Update CSS Ends

@@ -1,6 +1,6 @@
 export const JobToday = [
     {
-        time: '10:am',
+        time: '10:AM',
         job: 'Maintenace',
         company: 'Apple Inc.',
         img: 'assets/images/dashboard-1/user/1.png',

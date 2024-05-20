@@ -92,26 +92,27 @@
                     }
                 }
             }
-            thead {
-                >tr {
-                    >th {
-                        border: none !important;
-                        border-bottom: 1px solid var(--light-gray) !important;
-                        text-transform: capitalize;
-                        font-weight: 700;
-                        color: var(--font-color);
-                        &:before,
-                        &:after {
-                            display: none;
-                        }
+
+        }
+        thead {
+            >tr {
+                >th {
+                    border: none !important;
+                    border-bottom: 1px solid var(--light-gray) !important;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: var(--font-color);
+                    &:before,
+                    &:after {
+                        display: none;
                     }
                 }
             }
-            tbody {
-                >tr {
-                    >td {
-                        border-bottom: none;
-                    }
+        }
+        tbody {
+            >tr {
+                >td {
+                    border-bottom: none;
                 }
             }
         }

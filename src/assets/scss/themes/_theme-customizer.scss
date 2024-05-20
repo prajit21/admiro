@@ -1,6 +1,4 @@
-// /**=====================
-//   4.2 Theme-customizer CSS Start
-// ==========================**/
+/**==customizer==**/
 .sidebar-pannle-main {
   position: fixed;
   bottom: 80px;
@@ -105,6 +103,8 @@
       }
       .color-img {
         position: relative;
+        border: 5px solid rgba($primary-color, 0.3);
+        border-radius: 10px;
         img {
           left: 0;
           border-radius: 5px;
@@ -279,6 +279,3 @@
     }
   }
 }
-// /**=====================
-//   4.2 Theme-customizer CSS End
-// ==========================**/

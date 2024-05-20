@@ -3994,4 +3994,22 @@ html[dir="rtl"] {
       }
     }
   }
+
+    header {
+      .cart-dropdown {
+        .close-circle {
+          right: unset;
+          left: 0;
+        }
+      }
+    }
+    .ProfileCard-avatar{
+      left: unset;
+      right: 10px;
+    }
+    .ProfileCard-details {
+      padding-left: unset;
+      padding-right: 35px;
+      float: right;
+  }
 }

@@ -56,8 +56,8 @@
         @media (max-width: 1199.98px) {
             padding: 19px 24px;
         }
-        .close-btn{
-            &.sidebar-close{
+        .close-btn {
+            &.sidebar-close {
                 display: none;
                 @media (max-width: 991px) {
                     display: block;
@@ -181,10 +181,11 @@
             gap: 10px;
             color: var(--body-font-color);
             svg {
-                width: 18px;
+                width: 20px;
                 height: 18px;
                 stroke: var(--body-font-color);
                 transition: 0.5s all;
+                vertical-align: -2px;
             }
             .arrow {
                 width: 15px;
@@ -197,34 +198,34 @@
             }
         }
     }
-    .user-wrap{
-        .setting-icon{
-            .custom-menu{
+    .user-wrap {
+        .setting-icon {
+            .custom-menu {
                 z-index: 99;
                 margin-top: -5px !important;
                 box-shadow: 0 10px 20px rgb(163 161 161 / 19%), 0 6px 6px rgb(76 75 75 / 23%);
                 border-radius: 5px;
-                background-color: $white;
+                background-color: var(--white);
                 right: -46px;
-                .profile-body{
+                .profile-body {
                     width: 158px;
                     padding: 18px;
-                    li{
+                    li {
                         padding: 10px 0;
-                        &:first-child{
+                        &:first-child {
                             padding-top: 0;
                         }
-                        &:last-child{
+                        &:last-child {
                             padding-bottom: 0;
                         }
-                        + li{
+                        +li {
                             border-top: 1px solid var(--gray-200);
                         }
-                        svg{
+                        svg {
                             width: 18px;
                             height: 18px;
                         }
-                        a{
+                        a {
                             color: var(--body-font-color);
                         }
                     }
@@ -321,16 +322,18 @@
         .sidebar-link {
             padding: 12px 10px;
             border-radius: 5px;
-            &.active {
+            &.actived {
                 background-color: rgba($primary-color, 0.2);
                 color: var(--theme-default);
                 border-bottom: none;
                 .stroke-icon {
                     color: var(--theme-default);
                 }
+                .stroke-icon {
+                    stroke: var(--theme-default);
+                }
             }
             .stroke-icon {
-                // font-size: 20px;
                 color: var(--body-font-color);
             }
             .iconly-Arrow-Right-2 {
@@ -478,7 +481,6 @@
         }
     }
 }
-//horizontal css
 .page-wrapper {
     &.horizontal-sidebar {
         margin-left: unset !important;
@@ -629,16 +631,16 @@
                                 }
                             }
                         }
-                        // .simplebar-wrapper {
-                        //     .simplebar-mask {
-                        //         @media (min-width: 992px) {
-                        //             top: 0;
-                        //         }
-                        //         .simplebar-content {
-                        //             display: flex;
-                        //         }
-                        //     }
-                        // }
+                        .simplebar-wrapper {
+                            .simplebar-mask {
+                                @media (min-width: 992px) {
+                                    top: 0;
+                                }
+                                .simplebar-content {
+                                    display: flex;
+                                }
+                            }
+                        }
                     }
                 }
                 .left-arrow {
@@ -695,13 +697,13 @@
     .page-body-wrapper {
         .page-sidebar {
             .sidebar-menu {
-                // .simplebar-wrapper {
-                //     .simplebar-content {
-                //         .sidebar-list.pined {
-                //             order: -1 !important;
-                //         }
-                //     }
-                // }
+                .simplebar-wrapper {
+                    .simplebar-content {
+                        .sidebar-list.pined {
+                            order: -1 !important;
+                        }
+                    }
+                }
             }
         }
     }
@@ -724,12 +726,24 @@
     .page-body-wrapper {
         .page-sidebar {
             .sidebar-menu {
-                // .simplebar-wrapper {
-                //     .simplebar-content {
-                //         display: grid;
-                //     }
-                // }
+                .simplebar-wrapper {
+                    .simplebar-content {
+                        display: grid;
+                    }
+                }
             }
+        }
+    }
+}
+.page-wrapper {
+    &.horizontal-sidebar {
+        .horizontal-logo {
+            display: flex !important;
+        }
+    }
+    &.compact-wrapper {
+        .horizontal-logo {
+            display: none !important;
         }
     }
 }

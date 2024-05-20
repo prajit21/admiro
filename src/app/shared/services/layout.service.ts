@@ -30,7 +30,7 @@ export class LayoutService {
       .setAttribute('dir', this.config.settings.layout_type);
 
     document.documentElement.style.setProperty(
-      '--theme-deafult',
+      '--theme-default',
       this.config.color.primary_color
     );
     document.documentElement.style.setProperty(
