@@ -59,6 +59,7 @@
         .close-btn {
             &.sidebar-close {
                 display: none;
+                cursor: pointer;
                 @media (max-width: 991px) {
                     display: block;
                 }
@@ -71,6 +72,9 @@
             padding: 10px 25px 0 25px;
             height: calc(100vh - 12.625rem);
             overflow: auto;
+            @media (max-width: 991px) {
+                padding: 10px 15px 0 15px;
+            }
             .shape {
                 margin-top: 10px;
                 margin-bottom: -6px;
@@ -289,7 +293,7 @@
         i.fa-thumbtack {
             visibility: hidden;
             position: absolute;
-            top: 17px;
+            top: 19px;
             right: 2px;
             color: var(--theme-default);
             z-index: 9999;
@@ -331,6 +335,9 @@
                 }
                 .stroke-icon {
                     stroke: var(--theme-default);
+                }
+                .iconly-Arrow-Right-2{
+                    transform: rotate(90deg) !important;
                 }
             }
             .stroke-icon {
@@ -497,7 +504,7 @@
                 width: 100vw;
                 z-index: 3;
                 border-top: 0;
-                margin-top: 75px;
+                margin-top: 78px;
                 .logo-wrapper {
                     display: none !important;
                 }
@@ -555,8 +562,11 @@
                                 .feather {
                                     transform: rotate(90deg) !important;
                                 }
-                                &.active {
+                                &.actived {
                                     background-color: transparent;
+                                    .iconly-Arrow-Right-2{
+                                        transform: rotate(0deg) !important;
+                                    }
                                 }
                                 .badge {
                                     display: none;
@@ -578,7 +588,7 @@
                                 padding: 15px;
                                 border: 1 solid var(--border-color);
                                 background: var(--white);
-                                display: none;
+                                display: none !important;
                                 li {
                                     padding: 0;
                                     position: relative;
@@ -628,6 +638,11 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                            &:hover{
+                                .sidebar-submenu{
+                                    display: block !important;
                                 }
                             }
                         }

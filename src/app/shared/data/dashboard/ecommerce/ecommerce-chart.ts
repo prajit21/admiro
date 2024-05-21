@@ -154,7 +154,7 @@ export const overviewChart: ChartOptions | any = {
   annotations: {
       points: [
           {
-              x: 250, // Use the numeric index for "Feb"
+              x: 250,
               y: 45,
               marker: {
                   size: 10,
@@ -260,7 +260,7 @@ export const overviewChart: ChartOptions | any = {
           breakpoint: 1875,
           options: {
               annotations: {
-                  points: [], // Empty array to hide annotations on smaller screens
+                  points: [],
               },
           },
       },
@@ -400,77 +400,6 @@ export const orderBarchart: ChartOptions | any = {
 }
 
 export const salesvaluechart: ChartOptions | any = {
-//   series: [{
-//       name: "Statistics",
-//       data:[20, 60, 50, 70, 40, 80, 5],
-//   },
-//   {
-//       name: "Statistics",
-//       data: [80, 40, 50, 30, 60, 20, 10],
-//   },
-//   ],
-//   chart: {
-//       type: 'bar',
-//       offsetY: -10,
-//       toolbar: {
-//           show: false
-//       },
-//       height: 203,
-//       stacked: true,
-//   },
-//   states: {
-//       hover: {
-//           filter: {
-//               type: 'darken',
-//               value: 1,
-//           }
-//       }
-//   },
-//   plotOptions: {
-//       bar: {
-//           horizontal: false,
-//           s̶t̶a̶r̶t̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-//           e̶n̶d̶i̶n̶g̶S̶h̶a̶p̶e̶: 'flat',
-//           borderRadius: 3,
-//           columnWidth: '35%',
-//       }
-//   },
-//   dataLabels: {
-//       enabled: false
-//   },
-//   grid: {
-//       yaxis: {
-//           lines: {
-//               show: false
-//           }
-//       },
-//   },
-//   xaxis: {
-//       labels: {
-//           show: false,
-//       },
-//       axisBorder: {
-//           show: false,
-//       },
-//       axisTicks: {
-//           show: false,
-//       },
-//   },
-//   yaxis: {
-//       show: false,
-//   },
-//   fill: {
-//       opacity: 1,
-//       colors: [primary_color, "#D5E8E6"],
-//   },
-//   legend: {
-//       show: false
-//   },
-//   tooltip: {
-//       custom: function ({ series, seriesIndex, dataPointIndex, }: any) {
-//           return '<div class="apex-tooltip p-2">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Expenses' + '<h3>' + '$' + series[seriesIndex][dataPointIndex] + '<h3/>' + '</span>' + '</div>';
-//       },
-//   },
 
   series: [
       {
@@ -484,7 +413,7 @@ export const salesvaluechart: ChartOptions | any = {
   ],
   chart: {
       type: "bar",
-      height: 153,
+      height: 135,
       stacked: true,
       stackType: "100%",
       toolbar: {
@@ -554,7 +483,7 @@ export const salesvaluechart: ChartOptions | any = {
           breakpoint: 1661,
           options: {
               chart: {
-                  width: 150,
+                  width: 135,
                   offsetX: -30,
               },
           },
@@ -605,7 +534,7 @@ export const visitorchart: ChartOptions | any = {
   ],
   chart: {
       type: "bar",
-      height: 153,
+      height: 135,
       stacked: true,
       stackType: "100%",
       toolbar: {
@@ -675,7 +604,7 @@ export const visitorchart: ChartOptions | any = {
           breakpoint: 1601,
           options: {
               chart: {
-                  width: 150,
+                  width: 135,
                   offsetX: -30,
               },
           },
@@ -763,7 +692,6 @@ export const sellingchart: ChartOptions | any =
               },
               value: {
                   show: true,
-                  // ...fontCommon,
                   fontFamily: '"Nunito Sans", sans-serif',
                   fontWeight: 700,
                   fontSize: "16px",
@@ -858,7 +786,9 @@ export const sellingchart: ChartOptions | any =
 export const sildesOptions = {
   loop: true,
   margin: 10,
-  nav: false,
+  nav: true,
+  navText: ["<span class='owl-prev-icon'></span>", "<span class='owl-next-icon'></span>"],
+  dots: false,
   responsive: {
       3000: {
           items: 1
@@ -891,7 +821,9 @@ export const productoffer = [
 export const sildesOptions2 = {
   loop: true,
   margin: 10,
-  nav: false,
+  nav: true,
+  dots: false,
+  navText: ["<span class='owl-prev-icon'></span>", "<span class='owl-next-icon'></span>"],
   responsive: {
       3000: {
           items: 1

@@ -390,7 +390,7 @@
                     tr {
                         &:last-child {
                             td {
-                                padding-bottom: 0;
+                                padding-bottom: 0 !important;
                                 border: none;
                             }
                         }
@@ -451,6 +451,7 @@
             thead {
                 tr {
                     th {
+                        color: var(--font-color);
                         @media (max-width: 1855px) and (min-width: 1200px) {
                             padding: 11px 9px;
                         }
@@ -884,11 +885,8 @@
             tbody {
                 tr {
                     td {
-                        padding: 4px 7px;
+                        padding: 7px;
                         vertical-align: middle;
-                        @media (max-width: 1450px) and (min-width: 1399.98px) {
-                            padding: 1px 5px;
-                        }
                         @media (min-width: 1200px) and (max-width: 1399.98px) {
                             padding: 1px 10px;
                         }

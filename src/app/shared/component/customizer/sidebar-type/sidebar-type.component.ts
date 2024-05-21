@@ -24,6 +24,4 @@ export class SidebarTypeComponent {
       this.layoutService.customizer = '';
     }
   }
-
-
 }

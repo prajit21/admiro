@@ -150,51 +150,60 @@
         }
     }
     .default-datepicker {
-        .datepicker {
-            width: unset;
-            .datepicker--nav {
-                border-bottom: 0;
-                color: var(--theme-default);
-                font-size: 18px;
-                font-weight: 600;
-                text-transform: capitalize;
-                justify-content: space-evenly;
-                padding: 12px;
-                .datepicker--nav-action {
-                    path {
-                        stroke: var(--black);
+        ngb-datepicker{
+            width: 100%;
+            border: 0;
+            .ngb-dp-header{
+                background-color: unset;
+                .btn{
+                    color: var(--theme-default);
+                }
+                .ngb-dp-navigation-select{
+                    .form-select{
+                        border: 0;
+                        font-weight: 800;
                     }
                 }
-                .datepicker--nav-title {
-                    background-color: rgba($primary-color, 0.1);
-                    padding: 8px 15px;
+            }
+            .ngb-dp-content{
+                .ngb-dp-month{
+                    width: 100%;
+                    .ngb-dp-week{
+                        background-color: unset;
+                        border: 0;
+                        &.ngb-dp-weekdays{
+                            .ngb-dp-weekday{
+                                font-size: 14px;
+                                font-weight: 700;
+                                padding: 23px 10px;
+                                width: 15.2857142857%;
+                                height: 34px;
+                                color: var(--theme-default);
+                                font-family: $body-font;
+                            }
+                        }
+                        .ngb-dp-day{
+                            font-size: 14px;
+                            font-weight: 700;
+                            padding: 23px 10px;
+                            width: 15.2857142857%;
+                            height: 34px;
+                            div{
+                                color: var(--body-font-color);
+                                background-color: unset !important;
+                                border: 0;
+                            }
+                            &.ngb-dp-today{
+                                div{
+                                    color: var(--white);
+                                    background: var(--theme-default) !important;
+                                    box-shadow: 0px 4px 27px 0px rgba(48, 142, 135, 0.38);
+                                }
+                            }
+                        }
+                    }
                 }
             }
-            .datepicker--days-names {
-                margin: 10px 0;
-            }
-            .datepicker--cell {
-                color: var(--body-font-color);
-                font-size: 14px;
-                font-weight: 700;
-                padding: 23px 10px;
-                &.-other-month- {
-                    color: var(--font-color);
-                    font-weight: 500;
-                }
-                &.-current- {
-                    border-radius: 20px;
-                    color: var(--white);
-                    background: var(--theme-default);
-                    box-shadow: 0px 4px 27px 0px rgba($primary-color, 0.38);
-                }
-            }
-        }
-        .datepicker--cell.-focus- {
-            border-radius: 0;
-            color: var(--theme-default);
-            background: transparent;
-            box-shadow: none;
         }
     }
     .details-table {
@@ -288,6 +297,7 @@
                 tr {
                     td {
                         padding: 5px;
+                        padding-bottom: 5px !important;
                         color: var(--body-font-color);
                         &:first-child {
                             padding-left: unset;

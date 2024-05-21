@@ -137,11 +137,8 @@ pre[class*=language-] {
                             }
                         }
                         .bookmark-scroll{
-                            max-height: 85px;
+                            height: 130px;
                             overflow: auto;
-                        }
-                        + li{
-                            margin-top: 15px;
                         }
                     }
                 }
@@ -179,6 +176,9 @@ pre[class*=language-] {
                                 border: 1px solid #ddd;
                             }
                         }
+                        .flip-back{
+                            color: $white;
+                        }
                     }
                 }
             }
@@ -200,7 +200,7 @@ pre[class*=language-] {
     .flip-btn{
         justify-content: center;
         font-family: $body-font;
-        color: var(--theme-default);
+        color: $white;
     }
     &.custom-menu {
         @media (max-width: 575px) {
@@ -212,7 +212,7 @@ pre[class*=language-] {
 .bookmark-flip{
     .Typeahead-menu{
         overflow: auto;
-        height: 153px;
+        height: 130px;
         padding: 0;
     }
 }

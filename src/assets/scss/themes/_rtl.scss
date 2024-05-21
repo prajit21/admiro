@@ -190,7 +190,7 @@ html[dir="rtl"] {
       }
       i {
         &.fa-thumbtack {
-          left: 28px;
+          left: 2px;
           right: unset;
         }
       }
@@ -2286,6 +2286,16 @@ html[dir="rtl"] {
           .flex-grow-1 {
             margin-left: unset;
             margin-right: 8px;
+            .img-wrapper {
+              li {
+                + {
+                  li {
+                    margin-left: unset;
+                    margin-right: 20px;
+                  }
+                }
+              }
+            }
           }
           .activity-line {
             left: unset;
