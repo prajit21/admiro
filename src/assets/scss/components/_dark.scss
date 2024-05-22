@@ -1536,6 +1536,20 @@
             }
         }
     }
-
+    .custom-dropzone{
+        .dropzone.dz-wrapper {
+            .dz-preview{
+                .dz-image{
+                    background: linear-gradient(to bottom, #4e4d4d, #242424);
+                }
+                .dz-details{
+                    color: $white;
+                }
+                .dz-progress{
+                    background: rgba($black , 0.3);
+                }
+            }
+        }
+    }
     
 }

@@ -23,12 +23,14 @@
                     <h4 class="mb-1">1,80k</h4><span class="f-light">Orders</span>
                 </div>
                 <div class="order-chart">
-                    <apx-chart [series]="oderchats.series" [chart]="oderchats.chart"
-                        [plotOptions]="oderchats.plotOptions" [grid]="oderchats.grid"
-                        [dataLabels]="oderchats.dataLabels" [legend]="oderchats.legend" [stroke]="oderchats.stroke"
-                        [xaxis]="oderchats.xaxis" [yaxis]="oderchats.yaxis" [responsive]="oderchats.responsive"
-                        [tooltip]="oderchats.tooltip" [colors]="oderchats.colors">
-                    </apx-chart>
+                    <div id="orderchart">
+                        <apx-chart [series]="oderchats.series" [chart]="oderchats.chart"
+                            [plotOptions]="oderchats.plotOptions" [grid]="oderchats.grid"
+                            [dataLabels]="oderchats.dataLabels" [legend]="oderchats.legend" [stroke]="oderchats.stroke"
+                            [xaxis]="oderchats.xaxis" [yaxis]="oderchats.yaxis" [responsive]="oderchats.responsive"
+                            [tooltip]="oderchats.tooltip" [colors]="oderchats.colors">
+                        </apx-chart>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,11 +42,13 @@
                     <h4 class="mb-1">6,90k</h4><span class="f-light">Profit</span>
                 </div>
                 <div class="profit-chart">
-                    <apx-chart [series]="profitcharts.series" [chart]="profitcharts.chart" [grid]="profitcharts.grid"
-                        [dataLabels]="profitcharts.dataLabels" [stroke]="profitcharts.stroke"
-                        [xaxis]="profitcharts.xaxis" [yaxis]="profitcharts.yaxis" [responsive]="profitcharts.responsive"
-                        [tooltip]="profitcharts.tooltip" [colors]="profitcharts.colors">
-                    </apx-chart>
+                    <div id="profitchart">
+                        <apx-chart [series]="profitcharts.series" [chart]="profitcharts.chart" [grid]="profitcharts.grid"
+                            [dataLabels]="profitcharts.dataLabels" [stroke]="profitcharts.stroke"
+                            [xaxis]="profitcharts.xaxis" [yaxis]="profitcharts.yaxis" [responsive]="profitcharts.responsive"
+                            [tooltip]="profitcharts.tooltip" [colors]="profitcharts.colors">
+                        </apx-chart>
+                    </div>
                 </div>
             </div>
         </div>

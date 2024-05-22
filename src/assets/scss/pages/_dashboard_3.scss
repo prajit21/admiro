@@ -180,6 +180,13 @@
                                 height: 34px;
                                 color: var(--theme-default);
                                 font-family: $body-font;
+                                @media (max-width: 1800px) {
+                                    width: 17.285714%;
+                                }
+                                @media (max-width: 1450px) {
+                                    width: 14.285714%;
+                                    padding: 23px 5px;
+                                }
                             }
                         }
                         .ngb-dp-day{
@@ -188,6 +195,18 @@
                             padding: 23px 10px;
                             width: 15.2857142857%;
                             height: 34px;
+                            @media (max-width: 1800px) {
+                                width: 14.285714%;
+                            }
+                            @media (max-width: 1450px) {
+                                width: 13.285714%;
+                            }
+                            @media (max-width: 1399px) {
+                                width: 15.285714%;
+                            }
+                            @media (max-width: 760px) {
+                                width: 14.285714%;
+                            }
                             div{
                                 color: var(--body-font-color);
                                 background-color: unset !important;

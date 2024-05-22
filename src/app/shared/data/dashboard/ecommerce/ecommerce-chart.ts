@@ -676,7 +676,7 @@ export const sellingchart: ChartOptions | any =
           },
           track: {
               show: true,
-              background: "#EDF6F0",
+              background: "var(--body-color)",
               strokeWidth: "97%",
               opacity: 0.4,
           },

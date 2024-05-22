@@ -216,7 +216,45 @@ pre[class*=language-] {
         padding: 0;
     }
 }
-
+#chart-widget1{
+    margin-bottom: -16px;
+}
+.form-select {
+    border-radius: 6px;
+}
+.custom-dropzone{
+    &.customize-dropzone{
+        border: 2px dashed var(--theme-default)!important;
+        border-radius: 15px;
+        background-color: rgba($primary-color, 0.1);
+    }
+	.dropzone.dz-wrapper {
+        background-color: unset;
+        border: none!important;
+        margin: 0 auto;
+        font-size: 35px;
+        .dz-message{
+            background-color: unset;
+            border: none;
+            min-height: 200px;
+            overflow: hidden;
+            .dz-text{
+                background-color: unset;
+                border: none;
+                padding: 0!important;
+                font-size: 17px;
+            }
+        }
+        .dz-preview{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            margin: 0 !important;
+        }
+	}
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/
