@@ -8,21 +8,19 @@ import { LayoutService } from '../../../services/layout.service';
 })
 export class ThemeComponent {
 
-public dark: boolean = this.layout.config.settings.layout_version == 'dark-only' ? true : false;
+  public dark: boolean = this.layout.config.settings.layout_version == 'dark-only' ? true : false;
 
-constructor(public layout: LayoutService) { }
+  constructor(public layout: LayoutService) { }
 
-layoutToggle() {
-  this.dark = !this.dark;
-  if(this.dark == true){
-    document.getElementsByTagName('html')[0].setAttribute('data-theme','dark-only');
-    document.body.className = 'dark-only';
+  layoutToggle() {
+    this.dark = !this.dark;
+    this.dark
+      ? document.body.classList.add('dark-only')
+      : document.body.classList.remove('dark-only');
+    this.layout.config.settings.layout_version = this.dark
+      ? 'dark-only'
+      : 'light';
+
   }
-  else{
-    document.getElementsByTagName('html')[0].setAttribute('data-theme','light');
-    document.body.className = 'light';
-  }
-}
-
 
 }

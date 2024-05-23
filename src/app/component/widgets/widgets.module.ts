@@ -22,6 +22,9 @@ import { MonthlySalesComponent } from './chart/monthly-sales/monthly-sales.compo
 import { UsesComponent } from './chart/uses/uses.component';
 import { SalesPurchaseComponent } from './general/sales-purchase/sales-purchase.component';
 import { CustomersDetailsComponent } from './general/customers-details/customers-details.component';
+import { GeneralTotalTnvestmentComponent } from './general/general-total-tnvestment/general-total-tnvestment.component';
+import { StockValueChartComponent } from './general/stock-value-chart/stock-value-chart.component';
+import { SaleValueChartComponent } from './general/sale-value-chart/sale-value-chart.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { CustomersDetailsComponent } from './general/customers-details/customers
     MonthlySalesComponent,
     UsesComponent,
     SalesPurchaseComponent,
-    CustomersDetailsComponent
+    CustomersDetailsComponent,
+    GeneralTotalTnvestmentComponent,
+    StockValueChartComponent,
+    SaleValueChartComponent
   ],
   imports: [
     CommonModule,

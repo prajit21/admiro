@@ -45,6 +45,365 @@ export type ChartOptions = {
 let primary_color = localStorage.getItem('primary_color') || '#308e87';
 let secondary_color = localStorage.getItem('secondary_color') || '#f39159';
 
+
+export const saleValue: ChartOptions | any = {
+  series: [
+    {
+      name: "Statistics",
+      data: [20, 60, 50, 70, 40, 80, 5],
+    },
+    {
+      name: "Statistics",
+      data: [80, 40, 50, 30, 60, 20, 10],
+    },
+  ],
+  chart: {
+    type: "bar",
+    height: 120,
+    stacked: true,
+    stackType: "100%",
+    toolbar: {
+      show: false,
+    },
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "7px",
+      borderRadius: 2,
+    },
+  },
+  grid: {
+    show: false,
+    xaxis: {
+      lines: {
+        show: false,
+      },
+    },
+  },
+  states: {
+    hover: {
+      filter: {
+        type: "darken",
+        value: 1,
+      },
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  colors: [primary_color, "#D5E8E6"],
+  xaxis: {
+    show: false,
+    labels: {
+      show: false,
+    },
+    axisBorder: {
+      show: false,
+    },
+    axisTicks: {
+      show: false,
+    },
+  },
+  yaxis: {
+    labels: {
+      show: false,
+    },
+  },
+  tooltip: {
+    marker: {
+      show: false,
+    },
+    fixed: {
+      enabled: false,
+      position: "bottomRight",
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 1661,
+      options: {
+        chart: {
+          width: 150,
+        },
+      },
+    },
+    {
+      breakpoint: 1300,
+      options: {
+        chart: {
+          width: 130,
+        },
+      },
+    },
+    {
+      breakpoint: 670,
+      options: {
+        chart: {
+          offsetX: -30,
+        },
+      },
+    },
+  ],
+}
+
+export const stockValue: ChartOptions | any = {
+  series: [
+    {
+      name: "Statistics",
+      data: [20, 60, 50, 70, 40, 80, 5],
+    },
+    {
+      name: "Statistics",
+      data: [80, 40, 50, 30, 60, 20, 10],
+    },
+  ],
+  chart: {
+    type: "bar",
+    height: 120,
+    stacked: true,
+    stackType: "100%",
+    toolbar: {
+      show: false,
+    },
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: "7px",
+      borderRadius: 0,
+    },
+  },
+  grid: {
+    show: false,
+    xaxis: {
+      lines: {
+        show: false,
+      },
+    },
+  },
+  states: {
+    hover: {
+      filter: {
+        type: "darken",
+        value: 1,
+      },
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  colors: [secondary_color, "#faded1"],
+  xaxis: {
+    show: false,
+    labels: {
+      show: false,
+    },
+    axisBorder: {
+      show: false,
+    },
+    axisTicks: {
+      show: false,
+    },
+  },
+  yaxis: {
+    labels: {
+      show: false,
+    },
+  },
+  tooltip: {
+    marker: {
+      show: false,
+    },
+    fixed: {
+      enabled: false,
+      position: "bottomRight",
+      offsetX: 0,
+      offsetY: 0,
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 1661,
+      options: {
+        chart: {
+          width: 150,
+        },
+      },
+    },
+    {
+      breakpoint: 1300,
+      options: {
+        chart: {
+          width: 130,
+        },
+      },
+    },
+    {
+      breakpoint: 670,
+      options: {
+        chart: {
+          offsetX: -30,
+        },
+      },
+    },
+  ],
+}
+
+export const InvestmentChart: ChartOptions | any = {
+  series: [76, 67, 61, 90],
+  chart: {
+    height: 300,
+    type: "radialBar",
+  },
+  plotOptions: {
+    radialBar: {
+      offsetY: 0,
+      startAngle: 0,
+      endAngle: 270,
+      hollow: {
+        margin: 5,
+        size: "30%",
+        background: "transparent",
+        image: undefined,
+      },
+      dataLabels: {
+        name: {
+          fontSize: "22px",
+        },
+        value: {
+          fontSize: "16px",
+        },
+        total: {
+          show: true,
+          label: "Total",
+          formatter: function (w:number) {
+            return 249;
+          },
+        },
+      },
+      track: {
+        background: "var(--body-color)",
+      },
+    },
+  },
+  
+  colors: [
+   primary_color,secondary_color, "#ea9200", "#e74b2b",
+  ],
+  labels: ["Vimeo", "Messenger", "Facebook", "LinkedIn"],
+  legend: {
+    labels: {
+      useSeriesColors: true,
+    },
+    markers: {
+      size: 0,
+    },
+    formatter: function (seriesName: string, opts: any) {
+      return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex];
+  },
+    itemMargin: {
+      vertical: 2,
+    },
+  },
+  responsive: [
+    {
+      breakpoint: 1445,
+
+      options: {
+        chart: {
+          // height: 200,
+          offsetX: -10,
+        },
+        legend: {
+          show: false,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              margin: 2,
+              size: "20%",
+            },
+            dataLabels: {
+              total: {
+                show: false,
+              },
+            },
+          },
+        },
+      },
+    },
+    {
+      breakpoint: 1435,
+
+      options: {
+        chart: {
+          offsetX: 10,
+        },
+      },
+    },
+    {
+      breakpoint: 1430,
+
+      options: {
+        chart: {
+          offsetX: -10,
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+
+      options: {
+        chart: {
+          height: 250,
+          offsetX: -10,
+        },
+      },
+    },
+    {
+      breakpoint: 1240,
+
+      options: {
+        chart: {
+          height: 235,
+          offsetX: -10,
+        },
+      },
+    },
+    {
+      breakpoint: 1200,
+      options: {
+        chart: {
+          height: 300,
+          offsetX: -10,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              margin: 5,
+              size: "30%",
+            },
+            dataLabels: {
+              total: {
+                show: true,
+              },
+            },
+          },
+        },
+      },
+    },
+  ],
+}
+
 export const DataChart: ChartOptions | any = {
     series: [
         {

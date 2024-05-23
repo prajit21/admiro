@@ -10,10 +10,10 @@ import { NavmenuService } from '../../../services/navmenu.service';
 export class ContentComponent {
 
   constructor(public layout: LayoutService, public navmenu: NavmenuService) {
-    if ((window.innerWidth < 1185)|| window.innerWidth < 992) {
+    if (window.innerWidth < 992) {
       navmenu.closeSidebar = true;
     }
-    if (window.innerWidth <= 1185) {
+    if (window.innerWidth <= 992) {
       this.layout.config.settings.sidebar_type = 'compact-wrapper'
     } else {
       this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
@@ -24,13 +24,13 @@ export class ContentComponent {
   @HostListener('window:resize', ['$event'])
 
   onResize() {
-    if ((window.innerWidth < 1185)|| window.innerWidth < 992) {
+    if (window.innerWidth < 992) {
       this.navmenu.closeSidebar = true;
     } else {
       this.navmenu.closeSidebar = false;
     }
 
-    if (window.innerWidth <= 1185) {
+    if (window.innerWidth <= 992) {
       this.layout.config.settings.sidebar_type = 'compact-wrapper';
     } else {
       this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
