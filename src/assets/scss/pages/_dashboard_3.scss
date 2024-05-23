@@ -91,7 +91,7 @@
                 tr {
                     vertical-align: middle;
                     td {
-                        padding: 9px;
+                        padding: 8px 9px;
                         color: var(--body-font-color);
                         @media (max-width: 1870px) and (min-width:1200px) {
                             min-width: 100px;
@@ -145,6 +145,11 @@
                             }
                         }
                     }
+                    &:last-child{
+                        td{
+                            padding-bottom: 0 !important;
+                        }
+                    }
                 }
             }
         }
@@ -155,6 +160,7 @@
             border: 0;
             .ngb-dp-header{
                 background-color: unset;
+                padding-top: 0;
                 .btn{
                     color: var(--theme-default);
                 }
@@ -175,9 +181,8 @@
                             .ngb-dp-weekday{
                                 font-size: 14px;
                                 font-weight: 700;
-                                padding: 23px 10px;
+                                padding: 18px 10px;
                                 width: 15.2857142857%;
-                                height: 34px;
                                 color: var(--theme-default);
                                 font-family: $body-font;
                                 @media (max-width: 1800px) {
@@ -306,6 +311,11 @@
                             }
                         }
                     }
+                    &:last-child{
+                        td{
+                            padding-bottom: 0 !important;
+                        }
+                    }
                 }
             }
         }
@@ -362,6 +372,11 @@
                             }
                         }
                     }
+                    &:last-child{
+                        td{
+                            padding-bottom: 3px !important;
+                        }
+                    }
                 }
             }
         }
@@ -393,7 +408,7 @@
                 }
             }
             +.d-flex {
-                margin-top: 22px;
+                margin-top: 23px;
                 @include media-breakpoint-down(xl) {
                     margin-top: 31px;
                 }

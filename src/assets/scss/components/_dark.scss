@@ -1551,5 +1551,63 @@
             }
         }
     }
-    
+    .toolbar-box{
+        border-color: var(--border-color) !important;
+        .angular-editor-toolbar{
+            background: var(--white) !important;
+            border-color: var(--border-color) !important;
+            .angular-editor-button{
+                background: var(--white) !important;
+                border-color: var(--border-color) !important;
+                i{
+                    color: var(--gray-60);
+                }
+            }
+            .ae-picker-label{
+                background: var(--white) !important;  
+                border-color: var(--border-color) !important;
+                &::before{
+                    background: var(--white) !important;  
+                }
+            }
+            .ae-picker-options{
+                background: var(--white) !important;
+                border-color: var(--border-color) !important;
+                .ae-picker-item{
+                    color: var(--body-font-color) !important;
+                }
+            }
+        }
+        .angular-editor-textarea{
+            border-color: var(--border-color) !important;
+        }
+    }
+    .meta-body {
+        .custom-input {
+            .form-check {
+                .form-check-input {
+                    &:valid {
+                        ~ {
+                            .form-check-label {
+                                color: var(--body-font-color) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ng2-tag-input__text-input{
+        background: var(--white) !important;
+        color: var(--body-font-color) !important;
+    }
+    .ng2-tag-input{
+        border-color: var(--border-color) !important;
+    }
+    .product-tag{
+        tag{
+            background: var(--body-color) !important;
+            color: var(--body-font-color) !important; 
+        }
+    }
 }

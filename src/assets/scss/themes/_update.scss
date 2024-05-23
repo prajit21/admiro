@@ -255,6 +255,63 @@ pre[class*=language-] {
         }
 	}
 }
+.toolbar-box{
+ 
+    .angular-editor-toolbar{
+   
+        .angular-editor-button{
+         
+            i{
+                color: var(--font-color);
+            }
+            &.active{
+                background-color: var(--body-color) !important;    
+            }
+        }
+        .ae-picker-label{
+            color: var(--font-color);
+            .ae-stroke{
+                stroke: var(--font-color);
+            }
+        }
+        .ae-picker-options{
+            .ae-picker-item{
+                &:hover{
+                    background-color: unset !important;
+                }
+                &.focused{
+                    background-color: var(--body-color) !important;
+                }
+                &.selected{
+                    color: var(--theme-default);
+                }
+            }
+        }
+    }
+    .angular-editor-toolbar-set{
+        vertical-align: top;
+        &:nth-child(9){
+           #backgroundColorPicker-{
+            padding: .2rem .4rem !important;
+           }
+        }
+    }
+    .angular-editor-textarea{
+        height: 150px !important;
+        &:focus-visible{
+            outline: none !important;
+        }
+    }
+}
+.ngx-slider {
+	.ngx-slider-pointer {
+		background-color: var(--theme-default) !important;
+	}
+    .ngx-slider-selection {
+		background-color: var(--theme-default) !important;
+	}
+}
+
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

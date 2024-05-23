@@ -555,7 +555,7 @@ export const Learningchart: ChartOptions | any = {
     series: [80, 50, 30, 60],
     chart: {
         type: "donut",
-        height: 370,
+        height: 380,
     },
     legend: {
         show: true,
@@ -579,5 +579,5 @@ export const Learningchart: ChartOptions | any = {
         secondary_color,
         "#E6B54D",
         "#E74B2B"
-    ]
+    ],
 }

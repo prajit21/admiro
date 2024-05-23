@@ -413,7 +413,7 @@ export const salesvaluechart: ChartOptions | any = {
   ],
   chart: {
       type: "bar",
-      height: 135,
+      height: 140,
       stacked: true,
       stackType: "100%",
       toolbar: {
@@ -534,7 +534,7 @@ export const visitorchart: ChartOptions | any = {
   ],
   chart: {
       type: "bar",
-      height: 135,
+      height: 140,
       stacked: true,
       stackType: "100%",
       toolbar: {
@@ -764,14 +764,6 @@ export const sellingchart: ChartOptions | any =
           },
       },
       {
-          breakpoint: 1370,
-          options: {
-              chart: {
-                  offsetX: -10,
-              },
-          },
-      },
-      {
           breakpoint: 1321,
           options: {
               chart: {
@@ -852,5 +844,3 @@ export const productoffer2 = [
       price: 60
   },
 ]
-
-

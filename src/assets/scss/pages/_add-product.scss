@@ -149,7 +149,7 @@
         .form-select {
             &:focus {
                 box-shadow: unset;
-                border-color: unset;
+                border-color: var(--theme-default);
             }
         }
     }
