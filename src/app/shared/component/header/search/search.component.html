@@ -1,6 +1,6 @@
 <div class="Typeahead Typeahead--twitterUsers"  (clickOutside)="clickOutside()">
     <div class="u-posRelative d-flex align-items-center">
-        <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+        <input class="demo-input py-0 Typeahead-input form-control-plaintext w-100" type="text"
             placeholder="Search Admiro .." [(ngModel)]="text" [ngModelOptions]="{ standalone: true }"
             (keyup)="searchTerm(text)" type="text" name="q" title="" autocomplete="off" />
         <i class="search-bg iconly-Search icli" (click)="openSearch()"></i>

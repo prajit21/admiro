@@ -45,6 +45,7 @@
         height: 18px;
         width: 22px;
         vertical-align: bottom;
+        stroke: var(--theme-default);
         path {
             color: #7e7c7c !important;
         }
@@ -77,7 +78,7 @@
     display: none;
     width: 100%;
     overflow: hidden;
-    background-color: $white;
+    background-color: var(--white);
     box-shadow: 0 5px 10px rgba(var(--black), .2);
 }
 .Typeahead-menu.is-open {
@@ -93,9 +94,9 @@
 }
 .ProfileCard {
     position: relative;
-    padding: 10px;
+    padding: 5px 10px;
     border: 1px dashed $gray-60 !important;
-    margin-bottom: 10px;
+    margin: 10px 0;
     border-radius: 10px;
     &:hover {
         .ProfileCard-avatar {
@@ -114,6 +115,10 @@
 .ProfileCard-avatar {
     position: absolute;
     border-radius: 5px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
 }
 .ProfileCard-details {
     padding-left: 35px;
@@ -173,7 +178,6 @@
     width: 1rem;
     height: 1rem;
 }
-// typehead new search 
 $color_1: #333;
 $color_2: #fff;
 $color_3: #aaa;
@@ -233,16 +237,6 @@ $background-color_4: #eee;
     box-shadow: 1px 0px 1px;
     padding: 7px;
 }
-
-
-.bookmark-flip{
-    .Typeahead-menu{
-      overflow: auto;
-      height: 114px;
-      top: 106px;
-      padding: 0px;
-    }
-  }
   
   header {
     .custom-menu {

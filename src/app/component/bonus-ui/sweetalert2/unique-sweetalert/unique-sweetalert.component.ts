@@ -44,7 +44,7 @@ export class UniqueSweetalertComponent {
       text: 'just a wait! I will close in 30 second!',
       timer: 30000,
       timerProgressBar: true,
-      confirmButtonColor: 'var(--theme-deafult)',
+      confirmButtonColor: 'var(--theme-default)',
       willClose: () => {
         clearInterval(timerInterval)
       }

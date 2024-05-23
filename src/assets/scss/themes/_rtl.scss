@@ -190,7 +190,7 @@ html[dir="rtl"] {
       }
       i {
         &.fa-thumbtack {
-          left: 28px;
+          left: 2px;
           right: unset;
         }
       }
@@ -2286,6 +2286,16 @@ html[dir="rtl"] {
           .flex-grow-1 {
             margin-left: unset;
             margin-right: 8px;
+            .img-wrapper {
+              li {
+                + {
+                  li {
+                    margin-left: unset;
+                    margin-right: 20px;
+                  }
+                }
+              }
+            }
           }
           .activity-line {
             left: unset;
@@ -3993,5 +4003,23 @@ html[dir="rtl"] {
         }
       }
     }
+  }
+
+    header {
+      .cart-dropdown {
+        .close-circle {
+          right: unset;
+          left: 0;
+        }
+      }
+    }
+    .ProfileCard-avatar{
+      left: unset;
+      right: 10px;
+    }
+    .ProfileCard-details {
+      padding-left: unset;
+      padding-right: 35px;
+      float: right;
   }
 }

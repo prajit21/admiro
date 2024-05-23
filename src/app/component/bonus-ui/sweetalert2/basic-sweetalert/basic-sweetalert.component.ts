@@ -13,7 +13,7 @@ export class BasicSweetalertComponent {
       title: 'Good job!',
       text: 'You clicked the button!',
       icon: 'success',
-      confirmButtonColor: 'var(--theme-deafult)',
+      confirmButtonColor: 'var(--theme-default)',
     })
   }
 
@@ -21,7 +21,7 @@ export class BasicSweetalertComponent {
     Swal.fire({
       title: "It's Magic!",
       text: 'Thank you for visiting  Admiro theme',
-      confirmButtonColor: 'var(--theme-deafult)',
+      confirmButtonColor: 'var(--theme-default)',
     })
   }
 
@@ -30,7 +30,7 @@ export class BasicSweetalertComponent {
       title: 'The Internet?',
       text: 'That thing is still around?',
       icon: 'question',
-      confirmButtonColor: 'var(--theme-deafult)',
+      confirmButtonColor: 'var(--theme-default)',
     })
   }
 

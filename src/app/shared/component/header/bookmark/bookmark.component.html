@@ -9,8 +9,8 @@
                 <div class="front">
                     <h5 class="title bg-primary-light">Bookmark</h5>
                     <ul class="bookmark-dropdown">
-                        <li class="custom-scrollbar">
-                            <div class="g-1 row">
+                        <li class="py-0">
+                            <div class="row bookmark-scroll custom-scrollbar">
                                 @for(item of bookmarkItems; track item){
                                 <div class="col-4 text-center">
                                     <a [routerLink]="item.path" class="custom-bookmark-content">
@@ -18,7 +18,7 @@
                                             <div class="bookmark-icon text-center bg-light-primary">
                                                 <app-svg-icon [icon]="item?.icon"></app-svg-icon>
                                             </div>
-                                            <span class="font-primary">{{ item.title }}</span>
+                                            <span>{{ item.title }}</span>
                                         </div>
                                     </a>
                                 </div>
@@ -26,7 +26,7 @@
                             </div>
                         </li>
                         <li class="text-center">
-                            <a class="flip-btn f-w-700 btn btn-primary" id="flip-btn" (click)="flipBookMark()">Add New
+                            <a class="btn btn-primary flip-btn f-w-700" id="flip-btn" (click)="flipBookMark()">Add New
                                 Bookmark</a>
                         </li>
                     </ul>
@@ -34,7 +34,7 @@
                 <div class="back">
                     <ul>
                         <li>
-                            <div class="flip-back-content">
+                            <div class="bookmark-dropdown flip-back-content position-relative">
                                 <input type="text" class="form-control" [(ngModel)]="text"
                                     [ngModelOptions]="{ standalone: true }" (keyup)="searchTerm(text)"
                                     placeholder="search..." />
@@ -68,8 +68,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="pb-0 mt-0">
-                            <a class="f-w-700 d-block flip-back btn btn-primary" id="flip-back"
+                        <li class="pt-0">
+                            <a class="btn btn-primary f-w-700 d-block flip-back" id="flip-back"
                                 (click)="flipBookMark()">Back</a>
                         </li>
                     </ul>

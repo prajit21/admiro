@@ -24,7 +24,7 @@ th {
 	> :not(:last-child) {
 		> :last-child {
 			>* {
-				border-bottom-color: var(--light-gray);
+				border-bottom: 1px solid var(--light-gray);
 			}
 		}
 	}

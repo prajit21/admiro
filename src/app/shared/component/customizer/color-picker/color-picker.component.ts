@@ -16,7 +16,7 @@ export class ColorPickerComponent {
   public secondary_color = localStorage.getItem('secondary_color') || '#f39159';
 
   constructor(public layout: LayoutService) {
-    document.documentElement.style.setProperty("--theme-deafult", localStorage.getItem("primary_color"));
+    document.documentElement.style.setProperty("--theme-default", localStorage.getItem("primary_color"));
     document.documentElement.style.setProperty("--theme-secondary", localStorage.getItem("secondary_color"));
     var primary = localStorage.getItem("primary_color") || this.layout.config.color.secondary_color;
     var secondary = localStorage.getItem("secondary_color") || this.layout.config.color.secondary_color;
@@ -35,7 +35,7 @@ export class ColorPickerComponent {
   }
 
   resetColor() {
-    document.documentElement.style.setProperty("--theme-deafult", "#308e87");
+    document.documentElement.style.setProperty("--theme-default", "#308e87");
     document.documentElement.style.setProperty("--theme-secondary", "#f39159");
     (<HTMLInputElement>document.getElementById("ColorPicker1")).value = "#308e87";
     (<HTMLInputElement>document.getElementById("ColorPicker2")).value = "#f39159";

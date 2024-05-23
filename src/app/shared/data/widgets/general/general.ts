@@ -1,30 +1,3 @@
-// export const SalespurchaseData = [
-//     {
-//         title:'Purchase',
-//         numbers:'10,000',
-//         arrow:'arrow-up',
-//         percentage:50
-//     },
-//     {
-//         title:'Sales',
-//         numbers:'4,200',
-//         arrow:'arrow-up',
-//         percentage:70
-//     },
-//     {
-//         title:'Sales return',
-//         numbers:'7000',
-//         arrow:'arrow-down',
-//         percentage:-20
-//     },
-//     {
-//         title:'Purchase rate',
-//         numbers:'5700',
-//         arrow:'arrow-down',
-//         percentage:-70
-//     }
-// ]
-
 export const commonData = [
     {
         icon: 'cart',

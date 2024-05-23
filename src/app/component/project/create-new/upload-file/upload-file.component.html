@@ -1,6 +1,6 @@
 <div class="mb-3">
     <h5 class="f-w-600 mb-2">Upload project file</h5>
-    <form class="dropzone dropzone-bg" id="singleFileUpload">
+    <form class="dropzone dropzone-bg custom-dropzone customize-dropzone" id="singleFileUpload">
         <dropzone [config]="Config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
     </form>
 </div>
