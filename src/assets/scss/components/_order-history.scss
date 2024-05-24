@@ -9,7 +9,17 @@
       height: 16px;
       cursor: pointer;
     }
-  
+    svg{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 16px;
+      cursor: pointer;
+      [dir="rtl"] & {
+        right: unset;
+        left: 0;
+      }
+    }
     .btn {
       line-height: 13px;
     }
@@ -81,7 +91,7 @@
             border-top: none;
             background-color: var(--body-color);
             border: 1px solid var(--light-gray);
-            padding: 1.25rem;
+            padding: 1.25rem !important;
             font-size: 16px;
           }
         }

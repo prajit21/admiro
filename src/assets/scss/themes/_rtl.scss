@@ -27,7 +27,9 @@ html[dir="rtl"] {
     padding-right: 15px;
   }
   .text-sm-end {
-    text-align: left !important;
+    @media (min-width: 576px) {
+      text-align: left !important;
+    }
   }
   .f-right {
     float: left !important;
@@ -663,6 +665,15 @@ html[dir="rtl"] {
                     .swiper-button-next {
                       right: unset;
                       left: 27px;
+                    }
+                    .swiper-wrapper {
+                      .swiper-slide {
+                        .product-box {
+                          .product-details {
+                            text-align: left !important;
+                          }
+                        }
+                      }
                     }
                   }
                 }

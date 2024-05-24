@@ -311,7 +311,17 @@ pre[class*=language-] {
 		background-color: var(--theme-default) !important;
 	}
 }
-
+.form-control{
+    border-radius: 6px;
+}
+.invoice-2{
+    table{
+        border: 0;
+        td{
+            padding: 0;
+        }
+    }
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

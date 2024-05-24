@@ -1610,4 +1610,29 @@
             color: var(--body-font-color) !important; 
         }
     }
+    .touchspin-wrapper{
+        .input-touchspin{
+            background: var(--body-color) !important;
+            color: var(--body-font-color) !important; 
+        }
+        button{
+            color: var(--body-font-color) !important; 
+        }
+    }
+    .pagination-custom{
+        .pagination{
+            .page-item{
+                .page-link{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    .prooduct-details-box {
+        .product-name {
+            a {
+                color: var(--body-font-color);
+            }
+        }
+    }
 }

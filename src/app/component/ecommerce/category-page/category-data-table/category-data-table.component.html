@@ -1,5 +1,5 @@
 <div class="card-body">
-    <div class="list-product list-category table-responsive custom-scrollbar">
+    <div class="list-product list-category table-responsive theme-scrollbar pagination-custom">
         <div class="d-flex justify-content-between mt-2">
             <select class="form-select" style="width: auto" name="pageSize" [(ngModel)]="service.pageSize">
                 <option [ngValue]="10">10</option>
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <table class="table" id="project-status">
+        <table class="table table-borderless" id="project-status">
             <thead>
                 <tr>
                     <th>

@@ -726,6 +726,37 @@
     border-radius: 5px;
     background: unset;
 }
+.pagination-custom{
+    .pagination{
+        float: right;
+        padding: 8px 10px;
+        [dir="rtl"] & {
+            float: left;
+		}
+        .page-item{
+            &.active{
+                .page-link{
+                    background-color: var(--theme-default);
+                    border-color: var(--theme-default);
+                    color: $white !important;
+                }
+            }
+            &.disabled{
+                .page-link{
+                    color: var(--theme-default);
+                    font-weight: 500;
+                    opacity: 1;
+                    background-color: rgba(48, 142, 135, 0.02);
+                }
+            }
+            .page-link{
+                background-color: rgba(48, 142, 135, 0.02);
+                color: #333;
+                border-radius: 0;
+            }
+        }
+    }
+}
 /**=====================
   3.46 Add-product CSS Start
 ==========================**/
