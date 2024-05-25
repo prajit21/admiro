@@ -843,7 +843,7 @@
     }
     .btn-close {
         filter: brightness(1) invert(1);
-        background-color: var(--black) !important;
+        background-color: var(--body-color) !important;
     }
     .carousel-dark {
         .carousel-caption {
@@ -1635,4 +1635,78 @@
             }
         }
     }
+    .order-history-table{
+        tbody{
+          tr{
+            &:nth-child(odd){
+              td{
+                background-color: var(--body-color) !important;
+              }
+            }
+            &:nth-child(even){
+              td{
+                &:first-child {
+                  background-color: var(--body-color) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .NgxEditor__MenuBar,
+      .NgxEditor{
+        background-color: var(--white);
+      }
+      .email-body {
+        .mail-body-wrapper {
+            ul {
+                li {
+                    &:hover {
+                        background-color: var(--body-color);
+                    }
+                }
+            }
+        }
+    }
+    .NgxEditor__Dropdown{
+        &:hover{
+            background-color: var(--body-color);
+        }
+    }
+    .NgxEditor__MenuItem{
+        &:hover{
+            background-color: var(--body-color);
+        }
+    }
+    .NgxEditor__Dropdown--DropdownMenu{
+        background-color: var(--body-color) !important;
+    }
+    .NgxEditor__Dropdown {
+        .NgxEditor__Dropdown--Item {
+            &:hover {
+                background-color: var(--white) !important;
+            }
+        }
+    }
+    .NgxEditor__Popup{
+        background-color: var(--white) !important;
+        .NgxEditor__Popup--Col{
+            input{
+                background-color: var(--body-color) !important;
+            }
+        }
+    }
+    .social-details {
+        .social-follow {
+            li {
+                span {
+                    color: var(--body-font-color);
+                }
+            }
+        }
+        span{
+            color: var(--body-font-color);
+        }
+    }
+    
 }

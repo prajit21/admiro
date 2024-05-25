@@ -1,6 +1,6 @@
 <div class="tab-pane fade active show">
     <div class="card mb-0">
-        <div class="card-header d-flex">
+        <div class="card-header d-flex card-no-border pb-0">
             <h3 class="mb-0">{{ gettaskData.title }}</h3>
             <a class="f-w-600 font-primary" href="javascript:void(0)">
                 <app-feathericon [icon]="'printer'" class="me-2"></app-feathericon>
@@ -10,7 +10,7 @@
         <div class="card-body p-0">
             <div class="taskadd">
                 <div class="table-responsive custom-scrollbar">
-                    <table class="table">
+                    <table class="table table-borderless">
                         <tbody>
                             @for(task of gettaskData.data; track task){
                             <tr>

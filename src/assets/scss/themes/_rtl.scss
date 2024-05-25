@@ -882,33 +882,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .bookmark-tabcontent {
-    .details-bookmark {
-      .bookmark-card.card {
-        .title-bookmark {
-          text-align: right;
-          .content-general {
-            p {
-              margin-right: unset;
-              margin-left: 20px;
-            }
-          }
-        }
-        .details-website {
-          .title-bookmark {
-            .hover-block {
-              right: unset;
-              left: 30px;
-              text-align: left;
-              @include media-breakpoint-down(sm) {
-                left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .user-profile {
     .hovercard {
       .user-image {
@@ -2891,33 +2864,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .bookmark-tabcontent {
-    .details-bookmark {
-      .bookmark-card.card {
-        .title-bookmark {
-          text-align: right;
-          .content-general {
-            p {
-              margin-right: unset;
-              margin-left: 20px;
-            }
-          }
-        }
-        .details-website {
-          .title-bookmark {
-            .hover-block {
-              right: unset;
-              left: 30px;
-              text-align: left;
-              @include media-breakpoint-down(sm) {
-                left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .user-profile {
     .hovercard {
       .user-image {
@@ -4032,5 +3978,9 @@ html[dir="rtl"] {
       padding-left: unset;
       padding-right: 35px;
       float: right;
+  }
+  .user-profile .border-right {
+    border-right: unset !important;
+    border-left: 1px solid var(--border-color) !important;
   }
 }

@@ -126,6 +126,14 @@
               padding-left: 10px;
               margin-left: 5px;
               border-left: 2px solid var(--light-color);
+              [dir="rtl"] & {
+                padding-left: unset;
+                padding-right: 10px;
+                margin-left: unset;
+                margin-right: 5px;
+                border-right: 2px solid var(--light-color);
+                border-left: unset;
+              }
             }
           }
         }
@@ -163,6 +171,10 @@
   .nav-pills {
     border-right: 1px solid var(--light-color);
     height: 100%;
+    [dir="rtl"] & {
+      border-right: unset;
+      border-left: 1px solid var(--light-color);
+    }
     .nav-link,
     .show {
       &.active,
@@ -174,6 +186,7 @@
     .nav-link {
       color: var(--theme-body-font-color);
       padding: 0;
+      border-radius: 6px;
       .d-flex {
         .img-50 {
           height: 50px;

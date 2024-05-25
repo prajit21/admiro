@@ -21,15 +21,6 @@
   }
 }
 .bookmark-wrap {
-  .details-bookmark {
-    .row {
-      >div {
-        +div {
-          padding-right: 15px !important;
-        }
-      }
-    }
-  }
   .left-bookmark {
     height: 700px;
     ul {
@@ -138,6 +129,10 @@
           right: 15px;
           top: 15px;
           opacity: 0;
+          [dir="rtl"] & {
+            right: unset;
+            left: 15px;
+          }
           i {
             color: var(--white);
             font-size: 16px;
@@ -151,6 +146,7 @@
         }
         .desciption-data {
           width: 100%;
+          background-color: var(--body-color);
           .content-general {
             display: none;
           }
@@ -160,9 +156,12 @@
         }
         .title-bookmark {
           text-align: left;
-          padding: 15px;
+          padding: 15px !important;
           border-top: 1px solid var(--light-color);
           position: relative;
+          [dir="rtl"] & {
+            text-align: right;
+          }
           h5 {
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -186,6 +185,10 @@
                 display: inline-block;
                 +li {
                   margin-left: 5px;
+                  [dir="rtl"] & {
+                    margin-left: unset;
+                    margin-right: 5px;
+                  }
                 }
                 svg {
                   width: 16px;
@@ -193,6 +196,10 @@
                   color: var(--gray-700);
                 }
               }
+            }
+            [dir="rtl"] & {
+              left: unset;
+              right: 0;
             }
           }
         }
@@ -239,6 +246,11 @@
               right: 30px;
               opacity: 1;
               text-align: right;
+              [dir="rtl"] & {
+                right: unset;
+                left: 30px;
+                text-align: left;
+              }
             }
           }
           &:hover {
@@ -266,6 +278,14 @@
                 content: '-';
                 right: 0;
                 color: var(--gray-700);
+                [dir="rtl"] & {
+                  left: 0;
+                  right: unset;
+                }
+              }
+              [dir="rtl"] & {
+                padding-right: unset;
+                padding-left: 15px;
               }
             }
             .content-general {
@@ -273,12 +293,16 @@
               p {
                 width: 68%;
                 margin-right: 20px;
+                [dir="rtl"] & {
+                  margin-right: unset;
+                  margin-left: 20px;
+                }
               }
             }
           }
         }
         img {
-          width: 20%;
+          width: 20% !important;
         }
       }
     }
@@ -297,6 +321,10 @@
             display: inline-block;
             +li {
               margin-left: 5px;
+              [dir="rtl"] & {
+                margin-left: unset;
+                margin-right: 5px;
+              }
             }
           }
         }
@@ -314,6 +342,10 @@
     .bookmark-card {
       .details-website {
         box-shadow: 0px 9px 20px rgba($black, 0.02);
+        background-color: var(--body-color);
+        img{
+          width: 100%;
+        }
       }
     }
   }
@@ -362,7 +394,7 @@
       &.list-bookmark {
         .bookmark-card {
           img {
-            width: 40%;
+            width: 40% !important;
           }
           &.card {
             .title-bookmark {
@@ -420,6 +452,9 @@
                     position: relative;
                     right: unset;
                     top: unset;
+                    [dir="rtl"] & {
+                      left: unset;
+                    }
                   }
                 }
               }
@@ -445,12 +480,20 @@
             display: block;
             .title-bookmark {
               padding-left: 15px;
+              [dir="rtl"] & {
+                padding-left: unset;
+                padding-right: 15px;
+              }
               .hover-block {
                 position: relative;
                 right: unset;
                 text-align: left;
                 top: unset;
                 padding: 0;
+                [dir="rtl"] & {
+                  text-align: right;
+                  left: unset;
+                }
               }
               .content-general {
                 display: none;

@@ -4,13 +4,13 @@
             <div class="tab-content">
                 <div class="tab-pane fade active show">
                     <div class="card mb-0">
-                        <div class="card-header d-flex">
+                        <div class="card-header d-flex pb-0 card-no-border">
                             <h3>{{getTaskData.title}}</h3>
                             <span class="f-14 pull-right mt-0">{{getTaskData.contect}} Contacts</span>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body px-0 pb-0">
                             <div class="row list-persons">
-                                <div class="col-xl-4 xl-45 col-md-5 box-col-6">
+                                <div class="col-xl-4 xl-50 col-md-5">
                                     <div class="nav flex-column nav-pills">
                                         @for(item of getTaskData.data; track item){
                                         <a class="contact-tab-0 nav-link" [class.active]="item.status"
@@ -29,7 +29,7 @@
                                         }
                                     </div>
                                 </div>
-                                <div class="col-xl-8 xl-55 col-md-7 box-col-6">
+                                <div class="col-xl-8 xl-50 col-md-7">
                                     <app-profile-data [lastData]="lastData" [TaskData]="getTaskData"></app-profile-data>
                                 </div>
                             </div>

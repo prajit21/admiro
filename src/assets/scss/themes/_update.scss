@@ -322,6 +322,26 @@ pre[class*=language-] {
         }
     }
 }
+.NgxEditor__Dropdown {
+	.NgxEditor__Dropdown--Selected {
+		color: var(--theme-default) !important;
+		background-color: rgba($primary-color, 0.3) !important;
+	}
+	.NgxEditor__Dropdown--Open {
+		color: var(--theme-default) !important;
+		background-color: rgba($primary-color, 0.3) !important;
+	}
+}
+.NgxEditor__MenuItem.NgxEditor__MenuItem--Active {
+	color: var(--theme-default) !important;
+	background-color: rgba($primary-color, 0.3) !important;
+}
+.NgxEditor__MenuItem {
+	.NgxEditor__MenuItem--Active {
+        color: var(--theme-default) !important;
+		background-color: rgba($primary-color, 0.3) !important;
+	}
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

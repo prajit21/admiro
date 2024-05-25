@@ -235,5 +235,8 @@
         position: absolute;
         top: 20px;
         right: 25px;
+        &:focus{
+            box-shadow: none !important;
+        }
     }
 }
