@@ -342,6 +342,15 @@ pre[class*=language-] {
 		background-color: rgba($primary-color, 0.3) !important;
 	}
 }
+.modal-header{
+    .close{
+        right: 10px;
+        position: absolute;
+    }
+}
+.social-app-profile{
+    
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

@@ -1708,5 +1708,81 @@
             color: var(--body-font-color);
         }
     }
-    
+    .cal-month-view{
+        background-color: var(--white) !important;
+        .cal-days{
+            border-color: var(--border-color) !important;
+        }
+    }
+    .cal-month-view {
+        .cal-day-cell {
+            &:not(:last-child) {
+                border-right-color: var(--border-color) !important;
+            }
+        }
+    }
+
+.cal-month-view {
+        .cal-cell-row {
+            border-bottom-color: var(--border-color) !important;
+            &:hover {
+                background-color: var(--body-color) !important;
+            }
+            .cal-cell {
+                &:hover {
+                    background-color: var(--body-color) !important;
+                }
+            }
+        }
+        .cal-cell.cal-has-events.cal-open {
+            background-color: var(--body-color) !important;
+        }
+        .cal-open-day-events{
+            background-color: var(--white) !important;
+        }
+    }
+    .cal-week-view {
+        background-color: var(--white) !important;
+        border-top: solid 1px var(--border-color) !important;
+        .cal-all-day-events{
+            border-color: var(--border-color) !important;
+        }
+        .cal-time-events{
+            border-color: var(--border-color) !important;
+        }
+        .cal-day-column{
+            border-left-color: var(--border-color) !important;
+        }
+        .cal-day-headers {
+            .cal-header {
+                &:hover {
+                    background-color: var(--white) !important;
+                }
+                &:first-child {
+                    border-left-color: var(--border-color) !important;
+                }
+            }
+            .cal-drag-over {
+                background-color: var(--white) !important;
+            }
+        }
+        .cal-header.cal-today {
+            background-color: var(--white) !important;
+        }
+        .cal-hour-odd {
+            background-color: var(--body-color) !important;
+        }
+        .cal-day-headers {
+            border-color: var(--border-color) !important;
+        }
+    }
+    .cal-week-view .cal-time-events .cal-day-columns:not(.cal-resize-active) .cal-hour-segment:hover {
+        background-color: var(--body-color) !important;
+    }
+    .cal-week-view .cal-hour:not(:last-child) .cal-hour-segment, .cal-week-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+        border-bottom-color: var(--border-color) !important;
+    }
+    .cal-week-view .cal-day-headers .cal-header:not(:last-child) {
+        border-right-color: var(--border-color) !important;
+    }
 }
