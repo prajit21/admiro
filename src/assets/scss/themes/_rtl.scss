@@ -910,28 +910,6 @@ html[dir="rtl"] {
       border-radius: 0 !important;
     }
   }
-  .social-chat {
-    .flex-grow-1 {
-      &:after {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid var(--white);
-      }
-      &:before {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba($gray-700, 0.8);
-      }
-    }
-  }
-  .timeline-content {
-    .comment-number {
-      margin-right: unset;
-      margin-left: 7px;
-    }
-  }
   .social-status {
     .d-flex {
       .social-status {
@@ -2889,28 +2867,6 @@ html[dir="rtl"] {
       border-radius: 0 !important;
     }
   }
-  .social-chat {
-    .flex-grow-1 {
-      &:after {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba(var(--white), 1);
-      }
-      &:before {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba(var(--gray-700), 0.8);
-      }
-    }
-  }
-  .timeline-content {
-    .comment-number {
-      margin-right: unset;
-      margin-left: 7px;
-    }
-  }
   .social-status {
     .d-flex {
       .social-status {
@@ -3982,5 +3938,27 @@ html[dir="rtl"] {
   .user-profile .border-right {
     border-right: unset !important;
     border-left: 1px solid var(--border-color) !important;
+  }
+  .social-chat {
+    .flex-grow-1 {
+      &:before {
+        right: unset;
+        left: 100%;
+        border: 7px solid transparent;
+        border-right: unset;
+        border-left: 7px solid rgba($gray-700, 0.8);
+      }
+      &:after {
+        right: unset;
+        left: 100%;
+        border: 7px solid transparent;
+        border-right: unset;
+        border-left: 7px solid var(--white);
+      }
+    }
+    .other-msg {
+      margin-left: unset;
+      margin-right: 40px;
+    }
   }
 }

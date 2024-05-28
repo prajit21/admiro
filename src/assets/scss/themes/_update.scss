@@ -72,19 +72,19 @@ pre[class*=language-] {
 .swal2-checkbox {
     background: var(--white) !important;
 }
-
 .bookmark-dropdown {
     .flip-card {
         width: 300px;
         height: 260px;
         background-color: transparent;
-        .flip-card-inner{
+        .flip-card-inner {
             position: relative;
             height: 100%;
             text-align: center;
             transition: transform 0.6s;
             transform-style: preserve-3d;
-            .front,.back{
+            .front,
+            .back {
                 position: absolute;
                 backface-visibility: hidden;
                 border-radius: 5px;
@@ -107,11 +107,10 @@ pre[class*=language-] {
                             justify-content: center !important;
                             padding: 0 8px;
                         }
-                        .bookmark-content{
+                        .bookmark-content {
                             text-align: center;
                             margin-bottom: 8px;
-
-                            .bookmark-icon{
+                            .bookmark-icon {
                                 width: 52px;
                                 height: 52px;
                                 border-radius: 100%;
@@ -120,7 +119,7 @@ pre[class*=language-] {
                                 justify-content: center;
                                 margin: 0 auto;
                             }
-                            span{
+                            span {
                                 font-family: $body-font;
                                 font-size: 14px;
                                 font-weight: 600;
@@ -128,7 +127,7 @@ pre[class*=language-] {
                                 margin-top: 4px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
-                                text-overflow:ellipsis;
+                                text-overflow: ellipsis;
                                 display: -webkit-box !important;
                                 -webkit-line-clamp: 1;
                                 -webkit-box-orient: vertical;
@@ -136,22 +135,22 @@ pre[class*=language-] {
                                 width: 100%;
                             }
                         }
-                        .bookmark-scroll{
+                        .bookmark-scroll {
                             height: 130px;
                             overflow: auto;
                         }
                     }
                 }
             }
-            .back{
+            .back {
                 background-color: var(--card-color);
                 transform: rotateY(180deg);
-                ul{
+                ul {
                     padding: 15px;
-                    li{
+                    li {
                         padding: 15px;
-                        &:first-child{  
-                            height: 195px!important;
+                        &:first-child {
+                            height: 195px !important;
                         }
                         .ProfileCard {
                             &:hover {
@@ -162,21 +161,21 @@ pre[class*=language-] {
                                     color: var(--theme-default);
                                 }
                             }
-                            .ProfileCard-details{
-                                i{
+                            .ProfileCard-details {
+                                i {
                                     font-size: 13px;
                                 }
                             }
                         }
-                        .flip-back-content{
-                            input{
+                        .flip-back-content {
+                            input {
                                 border-radius: 25px;
                                 padding: 10px 20px;
                                 width: 100%;
                                 border: 1px solid #ddd;
                             }
                         }
-                        .flip-back{
+                        .flip-back {
                             color: $white;
                         }
                     }
@@ -188,16 +187,16 @@ pre[class*=language-] {
                     opacity: 0;
                 }
             }
-                .custom-bookmark-content{
-                    svg{
-                        vertical-align: -2px;
-                        width: 22px;
-                        height: 18px;
-                    }
+            .custom-bookmark-content {
+                svg {
+                    vertical-align: -2px;
+                    width: 22px;
+                    height: 18px;
                 }
+            }
         }
     }
-    .flip-btn{
+    .flip-btn {
         justify-content: center;
         font-family: $body-font;
         color: $white;
@@ -205,47 +204,46 @@ pre[class*=language-] {
     &.custom-menu {
         @media (max-width: 575px) {
             width: unset !important;
-
         }
     }
 }
-.bookmark-flip{
-    .Typeahead-menu{
+.bookmark-flip {
+    .Typeahead-menu {
         overflow: auto;
         height: 130px;
         padding: 0;
     }
 }
-#chart-widget1{
+#chart-widget1 {
     margin-bottom: -16px;
 }
 .form-select {
     border-radius: 6px;
 }
-.custom-dropzone{
-    &.customize-dropzone{
-        border: 2px dashed var(--theme-default)!important;
+.custom-dropzone {
+    &.customize-dropzone {
+        border: 2px dashed var(--theme-default) !important;
         border-radius: 15px;
         background-color: rgba($primary-color, 0.1);
     }
-	.dropzone.dz-wrapper {
+    .dropzone.dz-wrapper {
         background-color: unset;
-        border: none!important;
+        border: none !important;
         margin: 0 auto;
         font-size: 35px;
-        .dz-message{
+        .dz-message {
             background-color: unset;
             border: none;
             min-height: 200px;
             overflow: hidden;
-            .dz-text{
+            .dz-text {
                 background-color: unset;
                 border: none;
-                padding: 0!important;
+                padding: 0 !important;
                 font-size: 17px;
             }
         }
-        .dz-preview{
+        .dz-preview {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -253,103 +251,133 @@ pre[class*=language-] {
             display: block;
             margin: 0 !important;
         }
-	}
+    }
 }
-.toolbar-box{
- 
-    .angular-editor-toolbar{
-   
-        .angular-editor-button{
-         
-            i{
+.toolbar-box {
+    .angular-editor-toolbar {
+        .angular-editor-button {
+            i {
                 color: var(--font-color);
             }
-            &.active{
-                background-color: var(--body-color) !important;    
+            &.active {
+                background-color: var(--body-color) !important;
             }
         }
-        .ae-picker-label{
+        .ae-picker-label {
             color: var(--font-color);
-            .ae-stroke{
+            .ae-stroke {
                 stroke: var(--font-color);
             }
         }
-        .ae-picker-options{
-            .ae-picker-item{
-                &:hover{
+        .ae-picker-options {
+            .ae-picker-item {
+                &:hover {
                     background-color: unset !important;
                 }
-                &.focused{
+                &.focused {
                     background-color: var(--body-color) !important;
                 }
-                &.selected{
+                &.selected {
                     color: var(--theme-default);
                 }
             }
         }
     }
-    .angular-editor-toolbar-set{
+    .angular-editor-toolbar-set {
         vertical-align: top;
-        &:nth-child(9){
-           #backgroundColorPicker-{
-            padding: .2rem .4rem !important;
-           }
+        &:nth-child(9) {
+            #backgroundColorPicker- {
+                padding: .2rem .4rem !important;
+            }
         }
     }
-    .angular-editor-textarea{
+    .angular-editor-textarea {
         height: 150px !important;
-        &:focus-visible{
+        &:focus-visible {
             outline: none !important;
         }
     }
 }
 .ngx-slider {
-	.ngx-slider-pointer {
-		background-color: var(--theme-default) !important;
-	}
+    .ngx-slider-pointer {
+        background-color: var(--theme-default) !important;
+    }
     .ngx-slider-selection {
-		background-color: var(--theme-default) !important;
-	}
+        background-color: var(--theme-default) !important;
+    }
 }
-.form-control{
+.form-control {
     border-radius: 6px;
 }
-.invoice-2{
-    table{
+.invoice-2 {
+    table {
         border: 0;
-        td{
+        td {
             padding: 0;
         }
     }
 }
 .NgxEditor__Dropdown {
-	.NgxEditor__Dropdown--Selected {
-		color: var(--theme-default) !important;
-		background-color: rgba($primary-color, 0.3) !important;
-	}
-	.NgxEditor__Dropdown--Open {
-		color: var(--theme-default) !important;
-		background-color: rgba($primary-color, 0.3) !important;
-	}
+    .NgxEditor__Dropdown--Selected {
+        color: var(--theme-default) !important;
+        background-color: rgba($primary-color, 0.3) !important;
+    }
+    .NgxEditor__Dropdown--Open {
+        color: var(--theme-default) !important;
+        background-color: rgba($primary-color, 0.3) !important;
+    }
 }
 .NgxEditor__MenuItem.NgxEditor__MenuItem--Active {
-	color: var(--theme-default) !important;
-	background-color: rgba($primary-color, 0.3) !important;
+    color: var(--theme-default) !important;
+    background-color: rgba($primary-color, 0.3) !important;
 }
 .NgxEditor__MenuItem {
-	.NgxEditor__MenuItem--Active {
+    .NgxEditor__MenuItem--Active {
         color: var(--theme-default) !important;
-		background-color: rgba($primary-color, 0.3) !important;
-	}
+        background-color: rgba($primary-color, 0.3) !important;
+    }
 }
-.modal-header{
-    .close{
+.modal-header {
+    .close {
         right: 10px;
         position: absolute;
     }
 }
-.social-app-profile{
-    
+.social-app-profile {
+    .accordion-item {
+        border: 0;
+    }
+    .accordion-button {
+        border-radius: 0 !important;
+        border: 0;
+    }
+}
+.pagination-primary {
+    .page-item {
+        .page-link {
+        }
+        &:first-child {
+            .page-link {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+        &:last-child {
+            .page-link {
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+        }
+    }
+}
+.typography-table{
+    .display-h1{
+        font-size: 30px;
+    }
 }
 /**=====================
     4.3 Update CSS Ends

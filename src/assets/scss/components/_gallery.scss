@@ -430,6 +430,28 @@
     border-bottom: 0px !important;
 	}
 }
+.my-gallery.gallery-with-description {
+	img {
+		padding: 10px !important;
+		border: 1px solid var(--border-color)!important;
+		border-bottom: none !important;
+		border-radius: 5px 5px 0 0;
+	}
+  a {
+		>div {
+			border-top: none !important;
+			margin-bottom: 0;
+			padding: 5px 10px 10px 10px;
+		}
+	}
+  h4{
+    margin-top: 0px;
+  }
+  .col-xl-3{
+    margin-bottom: 30px;
+  }
+}
+
 /**=====================
     3.19 Gallery CSS Ends
 ==========================**/
