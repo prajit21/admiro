@@ -1785,4 +1785,34 @@
     .cal-week-view .cal-day-headers .cal-header:not(:last-child) {
         border-right-color: var(--border-color) !important;
     }
+    .border-wrapper{
+        .d-flex {
+            .helper-box{
+                &.bg-dark{
+                    background-color: rgba(204, 204, 204, 0.7) !important;
+                }
+            }
+        }
+    }
+    .gradient-border{
+        .helper-common-box{
+            .border{
+                &.b-light{
+                    border-color: var(--body-font-color) !important;
+                }
+                &.b-t-light{
+                    border-top-color: var(--body-font-color) !important;
+                }
+                &.b-b-light{
+                    border-bottom-color: var(--body-font-color) !important;
+                }
+                &.b-l-light{
+                    border-left-color: var(--body-font-color) !important;
+                }
+                &.b-r-light{
+                    border-right-color: var(--body-font-color) !important;
+                }
+            }
+        }
+    }
 }

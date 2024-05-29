@@ -203,7 +203,7 @@ html[dir="rtl"] {
     right: 0;
     .sidebar-submenu {
       border-left: unset;
-      border-right: 1px solid var(--gray-200);
+      border-right: 2px solid var(--theme-default);
       margin-left: unset;
       margin-right: 20px;
       a {
@@ -3904,18 +3904,6 @@ html[dir="rtl"] {
   }
   .apexcharts-canvas {
     direction: ltr;
-  }
-  .page-sidebar {
-    .user-wrap {
-      .setting-icon {
-        right: unset;
-        left: 0;
-        .custom-menu {
-          right: unset;
-          left: -46px;
-        }
-      }
-    }
   }
 
     header {

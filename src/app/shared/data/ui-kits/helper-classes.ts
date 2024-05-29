@@ -19,23 +19,23 @@ export const Customborder: titleData[] = [
             },
             {
                 class: ' helper-box rounded-1 bg-light border',
-                title: '..rounded-1'
+                title: '.rounded-1'
             },
             {
                 class: ' helper-box rounded-2 bg-light border',
-                title: '..rounded-2'
+                title: '.rounded-2'
             },
             {
                 class: ' helper-box rounded-3 bg-light border',
-                title: '..rounded-3'
+                title: '.rounded-3'
             },
             {
                 class: ' helper-box rounded-4 bg-light border',
-                title: '..rounded-4'
+                title: '.rounded-4'
             },
             {
                 class: 'helper-box rounded-5 bg-light border',
-                title: '..rounded-5'
+                title: '.rounded-5'
             }
         ]
     },
@@ -193,7 +193,7 @@ export const Subtractiveborder: titleData[] = [
             },
             {
                 class: 'helper-box bg-light border border-top-0',
-                title: '.border-top'
+                title: '.border-top-0'
             },
             {
                 class: 'helper-box bg-light border border-end-0',
@@ -322,11 +322,7 @@ export const Lightbackgrounds: titleData[] = [
             {
                 class: 'helper-box alert-light-dark',
                 title: '.alert-light-dark'
-            },
-            {
-                class: 'helper-box alert-light-light',
-                title: '.alert-light-light'
-            },
+            }
         ]
     }
 ];
@@ -364,7 +360,7 @@ export const Bordercolors = [
     },
     {
         class: 'b-r-primary',
-        title: 'b-r-primary',
+        title: '.b-r-primary',
     },
     {
         class: ' b-secondary',
@@ -379,12 +375,12 @@ export const Bordercolors = [
         title: '.b-b-secondary',
     },
     {
-        class: 'b-primary',
-        title: '.b-primary',
+        class: 'b-l-secondary',
+        title: '.b-l-secondary',
     },
     {
-        class: 'b-l-secondary',
-        title: 'b-r-secondary',
+        class: 'b-r-secondary',
+        title: '.b-r-secondary',
     },
     {
         class: 'b-success',
@@ -404,7 +400,7 @@ export const Bordercolors = [
     },
     {
         class: 'b-r-success',
-        title: 'b-r-success',
+        title: '.b-r-success',
     },
     {
         class: 'b-danger',
@@ -444,15 +440,11 @@ export const Bordercolors = [
     },
     {
         class: 'b-r-warning',
-        title: 'b-r-warning',
+        title: '.b-r-warning',
     },
     {
         class: 'b-info',
         title: '.b-info',
-    },
-    {
-        class: 'b-b-info',
-        title: '.b-b-info',
     },
     {
         class: 'b-t-info',
@@ -464,15 +456,15 @@ export const Bordercolors = [
     },
     {
         class: 'b-l-info',
-        title: '.b-l-b-info',
+        title: '.b-l-info',
     },
     {
         class: 'b-r-info',
-        title: 'b-r-info',
+        title: '.b-r-info',
     },
     {
-        class: 'b-b-dark',
-        title: '.b-b-dark',
+        class: 'b-dark',
+        title: '.b-dark',
     },
     {
         class: 'b-t-dark',
@@ -488,11 +480,11 @@ export const Bordercolors = [
     },
     {
         class: 'b-r-dark',
-        title: 'b-r-dark',
+        title: '.b-r-dark',
     },
     {
-        class: 'b-b-light',
-        title: '.b-b-light',
+        class: 'b-light',
+        title: '.b-light',
     },
     {
         class: 'b-t-light',
@@ -508,7 +500,7 @@ export const Bordercolors = [
     },
     {
         class: 'b-r-light',
-        title: 'b-r-light',
+        title: '.b-r-light',
     },
 
 ];

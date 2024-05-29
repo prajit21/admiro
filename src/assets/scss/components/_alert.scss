@@ -61,6 +61,10 @@
 }
 .border-left-wrapper {
   border-left: 4px solid var(--dark);
+  [dir="rtl"] & {
+    border-left: unset;
+    border-right: 4px solid var(--dark);
+}
 }
 @each $alert-name, $alert-color in (primary, var(--theme-default)),
   (secondary, var(--theme-secondary)), (success, var(--success-color)),
