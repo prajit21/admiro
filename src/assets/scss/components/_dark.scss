@@ -843,7 +843,6 @@
     }
     .btn-close {
         filter: brightness(1) invert(1);
-        background-color: var(--black) !important;
     }
     .carousel-dark {
         .carousel-caption {
@@ -1551,5 +1550,279 @@
             }
         }
     }
-    
+    .toolbar-box{
+        border-color: var(--border-color) !important;
+        .angular-editor-toolbar{
+            background: var(--white) !important;
+            border-color: var(--border-color) !important;
+            .angular-editor-button{
+                background: var(--white) !important;
+                border-color: var(--border-color) !important;
+                i{
+                    color: var(--gray-60);
+                }
+            }
+            .ae-picker-label{
+                background: var(--white) !important;  
+                border-color: var(--border-color) !important;
+                &::before{
+                    background: var(--white) !important;  
+                }
+            }
+            .ae-picker-options{
+                background: var(--white) !important;
+                border-color: var(--border-color) !important;
+                .ae-picker-item{
+                    color: var(--body-font-color) !important;
+                }
+            }
+        }
+        .angular-editor-textarea{
+            border-color: var(--border-color) !important;
+        }
+    }
+    .meta-body {
+        .custom-input {
+            .form-check {
+                .form-check-input {
+                    &:valid {
+                        ~ {
+                            .form-check-label {
+                                color: var(--body-font-color) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ng2-tag-input__text-input{
+        background: var(--white) !important;
+        color: var(--body-font-color) !important;
+    }
+    .ng2-tag-input{
+        border-color: var(--border-color) !important;
+    }
+    .product-tag{
+        tag{
+            background: var(--body-color) !important;
+            color: var(--body-font-color) !important; 
+        }
+    }
+    .touchspin-wrapper{
+        .input-touchspin{
+            background: var(--body-color) !important;
+            color: var(--body-font-color) !important; 
+        }
+        button{
+            color: var(--body-font-color) !important; 
+        }
+    }
+    .pagination-custom{
+        .pagination{
+            .page-item{
+                .page-link{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    .prooduct-details-box {
+        .product-name {
+            a {
+                color: var(--body-font-color);
+            }
+        }
+    }
+    .order-history-table{
+        tbody{
+          tr{
+            &:nth-child(odd){
+              td{
+                background-color: var(--body-color) !important;
+              }
+            }
+            &:nth-child(even){
+              td{
+                &:first-child {
+                  background-color: var(--body-color) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .NgxEditor__MenuBar,
+      .NgxEditor{
+        background-color: var(--white);
+      }
+      .email-body {
+        .mail-body-wrapper {
+            ul {
+                li {
+                    &:hover {
+                        background-color: var(--body-color);
+                    }
+                }
+            }
+        }
+    }
+    .NgxEditor__Dropdown{
+        &:hover{
+            background-color: var(--body-color);
+        }
+    }
+    .NgxEditor__MenuItem{
+        &:hover{
+            background-color: var(--body-color);
+        }
+    }
+    .NgxEditor__Dropdown--DropdownMenu{
+        background-color: var(--body-color) !important;
+    }
+    .NgxEditor__Dropdown {
+        .NgxEditor__Dropdown--Item {
+            &:hover {
+                background-color: var(--white) !important;
+            }
+        }
+    }
+    .NgxEditor__Popup{
+        background-color: var(--white) !important;
+        .NgxEditor__Popup--Col{
+            input{
+                background-color: var(--body-color) !important;
+            }
+        }
+    }
+    .social-details {
+        .social-follow {
+            li {
+                span {
+                    color: var(--body-font-color);
+                }
+            }
+        }
+        span{
+            color: var(--body-font-color);
+        }
+    }
+    .cal-month-view{
+        background-color: var(--white) !important;
+        .cal-days{
+            border-color: var(--border-color) !important;
+        }
+    }
+    .cal-month-view {
+        .cal-day-cell {
+            &:not(:last-child) {
+                border-right-color: var(--border-color) !important;
+            }
+        }
+    }
+
+.cal-month-view {
+        .cal-cell-row {
+            border-bottom-color: var(--border-color) !important;
+            &:hover {
+                background-color: var(--body-color) !important;
+            }
+            .cal-cell {
+                &:hover {
+                    background-color: var(--body-color) !important;
+                }
+            }
+        }
+        .cal-cell.cal-has-events.cal-open {
+            background-color: var(--body-color) !important;
+        }
+        .cal-open-day-events{
+            background-color: var(--white) !important;
+        }
+    }
+    .cal-week-view {
+        background-color: var(--white) !important;
+        border-top: solid 1px var(--border-color) !important;
+        .cal-all-day-events{
+            border-color: var(--border-color) !important;
+        }
+        .cal-time-events{
+            border-color: var(--border-color) !important;
+        }
+        .cal-day-column{
+            border-left-color: var(--border-color) !important;
+        }
+        .cal-day-headers {
+            .cal-header {
+                &:hover {
+                    background-color: var(--white) !important;
+                }
+                &:first-child {
+                    border-left-color: var(--border-color) !important;
+                }
+            }
+            .cal-drag-over {
+                background-color: var(--white) !important;
+            }
+        }
+        .cal-header.cal-today {
+            background-color: var(--white) !important;
+        }
+        .cal-hour-odd {
+            background-color: var(--body-color) !important;
+        }
+        .cal-day-headers {
+            border-color: var(--border-color) !important;
+        }
+    }
+    .cal-week-view .cal-time-events .cal-day-columns:not(.cal-resize-active) .cal-hour-segment:hover {
+        background-color: var(--body-color) !important;
+    }
+    .cal-week-view .cal-hour:not(:last-child) .cal-hour-segment, .cal-week-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+        border-bottom-color: var(--border-color) !important;
+    }
+    .cal-week-view .cal-day-headers .cal-header:not(:last-child) {
+        border-right-color: var(--border-color) !important;
+    }
+    .border-wrapper{
+        .d-flex {
+            .helper-box{
+                &.bg-dark{
+                    background-color: rgba(204, 204, 204, 0.7) !important;
+                }
+            }
+        }
+    }
+    .gradient-border{
+        .helper-common-box{
+            .border{
+                &.b-light{
+                    border-color: var(--body-font-color) !important;
+                }
+                &.b-t-light{
+                    border-top-color: var(--body-font-color) !important;
+                }
+                &.b-b-light{
+                    border-bottom-color: var(--body-font-color) !important;
+                }
+                &.b-l-light{
+                    border-left-color: var(--body-font-color) !important;
+                }
+                &.b-r-light{
+                    border-right-color: var(--body-font-color) !important;
+                }
+            }
+        }
+    }
+    .social-profile {
+        background: var(--white) !important;
+    }
+    .balance-box {
+        background: var(--white) !important;
+    }
+    .tab-bootstrap-page{
+        .nav-tabs .nav-link:hover {
+            border-color: var(--border-color) !important;
+        }
+    }
 }

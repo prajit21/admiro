@@ -881,5 +881,18 @@
         }
       }
     }
+    .user-profile {
+      .ttl-info {
+        span {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+        }
+      }
+    }
+    
   }
 }

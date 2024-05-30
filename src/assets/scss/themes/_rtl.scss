@@ -27,7 +27,9 @@ html[dir="rtl"] {
     padding-right: 15px;
   }
   .text-sm-end {
-    text-align: left !important;
+    @media (min-width: 576px) {
+      text-align: left !important;
+    }
   }
   .f-right {
     float: left !important;
@@ -201,7 +203,7 @@ html[dir="rtl"] {
     right: 0;
     .sidebar-submenu {
       border-left: unset;
-      border-right: 1px solid var(--gray-200);
+      border-right: 2px solid var(--theme-default);
       margin-left: unset;
       margin-right: 20px;
       a {
@@ -664,6 +666,15 @@ html[dir="rtl"] {
                       right: unset;
                       left: 27px;
                     }
+                    .swiper-wrapper {
+                      .swiper-slide {
+                        .product-box {
+                          .product-details {
+                            text-align: left !important;
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -871,33 +882,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .bookmark-tabcontent {
-    .details-bookmark {
-      .bookmark-card.card {
-        .title-bookmark {
-          text-align: right;
-          .content-general {
-            p {
-              margin-right: unset;
-              margin-left: 20px;
-            }
-          }
-        }
-        .details-website {
-          .title-bookmark {
-            .hover-block {
-              right: unset;
-              left: 30px;
-              text-align: left;
-              @include media-breakpoint-down(sm) {
-                left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .user-profile {
     .hovercard {
       .user-image {
@@ -924,28 +908,6 @@ html[dir="rtl"] {
   .comments-box {
     .form-control {
       border-radius: 0 !important;
-    }
-  }
-  .social-chat {
-    .flex-grow-1 {
-      &:after {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid var(--white);
-      }
-      &:before {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba($gray-700, 0.8);
-      }
-    }
-  }
-  .timeline-content {
-    .comment-number {
-      margin-right: unset;
-      margin-left: 7px;
     }
   }
   .social-status {
@@ -988,29 +950,6 @@ html[dir="rtl"] {
     .btn-close {
       margin: -0.5rem auto -0.5rem -0.5rem;
       left: 25px;
-      top: 22px;
-    }
-  }
-  .custom-alert {
-    .demo-img {
-      .modal-content {
-        .balance-box {
-          .balance-profile {
-            ul {
-              li {
-                + {
-                  li {
-                    &::before {
-                      left: unset;
-                      right: -25px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
   .small-progressbar {
@@ -2880,33 +2819,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .bookmark-tabcontent {
-    .details-bookmark {
-      .bookmark-card.card {
-        .title-bookmark {
-          text-align: right;
-          .content-general {
-            p {
-              margin-right: unset;
-              margin-left: 20px;
-            }
-          }
-        }
-        .details-website {
-          .title-bookmark {
-            .hover-block {
-              right: unset;
-              left: 30px;
-              text-align: left;
-              @include media-breakpoint-down(sm) {
-                left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .user-profile {
     .hovercard {
       .user-image {
@@ -2930,28 +2842,6 @@ html[dir="rtl"] {
   .comments-box {
     .form-control {
       border-radius: 0 !important;
-    }
-  }
-  .social-chat {
-    .flex-grow-1 {
-      &:after {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba(var(--white), 1);
-      }
-      &:before {
-        right: unset;
-        left: 100%;
-        border-right: unset;
-        border-left: 7px solid rgba(var(--gray-700), 0.8);
-      }
-    }
-  }
-  .timeline-content {
-    .comment-number {
-      margin-right: unset;
-      margin-left: 7px;
     }
   }
   .social-status {
@@ -2994,24 +2884,17 @@ html[dir="rtl"] {
     .btn-close {
       margin: -0.5rem auto -0.5rem -0.5rem;
       left: 25px;
-      top: 22px;
     }
   }
-  .custom-alert {
-    .demo-img {
-      .modal-content {
-        .balance-box {
-          .balance-profile {
-            ul {
-              li {
-                + {
-                  li {
-                    &::before {
-                      left: unset;
-                      right: -25px;
-                    }
-                  }
-                }
+  .balance-box {
+    .balance-profile {
+      ul {
+        li {
+          + {
+            li {
+              &::before {
+                left: unset;
+                right: -25px;
               }
             }
           }
@@ -3992,18 +3875,6 @@ html[dir="rtl"] {
   .apexcharts-canvas {
     direction: ltr;
   }
-  .page-sidebar {
-    .user-wrap {
-      .setting-icon {
-        right: unset;
-        left: 0;
-        .custom-menu {
-          right: unset;
-          left: -46px;
-        }
-      }
-    }
-  }
 
     header {
       .cart-dropdown {
@@ -4021,5 +3892,31 @@ html[dir="rtl"] {
       padding-left: unset;
       padding-right: 35px;
       float: right;
+  }
+  .user-profile .border-right {
+    border-right: unset !important;
+    border-left: 1px solid var(--border-color) !important;
+  }
+  .social-chat {
+    .flex-grow-1 {
+      &:before {
+        right: unset;
+        left: 100%;
+        border: 7px solid transparent;
+        border-right: unset;
+        border-left: 7px solid rgba($gray-700, 0.8);
+      }
+      &:after {
+        right: unset;
+        left: 100%;
+        border: 7px solid transparent;
+        border-right: unset;
+        border-left: 7px solid var(--white);
+      }
+    }
+    .other-msg {
+      margin-left: unset;
+      margin-right: 40px;
+    }
   }
 }

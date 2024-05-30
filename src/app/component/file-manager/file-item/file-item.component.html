@@ -1,6 +1,6 @@
 <div class="file-content">
     <div class="card">
-        <div class="card-header d-md-block d-none">
+        <div class="card-header d-md-block d-none card-no-border pb-0">
             <div class="d-md-flex d-sm-block align-items-center">
                 <form class="form-inline basic-form">
                     <div class="form-group d-flex mb-0 align-items-center"><i
@@ -28,7 +28,6 @@
         <div class="card-body file-manager">
             <h4 class="mb-2">Quick Access</h4>
             <ul class="quick-file d-flex flex-row">
-                <ul class="quick-file d-flex">
                     @for(file of Quickdata; track file){
                     <li>
                         <div class="quick-box">
@@ -37,7 +36,6 @@
                         <h6>{{file.folderName}}</h6>
                     </li>
                     }
-                </ul>
             </ul>
             <h4 class="mt-4 mb-2">Folders</h4>
             <ul class="folder">

@@ -1,5 +1,5 @@
-<div class="modal-content">
-    <div class="modal-header">
+<div class="modal-content ecommerce-product-modal">
+    <div class="modal-header border-bottom-0">
         <div class="product-box row">
             <div class="product-img col-lg-6">
                 <img class="img-fluid" src="{{productDetails.img}}" alt="">
@@ -10,7 +10,7 @@
                     <del>${{productDetails.discountPrice}}</del>
                 </div>
                 <div class="product-view">
-                    <h6 class="f-w-600">Product Details</h6>
+                    <h6 class="f-w-700">Product Details</h6>
                     <p class="mb-0">{{ productDetails.discription}}</p>
                 </div>
                 <div class="product-size">
@@ -27,12 +27,12 @@
                     </ul>
                 </div>
                 <div class="product-qnty">
-                    <h6 class="f-w-600">Quantity</h6>
+                    <h6 class="f-w-700">Quantity</h6>
                     <fieldset>
                         <div class="touchspin-wrapper">
                             <button class="decrement-touchspin btn-touchspin touchspin-primary" (click)="decrement()"><i
                                     class="fa fa-minus"> </i></button>
-                            <input class="input-touchspin spin-outline-primary" type="number" value="{{ counter }}">
+                            <input class="input-touchspin spin-outline-primary mx-1" type="number" value="{{ counter }}">
                             <button class="increment-touchspin btn-touchspin touchspin-primary" (click)="increment()"><i
                                     class="fa fa-plus"> </i></button>
                         </div>

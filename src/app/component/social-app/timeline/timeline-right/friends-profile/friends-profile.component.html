@@ -8,11 +8,13 @@
         <div class="collapse show" ngbAccordionCollapse>
             <div class="card-body avatar-showcase filter-cards-view" ngbAccordionBody>
                 <ng-template>
-                    @for(images of friednsData; track images){
-                        <div class="d-inline-block friend-pic">
-                            <img class="img-50 rounded-circle" src="{{ images.image }}" alt="#">
-                        </div>
-                       }
+                    <ul class="common-flex justify-content-center">
+                        @for(images of friednsData; track images){
+                            <li>
+                                <img class="img-50 rounded-circle" src="{{ images.image }}" alt="#">
+                            </li>
+                        }
+                    </ul>
                 </ng-template>
             </div>
         </div>

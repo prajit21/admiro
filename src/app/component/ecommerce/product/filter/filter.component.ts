@@ -25,6 +25,7 @@ export class FilterComponent {
     loop: true,
     dots: false,
     nav: true,
+    navText: ["<span class='owl-prev-icon'></span>", "<span class='owl-next-icon'></span>"],
   }
 
   options: Options = {

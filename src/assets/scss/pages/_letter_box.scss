@@ -156,12 +156,15 @@
                 }
                 i {
                     padding-right: 12px;
+                    [dir="rtl"] & {
+                        padding-right: unset;
+                        padding-left: 12px;
+                    }
                 }
             }
         }
     }
 }
-// Mail-body
 .email-body {
     .mail-header-wrapper {
         padding: 16px;
@@ -240,11 +243,14 @@
                                 width: 100%;
                                 transition: all 0.1s ease-in;
                             }
+                            svg {
+                                stroke: var(--theme-default);
+                            }
                         }
                         svg {
                             width: 22px;
                             height: 22px;
-                            stroke: var(--theme-default);
+                            stroke: var(--font-color);
                             @media (max-width: 424px) {
                                 display: none;
                             }
@@ -286,7 +292,8 @@
                 }
                 i {
                     position: absolute;
-                    top: 12px;
+                    top: 45%;
+                    transform: translate(0 , -50%);
                     left: 11px;
                 }
             }
@@ -570,7 +577,6 @@
         }
     }
 }
-// Click on second user open
 .mail-header-wrapper {
     &.header-wrapper1 {
         flex-direction: unset;
@@ -754,7 +760,7 @@
                 width: 20px;
                 height: 20px;
                 fill: none;
-                stroke: var(--gray-60);
+                stroke: var(--font-color);
                 @media (max-width:480px) {
                     width: 18px;
                     height: 18px;

@@ -4,7 +4,7 @@
             <div class="tab-content">
                 <div class="tab-pane fade active show" id="pills-created" role="tabpanel">
                     <div class="card mb-0">
-                        <div class="card-header d-flex">
+                        <div class="card-header d-flex card-no-border pb-0">
                             <h3 class="mb-0">{{ bookmarkTitle }}</h3>
                             <ul>
                                 <li>
@@ -25,7 +25,7 @@
                                 <div class="row" id="bookmarkData">
                                     @if(bookmarkDetails){
                                     @for(details of bookmarkDetails; track details){
-                                    <div class="col-xxl-3 col-md-4 col-ed-4">
+                                    <div class="col-xxl-3 col-md-4 col-sm-6 col-ed-4">
                                         <div class="card card-with-border bookmark-card overflow-hidden">
                                             <div class="details-website"><img class="img-fluid" [src]="details.image"
                                                     alt="">

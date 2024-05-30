@@ -1,7 +1,39 @@
 /**=====================
      user css start
 ==========================**/
-
+.avatar-profile-card{
+    .user-img{
+        display: inline-block;
+        position: relative;
+        img{
+            border-radius: 50%;
+            padding: 8px 10px 0;
+            background-color: var(--theme-secondary);
+            width: unset;
+            height: unset;
+            border: none;
+        }
+        .setting-icon{
+            line-height: 0;
+            position: absolute;
+            top: 75%;
+            right: 0;
+            cursor: pointer;
+            [dir="rtl"] & {
+                right: unset;
+                left: 0;
+            }
+            i{
+                padding: 5px;
+                background-color: var(--theme-default);
+                border-radius: 50%;
+                color: var(--white);
+                border: 1px solid var(--white);
+                font-size: 12px;
+            }
+        }
+    }
+}
 .user-wrap{
     text-align: center;
     margin-top: -1.2rem;

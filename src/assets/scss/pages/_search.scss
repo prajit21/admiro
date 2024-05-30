@@ -6,7 +6,7 @@
     input {
       border: 1px solid var(--theme-default);
       padding-left: 20px;
-      border-radius: 10px 0 0 10px;
+      border-radius: 10px 0 0 10px !important;
       flex: 1 1 auto;
       &::placeholder {
         color: var(--theme-default);
@@ -14,11 +14,15 @@
       &:focus {
         outline: none;
       }
+      [dir="rtl"] & {
+        border-radius: 0 10px 10px 0 !important;
+			}
     }
     .input-group {
       .btn {
         line-height: 32px;
         font-size: 16px;
+        border-radius: 6px !important;
       }
       .form-control-plaintext {
         background: transparent;
@@ -99,11 +103,23 @@
         border-left: 1px solid rgba($dark, 0.5);
         padding-left: 8px;
         margin-left: 8px;
+        [dir="rtl"] & {
+          border-left: unset;
+          border-right: 1px solid rgba($dark, 0.5);
+          padding-left: unset;
+          padding-right: 8px;
+          margin-left: unset;
+          margin-right: 8px;
+        }
       }
       i {
         color: var(--warning-color);
         &:not(:last-child) {
           margin-right: 4px;
+          [dir="rtl"] & {
+            margin-right: unset;
+            margin-left: 4px;
+          }
         }
       }
     }
@@ -134,12 +150,14 @@
       background-color: rgba($success-color, 0.9) !important;
       a{
         color: $white !important;
+        background-color: rgba($success-color, 0.9) !important;
       }
     }
     &.bg-light-secondary{
       background-color: rgba($secondary-color, 0.9) !important;
       a{
         color: $white !important;
+        background-color: rgba($secondary-color, 0.9) !important;
       }
     }
     .nav-link {
@@ -150,6 +168,7 @@
         background-color: rgba($primary-color, 0.9);
         color: $white;
         opacity: 4;
+        border-radius: 0;
       }
     }
     &.show,

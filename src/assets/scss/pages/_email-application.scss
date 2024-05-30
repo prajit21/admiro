@@ -58,8 +58,13 @@
     }
   }
   .email-app-sidebar {
-    .d-flex img {
-      border: 2px solid var(--light-gray-color);
+    .d-flex {
+      @media (max-width: 1400px) and (min-width: 1200px) {
+        display: block !important;
+      }
+      img {
+        border: 2px solid var(--light-gray-color);
+      }
     }
     .main-menu {
       >li {

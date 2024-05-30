@@ -63,6 +63,7 @@
           padding-right: 0;
           margin-right: 1px;
           border-right: none;
+          border-radius: 6px;
           svg {
             width: 16px;
             height: 16px;
@@ -258,7 +259,7 @@
         border-color: rgba($gray-60, 0.8);
       }
     }
-    svg {
+    i {
       stroke: var(--body-font-color);
       width: 18px;
       height: 18px;
@@ -266,7 +267,7 @@
       top: 13px;
       position: absolute;
     }
-    .mic-search {
+    svg {
       right: 10px;
       top: 8px;
       position: absolute;
@@ -493,7 +494,7 @@
   .right-msg {
     flex-direction: row-reverse;
     .msg-bubble {
-      color: var(--white);
+      color: $white;
       background: var(--theme-default);
       width: calc(100% - 33px);
     }
@@ -502,6 +503,9 @@
       background-image: url(../../images/blog/comment.jpg);
       width: 33px;
       height: 33px;
+      [dir="rtl"] & {
+        margin: 0 10px 0 0;
+      }
       @media (max-width: 1200px) {
         min-width: 16px;
         min-height: 16px;

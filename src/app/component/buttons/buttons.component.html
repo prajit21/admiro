@@ -3,7 +3,7 @@
         @for( data of buttonsData;track data){
         <div class="col-sm-12">
             <div class="card" id="default">
-                <div class="card-header">
+                <div class="card-header card-no-border pb-0">
                     <h3 class="mb-1">{{ data.headtitle}}</h3>
                     <p class="mb-0 mt-1" [innerHTML]="data.title"></p>
                 </div>
@@ -17,7 +17,7 @@
         @if(data.buttongroup == true){
         <div class="col-sm-12">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header card-no-border pb-0">
                     <h3>Buttons group </h3>
                 </div>
                 <div class="card-body btn-group-showcase">

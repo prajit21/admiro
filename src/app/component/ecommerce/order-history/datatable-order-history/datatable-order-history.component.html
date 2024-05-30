@@ -1,5 +1,5 @@
-<div class="card">
-    <div class="card-header">
+<div class="card pagination-custom">
+    <div class="card-header card-no-border pb-0">
         <h3>Datatable order history</h3>
         <div class="d-flex justify-content-between p-2">
             <div class="dataTables_length" id="basic-6_length">
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="order-history table-responsive">
+        <div class="order-history table-responsive theme-scrollbar order-history-table">
             <table class="table table-bordernone display">
                 <thead>
                     <tr>
@@ -67,7 +67,7 @@
             </table>
         </div>
         <div class="dataTables_paginate paging_simple_numbers  d-flex justify-content-between">
-            <span class="mt-4">Showing {{ getStartingIndex() }} to {{ getEndingIndex() }} of {{ filteredData.length
+            <span>Showing {{ getStartingIndex() }} to {{ getEndingIndex() }} of {{ filteredData.length
                 }}
                 entries</span>
             <ngb-pagination class="ms-3" [collectionSize]="(total$ | async)!" [(page)]="service.page"

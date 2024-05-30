@@ -336,6 +336,9 @@
                 .stroke-icon {
                     stroke: var(--theme-default);
                 }
+                h6{
+                    color: var(--theme-default);
+                }
                 .iconly-Arrow-Right-2{
                     transform: rotate(90deg) !important;
                 }
@@ -444,6 +447,9 @@
         .sidebar-list {
             .sidebar-link {
                 &.active {
+                    background-color: rgba($primary-color, 0.2);
+                    color: var(--theme-default);
+                    border-bottom: none;
                     svg {
                         &.stroke-icon {
                             stroke: var(--theme-default);

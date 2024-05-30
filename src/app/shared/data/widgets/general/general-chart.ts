@@ -16,6 +16,7 @@ import {
     ApexAnnotations,
     ApexGrid
 } from "ng-apexcharts";
+import { Width } from "ngx-owl-carousel-o/lib/services/carousel.service";
 
 
 export type ChartOptions = {
@@ -59,7 +60,7 @@ export const saleValue: ChartOptions | any = {
   ],
   chart: {
     type: "bar",
-    height: 120,
+    height: 110,
     stacked: true,
     stackType: "100%",
     toolbar: {
@@ -129,15 +130,34 @@ export const saleValue: ChartOptions | any = {
       breakpoint: 1661,
       options: {
         chart: {
-          width: 150,
+          width: 130,
+          height: 110,
         },
       },
     },
     {
-      breakpoint: 1300,
+      breakpoint: 1500,
       options: {
         chart: {
-          width: 130,
+          width: 110,
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 110,
+          width: 90,
+        },
+      },
+    },
+    {
+      breakpoint: 1200,
+      options: {
+        chart: {
+          width: 150,
+          height: 120,
         },
       },
     },
@@ -145,7 +165,7 @@ export const saleValue: ChartOptions | any = {
       breakpoint: 670,
       options: {
         chart: {
-          offsetX: -30,
+          width: 130,
         },
       },
     },
@@ -235,15 +255,33 @@ export const stockValue: ChartOptions | any = {
       breakpoint: 1661,
       options: {
         chart: {
-          width: 150,
+          width: 130,
+          height: 100,
         },
       },
     },
     {
-      breakpoint: 1300,
+      breakpoint: 1500,
       options: {
         chart: {
-          width: 130,
+          width: 110,
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 110,
+          width:  90,
+        },
+      },
+    },
+    {
+      breakpoint: 1200,
+      options: {
+        chart: {
+          width: 150,
         },
       },
     },
@@ -251,7 +289,7 @@ export const stockValue: ChartOptions | any = {
       breakpoint: 670,
       options: {
         chart: {
-          offsetX: -30,
+          width: 130,
         },
       },
     },
@@ -316,11 +354,19 @@ export const InvestmentChart: ChartOptions | any = {
   },
   responsive: [
     {
+      breakpoint: 1650,
+
+      options: {
+        chart: {
+          height: 280,
+        },
+      },
+    },
+    {
       breakpoint: 1445,
 
       options: {
         chart: {
-          // height: 200,
           offsetX: -10,
         },
         legend: {
@@ -366,6 +412,15 @@ export const InvestmentChart: ChartOptions | any = {
         chart: {
           height: 250,
           offsetX: -10,
+        },
+      },
+    },
+    {
+      breakpoint: 1300,
+
+      options: {
+        chart: {
+          height: 230,
         },
       },
     },
@@ -522,6 +577,7 @@ export const DataChart: ChartOptions | any = {
           options: {
             chart: {
               width: 140,
+              height: 160,
             },
           },
         },
@@ -605,7 +661,7 @@ export const OrderDatachart: ChartOptions | any = {
     chart: {
         type: 'bar',
         width: 180,
-        height: 120,
+        height: 135,
         stacked: true,
         toolbar: {
             show: false
@@ -709,6 +765,7 @@ export const OrderDatachart: ChartOptions | any = {
         options: {
             chart: {
                 width: 140,
+                height: 150,
             }
         },
     },

@@ -82,6 +82,24 @@
       }
     }
   }
+  .default-according {
+		.filter-cards-view {
+			.latest-photos.common-flex {
+				justify-content: center;
+        li {
+					border: none;
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					width: 70px;
+				}
+			}
+      .common-flex {
+				flex-direction: row !important;
+				flex-wrap: wrap;
+			}
+		}
+	}
 }
 .market-tabs {
   .border-tab.nav-tabs .nav-item .nav-link.active {
@@ -168,7 +186,6 @@
   }
 }
 .photos {
-  margin-bottom: -15px;
   ul {
     li {
       display: inline-block;
@@ -220,6 +237,14 @@
     i {
       color: var(--light-text);
       margin: 0px 4px;
+      [dir="rtl"] & {
+        margin-left: 0;
+        margin-right: 4px !important;
+      }
+    }
+    [dir="rtl"] & {
+      margin-right: unset;
+      margin-left: 7px;
     }
   }
   .comments-box {

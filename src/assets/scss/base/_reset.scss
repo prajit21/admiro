@@ -14,7 +14,7 @@
 $i: 100, 300, 500, 400, 600, 700, 900;
 @each $val in $i {
   .f-w-#{$val} {
-    font-weight: $val;
+    font-weight: $val !important;
   }
 }
 /*====== Font-weight css ends ======*/
@@ -93,7 +93,7 @@ $i: 100, 300, 500, 400, 600, 700, 900;
   list-style: circle;
 }
 .popover{
-  z-index: 2;
+  z-index: 3;
 }
 .page-link{
   &:focus{

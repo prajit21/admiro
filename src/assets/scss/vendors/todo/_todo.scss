@@ -224,11 +224,17 @@
     ul{
       li{
         .iconbg{
-          padding: 8px;
           border-radius: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          app-feathericon{
+            padding: 8px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .badge{
+          border-radius: 6px;
         }
       }
     }
