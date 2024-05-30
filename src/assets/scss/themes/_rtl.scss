@@ -950,29 +950,6 @@ html[dir="rtl"] {
     .btn-close {
       margin: -0.5rem auto -0.5rem -0.5rem;
       left: 25px;
-      top: 22px;
-    }
-  }
-  .custom-alert {
-    .demo-img {
-      .modal-content {
-        .balance-box {
-          .balance-profile {
-            ul {
-              li {
-                + {
-                  li {
-                    &::before {
-                      left: unset;
-                      right: -25px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
   .small-progressbar {
@@ -2907,24 +2884,17 @@ html[dir="rtl"] {
     .btn-close {
       margin: -0.5rem auto -0.5rem -0.5rem;
       left: 25px;
-      top: 22px;
     }
   }
-  .custom-alert {
-    .demo-img {
-      .modal-content {
-        .balance-box {
-          .balance-profile {
-            ul {
-              li {
-                + {
-                  li {
-                    &::before {
-                      left: unset;
-                      right: -25px;
-                    }
-                  }
-                }
+  .balance-box {
+    .balance-profile {
+      ul {
+        li {
+          + {
+            li {
+              &::before {
+                left: unset;
+                right: -25px;
               }
             }
           }

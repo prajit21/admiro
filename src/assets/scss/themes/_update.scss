@@ -387,13 +387,60 @@ pre[class*=language-] {
 }
 .accordion-item {
 	&:first-of-type {
-		.accordion-button {
-			border-top-left-radius: 6px;
-			border-top-right-radius: 6px;
-		}
+			border-top-left-radius: 6px !important;
+			border-top-right-radius: 6px !important;
 	}
+    &:last-of-type{
+        border-bottom-right-radius: 6px !important;
+        border-bottom-left-radius: 6px !important;
+    }
 }
-
+.icon-accordion{
+    .accordion{
+        .accordion-item{
+            &:first-of-type {
+                >.accordion-header {
+                    .accordion-button {
+                        border-top-left-radius: 6px !important;
+			            border-top-right-radius: 6px !important;
+                    }
+                }
+            }
+            &:last-of-type {
+                >.accordion-header {
+                    .accordion-button.collapsed {
+                        border-bottom-right-radius: 6px !important;
+                        border-bottom-left-radius: 6px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.tag-pills-page{
+    .headings-badge-card{
+        .badge{
+            border-radius: 6px !important;
+        }
+    }
+}
+.large-modal-header{
+    margin-bottom: 10px;
+    h6{
+        display: flex;
+        align-items: center;
+        color: var(--body-font-color);
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.nav-tabs .nav-link{
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.nav-pills .nav-link{
+    border-radius: 6px !important;
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

@@ -843,7 +843,6 @@
     }
     .btn-close {
         filter: brightness(1) invert(1);
-        background-color: var(--body-color) !important;
     }
     .carousel-dark {
         .carousel-caption {
@@ -1813,6 +1812,17 @@
                     border-right-color: var(--body-font-color) !important;
                 }
             }
+        }
+    }
+    .social-profile {
+        background: var(--white) !important;
+    }
+    .balance-box {
+        background: var(--white) !important;
+    }
+    .tab-bootstrap-page{
+        .nav-tabs .nav-link:hover {
+            border-color: var(--border-color) !important;
         }
     }
 }
