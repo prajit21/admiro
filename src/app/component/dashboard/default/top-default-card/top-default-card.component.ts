@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class TopDefaultCardComponent {
 
+  public time = new Date();
+  public intervalId: any;
+
+  ngOnInit() {
+    this.intervalId = setInterval(() => {
+      this.time = new Date();
+    }, 1000);
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
+
 }

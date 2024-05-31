@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
@@ -11,7 +11,14 @@ export class SidebarTypeComponent {
   public sidebarType: string = 'compact-wrapper';
   public screenwidth = window.innerWidth;
 
-  constructor( public layoutService: LayoutService) { }
+  constructor(public layoutService: LayoutService) {
+
+  }
+
+  @HostListener("window:resize", ["$event"])
+  onResize() {
+    this.screenwidth = window.innerWidth;
+  }
 
   customizeSidebarType(val: string) {
     if (this.screenwidth < 1200) {
