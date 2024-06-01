@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,HostListener } from '@angular/core';
 import { Menu, NavmenuService } from '../../services/navmenu.service';
 import { NavigationEnd, Router } from '@angular/router';
 import { LayoutService } from '../../services/layout.service';
@@ -13,8 +13,8 @@ export class SidebarComponent {
   public menuItems = this.navServices.MENUITEMS;
   public margin: number = 0;
   public width: number = window.innerWidth;
-  public leftArrow: boolean = false;
-  public rightArrow: boolean = true;
+  public leftArrowNone: boolean = true;
+  public rightArrowNone: boolean = false;
   public screenWidth: number;
   public screenHeight: number;
   public pined: boolean = false;
@@ -98,28 +98,37 @@ export class SidebarComponent {
     }
     item.active = !item.active;
   }
-  // For Horizontal Menu
+
+
+  @HostListener("window:resize", ["$event"])
+  onResize(event: { target: { innerWidth: number } }) {
+    this.width = event.target.innerWidth - 500;
+  }
+
 
   scrollToLeft() {
-    this.rightArrow = true;
-    if (this.layout.margin != 0) {
-      this.layout.margin = this.layout.margin + 500;
-    }
-
-    if (this.layout.margin == 0) {
-      this.leftArrow = false;
+    if (this.margin >= -this.width) {
+      this.margin = 0;
+      this.leftArrowNone = true;
+      this.rightArrowNone = false;
+    } else {
+      this.margin += this.width;
+      this.rightArrowNone = false;
     }
   }
 
   scrollToRight() {
-    this.leftArrow = true;
-    if (this.layout.margin != -3500) {
-      this.layout.margin = this.layout.margin - 500;
-    }
-    if (this.layout.margin == -3500) {
-      this.rightArrow = false;
+    if (this.margin <= -3500) {
+      this.margin = -3000;
+      this.leftArrowNone = false;
+      this.rightArrowNone = true;
+    } else {
+      this.margin += -this.width;
+      this.leftArrowNone = false;
     }
   }
+
+
 
 
   openMenu() {

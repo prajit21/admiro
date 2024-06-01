@@ -22,15 +22,22 @@
                             <div class="balance-profile">
                                 <div class="balance-img"><img src="assets/images/avtar/4.jpg" alt="user vector"><a
                                         class="edit-icon" href="user-profile.html">
-                                        <div class="icon"><i class="stroke-primary" data-feather="edit-2"></i></div>
-                                    </a></div><span class="font-dark d-block">Your Balance </span>
+                                        <div class="icon">
+                                            <app-feathericon [icon]="'edit-2'" class="stroke-primary"></app-feathericon>
+                                            <!-- <i class="stroke-primary" data-feather="edit-2"></i> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <span class="font-dark d-block">Your Balance </span>
                                 <h4 class="mt-1">$768,987.90</h4>
                                 <ul>
                                     <li>
                                         <div class="balance-item">
                                             <div class="balance-icon-wrap bg-light-danger">
                                                 <div class="balance-icon bg-danger">
-                                                    <div class="icon"><i data-feather="arrow-down-right"></i></div>
+                                                    <div class="icon">
+                                                        <app-feathericon [icon]="'arrow-down-right'"></app-feathericon>          
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div> <span class="fs-12 font-dark">Investment </span>
@@ -43,7 +50,9 @@
                                         <div class="balance-item">
                                             <div class="balance-icon-wrap bg-light-success">
                                                 <div class="balance-icon bg-success">
-                                                    <div class="icon"><i data-feather="arrow-up-right"></i></div>
+                                                    <div class="icon">
+                                                        <app-feathericon [icon]="'arrow-up-right'"></app-feathericon>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div> <span class="fs-12 font-dark">Cash Back</span>

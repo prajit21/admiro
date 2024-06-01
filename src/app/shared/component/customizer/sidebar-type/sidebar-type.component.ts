@@ -22,7 +22,7 @@ export class SidebarTypeComponent {
 
   customizeSidebarType(val: string) {
     if (this.screenwidth < 1200) {
-      if (val == 'horizontal-sidebar') {
+      if (val == 'horizontal-sidebar sidebar-open') {
         this.layoutService.config.settings.sidebar_type = 'compact-wrapper'
       }
     } else {

@@ -7,7 +7,7 @@
         <div class="avatars">
             @for( data of avatarIntial;track data){
                 <div class="avatar-intial {{ data.class }}">
-                    <span class="fs-1">{{ data.text }}</span>
+                    <span class="{{ data.span_class }}">{{ data.text }}</span>
                 </div>
             }
         </div>

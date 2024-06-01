@@ -310,27 +310,27 @@ export const buttons = [
 
 export const buttonsGroup = [
     {
-        class: 'btn-primary rounded-1',
+        class: 'btn-primary',
     },
     {
-        class: 'btn-secondary rounded-1',
+        class: 'btn-secondary',
     },
     {
-        class: 'btn-success rounded-1',
+        class: 'btn-success',
     },
     {
-        class: 'btn-info text-white rounded-1',
+        class: 'btn-info text-white',
     },
     {
-        class: 'btn-warning text-white rounded-1',
+        class: 'btn-warning text-white',
     },
     {
-        class: 'btn-danger rounded-1',
+        class: 'btn-danger',
     },
     {
-        class: 'btn-light text-dark rounded-1',
+        class: 'btn-light text-dark',
     },
     {
-        class: 'btn-dark text-white rounded-1',
+        class: 'btn-dark text-white',
     }
 ]

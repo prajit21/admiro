@@ -37,7 +37,7 @@ export interface Icons {
 export const darkThemAlert: alert[] = [
     {
         mainTitle: 'Link Color In Dark Theme',
-        des: '<span>Use the</span><code>data-bs-title, data-bs-trigger=&quot;click&quot;</code><span> to the content under the HTML tag with click event.</span>',
+        des: 'Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert',
         item: [
             {
                 title: 'Primary Alert',
@@ -100,7 +100,7 @@ export const darkThemAlert: alert[] = [
 export const lightThemeAlert: alert[] = [
     {
         mainTitle: 'Link Color In Light Them',
-        des: '<span>Use the</span><code>.alert-link</code><span> utility class to quickly provide matching colored links within any alert.</span>',
+        des: 'Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.',
         item: [
             {
                 title: 'Primary Light Alert',

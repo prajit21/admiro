@@ -141,26 +141,32 @@ export const Grouping = [
 export const AvatarInitial = [
     {
         class: 'img-80 bg-light-primary',
+        span_class:'fs-1',
         text:'A'
     },
     {
         class: 'img-70 bg-light-secondary',
+        span_class:'fs-2',
         text:'D'
     },
     {
         class: 'img-60 bg-light-danger',
+        span_class:'fs-3',
         text:'M'
     },
     {
         class: 'img-50 bg-light-primary',
+        span_class:'fs-4',
         text:'I'
     },
     {
         class: 'img-40 bg-light-secondary',
+        span_class:'fs-5',
         text:'R'
     },
     {
         class:'img-30 bg-light-danger',
+        span_class:'fs-6',
         text:'O'
     }
 ]

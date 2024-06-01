@@ -8,12 +8,11 @@
         </svg>
     </a>
 </div>
-@if(leftArrow){
-<div class="left-arrow" id="left-arrow" (click)="scrollToLeft()">
+<div class="left-arrow" id="left-arrow" [class.d-none]="leftArrowNone" (click)="scrollToLeft()">
     <app-feathericon [icon]="'arrow-left'"></app-feathericon>
 </div>
-}
-<div class="main-sidebar" id="main-sidebar" [ngStyle]="{ 'margin-left': layout.margin + 'px' }">
+<div class="main-sidebar" id="main-sidebar"
+    [ngStyle]="{ marginLeft: this.layout.config.settings.sidebar_type === 'horizontal-sidebar sidebar-open' ? margin + 'px' : '0px' }">
     <ul class="sidebar-menu" id="simple-bar">
         <li class="pin-title sidebar-main-title" [class.show]="pined">
             <div>
@@ -70,8 +69,6 @@
         </ng-template>
     </ul>
 </div>
-@if(rightArrow){
-<div class="right-arrow" id="right-arrow" (click)="scrollToRight()">
+<div class="right-arrow" id="right-arrow" [class.d-none]="rightArrowNone" (click)="scrollToRight()">
     <app-feathericon [icon]="'arrow-right'"></app-feathericon>
 </div>
-}
