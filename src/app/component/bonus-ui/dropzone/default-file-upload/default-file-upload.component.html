@@ -4,8 +4,8 @@
         <p class="mt-1 mb-0">We use the create method to turn a<code>[https://pqina.nl/filepond/]</code></p>
     </div>
     <div class="card-body">
-        <div class="no-preview" type="file">
-            <dropzone [config]="Config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)" >
+        <div class="no-preview custom-dropzone customize-dropzone" type="file">
+            <dropzone [config]="Config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)">
             </dropzone>
         </div>
     </div>
