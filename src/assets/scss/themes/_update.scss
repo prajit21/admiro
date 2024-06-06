@@ -53,13 +53,34 @@ pre[class*=language-] {
     text-shadow: none !important;
 }
 .tooltip-inner {
-    background-color: rgba($primary-color, 0.5);
-    color: var(--theme-default);
+    background-color: var(--theme-default);
+    color: $white;
 }
 .tooltip.bs-tooltip-top {
     .tooltip-arrow {
         &:before {
-            border-top-color: rgba($primary-color, 0.5);
+            border-top-color: var(--theme-default);
+        }
+    }
+}
+.tooltip.bs-tooltip-bottom {
+    .tooltip-arrow {
+        &:before {
+            border-bottom-color: var(--theme-default);
+        }
+    }
+}
+.tooltip.bs-tooltip-end {
+    .tooltip-arrow {
+        &:before {
+            border-right-color: var(--theme-default);
+        }
+    }
+}
+.tooltip.bs-tooltip-start {
+    .tooltip-arrow {
+        &:before {
+            border-left-color: var(--theme-default);
         }
     }
 }
@@ -89,7 +110,7 @@ pre[class*=language-] {
                 backface-visibility: hidden;
                 border-radius: 5px;
                 overflow: hidden;
-                box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+                box-shadow: 0 0 50px rgba(0, 0, 0, 0.03);
                 width: 300px;
                 height: 260px;
             }
@@ -440,6 +461,68 @@ pre[class*=language-] {
 }
 .nav-pills .nav-link{
     border-radius: 6px !important;
+}
+.dropzone {
+	.dz-preview {
+        .dz-details {
+            z-index: 8 !important;
+        }
+		.dz-remove {
+            z-index: 9;
+            position: relative;
+		}
+	}
+}
+.dropdown-page{
+    .dropdown {
+        .dropdown-toggle {
+            border-radius: 6px;
+            padding: 6px 28px;
+            text-align: center;
+            width: auto;
+            color: $white;
+            &::after{
+                display: inline-block;
+                margin-left: 8px;
+                vertical-align: middle;
+                content: "";
+                border-top: 4px solid;
+                border-right: 4px solid transparent;
+                border-bottom: 0;
+                border-left: 4px solid transparent;
+                position: unset;
+            }
+        }
+    }
+    
+}
+.unique-dropdown-card{
+    .dropdown-menu {
+        .dropdown-item {
+            opacity: unset;
+            color: var(--body-font-color);
+            font-size: 16px;
+        }
+    }
+}
+.spilt-dropdown-card{
+    .btn{
+        padding: 10px 28px;
+    }
+    .dropdown {
+        .dropdown-toggle {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 10px;
+            &::after{
+                display: none;
+            }
+            svg{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
 }
 /**=====================
     4.3 Update CSS Ends

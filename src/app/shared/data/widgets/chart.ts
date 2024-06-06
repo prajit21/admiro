@@ -380,8 +380,8 @@ export const monthlyHistoryData: ChartOptions | any = {
 export const SkillStatus: ChartOptions | any = {
     chart: {
         type: "radialBar",
-        height: 375,
-        offsetY: -30,
+        height: 355,
+        offsetY: 10,
         offsetX: 20,
     },
     plotOptions: {
@@ -428,7 +428,20 @@ export const SkillStatus: ChartOptions | any = {
                 },
             },
         },
-    }]
+    },
+    {
+        breakpoint: 420,
+        options: {
+          chart: {
+            offsetY: 0,
+            offsetX: 0,
+          },
+          legend: {
+            position: 'bottom'
+          },
+        },
+      },
+]
 }
 
 export const Progress1: ChartOptions | any = {

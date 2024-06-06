@@ -74,13 +74,13 @@
             left: -263px !important;
           }
           .page-header {
-            padding-left: 0px;
+            padding-left: 36px;
           }
           .page-body {
             margin-left: 0px !important;
           }
           .footer {
-            padding-left: 0px;
+            padding-left: 15px;
           }
         }
       }
@@ -216,7 +216,8 @@
             transition: 0.5s all;
             .main-sidebar {
               .sidebar-menu {
-                height: calc(100vh - 271px);
+                height: calc(100vh - 156px);
+                overflow-x: hidden;
               }
             }
           }
@@ -872,15 +873,6 @@
         background-color: transparent;
       }
     }
-    header {
-      ul[class*=header-] {
-        >li {
-          &:last-child {
-            display: none;
-          }
-        }
-      }
-    }
     .user-profile {
       .ttl-info {
         span {
@@ -893,6 +885,17 @@
         }
       }
     }
-    
+    header {
+      .form-group-header{
+        width: 300px;
+      }
+    }
+    .user-profile {
+      .ttl-info {
+        span {
+          overflow: hidden;
+        }
+      }
+    }
   }
 }
