@@ -502,6 +502,8 @@ pre[class*=language-] {
             opacity: unset;
             color: var(--body-font-color);
             font-size: 16px;
+            white-space: wrap;
+            background-color: unset;
         }
     }
 }
@@ -523,6 +525,122 @@ pre[class*=language-] {
             }
         }
     }
+    .dropdown-content{
+        a{
+            &:first-child{
+                border-top: 0;  
+            }
+        }
+    }
+}
+.input-with-card{
+    .dropdown-menu{
+        li{
+            span{
+                font-size: 16px;
+                line-height: 1.5;
+                color: #212529;
+            }
+        }
+    }
+}
+.list-group{
+    border-radius: 6px;
+}
+.list-group-horizontal-sm > .list-group-item:last-child:not(:first-child){
+    @media (min-width: 576px) {
+        border-top-right-radius: 6px;
+    }
+}
+.list-group-horizontal-sm > .list-group-item:first-child:not(:last-child){
+    @media (min-width: 576px) {
+        border-bottom-left-radius: 6px;
+    }
+}
+.toast{
+    border-radius: 6px;
+    .toast-header{
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .toast-body{
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+.br-horizontal {
+	.br-unit-inner {
+		background-color: var(--theme-default) !important;
+	}
+}
+.br-movie,
+.br-square,
+.br-vertical{
+	.br-unit-inner {
+		background-color: var(--theme-default) !important;
+		border-color: var(--theme-default) !important;
+	}
+}
+.br-default {
+	.br-active {
+		&:before {
+			color: var(--theme-default);
+		}
+	}
+}
+.br-horizontal,
+.br-movie,
+.br-vertical{
+	.br-text {
+		color: var(--theme-default) !important;
+        font-size: 14px;
+	}
+}
+.br-square {
+	.br-unit-inner {
+		&:after {
+			color: $white;
+		}
+	}
+}
+.dropzone{
+        .dz-wrapper{
+            .dz-message{
+                .dz-text{
+                    .dz-message{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        i{
+                            font-size: 50px;
+                            color: var(--theme-default);
+                        }
+                        h6{
+                            color: #212529;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: #212529;
+                        }
+                    }
+                }
+            }
+        }
+        &.dropzone-secondary{
+            border: 2px dashed var(--theme-secondary) !important;
+            background-color: rgba($secondary-color, 0.1);
+            .dz-wrapper{
+                .dz-message{
+                    .dz-text{
+                        .dz-message{
+                            i{
+                                color: var(--theme-secondary) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 /**=====================
     4.3 Update CSS Ends

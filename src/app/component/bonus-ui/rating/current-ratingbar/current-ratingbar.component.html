@@ -1,5 +1,5 @@
 <div class="card height-equal">
-    <div class="card-header pb-0 pb-0">
+    <div class="card-header card-no-border pb-0">
         <h3>Current Rating Bar</h3>
         <p class="f-m-light mt-1">Star rating is displayed using <code>#u-rating-fontawesome-o </code> id
             using typescript.</p>
@@ -9,7 +9,7 @@
             <div class="star-ratings">
                 <bar-rating [rate]="faoRate" (rateChange)="onFaoRate($event)" [max]="10">
                     <ng-template ratingActive>
-                        <fa-icon [icon]="['fas', 'star']" [fixedWidth]="true" size="lg" style="color: #50e3c2">
+                        <fa-icon [icon]="['fas', 'star']" [fixedWidth]="true" size="lg" style="color: #308e87">
                         </fa-icon>
                     </ng-template>
                     <ng-template ratingInactive>
@@ -18,7 +18,7 @@
                     </ng-template>
                     <ng-template ratingFraction>
                         <fa-icon [icon]="['fas', 'star-half-alt']" [fixedWidth]="true" size="lg"
-                            style="color: #50e3c2">
+                            style="color: #308e87">
                         </fa-icon>
                     </ng-template>
                 </bar-rating>

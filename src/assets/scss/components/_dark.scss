@@ -1825,4 +1825,15 @@
             border-color: var(--border-color) !important;
         }
     }
+    .input-with-card{
+        .dropdown-menu{
+            li{
+                span{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: var(--body-font-color);
+                }
+            }
+        }
+    }
 }

@@ -80,14 +80,15 @@ $list-light-color in (primary, rgba($primary-color, 0.2)),
 			.list-wrapper {
 				.list-content {
 					p {
-						color: var(--white) !important;
+						color: var(--white);
 					}
 				}
 			}
-			p {
-				color: var(--white) !important;
+			.custom-color{
+				color: $white !important;
 			}
 		}
+
 	}
 }
 .list-group {
@@ -165,7 +166,7 @@ $list-light-color in (primary, rgba($primary-color, 0.2)),
 			margin-left: 8px;
 		}
 		p {
-			color: var(--body-font-color);
+			color: var(--body-font-color) !important;
 		}
 	}
 }
