@@ -1200,40 +1200,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .cd-timeline-img {
-    i {
-      right: 40%;
-      left: unset;
-      margin-right: -10px;
-      margin-left: unset;
-    }
-  }
-  .cd-timeline-content {
-    .cd-date {
-      right: 122%;
-      left: unset;
-    }
-  }
-  .cd-timeline-block {
-    &:nth-child(even) {
-      .cd-timeline-content {
-        float: left;
-        border-left: 7px solid var(--border-color);
-        border-right: unset;
-        .cd-date {
-          right: auto;
-          left: 122%;
-          text-align: left;
-        }
-        &::before {
-          right: auto;
-          left: 100%;
-          border: 15px solid transparent;
-          border-left: 15px solid var(--light-color);
-        }
-      }
-    }
-  }
   .form-check-reverse {
     .form-check-input {
       float: right;
@@ -2225,20 +2191,13 @@ html[dir="rtl"] {
           .flex-grow-1 {
             margin-left: unset;
             margin-right: 8px;
-            .img-wrapper {
-              li {
-                + {
-                  li {
-                    margin-left: unset;
-                    margin-right: 20px;
-                  }
-                }
-              }
-            }
           }
           .activity-line {
             left: unset;
-            right: 27px;
+            right: 30px;
+            @media (max-width: 575px) {
+              right: 22px;
+            }
           }
         }
       }
@@ -3154,40 +3113,6 @@ html[dir="rtl"] {
       &::before {
         right: 5px !important;
         left: unset !important;
-      }
-    }
-  }
-  .cd-timeline-img {
-    i {
-      right: 40%;
-      left: unset;
-      margin-right: -10px;
-      margin-left: unset;
-    }
-  }
-  .cd-timeline-content {
-    .cd-date {
-      right: 122%;
-      left: unset;
-    }
-  }
-  .cd-timeline-block {
-    &:nth-child(even) {
-      .cd-timeline-content {
-        float: left;
-        border-left: 7px solid rgba(var(--border-color));
-        border-right: unset;
-        .cd-date {
-          right: auto;
-          left: 122%;
-          text-align: left;
-        }
-        &::before {
-          right: auto;
-          left: 100%;
-          border: 15px solid transparent;
-          border-left: 15px solid rgba(var(--light-color), 1);
-        }
       }
     }
   }

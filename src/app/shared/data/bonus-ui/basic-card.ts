@@ -51,7 +51,7 @@ export const commonTopCard: Card[] = [
     {
         title: 'Without shadow card',
         subdesc: '<span>Use the</span><code>.shadow-none &amp;.border</code><span>classthrough shadow removes.</span>',
-        class: 'card shadow-none solid-border height_equal',
+        class: 'card shadow-none border',
         headerclass: 'card-header pb-0',
         Data: [
             {

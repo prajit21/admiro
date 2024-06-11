@@ -2,9 +2,9 @@
     @for( cardData of Data; track cardData){
     <div class="col-xl-6">
         <div class="card">
-            <div class="card-header {{ cardData.borderClass }}">
+            <div class="card-header pb-0 card-no-border {{ cardData.borderClass }}">
                 <h3>{{ cardData.heading }}</h3>
-                <p class="mt-1 f-m-light" [innerHTML]="cardData.desc"></p>
+                <p class="mt-1 mb-0" [innerHTML]="cardData.desc"></p>
             </div>
             <div class="card-body">
                 <p class="{{ cardData.bodyTextClass }}" [innerHTML]="cardData.bodyText"></p>

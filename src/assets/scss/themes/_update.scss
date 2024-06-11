@@ -329,6 +329,8 @@ pre[class*=language-] {
 }
 .form-control {
     border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .invoice-2 {
     table {
@@ -641,6 +643,62 @@ pre[class*=language-] {
                 }
             }
         }
+}
+
+.page-item {
+	&:first-child {
+		.page-link {
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+	}
+}
+.page-item {
+	&:last-child {
+		.page-link {
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
+	}
+}
+.btn-showcase {
+	.btn {
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+}
+.dark-card {
+    .card-header {
+        border-bottom: 1px solid #474545;
+    }
+    .card-footer {
+        border-top: 1px solid #474545;
+    }
+}
+.creative-card-page{
+    .border-b-info{
+        border-bottom: 1px solid var(--info-color) !important;
+    }
+}
+.theme-form input[type=text], .theme-form input[type=email], .theme-form input[type=search], .theme-form input[type=password], .theme-form input[type=number], .theme-form input[type=tel], .theme-form input[type=date], .theme-form input[type=datetime-local], .theme-form input[type=time], .theme-form input[type=datetime-local], .theme-form input[type=month], .theme-form input[type=week], .theme-form input[type=url], .theme-form input[type=file], .theme-form textarea, .theme-form select {
+    border-color: var(--border-color);
+    background-color: var(--white);
+    font-size: 14px;
+    padding: 12px 10px;
+    box-shadow: none;
+}
+.input-group-text{
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.chart-container.chart-block {
+	canvas {
+		height: 360px !important;
+		margin: 0 auto;
+        @media only screen and (max-width: 360px){
+            height: 140px!important;
+        }
+	}
 }
 /**=====================
     4.3 Update CSS Ends

@@ -249,7 +249,7 @@ export var chart6: any = {
     }
 };
 
-// Chart 7 Stacked bar chart
+// Chart 7 Stacked bar chart​
 export var chart7: any = {
     type: 'Bar',
     data: {

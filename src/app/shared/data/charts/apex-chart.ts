@@ -790,7 +790,7 @@ export const donutChart: ChartOptions | any = {
 
 export const radarChart: ChartOptions | any = {
     chart: {
-        height: 350,
+        height: 300,
         type: "radar",
         toolbar: {
             show: false,

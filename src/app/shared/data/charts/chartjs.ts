@@ -114,7 +114,6 @@ export var radarGraphLegend = false;
 export var radarGraphData: any[] = [
     {
         label: "My First dataset",
-        //   fill: true,
         backgroundColor: "rgba(0, 102, 102, 0.2)",
         borderColor: primary_color,
         pointBackgroundColor: primary_color,

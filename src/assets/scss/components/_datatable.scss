@@ -556,22 +556,6 @@ table {
     }
   }
 }
-.page-item {
-  &:first-child {
-    .page-link {
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
-  }
-  &:last-child {
-    .page-link {
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
-  }
-}
 .autofill-datatable {
   div.dataTables_wrapper {
     div.dataTables_paginate {
