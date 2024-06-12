@@ -1,13 +1,13 @@
 <div class="card">
-    <form class="table-responsive theme-scroollbar">
-        <div class="card-body">
-            <div class="card-header">
-                <h3>Individual column searching (text inputs) </h3><span>The searching functionality provided by
-                    DataTables
-                    is useful for quickly search through the information in the table - however the search is global,
-                    and
-                    you may wish to present controls that search on specific columns.</span>
-            </div>
+    <div class="card-header card-no-border pb-0">
+        <h3>Individual column searching (text inputs) </h3><span>The searching functionality provided by
+            DataTables
+            is useful for quickly search through the information in the table - however the search is global,
+            and
+            you may wish to present controls that search on specific columns.</span>
+    </div>
+    <div class="card-body">
+        <form class="table-responsive theme-scroollbar pagination-custom">
             <div class="dataTables_wrapper">
                 <div class="d-flex justify-content-between p-2">
                     <div class="dataTables_length" id="basic-6_length">
@@ -31,7 +31,7 @@
                         }
                     </div>
                 </div>
-                <table class="display table table-striped table-hover table-light">
+                <table class="display table table-striped table-hover table-borderless">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -81,12 +81,13 @@
                         }
                     </tbody>
                 </table>
-                <div class="d-flex justify-content-between p-2">
+                <div class="d-flex justify-content-end p-2">
                     <ngb-pagination class="ms-3" [collectionSize]="( total$ | async)!" [(page)]="service.page"
                         [pageSize]="service.pageSize">
                     </ngb-pagination>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
+
 </div>

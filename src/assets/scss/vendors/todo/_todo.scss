@@ -87,15 +87,12 @@
               &:hover {
                 background: $white;
                 border-radius: 4px;
-                // .icon {
-                //   color: $semi-dark;
-                // }
               }
             }
           }
           &:hover {
             h4{
-              color: var(--dark-color);
+              color: var(--dark);
               transition: all 0.3s ease;
             }
           }

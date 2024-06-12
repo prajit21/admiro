@@ -1279,9 +1279,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .checkbox-checked input {
-    margin-left: 16px;
-  }
   .custom-radio {
     .radio {
       label {
@@ -1430,28 +1427,6 @@ html[dir="rtl"] {
   .email-verify .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
-  }
-  .ui-components {
-    .btn-group {
-      >.btn {
-        &:not(:first-child) {
-          border-top-left-radius: 0.25rem;
-          border-bottom-left-radius: 0.25rem;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-      }
-    }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 0.25rem;
-      border-bottom-right-radius: 0.25rem;
-    }
-    .btn-group>.btn:nth-child(2) {
-      border-radius: 0 !important;
-    }
   }
   .m-squar.checkbox {
     label {
@@ -2390,8 +2365,10 @@ html[dir="rtl"] {
     }
   }
   .offset-sm-3 {
-    margin-left: unset;
-    margin-right: 25%;
+    @media (min-width: 575px) {
+      margin-left: unset;
+      margin-right: 25%;
+    }
   }
   header {
     ul[class*=header-] {
@@ -3195,9 +3172,6 @@ html[dir="rtl"] {
       }
     }
   }
-  .checkbox-checked input {
-    margin-left: 16px;
-  }
   .custom-radio {
     .radio {
       label {
@@ -3346,28 +3320,6 @@ html[dir="rtl"] {
   .email-verify .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
-  }
-  .ui-components {
-    .btn-group {
-      >.btn {
-        &:not(:first-child) {
-          border-top-left-radius: 0.25rem;
-          border-bottom-left-radius: 0.25rem;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-      }
-    }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 0.25rem;
-      border-bottom-right-radius: 0.25rem;
-    }
-    .btn-group>.btn:nth-child(2) {
-      border-radius: 0 !important;
-    }
   }
   .m-squar.checkbox {
     label {
@@ -3842,6 +3794,75 @@ html[dir="rtl"] {
     .other-msg {
       margin-left: unset;
       margin-right: 40px;
+    }
+    
+  }
+  .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: unset;
+    margin-right: -1px;
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .bootstrap-touchspin{
+    .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+    .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+  .ui-components {
+    .btn-group {
+      >.btn {
+        &:not(:first-child) {
+          border-top-left-radius: 0.25rem;
+          border-bottom-left-radius: 0.25rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group> :not(:last-child)>.btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+    .btn-group>.btn:nth-child(2) {
+      border-radius: 0 !important;
+    }
+  }
+  .ui-components {
+    .btn-group {
+      >.btn {
+        &:not(:first-child) {
+          border-top-left-radius: 0.25rem;
+          border-bottom-left-radius: 0.25rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group> :not(:last-child)>.btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+    .btn-group>.btn:nth-child(2) {
+      border-radius: 0 !important;
     }
   }
 }

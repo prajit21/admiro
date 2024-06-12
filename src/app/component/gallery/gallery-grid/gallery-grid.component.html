@@ -2,16 +2,16 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card gallery-grid">
-                <div class="card-header pb-0">
-                    <p class="desc mb-0 mt-1"><span></span><code></code><span></span></p>
+                <div class="card-header pb-0 card-no-border">
+                    <h3>IMAGE GALLERY</h3>
                 </div>
-                <div class="gallery my-gallery card-body row mb-0" itemscope="" gallerize>
+                <div class="gallery my-gallery card-body row" itemscope="" gallerize>
                     @for(img of galleryGridData; track img){
-                    <div class="pswp-gallery col-xl-3 col-md-4 col-6" itemprop="associatedMedia">
+                    <figure class="pswp-gallery col-xl-3 col-md-4 col-6" itemprop="associatedMedia">
                         <a href="javascript:void(0)" itemprop="contentUrl">
                             <img class="img-thumbnail" [src]="img.srcUrl" />
                         </a>
-                    </div>
+                    </figure>
                     }
                 </div>
             </div>

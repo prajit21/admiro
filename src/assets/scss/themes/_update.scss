@@ -700,6 +700,89 @@ pre[class*=language-] {
         }
 	}
 }
+.badge{
+    border-radius: 6px;
+}
+ngb-datepicker {
+	.ngb-dp-weekday {
+		color: var(--theme-default);
+		font-weight: 600;
+		font-style: initial;
+	}
+    .ngb-dp-header {
+        background-color: transparent;
+		padding: 0 0 12px;
+		.ngb-dp-arrow-btn {
+            color: var(--body-font-color);
+            width: 34px;
+            height: 34px;
+            margin: 0;
+            border-radius: 30px;
+			span {
+				width: 8px;
+				height: 8px;
+			}
+		}
+	}
+    .ngb-dp-weekdays {
+		background-color: transparent;
+		border-bottom: 0;
+	}
+    .ngb-dp-content {
+		.ngb-dp-week {
+			.btn-light {
+                background-color: transparent!important;
+                border-color: transparent!important;
+                color: var(--body-font-color);
+                &:hover {
+					background-color: var(--theme-default) !important;
+					border-color: var(--theme-default) !important;
+					color: $white;
+					outline: 0;
+				}
+			}
+            .ngb-dp-day{
+                &.ngb-dp-today{
+                    .btn-light{
+                        background-color: var(--theme-default) !important;
+                        border-color: var(--theme-default) !important;
+                        color: $white;
+                        outline: 0;
+                    }
+                }
+            }
+		}
+	}
+}
+.ng-select {
+	.ng-select-container {
+		color: var(--body-font-color);
+		background-color: var(--white) !important;
+        border-color: var(--border-color);
+	}
+}
+.rounded{
+    border-radius: 6px !important;
+}
+.dropdown {
+    .dropdown-toggle {
+        &::after{
+            display: inline-block;
+            margin-left: 8px;
+            position: unset;
+            vertical-align: middle;
+            content: "";
+            border-top: 4px solid;
+            border-right: 4px solid transparent;
+            border-bottom: 0;
+            border-left: 4px solid transparent;
+        }
+    }
+}
+.img-thumbnail{
+    border-radius: 6px;
+}
+  
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

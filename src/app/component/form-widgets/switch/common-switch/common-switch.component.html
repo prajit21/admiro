@@ -3,7 +3,7 @@
     <div class="{{data.class}}">
         @if( data.title == 'Icons switch' ||  data.title == 'Borders with icons' ){
         <div class="card">
-            <div class="card-header">
+            <div class="card-header card-no-border pb-0">
                 <h3>{{ data.title}}</h3>
                 <p class="desc mb-0 mt-1" [innerHtml]="data.subdes"></p>
             </div>
@@ -23,7 +23,7 @@
         </div>
         }@else{
         <div class="card">
-            <div class="card-header">
+            <div class="card-header card-no-border pb-0">
                 <h3>{{ data.title}}</h3>
                 <p class="desc mb-0 mt-1" [innerHtml]="data.subdes"></p>
             </div>

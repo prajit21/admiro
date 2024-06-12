@@ -254,6 +254,12 @@
             color: var(--black);
         }
     }
+    .bootstrap-touchspin{
+        .touchspin-dark{
+            background-color: var(--body-color);
+            border: 1px solid var(--body-color);
+        }
+    }
     .icon-main {
         .icons-item {
             background-color: var(--body-color);
@@ -1828,5 +1834,8 @@
                 }
             }
         }
+    }
+    .icon-state .switch-state:after {
+        color: var(--body-font-color) !important;
     }
 }

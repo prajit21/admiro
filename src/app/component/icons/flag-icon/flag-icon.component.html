@@ -9,10 +9,8 @@
                     <div class="row icon-event iconly-icons icon-lists">
                         @for(i of icon; track i){
                         <div class="col-12 col-xxl-2 col-lg-4 col-md-6 icons-item" (click)="toggleWithInfo(i.abbrivation)">
-                            <i class="flag-icon flag-icon-{{i.abbrivation}}"></i>
-                            <div class="flex-grow-1">
-                                <h6 class="mt-1">{{i.name}}</h6>
-                            </div>
+                            <i class="opacity-100 flag-icon flag-icon-{{i.abbrivation}}"></i>
+                            <h5 class="mt-0 me-2">{{i.name}}</h5>
                         </div>
                         }
                     </div>
