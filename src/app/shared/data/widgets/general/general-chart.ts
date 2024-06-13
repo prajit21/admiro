@@ -70,7 +70,7 @@ export const saleValue: ChartOptions | any = {
   plotOptions: {
     bar: {
       horizontal: false,
-      columnWidth: "7px",
+      columnWidth: "40px",
       borderRadius: 2,
     },
   },
@@ -195,7 +195,7 @@ export const stockValue: ChartOptions | any = {
   plotOptions: {
     bar: {
       horizontal: false,
-      columnWidth: "7px",
+      columnWidth: "40px",
       borderRadius: 0,
     },
   },

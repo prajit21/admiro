@@ -490,7 +490,6 @@ export const incomchart: ChartOptions | any = {
     series: [46],
     chart: {
         type: "radialBar",
-        offsetY: -10,
         height: 400,
         sparkline: {
             enabled: false,
@@ -531,60 +530,44 @@ export const incomchart: ChartOptions | any = {
     stroke: {
         lineCap: "round",
     },
-    grid: {
-        padding: {
-            top: -40,
-        },
-    },
     colors: [primary_color],
-    responsive: [
-        {
-            breakpoint: 1557,
-            options: {
-                chart: {
-                    height: 365,
+    responsive: [{
+        breakpoint: 1200,
+        options: {
+          chart: {
+            height: 250
+          },
+          plotOptions: {
+            radialBar: {
+              dataLabels: {
+                name: {
+                  fontSize: '18px',
                 },
-            },
-        },
-        {
-            breakpoint: 1491,
-            options: {
-                chart: {
-                    height: 330,
+                value: {
+                  fontSize: '14px',
                 },
-            },
-        },
-        {
-            breakpoint: 1400,
-            options: {
-                chart: {
-                    height: 380,
+              }
+            }
+          }
+        }
+      }, {
+        breakpoint: 768,
+        options: {
+          chart: {
+            height: 200
+          },
+          plotOptions: {
+            radialBar: {
+              dataLabels: {
+                name: {
+                  fontSize: '16px',
                 },
-            },
-        },
-        {
-            breakpoint: 1240,
-            options: {
-                chart: {
-                    height: 350,
+                value: {
+                  fontSize: '12px',
                 },
-            },
-        },
-        {
-            breakpoint: 1200,
-            options: {
-                chart: {
-                    height: 400,
-                },
-            },
-        },
-        {
-            breakpoint: 768,
-            options: {
-                chart: {
-                    height: 300,
-                },
-            },
-        },
-    ],
+              }
+            }
+          }
+        }
+      }]
 }

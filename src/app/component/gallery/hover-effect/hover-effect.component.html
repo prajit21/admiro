@@ -9,8 +9,7 @@
                     <div class="card-body">
                         <div class="row my-gallery gallery gap-0 mb-0" itemscope="">
                             @for(img of imgData; track img){
-                            <figure class="col-md-3 col-6 img-hover {{ data.hoverClass }} m-0"
-                                style="margin-bottom: 30px;">
+                            <figure class="col-md-3 col-6 img-hover {{ data.hoverClass }}">
                                 <a href="javascript:void(0)" itemprop="contentUrl">
                                     <div style="overflow: hidden;">
                                         <img [src]="img.srcUrl" />

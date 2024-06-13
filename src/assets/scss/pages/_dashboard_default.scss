@@ -416,6 +416,9 @@
                             @media (max-width: 1665px) {
                                 padding: 11px 4px;
                             }
+                            @media (min-width: 1200px) and (max-width: 1215px) {
+                                padding: 3px 4px;
+                            }
                             .d-flex {
                                 .flex-shrink-0 {
                                     img {
@@ -638,6 +641,11 @@
                     color: var(--body-font-color);
                     font-weight: 600;
                 }
+            }
+        }
+        .investment{
+            @media (min-width: 1700px) {
+                margin-bottom: 35px;
             }
         }
     }
@@ -889,7 +897,7 @@
                         padding: 7px;
                         vertical-align: middle;
                         @media (min-width: 1200px) and (max-width: 1399.98px) {
-                            padding: 1px 10px;
+                            padding: 5px 10px;
                         }
                         h6 {
                             color: var(--body-font-color);
@@ -950,19 +958,26 @@
                 width: 100%;
             }
             .Incomechrt {
+                width: 100%;
+                max-width: 100%;
+                @media (min-width: 1600px) {
+                    transform: scale(1.2);
+                }
+               
                 @media (max-width: 767px) {
                     margin: 0 0 -60px 0;
                 }
             }
             .apexcharts-canvas {
-                min-height: 120px !important;
-                svg {
-                    min-height: 120px !important;
-                }
+                width: 100% !important;
+                height: auto !important;
             }
         }
         .invest-content {
-            margin-top: -50px;
+            margin-top: -90px;
+            @media (min-width: 1200px) and (max-width: 1215px) {
+                margin-top: 0; 
+            }
             @media (max-width: 1490px) and (min-width: 1399.98px) {
                 margin-top: -26px;
             }

@@ -563,9 +563,6 @@
             }
         }
     }
-    .ecommerce-widget {
-        border: 1px solid var(--gray-60) !important;
-    }
     .main {
         .langChoice {
             color: var(--font-color) !important;
@@ -1838,4 +1835,28 @@
     .icon-state .switch-state:after {
         color: var(--body-font-color) !important;
     }
+    .single-dropzone {
+        .dropzone-wrapper {
+            .dz-preview {
+                .dz-image {
+                    background: linear-gradient(to bottom,#4e4d4d,#242424) !important;
+                }
+            }
+        }
+    }
+    .support-ticket-table{
+        tbody{
+            tr {
+                &:nth-child(even){
+                  td{
+                      background-color: var(--body-color);
+                  }
+                }
+                &:nth-child(odd){
+                  background-color: var(--body-color);
+                }
+              }
+        }
+    }
+    
 }

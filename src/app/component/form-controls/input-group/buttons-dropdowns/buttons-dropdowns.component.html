@@ -1,4 +1,4 @@
-<div class="card input-dropdown">
+<div class="card input-dropdown custom-dropdowns-input-group">
     <div class="card-header pb-0 card-no-border">
         <h3>Buttons with dropdowns</h3>
         <p class="mt-1 mb-0">
@@ -6,7 +6,7 @@
       </div>
     <div class="card-body main-custom-form card-wrapper input-group-wrapper">
         <form class="row g-3">
-            <div class="input-group">
+            <div class="input-group menu-item-left">
                 <button class="btn btn-outline-info dropdown-toggle" type="button" (click)="openMenu()">Dropdown</button>
                 <ul class="dropdown-menu dropdown-block" [class.show]="open">
                     <li><a class="dropdown-item" href="javascript:void(0)">Ecommerce</a></li>
@@ -19,7 +19,7 @@
                 </ul>
                 <input class="form-control" type="text">
             </div>
-            <div class="input-group">
+            <div class="input-group menu-item-right">
                 <input class="form-control" type="text">
                 <button class="btn btn-outline-danger dropdown-toggle" type="button" (click)="openMenu2()">Dropdown</button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-block" [class.show]="open2">
@@ -32,7 +32,7 @@
                     <li><a class="dropdown-item" href="javascript:void(0)">Maps</a></li>
                 </ul>
             </div>
-            <div class="input-group">
+            <div class="input-group menu-item-left">
                 <button class="btn btn-secondary dropdown-toggle" type="button"(click)="openMenu3()">Dropdown</button>
                 <ul class="dropdown-menu dropdown-block" [class.show]="open3">
                     <li><a class="dropdown-item" href="javascript:void(0)">Widgets</a></li>
