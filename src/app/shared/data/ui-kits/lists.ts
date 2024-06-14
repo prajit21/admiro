@@ -301,18 +301,22 @@ export const Listcheckbox = [
     {
         class: 'primary',
         list: ' Auto Start',
+        for:'Checkbox1'
     },
     {
         class: 'secondary',
-        list: ' Auto Update'
+        list: ' Auto Update',
+        for:'Checkbox4'
     },
     {
         class: 'info',
-        list: ' Don t check auth key'
+        list: ' Don t check auth key',
+        for:'Checkbox3'
     },
     {
         class: 'warning',
-        list: ' Success all'
+        list: ' Success all',
+        for:'Checkbox4'
     },
 ];
 

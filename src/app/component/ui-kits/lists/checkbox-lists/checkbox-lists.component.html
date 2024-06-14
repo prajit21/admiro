@@ -7,9 +7,9 @@
         <ul class="list-group">
             @for(checkboxData of listsCheckboxData; track checkboxData){
             <li class="list-group-item">
-                <input class="form-check-input me-1 checkbox-{{checkboxData.class}}" id="firstCheckbox" type="checkbox" value="">
+                <input class="form-check-input me-1 checkbox-{{checkboxData.class}}" id="{{checkboxData.for }}" type="checkbox" value="">
                 <label class="form-check-label font-{{checkboxData.class}} mb-0"
-                    for="firstCheckbox">{{checkboxData.list}}</label>
+                    for="{{checkboxData.for }}">{{checkboxData.list}}</label>
             </li>
             }
         </ul>

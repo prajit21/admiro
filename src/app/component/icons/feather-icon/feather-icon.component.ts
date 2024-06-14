@@ -32,7 +32,6 @@ export class FeatherIconComponent {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
-
   }
 
 }

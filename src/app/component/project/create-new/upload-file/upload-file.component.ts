@@ -15,6 +15,8 @@ export class UploadFileComponent {
     addRemoveLinks: true,
     parallelUploads: 1,
   };
+  
+  public text =' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
 
   onUploadError(args: DropzoneConfigInterface): void {
 

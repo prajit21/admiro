@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { salesvaluechart, visitorchart } from '../../../shared/data/dashboard/ecommerce/ecommerce-chart';
-
 
 @Component({
   selector: 'app-general',
@@ -9,7 +7,5 @@ import { salesvaluechart, visitorchart } from '../../../shared/data/dashboard/ec
 })
 export class GeneralComponent {
 
-  public visitorChart = visitorchart;
-  public salesValueChart = salesvaluechart;
 
 }

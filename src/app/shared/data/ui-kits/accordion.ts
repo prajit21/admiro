@@ -70,25 +70,7 @@ export const FlushAccordion = [
     },
 ];
 
-export const IconsAccordion = [
-    {
 
-        icon: 'bell',
-        title: 'Keep in touch',
-        text: '"<em class="text-danger">This page might not behave as expected because Windows Internet Explorer isn t configured to load unsigned ActiveX controls."</em> or "Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer." (Both phrased as conditions that may cause future problems.)</p>',
-    },
-    {
-        icon: 'comment',
-        title: 'Chats with others',
-        text: '<li>You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails.</li> <li><strong>Chat:</strong> Use when you prefer a dedicated chat experience and don t mind switching between different apps.</li> ',
-    },
-    {
-        icon: 'square-check',
-        title: 'Right way to code ',
-        text: '<ul class="d-flex flex-column gap-2 accordions-content"><li> 1) Decide on the indentation and keep it that way.</li><li> 2) Make comments.</li><li> 3) Consistent name scheme.</li><li li > 4) Dont repeat code.</li><li>5) Avoid writing long code lines.</li><li> 6) Break down a big task into smaller chunks.</li><li> 7) Organize your program into smaller files.</li><li> 8)Write clever code that is also readable.</li></ul>'
-
-    },
-];
 
 export const OutlineAccordion = [
     {

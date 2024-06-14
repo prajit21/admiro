@@ -1,117 +1,123 @@
-<header class="page-header" (clickOutside)="clickOutside()">
-    <div class="header-left">
-        <div class="horizontal-logo d-flex align-items-center">
-            <a (click)="openMenu()">
-                <img class="for-light" src="assets/images/logo/logo-dark.png" alt="logo" />
-                <img class="for-dark" src="assets/images/logo/logo1.png" alt="logo" />
-            </a>
-        </div>
-        <a class="toggle-sidebar" (click)="openMenu()">
-            <i class="iconly-Filter icli"></i>
+<header class="page-header row" (clickOutside)="clickOutside()">
+    <div class="logo-wrapper d-flex align-items-center col-auto">
+        <a href="index.html">
+            <img class="light-logo img-fluid" src="assets/images/logo/logo1.png" alt="logo" />
+            <img class="dark-logo img-fluid" src="assets/images/logo/logo-dark.png" alt="logo" />
         </a>
-        <form class="form-inline search-full col" [class.open]="show == true">
-            <div class="form-group w-100">
-                <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="u-posRelative">
-                        <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                            placeholder="Type to Search..." [(ngModel)]="text" (keyup)="searchTerm(text)" name="q"
-                            title="" autocomplete="off" />
-                        <div class="spinner-border Typeahead-spinner" role="status">
-                            <span class="sr-only">Loading...</span>
+        <a class="close-btn toggle-sidebar" (click)="openMenu()">
+            <svg class="svg-color">
+                <use href="assets/svg/iconly-sprite.svg#Category"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="page-main-header col">
+        <div class="header-left">
+            <form class="form-inline search-full col" [class.open]="show == true">
+                <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                        <div class="u-posRelative">
+                            <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+                                placeholder="Type to Search..." [(ngModel)]="text" (keyup)="searchTerm(text)" name="q"
+                                title="" autocomplete="off" />
+                            <div class="spinner-border Typeahead-spinner" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <app-feathericon [icon]="'x'" class="close-search"
+                                (click)="closeSearch()"></app-feathericon>
                         </div>
-                        <app-feathericon [icon]="'x'" class="close-search" (click)="closeSearch()"></app-feathericon>
-                    </div>
-                    @if(menuItems.length){
-                    <div class="Typeahead-menu custom-scrollbar" [class.is-open]="searchResult" id="search-outer"
-                        [class.open]="open">
-                        @for(menuItem of menuItems | slice : 0 : 8; track menuItem){
-                        <div class="ProfileCard u-cf">
-                            <div class="ProfileCard-details">
-                                <div class="ProfileCard-realName">
-                                    <div class="ProfileCard-avatar">
-                                        <app-svg-icon [icon]="menuItem.icon"></app-svg-icon>
+                        @if(menuItems.length){
+                        <div class="Typeahead-menu custom-scrollbar" [class.is-open]="searchResult" id="search-outer"
+                            [class.open]="open">
+                            @for(menuItem of menuItems | slice : 0 : 8; track menuItem){
+                            <div class="ProfileCard u-cf">
+                                <div class="ProfileCard-details">
+                                    <div class="ProfileCard-realName">
+                                        <div class="ProfileCard-avatar">
+                                            <app-svg-icon [icon]="menuItem.icon"></app-svg-icon>
+                                        </div>
+                                        <a [routerLink]="menuItem.path" class="realname" (click)="removeFix()">{{
+                                            menuItem.title }}</a>
                                     </div>
-                                    <a [routerLink]="menuItem.path" class="realname" (click)="removeFix()">{{
-                                        menuItem.title }}</a>
                                 </div>
                             </div>
+                            }
                         </div>
                         }
-                    </div>
-                    }
-                    <div class="Typeahead-menu" [class.is-open]="searchResultEmpty">
-                        <div class="tt-dataset tt-dataset-0">
-                            <div class="EmptyMessage">Opps!! There are no result found.</div>
+                        <div class="Typeahead-menu" [class.is-open]="searchResultEmpty">
+                            <div class="tt-dataset tt-dataset-0">
+                                <div class="EmptyMessage">Opps!! There are no result found.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </form>
+            <div class="form-group-header d-lg-block d-none">
+                <app-search></app-search>
             </div>
-        </form>
-        <div class="form-group-header">
-            <app-search></app-search>
         </div>
-    </div>
-    <div class="nav-right">
-        <ul class="header-right">
-            <li class="custom-dropdown d-sm-block d-none" (click)="languageToggle()">
-                <app-language></app-language>
-            </li>
-            <li class="search">
-                <a (click)="openSearch()">
-                    <i class="iconly-Search icli"></i>
-                </a>
-            </li>
-            <li>
-                <app-theme></app-theme>
-            </li>
-            <li class="custom-dropdown">
-                <app-cart></app-cart>
-            </li>
-            <li class="custom-dropdown">
-                <app-notification></app-notification>
-            </li>
-            <li>
-                <a class="full-screen" (click)="toggleFullScreen()">
-                    <svg>
-                        <use href="assets/svg/iconly-sprite.svg#scanfull"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="custom-dropdown">
-                <app-bookmark></app-bookmark>
-            </li>
-            <li class="cloud-design">
-                <a class="cloud-mode">
-                    <svg class="climacon climacon_cloudDrizzle" id="cloudDrizzle" version="1.1" viewBox="15 15 70 70">
-                        <g class="climacon_iconWrap climacon_iconWrap-cloudDrizzle">
-                            <g class="climacon_wrapperComponent climacon_wrapperComponent-drizzle">
-                                <path
-                                    class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-left"
-                                    d="M42.001,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2.001-0.895-2.001-2v-3.998C40,54.538,40.896,53.644,42.001,53.644z">
-                                </path>
-                                <path
-                                    class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-middle"
-                                    d="M49.999,53.644c1.104,0,2,0.896,2,2v4c0,1.104-0.896,2-2,2s-1.998-0.896-1.998-2v-4C48.001,54.54,48.896,53.644,49.999,53.644z">
-                                </path>
-                                <path
-                                    class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-right"
-                                    d="M57.999,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2-0.895-2-2v-3.998C55.999,54.538,56.894,53.644,57.999,53.644z">
-                                </path>
+        <div class="nav-right">
+            <ul class="header-right">
+                <li class="custom-dropdown d-sm-block d-none" (click)="languageToggle()">
+                    <app-language></app-language>
+                </li>
+                <li class="search">
+                    <a (click)="openSearch()">
+                        <i class="iconly-Search icli"></i>
+                    </a>
+                </li>
+                <li>
+                    <app-theme></app-theme>
+                </li>
+                <li class="custom-dropdown">
+                    <app-cart></app-cart>
+                </li>
+                <li class="custom-dropdown">
+                    <app-notification></app-notification>
+                </li>
+                <li>
+                    <a class="full-screen" (click)="toggleFullScreen()">
+                        <svg>
+                            <use href="assets/svg/iconly-sprite.svg#scanfull"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="custom-dropdown">
+                    <app-bookmark></app-bookmark>
+                </li>
+                <li class="cloud-design">
+                    <a class="cloud-mode">
+                        <svg class="climacon climacon_cloudDrizzle" id="cloudDrizzle" version="1.1"
+                            viewBox="15 15 70 70">
+                            <g class="climacon_iconWrap climacon_iconWrap-cloudDrizzle">
+                                <g class="climacon_wrapperComponent climacon_wrapperComponent-drizzle">
+                                    <path
+                                        class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-left"
+                                        d="M42.001,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2.001-0.895-2.001-2v-3.998C40,54.538,40.896,53.644,42.001,53.644z">
+                                    </path>
+                                    <path
+                                        class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-middle"
+                                        d="M49.999,53.644c1.104,0,2,0.896,2,2v4c0,1.104-0.896,2-2,2s-1.998-0.896-1.998-2v-4C48.001,54.54,48.896,53.644,49.999,53.644z">
+                                    </path>
+                                    <path
+                                        class="climacon_component climacon_component-stroke climacon_component-stroke_drizzle climacon_component-stroke_drizzle-right"
+                                        d="M57.999,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2-0.895-2-2v-3.998C55.999,54.538,56.894,53.644,57.999,53.644z">
+                                    </path>
+                                </g>
+                                <g class="climacon_wrapperComponent climacon_wrapperComponent-cloud">
+                                    <path
+                                        class="climacon_component climacon_component-stroke climacon_component-stroke_cloud"
+                                        d="M63.999,64.944v-4.381c2.387-1.386,3.998-3.961,3.998-6.92c0-4.418-3.58-8-7.998-8c-1.603,0-3.084,0.481-4.334,1.291c-1.232-5.316-5.973-9.29-11.664-9.29c-6.628,0-11.999,5.372-11.999,12c0,3.549,1.55,6.729,3.998,8.926v4.914c-4.776-2.769-7.998-7.922-7.998-13.84c0-8.836,7.162-15.999,15.999-15.999c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.336-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12C71.997,58.864,68.655,63.296,63.999,64.944z">
+                                    </path>
+                                </g>
                             </g>
-                            <g class="climacon_wrapperComponent climacon_wrapperComponent-cloud">
-                                <path
-                                    class="climacon_component climacon_component-stroke climacon_component-stroke_cloud"
-                                    d="M63.999,64.944v-4.381c2.387-1.386,3.998-3.961,3.998-6.92c0-4.418-3.58-8-7.998-8c-1.603,0-3.084,0.481-4.334,1.291c-1.232-5.316-5.973-9.29-11.664-9.29c-6.628,0-11.999,5.372-11.999,12c0,3.549,1.55,6.729,3.998,8.926v4.914c-4.776-2.769-7.998-7.922-7.998-13.84c0-8.836,7.162-15.999,15.999-15.999c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.336-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12C71.997,58.864,68.655,63.296,63.999,64.944z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <h3>15</h3>
-                </a>
-            </li>
-            <li class="profile-nav custom-dropdown">
-                <app-profile></app-profile>
-            </li>
-        </ul>
+                        </svg>
+                        <h3>15</h3>
+                    </a>
+                </li>
+                <li class="profile-nav custom-dropdown">
+                    <app-profile></app-profile>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>

@@ -566,7 +566,7 @@ export const checkbox = [
             {
                 text: 'Reverse checkbox',
                 value: false,
-                disable: true
+                disable: false
             },
             {
                 text: 'Disabled reverse checkbox',

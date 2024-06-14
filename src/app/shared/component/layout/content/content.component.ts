@@ -10,7 +10,7 @@ import { NavmenuService } from '../../../services/navmenu.service';
 export class ContentComponent {
 
   constructor(public layout: LayoutService, public navmenu: NavmenuService) {
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1200) {
       navmenu.closeSidebar = true;
     }
     if (window.innerWidth <= 992) {
@@ -24,7 +24,7 @@ export class ContentComponent {
   @HostListener('window:resize', ['$event'])
 
   onResize() {
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1200) {
       this.navmenu.closeSidebar = true;
     } else {
       this.navmenu.closeSidebar = false;
