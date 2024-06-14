@@ -13,7 +13,7 @@
 </div>
 <div class="main-sidebar" id="main-sidebar"
     [ngStyle]="{ marginLeft: this.layout.config.settings.sidebar_type === 'horizontal-sidebar sidebar-open' ? margin + 'px' : '0px' }">
-    <ul class="sidebar-menu" id="simple-bar">
+    <ul class="sidebar-menu d-flex flex-column" id="simple-bar">
         <li class="pin-title sidebar-main-title" [class.show]="pined">
             <div>
                 <h5 class="sidebar-title f-w-700">Pinned</h5>

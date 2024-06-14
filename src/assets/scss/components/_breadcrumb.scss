@@ -62,15 +62,9 @@
             font-size: 14px;
             font-weight: 600;
             color: var(--theme-default);
-            @media (max-width: 480px) {
-                padding-left: 5px
-            }
             &::before {
                 color: var(--theme-default) !important;
                 font-weight: 600;
-                @media (max-width: 480px) {
-                    padding-right: 5px
-                }
             }
         }
     }
@@ -97,13 +91,12 @@
     }
     .breadcrumb {
         &.bg-primary {
-            .breadcrumb-item{
+            .breadcrumb-item {
                 color: $white !important;
             }
-     
         }
         &.bg-secondary {
-            .breadcrumb-item{
+            .breadcrumb-item {
                 color: $white !important;
             }
         }

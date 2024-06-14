@@ -1,39 +1,47 @@
 /**=====================
     3.40 Timeline-v CSS Start
 ==========================**/
-@each $activity-dot-name, $activity-dot-color in (primary, var(--theme-default)),
-(secondary, var(--theme-secondary)), (success, var(--success-color)),
-(danger, var(--danger-color)), (warning, var(--warning-color)),
-(info, var(--info-color)), (light, var(--light-color)),(dark, var(--body-font-color))
-{
-  .timeline-dot-#{$activity-dot-name} {
-    min-width: 12px;
-    height: 12px;
-    background-color: $activity-dot-color;
-    position: relative;
-    z-index: 2;
-  }
-  .activity-dot-#{$activity-dot-name} {
-    min-width: 6px;
-    height: 6px;
-    background-color: $activity-dot-color;
-    border-radius: 100%;;
-    position: relative;
-    z-index: 2;
-
-  }
+@each $activity-dot-name,
+$activity-dot-color in (primary, var(--theme-default)),
+(secondary, var(--theme-secondary)),
+(success, var(--success-color)),
+(danger, var(--danger-color)),
+(warning, var(--warning-color)),
+(info, var(--info-color)),
+(light, var(--light-color)),
+(dark, var(--body-font-color)) {
+	.timeline-dot-#{$activity-dot-name} {
+		min-width: 12px;
+		height: 12px;
+		background-color: $activity-dot-color;
+		position: relative;
+		z-index: 2;
+	}
+	.activity-dot-#{$activity-dot-name} {
+		min-width: 6px;
+		height: 6px;
+		background-color: $activity-dot-color;
+		border-radius: 100%;
+		;
+		position: relative;
+		z-index: 2;
+	}
 }
-@each $activity-dot-name, $activity-dot-outline in (primary, rgba($primary-color, 0.25)),
-(secondary, rgba($secondary-color ,0.25)), (success, rgba($success-color,0.25)),
-(danger, rgba($danger-color,0.25)), (warning, rgba($warning-color,0.25)),
-(info, rgba($info-color,0.25)), (light, rgba($light-color,0.25)),(dark, rgba($body-font-color, 0.25))
-{
-  .timeline-dot-#{$activity-dot-name} {
-    outline: 5px solid $activity-dot-outline;
-  }
-  .activity-dot-#{$activity-dot-name} {
-    outline: 5px solid $activity-dot-outline  ;
-  }
+@each $activity-dot-name,
+$activity-dot-outline in (primary, rgba($primary-color, 0.25)),
+(secondary, rgba($secondary-color, 0.25)),
+(success, rgba($success-color, 0.25)),
+(danger, rgba($danger-color, 0.25)),
+(warning, rgba($warning-color, 0.25)),
+(info, rgba($info-color, 0.25)),
+(light, rgba($light-color, 0.25)),
+(dark, rgba($body-font-color, 0.25)) {
+	.timeline-dot-#{$activity-dot-name} {
+		outline: 5px solid $activity-dot-outline;
+	}
+	.activity-dot-#{$activity-dot-name} {
+		outline: 5px solid $activity-dot-outline;
+	}
 }
 .timeline-wrapper {
 	display: flex;
@@ -49,175 +57,6 @@
 		font-size: 18px;
 	}
 }
-// .activity {
-// 	.media {
-// 		margin-bottom: 30px;
-// 		&:last-child {
-// 			margin-bottom: 0;
-// 		}
-// 		.gradient-round {
-// 			position: relative;
-// 			width: 53px;
-// 			height: 53px;
-// 			background-image: $gradient-primary;
-// 			border-radius: 100%;
-// 			top: -18px;
-// 			svg {
-// 				position: absolute;
-// 				width: 18px;
-// 				height: 18px;
-// 				display: flex;
-// 				align-items: center;
-// 				justify-content: center;
-// 				left: 0;
-// 				top: 18px;
-// 				right: 0;
-// 				margin: 0 auto;
-// 				path,
-// 				line,
-// 				circle {
-// 					color: $white;
-// 				}
-// 			}
-// 			&.gradient-line-1 {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 62px;
-// 					bottom: -77px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 			&.small-line {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 19px;
-// 					bottom: -34px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 			&.medium-line {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 53px;
-// 					bottom: -68px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 		}
-// 		.media-body {
-// 			h6 {
-// 				font-weight: 600;
-// 				margin-bottom: 30px;
-// 				span {
-// 					font-weight: normal;
-// 					color: var(--light-text);
-// 				}
-// 			}
-// 			p {
-// 				width: 80%;
-// 			}
-// 		}
-// 	}
-// }
-// .timeline-small {
-// 	.media {
-// 		margin-bottom: 30px;
-// 		&:last-child {
-// 			margin-bottom: 0;
-// 		}
-// 		.timeline-round {
-// 			position: relative;
-// 			width: 53px;
-// 			height: 53px;
-// 			border-radius: 100%;
-// 			border-radius: 15px;
-// 			top: -18px;
-// 			svg {
-// 				position: absolute;
-// 				width: 18px;
-// 				height: 18px;
-// 				display: flex;
-// 				align-items: center;
-// 				justify-content: center;
-// 				left: 0;
-// 				top: 18px;
-// 				right: 0;
-// 				margin: 0 auto;
-// 				path,
-// 				line,
-// 				circle {
-// 					color: $white;
-// 				}
-// 			}
-// 			&.timeline-line-1 {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 62px;
-// 					bottom: -88px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 			&.small-line {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 19px;
-// 					bottom: -34px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 			&.medium-line {
-// 				&:after {
-// 					position: absolute;
-// 					content: '';
-// 					background-color: var(--body-color);
-// 					width: 2px;
-// 					height: 53px;
-// 					bottom: -68px;
-// 					left: 0;
-// 					right: 0;
-// 					margin: 0 auto;
-// 				}
-// 			}
-// 		}
-// 		.media-body {
-// 			h6 {
-// 				margin-bottom: 30px;
-// 				span {
-// 					font-weight: normal;
-// 					color: var(--light-text);
-// 				}
-// 			}
-// 			p {
-// 				width: 80%;
-// 			}
-// 		}
-// 	}
-// }
 .cd-container {
 	width: 90%;
 	max-width: 1170px;
@@ -232,6 +71,12 @@
 	#cd-timeline::before {
 		left: 50% !important;
 		margin-left: -2px;
+		[dir="rtl"] & {
+			left: unset !important;
+			right: 50% !important;
+			margin-left: unset;
+			margin-right: -2px;
+		}
 	}
 	.cd-timeline-block {
 		margin: 4em 0;
@@ -244,10 +89,18 @@
 		&:nth-child(even) {
 			.cd-timeline-content {
 				float: right;
+				[dir="rtl"] & {
+					float: left;
+				}
 				.cd-date {
 					left: auto;
 					right: 122%;
 					text-align: right;
+					[dir="rtl"] & {
+						right: auto;
+						left: 122%;
+						text-align: left;
+					}
 				}
 			}
 			.cd-timeline-content::before {
@@ -256,6 +109,12 @@
 				right: 100%;
 				border-color: transparent;
 				border-right-color: var(--light-color);
+				[dir="rtl"] & {
+					right: auto !important;
+					left: 100% !important;
+					border: 15px solid transparent;
+					border-left-color: var(--light-color);
+				}
 			}
 		}
 	}
@@ -264,11 +123,21 @@
 		height: 60px;
 		left: 50%;
 		margin-left: -30px;
+		[dir="rtl"] & {
+			left: unset;
+			right: 50%;
+			margin-left: unset;
+			margin-right: -30px;
+		}
 		>i {
 			font-size: 18px;
 			top: 50%;
 			left: 50%;
 			padding: 3px;
+			[dir="rtl"] & {
+				left: unset;
+				right: 50%;
+			}
 		}
 	}
 	.cssanimations {
@@ -298,12 +167,20 @@
 		margin-left: 0;
 		padding: 1.6em;
 		width: 45%;
+		[dir="rtl"] & {
+			margin-left: unset;
+			margin-right: 0;
+		}
 		.cd-date {
 			position: absolute;
 			width: 100%;
 			left: 122%;
 			top: 6px;
 			font-size: 16px;
+			[dir="rtl"] & {
+				left: unset;
+				right: 122%;
+			}
 		}
 	}
 	.cd-timeline-content::before {
@@ -311,14 +188,24 @@
 		left: 100%;
 		border-color: transparent;
 		border-left-color: var(--white);
+		[dir="rtl"] & {
+			left: unset !important;
+			right: 100% !important;
+			border-left-color: unset;
+			border-right-color: var(--white);
+		}
 	}
 }
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
-  @include media-breakpoint-down(sm) {
-    margin-right: 0;
-    }
+	@include media-breakpoint-down(sm) {
+		margin-right: 0;
+		[dir="rtl"] & {
+			margin-right: unset;
+			margin-left: 0;
+		}
+	}
 }
 #cd-timeline::before {
 	content: '';
@@ -364,6 +251,12 @@
 		margin-top: -12px;
 		font-size: 20px;
 		color: var(--white);
+		[dir="rtl"] & {
+			margin-left: unset;
+			left: unset;
+			right: 45%;
+			margin-right: -12px;
+		}
 	}
 }
 @-webkit-keyframes cd-bounce-1 {
@@ -421,6 +314,9 @@
 		float: left;
 		padding: .8em 0 0;
 		opacity: .7;
+		[dir="rtl"] & {
+			float: right;
+		}
 	}
 }
 .cd-timeline-content::before {
@@ -434,7 +330,9 @@
 	border-left: 15px solid var(--light-color);
 	[dir="rtl"] & {
 		border-right: 15px solid var(--light-color);
-		border-left: unset ;
+		border-left: unset;
+		left: 100%;
+		right: unset;
 	}
 	@media (max-width:1169px) {
 		display: none;
@@ -519,18 +417,26 @@
 			width: 30px;
 			margin-left: -30px;
 			top: 14px;
-			z-index: 7;
+			z-index: 2;
 			>i {
 				font-size: 15px;
 				top: 16px;
 				left: 17px;
 				padding: 3px;
+				[dir="rtl"] & {
+					left: unset;
+					right: 17px;
+				}
 			}
 		}
 	}
 	.landing-main {
 		#cd-timeline::before {
 			left: -39px;
+			[dir="rtl"] & {
+				left: unset;
+				right: -39px;
+			}
 		}
 		.cd-timeline-block {
 			.cd-timeline-img {
@@ -539,11 +445,19 @@
 				width: 50px;
 				top: 1px;
 				z-index: 8;
+				[dir="rtl"] & {
+					left: unset;
+					right: -34px;
+				}
 				>i {
 					font-size: 23px;
 					top: 21px;
 					left: 7px;
 					padding: 3px;
+					[dir="rtl"] & {
+						left: unset;
+						right: 7px;
+					}
 				}
 			}
 		}
@@ -614,7 +528,7 @@
 				width: calc(84% + (95 - 84) * ((100vw - 320px) / (1200 - 320)));
 			}
 			.designer-details {
-			padding: 20px 0;
+				padding: 20px 0;
 			}
 			.timeline-thumbnail {
 				transition: box-shadow 0.5s ease-in 0.1s;
@@ -656,7 +570,6 @@
 		}
 	}
 }
-// Horizontal timeline
 .list-inline {
 	display: flex;
 	justify-content: center;
@@ -667,6 +580,10 @@
 			text-align: center;
 			padding-top: 70px;
 			margin-right: 0;
+			[dir="rtl"] & {
+				margin-right: unset;
+				margin-left: 0;
+			}
 			p {
 				white-space: nowrap;
 				overflow: hidden;
@@ -685,6 +602,7 @@
 				margin: 0 auto;
 				border-radius: 4px;
 				padding: 2px 4px;
+
 				p {
 					-webkit-line-clamp: 3;
 					-webkit-box-orient: vertical;
@@ -710,6 +628,9 @@
 					content: '';
 					height: 0;
 					border-right: unset;
+					[dir="rtl"] & {
+						border-left: unset;
+					}
 				}
 				.event-date {
 					top: 2px;
@@ -737,23 +658,35 @@
 		}
 	}
 }
-.timeline-event-wrapper{
-  .list-group {
-    i{
-      margin-right: 10px;
-    }
-    .list-group-item {
-      div{
-        margin-right: 10px;
-        margin-left: 0;
-      }
-    }
-  } 
+.timeline-event-wrapper {
+	.list-group {
+		i {
+			margin-right: 10px;
+			[dir="rtl"] & {
+				margin-right: unset;
+				margin-left: 10px;
+			}
+		}
+		.list-group-item {
+			div {
+				margin-right: 10px;
+				margin-left: 0;
+				[dir="rtl"] & {
+					margin-left: unset;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 }
 .list-group {
-  i{
-    margin-right: 10px;
-  }
+	i {
+		margin-right: 10px;
+		[dir="rtl"] & {
+			margin-right: unset;
+			margin-left: 10px;
+		}
+	}
 	.list-group-item {
 		.timeline-icon {
 			@media (max-width:1218px) {
@@ -786,7 +719,7 @@
 	}
 	li {
 		padding-bottom: 22px;
-    align-items: flex-start !important;
+		align-items: flex-start !important;
 	}
 	div[class*="activity-dot-"] {
 		margin-top: 12px;
@@ -800,6 +733,10 @@
 						color: var(--white);
 						margin-left: 10px;
 						font-weight: 500;
+						[dir="rtl"] & {
+							margin-left: unset;
+							margin-right: 10px;
+						}
 					}
 				}
 				h6 {

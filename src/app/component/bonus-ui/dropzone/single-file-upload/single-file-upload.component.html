@@ -1,10 +1,10 @@
 <div class="card">
-    <div class="card-header">
+    <div class="card-header card-no-border pb-0">
         <h3>Single File Upload</h3>
         <p class="mt-1 mb-0">Use the <code>.dropzone </code> class through create upload files.</p>
     </div>
     <div class="card-body">
-        <form class="dropzone custom-dropzone customize-dropzone" id="singleFileUpload">
+        <form class="dropzone customize-dropzone single-dropzone" id="singleFileUpload">
             <div class="dropzone-wrapper">
                 <dropzone [config]="Config" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"
                     [message]="text"></dropzone>

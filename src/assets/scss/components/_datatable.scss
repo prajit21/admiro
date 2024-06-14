@@ -94,7 +94,7 @@ div {
       }
       &:hover {
         border: 1px solid var(--theme-default);
-        color: var(--dark-color) !important;
+        color: var(--dark) !important;
         background: transparent !important;
       }
     }
@@ -103,7 +103,7 @@ div {
     margin-bottom: 30px;
     select {
       border-color: var(--light-color);
-      color: var(--dark-color);
+      color: var(--dark);
       padding: 0 10px;
       margin: 0 10px;
       height: 2.7142em;
@@ -462,7 +462,7 @@ tr.shown td.details-control {
   }
   h6 {
     font-weight: 600;
-    color: var(--dark-color);
+    color: var(--dark);
   }
 }
 table {
@@ -553,22 +553,6 @@ table {
     }
     @media (max-width:360px) {
       font-size: 11px;
-    }
-  }
-}
-.page-item {
-  &:first-child {
-    .page-link {
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
-  }
-  &:last-child {
-    .page-link {
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
     }
   }
 }

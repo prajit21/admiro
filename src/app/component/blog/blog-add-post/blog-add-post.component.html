@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header card-no-border pb-0">
                     <h3>Post Edit</h3>
                 </div>
                 <div class="card-body add-post">
@@ -43,13 +43,15 @@
                                 <div class="theme-form">
                                     <div class="mb-3">
                                         <label>Content:</label>
-                                        <angular-editor [placeholder]="'Enter text here...'"></angular-editor>
+                                        <div class="toolbar-box">
+                                            <angular-editor [placeholder]="'Enter text here...'"></angular-editor>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <form class="dropzone">
+                    <form class="dropzone custom-dropzone customize-dropzone">
                         <div class="dropzone-wrapper">
                             <dropzone [config]="Config" (error)="onUploadError($event)"
                                 (success)="onUploadSuccess($event)"></dropzone>

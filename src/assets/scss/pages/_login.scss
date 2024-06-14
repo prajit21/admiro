@@ -18,7 +18,6 @@
     background-position: center center;
 }
 .login_bs_validation {
-    // background-image: url(../../images/login/1.jpg);
     background-size: cover;
     background-position: center center;
     @include media-breakpoint-down(xl) {
@@ -199,6 +198,7 @@
                         height: 16px;
                         color: var(--theme-default);
                         vertical-align: middle;
+                        margin-right: 0;
                     }
                     &:nth-child(n + 2) {
                         margin-left: 15px;

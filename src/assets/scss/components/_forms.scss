@@ -2,31 +2,25 @@
      form css start
 ==========================**/
 .form-control {
-    font-family: $body-font;
-    font-size: $input-font-size;
-    color: var(--font-color);
-    font-weight: 600;
-    line-height: 17px;
-    padding: $input-padding;
     &:focus {
         box-shadow: none;
     }
     @include media-breakpoint-down(sm) {
         padding: 12px;
     }
-    &.form-control-sm{
+    &.form-control-sm {
         min-height: calc(1.5em + 0.5rem + 2px) !important;
         padding: 0.25rem 0.5rem !important;
         font-size: 0.875rem !important;
         border-radius: 0.25rem !important;
     }
-    &.form-control-lg{
+    &.form-control-lg {
         min-height: calc(1.5em + 1rem + 2px) !important;
         padding: 0.5rem 1rem !important;
         font-size: 1.25rem !important;
         border-radius: 0.5rem !important;
     }
-    &::placeholder{
+    &::placeholder {
         color: rgba($body-font-color, 0.4);
     }
 }
@@ -39,9 +33,9 @@
         border: 1px solid var(--theme-default);
     }
 }
-.basic-form{
-    .dz-message{
-        i{
+.basic-form {
+    .dz-message {
+        i {
             position: unset;
             top: unset;
             right: unset;
@@ -49,63 +43,65 @@
         }
     }
 }
-
 .search-form {
-    .input-group{
-        .form-control{
+    .input-group {
+        .form-control {
             &::placeholder {
-                color: var(--light-text); 
+                color: var(--light-text);
             }
         }
     }
 }
 @mixin form-validation-state-selector($state) {
-    @if ($state == "valid" or $state == "invalid") {
-      .was-validated #{if(&, "&", "")}:#{$state},
-      #{if(&, "&", "")}.is-#{$state} {
-        @content;
-      }
-    } @else {
-      #{if(&, "&", "")}.is-#{$state} {
-        @content;
-      }
+    @if ($state=="valid"or $state=="invalid") {
+        .was-validated #{if(&, "&", "")}:#{$state},
+        #{if(&, "&", "")}.is-#{$state} {
+            @content;
+        }
+    }
+    @else {
+        #{if(&, "&", "")}.is-#{$state} {
+            @content;
+        }
     }
 }
-.form-select{
-    &:focus{
+.form-select {
+    &:focus {
         border-color: var(--form-select);
         outline: 0;
         box-shadow: unset;
     }
 }
-.has-validation, .input-florting{
+.has-validation,
+.input-florting {
     .form-floating {
         flex: none;
         width: unset;
         min-width: unset;
     }
 }
-
-.basic-form{
+.basic-form {
     position: relative;
-    i{
+    i {
         position: absolute;
         top: 50%;
         right: 12px;
         transform: translateY(-50%);
     }
-    hr{
+    hr {
         color: var(--gray-60);
     }
 }
-.default-layout{
-    .checkbox{
-        input[type=checkbox]{
-            &:checked{
-                +{
-                    label{
-                        &::before{
-                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+.default-layout {
+    .checkbox {
+        input[type=checkbox] {
+            &:checked {
+                + {
+                    label {
+                        &::before {
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f00c";
                             text-align: center;
                             line-height: 1.2;
                             display: inline-block;
@@ -120,18 +116,18 @@
                         }
                     }
                 }
-            }  
+            }
         }
-        input{
+        input {
             display: none;
         }
-        label{
+        label {
             display: inline-block;
             position: relative;
             cursor: pointer;
             margin-top: 10px;
             padding-left: 30px;
-            &::before{
+            &::before {
                 content: "";
                 display: inline-block;
                 position: absolute;
@@ -144,10 +140,10 @@
                 background-color: var(--white);
             }
         }
-    } 
+    }
 }
-.Horizontal-layout{
-    .form-control{
+.Horizontal-layout {
+    .form-control {
         padding: 10px 12px;
     }
 }
@@ -155,10 +151,10 @@
     border-radius: 20px !important;
     .form-select {
         overflow: hidden;
-    }  
-}  
+    }
+}
 .flat-form * {
-    border-radius: 0 ;
+    border-radius: 0;
 }
 /**=====================
      form css end

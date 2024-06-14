@@ -478,32 +478,32 @@ export class NavmenuService {
           level: 2,
           children: [
             {
-              path: "https://admin.pixelstrap.com/admiro/template/basic-template.html",
+              path: "https://admin.pixelstrap.net/admiro/template/basic-template.html",
               title: "Basic Email",
               type: "extTabLink",
             },
             {
-              path: "https://admin.pixelstrap.com/admiro/template/email-header.html",
+              path: "https://admin.pixelstrap.net/admiro/template/email-header.html",
               title: "Basic With Header",
               type: "extTabLink",
             },
             {
-              path: "https://admin.pixelstrap.com/admiro/template/template-email.html",
+              path: "https://admin.pixelstrap.net/admiro/template/template-email.html",
               title: "Ecomerce Template",
               type: "extTabLink",
             },
             {
-              path: "https://admin.pixelstrap.com/admiro/template/template-email-2.html",
+              path: "https://admin.pixelstrap.net/admiro/template/template-email-2.html",
               title: "Email Template 2",
               type: "extTabLink",
             },
             {
-              path: "https://admin.pixelstrap.com/admiro/template/ecommerce-templates.html",
+              path: "https://admin.pixelstrap.net/admiro/template/ecommerce-templates.html",
               title: "Ecommerce Email",
               type: "extTabLink",
             },
             {
-              path: "https://admin.pixelstrap.com/admiro/template/email-order-success.html",
+              path: "https://admin.pixelstrap.net/admiro/template/email-order-success.html",
               title: "Order Success",
               type: "extTabLink",
             },

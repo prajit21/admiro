@@ -254,6 +254,12 @@
             color: var(--black);
         }
     }
+    .bootstrap-touchspin{
+        .touchspin-dark{
+            background-color: var(--body-color);
+            border: 1px solid var(--body-color);
+        }
+    }
     .icon-main {
         .icons-item {
             background-color: var(--body-color);
@@ -556,9 +562,6 @@
                 }
             }
         }
-    }
-    .ecommerce-widget {
-        border: 1px solid var(--gray-60) !important;
     }
     .main {
         .langChoice {
@@ -1092,13 +1095,6 @@
                 &:nth-child(6) {
                     fill: var(--body-color);
                 }
-            }
-        }
-        &#line-chart,
-        &#column-chart1,
-        &#column-chart2 {
-            rect {
-                fill: var(--white);
             }
         }
         svg {
@@ -1825,4 +1821,42 @@
             border-color: var(--border-color) !important;
         }
     }
+    .input-with-card{
+        .dropdown-menu{
+            li{
+                span{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: var(--body-font-color);
+                }
+            }
+        }
+    }
+    .icon-state .switch-state:after {
+        color: var(--body-font-color) !important;
+    }
+    .single-dropzone {
+        .dropzone-wrapper {
+            .dz-preview {
+                .dz-image {
+                    background: linear-gradient(to bottom,#4e4d4d,#242424) !important;
+                }
+            }
+        }
+    }
+    .support-ticket-table{
+        tbody{
+            tr {
+                &:nth-child(even){
+                  td{
+                      background-color: var(--body-color);
+                  }
+                }
+                &:nth-child(odd){
+                  background-color: var(--body-color);
+                }
+              }
+        }
+    }
+    
 }

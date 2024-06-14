@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-header">
+    <div class="card-header pb-0 card-no-border">
         <h3>Helper Card</h3>
         <p class="mt-1 mb-0">When the<code>.show </code>class starts, dropdown appears. </p>
     </div>
@@ -12,8 +12,8 @@
                 <ul class="dropdown-menu dropdown-block p-3 dark-form" ngbDropdownMenu>
                     @for(helperCardData of helperItem.item; track helperCardData){
                     <li>
-                        <h6 class="fs-6  pb-2">{{helperCardData.text}}</h6>
-                        <p class="dropdown-item helper-truncate" href="javascript:void(0)" ngbDropdownItem>
+                        <h6 class="fs-6 fw-bold pb-2">{{helperCardData.text}}</h6>
+                        <p class="dropdown-item helper-truncate p-0" href="javascript:void(0)" ngbDropdownItem>
                             {{helperCardData.list}}
                         </p>
                     </li>

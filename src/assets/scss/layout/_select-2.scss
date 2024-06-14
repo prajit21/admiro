@@ -149,61 +149,41 @@
   .form-control {
     border-radius: 5px;
   }
-  .form-control-primary {
-    border-color: var(--theme-default);
-    color: var(--theme-default);
+  $colors: (
+    primary: var(--theme-default),
+    secondary: var(--theme-secondary),
+    success: var(--success-color),
+    info: var(--info-color),
+    warning: var(--warning-color),
+    danger: var(--danger-color),
+    inverse: var(--dark)
+  );
+  
+  @mixin form-control-fill($color, $focus-color) {
+    background-color: $color;
+    color: $white;
+    &:focus {
+      border-color: $focus-color;
+    }
   }
-  .form-control-secondary {
-    border-color: var(--theme-secondary);
-    color: var(--theme-secondary);
+  
+  @each $name, $color in $colors {
+    .form-control-#{$name}-fill {
+      @include form-control-fill($color, $color);
+    }
   }
-  .form-control-success {
-    border-color: var(--success-color);
-    color: var(--success-color);
+  @mixin form-control($color) {
+    border-color: $color;
+    color: $color;
+    &:focus {
+      border-color: $color;
+    }
   }
-  .form-control-info {
-    border-color: var(--info-color);
-    color: var(--info-color);
-  }
-  .form-control-warning {
-    border-color: var(--warning-color);
-    color: var(--warning-color);
-  }
-  .form-control-danger {
-    border-color: var(--danger-color);
-    color: var(--danger-color);
-  }
-  .form-control-inverse {
-    border-color: var(--dark-color);
-    color: var(--dark-color);
-  }
-  .form-control-primary-fill {
-    background-color: var(--theme-default);
-    color: var(--white);
-  }
-  .form-control-secondary-fill {
-    background-color: var(--theme-secondary);
-    color: var(--white);
-  }
-  .form-control-success-fill {
-    background-color: var(--success-color);
-    color: var(--white);
-  }
-  .form-control-info-fill {
-    background-color: var(--info-color);
-    color: var(--white);
-  }
-  .form-control-warning-fill {
-    background-color: var(--warning-color);
-    color: var(--white);
-  }
-  .form-control-danger-fill {
-    background-color: var(--danger-color);
-    color: var(--white);
-  }
-  .form-control-inverse-fill {
-    background-color: var(--dark-color);
-    color: var(--white);
+  
+  @each $name, $color in $colors {
+    .form-control-#{$name} {
+      @include form-control($color);
+    }
   }
 }
 // Filepond
@@ -348,7 +328,7 @@
   border-color:  var(--light-border) !important;
 }
 .tagify__input {
-  color: var(--dark-color);
+  color: var(--dark);
 }
 .tagify--select {
   &::after {

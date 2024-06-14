@@ -8,12 +8,9 @@
   }
 }
 .gallery {
-  margin-bottom: -30px;
   >a {
     margin-bottom: 30px;
     &:before {
-      // content: "\edee";
-      // font-family: $font-ICO;
       position: absolute;
       height: calc(100% - 10px);
       left: 20px;
@@ -425,33 +422,32 @@
   }
 }
 .my-gallery.gallery-with-description {
-	img {
-		border: 1px solid var(--border-color) !important;
+  img {
+    border: 1px solid var(--border-color) !important;
     border-bottom: 0px !important;
-	}
+  }
 }
 .my-gallery.gallery-with-description {
-	img {
-		padding: 10px !important;
-		border: 1px solid var(--border-color)!important;
-		border-bottom: none !important;
-		border-radius: 5px 5px 0 0;
+  h4 {
+		margin-top: 0px;
 	}
-  a {
+	a {
 		>div {
 			border-top: none !important;
 			margin-bottom: 0;
 			padding: 5px 10px 10px 10px;
 		}
 	}
-  h4{
-    margin-top: 0px;
-  }
-  .col-xl-3{
+  figure{
     margin-bottom: 30px;
   }
+  img {
+		padding: 10px !important;
+		border: 1px solid #ddd;
+		border-bottom: none !important;
+		border-radius: 5px 5px 0 0;
+	}
 }
-
 /**=====================
     3.19 Gallery CSS Ends
 ==========================**/

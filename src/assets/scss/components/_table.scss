@@ -627,6 +627,20 @@ th {
 			}
 		}
 	}
+	.basic-with-border{
+		tbody{
+			tr{
+				&:last-child{
+					th{
+						border-bottom: 0 !important;
+					}
+					td{
+						border-bottom: 0 !important;
+					}
+				}
+			}
+		}
+	}
 }
 .card-block {
 	.table-responsive {

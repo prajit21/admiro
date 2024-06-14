@@ -1,18 +1,18 @@
 <div class="card">
-    <div class="card-header">
-        <h4>Variation Timelinep</h4>
+    <div class="card-header card-no-border pb-0">
+        <h3>Variation Timelinep</h3>
         <p class="mt-1 mb-0">
             Use the <code>.activity-dot-primary </code>through rounded animations.</p>
     </div>
     <div class="card-body dark-timeline">
         <ul>
             @for(data of variationTimelineData; track data){
-            <li class="d-flex pb-0">
+            <li class="d-flex">
                 <div class="activity-dot-{{data.class}}"></div>
                 <div class="w-100 ms-3">
                     <p class="d-flex justify-content-between mb-2" [innerHTML]="data.time"></p>
                     <h6 class="f-w-600">{{ data.title}}<span class="dot-notification"></span></h6>
-                    <p class="font-light">Quisque a consequat ante sit amet magna...</p>
+                    <p class="f-m-light">Quisque a consequat ante sit amet magna...</p>
                     @if(data.additem){
                     <div class="recent-images">
                         <ul>

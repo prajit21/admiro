@@ -71,18 +71,18 @@ $ct-include-alternative-responsive-containers: $ct-include-classes !default;
 $ct-series-names: (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o) !default;
 $ct-series-colors: (
   var(--theme-default),
-  #ba895d,
-  #e2c636,
-  #717171,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222,
-  #222222
+  var(--theme-secondary),
+  #3eb95f,
+  #F8D62B,
+  #e74b2b,
+  #e74b2b,
+  #e74b2b,
+  #e74b2b,
+  #e74b2b,
+  #e74b2b,
+  #02a2b9,
+  #02a2b9,
+  #02a2b9,
+  #02a2b9,
+  #02a2b9
 ) !default;

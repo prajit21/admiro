@@ -14,8 +14,8 @@
                             <div class="todo-list-container">
                                 <div class="mark-all-tasks">
                                     <div class="mark-all-tasks-container">
-                                        <span class="mark-all-btn" id="mark-all-finished" role="button">
-                                            <span class="btn-label" [ngClass]="{'move-up':completed}">Mark all as
+                                        <span class="mark-all-btn" id="mark-all-finished" role="button" [ngClass]="{'move-up':completed}">
+                                            <span class="btn-label">Mark all as
                                                 finished</span>
                                             <span class="action-box completed" (click)="markAllAction(true);"><i
                                                     class="icon"><i class="icon-check"></i></i>

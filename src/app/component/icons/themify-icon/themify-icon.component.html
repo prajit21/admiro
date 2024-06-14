@@ -3,19 +3,15 @@
         <div class="col-xl-12">
             @for(iconTitle of allIconData; track iconTitle){
             <div class="card">
-                <div class="card-header">
+                <div class="card-header card-no-border pb-0">
                     <h3>{{iconTitle.title}}</h3>
                 </div>
                 <div class="card-body">
                     <div class="row icon-event iconly-icons icon-lists">
                         @for(p of iconTitle.icons; track p){
                         <div class="col-xxl-2 col-xl-3 icons-item" (click)="toggleWithInfo(p)">
-                            <div class="card d-flex align-items-center flex-column default-border">
-                                <i class="{{p}}"></i>
-                                <div class="flex-grow-1">
-                                    <h6>{{p}}</h6>
-                                </div>
-                            </div>
+                            <i class="{{p}}"></i>
+                            <h5 class="mt-0">{{p}}</h5>
                         </div>
                         }
                     </div>
