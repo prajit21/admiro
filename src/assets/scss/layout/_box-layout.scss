@@ -70,17 +70,27 @@
       margin-left: 0px;
       &.compact-wrapper {
         &:not(.sidebar-open) {
-          .page-sidebar {
-            left: -263px !important;
-          }
           .page-header {
-            padding-left: 36px;
-          }
-          .page-body {
-            margin-left: 0px !important;
+            padding-left: 0;
           }
           .footer {
-            padding-left: 15px;
+            padding-left: 270px;
+          }
+        }
+      }
+      &.sidebar-open{
+        .page-body-wrapper{
+          .page-sidebar{
+            left: -($sidebar-width + 10px) !important;
+            transition: 0.5s all !important;
+          }
+          .page-body{
+            margin-left: 0 !important;
+            transition: 0.5s all !important;
+          }
+          .footer{
+            padding-left: 20px !important;
+            transition: 0.5s all !important;
           }
         }
       }
@@ -216,7 +226,7 @@
             transition: 0.5s all;
             .main-sidebar {
               .sidebar-menu {
-                height: calc(100vh - 156px);
+                height: calc(100vh - 157px);
                 overflow-x: hidden;
               }
             }
@@ -243,11 +253,11 @@
         }
       }
       &.horizontal-sidebar {
-        margin-top: 40px;
-        .page-header {
-          padding-left: 30px;
-        }
         .page-body-wrapper {
+          width: 1280px;
+          margin: 0 auto !important;
+          overflow-x: unset;
+          position: relative;
           .sidebar-wrapper {
             width: 230px;
             top: 40px;
@@ -265,20 +275,17 @@
             }
           }
           .page-sidebar {
-            top: 40px;
-            left: unset;
-            z-index: 8;
-            height: auto;
             width: 1280px;
-            transition: 0.5s all;
+            margin: 0;
+            overflow-x: hidden;
+            position: relative;
+            top: 0;
           }
           .page-body {
-            min-height: calc(100vh - 173px);
             margin-top: 0;
+            min-height: calc(100vh - 310px);
+            max-height: calc(100vh - 230px);
             overflow: scroll;
-            max-height: calc(100vh - 220px);
-            padding-bottom: 30px;
-            margin-left: 0px;
           }
         }
         footer {
@@ -299,9 +306,7 @@
         left: 0;
         right: 0;
         transition: 0.5s;
-        padding-left: 270px;
         margin-top: 40px;
-        border-radius: 0px;
         width: unset;
         .header-wrapper {
           border-radius: 10px 10px 0 0;

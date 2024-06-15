@@ -1859,4 +1859,46 @@
         }
     }
     
+    .page-header {
+        .logo-wrapper {
+            .dark-logo {
+                @media (max-width: 1199px){
+                    display: none;
+                }
+            }
+            .light-logo{
+                @media (max-width: 1199px){
+                    display: block;
+                }
+            }
+        }
+    }
+    .dropzone {
+        .dz-wrapper {
+            .dz-message {
+                .dz-text {
+                    .dz-message {
+                        span {
+                            color: var(--body-font-color);
+                        }
+                        h6 {
+                            color: var(--body-font-color);
+                        }
+                        .h6 {
+                            color: var(--body-font-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .custom-dropzone {
+        .dropzone.dz-wrapper {
+            .dz-message {
+                .dz-text {
+                    color: var(--body-font-color);
+                }
+            }
+        }
+    }
 }
