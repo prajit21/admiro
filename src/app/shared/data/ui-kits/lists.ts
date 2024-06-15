@@ -306,7 +306,7 @@ export const Listcheckbox = [
     {
         class: 'secondary',
         list: ' Auto Update',
-        for:'Checkbox4'
+        for:'Checkbox2'
     },
     {
         class: 'info',

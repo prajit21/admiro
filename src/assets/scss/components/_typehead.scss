@@ -77,9 +77,13 @@
     z-index: 100;
     display: none;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
+    max-height: 237px;
     background-color: var(--white);
     box-shadow: 0 5px 10px rgba(var(--black), .2);
+    @media (min-width: 992px) and (max-width: 1199.98px){
+        width: 275px;
+    }
 }
 .Typeahead-menu.is-open {
     display: block;
