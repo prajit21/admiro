@@ -156,7 +156,7 @@ export const Contacts = [
                 id: 10,
                 name: 'Emily Collins',
                 number: '100-555-7032',
-                img: '/assets/images/user/1.jpg'
+                img: 'assets/images/user/1.jpg'
             },
         ]
     },

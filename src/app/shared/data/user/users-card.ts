@@ -41,7 +41,7 @@ export const userCard = [
         following: '350',
     },
     {
-        img: '/assets/images/avtar/4.jpg',
+        img: 'assets/images/avtar/4.jpg',
         name: 'Lisa lillian',
         userid: '@lisa.lillian',
         posts: '547 ',

@@ -24,19 +24,19 @@ export const StatusIndicator = [
         status: 'status bg-success'
     },
     {
-        Image: '/assets/images/avtar/16.jpg',
+        Image: 'assets/images/avtar/16.jpg',
         class: 'img-90',
         status: 'status bg-warning'
 
     },
     {
-        Image: '/assets/images/avtar/7.jpg',
+        Image: 'assets/images/avtar/7.jpg',
         class: 'img-80',
         status: ' status bg-danger'
 
     },
     {
-        Image: '/assets/images/avtar/11.jpg',
+        Image: 'assets/images/avtar/11.jpg',
         class: 'img-70',
         status: 'status bg-success'
 

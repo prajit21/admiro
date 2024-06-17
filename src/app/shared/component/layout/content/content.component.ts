@@ -13,7 +13,7 @@ export class ContentComponent {
     if (window.innerWidth < 1200) {
       navmenu.closeSidebar = true;
     }
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 1200) {
       this.layout.config.settings.sidebar_type = 'compact-wrapper'
     } else {
       this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
@@ -30,7 +30,7 @@ export class ContentComponent {
       this.navmenu.closeSidebar = false;
     }
 
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 1200) {
       this.layout.config.settings.sidebar_type = 'compact-wrapper';
     } else {
       this.layout.config.settings.sidebar_type = this.layout.config.settings.sidebar_type;
