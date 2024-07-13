@@ -40,16 +40,7 @@ export class GoogleMapComponent {
         streetViewControl: false,
         fullscreenControl: false
       }
-
     })
-
-    const map = new google.maps.Map(
-      document.getElementById("map") as HTMLElement,
-      {
-        zoom: 12,
-        center: bangalore,
-      }
-    );
 
     this.markers.push({
       position: {
@@ -80,7 +71,6 @@ export class GoogleMapComponent {
 
   //Street View
   @ViewChild(GoogleMap) map!: GoogleMap;
-
 
   ngAfterViewInit(){
     const streetView = this.map.getStreetView();
