@@ -15,6 +15,7 @@ export class UserPrivateChatComponent {
 
   public MsgData = massage;
   public isopen:boolean = false;
+  public isShow : boolean = false;
 
   open(){
    this.isopen = !this.isopen

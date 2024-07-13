@@ -1,8 +1,8 @@
-<div class="card earning-card" (clickOutside)="clickOutside()">
+<div class="card earning-card">
     <div class="card-header pb-0 card-no-border">
         <div class="header-top">
             <h3>Earnings Trend </h3>
-            <div class="dropdown">
+            <div class="dropdown" (clickOutside)="clickOutside()">
                 <button class="btn dropdown-toggle" id="userdropdown3" type="button"(click)="open()">Monthly</button>
                 <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
                     <a class="dropdown-item" href="javascript:void(0)">Weekly</a>

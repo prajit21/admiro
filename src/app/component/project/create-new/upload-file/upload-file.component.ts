@@ -9,6 +9,7 @@ import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
   templateUrl: './upload-file.component.html',
   styleUrl: './upload-file.component.scss'
 })
+
 export class UploadFileComponent {
 
   public Config: DropzoneConfigInterface = {
@@ -22,7 +23,6 @@ export class UploadFileComponent {
   public text =' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
 
   onUploadError(args: DropzoneConfigInterface): void {
-
   }
 
   onUploadSuccess(args: DropzoneConfigInterface): void {

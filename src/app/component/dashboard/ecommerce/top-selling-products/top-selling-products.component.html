@@ -1,8 +1,8 @@
-<div class="card selling-product" (clickOutside)="clickOutside()">
+<div class="card selling-product">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>Top Selling Products</h3>
-            <div class="dropdown icon-dropdown">
+            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
                 <button class="btn" id="userdropdown4" type="button" (click)="open()">
                     <i class="fa-solid fa-ellipsis"></i>
                 </button>

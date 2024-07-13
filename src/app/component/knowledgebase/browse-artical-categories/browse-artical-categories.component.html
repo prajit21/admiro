@@ -13,14 +13,14 @@
                     <div class="col-xl-4 xl-50 col-md-6">
                         <div class="browse-articles">
                             <h6><span>
-                                    <app-feathericon [icon]="'archive'"></app-feathericon>
+                                    <app-feather-icon [icon]="'archive'"></app-feather-icon>
                                 </span>{{ ArticlesData.title }}
                             </h6>
                             <ul>
                                 @for( data of ArticlesData.data; track data){
                                 <li><a href="javascript:void(0)">
                                         <span>
-                                            <app-feathericon [icon]="'file-text'"></app-feathericon>
+                                            <app-feather-icon [icon]="'file-text'"></app-feather-icon>
                                       
                                         </span>
                                         <span>{{ data.listData }}</span>
@@ -32,7 +32,7 @@
                                 }
                                 <li><a href="javascript:void(0)">
                                         <span>
-                                            <app-feathericon [icon]="'arrow-right'"></app-feathericon>
+                                            <app-feather-icon [icon]="'arrow-right'"></app-feather-icon>
                                         </span>
                                         <span>See More ({{ ArticlesData.seeMore }})</span>
                                     </a>

@@ -55,7 +55,7 @@
                         <div class="search-contacts">
                             <input class="form-control" type="text" placeholder="Name and phone number">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <app-feathericon [icon]="'mic'"></app-feathericon>
+                            <app-feather-icon [icon]="'mic'"></app-feather-icon>
                         </div>
                         <div class="contact-wrapper">
                             @for( Data of contactsData; track Data){
@@ -76,9 +76,9 @@
                                             <p>{{items.number}}</p>
                                         </div>
                                     </div>
-                                    <div class="contact-edit">
+                                    <div class="contact-edit" (clickOutside)="items.isShow = false">
                                         <i class="fa-solid fa-bars dropdown-toggle" (click)="openMenu(items.id)"></i>
-                                        <div class="dropdown-menu dropdown-menu-end" [class.show]="openid == items.id">
+                                        <div class="dropdown-menu dropdown-menu-end" [class.show]="items.isShow">
                                             <a class="dropdown-item" href="javascript:void(0)">View details</a>
                                             <a class="dropdown-item" href="javascript:void(0)">Send messages</a>
                                             <a class="dropdown-item" href="javascript:void(0)">Add to favorites</a>

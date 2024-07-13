@@ -12,6 +12,7 @@ import { DetailsComponent } from './details/details.component';
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.scss'
 })
+
 export class ProductPageComponent {
 
   public imagesRect: Image[] = [

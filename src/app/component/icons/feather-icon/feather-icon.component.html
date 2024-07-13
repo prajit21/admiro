@@ -10,7 +10,7 @@
                     <div class="row icon-event feather-icons icon-lists">
                         @for( p of iconTitle.icons; track p){
                         <div class="col-xxl-2 col-lg-3 col-sm-4 icons-item" (click)="toggleWithInfo(p)">
-                            <app-feathericon [icon]="p"></app-feathericon>
+                            <app-feather-icon [icon]="p"></app-feather-icon>
                             <h5 class="mt-0">{{p}}</h5>
                         </div>
                         }
@@ -28,7 +28,7 @@
             <div class="icon-popup">
                 <div class="close-icon"><i class="icofont icofont-close" (click)="detail=false"></i></div>
                 <div class="icon-first">
-                    <app-feathericon [icon]="icon"></app-feathericon>
+                    <app-feather-icon [icon]="icon"></app-feather-icon>
                 </div>
                 <div class="icon-class">
                     <label class="icon-title">Class</label><span id="fclass1">{{icon}}</span>

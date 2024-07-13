@@ -43,7 +43,6 @@ export class SearchComponent {
     this.item?.filter(menuItems => {
       if (menuItems.title?.toLowerCase().includes(term) && menuItems.type === 'link') {
         items.push(menuItems);
-        console.log(menuItems)
       }
       menuItems.children?.filter(subItems => {
         if (subItems.title?.toLowerCase().includes(term) && subItems.type === 'link') {

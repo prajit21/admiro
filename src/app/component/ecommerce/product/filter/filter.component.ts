@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { filterData } from '../../../../shared/data/ecommerce/product';
 import { BrandCheckbox, CategoryCheckbox } from '../../../../shared/data/ecommerce/product';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { NgxSliderModule, Options } from 'ngx-slider-v2';
 import { FormsModule } from '@angular/forms';
+import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-filter',

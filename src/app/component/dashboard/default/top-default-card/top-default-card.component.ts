@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './top-default-card.component.html',
   styleUrl: './top-default-card.component.scss'
 })
+
 export class TopDefaultCardComponent {
 
   public time = new Date();

@@ -7,7 +7,7 @@
     <div class="card-body">
         @for( outlineitem of outlinealertData; track outlineitem ){
         <div class="alert {{outlineitem.class}}">
-            <app-feathericon [icon]="outlineitem.icon"></app-feathericon>
+            <app-feather-icon [icon]="outlineitem.icon"></app-feather-icon>
             <p [innerHTML]="outlineitem.text"></p>
             <button class="btn-close" type="button" (click)="close(outlineitem)"></button>
         </div>

@@ -8,11 +8,12 @@ import { SingleFileUploadComponent } from './single-file-upload/single-file-uplo
 @Component({
   selector: 'app-dropzone',
   standalone: true,
-  imports: [CommonModule, DefaultFileUploadComponent, ImagePerviewComponent, MultiFileUploadComponent,
-    SingleFileUploadComponent],
+  imports: [CommonModule, DefaultFileUploadComponent, 
+    ImagePerviewComponent, MultiFileUploadComponent,SingleFileUploadComponent],
   templateUrl: './dropzone.component.html',
   styleUrl: './dropzone.component.scss'
 })
+
 export class DropzoneComponent {
 
 }

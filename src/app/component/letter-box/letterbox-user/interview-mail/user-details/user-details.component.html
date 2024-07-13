@@ -8,7 +8,7 @@
                 <p>Jacob Jones</p>
                 <div class="onhover-dropdown">
                     <button class="btn p-0 dropdown-button" (click)="openMenu()">To me
-                        <app-feathericon [icon]="'chevron-down'"></app-feathericon>
+                        <app-feather-icon [icon]="'chevron-down'"></app-feather-icon>
                     </button>
                     <div class="inbox-security onhover-show-div">
                         <p>From: <span>jones &lt;jacobjones3&#64;gmail.com&gt;</span></p>
@@ -23,14 +23,14 @@
         </div>
         <div class="inbox-options"> <span>Friday 07 Apr (4 hours ago)</span>
             <div class="light-square">
-                <app-feathericon [icon]="'star'" class="important-mail"></app-feathericon>
+                <app-feather-icon [icon]="'star'" class="important-mail"></app-feather-icon>
             </div>
             <div class="light-square">
-                <app-feathericon [icon]="'printer'"></app-feathericon>
+                <app-feather-icon [icon]="'printer'"></app-feather-icon>
             </div>
             <div class="light-square btn-group">
                 <div class="dropdown-toggle" (click)="openMenu()">
-                    <app-feathericon [icon]="'menu'"></app-feathericon>
+                    <app-feather-icon [icon]="'menu'"></app-feather-icon>
                 </div>
                 <div class="dropdown-menu dropdown-block" [class.show]="isOpen">
                     <a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-mail-reply"></i>Reply</a>
@@ -55,7 +55,7 @@
     </div>
     <div class="user-footer">
         <div>
-            <app-feathericon [icon]="'paperclip'"></app-feathericon>
+            <app-feather-icon [icon]="'paperclip'"></app-feather-icon>
             <span class="font-dark">Attachments</span>
         </div>
         <div class="d-inline-block">

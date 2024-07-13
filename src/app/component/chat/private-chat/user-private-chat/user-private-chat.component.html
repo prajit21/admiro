@@ -42,13 +42,13 @@
             </div>
             <form class="msger-inputarea">
                 <div class="dropdown-form dropdown-toggle">
-                    <i class="icon-plus"></i>
-                    <div class="chat-icon dropdown-menu dropdown-menu-start">
+                    <i class="icon-plus" (click)="isShow = true"></i>
+                    <div class="chat-icon dropdown-menu dropdown-menu-start" [class.show]="isShow">
                         <div class="dropdown-item mb-2">
-                            <app-feathericon [icon]="'camera'"></app-feathericon>
+                            <app-feather-icon [icon]="'camera'"></app-feather-icon>
                         </div>
                         <div class="dropdown-item">
-                            <app-feathericon [icon]="'paperclip'"></app-feathericon>
+                            <app-feather-icon [icon]="'paperclip'"></app-feather-icon>
                         </div>
                     </div>
                 </div>

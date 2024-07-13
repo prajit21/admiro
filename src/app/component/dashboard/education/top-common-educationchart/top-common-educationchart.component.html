@@ -1,6 +1,6 @@
-<div class="card graphic-design overflow-hidden"  (clickOutside)="clickOutside()">
+<div class="card graphic-design overflow-hidden">
     <div class="card-header card-no-border pb-0">
-        <div class="header-top">
+        <div class="header-top" >
             <div class="d-flex align-items-center gap-2">
                 <div class="flex-shrink-0">
                     <div class="icon">
@@ -12,7 +12,7 @@
                     <p class="mb-0">{{data.name}}</p>
                 </div>
             </div>
-            <div class="dropdown icon-dropdown">
+            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
                 <button class="btn" id="userdropdown1" type="button" (click)="open()">
                     <i class="fa-solid fa-ellipsis"></i>
                 </button>

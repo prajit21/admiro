@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './letest-activity.component.html',
   styleUrl: './letest-activity.component.scss'
 })
+
 export class LetestActivityComponent {
 
   public letestActivity = LatestActivity;

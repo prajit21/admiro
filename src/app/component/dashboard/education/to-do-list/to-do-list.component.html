@@ -1,8 +1,8 @@
-<div class="card"  (clickOutside)="clickOutside()">
+<div class="card">
     <div class="card-header card-no-border pb-0">
         <div class="header-top">
             <h3>To-do list</h3>
-            <div class="dropdown icon-dropdown">
+            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
                 <button class="btn" id="userdropdown1" type="button" (click)="open()">
                     <i class="fa-solid fa-ellipsis"></i>
                 </button>

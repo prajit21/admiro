@@ -1,5 +1,5 @@
 <div class="left-arrow" id="left-arrow" [class.d-none]="leftArrowNone" (click)="scrollToLeft()">
-    <app-feathericon [icon]="'arrow-left'"></app-feathericon>
+    <app-feather-icon [icon]="'arrow-left'"></app-feather-icon>
 </div>
 <div class="main-sidebar" id="main-sidebar"
     [ngStyle]="{ marginLeft: this.layout.config.settings.sidebar_type === 'horizontal-sidebar' ? margin + 'px' : '0px' }">
@@ -60,5 +60,5 @@
     </ul>
 </div>
 <div class="right-arrow" id="right-arrow" [class.d-none]="rightArrowNone" (click)="scrollToRight()">
-    <app-feathericon [icon]="'arrow-right'"></app-feathericon>
+    <app-feather-icon [icon]="'arrow-right'"></app-feather-icon>
 </div>

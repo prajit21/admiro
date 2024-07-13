@@ -5,18 +5,18 @@
                 <div class="col-md-6 products-total">
                     <div class="square-product-setting d-inline-block">
                         <a class="icon-grid grid-layout-view" (click)="gridOpens()" [class.active]="listView == false">
-                            <app-feathericon [icon]="'grid'"></app-feathericon>
+                            <app-feather-icon [icon]="'grid'"></app-feather-icon>
                         </a>
                     </div>
                     <div class="square-product-setting d-inline-block">
                         <a class="icon-grid m-0 list-layout-view" (click)="listOpens()"
                             [class.active]="listView == true">
-                            <app-feathericon [icon]="'list'"></app-feathericon>
+                            <app-feather-icon [icon]="'list'"></app-feather-icon>
                         </a>
                     </div>
                     <span class="d-none-productlist filter-toggle" (click)="openFilter()"> Filters
                         <span class="ms-2">
-                            <app-feathericon [icon]="'chevron-down'" class="toggle-data"></app-feathericon>
+                            <app-feather-icon [icon]="'chevron-down'" class="toggle-data"></app-feather-icon>
                         </span>
                     </span>
                     <div class="grid-options d-inline-block">

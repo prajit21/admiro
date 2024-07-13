@@ -74,6 +74,7 @@ export const Contacts = [
             {
                 id: 1,
                 name: 'Andres Williamson',
+                isShow: false,
                 number: '191-900-5689',
                 img: 'assets/images/avtar/3.jpg'
             }
@@ -86,12 +87,14 @@ export const Contacts = [
             {
                 id: 2,
                 name: 'Britlin Weed',
+                isShow: false,
                 number: '698-781-5581',
                 img: 'assets/images/blog/comment.jpg'
             },
             {
                 id: 3,
                 name: 'Brendra Dixit',
+                isShow: false,
                 number: '589-789-2563',
                 text: 'BD',
                 class: 'secondary'
@@ -105,12 +108,14 @@ export const Contacts = [
             {
                 id: 4,
                 name: 'Cody Fisher',
+                isShow: false,
                 number: '983-333-4545',
                 img: 'assets/images/blog/14.png'
             },
             {
                 id: 5,
                 name: 'Clifford Evans',
+                isShow: false,
                 number: '321-456-7878',
                 text: 'CE',
                 class: 'success'
@@ -118,6 +123,7 @@ export const Contacts = [
             {
                 id: 6,
                 name: 'Cameron Williamson',
+                isShow: false,
                 number: '369-852-7417',
                 text: 'CW',
                 class: 'warning'
@@ -131,18 +137,21 @@ export const Contacts = [
             {
                 id: 7,
                 name: 'Darlene Robertson',
+                isShow: false,
                 number: '231-279-1001',
                 img: 'assets/images/blog/12.png'
             },
             {
                 id: 8,
                 name: 'Dianne Russell',
+                isShow: false,
                 number: '569-789-1002',
                 img: 'assets/images/user/3.png',
             },
             {
                 id: 9,
                 name: 'Darrell Steward',
+                isShow: false,
                 number: '200-300-1030',
                 img: 'assets/images/user/6.jpg',
             },
@@ -155,6 +164,7 @@ export const Contacts = [
             {
                 id: 10,
                 name: 'Emily Collins',
+                isShow: false,
                 number: '100-555-7032',
                 img: 'assets/images/user/1.jpg'
             },
@@ -167,12 +177,14 @@ export const Contacts = [
             {
                 id: 11,
                 name: 'Fiona Cooper',
+                isShow: false,
                 number: '362-778-1919',
                 img: 'assets/images/user/2.jpg'
             },
             {
                 id: 12,
                 name: 'Freya Grayson',
+                isShow: false,
                 number: '589-789-2563',
                 text: 'FG',
                 class:'danger'
@@ -186,6 +198,7 @@ export const Contacts = [
             {
                 id: 13,
                 name: 'Gabriel Evans',
+                isShow: false,
                 number: '963-147-5024',
                 text: 'GE',
                 class: 'warning'
