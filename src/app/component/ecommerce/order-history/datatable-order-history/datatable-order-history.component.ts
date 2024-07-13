@@ -1,12 +1,20 @@
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { Component, QueryList, ViewChildren } from '@angular/core';
 import { Observable } from 'rxjs';
 import { OrderdataTableDirective, SortEvent } from '../../../../shared/directives/orderdata.directive';
 import { ORDERS } from '../../../../shared/interface/odershistory';
 import { orderHistoryTable } from '../../../../shared/data/ecommerce/orderhistory';
 import { OrderService } from '../../../../shared/services/ecommerce/order.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-datatable-order-history',
+  standalone: true,
+  imports: [CommonModule, NgbModule, OrderdataTableDirective, FeathericonComponent, FormsModule, RouterModule],
+  providers: [OrderService, DecimalPipe],
   templateUrl: './datatable-order-history.component.html',
   styleUrl: './datatable-order-history.component.scss'
 })
@@ -14,7 +22,7 @@ export class DatatableOrderHistoryComponent {
 
   public products$: Observable<ORDERS[]>;
   public total$: Observable<number>;
-  public Data:ORDERS[];
+  public Data: ORDERS[];
   public orderHistoryData = orderHistoryTable;
 
   @ViewChildren(OrderdataTableDirective) headers: QueryList<OrderdataTableDirective>;
@@ -32,7 +40,7 @@ export class DatatableOrderHistoryComponent {
 
 
   get filteredData(): ORDERS[] {
-    return this. orderHistoryData.filter((person: { productimg:string ,product:string, size:string,status:string,color:string} ) => {
+    return this.orderHistoryData.filter((person: { productimg: string, product: string, size: string, status: string, color: string }) => {
       return person.productimg.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
         person.product.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
         person.status.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||

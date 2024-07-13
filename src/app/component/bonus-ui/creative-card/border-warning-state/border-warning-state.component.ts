@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-border-warning-state',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './border-warning-state.component.html',
   styleUrl: './border-warning-state.component.scss'
 })

@@ -1,9 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { questionData } from '../../../shared/data/faq/faq';
-import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-questions',
+  standalone: true,
+  imports: [CommonModule,NgbModule],
   templateUrl: './questions.component.html',
   styleUrl: './questions.component.scss'
 })

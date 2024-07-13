@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { upcomingCourse } from '../../../../shared/data/learning/learning';
-import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-upcoming-cource',
+  standalone: true,
+  imports: [CommonModule,NgbModule],
   templateUrl: './upcoming-cource.component.html',
   styleUrl: './upcoming-cource.component.scss'
 })

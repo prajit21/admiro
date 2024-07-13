@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { newsupdate } from '../../../../shared/data/dashboard/default/default';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-news-update',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective,RouterModule],
   templateUrl: './news-update.component.html',
   styleUrl: './news-update.component.scss'
 })

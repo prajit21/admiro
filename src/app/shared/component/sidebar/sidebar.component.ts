@@ -1,10 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component ,HostListener } from '@angular/core';
 import { Menu, NavmenuService } from '../../services/navmenu.service';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { LayoutService } from '../../services/layout.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeathericonComponent } from '../feathericon/feathericon.component';
+import { SvgIconComponent } from '../svg-icon/svg-icon.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sidebar',
+  standalone: true,
+  imports: [CommonModule, NgbModule, FeathericonComponent, SvgIconComponent,
+     RouterModule, TranslateModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })

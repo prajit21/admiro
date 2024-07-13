@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { UpcomingClasses } from '../../../../shared/data/dashboard/education/education';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-upcoming-classes',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './upcoming-classes.component.html',
   styleUrl: './upcoming-classes.component.scss'
 })
@@ -18,6 +22,5 @@ export class UpcomingClassesComponent {
   clickOutside():void { 
     this.isopen = false;
   }
-
 
 }

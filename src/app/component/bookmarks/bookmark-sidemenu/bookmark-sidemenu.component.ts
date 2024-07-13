@@ -1,11 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { bookmark } from '../../../shared/data/bookmark/bookmarks';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddTagComponent } from '../bookmark-modal/add-tag/add-tag.component';
 import { NewBookmarkComponent } from '../bookmark-modal/new-bookmark/new-bookmark.component';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+import { BookmarkDataComponent } from '../bookmark-data/bookmark-data.component';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-bookmark-sidemenu',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective,BookmarkDataComponent ,FeathericonComponent],
   templateUrl: './bookmark-sidemenu.component.html',
   styleUrl: './bookmark-sidemenu.component.scss'
 })
@@ -39,6 +45,10 @@ export class BookmarkSidemenuComponent {
 
   openFilter(){
     this.isOpen =! this.isOpen;
+  }
+
+  clickOutside(): void {
+    this.isOpen = false
   }
 
 }

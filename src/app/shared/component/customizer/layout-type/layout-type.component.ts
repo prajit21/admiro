@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-layout-type',
+  standalone: true,
+  imports: [CommonModule,FormsModule],
   templateUrl: './layout-type.component.html',
   styleUrl: './layout-type.component.scss'
 })

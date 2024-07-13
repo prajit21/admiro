@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-simple-coming',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './simple-coming.component.html',
   styleUrl: './simple-coming.component.scss'
 })

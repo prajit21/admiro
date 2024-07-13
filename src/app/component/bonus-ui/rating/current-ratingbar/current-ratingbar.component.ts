@@ -1,11 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar, faStarHalfAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
-import { FormControl, Validators } from '@angular/forms';
+import { BarRatingModule } from "ngx-bar-rating";
+import { FormControl, FormsModule, Validators } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-current-ratingbar',
+  standalone: true,
+  imports: [CommonModule ,FormsModule, NgbModule, BarRatingModule  ,FontAwesomeModule],
   templateUrl: './current-ratingbar.component.html',
   styleUrl: './current-ratingbar.component.scss'
 })

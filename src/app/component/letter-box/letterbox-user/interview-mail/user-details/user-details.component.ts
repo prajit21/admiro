@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Editor } from 'ngx-editor';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Editor, NgxEditorModule } from 'ngx-editor';
+import { FeathericonComponent } from '../../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-user-details',
+  standalone: true,
+  imports: [CommonModule, NgxEditorModule, FormsModule, ReactiveFormsModule, FeathericonComponent],
   templateUrl: './user-details.component.html',
   styleUrl: './user-details.component.scss'
 })

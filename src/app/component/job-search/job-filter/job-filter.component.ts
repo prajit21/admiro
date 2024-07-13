@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
 import * as Data from '../../../shared/data/job-search/job-search';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-job-filter',
+  standalone: true,
+  imports: [CommonModule,NgbModule,FeathericonComponent],
   templateUrl: './job-filter.component.html',
   styleUrl: './job-filter.component.scss'
 })

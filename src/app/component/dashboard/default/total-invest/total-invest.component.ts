@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { incomchart } from '../../../../shared/data/dashboard/default/default-charts';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-total-invest',
+  standalone: true,
+  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
   templateUrl: './total-invest.component.html',
   styleUrl: './total-invest.component.scss'
 })

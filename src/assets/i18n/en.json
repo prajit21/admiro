@@ -199,12 +199,12 @@
     "Chat": "Chat",
     "Private Chat": "Private Chat",
     "Group Chat": "Group Chat",
-
+    "Grid":"Grid",
     "GENERAL": "GENERAL",
     "Dashboard": "Dashboard",
     "Chartist Chart": "Chartist Chart",
     "Chatjs Chart": "Chatjs Chart",
-    "Editors":"Editors",
+    "Editors": "Editors",
     "NGX Editor": "NGX Editor",
     "MDE Editor": "MDE Editor"
 }

@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivityTimeline } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-activity-timeline',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './activity-timeline.component.html',
   styleUrl: './activity-timeline.component.scss'
 })

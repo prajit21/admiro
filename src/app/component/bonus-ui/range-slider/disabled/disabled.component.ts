@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Options } from 'ngx-slider-v2';
+import { NgxSliderModule, Options } from 'ngx-slider-v2';
 
 @Component({
   selector: 'app-disabled',
+  standalone: true,
+  imports: [CommonModule,NgxSliderModule],
   templateUrl: './disabled.component.html',
   styleUrl: './disabled.component.scss'
 })

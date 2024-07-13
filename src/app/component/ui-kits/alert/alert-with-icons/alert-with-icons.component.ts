@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IconandTextAlert, Icons } from '../../../../shared/data/ui-kits/alert';
 
 @Component({
   selector: 'app-alert-with-icons',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './alert-with-icons.component.html',
   styleUrl: './alert-with-icons.component.scss'
 })

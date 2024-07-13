@@ -1,8 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProductBoxFilterService } from '../../../shared/services/ecommerce/product-box-filter.service';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+import { FilterComponent } from './filter/filter.component';
+import { ProductBoxComponent } from './product-box/product-box.component';
 
 @Component({
   selector: 'app-product',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent,ClickOutsideDirective,FilterComponent,ProductBoxComponent],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

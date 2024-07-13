@@ -1,9 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import * as Data from '../../../shared/data/search-result/search-result';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-videos',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './videos.component.html',
   styleUrl: './videos.component.scss'
 })

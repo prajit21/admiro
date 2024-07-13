@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-simple',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './simple.component.html',
   styleUrl: './simple.component.scss'
 })

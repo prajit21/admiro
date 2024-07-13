@@ -1,11 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import Swal from 'sweetalert2';
 import { bookmarks, bookmark } from '../../../shared/data/bookmark/bookmarks';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditBookmarkComponent } from '../bookmark-modal/edit-bookmark/edit-bookmark.component';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-bookmark-data',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent],
   templateUrl: './bookmark-data.component.html',
   styleUrl: './bookmark-data.component.scss'
 })

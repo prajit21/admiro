@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
   selector: 'app-sidebar-icon',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './sidebar-icon.component.html',
   styleUrl: './sidebar-icon.component.scss'
 })

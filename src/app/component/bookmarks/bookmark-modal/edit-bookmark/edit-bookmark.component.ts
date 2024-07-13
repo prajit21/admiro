@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-edit-bookmark',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './edit-bookmark.component.html',
   styleUrl: './edit-bookmark.component.scss'
 })

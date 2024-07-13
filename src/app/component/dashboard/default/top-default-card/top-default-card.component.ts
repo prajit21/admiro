@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-top-default-card',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './top-default-card.component.html',
   styleUrl: './top-default-card.component.scss'
 })

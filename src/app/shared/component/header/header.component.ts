@@ -1,9 +1,23 @@
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { Menu, NavmenuService } from '../../services/navmenu.service';
-import { DOCUMENT } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { BookmarkComponent } from './bookmark/bookmark.component';
+import { CartComponent } from './cart/cart.component';
+import { LanguageComponent } from './language/language.component';
+import { NotificationComponent } from './notification/notification.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SearchComponent } from './search/search.component';
+import { ThemeComponent } from './theme/theme.component';
+import { FeathericonComponent } from '../feathericon/feathericon.component';
+import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule,BookmarkComponent,CartComponent,LanguageComponent
+  ,NotificationComponent,ProfileComponent,SearchComponent,ThemeComponent,FeathericonComponent,SvgIconComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

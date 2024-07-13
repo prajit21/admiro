@@ -1,9 +1,15 @@
-import { Component, ViewChild, TemplateRef, ViewEncapsulation, } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgbModule , NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
+import { CalendarA11y, CalendarDateFormatter, CalendarEventTitleFormatter, CalendarModule, CalendarUtils ,CalendarEvent,
+   CalendarEventAction, CalendarEventTimesChangedEvent, CalendarView, } from 'angular-calendar';
+import { FlatpickrDefaults, FlatpickrModule } from 'angularx-flatpickr';
+import { Component, ViewChild, TemplateRef } from '@angular/core';
 import { startOfDay, endOfDay, subDays, addDays, endOfMonth, isSameDay, isSameMonth, addHours, } from 'date-fns';
+
 import { Subject } from 'rxjs';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent, CalendarView, } from 'angular-calendar';
-import { EventColor } from 'calendar-utils'
+import { EventColor } from 'calendar-utils';
 
 const colors: Record<string, EventColor> = {
   red: {
@@ -22,6 +28,9 @@ const colors: Record<string, EventColor> = {
 
 @Component({
   selector: 'app-calender',
+  standalone: true,
+  imports: [CommonModule,NgbModule,FormsModule ,CalendarModule, FlatpickrModule ],
+  providers:[CalendarDateFormatter,CalendarUtils,FlatpickrDefaults,CalendarA11y,CalendarEventTitleFormatter],
   templateUrl: './calender.component.html',
   styleUrl: './calender.component.scss'
 })

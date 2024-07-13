@@ -1,0 +1,13 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-basic-input-groups',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './basic-input-groups.component.html',
+  styleUrl: './basic-input-groups.component.scss'
+})
+export class BasicInputGroupsComponent {
+
+}

@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-user-profile5',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './user-profile5.component.html',
   styleUrl: './user-profile5.component.scss'
 })

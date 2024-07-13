@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { allIcon } from '../../../shared/data/icons/thimify';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-ico-icon',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './ico-icon.component.html',
   styleUrl: './ico-icon.component.scss'
 })

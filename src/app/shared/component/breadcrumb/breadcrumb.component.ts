@@ -1,11 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router, NavigationEnd, PRIMARY_OUTLET } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, PRIMARY_OUTLET, RouterModule } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { map } from 'rxjs';
 import { NavmenuService } from '../../services/navmenu.service';
+import { FeathericonComponent } from '../feathericon/feathericon.component';
 
 @Component({
   selector: 'app-breadcrumb',
+  standalone: true,
+  imports: [CommonModule, RouterModule,FeathericonComponent],
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.scss'
 })

@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { ContactSidebarComponent } from './contact-sidebar/contact-sidebar.component';
 
 @Component({
   selector: 'app-contacts',
+  standalone: true,
+  imports: [CommonModule, ContactSidebarComponent],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss'
 })

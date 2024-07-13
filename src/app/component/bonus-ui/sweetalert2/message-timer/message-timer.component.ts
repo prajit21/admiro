@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-message-timer',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './message-timer.component.html',
   styleUrl: './message-timer.component.scss'
 })

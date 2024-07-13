@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
   selector: 'app-single-file-upload',
+  standalone: true,
+  imports: [CommonModule,DropzoneModule],
   templateUrl: './single-file-upload.component.html',
   styleUrl: './single-file-upload.component.scss'
 })

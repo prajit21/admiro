@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { findCourse } from '../../../../shared/data/learning/learning';
+import { CommonModule } from '@angular/common';
+import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-find-cource',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent,NgbModule],
   templateUrl: './find-cource.component.html',
   styleUrl: './find-cource.component.scss'
 })

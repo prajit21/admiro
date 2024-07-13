@@ -1,8 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavmenuService, Menu } from '../../../services/navmenu.service';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
+import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
   selector: 'app-bookmark',
+  standalone: true,
+  imports: [CommonModule, RouterModule, FormsModule, SvgIconComponent, ClickOutsideDirective],
   templateUrl: './bookmark.component.html',
   styleUrl: './bookmark.component.scss'
 })
@@ -115,7 +122,7 @@ export class BookmarkComponent {
   }
 
   clickOutside(): void {
-    this.searchResult = false
+    this.searchResult = false;
     this.searchResultEmpty = false;
   }
 

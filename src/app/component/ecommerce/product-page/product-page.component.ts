@@ -1,8 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Image } from '@ks89/angular-modal-gallery';
+import { GalleryModule, Image } from '@ks89/angular-modal-gallery';
+import { BrandComponent } from './brand/brand.component';
+import { DescriptionTabComponent } from './description-tab/description-tab.component';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-product-page',
+  standalone: true,
+  imports: [CommonModule,BrandComponent,DescriptionTabComponent,DetailsComponent,GalleryModule],
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.scss'
 })

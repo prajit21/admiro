@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @Component({
   selector: 'app-add-products-details',
+  standalone: true,
+  imports: [CommonModule,AngularEditorModule, FormsModule,ReactiveFormsModule],
   templateUrl: './add-products-details.component.html',
   styleUrl: './add-products-details.component.scss'
 })
@@ -10,7 +14,6 @@ export class AddProductsDetailsComponent {
 
   public validate: boolean = false;
   public activeStep: number = 1;
-
 
   @Output() activeSteps = new EventEmitter<number>();
 

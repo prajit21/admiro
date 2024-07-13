@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, SimpleChanges } from '@angular/core';
 import * as data from '../../../shared/data/contacts/all-contact';
+import { ProfileDataComponent } from './profile-data/profile-data.component';
 
 @Component({
   selector: 'app-contact-details',
+  standalone: true,
+  imports: [CommonModule, ProfileDataComponent],
   templateUrl: './contact-details.component.html',
   styleUrl: './contact-details.component.scss'
 })

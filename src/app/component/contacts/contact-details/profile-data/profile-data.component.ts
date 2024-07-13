@@ -1,12 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, SimpleChanges, ViewChild } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import * as data from "../../../../shared/data/contacts/all-contact";
 import { contactData, lastDataList } from '../../../../shared/data/contacts/all-contact';
 import { PrintComponent } from '../../contact-modal/print/print.component';
 import Swal from 'sweetalert2';
+import { AddressContactComponent } from './edit-profile/address-contact/address-contact.component';
+import { GeneralComponent } from './edit-profile/general/general.component';
+import { PersonalContactComponent } from './edit-profile/personal-contact/personal-contact.component';
 
 @Component({
   selector: 'app-profile-data',
+  standalone: true,
+  imports: [CommonModule,AddressContactComponent,GeneralComponent,PersonalContactComponent,PrintComponent],
   templateUrl: './profile-data.component.html',
   styleUrl: './profile-data.component.scss'
 })

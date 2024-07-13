@@ -3,9 +3,14 @@ import *as data from '../../../shared/data/letter-box/letter-box';
 import { ComposeEmailComponent } from '../letter-modal/compose-email/compose-email.component';
 import { AddLabelComponent } from '../letter-modal/add-label/add-label.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+import { LetterboxUserComponent } from '../letterbox-user/letterbox-user.component';
 
 @Component({
   selector: 'app-letterbox-sidebar',
+  standalone: true,
+  imports: [CommonModule ,ClickOutsideDirective,LetterboxUserComponent],
   templateUrl: './letterbox-sidebar.component.html',
   styleUrl: './letterbox-sidebar.component.scss'
 })

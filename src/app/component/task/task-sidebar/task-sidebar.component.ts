@@ -3,9 +3,15 @@ import * as Data from '../../../shared/data/tasks/task-list';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddtaskTagComponent } from '../task-modal/addtask-tag/addtask-tag.component';
 import { NewTaskComponent } from '../task-modal/new-task/new-task.component';
+import { CommonModule } from '@angular/common';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+import { AllTaskComponent } from '../all-task/all-task.component';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-task-sidebar',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective,AllTaskComponent,FeathericonComponent],
   templateUrl: './task-sidebar.component.html',
   styleUrl: './task-sidebar.component.scss'
 })

@@ -1,10 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { galleryGridData } from '../../../shared/data/gallery/gallery-grid';
-import { Lightbox } from 'ng-gallery/lightbox';
+import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
 import { Gallery, GalleryItem, ImageItem, ImageSize, ThumbnailsPosition } from 'ng-gallery';
+import { GalleryModule } from 'ng-gallery';
 
 @Component({
   selector: 'app-gallery-grid',
+  standalone: true,
+  imports: [CommonModule, LightboxModule, GalleryModule],
   templateUrl: './gallery-grid.component.html',
   styleUrl: './gallery-grid.component.scss'
 })

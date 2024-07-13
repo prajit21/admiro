@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { Project, ProjectList } from '../../../shared/data/project/project-list';
+import { CommonModule } from '@angular/common';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-project-list',
+  standalone: true,
+  imports: [CommonModule ,FeathericonComponent ,RouterModule],
   templateUrl: './project-list.component.html',
   styleUrl: './project-list.component.scss'
 })

@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-description-tab',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './description-tab.component.html',
   styleUrl: './description-tab.component.scss'
 })

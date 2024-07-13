@@ -1,8 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Chats, Contacts } from '../../../shared/data/chat/chat';
+import { ContactSearchComponent } from './contact-search/contact-search.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-contact-chat-tab',
+  standalone: true,
+  imports: [CommonModule,ContactSearchComponent,NgbModule,FeathericonComponent],
   templateUrl: './contact-chat-tab.component.html',
   styleUrl: './contact-chat-tab.component.scss'
 })

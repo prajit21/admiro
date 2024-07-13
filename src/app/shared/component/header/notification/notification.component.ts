@@ -1,7 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
   selector: 'app-notification',
+  standalone: true,
+  imports: [CommonModule,RouterModule,ClickOutsideDirective],
   templateUrl: './notification.component.html',
   styleUrl: './notification.component.scss'
 })

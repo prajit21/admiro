@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Learningchart } from '../../../../shared/data/dashboard/education/education-chart';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-learning-chart',
+  standalone: true,
+  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
   templateUrl: './learning-chart.component.html',
   styleUrl: './learning-chart.component.scss'
 })

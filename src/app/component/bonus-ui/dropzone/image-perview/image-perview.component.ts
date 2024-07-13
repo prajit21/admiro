@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
   selector: 'app-image-perview',
+  standalone: true,
+  imports: [CommonModule,DropzoneModule],
   templateUrl: './image-perview.component.html',
   styleUrl: './image-perview.component.scss'
 })

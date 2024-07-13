@@ -1,9 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { featuredTutorial } from '../../../shared/data/faq/faq';
 
 @Component({
   selector: 'app-featured-tutorials',
+  standalone: true,
+  imports: [CommonModule, NgbModule],
   templateUrl: './featured-tutorials.component.html',
   styleUrl: './featured-tutorials.component.scss'
 })

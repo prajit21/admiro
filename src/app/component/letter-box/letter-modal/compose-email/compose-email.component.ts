@@ -1,10 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
   selector: 'app-compose-email',
+  standalone: true,
+  imports: [CommonModule ,AngularEditorModule ,FormsModule ,ReactiveFormsModule],
   templateUrl: './compose-email.component.html',
   styleUrl: './compose-email.component.scss'
 })

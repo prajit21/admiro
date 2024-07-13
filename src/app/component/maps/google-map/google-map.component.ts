@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { Component, ViewChild } from '@angular/core';
-import { GoogleMap } from '@angular/google-maps';
+import { GoogleMap, GoogleMapsModule } from '@angular/google-maps';
 
 @Component({
   selector: 'app-google-map',
+  standalone: true,
+  imports: [CommonModule,GoogleMapsModule,HttpClientModule],
   templateUrl: './google-map.component.html',
   styleUrl: './google-map.component.scss'
 })

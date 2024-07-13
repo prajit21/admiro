@@ -16,7 +16,6 @@ import {
   ApexAnnotations,
   ApexGrid
 } from "ng-apexcharts";
-import { Width } from "ngx-owl-carousel-o/lib/services/carousel.service";
 
 
 export type ChartOptions = {

@@ -1,8 +1,12 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import * as Data from '../../../shared/data/tasks/task-list';
+import { CommonModule } from '@angular/common';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-all-task',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent],
   templateUrl: './all-task.component.html',
   styleUrl: './all-task.component.scss'
 })

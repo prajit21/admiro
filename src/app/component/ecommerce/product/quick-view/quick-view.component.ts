@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Products } from '../../../../shared/model/product.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-quick-view',
+  standalone: true,
+  imports: [CommonModule,RouterModule],
   templateUrl: './quick-view.component.html',
   styleUrl: './quick-view.component.scss'
 })

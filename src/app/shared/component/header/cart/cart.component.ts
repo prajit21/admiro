@@ -1,4 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FeathericonComponent } from '../../feathericon/feathericon.component';
+import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 interface cartitem {
 	class: string;
@@ -38,6 +42,8 @@ export const carts:cartitem[] = [
 
 @Component({
   selector: 'app-cart',
+  standalone: true,
+  imports: [CommonModule,RouterModule,FeathericonComponent,ClickOutsideDirective],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })

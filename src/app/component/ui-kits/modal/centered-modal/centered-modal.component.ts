@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-centered-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './centered-modal.component.html',
   styleUrl: './centered-modal.component.scss'
 })

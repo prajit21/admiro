@@ -1,7 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
+import { AdditionalOptionsComponent } from './additional-options/additional-options.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @Component({
   selector: 'app-advance',
+  standalone: true,
+  imports: [CommonModule,AdditionalOptionsComponent,InventoryComponent,ShippingComponent],
   templateUrl: './advance.component.html',
   styleUrl: './advance.component.scss'
 })

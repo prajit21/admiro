@@ -443,6 +443,11 @@ header {
                     top: 11px;
                 }
             }
+            .Typeahead-menu {
+                @media (max-width: 991px) {
+                    top: 48px;
+                }
+            }
         }
         input {
             position: absolute;

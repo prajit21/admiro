@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { LatestActivity } from '../../../../shared/data/dashboard/default/default';
+import { CommonModule } from '@angular/common';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-letest-activity',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective,RouterModule],
   templateUrl: './letest-activity.component.html',
   styleUrl: './letest-activity.component.scss'
 })

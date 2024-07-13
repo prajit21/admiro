@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import { topUser } from '../../../../shared/data/dashboard/default/default';
+import { CommonModule } from '@angular/common';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-top-users',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './top-users.component.html',
   styleUrl: './top-users.component.scss'
 })

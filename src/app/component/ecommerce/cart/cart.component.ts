@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { cartItem } from '../../../shared/data/ecommerce/cart';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-cart',
+  standalone: true,
+  imports: [CommonModule,RouterModule,FeathericonComponent],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })

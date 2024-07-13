@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NoticeBoard } from '../../../../shared/data/dashboard/education/education';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-notice-board',
+  standalone: true,
+  imports: [CommonModule,ClickOutsideDirective],
   templateUrl: './notice-board.component.html',
   styleUrl: './notice-board.component.scss'
 })

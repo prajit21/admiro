@@ -1,14 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef, ViewChild } from '@angular/core';
-import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal, ModalDismissReasons, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import * as data from "../../../../shared/data/contacts/all-contact";
 
 @Component({
   selector: 'app-print',
+  standalone: true,
+  imports: [CommonModule,NgbModule],
+  providers: [NgbActiveModal],
   templateUrl: './print.component.html',
   styleUrl: './print.component.scss'
 })
 export class PrintComponent {
-
 
   public closeResult: string;
   public modalOpen: boolean = false;

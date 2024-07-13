@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Editor } from 'ngx-editor';
+import { FormsModule } from '@angular/forms';
+import { Editor, NgxEditorModule } from 'ngx-editor';
 
 @Component({
   selector: 'app-ngx-editor',
+  standalone: true,
+  imports: [CommonModule,FormsModule,NgxEditorModule],
   templateUrl: './ngx-editor.component.html',
   styleUrl: './ngx-editor.component.scss'
 })
@@ -20,6 +24,5 @@ export class NgxEditorComponent {
   ngOnDestroy(): void {
     this.editor.destroy();
   }
-
 
 }

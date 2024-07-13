@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-multiple-collapse-accordion',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './multiple-collapse-accordion.component.html',
   styleUrl: './multiple-collapse-accordion.component.scss'
 })

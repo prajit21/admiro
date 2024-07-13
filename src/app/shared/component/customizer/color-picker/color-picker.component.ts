@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-color-picker',
+  standalone: true,
+  imports: [CommonModule,FormsModule],
   templateUrl: './color-picker.component.html',
   styleUrl: './color-picker.component.scss'
 })

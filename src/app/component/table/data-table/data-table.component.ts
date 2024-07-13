@@ -1,13 +1,17 @@
 import { Component, QueryList, ViewChildren } from '@angular/core';
-import { DecimalPipe } from '@angular/common';
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { Observable } from 'rxjs';
 import { TableService } from '../../../shared/services/table.service';
 import { supportDB } from '../../../shared/interface/support';
 import { NgbdSortableHeader, SortEvent } from '../../../shared/directives/sortable.directive';
 import { SUPPORTDB } from '../../../shared/data/table/SupportTdb';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-data-table',
+  standalone: true,
+  imports: [CommonModule, FormsModule, NgbdSortableHeader, ReactiveFormsModule, NgbModule],
   templateUrl: './data-table.component.html',
   styleUrl: './data-table.component.scss',
   providers: [TableService, DecimalPipe],

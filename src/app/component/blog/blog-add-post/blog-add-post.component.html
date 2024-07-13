@@ -53,7 +53,7 @@
                     </form>
                     <form class="dropzone custom-dropzone customize-dropzone">
                         <div class="dropzone-wrapper">
-                            <dropzone [config]="Config" (error)="onUploadError($event)"
+                            <dropzone [config]="Config"  [message]="text" (error)="onUploadError($event)"
                                 (success)="onUploadSuccess($event)"></dropzone>
                         </div>
                     </form>

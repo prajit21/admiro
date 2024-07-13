@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Options } from 'ngx-slider-v2';
+import { NgxSliderModule, Options } from 'ngx-slider-v2';
 
 @Component({
   selector: 'app-prettify-number',
+  standalone: true,
+  imports: [CommonModule,NgxSliderModule],
   templateUrl: './prettify-number.component.html',
   styleUrl: './prettify-number.component.scss'
 })

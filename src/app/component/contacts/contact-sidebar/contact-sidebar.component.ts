@@ -1,11 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, SimpleChanges } from '@angular/core';
 import * as data from '../../../shared/data/contacts/all-contact';
 import { AddCategoryComponent } from '../contact-modal/add-category/add-category.component';
 import { NewContactComponent } from '../contact-modal/new-contact/new-contact.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
+import { ContactDetailsComponent } from '../contact-details/contact-details.component';
 
 @Component({
   selector: 'app-contact-sidebar',
+  standalone: true,
+  imports: [CommonModule, ClickOutsideDirective, FeathericonComponent, ContactDetailsComponent],
   templateUrl: './contact-sidebar.component.html',
   styleUrl: './contact-sidebar.component.scss'
 })

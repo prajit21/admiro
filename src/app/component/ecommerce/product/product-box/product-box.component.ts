@@ -1,12 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { ProductService } from '../../../../shared/services/ecommerce/product.service';
 import { Products } from '../../../../shared/model/product.model';
-import { NgbModal, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { ProductBoxFilterService } from '../../../../shared/services/ecommerce/product-box-filter.service';
 import { QuickViewComponent } from '../quick-view/quick-view.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product-box',
+  standalone: true,
+  imports: [CommonModule,RouterModule,NgbModule],
   templateUrl: './product-box.component.html',
   styleUrl: './product-box.component.scss'
 })

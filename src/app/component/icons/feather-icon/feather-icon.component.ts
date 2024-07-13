@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import { allIcon } from '../../../shared/data/icons/thimify';
+import { CommonModule } from '@angular/common';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-feather-icon',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent],
   templateUrl: './feather-icon.component.html',
   styleUrl: './feather-icon.component.scss'
 })

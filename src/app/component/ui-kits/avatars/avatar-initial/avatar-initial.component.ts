@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AvatarInitial } from '../../../../shared/data/ui-kits/avavtar';
 
 @Component({
   selector: 'app-avatar-initial',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './avatar-initial.component.html',
   styleUrl: './avatar-initial.component.scss'
 })

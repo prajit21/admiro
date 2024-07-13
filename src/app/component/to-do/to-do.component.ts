@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 import * as data from '../../shared/data/todo/todo';
+import { CommonModule } from '@angular/common';
+import { TodoFilterComponent } from './todo-filter/todo-filter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 @Component({
   selector: 'app-to-do',
+  standalone: true,
+  imports: [CommonModule, TodoFilterComponent, FormsModule, ReactiveFormsModule, NgbModule],
   templateUrl: './to-do.component.html',
   styleUrl: './to-do.component.scss'
 })

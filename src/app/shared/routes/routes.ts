@@ -8,7 +8,7 @@ export const dashData: Routes = [
             breadcrumb: "Dashboard",
 
         },
-        loadChildren: () => import('../../component/dashboard/dashboard.module').then(m => m.DashboardModule)
+        loadChildren: () => import('../../../app/component/dashboard/dashboard.routes').then(r => r.dashboard)
     },
     {
         path: 'widgets',
@@ -17,7 +17,7 @@ export const dashData: Routes = [
             breadcrumb: "Widgets",
 
         },
-        loadChildren: () => import('../../component/widgets/widgets.module').then(m => m.WidgetsModule)
+        loadChildren: () => import('../../../app/component/widgets/widgets.routes').then(r => r.widgets)
     },
     {
         path: 'project',
@@ -26,22 +26,23 @@ export const dashData: Routes = [
             breadcrumb: "Project",
 
         },
-        loadChildren: () => import('../../component/project/project.module').then(m => m.ProjectModule)
+        loadChildren: () => import('../../../app/component/project/project.routes').then(r => r.Project)
     },
     {
         path: 'file-manager',
         data: {
             title: "File manager",
-            breadcrumb: "Apps"
+            breadcrumb: "File manager"
         },
-        loadChildren: () => import('../../component/file-manager/file-manager.module').then(m => m.FileManagerModule),
+        loadChildren: () => import('../../../app/component/file-manager/file-manager.routes').then(r => r.FileManager)
     },
     {
         path: 'ecommerce',
         data: {
+            title: "Ecommerce",
             breadcrumb: "Ecommerce"
         },
-        loadChildren: () => import('../../component/ecommerce/ecommerce.module').then(m => m.EcommerceModule),
+        loadChildren: () => import('../../component/ecommerce/ecommerce.routes').then(r => r.Ecommerce)
     },
     {
         path: 'invoice',
@@ -49,7 +50,7 @@ export const dashData: Routes = [
             title: "Invoice",
             breadcrumb: "Ecommerce"
         },
-        loadChildren: () => import('../../component/ecommerce/invoice/invoice.module').then(m => m.InvoiceModule),
+        loadChildren: () => import('../../component/ecommerce/invoice/invoice.routes').then(r => r.Invoice)
     },
     {
         path: 'letter-box',
@@ -57,15 +58,15 @@ export const dashData: Routes = [
             title: "Email",
             breadcrumb: "Email"
         },
-        loadChildren: () => import('../../component/letter-box/letter-box.module').then(m => m.LetterBoxModule),
+        loadChildren: () => import('../../component/letter-box/letter-box.routes').then(r => r.Email)
+
     },
     {
         path: 'chat',
         data: {
-            title: "Ecommerce",
-            breadcrumb: "Ecommerce"
+            breadcrumb: "chat"
         },
-        loadChildren: () => import('../../component/chat/chat.module').then(m => m.ChatModule),
+        loadChildren: () => import('../../component/chat/chat.routes').then(r => r.Chat)
     },
     {
         path: 'user',
@@ -73,57 +74,58 @@ export const dashData: Routes = [
             title: "User Profile",
             breadcrumb: "User"
         },
-        loadChildren: () => import('../../component/user/user.module').then(m => m.UserModule),
+        loadChildren: () => import('../../component/user/user.routes').then(r => r.User)
     },
     {
         path: 'bookmarks',
         data: {
-            title: "Bookmarks",
-            breadcrumb: "Apps"
+            title: "Bookmark",
+            breadcrumb: "App"
         },
-        loadChildren: () => import('../../component/bookmarks/bookmarks.module').then(m =>m.BookmarksModule),
+        loadChildren: () => import('../../component/bookmarks/bookmarks.routes').then(r => r.Bookmarks)
     },
     {
         path: 'contacts',
         data: {
-            breadcrumb: 'Apps'
+            title: "Contacts",
+            breadcrumb: "App"
         },
-        loadChildren: () => import('../../component/contacts/contacts.module').then(m => m.ContactsModule),
-    },
-    {
-        path: 'calender',
-        data: {
-            breadcrumb: 'Apps'
-        },
-        loadChildren: () => import('../../component/calender/calender.module').then(m => m.CalenderModule),
+        loadChildren: () => import('../../component/contacts/contacts.routes').then(r => r.Contact)
     },
     {
         path: 'task',
         data: {
             breadcrumb: 'Apps'
         },
-        loadChildren: () => import('../../component/task/task.module').then(m => m.TaskModule),
+        loadChildren: () => import('../../component/task/tasks.routes').then(r => r.Tasks),
+    },
+    {
+        path: 'calender',
+        data: {
+            breadcrumb: 'Apps'
+        },
+        loadChildren: () => import('../../component/calender/calender.routes').then(r => r.calendar),
     },
     {
         path: 'social-app',
         data: {
             breadcrumb: 'Apps'
         },
-        loadChildren: () => import('../../component/social-app/social-app.module').then(m => m.SocialAppModule),
+        loadChildren: () => import('../../component/social-app/soical.routes').then(r => r.SoicalApp),
     },
     {
         path: 'todo',
         data: {
             breadcrumb: 'Apps'
         },
-        loadChildren: () => import('../../component/to-do/to-do.module').then(m => m.ToDoModule),
+        loadChildren: () => import('../../component/to-do/todo.routes').then(r => r.Todo),
     },
     {
         path: 'search-pages',
         data: {
             breadcrumb: 'Search Pages'
         },
-        loadChildren: () => import('../../component/search-result/search-result.module').then(m => m.SearchResultModule),
+        loadChildren: () => import('../../component/search-result/search-result.routes').then(r => r.Search),
     },
     {
         path: 'buttons',
@@ -132,7 +134,7 @@ export const dashData: Routes = [
             breadcrumb: "Buttons",
 
         },
-        loadChildren: () => import('../../component/buttons/buttons.module').then(m => m.ButtonsModule)
+        loadChildren: () => import('../../component/buttons/buttons.routes').then(r => r.Buttons),
     },
     {
         path: 'ui-kits',
@@ -141,7 +143,7 @@ export const dashData: Routes = [
             breadcrumb: "Ui-kits",
 
         },
-        loadChildren: () => import('../../component/ui-kits/ui-kits.module').then(m => m.UiKitsModule)
+        loadChildren: () => import('../../component/ui-kits/ui-kits.routes').then(r => r.UiKits),
     },
     {
         path: 'bonus-ui',
@@ -149,7 +151,7 @@ export const dashData: Routes = [
             title: "Bonus Ui",
             breadcrumb: "Bonus Ui",
         },
-        loadChildren: () => import('../../component/bonus-ui/bonus-ui.module').then(m => m.BonusUiModule)
+        loadChildren: () => import('../../component/bonus-ui/bonus-ui.routes').then(r => r.BonusUi),
     },
     {
         path: 'icons',
@@ -158,35 +160,36 @@ export const dashData: Routes = [
             breadcrumb: "Icons",
 
         },
-        loadChildren: () => import('../../component/icons/icons.module').then(m => m.IconsModule)
+        loadChildren: () => import('../../component/icons/icons.routes').then(r => r.Icons),
     },
     {
         path: 'chart',
         data: {
-            breadcrumb: "Chats"
+            title: "Charts",
+            breadcrumb: "Charts",
         },
-        loadChildren: () => import('../../component/charts/charts.module').then(m => m.ChartsModule),
+        loadChildren: () => import('../../component/charts/charts.routes').then(r => r.Charts),
     },
     {
-        path: 'form-controls',
+        path: 'forms/form-controls',
         data: {
-            breadcrumb: "Form Controls"
+            breadcrumb: 'Form Controls'
         },
-        loadChildren: () => import('../../component/form-controls/form-controls.module').then(m => m.FormControlsModule),
+        loadChildren: () => import('../../component/forms/form-controls/form-controls.routes').then(r => r.formContols),
     },
     {
-        path: 'form-widgets',
+        path: 'forms/form-widgets',
         data: {
-            breadcrumb: "Form Widgets"
+            breadcrumb: 'Form Widgets'
         },
-        loadChildren: () => import('../../component/form-widgets/form-widgets.module').then(m => m.FormWidgetsModule),
+        loadChildren: () => import('../../component//forms/form-widgets/form-widgets.routes').then(r => r.formWidgets),
     },
     {
         path: 'table/bootstrap-tables',
         data: {
             breadcrumb: 'Table'
         },
-        loadChildren: () => import('../../component/table/bootstrap-tables/bootstrap-tables.module').then(m => m.BootstrapTablesModule),
+        loadChildren: () => import('../../component/table/bootstrap-tables/bootstrap.routes').then(r => r.bootstrapTables),
     },
     {
         path: 'table/datatable',
@@ -194,76 +197,79 @@ export const dashData: Routes = [
             title: "Data Table",
             breadcrumb: "Data Table",
         },
-        loadChildren: () => import('../../component/table/data-table/data-table.module').then(m => m.DataTableModule),
+        loadChildren: () => import('../../component/table/data-table/data-table.routes').then(r => r.DataTable),
     },
     {
         path: 'sample-page',
         data: {
-            breadcrumb: 'Pages'
+            title: "Sample Page",
+            breadcrumb: "Sample Page",
         },
-        loadChildren: () => import('../../component/sample-page/sample-page.module').then(m => m.SamplePageModule),
+        loadChildren: () => import('../../component/sample-page/sample-page.routes').then(r => r.SamplePage),
     },
     {
         path: 'gallary',
         data: {
             breadcrumb: 'Gallery'
         },
-        loadChildren: () => import('../../component/gallery/gallery.module').then(m => m.GalleryModule),
+        loadChildren: () => import('../../component/gallery/gallery.routes').then(r => r.Gallery),
     },
     {
         path: 'blog',
         data: {
             breadcrumb: 'Blog'
         },
-        loadChildren: () => import('../../component/blog/blog.module').then(m => m.BlogModule),
+        loadChildren: () => import('../../component/blog/blog.routes').then(r => r.Blog),
     },
     {
         path: 'faq',
         data: {
             breadcrumb: 'FAQ'
         },
-        loadChildren: () => import('../../component/faq/faq.module').then(m => m.FaqModule),
+        loadChildren: () => import('../../component/faq/faq.routes').then(r => r.Faq),
     },
     {
         path: 'job',
         data: {
             breadcrumb: 'Job Search'
         },
-        loadChildren: () => import('../../component/job-search/job-search.module').then(m => m.JobSearchModule),
-    }, 
+        loadChildren: () => import('../../component/job-search/job-search.routes').then(r => r.JobSearch),
+    },
     {
         path: 'learning',
         data: {
             breadcrumb: 'Learning'
         },
-        loadChildren: () => import('../../component/learning/learning.module').then(m => m.LearningModule),
+        loadChildren: () => import('../../component/learning/learning.routes').then(r => r.Learning),
     },
     {
         path: 'maps',
         data: {
             breadcrumb: 'Maps'
         },
-        loadChildren: () => import('../../component/maps/maps.module').then(m => m.MapsModule),
+        loadChildren: () => import('../../component/maps/maps.routes').then(r => r.Maps),
     },
     {
         path: 'editors',
         data: {
             breadcrumb: 'Editors'
         },
-        loadChildren: () => import('../../component/editors/editors.module').then(m => m.EditorsModule),
+        loadChildren: () => import('../../component/editors/editor.routes').then(r => r.Editor),
     },
     {
         path: 'knowledgebase',
         data: {
+            title:'Knowledgebase',
             breadcrumb: 'knowledgebase'
         },
-        loadChildren: () => import('../../component/knowledgebase/knowledgebase.module').then(m => m.KnowledgebaseModule),
+        loadChildren: () => import('../../component/knowledgebase/knowlegebase.routes').then(r => r.Knowledgebase),
     },
     {
         path: 'support-ticket',
         data: {
+            title: "Support Ticket",
             breadcrumb: 'Apps'
         },
-        loadChildren: () => import('../../component/support-ticket/support-ticket.module').then(m => m.SupportTicketModule),
-    }
+        loadChildren: () => import('../../component/support-ticket/support-ticket.routes').then(r => r.SupportTicket),
+    },
 ]

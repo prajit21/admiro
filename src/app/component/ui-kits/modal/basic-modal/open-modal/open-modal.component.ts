@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-open-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './open-modal.component.html',
   styleUrl: './open-modal.component.scss'
 })

@@ -1,9 +1,12 @@
 import { Component, TemplateRef } from '@angular/core';
 import { ModalData } from '../../../../../shared/data/ui-kits/modal';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fullscreen-simple-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './fullscreen-simple-modal.component.html',
   styleUrl: './fullscreen-simple-modal.component.scss'
 })

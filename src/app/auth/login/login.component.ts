@@ -1,10 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
+
+import { FeathericonComponent } from '../../shared/component/feathericon/feathericon.component';
+;
 
 @Component({
   selector: 'app-login',
+  standalone: true,
+  imports: [RouterModule, FeathericonComponent, FormsModule, ReactiveFormsModule,  CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
@@ -14,7 +19,7 @@ export class LoginComponent {
   public loginForm: FormGroup;
 
 
-  constructor(private fb: FormBuilder, public router: Router ,private toast: ToastrService) {
+  constructor(private fb: FormBuilder, public router: Router) {
 
     const userData = localStorage.getItem('user');
     if (userData?.length != null) {
@@ -42,12 +47,6 @@ export class LoginComponent {
 
       localStorage.setItem("user", JSON.stringify(user));
       this.router.navigate(["/dashboard/default"]);
-      this.toast.success("Login Success...!", '',
-        {
-          positionClass: 'toast-top-right',
-          closeButton: true,
-          timeOut: 2000
-        })
     }
   }
 

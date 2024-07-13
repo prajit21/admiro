@@ -1,15 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 @Component({
   selector: 'app-fullscreen-md-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './fullscreen-md-modal.component.html',
   styleUrl: './fullscreen-md-modal.component.scss'
 })
 export class FullscreenMdModalComponent {
-
-
+  
   constructor(private modalService: NgbModal) { }
 
   FullscreenbelowMdModal(FullscreenbelowMdContent: TemplateRef<NgbModal>) {

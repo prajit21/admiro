@@ -1,8 +1,11 @@
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import { FeathericonComponent } from '../feathericon/feathericon.component';
 
 @Component({
   selector: 'app-tap-to-top',
+  standalone: true,
+  imports: [CommonModule, FeathericonComponent],
   templateUrl: './tap-to-top.component.html',
   styleUrl: './tap-to-top.component.scss'
 })

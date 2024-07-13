@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as L from 'leaflet';
+import { CommonModule } from '@angular/common';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @Component({
   selector: 'app-leaflet-map',
+  standalone: true,
+  imports: [CommonModule,LeafletModule],
   templateUrl: './leaflet-map.component.html',
   styleUrl: './leaflet-map.component.scss'
 })

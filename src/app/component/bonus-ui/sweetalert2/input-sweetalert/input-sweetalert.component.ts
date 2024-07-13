@@ -1,9 +1,11 @@
-import { Text } from '@angular/compiler';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-input-sweetalert',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './input-sweetalert.component.html',
   styleUrl: './input-sweetalert.component.scss'
 })

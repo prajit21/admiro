@@ -1,9 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { LayoutService } from '../../services/layout.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ColorPickerComponent } from './color-picker/color-picker.component';
+import { LayoutTypeComponent } from './layout-type/layout-type.component';
+import { SidebarIconComponent } from './sidebar-icon/sidebar-icon.component';
+import { SidebarTypeComponent } from './sidebar-type/sidebar-type.component';
+import { ThemeModeComponent } from './theme-mode/theme-mode.component';
 
 @Component({
   selector: 'app-customizer',
+  standalone: true,
+  imports: [CommonModule,ColorPickerComponent,LayoutTypeComponent,SidebarIconComponent,SidebarTypeComponent,ThemeModeComponent],
   templateUrl: './customizer.component.html',
   styleUrl: './customizer.component.scss'
 })

@@ -1,8 +1,15 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import * as data from '../../../shared/data/letter-box/letter-box';
+import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InterviewMailComponent } from './interview-mail/interview-mail.component';
+import { LetterTopSectionComponent } from '../letter-top-section/letter-top-section.component';
+import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-letterbox-user',
+  standalone: true,
+  imports: [CommonModule, NgbModule, InterviewMailComponent, LetterTopSectionComponent,FeathericonComponent],
   templateUrl: './letterbox-user.component.html',
   styleUrl: './letterbox-user.component.scss'
 })

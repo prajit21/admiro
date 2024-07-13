@@ -1,8 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavmenuService, Menu } from '../../../services/navmenu.service';
+import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ClickOutsideDirective } from '../../../directives/outside.directive';
+import { FeathericonComponent } from '../../feathericon/feathericon.component';
 
 @Component({
   selector: 'app-search',
+  standalone: true,
+  imports: [CommonModule, SvgIconComponent, FormsModule, ReactiveFormsModule,
+    RouterModule, ClickOutsideDirective, FeathericonComponent],
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss'
 })

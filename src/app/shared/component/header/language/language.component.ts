@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { NavmenuService } from '../../../../shared/services/navmenu.service';
 
@@ -11,13 +12,14 @@ interface selectedlanguage {
 
 @Component({
   selector: 'app-language',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './language.component.html',
   styleUrl: './language.component.scss'
 })
 export class LanguageComponent {
 
   public language: boolean = false;
-
 
   public languages: selectedlanguage[] = [{
     language: 'English',

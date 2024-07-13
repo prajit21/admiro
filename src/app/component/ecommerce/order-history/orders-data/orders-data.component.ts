@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ordersHistory } from '../../../../shared/data/ecommerce/orderhistory';
+import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
   selector: 'app-orders-data',
+  standalone: true,
+  imports: [CommonModule,FeathericonComponent],
   templateUrl: './orders-data.component.html',
   styleUrl: './orders-data.component.scss'
 })

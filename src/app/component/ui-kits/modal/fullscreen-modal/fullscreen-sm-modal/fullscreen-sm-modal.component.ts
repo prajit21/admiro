@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-fullscreen-sm-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './fullscreen-sm-modal.component.html',
   styleUrl: './fullscreen-sm-modal.component.scss'
 })

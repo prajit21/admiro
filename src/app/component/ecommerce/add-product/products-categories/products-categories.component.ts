@@ -1,10 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NewCategoiesComponent } from './new-categoies/new-categoies.component';
+import { TagInputModule } from 'ngx-chips';
 
 @Component({
   selector: 'app-products-categories',
+  standalone: true,
+  imports: [CommonModule,FormsModule,ReactiveFormsModule,NewCategoiesComponent,TagInputModule],
   templateUrl: './products-categories.component.html',
   styleUrl: './products-categories.component.scss'
 })

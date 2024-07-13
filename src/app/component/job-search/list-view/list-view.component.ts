@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { jobcardsListView } from '../../../shared/data/job-search/job-search';
-import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { JobFilterComponent } from '../job-filter/job-filter.component';
 
 @Component({
   selector: 'app-list-view',
+  standalone: true,
+  imports: [CommonModule,NgbModule,JobFilterComponent],
   templateUrl: './list-view.component.html',
   styleUrl: './list-view.component.scss'
 })

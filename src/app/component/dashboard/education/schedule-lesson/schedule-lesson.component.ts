@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
   selector: 'app-schedule-lesson',
+  standalone: true,
+  imports: [CommonModule,NgbModule,ClickOutsideDirective],
   templateUrl: './schedule-lesson.component.html',
   styleUrl: './schedule-lesson.component.scss'
 })

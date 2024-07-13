@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
-import { NgxMasonryComponent, NgxMasonryOptions } from 'ngx-masonry';
+import { LightboxModule } from 'ng-gallery/lightbox';
+import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
   selector: 'app-masonry-with-desc',
+  standalone: true,
+  imports: [CommonModule,NgxMasonryModule,LightboxModule],
   templateUrl: './masonry-with-desc.component.html',
   styleUrl: './masonry-with-desc.component.scss'
 })

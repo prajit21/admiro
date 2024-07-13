@@ -1,11 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { filterData } from '../../../../shared/data/ecommerce/product';
 import { BrandCheckbox, CategoryCheckbox } from '../../../../shared/data/ecommerce/product';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Options } from 'ngx-slider-v2';
+import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { NgxSliderModule, Options } from 'ngx-slider-v2';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-filter',
+  standalone: true,
+  imports: [CommonModule,CarouselModule,NgxSliderModule,FormsModule],
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.scss'
 })

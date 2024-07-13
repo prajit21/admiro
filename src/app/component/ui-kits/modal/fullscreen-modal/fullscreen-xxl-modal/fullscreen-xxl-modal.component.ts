@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-fullscreen-xxl-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './fullscreen-xxl-modal.component.html',
   styleUrl: './fullscreen-xxl-modal.component.scss'
 })

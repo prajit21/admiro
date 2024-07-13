@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-selling-price',
+  standalone: true,
+  imports: [CommonModule,FormsModule,ReactiveFormsModule],
   templateUrl: './selling-price.component.html',
   styleUrl: './selling-price.component.scss'
 })
