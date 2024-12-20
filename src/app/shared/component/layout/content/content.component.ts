@@ -6,15 +6,13 @@ import { HeaderComponent } from '../../header/header.component';
 import { SidebarComponent } from '../../sidebar/sidebar.component';
 import { BreadcrumbComponent } from '../../breadcrumb/breadcrumb.component';
 import { CustomizerComponent } from '../../customizer/customizer.component';
-import { FeathericonComponent } from '../../feathericon/feathericon.component';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [CommonModule ,HeaderComponent ,SidebarComponent, BreadcrumbComponent ,CustomizerComponent ,
-    FeathericonComponent ,RouterOutlet ,FooterComponent],
+  imports: [CommonModule ,HeaderComponent ,SidebarComponent, BreadcrumbComponent ,CustomizerComponent,RouterOutlet ,FooterComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })

@@ -4,12 +4,11 @@ import { ActivatedRoute, Router, NavigationEnd, PRIMARY_OUTLET, RouterModule } f
 import { filter } from 'rxjs/operators';
 import { map } from 'rxjs';
 import { NavmenuService } from '../../services/navmenu.service';
-import { FeathericonComponent } from '../feathericon/feathericon.component';
 
 @Component({
   selector: 'app-breadcrumb',
   standalone: true,
-  imports: [CommonModule, RouterModule,FeathericonComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.scss'
 })
