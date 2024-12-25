@@ -6,18 +6,18 @@ import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 @Component({
   selector: 'app-products-gallery',
   standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule,DropzoneModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, DropzoneModule],
   templateUrl: './products-gallery.component.html',
   styleUrl: './products-gallery.component.scss'
 })
 export class ProductsGalleryComponent {
 
   public activeStep: number = 2;
-  public text =' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
+  public text = ' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
 
   @Output() activeSteps = new EventEmitter<number>();
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
 
   myForm = new FormGroup({
@@ -42,9 +42,7 @@ export class ProductsGalleryComponent {
 
   onUploadSuccess(args: DropzoneConfigInterface): void { }
 
-  
-
-    next(myForm: FormGroup) {
+  next(myForm: FormGroup) {
     const number = this.activeStep + 1;
     this.activeSteps.emit(number);
   }

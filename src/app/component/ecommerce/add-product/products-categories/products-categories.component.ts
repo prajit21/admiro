@@ -8,7 +8,7 @@ import { TagInputModule } from 'ngx-chips';
 @Component({
   selector: 'app-products-categories',
   standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule,NewCategoiesComponent,TagInputModule],
+  imports: [CommonModule,FormsModule,ReactiveFormsModule,TagInputModule],
   templateUrl: './products-categories.component.html',
   styleUrl: './products-categories.component.scss'
 })
