@@ -5,11 +5,10 @@ import { RouterModule } from '@angular/router';
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-cart',
-  standalone: true,
-  imports: [CommonModule,RouterModule,FeathericonComponent],
-  templateUrl: './cart.component.html',
-  styleUrl: './cart.component.scss'
+    selector: 'app-cart',
+    imports: [CommonModule, RouterModule, FeathericonComponent],
+    templateUrl: './cart.component.html',
+    styleUrl: './cart.component.scss'
 })
 export class CartComponent {
 

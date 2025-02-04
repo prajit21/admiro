@@ -4,11 +4,10 @@ import { FeathericonComponent } from '../../../shared/component/feathericon/feat
 import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-todo-filter',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent,ClickOutsideDirective],
-  templateUrl: './todo-filter.component.html',
-  styleUrl: './todo-filter.component.scss'
+    selector: 'app-todo-filter',
+    imports: [CommonModule, FeathericonComponent, ClickOutsideDirective],
+    templateUrl: './todo-filter.component.html',
+    styleUrl: './todo-filter.component.scss'
 })
 export class TodoFilterComponent {
 

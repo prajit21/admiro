@@ -13,13 +13,12 @@ import { ScrollableListsComponent } from './scrollable-lists/scrollable-lists.co
 import { TopCommonListsComponent } from './top-common-lists/top-common-lists.component';
 
 @Component({
-  selector: 'app-lists',
-  standalone: true,
-  imports: [CommonModule, CheckboxListsComponent, ContextualClassesComponent, CustomContentListsComponent
-    , DisabledListsComponent, HorizontalListsComponent, JavaScriptBehaviorComponent, NumbersBadgeListsComponent
-    , NumbersListsComponent, RadiosListsComponent, ScrollableListsComponent, TopCommonListsComponent],
-  templateUrl: './lists.component.html',
-  styleUrl: './lists.component.scss'
+    selector: 'app-lists',
+    imports: [CommonModule, CheckboxListsComponent, ContextualClassesComponent, CustomContentListsComponent,
+        DisabledListsComponent, HorizontalListsComponent, JavaScriptBehaviorComponent, NumbersBadgeListsComponent,
+        NumbersListsComponent, RadiosListsComponent, ScrollableListsComponent, TopCommonListsComponent],
+    templateUrl: './lists.component.html',
+    styleUrl: './lists.component.scss'
 })
 export class ListsComponent {
 

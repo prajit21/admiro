@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-categories',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './categories.component.html',
-  styleUrl: './categories.component.scss'
+    selector: 'app-categories',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './categories.component.html',
+    styleUrl: './categories.component.scss'
 })
 export class CategoriesComponent {
 

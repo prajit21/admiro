@@ -5,11 +5,10 @@ import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { JobFilterComponent } from '../job-filter/job-filter.component';
 
 @Component({
-  selector: 'app-list-view',
-  standalone: true,
-  imports: [CommonModule,NgbModule,JobFilterComponent],
-  templateUrl: './list-view.component.html',
-  styleUrl: './list-view.component.scss'
+    selector: 'app-list-view',
+    imports: [CommonModule, NgbModule, JobFilterComponent],
+    templateUrl: './list-view.component.html',
+    styleUrl: './list-view.component.scss'
 })
 export class ListViewComponent {
 

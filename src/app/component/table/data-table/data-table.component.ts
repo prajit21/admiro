@@ -9,12 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-data-table',
-  standalone: true,
-  imports: [CommonModule, FormsModule, NgbdSortableHeader, ReactiveFormsModule, NgbModule],
-  templateUrl: './data-table.component.html',
-  styleUrl: './data-table.component.scss',
-  providers: [TableService, DecimalPipe],
+    selector: 'app-data-table',
+    imports: [CommonModule, FormsModule, NgbdSortableHeader, ReactiveFormsModule, NgbModule],
+    templateUrl: './data-table.component.html',
+    styleUrl: './data-table.component.scss',
+    providers: [TableService, DecimalPipe]
 })
 export class DataTableComponent {
 

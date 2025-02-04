@@ -5,11 +5,10 @@ import { FeathericonComponent } from '../../../../shared/component/feathericon/f
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-find-cource',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent,NgbModule],
-  templateUrl: './find-cource.component.html',
-  styleUrl: './find-cource.component.scss'
+    selector: 'app-find-cource',
+    imports: [CommonModule, FeathericonComponent, NgbModule],
+    templateUrl: './find-cource.component.html',
+    styleUrl: './find-cource.component.scss'
 })
 export class FindCourceComponent {
 

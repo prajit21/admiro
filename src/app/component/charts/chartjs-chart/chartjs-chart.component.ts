@@ -8,12 +8,11 @@ import { ChartjsPolarChartComponent } from './chartjs-polar-chart/chartjs-polar-
 import { RadarGraphComponent } from './radar-graph/radar-graph.component';
 
 @Component({
-  selector: 'app-chartjs-chart',
-  standalone: true,
-  imports: [CommonModule, ChartjsBarChartComponent, ChartjsDoughnutChartComponent, ChartjsLineChartComponent
-    , ChartjsLineGraphComponent, ChartjsPolarChartComponent, RadarGraphComponent],
-  templateUrl: './chartjs-chart.component.html',
-  styleUrl: './chartjs-chart.component.scss'
+    selector: 'app-chartjs-chart',
+    imports: [CommonModule, ChartjsBarChartComponent, ChartjsDoughnutChartComponent, ChartjsLineChartComponent,
+        ChartjsLineGraphComponent, ChartjsPolarChartComponent, RadarGraphComponent],
+    templateUrl: './chartjs-chart.component.html',
+    styleUrl: './chartjs-chart.component.scss'
 })
 export class ChartjsChartComponent {
 

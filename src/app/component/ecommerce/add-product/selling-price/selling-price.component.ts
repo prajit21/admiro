@@ -3,11 +3,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-selling-price',
-  standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule],
-  templateUrl: './selling-price.component.html',
-  styleUrl: './selling-price.component.scss'
+    selector: 'app-selling-price',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './selling-price.component.html',
+    styleUrl: './selling-price.component.scss'
 })
 export class SellingPriceComponent {
 

@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { FeathericonComponent } from '../../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-variation-radio',
-  standalone: true,
-  imports: [CommonModule,FormsModule,FeathericonComponent],  
-  templateUrl: './variation-radio.component.html',
-  styleUrl: './variation-radio.component.scss'
+    selector: 'app-variation-radio',
+    imports: [CommonModule, FormsModule, FeathericonComponent],
+    templateUrl: './variation-radio.component.html',
+    styleUrl: './variation-radio.component.scss'
 })
 export class VariationRadioComponent {
 

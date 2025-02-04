@@ -4,11 +4,10 @@ import { LayoutService } from '../../../services/layout.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-layout-type',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './layout-type.component.html',
-  styleUrl: './layout-type.component.scss'
+    selector: 'app-layout-type',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './layout-type.component.html',
+    styleUrl: './layout-type.component.scss'
 })
 export class LayoutTypeComponent {
 

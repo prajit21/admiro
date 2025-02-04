@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-all-task',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './all-task.component.html',
-  styleUrl: './all-task.component.scss'
+    selector: 'app-all-task',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './all-task.component.html',
+    styleUrl: './all-task.component.scss'
 })
 export class AllTaskComponent {
 

@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-profile-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './profile-modal.component.html',
-  styleUrl: './profile-modal.component.scss'
+    selector: 'app-profile-modal',
+    imports: [CommonModule],
+    templateUrl: './profile-modal.component.html',
+    styleUrl: './profile-modal.component.scss'
 })
 export class ProfileModalComponent {
 

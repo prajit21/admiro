@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { CommonBorderDisplayComponent } from './common-border-display/common-border-display.component';
 
 @Component({
-  selector: 'app-border-displays',
-  standalone: true,
-  imports: [CommonModule,CommonBorderDisplayComponent],
-  templateUrl: './border-displays.component.html',
-  styleUrl: './border-displays.component.scss'
+    selector: 'app-border-displays',
+    imports: [CommonModule, CommonBorderDisplayComponent],
+    templateUrl: './border-displays.component.html',
+    styleUrl: './border-displays.component.scss'
 })
 export class BorderDisplaysComponent {
 

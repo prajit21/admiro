@@ -7,11 +7,10 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 import { ContactSearchComponent } from './contact-search/contact-search.component';
 
 @Component({
-  selector: 'app-contact-chat-tab',
-  standalone: true,
-  imports: [CommonModule, ContactSearchComponent, NgbModule, FeathericonComponent, ClickOutsideDirective],
-  templateUrl: './contact-chat-tab.component.html',
-  styleUrl: './contact-chat-tab.component.scss'
+    selector: 'app-contact-chat-tab',
+    imports: [CommonModule, ContactSearchComponent, NgbModule, FeathericonComponent, ClickOutsideDirective],
+    templateUrl: './contact-chat-tab.component.html',
+    styleUrl: './contact-chat-tab.component.scss'
 })
 export class ContactChatTabComponent {
 

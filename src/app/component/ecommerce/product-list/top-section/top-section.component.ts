@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-top-section',
-  standalone: true,
-  imports: [CommonModule,RouterModule,FeathericonComponent],
-  templateUrl: './top-section.component.html',
-  styleUrl: './top-section.component.scss'
+    selector: 'app-top-section',
+    imports: [CommonModule, RouterModule, FeathericonComponent],
+    templateUrl: './top-section.component.html',
+    styleUrl: './top-section.component.scss'
 })
 export class TopSectionComponent {
 

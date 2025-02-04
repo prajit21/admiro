@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons-with-prefix-postfix',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './buttons-with-prefix-postfix.component.html',
-  styleUrl: './buttons-with-prefix-postfix.component.scss'
+    selector: 'app-buttons-with-prefix-postfix',
+    imports: [CommonModule],
+    templateUrl: './buttons-with-prefix-postfix.component.html',
+    styleUrl: './buttons-with-prefix-postfix.component.scss'
 })
 export class ButtonsWithPrefixPostfixComponent {
 

@@ -4,11 +4,10 @@ import { commonImg, autoWidthoption } from '../../../../shared/data/bonus-ui/owl
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-auto-widht-example',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './auto-widht-example.component.html',
-  styleUrl: './auto-widht-example.component.scss'
+    selector: 'app-auto-widht-example',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './auto-widht-example.component.html',
+    styleUrl: './auto-widht-example.component.scss'
 })
 export class AutoWidhtExampleComponent {
 

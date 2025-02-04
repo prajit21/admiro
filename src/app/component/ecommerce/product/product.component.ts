@@ -7,11 +7,10 @@ import { FilterComponent } from './filter/filter.component';
 import { ProductBoxComponent } from './product-box/product-box.component';
 
 @Component({
-  selector: 'app-product',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent,ClickOutsideDirective,FilterComponent,ProductBoxComponent],
-  templateUrl: './product.component.html',
-  styleUrl: './product.component.scss'
+    selector: 'app-product',
+    imports: [CommonModule, FeathericonComponent, ClickOutsideDirective, FilterComponent, ProductBoxComponent],
+    templateUrl: './product.component.html',
+    styleUrl: './product.component.scss'
 })
 export class ProductComponent {
 

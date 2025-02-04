@@ -9,12 +9,11 @@ import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-sidebar',
-  standalone: true,
-  imports: [CommonModule, NgbModule, FeathericonComponent, SvgIconComponent,
-     RouterModule, TranslateModule],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+    selector: 'app-sidebar',
+    imports: [CommonModule, NgbModule, FeathericonComponent, SvgIconComponent,
+        RouterModule, TranslateModule],
+    templateUrl: './sidebar.component.html',
+    styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 

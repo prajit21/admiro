@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-new-task',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './new-task.component.html',
-  styleUrl: './new-task.component.scss'
+    selector: 'app-new-task',
+    imports: [CommonModule],
+    templateUrl: './new-task.component.html',
+    styleUrl: './new-task.component.scss'
 })
 export class NewTaskComponent {
 

@@ -6,12 +6,11 @@ import { LargeModalComponent } from './large-modal/large-modal.component';
 import { SmallModalComponent } from './small-modal/small-modal.component';
 
 @Component({
-  selector: 'app-sizes-modal',
-  standalone: true,
-  imports: [CommonModule, ExtraLargeModalComponent, FullScreenModalComponent, LargeModalComponent,
-    SmallModalComponent],
-  templateUrl: './sizes-modal.component.html',
-  styleUrl: './sizes-modal.component.scss'
+    selector: 'app-sizes-modal',
+    imports: [CommonModule, ExtraLargeModalComponent, FullScreenModalComponent, LargeModalComponent,
+        SmallModalComponent],
+    templateUrl: './sizes-modal.component.html',
+    styleUrl: './sizes-modal.component.scss'
 })
 export class SizesModalComponent {
 

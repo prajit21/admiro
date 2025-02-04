@@ -7,12 +7,11 @@ import { LatestPhotosComponent } from './latest-photos/latest-photos.component';
 import { ProfileIntroComponent } from './profile-intro/profile-intro.component';
 
 @Component({
-  selector: 'app-timeline-right',
-  standalone: true,
-  imports: [CommonModule,FollowersComponent,FollwingsComponent,FriendsProfileComponent,
-    LatestPhotosComponent,ProfileIntroComponent],
-  templateUrl: './timeline-right.component.html',
-  styleUrl: './timeline-right.component.scss'
+    selector: 'app-timeline-right',
+    imports: [CommonModule, FollowersComponent, FollwingsComponent, FriendsProfileComponent,
+        LatestPhotosComponent, ProfileIntroComponent],
+    templateUrl: './timeline-right.component.html',
+    styleUrl: './timeline-right.component.scss'
 })
 export class TimelineRightComponent {
 

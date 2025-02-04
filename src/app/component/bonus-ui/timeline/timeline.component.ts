@@ -7,12 +7,11 @@ import { TimelineChartComponent } from './timeline-chart/timeline-chart.componen
 import { VariationTimelineComponent } from './variation-timeline/variation-timeline.component';
 
 @Component({
-  selector: 'app-timeline',
-  standalone: true,
-  imports: [CommonModule, BasicTimelineComponent, HorizontalTimelineComponent, HoveringTimelineComponent
-    , TimelineChartComponent, VariationTimelineComponent],
-  templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.scss'
+    selector: 'app-timeline',
+    imports: [CommonModule, BasicTimelineComponent, HorizontalTimelineComponent, HoveringTimelineComponent,
+        TimelineChartComponent, VariationTimelineComponent],
+    templateUrl: './timeline.component.html',
+    styleUrl: './timeline.component.scss'
 })
 export class TimelineComponent {
 

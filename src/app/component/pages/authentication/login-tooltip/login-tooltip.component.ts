@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { CommonLoginFormComponent } from '../common-login-form/common-login-form.component';
 
 @Component({
-  selector: 'app-login-tooltip',
-  standalone: true,
-  imports: [CommonModule,RouterModule,CommonLoginFormComponent],
-  templateUrl: './login-tooltip.component.html',
-  styleUrl: './login-tooltip.component.scss'
+    selector: 'app-login-tooltip',
+    imports: [CommonModule, RouterModule, CommonLoginFormComponent],
+    templateUrl: './login-tooltip.component.html',
+    styleUrl: './login-tooltip.component.scss'
 })
 export class LoginTooltipComponent {
 

@@ -6,12 +6,11 @@ import { FriendsComponent } from '../friends/friends.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 
 @Component({
-  selector: 'app-soical-profile',
-  standalone: true,
-  imports: [CommonModule, AboutComponent, PhotosComponent, FriendsComponent, SoicalProfileComponent,
-    TimelineComponent],
-  templateUrl: './soical-profile.component.html',
-  styleUrl: './soical-profile.component.scss'
+    selector: 'app-soical-profile',
+    imports: [CommonModule, AboutComponent, PhotosComponent, FriendsComponent,
+        TimelineComponent],
+    templateUrl: './soical-profile.component.html',
+    styleUrl: './soical-profile.component.scss'
 })
 export class SoicalProfileComponent {
 

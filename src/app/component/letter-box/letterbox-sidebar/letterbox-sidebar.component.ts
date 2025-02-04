@@ -8,11 +8,10 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 import { LetterboxUserComponent } from '../letterbox-user/letterbox-user.component';
 
 @Component({
-  selector: 'app-letterbox-sidebar',
-  standalone: true,
-  imports: [CommonModule ,ClickOutsideDirective,LetterboxUserComponent],
-  templateUrl: './letterbox-sidebar.component.html',
-  styleUrl: './letterbox-sidebar.component.scss'
+    selector: 'app-letterbox-sidebar',
+    imports: [CommonModule, ClickOutsideDirective, LetterboxUserComponent],
+    templateUrl: './letterbox-sidebar.component.html',
+    styleUrl: './letterbox-sidebar.component.scss'
 })
 export class LetterboxSidebarComponent {
 

@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
-  selector: 'app-image-perview',
-  standalone: true,
-  imports: [CommonModule,DropzoneModule],
-  templateUrl: './image-perview.component.html',
-  styleUrl: './image-perview.component.scss'
+    selector: 'app-image-perview',
+    imports: [CommonModule, DropzoneModule],
+    templateUrl: './image-perview.component.html',
+    styleUrl: './image-perview.component.scss'
 })
 export class ImagePerviewComponent {
   

@@ -1,17 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { Dimensions, ImageCroppedEvent, ImageTransform } from 'ngx-image-cropper';
-import { ImageCropperModule } from 'ngx-image-cropper';
+import { Dimensions, ImageCroppedEvent, ImageCropperComponent, ImageTransform } from 'ngx-image-cropper';
 
 @Component({
-  selector: 'app-image-cropper',
-  standalone: true,
-  imports: [CommonModule,FormsModule,ImageCropperModule],
-  templateUrl: './image-cropper.component.html',
-  styleUrl: './image-cropper.component.scss'
+    selector: 'app-image-cropper',
+    imports: [ImageCropperComponent],
+    templateUrl: './image-cropper.component.html',
+    styleUrls: ['./image-cropper.component.scss']
 })
-export class ImageCropperComponent {
+export class ImageCropComponent {
 
   public imageChangedEvent: any = '';
   public croppedImage: string | null | undefined = '';
@@ -109,6 +105,5 @@ export class ImageCropperComponent {
       rotate: this.rotation
     };
   }
-
 
 }

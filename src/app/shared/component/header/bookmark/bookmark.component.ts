@@ -7,11 +7,10 @@ import { SvgIconComponent } from '../../svg-icon/svg-icon.component';
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
-  selector: 'app-bookmark',
-  standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule, SvgIconComponent, ClickOutsideDirective],
-  templateUrl: './bookmark.component.html',
-  styleUrl: './bookmark.component.scss'
+    selector: 'app-bookmark',
+    imports: [CommonModule, RouterModule, FormsModule, SvgIconComponent, ClickOutsideDirective],
+    templateUrl: './bookmark.component.html',
+    styleUrl: './bookmark.component.scss'
 })
 export class BookmarkComponent {
 

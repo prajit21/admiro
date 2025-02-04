@@ -5,11 +5,10 @@ import { Products } from '../../../../shared/model/product.model';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-quick-view',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './quick-view.component.html',
-  styleUrl: './quick-view.component.scss'
+    selector: 'app-quick-view',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './quick-view.component.html',
+    styleUrl: './quick-view.component.scss'
 })
 export class QuickViewComponent {
 

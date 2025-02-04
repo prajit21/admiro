@@ -4,11 +4,10 @@ import { ordersHistory } from '../../../../shared/data/ecommerce/orderhistory';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-orders-data',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './orders-data.component.html',
-  styleUrl: './orders-data.component.scss'
+    selector: 'app-orders-data',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './orders-data.component.html',
+    styleUrl: './orders-data.component.scss'
 })
 export class OrdersDataComponent {
 

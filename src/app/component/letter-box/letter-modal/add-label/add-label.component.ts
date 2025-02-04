@@ -4,11 +4,10 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-add-label',
-  standalone: true,
-  imports: [CommonModule ,FormsModule ,ReactiveFormsModule],
-  templateUrl: './add-label.component.html',
-  styleUrl: './add-label.component.scss'
+    selector: 'app-add-label',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './add-label.component.html',
+    styleUrl: './add-label.component.scss'
 })
 
 export class AddLabelComponent {

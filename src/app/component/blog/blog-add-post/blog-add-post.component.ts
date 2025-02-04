@@ -6,11 +6,10 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-blog-add-post',
-  standalone: true,
-  imports: [CommonModule, AngularEditorModule, FormsModule, DropzoneModule, NgSelectModule],
-  templateUrl: './blog-add-post.component.html',
-  styleUrl: './blog-add-post.component.scss'
+    selector: 'app-blog-add-post',
+    imports: [CommonModule, AngularEditorModule, FormsModule, DropzoneModule, NgSelectModule],
+    templateUrl: './blog-add-post.component.html',
+    styleUrl: './blog-add-post.component.scss'
 })
 export class BlogAddPostComponent {
 

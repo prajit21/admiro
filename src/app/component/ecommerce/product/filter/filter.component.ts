@@ -7,11 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
-  selector: 'app-filter',
-  standalone: true,
-  imports: [CommonModule,CarouselModule,NgxSliderModule,FormsModule],
-  templateUrl: './filter.component.html',
-  styleUrl: './filter.component.scss'
+    selector: 'app-filter',
+    imports: [CommonModule, CarouselModule, NgxSliderModule, FormsModule],
+    templateUrl: './filter.component.html',
+    styleUrl: './filter.component.scss'
 })
 export class FilterComponent {
 

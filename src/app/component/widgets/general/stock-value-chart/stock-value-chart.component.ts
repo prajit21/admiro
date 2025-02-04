@@ -4,11 +4,10 @@ import { stockValue } from '../../../../shared/data/widgets/general/general-char
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-stock-value-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './stock-value-chart.component.html',
-  styleUrl: './stock-value-chart.component.scss'
+    selector: 'app-stock-value-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './stock-value-chart.component.html',
+    styleUrl: './stock-value-chart.component.scss'
 })
 export class StockValueChartComponent {
 

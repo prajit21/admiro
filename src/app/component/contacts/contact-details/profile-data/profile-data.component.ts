@@ -10,11 +10,10 @@ import { GeneralComponent } from './edit-profile/general/general.component';
 import { PersonalContactComponent } from './edit-profile/personal-contact/personal-contact.component';
 
 @Component({
-  selector: 'app-profile-data',
-  standalone: true,
-  imports: [CommonModule,AddressContactComponent,GeneralComponent,PersonalContactComponent,PrintComponent],
-  templateUrl: './profile-data.component.html',
-  styleUrl: './profile-data.component.scss'
+    selector: 'app-profile-data',
+    imports: [CommonModule, AddressContactComponent, GeneralComponent, PersonalContactComponent, PrintComponent],
+    templateUrl: './profile-data.component.html',
+    styleUrl: './profile-data.component.scss'
 })
 export class ProfileDataComponent {
 

@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-monthly-revenue-growth',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './monthly-revenue-growth.component.html',
-  styleUrl: './monthly-revenue-growth.component.scss'
+    selector: 'app-monthly-revenue-growth',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './monthly-revenue-growth.component.html',
+    styleUrl: './monthly-revenue-growth.component.scss'
 })
 export class MonthlyRevenueGrowthComponent {
 

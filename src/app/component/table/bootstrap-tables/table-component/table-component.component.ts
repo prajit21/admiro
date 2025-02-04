@@ -12,13 +12,12 @@ import { TooltipTableComponent } from './tooltip-table/tooltip-table.component';
 import { UiTableComponent } from './ui-table/ui-table.component';
 
 @Component({
-  selector: 'app-table-component',
-  standalone: true,
-  imports: [CommonModule, AlertsTableComponent, BadgesTableComponent, CheckboxTableComponent, InputTableComponent
-    , ProgressbarTableComponent, RadioTableComponent, SelectTableComponent, SwitchTableComponent, TooltipTableComponent,
-    UiTableComponent],
-  templateUrl: './table-component.component.html',
-  styleUrl: './table-component.component.scss'
+    selector: 'app-table-component',
+    imports: [CommonModule, AlertsTableComponent, BadgesTableComponent, CheckboxTableComponent, InputTableComponent,
+        ProgressbarTableComponent, RadioTableComponent, SelectTableComponent, SwitchTableComponent, TooltipTableComponent,
+        UiTableComponent],
+    templateUrl: './table-component.component.html',
+    styleUrl: './table-component.component.scss'
 })
 export class TableComponentComponent {
 

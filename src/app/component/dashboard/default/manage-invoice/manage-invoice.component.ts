@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-manage-invoice',
-  standalone: true,
-  imports: [CommonModule,FormsModule,RouterModule],
-  templateUrl: './manage-invoice.component.html',
-  styleUrl: './manage-invoice.component.scss'
+    selector: 'app-manage-invoice',
+    imports: [CommonModule, FormsModule, RouterModule],
+    templateUrl: './manage-invoice.component.html',
+    styleUrl: './manage-invoice.component.scss'
 })
 export class ManageInvoiceComponent {
 

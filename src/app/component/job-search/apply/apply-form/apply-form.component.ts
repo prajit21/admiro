@@ -6,11 +6,10 @@ import { YourExprienceComponent } from './your-exprience/your-exprience.componen
 import { YourEductionComponent } from './your-eduction/your-eduction.component';
 
 @Component({
-  selector: 'app-apply-form',
-  standalone: true,
-  imports: [CommonModule, PersonalDetailsComponent, UploadFilesComponent, YourExprienceComponent, YourEductionComponent],
-  templateUrl: './apply-form.component.html',
-  styleUrl: './apply-form.component.scss'
+    selector: 'app-apply-form',
+    imports: [CommonModule, PersonalDetailsComponent, UploadFilesComponent, YourExprienceComponent, YourEductionComponent],
+    templateUrl: './apply-form.component.html',
+    styleUrl: './apply-form.component.scss'
 })
 export class ApplyFormComponent {
 

@@ -6,11 +6,10 @@ import { DescriptionTabComponent } from './description-tab/description-tab.compo
 import { DetailsComponent } from './details/details.component';
 
 @Component({
-  selector: 'app-product-page',
-  standalone: true,
-  imports: [CommonModule,BrandComponent,DescriptionTabComponent,DetailsComponent,GalleryModule],
-  templateUrl: './product-page.component.html',
-  styleUrl: './product-page.component.scss'
+    selector: 'app-product-page',
+    imports: [CommonModule, BrandComponent, DescriptionTabComponent, DetailsComponent, GalleryModule],
+    templateUrl: './product-page.component.html',
+    styleUrl: './product-page.component.scss'
 })
 
 export class ProductPageComponent {

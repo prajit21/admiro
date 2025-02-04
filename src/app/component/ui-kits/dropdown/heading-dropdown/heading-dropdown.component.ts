@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-heading-dropdown',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './heading-dropdown.component.html',
-  styleUrl: './heading-dropdown.component.scss'
+    selector: 'app-heading-dropdown',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './heading-dropdown.component.html',
+    styleUrl: './heading-dropdown.component.scss'
 })
 export class HeadingDropdownComponent {
 

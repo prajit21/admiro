@@ -8,12 +8,11 @@ import { TranslucentToastComponent } from './translucent-toast/translucent-toast
 import { UniqueToastComponent } from './unique-toast/unique-toast.component';
 
 @Component({
-  selector: 'app-toasts',
-  standalone: true,
-  imports: [CommonModule,ColorSchemesComponent,DefaultToastComponent,LiveToastComponent
-  ,StackingToastComponent,TranslucentToastComponent,UniqueToastComponent],
-  templateUrl: './toasts.component.html',
-  styleUrl: './toasts.component.scss'
+    selector: 'app-toasts',
+    imports: [CommonModule, ColorSchemesComponent, DefaultToastComponent, LiveToastComponent,
+        StackingToastComponent, TranslucentToastComponent, UniqueToastComponent],
+    templateUrl: './toasts.component.html',
+    styleUrl: './toasts.component.scss'
 })
 export class ToastsComponent {
 

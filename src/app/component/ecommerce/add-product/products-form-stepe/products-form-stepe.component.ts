@@ -3,11 +3,10 @@ import { staps } from '../../../../shared/data/ecommerce/add-product';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-products-form-stepe',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './products-form-stepe.component.html',
-  styleUrl: './products-form-stepe.component.scss'
+    selector: 'app-products-form-stepe',
+    imports: [CommonModule],
+    templateUrl: './products-form-stepe.component.html',
+    styleUrl: './products-form-stepe.component.scss'
 })
 export class ProductsFormStepeComponent {
 

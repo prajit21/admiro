@@ -9,12 +9,11 @@ import { ProductsGalleryComponent } from './products-gallery/products-gallery.co
 import { SellingPriceComponent } from './selling-price/selling-price.component';
 
 @Component({
-  selector: 'app-add-product',
-  standalone: true,
-  imports: [CommonModule, AddProductsDetailsComponent, AdvanceComponent, ProductsCategoriesComponent, ProductsFormStepeComponent
-    , ProductsGalleryComponent, SellingPriceComponent],
-  templateUrl: './add-product.component.html',
-  styleUrl: './add-product.component.scss'
+    selector: 'app-add-product',
+    imports: [CommonModule, AddProductsDetailsComponent, AdvanceComponent, ProductsCategoriesComponent, ProductsFormStepeComponent,
+        ProductsGalleryComponent, SellingPriceComponent],
+    templateUrl: './add-product.component.html',
+    styleUrl: './add-product.component.scss'
 })
 export class AddProductComponent {
 

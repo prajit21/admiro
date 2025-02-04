@@ -8,11 +8,10 @@ import { QuickViewComponent } from '../quick-view/quick-view.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-product-box',
-  standalone: true,
-  imports: [CommonModule,RouterModule,NgbModule],
-  templateUrl: './product-box.component.html',
-  styleUrl: './product-box.component.scss'
+    selector: 'app-product-box',
+    imports: [CommonModule, RouterModule, NgbModule],
+    templateUrl: './product-box.component.html',
+    styleUrl: './product-box.component.scss'
 })
 export class ProductBoxComponent {
 

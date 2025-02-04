@@ -4,11 +4,10 @@ import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-upcoming-cource',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './upcoming-cource.component.html',
-  styleUrl: './upcoming-cource.component.scss'
+    selector: 'app-upcoming-cource',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './upcoming-cource.component.html',
+    styleUrl: './upcoming-cource.component.scss'
 })
 export class UpcomingCourceComponent {
 

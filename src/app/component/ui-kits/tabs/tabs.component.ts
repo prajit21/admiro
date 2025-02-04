@@ -10,13 +10,12 @@ import { SimpleTabsComponent } from './simple-tabs/simple-tabs.component';
 import { VerticalTabsComponent } from './vertical-tabs/vertical-tabs.component';
 
 @Component({
-  selector: 'app-tabs',
-  standalone: true,
-  imports: [CommonModule, BorderTabsComponent, IconsTabsComponent, JustifyTabsComponent,
-    MaterialStyleLeftTabsComponent, MaterialStyleTabsComponent, PillsTabsComponent, SimpleTabsComponent,
-    VerticalTabsComponent],
-  templateUrl: './tabs.component.html',
-  styleUrl: './tabs.component.scss'
+    selector: 'app-tabs',
+    imports: [CommonModule, BorderTabsComponent, IconsTabsComponent, JustifyTabsComponent,
+        MaterialStyleLeftTabsComponent, MaterialStyleTabsComponent, PillsTabsComponent, SimpleTabsComponent,
+        VerticalTabsComponent],
+    templateUrl: './tabs.component.html',
+    styleUrl: './tabs.component.scss'
 })
 export class TabsComponent {
 

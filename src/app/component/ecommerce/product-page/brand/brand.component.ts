@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-brand',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent], 
-  templateUrl: './brand.component.html',
-  styleUrl: './brand.component.scss'
+    selector: 'app-brand',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './brand.component.html',
+    styleUrl: './brand.component.scss'
 })
 export class BrandComponent {
 

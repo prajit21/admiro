@@ -5,11 +5,10 @@ import { ValidationFormComponent } from './validation-form/validation-form.compo
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-forms-validation',
-  standalone: true,
-  imports: [CommonModule,BrowserComponent,TooltipFormValidationComponent,ValidationFormComponent],
-  templateUrl: './forms-validation.component.html',
-  styleUrl: './forms-validation.component.scss'
+    selector: 'app-forms-validation',
+    imports: [CommonModule, BrowserComponent, TooltipFormValidationComponent, ValidationFormComponent],
+    templateUrl: './forms-validation.component.html',
+    styleUrl: './forms-validation.component.scss'
 })
 export class FormsValidationComponent {
 

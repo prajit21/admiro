@@ -4,11 +4,10 @@ import { Router, RouterModule } from '@angular/router';
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
-  selector: 'app-profile',
-  standalone: true,
-  imports: [CommonModule,RouterModule,ClickOutsideDirective],
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+    selector: 'app-profile',
+    imports: [CommonModule, RouterModule, ClickOutsideDirective],
+    templateUrl: './profile.component.html',
+    styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
 

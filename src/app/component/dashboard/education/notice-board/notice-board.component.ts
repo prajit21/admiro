@@ -4,11 +4,10 @@ import { NoticeBoard } from '../../../../shared/data/dashboard/education/educati
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-notice-board',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective],
-  templateUrl: './notice-board.component.html',
-  styleUrl: './notice-board.component.scss'
+    selector: 'app-notice-board',
+    imports: [CommonModule, ClickOutsideDirective],
+    templateUrl: './notice-board.component.html',
+    styleUrl: './notice-board.component.scss'
 })
 export class NoticeBoardComponent {
 

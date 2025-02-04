@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
-  selector: 'app-upload-file',
-  standalone: true,
-  imports: [CommonModule ,DropzoneModule],
-  templateUrl: './upload-file.component.html',
-  styleUrl: './upload-file.component.scss'
+    selector: 'app-upload-file',
+    imports: [CommonModule, DropzoneModule],
+    templateUrl: './upload-file.component.html',
+    styleUrl: './upload-file.component.scss'
 })
 
 export class UploadFileComponent {

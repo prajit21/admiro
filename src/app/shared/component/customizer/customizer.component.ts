@@ -9,11 +9,10 @@ import { SidebarTypeComponent } from './sidebar-type/sidebar-type.component';
 import { ThemeModeComponent } from './theme-mode/theme-mode.component';
 
 @Component({
-  selector: 'app-customizer',
-  standalone: true,
-  imports: [CommonModule,ColorPickerComponent,LayoutTypeComponent,SidebarIconComponent,SidebarTypeComponent,ThemeModeComponent],
-  templateUrl: './customizer.component.html',
-  styleUrl: './customizer.component.scss'
+    selector: 'app-customizer',
+    imports: [CommonModule, ColorPickerComponent, LayoutTypeComponent, SidebarIconComponent, SidebarTypeComponent, ThemeModeComponent],
+    templateUrl: './customizer.component.html',
+    styleUrl: './customizer.component.scss'
 })
 export class CustomizerComponent {
 

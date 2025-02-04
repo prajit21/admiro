@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { BillingDetailsComponent } from './billing-details/billing-details.component';
 
 @Component({
-  selector: 'app-checkout',
-  standalone: true,
-  imports: [CommonModule,BillingDetailsComponent],
-  templateUrl: './checkout.component.html',
-  styleUrl: './checkout.component.scss'
+    selector: 'app-checkout',
+    imports: [CommonModule, BillingDetailsComponent],
+    templateUrl: './checkout.component.html',
+    styleUrl: './checkout.component.scss'
 })
 export class CheckoutComponent {
 

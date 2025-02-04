@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-basic-area-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './basic-area-chart.component.html',
-  styleUrl: './basic-area-chart.component.scss'
+    selector: 'app-basic-area-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './basic-area-chart.component.html',
+    styleUrl: './basic-area-chart.component.scss'
 })
 export class BasicAreaChartComponent {
 

@@ -7,12 +7,11 @@ import { UserProfile4Component } from './user-profile4/user-profile4.component';
 import { UserProfile5Component } from './user-profile5/user-profile5.component';
 
 @Component({
-  selector: 'app-users-profile',
-  standalone: true,
-  imports: [CommonModule, UserProfile1Component, UserProfile2Component, UserProfile3Component, UserProfile4Component,
-    UserProfile5Component],
-  templateUrl: './users-profile.component.html',
-  styleUrl: './users-profile.component.scss'
+    selector: 'app-users-profile',
+    imports: [CommonModule, UserProfile1Component, UserProfile2Component, UserProfile3Component, UserProfile4Component,
+        UserProfile5Component],
+    templateUrl: './users-profile.component.html',
+    styleUrl: './users-profile.component.scss'
 })
 export class UsersProfileComponent {
 

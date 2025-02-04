@@ -14,14 +14,13 @@ import { SvgPathAnimationComponent } from './svg-path-animation/svg-path-animati
 import { HolesInDataComponent } from './holes-in-data/holes-in-data.component';
 
 @Component({
-  selector: 'app-chartist-chart',
-  standalone: true,
-  imports: [CommonModule, AdvancedSmilAnimationsComponent, BiPolarBarChartComponent, BiPolarLineComponent,
-    DountSvgAnimateComponent, ExtremeResponsiveConfigurationComponent, FilledHolesInDataComponent, HolesInDataComponent
-    , HorizontalBarChartComponent, LineAreaChartComponent, LinesChartComponent, StackedBarChartComponent, SvgPathAnimationComponent
-  ],
-  templateUrl: './chartist-chart.component.html',
-  styleUrl: './chartist-chart.component.scss'
+    selector: 'app-chartist-chart',
+    imports: [CommonModule, AdvancedSmilAnimationsComponent, BiPolarBarChartComponent, BiPolarLineComponent,
+        DountSvgAnimateComponent, ExtremeResponsiveConfigurationComponent, FilledHolesInDataComponent, HolesInDataComponent,
+        HorizontalBarChartComponent, LineAreaChartComponent, LinesChartComponent, StackedBarChartComponent, SvgPathAnimationComponent
+    ],
+    templateUrl: './chartist-chart.component.html',
+    styleUrl: './chartist-chart.component.scss'
 })
 export class ChartistChartComponent {
 

@@ -9,11 +9,10 @@ import { AllTaskComponent } from '../all-task/all-task.component';
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-task-sidebar',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,AllTaskComponent,FeathericonComponent],
-  templateUrl: './task-sidebar.component.html',
-  styleUrl: './task-sidebar.component.scss'
+    selector: 'app-task-sidebar',
+    imports: [CommonModule, ClickOutsideDirective, AllTaskComponent, FeathericonComponent],
+    templateUrl: './task-sidebar.component.html',
+    styleUrl: './task-sidebar.component.scss'
 })
 export class TaskSidebarComponent {
 

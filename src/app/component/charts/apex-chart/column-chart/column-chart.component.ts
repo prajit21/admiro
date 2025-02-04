@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-column-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './column-chart.component.html',
-  styleUrl: './column-chart.component.scss'
+    selector: 'app-column-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './column-chart.component.html',
+    styleUrl: './column-chart.component.scss'
 })
 export class ColumnChartComponent {
 

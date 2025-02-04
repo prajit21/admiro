@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { inlineStyle } from '../../../../../shared/data/form-controls/mega-options';
 
 @Component({
-  selector: 'app-inline-style',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './inline-style.component.html',
-  styleUrl: './inline-style.component.scss'
+    selector: 'app-inline-style',
+    imports: [CommonModule],
+    templateUrl: './inline-style.component.html',
+    styleUrl: './inline-style.component.scss'
 })
 export class InlineStyleComponent {
 

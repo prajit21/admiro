@@ -4,11 +4,10 @@ import { checkbox } from '../../../../../shared/data/form-controls/checkbox-radi
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-default-checkbox',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './default-checkbox.component.html',
-  styleUrl: './default-checkbox.component.scss'
+    selector: 'app-default-checkbox',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './default-checkbox.component.html',
+    styleUrl: './default-checkbox.component.scss'
 })
 export class DefaultCheckboxComponent {
 

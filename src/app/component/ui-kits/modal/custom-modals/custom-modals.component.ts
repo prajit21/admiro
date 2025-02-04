@@ -5,11 +5,10 @@ import { ProfileModalComponent } from './profile-modal/profile-modal.component';
 import { ResultModalComponent } from './result-modal/result-modal.component';
 
 @Component({
-  selector: 'app-custom-modals',
-  standalone: true,
-  imports: [CommonModule,BalanceModalComponent,ProfileModalComponent,ResultModalComponent],
-  templateUrl: './custom-modals.component.html',
-  styleUrl: './custom-modals.component.scss'
+    selector: 'app-custom-modals',
+    imports: [CommonModule, BalanceModalComponent, ProfileModalComponent, ResultModalComponent],
+    templateUrl: './custom-modals.component.html',
+    styleUrl: './custom-modals.component.scss'
 })
 export class CustomModalsComponent {
 

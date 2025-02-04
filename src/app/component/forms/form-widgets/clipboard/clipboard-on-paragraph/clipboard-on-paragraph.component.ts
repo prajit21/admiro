@@ -4,11 +4,10 @@ import { ClipboardService } from 'ngx-clipboard';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-clipboard-on-paragraph',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './clipboard-on-paragraph.component.html',
-  styleUrl: './clipboard-on-paragraph.component.scss'
+    selector: 'app-clipboard-on-paragraph',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './clipboard-on-paragraph.component.html',
+    styleUrl: './clipboard-on-paragraph.component.scss'
 })
 export class ClipboardOnParagraphComponent {
 

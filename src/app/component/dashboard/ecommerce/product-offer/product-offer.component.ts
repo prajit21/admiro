@@ -4,11 +4,10 @@ import { productoffer, sildesOptions } from '../../../../shared/data/dashboard/e
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-product-offer',
-  standalone: true,
-  imports: [CommonModule, CarouselModule],
-  templateUrl: './product-offer.component.html',
-  styleUrl: './product-offer.component.scss'
+    selector: 'app-product-offer',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './product-offer.component.html',
+    styleUrl: './product-offer.component.scss'
 })
 export class ProductOfferComponent {
 

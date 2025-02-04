@@ -13,13 +13,12 @@ import { UpcomingClassesComponent } from '../../dashboard/education/upcoming-cla
 import { MonthlyRevenueGrowthComponent } from '../../dashboard/default/monthly-revenue-growth/monthly-revenue-growth.component';
 
 @Component({
-  selector: 'app-general',
-  standalone: true,
-  imports: [CommonModule, CustomersDetailsComponent, GeneralTotalTnvestmentComponent, SaleValueChartComponent
-    , SalesPurchaseComponent, StockValueChartComponent,ProductOfferComponent,ProductOffer2Component,SalesPurchaseComponent
-  ,SellingChartComponent,ScheduleLessonComponent,UpcomingClassesComponent,MonthlyRevenueGrowthComponent],
-  templateUrl: './general.component.html',
-  styleUrl: './general.component.scss'
+    selector: 'app-general',
+    imports: [CommonModule, CustomersDetailsComponent, GeneralTotalTnvestmentComponent, SaleValueChartComponent,
+        SalesPurchaseComponent, StockValueChartComponent, ProductOfferComponent, ProductOffer2Component, SalesPurchaseComponent,
+        SellingChartComponent, ScheduleLessonComponent, UpcomingClassesComponent, MonthlyRevenueGrowthComponent],
+    templateUrl: './general.component.html',
+    styleUrl: './general.component.scss'
 })
 export class GeneralComponent {
 

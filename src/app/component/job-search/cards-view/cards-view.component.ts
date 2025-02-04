@@ -5,11 +5,10 @@ import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { JobFilterComponent } from '../job-filter/job-filter.component';
 
 @Component({
-  selector: 'app-cards-view',
-  standalone: true,
-  imports: [CommonModule, JobFilterComponent, NgbModule],
-  templateUrl: './cards-view.component.html',
-  styleUrl: './cards-view.component.scss'
+    selector: 'app-cards-view',
+    imports: [CommonModule, JobFilterComponent, NgbModule],
+    templateUrl: './cards-view.component.html',
+    styleUrl: './cards-view.component.scss'
 })
 export class CardsViewComponent {
 

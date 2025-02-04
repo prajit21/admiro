@@ -7,12 +7,11 @@ import { EmiComponent } from './emi/emi.component';
 import { NetBankingComponent } from './net-banking/net-banking.component';
 
 @Component({
-  selector: 'app-payment-details',
-  standalone: true,
-  imports: [CommonModule, CodComponent, CreditCardComponent, DebitCardComponent, EmiComponent
-    , NetBankingComponent],
-  templateUrl: './payment-details.component.html',
-  styleUrl: './payment-details.component.scss'
+    selector: 'app-payment-details',
+    imports: [CommonModule, CodComponent, CreditCardComponent, DebitCardComponent, EmiComponent,
+        NetBankingComponent],
+    templateUrl: './payment-details.component.html',
+    styleUrl: './payment-details.component.scss'
 })
 export class PaymentDetailsComponent {
 

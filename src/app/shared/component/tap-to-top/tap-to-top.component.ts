@@ -2,11 +2,10 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-tap-to-top',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './tap-to-top.component.html',
-  styleUrl: './tap-to-top.component.scss'
+    selector: 'app-tap-to-top',
+    imports: [CommonModule],
+    templateUrl: './tap-to-top.component.html',
+    styleUrl: './tap-to-top.component.scss'
 })
 export class TapToTopComponent {
 

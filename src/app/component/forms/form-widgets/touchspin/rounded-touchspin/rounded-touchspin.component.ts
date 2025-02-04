@@ -3,11 +3,10 @@ import { roundedtouchspin } from '../../../../../shared/data/forms-widgets/touch
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-rounded-touchspin',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './rounded-touchspin.component.html',
-  styleUrl: './rounded-touchspin.component.scss'
+    selector: 'app-rounded-touchspin',
+    imports: [CommonModule],
+    templateUrl: './rounded-touchspin.component.html',
+    styleUrl: './rounded-touchspin.component.scss'
 })
 export class RoundedTouchspinComponent {
 

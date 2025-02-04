@@ -4,11 +4,10 @@ import { TopSectionComponent } from '../product-list/top-section/top-section.com
 import { CategoryDataTableComponent } from './category-data-table/category-data-table.component';
 
 @Component({
-  selector: 'app-category-page',
-  standalone: true,
-  imports: [CommonModule,TopSectionComponent,CategoryDataTableComponent],
-  templateUrl: './category-page.component.html',
-  styleUrl: './category-page.component.scss'
+    selector: 'app-category-page',
+    imports: [CommonModule, TopSectionComponent, CategoryDataTableComponent],
+    templateUrl: './category-page.component.html',
+    styleUrl: './category-page.component.scss'
 })
 export class CategoryPageComponent {
 

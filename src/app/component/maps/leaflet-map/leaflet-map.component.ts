@@ -1,89 +1,77 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import * as L from 'leaflet';
+import { HttpClient } from '@angular/common/http';
+import { LeafletModule } from '@bluehalo/ngx-leaflet';
+import { GeoJsonObject } from 'geojson';
 import { CommonModule } from '@angular/common';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @Component({
-  selector: 'app-leaflet-map',
-  standalone: true,
-  imports: [CommonModule,LeafletModule],
-  templateUrl: './leaflet-map.component.html',
-  styleUrl: './leaflet-map.component.scss'
+    selector: 'app-leaflet-map',
+    imports: [CommonModule, LeafletModule],
+    templateUrl: './leaflet-map.component.html',
+    styleUrl: './leaflet-map.component.scss'
 })
 export class LeafletMapComponent {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  // First map options
+  //First map options
   options1 = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-        attribution: '...',
-      }),
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     ],
     zoom: 5,
-    center: L.latLng(46.879966, -121.726909),
+    center: L.latLng(46.879966, -121.726909)
   };
 
-  //Second map
   layersControl = {
     baseLayers: {
-      'Open Street Map': L.tileLayer(
-        'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        { maxZoom: 18, attribution: '...' }
-      ),
-      'Open Cycle Map': L.tileLayer(
-        'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
-        { maxZoom: 18, attribution: '...' }
-      ),
+      'Open Street Map': L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' }),
+      'Open Cycle Map': L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     },
     overlays: {
       'Big Circle': L.circle([46.95, -122], { radius: 5000 }),
-      'Big Square': L.polygon([
-        [46.8, -121.55],
-        [46.9, -121.55],
-        [46.9, -121.7],
-        [46.8, -121.7],
-      ]),
-    },
-  };
+      'Big Square': L.polygon([[46.8, -121.55], [46.9, -121.55], [46.9, -121.7], [46.8, -121.7]])
+    }
+  }
 
-  
+  //Second map
   options2 = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 50,
-        attribution: '...',
-      }),
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 50, attribution: '...' })
     ],
     zoom: 5,
-    center: L.latLng(46.879966, -121.726909),
+    center: L.latLng(46.879966, -121.726909)
   };
 
-  // //Third map
+  //Third map
   map: L.Map;
-  json: any;
+  json: GeoJsonObject | GeoJsonObject[] | null | undefined;
   options3 = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
-        attribution: '',
-      }),
+        attribution: ""
+      })
     ],
     zoom: 7,
-    center: L.latLng(47.482023, -1),
+    center: L.latLng(47.482019, -1)
   };
+  onMapReady(map: L.Map) {
+    this.http.get("assets/data/map/polygon.json").subscribe((json: any) => {
+      this.json = json;
+      L.geoJSON(this.json).addTo(map);
+    });
+  }
 
-  // //Forth map
-  map4: any;
+  //Forth map
+  map4: L.Map | L.LayerGroup<any>;
   homeCoords = {
     lat: 23.810331,
-    lon: 90.412521,
+    lon: 90.412521
   };
 
-  popupText = 'Some popup text';
+  popupText = "Some popup text";
 
   markerIcon = {
     icon: L.icon({
@@ -91,24 +79,26 @@ export class LeafletMapComponent {
       iconAnchor: [10, 41],
       popupAnchor: [2, -40],
       // specify the path here
-      iconUrl: 'assets/images/marker-icon.png',
-      shadowUrl: 'assets/images/marker-shadow.png',
-    }),
+      iconUrl: "assets/images/marker-icon.png",
+      shadowUrl: "assets/images/marker-shadow.png"
+    })
   };
 
   options4 = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
-        attribution: '',
-      }),
+        attribution: ""
+      })
     ],
     zoom: 5,
-    center: L.latLng(this.homeCoords.lat, this.homeCoords.lon),
+    center: L.latLng(this.homeCoords.lat, this.homeCoords.lon)
   };
 
   initMarkers() {
-    const popupInfo = `<b style="color: red; background-color: white">${this.popupText}</b>`;
+    const popupInfo = `<b style="color: red; background-color: white">${
+      this.popupText
+      }</b>`;
     L.marker([this.homeCoords.lat, this.homeCoords.lon], this.markerIcon)
       .addTo(this.map4)
       .bindPopup(popupInfo);
@@ -118,5 +108,7 @@ export class LeafletMapComponent {
     this.map4 = map;
     this.initMarkers();
   }
+
+  ngOnInit() { }
 
 }

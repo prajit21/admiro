@@ -3,11 +3,10 @@ import { commonBorderPositionCardData } from '../../../../shared/data/bonus-ui/c
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-common-border-card',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './common-border-card.component.html',
-  styleUrl: './common-border-card.component.scss'
+    selector: 'app-common-border-card',
+    imports: [CommonModule],
+    templateUrl: './common-border-card.component.html',
+    styleUrl: './common-border-card.component.scss'
 })
 export class CommonBorderCardComponent {
 

@@ -9,14 +9,13 @@ import { HorizontalAccordionComponent } from './horizontal-accordion/horizontal-
 import { OutlineAccordionComponent } from './outline-accordion/outline-accordion.component';
 
 @Component({
-  selector: 'app-accordion',
-  standalone: true,
-  imports: [CommonModule, SimpleAccordionComponent, FlushAccordionComponent, IconsAccordionComponent,
-    MultipleCollapseAccordionComponent, CollapseAccordionComponent, HorizontalAccordionComponent,
-    OutlineAccordionComponent
-  ],
-  templateUrl: './accordion.component.html',
-  styleUrl: './accordion.component.scss'
+    selector: 'app-accordion',
+    imports: [CommonModule, SimpleAccordionComponent, FlushAccordionComponent, IconsAccordionComponent,
+        MultipleCollapseAccordionComponent, CollapseAccordionComponent, HorizontalAccordionComponent,
+        OutlineAccordionComponent
+    ],
+    templateUrl: './accordion.component.html',
+    styleUrl: './accordion.component.scss'
 })
 export class AccordionComponent {
 

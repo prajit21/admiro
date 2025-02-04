@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-live-alert',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './live-alert.component.html',
-  styleUrl: './live-alert.component.scss'
+    selector: 'app-live-alert',
+    imports: [CommonModule],
+    templateUrl: './live-alert.component.html',
+    styleUrl: './live-alert.component.scss'
 })
 export class LiveAlertComponent {
 

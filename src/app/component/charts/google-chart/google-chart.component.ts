@@ -13,13 +13,12 @@ import { PieChart3Component } from './pie-chart-3/pie-chart-3.component';
 import { PieChart4Component } from './pie-chart-4/pie-chart-4.component';
 
 @Component({
-  selector: 'app-google-chart',
-  standalone: true,
-  imports: [CommonModule, AreaChart1Component, AreaChart2Component, BarChart2Component
-    , ColumnChart1Component, ColumnChart2Component, ComboChartComponent, GoogleLineChartComponent, PieChart1Component
-    , PieChart2Component, PieChart3Component, PieChart4Component],
-  templateUrl: './google-chart.component.html',
-  styleUrl: './google-chart.component.scss'
+    selector: 'app-google-chart',
+    imports: [CommonModule, AreaChart1Component, AreaChart2Component, BarChart2Component,
+        ColumnChart1Component, ColumnChart2Component, ComboChartComponent, GoogleLineChartComponent, PieChart1Component,
+        PieChart2Component, PieChart3Component, PieChart4Component],
+    templateUrl: './google-chart.component.html',
+    styleUrl: './google-chart.component.scss'
 })
 export class GoogleChartComponent {
 

@@ -5,11 +5,10 @@ import { NgbCalendar, NgbDate, NgbDateParserFormatter, NgbDateStruct, NgbModule 
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-datepicker',
-  standalone: true,
-  imports: [CommonModule, NgbModule, FormsModule, FeathericonComponent],
-  templateUrl: './datepicker.component.html',
-  styleUrl: './datepicker.component.scss'
+    selector: 'app-datepicker',
+    imports: [CommonModule, NgbModule, FormsModule, FeathericonComponent],
+    templateUrl: './datepicker.component.html',
+    styleUrl: './datepicker.component.scss'
 })
 export class DatepickerComponent {
 

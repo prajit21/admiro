@@ -10,12 +10,11 @@ import { TemplateForResultsComponent } from './template-for-results/template-for
 import { WikipediaSearchComponent } from './wikipedia-search/wikipedia-search.component';
 
 @Component({
-  selector: 'app-typeahead',
-  standalone: true,
-  imports: [CommonModule, FormattedResultsComponent, GlobalConfigurationTypeaheadsComponent, OpenOnFocusComponent,
-    PreventManualEntryComponent, SelectOnExactComponent, SimpleTypeaheadComponent, TemplateForResultsComponent, WikipediaSearchComponent],
-  templateUrl: './typeahead.component.html',
-  styleUrl: './typeahead.component.scss'
+    selector: 'app-typeahead',
+    imports: [CommonModule, FormattedResultsComponent, GlobalConfigurationTypeaheadsComponent, OpenOnFocusComponent,
+        PreventManualEntryComponent, SelectOnExactComponent, SimpleTypeaheadComponent, TemplateForResultsComponent, WikipediaSearchComponent],
+    templateUrl: './typeahead.component.html',
+    styleUrl: './typeahead.component.scss'
 })
 export class TypeaheadComponent {
 

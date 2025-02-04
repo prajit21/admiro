@@ -6,12 +6,11 @@ import { MultiFileUploadComponent } from './multi-file-upload/multi-file-upload.
 import { SingleFileUploadComponent } from './single-file-upload/single-file-upload.component';
 
 @Component({
-  selector: 'app-dropzone',
-  standalone: true,
-  imports: [CommonModule, DefaultFileUploadComponent, 
-    ImagePerviewComponent, MultiFileUploadComponent,SingleFileUploadComponent],
-  templateUrl: './dropzone.component.html',
-  styleUrl: './dropzone.component.scss'
+    selector: 'app-dropzone',
+    imports: [CommonModule, DefaultFileUploadComponent,
+        ImagePerviewComponent, MultiFileUploadComponent, SingleFileUploadComponent],
+    templateUrl: './dropzone.component.html',
+    styleUrl: './dropzone.component.scss'
 })
 
 export class DropzoneComponent {

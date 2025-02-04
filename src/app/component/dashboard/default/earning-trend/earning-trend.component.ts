@@ -5,11 +5,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-earning-trend',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
-  templateUrl: './earning-trend.component.html',
-  styleUrl: './earning-trend.component.scss'
+    selector: 'app-earning-trend',
+    imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
+    templateUrl: './earning-trend.component.html',
+    styleUrl: './earning-trend.component.scss'
 })
 export class EarningTrendComponent {
 

@@ -7,12 +7,11 @@ import { CommonBorderCardComponent } from './common-border-card/common-border-ca
 import { CommonBottomCardComponent } from './common-bottom-card/common-bottom-card.component';
 
 @Component({
-  selector: 'app-creative-card',
-  standalone: true,
-  imports: [CommonModule, BorderPrimaryStateComponent, BorderSecondaryStateComponent, BorderWarningStateComponent
-    , CommonBorderCardComponent, CommonBottomCardComponent],
-  templateUrl: './creative-card.component.html',
-  styleUrl: './creative-card.component.scss'
+    selector: 'app-creative-card',
+    imports: [CommonModule, BorderPrimaryStateComponent, BorderSecondaryStateComponent, BorderWarningStateComponent,
+        CommonBorderCardComponent, CommonBottomCardComponent],
+    templateUrl: './creative-card.component.html',
+    styleUrl: './creative-card.component.scss'
 })
 export class CreativeCardComponent {
 

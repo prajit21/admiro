@@ -4,11 +4,10 @@ import { questionData } from '../../../shared/data/faq/faq';
 import { NgbAccordionConfig, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-questions',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './questions.component.html',
-  styleUrl: './questions.component.scss'
+    selector: 'app-questions',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './questions.component.html',
+    styleUrl: './questions.component.scss'
 })
 export class QuestionsComponent {
 

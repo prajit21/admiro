@@ -10,12 +10,11 @@ import { StatusIndicatorComponent } from './status-indicator/status-indicator.co
 import { AvatarProfileComponent } from './avatar-profile/avatar-profile.component';
 
 @Component({
-  selector: 'app-avatars',
-  standalone: true,
-  imports: [CommonModule, AvatarInitialComponent, AvatarPingComponent,AvatarProfileComponent ,GroupingComponent
-    , RatioComponent, ShapesComponent, SizesComponent, StatusIndicatorComponent],
-  templateUrl: './avatars.component.html',
-  styleUrl: './avatars.component.scss'
+    selector: 'app-avatars',
+    imports: [CommonModule, AvatarInitialComponent, AvatarPingComponent, AvatarProfileComponent, GroupingComponent,
+        RatioComponent, ShapesComponent, SizesComponent, StatusIndicatorComponent],
+    templateUrl: './avatars.component.html',
+    styleUrl: './avatars.component.scss'
 })
 export class AvatarsComponent {
 

@@ -5,11 +5,10 @@ import * as Data from '../../../shared/data/job-search/job-search';
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-job-filter',
-  standalone: true,
-  imports: [CommonModule,NgbModule,FeathericonComponent],
-  templateUrl: './job-filter.component.html',
-  styleUrl: './job-filter.component.scss'
+    selector: 'app-job-filter',
+    imports: [CommonModule, NgbModule, FeathericonComponent],
+    templateUrl: './job-filter.component.html',
+    styleUrl: './job-filter.component.scss'
 })
 export class JobFilterComponent {
 

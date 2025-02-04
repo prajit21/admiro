@@ -10,7 +10,6 @@ export interface SortEvent {
   direction: SortDirection;
 }
 @Directive({
-  standalone: true,
   selector: 'th[sortable]',
   host: {
     '[class.asc]': 'direction === "asc"',

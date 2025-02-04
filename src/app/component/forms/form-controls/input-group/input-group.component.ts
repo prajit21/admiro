@@ -12,13 +12,12 @@ import { VariationAddonsComponent } from './variation-addons/variation-addons.co
 import { MultipleInputsComponent } from './multiple-inputs/multiple-inputs.component';
 
 @Component({
-  selector: 'app-input-group',
-  standalone: true,
-  imports: [CommonModule, BasicInputGroupsComponent, ButtonAddonsComponent, ButtonsDropdownsComponent
-    , CheckboxesAndRadiosComponent, CustomFileInputComponent, CustomFormsComponent, InputGroupsSizingComponent
-    , SegmentedButtonsComponent, VariationAddonsComponent, MultipleInputsComponent],
-  templateUrl: './input-group.component.html',
-  styleUrl: './input-group.component.scss'
+    selector: 'app-input-group',
+    imports: [CommonModule, BasicInputGroupsComponent, ButtonAddonsComponent, ButtonsDropdownsComponent,
+        CheckboxesAndRadiosComponent, CustomFileInputComponent, CustomFormsComponent, InputGroupsSizingComponent,
+        SegmentedButtonsComponent, VariationAddonsComponent, MultipleInputsComponent],
+    templateUrl: './input-group.component.html',
+    styleUrl: './input-group.component.scss'
 })
 export class InputGroupComponent {
 

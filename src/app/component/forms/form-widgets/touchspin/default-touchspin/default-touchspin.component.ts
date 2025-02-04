@@ -3,11 +3,10 @@ import { Touchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-default-touchspin',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './default-touchspin.component.html',
-  styleUrl: './default-touchspin.component.scss'
+    selector: 'app-default-touchspin',
+    imports: [CommonModule],
+    templateUrl: './default-touchspin.component.html',
+    styleUrl: './default-touchspin.component.scss'
 })
 export class DefaultTouchspinComponent {
 

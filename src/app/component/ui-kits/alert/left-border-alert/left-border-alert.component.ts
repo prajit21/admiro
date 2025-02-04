@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-left-border-alert',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './left-border-alert.component.html',
-  styleUrl: './left-border-alert.component.scss'
+    selector: 'app-left-border-alert',
+    imports: [CommonModule],
+    templateUrl: './left-border-alert.component.html',
+    styleUrl: './left-border-alert.component.scss'
 })
 export class LeftBorderAlertComponent {
 

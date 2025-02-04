@@ -11,13 +11,12 @@ import { StylesBordersComponent } from './styles-borders/styles-borders.componen
 import { TextColorComponent } from './text-color/text-color.component';
 
 @Component({
-  selector: 'app-helper-classes',
-  standalone: true,
-  imports: [CommonModule,BorderColorComponent,FontSizeComponent,BorderDisplaysComponent
-  ,FontStyleComponent,FontWeightComponent,ImagesSizesComponent,StylesBackgroudComponent,
-  StylesBordersComponent,TextColorComponent],
-  templateUrl: './helper-classes.component.html',
-  styleUrl: './helper-classes.component.scss'
+    selector: 'app-helper-classes',
+    imports: [CommonModule, BorderColorComponent, FontSizeComponent, BorderDisplaysComponent,
+        FontStyleComponent, FontWeightComponent, ImagesSizesComponent, StylesBackgroudComponent,
+        StylesBordersComponent, TextColorComponent],
+    templateUrl: './helper-classes.component.html',
+    styleUrl: './helper-classes.component.scss'
 })
 export class HelperClassesComponent {
 

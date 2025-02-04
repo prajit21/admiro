@@ -6,11 +6,10 @@ import { map } from 'rxjs';
 import { NavmenuService } from '../../services/navmenu.service';
 
 @Component({
-  selector: 'app-breadcrumb',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './breadcrumb.component.html',
-  styleUrl: './breadcrumb.component.scss'
+    selector: 'app-breadcrumb',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './breadcrumb.component.html',
+    styleUrl: './breadcrumb.component.scss'
 })
 export class BreadcrumbComponent {
 

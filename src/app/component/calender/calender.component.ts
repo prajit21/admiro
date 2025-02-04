@@ -27,12 +27,11 @@ const colors: Record<string, EventColor> = {
 };
 
 @Component({
-  selector: 'app-calender',
-  standalone: true,
-  imports: [CommonModule,NgbModule,FormsModule ,CalendarModule, FlatpickrModule ],
-  providers:[CalendarDateFormatter,CalendarUtils,FlatpickrDefaults,CalendarA11y,CalendarEventTitleFormatter],
-  templateUrl: './calender.component.html',
-  styleUrl: './calender.component.scss'
+    selector: 'app-calender',
+    imports: [CommonModule, NgbModule, FormsModule, CalendarModule, FlatpickrModule],
+    providers: [CalendarDateFormatter, CalendarUtils, FlatpickrDefaults, CalendarA11y, CalendarEventTitleFormatter],
+    templateUrl: './calender.component.html',
+    styleUrl: './calender.component.scss'
 })
 export class CalenderComponent {
 

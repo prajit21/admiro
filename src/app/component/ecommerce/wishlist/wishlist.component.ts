@@ -5,11 +5,10 @@ import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-wishlist',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './wishlist.component.html',
-  styleUrl: './wishlist.component.scss'
+    selector: 'app-wishlist',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './wishlist.component.html',
+    styleUrl: './wishlist.component.scss'
 })
 export class WishlistComponent {
 

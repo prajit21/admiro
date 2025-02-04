@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { BarRatingModule } from 'ngx-bar-rating';
 
 @Component({
-  selector: 'app-movie-ratingbar',
-  standalone: true,
-  imports: [CommonModule, BarRatingModule],
-  templateUrl: './movie-ratingbar.component.html',
-  styleUrl: './movie-ratingbar.component.scss'
+    selector: 'app-movie-ratingbar',
+    imports: [CommonModule, BarRatingModule],
+    templateUrl: './movie-ratingbar.component.html',
+    styleUrl: './movie-ratingbar.component.scss'
 })
 export class MovieRatingbarComponent {
 

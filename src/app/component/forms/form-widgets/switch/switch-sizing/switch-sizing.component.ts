@@ -3,11 +3,10 @@ import { switchSizeing } from '../../../../../shared/data/forms-widgets/switch';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-switch-sizing',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './switch-sizing.component.html',
-  styleUrl: './switch-sizing.component.scss'
+    selector: 'app-switch-sizing',
+    imports: [CommonModule],
+    templateUrl: './switch-sizing.component.html',
+    styleUrl: './switch-sizing.component.scss'
 })
 export class SwitchSizingComponent {
 

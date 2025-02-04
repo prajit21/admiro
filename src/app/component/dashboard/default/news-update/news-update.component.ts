@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-news-update',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,RouterModule],
-  templateUrl: './news-update.component.html',
-  styleUrl: './news-update.component.scss'
+    selector: 'app-news-update',
+    imports: [CommonModule, ClickOutsideDirective, RouterModule],
+    templateUrl: './news-update.component.html',
+    styleUrl: './news-update.component.scss'
 })
 export class NewsUpdateComponent {
 

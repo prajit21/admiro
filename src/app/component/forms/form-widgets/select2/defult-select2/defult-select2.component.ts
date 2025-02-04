@@ -5,11 +5,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 @Component({
-  selector: 'app-defult-select2',
-  standalone: true,
-  imports: [CommonModule,FormsModule, ReactiveFormsModule, NgSelectModule , NgbModule],
-  templateUrl: './defult-select2.component.html',
-  styleUrl: './defult-select2.component.scss'
+    selector: 'app-defult-select2',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, NgbModule],
+    templateUrl: './defult-select2.component.html',
+    styleUrl: './defult-select2.component.scss'
 })
 export class DefultSelect2Component {
 

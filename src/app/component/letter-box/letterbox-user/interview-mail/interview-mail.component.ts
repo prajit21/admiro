@@ -4,11 +4,10 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-interview-mail',
-  standalone: true,
-  imports: [CommonModule,UserDetailsComponent,FeathericonComponent],
-  templateUrl: './interview-mail.component.html',
-  styleUrl: './interview-mail.component.scss'
+    selector: 'app-interview-mail',
+    imports: [CommonModule, UserDetailsComponent, FeathericonComponent],
+    templateUrl: './interview-mail.component.html',
+    styleUrl: './interview-mail.component.scss'
 })
 export class InterviewMailComponent {
 

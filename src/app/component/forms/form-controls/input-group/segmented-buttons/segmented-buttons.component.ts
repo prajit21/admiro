@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-segmented-buttons',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './segmented-buttons.component.html',
-  styleUrl: './segmented-buttons.component.scss'
+    selector: 'app-segmented-buttons',
+    imports: [CommonModule],
+    templateUrl: './segmented-buttons.component.html',
+    styleUrl: './segmented-buttons.component.scss'
 })
 export class SegmentedButtonsComponent {
 

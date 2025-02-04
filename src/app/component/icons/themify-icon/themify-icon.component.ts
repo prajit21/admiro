@@ -3,11 +3,10 @@ import { allIcon } from '../../../shared/data/icons/thimify';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-themify-icon',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './themify-icon.component.html',
-  styleUrl: './themify-icon.component.scss'
+    selector: 'app-themify-icon',
+    imports: [CommonModule],
+    templateUrl: './themify-icon.component.html',
+    styleUrl: './themify-icon.component.scss'
 })
 export class ThemifyIconComponent {
 

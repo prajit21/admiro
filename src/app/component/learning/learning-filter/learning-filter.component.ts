@@ -7,11 +7,10 @@ import { FindCourceComponent } from './find-cource/find-cource.component';
 import { UpcomingCourceComponent } from './upcoming-cource/upcoming-cource.component';
 
 @Component({
-  selector: 'app-learning-filter',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,CategoriesComponent,FindCourceComponent,UpcomingCourceComponent],
-  templateUrl: './learning-filter.component.html',
-  styleUrl: './learning-filter.component.scss'
+    selector: 'app-learning-filter',
+    imports: [CommonModule, ClickOutsideDirective, CategoriesComponent, FindCourceComponent, UpcomingCourceComponent],
+    templateUrl: './learning-filter.component.html',
+    styleUrl: './learning-filter.component.scss'
 })
 export class LearningFilterComponent {
 

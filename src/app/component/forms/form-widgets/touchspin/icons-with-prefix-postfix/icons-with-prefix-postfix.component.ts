@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-icons-with-prefix-postfix',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './icons-with-prefix-postfix.component.html',
-  styleUrl: './icons-with-prefix-postfix.component.scss'
+    selector: 'app-icons-with-prefix-postfix',
+    imports: [CommonModule],
+    templateUrl: './icons-with-prefix-postfix.component.html',
+    styleUrl: './icons-with-prefix-postfix.component.scss'
 })
 export class IconsWithPrefixPostfixComponent {
 

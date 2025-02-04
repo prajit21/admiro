@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { SmallProgressbars } from '../../../../shared/data/ui-kits/progress';
 
 @Component({
-  selector: 'app-small-progress-bars',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './small-progress-bars.component.html',
-  styleUrl: './small-progress-bars.component.scss'
+    selector: 'app-small-progress-bars',
+    imports: [CommonModule],
+    templateUrl: './small-progress-bars.component.html',
+    styleUrl: './small-progress-bars.component.scss'
 })
 export class SmallProgressBarsComponent {
 

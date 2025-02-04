@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-open-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './open-modal.component.html',
-  styleUrl: './open-modal.component.scss'
+    selector: 'app-open-modal',
+    imports: [CommonModule],
+    templateUrl: './open-modal.component.html',
+    styleUrl: './open-modal.component.scss'
 })
 export class OpenModalComponent {
 

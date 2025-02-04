@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-candlestick-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './candlestick-chart.component.html',
-  styleUrl: './candlestick-chart.component.scss'
+    selector: 'app-candlestick-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './candlestick-chart.component.html',
+    styleUrl: './candlestick-chart.component.scss'
 })
 export class CandlestickChartComponent {
 

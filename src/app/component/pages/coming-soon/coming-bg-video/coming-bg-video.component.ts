@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-coming-bg-video',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './coming-bg-video.component.html',
-  styleUrl: './coming-bg-video.component.scss'
+    selector: 'app-coming-bg-video',
+    imports: [CommonModule],
+    templateUrl: './coming-bg-video.component.html',
+    styleUrl: './coming-bg-video.component.scss'
 })
 export class ComingBgVideoComponent {
 

@@ -4,11 +4,10 @@ import { BorderCheckbox, IconsCheckbox, FilledCheckbox } from '../../../../../sh
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-custom-checkbox',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './custom-checkbox.component.html',
-  styleUrl: './custom-checkbox.component.scss'
+    selector: 'app-custom-checkbox',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './custom-checkbox.component.html',
+    styleUrl: './custom-checkbox.component.scss'
 })
 export class CustomCheckboxComponent {
 

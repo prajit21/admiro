@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dismissing-light-alert',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './dismissing-light-alert.component.html',
-  styleUrl: './dismissing-light-alert.component.scss'
+    selector: 'app-dismissing-light-alert',
+    imports: [CommonModule],
+    templateUrl: './dismissing-light-alert.component.html',
+    styleUrl: './dismissing-light-alert.component.scss'
 })
 export class DismissingLightAlertComponent {
 

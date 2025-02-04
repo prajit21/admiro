@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { CommonLoginFormComponent } from '../common-login-form/common-login-form.component';
 
 @Component({
-  selector: 'app-login-img-two',
-  standalone: true,
-  imports: [CommonModule,RouterModule,CommonLoginFormComponent],
-  templateUrl: './login-img-two.component.html',
-  styleUrl: './login-img-two.component.scss'
+    selector: 'app-login-img-two',
+    imports: [CommonModule, RouterModule, CommonLoginFormComponent],
+    templateUrl: './login-img-two.component.html',
+    styleUrl: './login-img-two.component.scss'
 })
 export class LoginImgTwoComponent {
 

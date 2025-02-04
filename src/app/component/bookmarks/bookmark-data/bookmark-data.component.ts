@@ -7,11 +7,10 @@ import { EditBookmarkComponent } from '../bookmark-modal/edit-bookmark/edit-book
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-bookmark-data',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './bookmark-data.component.html',
-  styleUrl: './bookmark-data.component.scss'
+    selector: 'app-bookmark-data',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './bookmark-data.component.html',
+    styleUrl: './bookmark-data.component.scss'
 })
 export class BookmarkDataComponent {
 

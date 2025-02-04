@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-timeline-chart',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './timeline-chart.component.html',
-  styleUrl: './timeline-chart.component.scss'
+    selector: 'app-timeline-chart',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './timeline-chart.component.html',
+    styleUrl: './timeline-chart.component.scss'
 })
 export class TimelineChartComponent {
 

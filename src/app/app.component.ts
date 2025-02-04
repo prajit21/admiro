@@ -5,7 +5,6 @@ import { LoaderComponent } from './shared/component/loader/loader.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [RouterOutlet,TapToTopComponent,LoaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

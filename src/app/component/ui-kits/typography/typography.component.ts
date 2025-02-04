@@ -10,13 +10,12 @@ import { InlineTextElementsComponent } from './inline-text-elements/inline-text-
 import { TextColorComponent } from './text-color/text-color.component';
 
 @Component({
-  selector: 'app-typography',
-  standalone: true,
-  imports: [CommonModule,BlockquotesComponent,ColoredHeadingsComponent,DisplayHeadingComponent
-  ,FontWeightComponent,HeadingsComponent,ListingTypographyComponent,InlineTextElementsComponent,
-  ListingTypographyComponent,TextColorComponent],
-  templateUrl: './typography.component.html',
-  styleUrl: './typography.component.scss'
+    selector: 'app-typography',
+    imports: [CommonModule, BlockquotesComponent, ColoredHeadingsComponent, DisplayHeadingComponent,
+        FontWeightComponent, HeadingsComponent, ListingTypographyComponent, InlineTextElementsComponent,
+        ListingTypographyComponent, TextColorComponent],
+    templateUrl: './typography.component.html',
+    styleUrl: './typography.component.scss'
 })
 export class TypographyComponent {
 

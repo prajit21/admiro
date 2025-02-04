@@ -4,11 +4,10 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @Component({
-  selector: 'app-add-products-details',
-  standalone: true,
-  imports: [CommonModule,AngularEditorModule, FormsModule,ReactiveFormsModule],
-  templateUrl: './add-products-details.component.html',
-  styleUrl: './add-products-details.component.scss'
+    selector: 'app-add-products-details',
+    imports: [CommonModule, AngularEditorModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './add-products-details.component.html',
+    styleUrl: './add-products-details.component.scss'
 })
 export class AddProductsDetailsComponent {
 

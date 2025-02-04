@@ -450,6 +450,24 @@ $i: 1;
 .m-r-10 {
   margin-right: 10px;
 }
+
+
+// leaflet map page css
+.leaflet-custom {
+  .map-height {
+      height: 500px;
+  }
+
+  .hexbin-hexagon {
+      stroke: #000;
+      stroke-width: .5px;
+  }
+
+  .card-body {
+      z-index: 0;
+  }
+}
+
 /*======= Bg-light css end  ======= */
 /**=====================
      Reset css end

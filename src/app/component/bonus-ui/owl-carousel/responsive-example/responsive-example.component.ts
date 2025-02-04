@@ -4,11 +4,10 @@ import { responsiveowl, responsiveOptions } from '../../../../shared/data/bonus-
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-responsive-example',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './responsive-example.component.html',
-  styleUrl: './responsive-example.component.scss'
+    selector: 'app-responsive-example',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './responsive-example.component.html',
+    styleUrl: './responsive-example.component.scss'
 })
 export class ResponsiveExampleComponent {
 

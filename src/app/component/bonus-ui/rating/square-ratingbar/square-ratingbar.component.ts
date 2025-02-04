@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { BarRatingModule } from 'ngx-bar-rating';
 
 @Component({
-  selector: 'app-square-ratingbar',
-  standalone: true,
-  imports: [CommonModule, BarRatingModule],
-  templateUrl: './square-ratingbar.component.html',
-  styleUrl: './square-ratingbar.component.scss'
+    selector: 'app-square-ratingbar',
+    imports: [CommonModule, BarRatingModule],
+    templateUrl: './square-ratingbar.component.html',
+    styleUrl: './square-ratingbar.component.scss'
 })
 export class SquareRatingbarComponent {
 

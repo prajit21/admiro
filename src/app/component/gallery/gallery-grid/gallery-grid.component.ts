@@ -6,11 +6,10 @@ import { Gallery, GalleryItem, ImageItem, ImageSize, ThumbnailsPosition } from '
 import { GalleryModule } from 'ng-gallery';
 
 @Component({
-  selector: 'app-gallery-grid',
-  standalone: true,
-  imports: [CommonModule, LightboxModule, GalleryModule],
-  templateUrl: './gallery-grid.component.html',
-  styleUrl: './gallery-grid.component.scss'
+    selector: 'app-gallery-grid',
+    imports: [CommonModule, LightboxModule, GalleryModule],
+    templateUrl: './gallery-grid.component.html',
+    styleUrl: './gallery-grid.component.scss'
 })
 export class GalleryGridComponent {
 

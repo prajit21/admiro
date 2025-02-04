@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-tooltip-form-validation',
-  standalone: true,
-  imports: [CommonModule,FormsModule,ReactiveFormsModule],
-  templateUrl: './tooltip-form-validation.component.html',
-  styleUrl: './tooltip-form-validation.component.scss'
+    selector: 'app-tooltip-form-validation',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './tooltip-form-validation.component.html',
+    styleUrl: './tooltip-form-validation.component.scss'
 })
 export class TooltipFormValidationComponent {
 

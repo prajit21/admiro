@@ -5,11 +5,10 @@ import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
 
 @Component({
-  selector: 'app-search-result',
-  standalone: true,
-  imports: [CommonModule,AllComponent,ImagesComponent,VideosComponent],
-  templateUrl: './search-result.component.html',
-  styleUrl: './search-result.component.scss'
+    selector: 'app-search-result',
+    imports: [CommonModule, AllComponent, ImagesComponent, VideosComponent],
+    templateUrl: './search-result.component.html',
+    styleUrl: './search-result.component.scss'
 })
 export class SearchResultComponent {
 

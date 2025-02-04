@@ -68,11 +68,10 @@ const states = [
 ];
 
 @Component({
-  selector: 'app-simple-typeahead',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './simple-typeahead.component.html',
-  styleUrl: './simple-typeahead.component.scss'
+    selector: 'app-simple-typeahead',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './simple-typeahead.component.html',
+    styleUrl: './simple-typeahead.component.scss'
 })
 export class SimpleTypeaheadComponent {
 

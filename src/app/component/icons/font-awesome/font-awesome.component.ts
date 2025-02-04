@@ -3,11 +3,10 @@ import { allIcon } from '../../../shared/data/icons/thimify';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-font-awesome',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './font-awesome.component.html',
-  styleUrl: './font-awesome.component.scss'
+    selector: 'app-font-awesome',
+    imports: [CommonModule],
+    templateUrl: './font-awesome.component.html',
+    styleUrl: './font-awesome.component.scss'
 })
 export class FontAwesomeComponent {
 

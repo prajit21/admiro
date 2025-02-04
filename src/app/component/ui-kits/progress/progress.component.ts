@@ -10,12 +10,11 @@ import { ProgressNumberStepsComponent } from './progress-number-steps/progress-n
 import { SmallProgressBarsComponent } from './small-progress-bars/small-progress-bars.component';
 
 @Component({
-  selector: 'app-progress',
-  standalone: true,
-  imports: [CommonModule,CommonProgressBarComponent,CustomHeightProgressBarsComponent,CustomProgressBarsComponent
-  ,LargeProgressBarsComponent,MultipleBarsComponent,ProgressNumberStepsComponent,SmallProgressBarsComponent],
-  templateUrl: './progress.component.html',
-  styleUrl: './progress.component.scss'
+    selector: 'app-progress',
+    imports: [CommonModule, CommonProgressBarComponent, CustomHeightProgressBarsComponent, CustomProgressBarsComponent,
+        LargeProgressBarsComponent, MultipleBarsComponent, ProgressNumberStepsComponent, SmallProgressBarsComponent],
+    templateUrl: './progress.component.html',
+    styleUrl: './progress.component.scss'
 })
 export class ProgressComponent {
 

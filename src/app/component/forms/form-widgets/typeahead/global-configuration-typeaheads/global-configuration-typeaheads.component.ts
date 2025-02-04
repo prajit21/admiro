@@ -68,11 +68,10 @@ const states = [
   'Wyoming']
 
 @Component({
-  selector: 'app-global-configuration-typeaheads',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './global-configuration-typeaheads.component.html',
-  styleUrl: './global-configuration-typeaheads.component.scss'
+    selector: 'app-global-configuration-typeaheads',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './global-configuration-typeaheads.component.html',
+    styleUrl: './global-configuration-typeaheads.component.scss'
 })
 export class GlobalConfigurationTypeaheadsComponent {
 

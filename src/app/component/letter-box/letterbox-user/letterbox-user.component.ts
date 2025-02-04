@@ -6,11 +6,10 @@ import { InterviewMailComponent } from './interview-mail/interview-mail.componen
 import { LetterTopSectionComponent } from '../letter-top-section/letter-top-section.component';
 
 @Component({
-  selector: 'app-letterbox-user',
-  standalone: true,
-  imports: [CommonModule, NgbModule, InterviewMailComponent, LetterTopSectionComponent],
-  templateUrl: './letterbox-user.component.html',
-  styleUrl: './letterbox-user.component.scss'
+    selector: 'app-letterbox-user',
+    imports: [CommonModule, NgbModule, InterviewMailComponent, LetterTopSectionComponent],
+    templateUrl: './letterbox-user.component.html',
+    styleUrl: './letterbox-user.component.scss'
 })
 export class LetterboxUserComponent {
 

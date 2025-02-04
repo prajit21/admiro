@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import * as data from "../../../../../../shared/data/contacts/all-contact";
 
 @Component({
-  selector: 'app-personal-contact',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './personal-contact.component.html',
-  styleUrl: './personal-contact.component.scss'
+    selector: 'app-personal-contact',
+    imports: [CommonModule],
+    templateUrl: './personal-contact.component.html',
+    styleUrl: './personal-contact.component.scss'
 })
 export class PersonalContactComponent {
 

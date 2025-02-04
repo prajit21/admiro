@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-prettify-number',
-  standalone: true,
-  imports: [CommonModule,NgxSliderModule],
-  templateUrl: './prettify-number.component.html',
-  styleUrl: './prettify-number.component.scss'
+    selector: 'app-prettify-number',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './prettify-number.component.html',
+    styleUrl: './prettify-number.component.scss'
 })
 export class PrettifyNumberComponent {
 

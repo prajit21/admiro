@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-java-script-behavior',
-  standalone: true,
-  imports: [CommonModule,NgbModule,],
-  templateUrl: './java-script-behavior.component.html',
-  styleUrl: './java-script-behavior.component.scss'
+    selector: 'app-java-script-behavior',
+    imports: [CommonModule, NgbModule,],
+    templateUrl: './java-script-behavior.component.html',
+    styleUrl: './java-script-behavior.component.scss'
 })
 export class JavaScriptBehaviorComponent {
 

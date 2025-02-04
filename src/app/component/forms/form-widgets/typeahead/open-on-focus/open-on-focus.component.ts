@@ -70,11 +70,10 @@ const states = [
 
 
 @Component({
-  selector: 'app-open-on-focus',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './open-on-focus.component.html',
-  styleUrl: './open-on-focus.component.scss'
+    selector: 'app-open-on-focus',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './open-on-focus.component.html',
+    styleUrl: './open-on-focus.component.scss'
 })
 export class OpenOnFocusComponent {
 

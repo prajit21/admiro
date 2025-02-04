@@ -4,11 +4,10 @@ import { VariationsLeftRibbonsComponent } from './variations-left-ribbons/variat
 import { VariationsRightRibbonsComponent } from './variations-right-ribbons/variations-right-ribbons.component';
 
 @Component({
-  selector: 'app-ribbons',
-  standalone: true,
-  imports: [CommonModule,VariationsLeftRibbonsComponent,VariationsRightRibbonsComponent],
-  templateUrl: './ribbons.component.html',
-  styleUrl: './ribbons.component.scss'
+    selector: 'app-ribbons',
+    imports: [CommonModule, VariationsLeftRibbonsComponent, VariationsRightRibbonsComponent],
+    templateUrl: './ribbons.component.html',
+    styleUrl: './ribbons.component.scss'
 })
 export class RibbonsComponent {
 

@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-static-backdrop-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './static-backdrop-modal.component.html',
-  styleUrl: './static-backdrop-modal.component.scss'
+    selector: 'app-static-backdrop-modal',
+    imports: [CommonModule],
+    templateUrl: './static-backdrop-modal.component.html',
+    styleUrl: './static-backdrop-modal.component.scss'
 })
 export class StaticBackdropModalComponent {
 

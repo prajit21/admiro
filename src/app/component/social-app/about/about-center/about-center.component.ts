@@ -8,12 +8,11 @@ import { FeathericonComponent } from '../../../../shared/component/feathericon/f
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-about-center',
-  standalone: true,
-  imports: [CommonModule, ActivityLogComponent, HobbiesInterestsComponent,
-    CommonAddFriendsComponent, FeathericonComponent, NgbModule],
-  templateUrl: './about-center.component.html',
-  styleUrl: './about-center.component.scss'
+    selector: 'app-about-center',
+    imports: [CommonModule, ActivityLogComponent, HobbiesInterestsComponent,
+        CommonAddFriendsComponent, FeathericonComponent, NgbModule],
+    templateUrl: './about-center.component.html',
+    styleUrl: './about-center.component.scss'
 })
 export class AboutCenterComponent {
 

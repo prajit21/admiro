@@ -4,11 +4,10 @@ import { SchoolPerformance } from '../../../../shared/data/dashboard/education/e
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-school-performance',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './school-performance.component.html',
-  styleUrl: './school-performance.component.scss'
+    selector: 'app-school-performance',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './school-performance.component.html',
+    styleUrl: './school-performance.component.scss'
 })
 export class SchoolPerformanceComponent {
 

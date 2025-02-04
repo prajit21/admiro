@@ -14,13 +14,12 @@ import { RadioToggleButtonsComponent } from './radio-toggle-buttons/radio-toggle
 import { ImagesRadioComponent } from './images-radio/images-radio.component';
 
 @Component({
-  selector: 'app-checkbox-radio',
-  standalone: true,
-  imports: [CommonModule, AnimatedButtonsComponent, BasicRadioCheckboxComponent, CustomCheckboxComponent, CustomRadioComponent
-    , DefaultCheckboxComponent, DefaultRadioComponent, DefaultSwitchComponent, ImagesCheckboxComponent, InlineInputTypeComponent, OutlinedCheckboxStyleComponent
-    , RadioToggleButtonsComponent, ImagesRadioComponent],
-  templateUrl: './checkbox-radio.component.html',
-  styleUrl: './checkbox-radio.component.scss'
+    selector: 'app-checkbox-radio',
+    imports: [CommonModule, AnimatedButtonsComponent, BasicRadioCheckboxComponent, CustomCheckboxComponent, CustomRadioComponent,
+        DefaultCheckboxComponent, DefaultRadioComponent, DefaultSwitchComponent, ImagesCheckboxComponent, InlineInputTypeComponent, OutlinedCheckboxStyleComponent,
+        RadioToggleButtonsComponent, ImagesRadioComponent],
+    templateUrl: './checkbox-radio.component.html',
+    styleUrl: './checkbox-radio.component.scss'
 })
 export class CheckboxRadioComponent {
 

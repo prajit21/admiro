@@ -4,11 +4,10 @@ import { ActivityTimeline } from '../../../../shared/data/dashboard/ecommerce/ec
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-activity-timeline',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective],
-  templateUrl: './activity-timeline.component.html',
-  styleUrl: './activity-timeline.component.scss'
+    selector: 'app-activity-timeline',
+    imports: [CommonModule, ClickOutsideDirective],
+    templateUrl: './activity-timeline.component.html',
+    styleUrl: './activity-timeline.component.scss'
 })
 export class ActivityTimelineComponent {
 

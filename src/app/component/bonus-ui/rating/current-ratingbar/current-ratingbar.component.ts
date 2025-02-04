@@ -8,11 +8,10 @@ import { FormControl, FormsModule, Validators } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-current-ratingbar',
-  standalone: true,
-  imports: [CommonModule ,FormsModule, NgbModule, BarRatingModule  ,FontAwesomeModule],
-  templateUrl: './current-ratingbar.component.html',
-  styleUrl: './current-ratingbar.component.scss'
+    selector: 'app-current-ratingbar',
+    imports: [CommonModule, FormsModule, NgbModule, BarRatingModule, FontAwesomeModule],
+    templateUrl: './current-ratingbar.component.html',
+    styleUrl: './current-ratingbar.component.scss'
 })
 export class CurrentRatingbarComponent {
   

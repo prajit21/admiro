@@ -4,11 +4,10 @@ import { commonImg, autoheigthoptions } from '../../../../shared/data/bonus-ui/o
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-auto-height-example',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './auto-height-example.component.html',
-  styleUrl: './auto-height-example.component.scss'
+    selector: 'app-auto-height-example',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './auto-height-example.component.html',
+    styleUrl: './auto-height-example.component.scss'
 })
 export class AutoHeightExampleComponent {
 

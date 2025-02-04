@@ -4,11 +4,10 @@ import { basicCheckbox, simpleRadio } from '../../../../../shared/data/form-cont
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-basic-radio-checkbox',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './basic-radio-checkbox.component.html',
-  styleUrl: './basic-radio-checkbox.component.scss'
+    selector: 'app-basic-radio-checkbox',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './basic-radio-checkbox.component.html',
+    styleUrl: './basic-radio-checkbox.component.scss'
 })
 export class BasicRadioCheckboxComponent {
 

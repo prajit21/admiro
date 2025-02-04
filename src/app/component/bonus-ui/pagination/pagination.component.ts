@@ -11,13 +11,12 @@ import { WithOutlineComponent } from './with-outline/with-outline.component';
 
 
 @Component({
-  selector: 'app-pagination',
-  standalone: true,
-  imports: [CommonModule, ActiveDisabledPaginationComponent, AlignmentPaginationComponent, DefaultPaginationComponent
-    , IconsPaginationComponent, RoundedPaginationComponent, SizingPaginationComponent, WithDisabledComponent
-    , WithOutlineComponent],
-  templateUrl: './pagination.component.html',
-  styleUrl: './pagination.component.scss'
+    selector: 'app-pagination',
+    imports: [CommonModule, ActiveDisabledPaginationComponent, AlignmentPaginationComponent, DefaultPaginationComponent,
+        IconsPaginationComponent, RoundedPaginationComponent, SizingPaginationComponent, WithDisabledComponent,
+        WithOutlineComponent],
+    templateUrl: './pagination.component.html',
+    styleUrl: './pagination.component.scss'
 })
 export class PaginationComponent {
 

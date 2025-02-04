@@ -4,11 +4,10 @@ import { sildesOnly, sildesOptions } from '../../../../shared/data/bonus-ui/owl-
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-slides-only',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './slides-only.component.html',
-  styleUrl: './slides-only.component.scss'
+    selector: 'app-slides-only',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './slides-only.component.html',
+    styleUrl: './slides-only.component.scss'
 })
 export class SlidesOnlyComponent {
 

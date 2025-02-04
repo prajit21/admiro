@@ -6,11 +6,10 @@ import { BadgesButtonsComponent } from './badges-buttons/badges-buttons.componen
 import { CommonBadgePillsComponent } from './common-badge-pills/common-badge-pills.component';
 
 @Component({
-  selector: 'app-tag-pills',
-  standalone: true,
-  imports: [CommonModule,BadgeHeadingsComponent,BadgesButtonsComponent,CommonBadgePillsComponent],
-  templateUrl: './tag-pills.component.html',
-  styleUrl: './tag-pills.component.scss'
+    selector: 'app-tag-pills',
+    imports: [CommonModule, BadgeHeadingsComponent, BadgesButtonsComponent, CommonBadgePillsComponent],
+    templateUrl: './tag-pills.component.html',
+    styleUrl: './tag-pills.component.scss'
 })
 export class TagPillsComponent {
 

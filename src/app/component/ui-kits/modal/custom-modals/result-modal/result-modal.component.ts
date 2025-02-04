@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-result-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './result-modal.component.html',
-  styleUrl: './result-modal.component.scss'
+    selector: 'app-result-modal',
+    imports: [CommonModule],
+    templateUrl: './result-modal.component.html',
+    styleUrl: './result-modal.component.scss'
 })
 export class ResultModalComponent {
 

@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": false
         }
       },
       "root": "",
@@ -17,6 +18,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": ["color-functions", "global-builtin", "import", "mixed-decls"]
+              }
+            },
             "outputPath": "dist/admiro",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -27,11 +33,19 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@kolkov/angular-editor/assets/icons",
+                "output": "assets/ae-icons/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@kolkov/angular-editor/themes/default.scss"
             ],
             "scripts": []
           },
@@ -41,12 +55,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "7MB"
+                  "maximumError": "8mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "2mb",
+                  "maximumError": "8mb"
                 }
               ],
               "outputHashing": "all"
@@ -79,13 +93,16 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -95,8 +112,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

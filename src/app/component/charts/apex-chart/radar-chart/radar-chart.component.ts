@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-radar-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './radar-chart.component.html',
-  styleUrl: './radar-chart.component.scss'
+    selector: 'app-radar-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './radar-chart.component.html',
+    styleUrl: './radar-chart.component.scss'
 })
 export class RadarChartComponent {
 

@@ -5,11 +5,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 
 
 @Component({
-  selector: 'app-finance',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './finance.component.html',
-  styleUrl: './finance.component.scss'
+    selector: 'app-finance',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './finance.component.html',
+    styleUrl: './finance.component.scss'
 })
 export class FinanceComponent {
 

@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-alerts-table',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './alerts-table.component.html',
-  styleUrl: './alerts-table.component.scss'
+    selector: 'app-alerts-table',
+    imports: [CommonModule],
+    templateUrl: './alerts-table.component.html',
+    styleUrl: './alerts-table.component.scss'
 })
 export class AlertsTableComponent {
 

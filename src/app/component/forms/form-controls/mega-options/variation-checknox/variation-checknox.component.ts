@@ -4,11 +4,10 @@ import { checkBox, themeSales } from '../../../../../shared/data/form-controls/m
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-variation-checknox',
-  standalone: true,
-  imports: [CommonModule,FormsModule],  
-  templateUrl: './variation-checknox.component.html',
-  styleUrl: './variation-checknox.component.scss'
+    selector: 'app-variation-checknox',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './variation-checknox.component.html',
+    styleUrl: './variation-checknox.component.scss'
 })
 export class VariationChecknoxComponent {
 

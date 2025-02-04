@@ -4,11 +4,10 @@ import { soicaMidia, paymentData } from '../../../../../shared/data/form-control
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-animated-buttons',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './animated-buttons.component.html',
-  styleUrl: './animated-buttons.component.scss'
+    selector: 'app-animated-buttons',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './animated-buttons.component.html',
+    styleUrl: './animated-buttons.component.scss'
 })
 export class AnimatedButtonsComponent {
 

@@ -4,11 +4,10 @@ import { center, owlcarousel1ptions } from '../../../../shared/data/bonus-ui/owl
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-center-example',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './center-example.component.html',
-  styleUrl: './center-example.component.scss'
+    selector: 'app-center-example',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './center-example.component.html',
+    styleUrl: './center-example.component.scss'
 })
 export class CenterExampleComponent {
 

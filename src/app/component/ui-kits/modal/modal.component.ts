@@ -9,12 +9,11 @@ import { ToggleBetweenModalsComponent } from './toggle-between-modals/toggle-bet
 import { FullscreenModalComponent } from './fullscreen-modal/fullscreen-modal.component';
 
 @Component({
-  selector: 'app-modal',
-  standalone: true,
-  imports: [CommonModule,BasicModalComponent,CenteredModalComponent,CustomModalsComponent,FullscreenModalComponent
-  ,SizesModalComponent,StaticBackdropModalComponent,ToggleBetweenModalsComponent],
-  templateUrl: './modal.component.html',
-  styleUrl: './modal.component.scss'
+    selector: 'app-modal',
+    imports: [CommonModule, BasicModalComponent, CenteredModalComponent, CustomModalsComponent, FullscreenModalComponent,
+        SizesModalComponent, StaticBackdropModalComponent, ToggleBetweenModalsComponent],
+    templateUrl: './modal.component.html',
+    styleUrl: './modal.component.scss'
 })
 export class ModalComponent {
 

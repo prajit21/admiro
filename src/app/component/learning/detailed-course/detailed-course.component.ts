@@ -5,11 +5,10 @@ import { BlogCommentComponent } from '../../blog/blog-single/blog-comment/blog-c
 import { LearningFilterComponent } from '../learning-filter/learning-filter.component';
 
 @Component({
-  selector: 'app-detailed-course',
-  standalone: true,
-  imports: [CommonModule,BlogCommentComponent,LearningFilterComponent],
-  templateUrl: './detailed-course.component.html',
-  styleUrl: './detailed-course.component.scss'
+    selector: 'app-detailed-course',
+    imports: [CommonModule, BlogCommentComponent, LearningFilterComponent],
+    templateUrl: './detailed-course.component.html',
+    styleUrl: './detailed-course.component.scss'
 })
 export class DetailedCourseComponent {
 

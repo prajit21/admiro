@@ -5,11 +5,10 @@ import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
 
 @Component({
-  selector: 'app-photos',
-  standalone: true,
-  imports: [CommonModule,GalleryModule,LightboxModule],
-  templateUrl: './photos.component.html',
-  styleUrl: './photos.component.scss'
+    selector: 'app-photos',
+    imports: [CommonModule, GalleryModule, LightboxModule],
+    templateUrl: './photos.component.html',
+    styleUrl: './photos.component.scss'
 })
 export class PhotosComponent {
 

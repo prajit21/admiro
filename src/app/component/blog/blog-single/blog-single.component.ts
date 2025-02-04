@@ -4,11 +4,10 @@ import { commentsData } from '../../../shared/data/blog/blog-data';
 import { BlogCommentComponent } from './blog-comment/blog-comment.component';
 
 @Component({
-  selector: 'app-blog-single',
-  standalone: true,
-  imports: [CommonModule,BlogCommentComponent],
-  templateUrl: './blog-single.component.html',
-  styleUrl: './blog-single.component.scss'
+    selector: 'app-blog-single',
+    imports: [CommonModule, BlogCommentComponent],
+    templateUrl: './blog-single.component.html',
+    styleUrl: './blog-single.component.scss'
 })
 export class BlogSingleComponent {
 

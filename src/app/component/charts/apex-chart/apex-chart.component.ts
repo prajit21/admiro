@@ -15,14 +15,13 @@ import { RadialChartComponent } from './radial-chart/radial-chart.component';
 import { SteplineChartComponent } from './stepline-chart/stepline-chart.component';
 
 @Component({
-  selector: 'app-apex-chart',
-  standalone: true,
-  imports: [CommonModule, ApexBarChartComponent, ApexColumnChartComponent, BasicAreaChartComponent
-    , BasicLineChartComponent, BubbleChartComponent, CandlestickChartComponent, ColumnChartComponent,
-    DountChartComponent, MixedChartComponent, PieChartComponent, RadarChartComponent, RadialChartComponent,
-    SteplineChartComponent],
-  templateUrl: './apex-chart.component.html',
-  styleUrl: './apex-chart.component.scss'
+    selector: 'app-apex-chart',
+    imports: [CommonModule, ApexBarChartComponent, ApexColumnChartComponent, BasicAreaChartComponent,
+        BasicLineChartComponent, BubbleChartComponent, CandlestickChartComponent, ColumnChartComponent,
+        DountChartComponent, MixedChartComponent, PieChartComponent, RadarChartComponent, RadialChartComponent,
+        SteplineChartComponent],
+    templateUrl: './apex-chart.component.html',
+    styleUrl: './apex-chart.component.scss'
 })
 export class ApexChartComponent {
 

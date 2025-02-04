@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-advance-sweetalert',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './advance-sweetalert.component.html',
-  styleUrl: './advance-sweetalert.component.scss'
+    selector: 'app-advance-sweetalert',
+    imports: [CommonModule],
+    templateUrl: './advance-sweetalert.component.html',
+    styleUrl: './advance-sweetalert.component.scss'
 })
 export class AdvanceSweetalertComponent {
 

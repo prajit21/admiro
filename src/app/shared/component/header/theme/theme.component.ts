@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
-  selector: 'app-theme',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './theme.component.html',
-  styleUrl: './theme.component.scss'
+    selector: 'app-theme',
+    imports: [CommonModule],
+    templateUrl: './theme.component.html',
+    styleUrl: './theme.component.scss'
 })
 export class ThemeComponent {
 

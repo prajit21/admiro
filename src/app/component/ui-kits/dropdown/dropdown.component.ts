@@ -14,13 +14,12 @@ import { SplitDropdownComponent } from './split-dropdown/split-dropdown.componen
 import { UniqueDropdownComponent } from './unique-dropdown/unique-dropdown.component';
 
 @Component({
-  selector: 'app-dropdown',
-  standalone: true,
-  imports: [CommonModule, AlignmentsComponent, BasicDropdownComponent, DarkDropdownComponent, DividerDropdownComponent,
-    HeadingDropdownComponent, HelperDropdownComponent, InputDropdownComponent, JustifyContentDropdownComponent,
-    RoundedDropdownComponent , SizingDropdownComponent,SplitDropdownComponent,UniqueDropdownComponent],
-  templateUrl: './dropdown.component.html',
-  styleUrl: './dropdown.component.scss'
+    selector: 'app-dropdown',
+    imports: [CommonModule, AlignmentsComponent, BasicDropdownComponent, DarkDropdownComponent, DividerDropdownComponent,
+        HeadingDropdownComponent, HelperDropdownComponent, InputDropdownComponent, JustifyContentDropdownComponent,
+        RoundedDropdownComponent, SizingDropdownComponent, SplitDropdownComponent, UniqueDropdownComponent],
+    templateUrl: './dropdown.component.html',
+    styleUrl: './dropdown.component.scss'
 })
 export class DropdownComponent {
 

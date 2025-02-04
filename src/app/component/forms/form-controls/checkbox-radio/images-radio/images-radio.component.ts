@@ -4,11 +4,10 @@ import { imageRadio } from '../../../../../shared/data/form-controls/checkbox-ra
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-images-radio',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './images-radio.component.html',
-  styleUrl: './images-radio.component.scss'
+    selector: 'app-images-radio',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './images-radio.component.html',
+    styleUrl: './images-radio.component.scss'
 })
 export class ImagesRadioComponent {
 

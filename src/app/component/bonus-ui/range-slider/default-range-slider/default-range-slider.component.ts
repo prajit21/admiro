@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-default-range-slider',
-  standalone: true,
-  imports: [CommonModule,NgxSliderModule],
-  templateUrl: './default-range-slider.component.html',
-  styleUrl: './default-range-slider.component.scss'
+    selector: 'app-default-range-slider',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './default-range-slider.component.html',
+    styleUrl: './default-range-slider.component.scss'
 })
 export class DefaultRangeSliderComponent {
 

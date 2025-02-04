@@ -5,11 +5,10 @@ import * as Data from '../../../../shared/data/ui-kits/dropdown';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-split-dropdown',
-  standalone: true,
-  imports: [CommonModule,NgbModule,FeathericonComponent],
-  templateUrl: './split-dropdown.component.html',
-  styleUrl: './split-dropdown.component.scss'
+    selector: 'app-split-dropdown',
+    imports: [CommonModule, NgbModule, FeathericonComponent],
+    templateUrl: './split-dropdown.component.html',
+    styleUrl: './split-dropdown.component.scss'
 })
 export class SplitDropdownComponent {
 

@@ -8,12 +8,11 @@ import { SimpleExampleComponent } from './simple-example/simple-example.componen
 import { SizingComponent } from './sizing/sizing.component';
 
 @Component({
-  selector: 'app-base-input',
-  standalone: true,
-  imports: [CommonModule, BasicInputControlComponent, EdgesStyleComponent, FlatStyleComponent,
-     RaiseStyleComponent, SimpleExampleComponent, SizingComponent],
-  templateUrl: './base-input.component.html',
-  styleUrl: './base-input.component.scss'
+    selector: 'app-base-input',
+    imports: [CommonModule, BasicInputControlComponent, EdgesStyleComponent, FlatStyleComponent,
+        RaiseStyleComponent, SimpleExampleComponent, SizingComponent],
+    templateUrl: './base-input.component.html',
+    styleUrl: './base-input.component.scss'
 })
 export class BaseInputComponent {
 

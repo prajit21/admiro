@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-toggle-between-modals',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './toggle-between-modals.component.html',
-  styleUrl: './toggle-between-modals.component.scss'
+    selector: 'app-toggle-between-modals',
+    imports: [CommonModule],
+    templateUrl: './toggle-between-modals.component.html',
+    styleUrl: './toggle-between-modals.component.scss'
 })
 export class ToggleBetweenModalsComponent {
 

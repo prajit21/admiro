@@ -4,11 +4,10 @@ import { BestSeller } from '../../../../shared/data/dashboard/ecommerce/ecommerc
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-best-seller',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './best-seller.component.html',
-  styleUrl: './best-seller.component.scss'
+    selector: 'app-best-seller',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './best-seller.component.html',
+    styleUrl: './best-seller.component.scss'
 })
 export class BestSellerComponent {
 

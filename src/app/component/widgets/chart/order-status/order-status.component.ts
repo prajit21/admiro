@@ -4,11 +4,10 @@ import * as  Progresschart from '../../../../shared/data/widgets/chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-order-status',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './order-status.component.html',
-  styleUrl: './order-status.component.scss'
+    selector: 'app-order-status',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './order-status.component.html',
+    styleUrl: './order-status.component.scss'
 })
 export class OrderStatusComponent {
 

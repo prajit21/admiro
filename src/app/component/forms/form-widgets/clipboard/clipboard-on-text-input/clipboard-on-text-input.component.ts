@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-  selector: 'app-clipboard-on-text-input',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './clipboard-on-text-input.component.html',
-  styleUrl: './clipboard-on-text-input.component.scss'
+    selector: 'app-clipboard-on-text-input',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './clipboard-on-text-input.component.html',
+    styleUrl: './clipboard-on-text-input.component.scss'
 })
 export class ClipboardOnTextInputComponent {
 

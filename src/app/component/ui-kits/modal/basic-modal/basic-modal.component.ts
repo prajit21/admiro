@@ -6,12 +6,11 @@ import { TooltipsPopoversComponent } from './tooltips-popovers/tooltips-popovers
 import { SimpleComponent } from './simple/simple.component';
 
 @Component({
-  selector: 'app-basic-modal',
-  standalone: true,
-  imports: [CommonModule,OpenModalComponent,ScrollingContentComponent,SimpleComponent
-  ,TooltipsPopoversComponent],
-  templateUrl: './basic-modal.component.html',
-  styleUrl: './basic-modal.component.scss'
+    selector: 'app-basic-modal',
+    imports: [CommonModule, OpenModalComponent, ScrollingContentComponent, SimpleComponent,
+        TooltipsPopoversComponent],
+    templateUrl: './basic-modal.component.html',
+    styleUrl: './basic-modal.component.scss'
 })
 export class BasicModalComponent {
 

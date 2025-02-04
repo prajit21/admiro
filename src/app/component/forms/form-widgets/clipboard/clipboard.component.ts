@@ -6,12 +6,11 @@ import { ClipboardOnTextareaComponent } from './clipboard-on-textarea/clipboard-
 import { CopyPortionFromParagraphComponent } from './copy-portion-from-paragraph/copy-portion-from-paragraph.component';
 
 @Component({
-  selector: 'app-clipboard',
-  standalone: true,
-  imports: [CommonModule, ClipboardOnParagraphComponent, ClipboardOnTextInputComponent,
-    ClipboardOnTextareaComponent,CopyPortionFromParagraphComponent],
-  templateUrl: './clipboard.component.html',
-  styleUrl: './clipboard.component.scss'
+    selector: 'app-clipboard',
+    imports: [CommonModule, ClipboardOnParagraphComponent, ClipboardOnTextInputComponent,
+        ClipboardOnTextareaComponent, CopyPortionFromParagraphComponent],
+    templateUrl: './clipboard.component.html',
+    styleUrl: './clipboard.component.scss'
 })
 export class ClipboardComponent {
 

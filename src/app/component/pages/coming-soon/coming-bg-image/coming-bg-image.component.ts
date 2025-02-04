@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-coming-bg-image',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './coming-bg-image.component.html',
-  styleUrl: './coming-bg-image.component.scss'
+    selector: 'app-coming-bg-image',
+    imports: [CommonModule],
+    templateUrl: './coming-bg-image.component.html',
+    styleUrl: './coming-bg-image.component.scss'
 })
 export class ComingBgImageComponent {
 

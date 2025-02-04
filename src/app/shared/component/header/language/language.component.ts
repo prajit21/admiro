@@ -11,11 +11,10 @@ interface selectedlanguage {
 }
 
 @Component({
-  selector: 'app-language',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './language.component.html',
-  styleUrl: './language.component.scss'
+    selector: 'app-language',
+    imports: [CommonModule],
+    templateUrl: './language.component.html',
+    styleUrl: './language.component.scss'
 })
 export class LanguageComponent {
 

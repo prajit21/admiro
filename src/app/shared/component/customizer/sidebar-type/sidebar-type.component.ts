@@ -3,11 +3,10 @@ import { Component, HostListener } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
-  selector: 'app-sidebar-type',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './sidebar-type.component.html',
-  styleUrl: './sidebar-type.component.scss'
+    selector: 'app-sidebar-type',
+    imports: [CommonModule],
+    templateUrl: './sidebar-type.component.html',
+    styleUrl: './sidebar-type.component.scss'
 })
 export class SidebarTypeComponent {
 

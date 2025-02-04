@@ -11,12 +11,11 @@ import { RightLeftExampleComponent } from './right-left-example/right-left-examp
 import { SlidesOnlyComponent } from './slides-only/slides-only.component';
 
 @Component({
-  selector: 'app-owl-carousel',
-  standalone: true,
-  imports: [CommonModule,AutoHeightExampleComponent,AutoPlayComponent,AutoWidhtExampleComponent,CenterExampleComponent
-  ,CrossFadeComponent,LazyLoadExampleComponent,ResponsiveExampleComponent,RightLeftExampleComponent,SlidesOnlyComponent],
-  templateUrl: './owl-carousel.component.html',
-  styleUrl: './owl-carousel.component.scss'
+    selector: 'app-owl-carousel',
+    imports: [CommonModule, AutoHeightExampleComponent, AutoPlayComponent, AutoWidhtExampleComponent, CenterExampleComponent,
+        CrossFadeComponent, LazyLoadExampleComponent, ResponsiveExampleComponent, RightLeftExampleComponent, SlidesOnlyComponent],
+    templateUrl: './owl-carousel.component.html',
+    styleUrl: './owl-carousel.component.scss'
 })
 export class OwlCarouselComponent {
 

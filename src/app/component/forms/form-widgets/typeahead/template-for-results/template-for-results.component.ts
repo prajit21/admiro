@@ -60,11 +60,10 @@ const statesWithFlags: { name: string; flag: string }[] = [
 
 
 @Component({
-  selector: 'app-template-for-results',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './template-for-results.component.html',
-  styleUrl: './template-for-results.component.scss'
+    selector: 'app-template-for-results',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './template-for-results.component.html',
+    styleUrl: './template-for-results.component.scss'
 })
 export class TemplateForResultsComponent {
 

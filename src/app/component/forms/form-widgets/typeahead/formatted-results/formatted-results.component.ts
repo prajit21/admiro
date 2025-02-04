@@ -68,11 +68,10 @@ const states = [
 ];
 
 @Component({
-  selector: 'app-formatted-results',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './formatted-results.component.html',
-  styleUrl: './formatted-results.component.scss'
+    selector: 'app-formatted-results',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './formatted-results.component.html',
+    styleUrl: './formatted-results.component.scss'
 })
 export class FormattedResultsComponent {
 

@@ -5,11 +5,10 @@ import { RouterModule } from '@angular/router';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-top-selling-products',
-  standalone: true,
-  imports: [CommonModule,RouterModule,ClickOutsideDirective],
-  templateUrl: './top-selling-products.component.html',
-  styleUrl: './top-selling-products.component.scss'
+    selector: 'app-top-selling-products',
+    imports: [CommonModule, RouterModule, ClickOutsideDirective],
+    templateUrl: './top-selling-products.component.html',
+    styleUrl: './top-selling-products.component.scss'
 })
 export class TopSellingProductsComponent {
 

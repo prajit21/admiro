@@ -4,11 +4,10 @@ import { SalesAnalytics } from '../../../../shared/data/dashboard/ecommerce/ecom
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-sales-analytics',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './sales-analytics.component.html',
-  styleUrl: './sales-analytics.component.scss'
+    selector: 'app-sales-analytics',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './sales-analytics.component.html',
+    styleUrl: './sales-analytics.component.scss'
 })
 export class SalesAnalyticsComponent {
 

@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-small-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './small-modal.component.html',
-  styleUrl: './small-modal.component.scss'
+    selector: 'app-small-modal',
+    imports: [CommonModule],
+    templateUrl: './small-modal.component.html',
+    styleUrl: './small-modal.component.scss'
 })
 export class SmallModalComponent {
 

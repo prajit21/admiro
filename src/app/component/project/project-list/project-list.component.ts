@@ -5,11 +5,10 @@ import { FeathericonComponent } from '../../../shared/component/feathericon/feat
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-project-list',
-  standalone: true,
-  imports: [CommonModule ,FeathericonComponent ,RouterModule],
-  templateUrl: './project-list.component.html',
-  styleUrl: './project-list.component.scss'
+    selector: 'app-project-list',
+    imports: [CommonModule, FeathericonComponent, RouterModule],
+    templateUrl: './project-list.component.html',
+    styleUrl: './project-list.component.scss'
 })
 export class ProjectListComponent {
 

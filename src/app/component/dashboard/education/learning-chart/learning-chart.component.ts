@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-learning-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
-  templateUrl: './learning-chart.component.html',
-  styleUrl: './learning-chart.component.scss'
+    selector: 'app-learning-chart',
+    imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
+    templateUrl: './learning-chart.component.html',
+    styleUrl: './learning-chart.component.scss'
 })
 export class LearningChartComponent {
 

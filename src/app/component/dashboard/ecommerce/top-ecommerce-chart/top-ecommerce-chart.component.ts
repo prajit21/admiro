@@ -5,11 +5,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-top-ecommerce-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
-  templateUrl: './top-ecommerce-chart.component.html',
-  styleUrl: './top-ecommerce-chart.component.scss'
+    selector: 'app-top-ecommerce-chart',
+    imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
+    templateUrl: './top-ecommerce-chart.component.html',
+    styleUrl: './top-ecommerce-chart.component.scss'
 })
 export class TopEcommerceChartComponent {
 

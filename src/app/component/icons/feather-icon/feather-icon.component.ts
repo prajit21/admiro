@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-feather-icon',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './feather-icon.component.html',
-  styleUrl: './feather-icon.component.scss'
+    selector: 'app-feather-icon',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './feather-icon.component.html',
+    styleUrl: './feather-icon.component.scss'
 })
 export class FeatherIconComponent {
 

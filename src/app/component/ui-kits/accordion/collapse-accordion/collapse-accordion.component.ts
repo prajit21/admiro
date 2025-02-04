@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-collapse-accordion',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './collapse-accordion.component.html',
-  styleUrl: './collapse-accordion.component.scss'
+    selector: 'app-collapse-accordion',
+    imports: [CommonModule],
+    templateUrl: './collapse-accordion.component.html',
+    styleUrl: './collapse-accordion.component.scss'
 })
 export class CollapseAccordionComponent {
 

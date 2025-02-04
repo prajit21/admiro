@@ -13,13 +13,12 @@ import { TopCommonEducationchartComponent } from './top-common-educationchart/to
 import { UpcomingClassesComponent } from './upcoming-classes/upcoming-classes.component';
 
 @Component({
-  selector: 'app-education',
-  standalone: true,
-  imports: [CommonModule, AssignmentsComponent, LearningChartComponent, NewCoursesComponent
-    , NoticeBoardComponent, ScheduleLessonComponent, SchoolPerformanceComponent, StudentDetailsComponent
-    , ToDoListComponent,TopCommonEducationchartComponent,UpcomingClassesComponent],
-  templateUrl: './education.component.html',
-  styleUrl: './education.component.scss'
+    selector: 'app-education',
+    imports: [CommonModule, AssignmentsComponent, LearningChartComponent, NewCoursesComponent,
+        NoticeBoardComponent, ScheduleLessonComponent, SchoolPerformanceComponent, StudentDetailsComponent,
+        ToDoListComponent, TopCommonEducationchartComponent, UpcomingClassesComponent],
+    templateUrl: './education.component.html',
+    styleUrl: './education.component.scss'
 })
 export class EducationComponent {
 

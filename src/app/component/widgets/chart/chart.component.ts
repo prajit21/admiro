@@ -16,13 +16,12 @@ import { UsesComponent } from './uses/uses.component';
 import { MonthlySalesComponent } from './monthly-sales/monthly-sales.component';
 
 @Component({
-  selector: 'app-chart',
-  standalone: true,
-  imports: [CommonModule, CommonWidgetsChartComponent, CryptAnnotationsComponent, CryptocurrencyPricesComponent
-    , FinanceComponent, LiveProductsComponent, MonthlyHistoryComponent, OrderStatusComponent, OrderStatus2Component,
-    MonthlySalesComponent, SkillStatusComponent, StockMarketComponent, TrunOverComponent, UsesComponent],
-  templateUrl: './chart.component.html',
-  styleUrl: './chart.component.scss'
+    selector: 'app-chart',
+    imports: [CommonModule, CommonWidgetsChartComponent, CryptAnnotationsComponent, CryptocurrencyPricesComponent,
+        FinanceComponent, LiveProductsComponent, MonthlyHistoryComponent, OrderStatusComponent, OrderStatus2Component,
+        MonthlySalesComponent, SkillStatusComponent, StockMarketComponent, TrunOverComponent, UsesComponent],
+    templateUrl: './chart.component.html',
+    styleUrl: './chart.component.scss'
 })
 export class ChartComponent {
 

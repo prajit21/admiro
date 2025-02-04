@@ -9,12 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-category-data-table',
-  standalone: true,
-  imports: [CommonModule,CategoriesDirective,RouterModule,ReactiveFormsModule,FormsModule,NgbModule],
-  providers: [CategoriesService , DecimalPipe],
-  templateUrl: './category-data-table.component.html',
-  styleUrl: './category-data-table.component.scss'
+    selector: 'app-category-data-table',
+    imports: [CommonModule, CategoriesDirective, RouterModule, ReactiveFormsModule, FormsModule, NgbModule],
+    providers: [CategoriesService, DecimalPipe],
+    templateUrl: './category-data-table.component.html',
+    styleUrl: './category-data-table.component.scss'
 })
 export class CategoryDataTableComponent {
 

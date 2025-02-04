@@ -4,11 +4,10 @@ import { VerticalStylel } from '../../../../../shared/data/form-controls/mega-op
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-vertical-style',
-  standalone: true,
-  imports: [CommonModule,FormsModule],  
-  templateUrl: './vertical-style.component.html',
-  styleUrl: './vertical-style.component.scss'
+    selector: 'app-vertical-style',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './vertical-style.component.html',
+    styleUrl: './vertical-style.component.scss'
 })
 export class VerticalStyleComponent {
 

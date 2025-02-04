@@ -5,11 +5,10 @@ import { FeathericonComponent } from '../../../shared/component/feathericon/feat
 import { TopCommonFaqComponent } from '../../faq/top-common-faq/top-common-faq.component';
 
 @Component({
-  selector: 'app-knowledgebase-top-data',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent,TopCommonFaqComponent],
-  templateUrl: './knowledgebase-top-data.component.html',
-  styleUrl: './knowledgebase-top-data.component.scss'
+    selector: 'app-knowledgebase-top-data',
+    imports: [CommonModule, FeathericonComponent, TopCommonFaqComponent],
+    templateUrl: './knowledgebase-top-data.component.html',
+    styleUrl: './knowledgebase-top-data.component.scss'
 })
 export class KnowledgebaseTopDataComponent {
 

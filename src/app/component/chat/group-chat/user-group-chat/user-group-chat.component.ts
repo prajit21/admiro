@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-user-group-chat',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,FeathericonComponent],
-  templateUrl: './user-group-chat.component.html',
-  styleUrl: './user-group-chat.component.scss'
+    selector: 'app-user-group-chat',
+    imports: [CommonModule, ClickOutsideDirective, FeathericonComponent],
+    templateUrl: './user-group-chat.component.html',
+    styleUrl: './user-group-chat.component.scss'
 })
 export class UserGroupChatComponent {
 

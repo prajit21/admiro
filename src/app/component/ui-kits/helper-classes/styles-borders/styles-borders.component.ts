@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { CommonBorderstyleComponent } from './common-borderstyle/common-borderstyle.component';
 
 @Component({
-  selector: 'app-styles-borders',
-  standalone: true,
-  imports: [CommonModule,CommonBorderstyleComponent],
-  templateUrl: './styles-borders.component.html',
-  styleUrl: './styles-borders.component.scss'
+    selector: 'app-styles-borders',
+    imports: [CommonModule, CommonBorderstyleComponent],
+    templateUrl: './styles-borders.component.html',
+    styleUrl: './styles-borders.component.scss'
 })
 export class StylesBordersComponent {
   

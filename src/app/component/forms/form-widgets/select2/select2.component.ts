@@ -5,11 +5,10 @@ import { FullColoredVariantComponent } from './full-colored-variant/full-colored
 import { OutlineColorVariantComponent } from './outline-color-variant/outline-color-variant.component';
 
 @Component({
-  selector: 'app-select2',
-  standalone: true,
-  imports: [CommonModule, DefultSelect2Component, FullColoredVariantComponent, OutlineColorVariantComponent],
-  templateUrl: './select2.component.html',
-  styleUrl: './select2.component.scss'
+    selector: 'app-select2',
+    imports: [CommonModule, DefultSelect2Component, FullColoredVariantComponent, OutlineColorVariantComponent],
+    templateUrl: './select2.component.html',
+    styleUrl: './select2.component.scss'
 })
 export class Select2Component {
 

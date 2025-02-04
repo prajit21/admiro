@@ -8,12 +8,11 @@ import { IconsBreadcrumbComponent } from './icons-breadcrumb/icons-breadcrumb.co
 import { SimpleBreadcrumbComponent } from './simple-breadcrumb/simple-breadcrumb.component';
 
 @Component({
-  selector: 'app-breadcrumb',
-  standalone: true,
-  imports: [CommonModule, AlignmentBreadcrumbComponent, ColoredBreadcrumbComponent, DefaultBreadcrumbComponent
-    , DividerBreadcrumbComponent, IconsBreadcrumbComponent, SimpleBreadcrumbComponent],
-  templateUrl: './breadcrumb.component.html',
-  styleUrl: './breadcrumb.component.scss'
+    selector: 'app-breadcrumb',
+    imports: [CommonModule, AlignmentBreadcrumbComponent, ColoredBreadcrumbComponent, DefaultBreadcrumbComponent,
+        DividerBreadcrumbComponent, IconsBreadcrumbComponent, SimpleBreadcrumbComponent],
+    templateUrl: './breadcrumb.component.html',
+    styleUrl: './breadcrumb.component.scss'
 })
 export class BreadcrumbComponent {
 

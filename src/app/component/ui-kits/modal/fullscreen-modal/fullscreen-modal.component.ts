@@ -8,12 +8,11 @@ import { FullscreenXlModalComponent } from './fullscreen-xl-modal/fullscreen-xl-
 import { FullscreenXxlModalComponent } from './fullscreen-xxl-modal/fullscreen-xxl-modal.component';
 
 @Component({
-  selector: 'app-fullscreen-modal',
-  standalone: true,
-  imports: [CommonModule, FullscreenLgModalComponent, FullscreenMdModalComponent, FullscreenSimpleModalComponent
-    , FullscreenSmModalComponent, FullscreenXlModalComponent, FullscreenXxlModalComponent],
-  templateUrl: './fullscreen-modal.component.html',
-  styleUrl: './fullscreen-modal.component.scss'
+    selector: 'app-fullscreen-modal',
+    imports: [CommonModule, FullscreenLgModalComponent, FullscreenMdModalComponent, FullscreenSimpleModalComponent,
+        FullscreenSmModalComponent, FullscreenXlModalComponent, FullscreenXxlModalComponent],
+    templateUrl: './fullscreen-modal.component.html',
+    styleUrl: './fullscreen-modal.component.scss'
 })
 export class FullscreenModalComponent {
 

@@ -14,12 +14,11 @@ import { FeathericonComponent } from '../feathericon/feathericon.component';
 import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule,BookmarkComponent,CartComponent,LanguageComponent
-  ,NotificationComponent,ProfileComponent,SearchComponent,ThemeComponent,FeathericonComponent,SvgIconComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule, BookmarkComponent, CartComponent, LanguageComponent,
+        NotificationComponent, ProfileComponent, SearchComponent, ThemeComponent, FeathericonComponent, SvgIconComponent],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 

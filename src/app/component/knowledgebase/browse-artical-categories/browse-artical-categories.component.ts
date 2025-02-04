@@ -4,11 +4,10 @@ import { browseArticlesData } from '../../../shared/data/knowledgebase/knowledge
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-browse-artical-categories',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './browse-artical-categories.component.html',
-  styleUrl: './browse-artical-categories.component.scss'
+    selector: 'app-browse-artical-categories',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './browse-artical-categories.component.html',
+    styleUrl: './browse-artical-categories.component.scss'
 })
 export class BrowseArticalCategoriesComponent {
 

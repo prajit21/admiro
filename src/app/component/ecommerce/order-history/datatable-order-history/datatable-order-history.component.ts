@@ -11,12 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-datatable-order-history',
-  standalone: true,
-  imports: [CommonModule, NgbModule, OrderdataTableDirective, FeathericonComponent, FormsModule, RouterModule],
-  providers: [OrderService, DecimalPipe],
-  templateUrl: './datatable-order-history.component.html',
-  styleUrl: './datatable-order-history.component.scss'
+    selector: 'app-datatable-order-history',
+    imports: [CommonModule, NgbModule, OrderdataTableDirective, FeathericonComponent, FormsModule, RouterModule],
+    providers: [OrderService, DecimalPipe],
+    templateUrl: './datatable-order-history.component.html',
+    styleUrl: './datatable-order-history.component.scss'
 })
 export class DatatableOrderHistoryComponent {
 

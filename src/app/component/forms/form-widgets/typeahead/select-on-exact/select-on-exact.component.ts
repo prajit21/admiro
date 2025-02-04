@@ -61,11 +61,10 @@ const states: {
   ];
 
 @Component({
-  selector: 'app-select-on-exact',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './select-on-exact.component.html',
-  styleUrl: './select-on-exact.component.scss'
+    selector: 'app-select-on-exact',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './select-on-exact.component.html',
+    styleUrl: './select-on-exact.component.scss'
 })
 export class SelectOnExactComponent {
 

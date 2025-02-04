@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-min-max-slider',
-  standalone: true,
-  imports: [CommonModule,NgxSliderModule],
-  templateUrl: './min-max-slider.component.html',
-  styleUrl: './min-max-slider.component.scss'
+    selector: 'app-min-max-slider',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './min-max-slider.component.html',
+    styleUrl: './min-max-slider.component.scss'
 })
 export class MinMaxSliderComponent {
 

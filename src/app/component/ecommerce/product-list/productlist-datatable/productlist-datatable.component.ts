@@ -9,12 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-productlist-datatable',
-  standalone: true,
-  imports: [CommonModule, NgbModule, FormsModule, ReactiveFormsModule, ProductListDirective, RouterModule],
-  templateUrl: './productlist-datatable.component.html',
-  styleUrl: './productlist-datatable.component.scss',
-  providers: [ProductListService,DecimalPipe]
+    selector: 'app-productlist-datatable',
+    imports: [CommonModule, NgbModule, FormsModule, ReactiveFormsModule, ProductListDirective, RouterModule],
+    templateUrl: './productlist-datatable.component.html',
+    styleUrl: './productlist-datatable.component.scss',
+    providers: [ProductListService, DecimalPipe]
 })
 export class ProductlistDatatableComponent {
 

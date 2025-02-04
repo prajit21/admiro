@@ -7,12 +7,11 @@ import { HtmlElementsClickEventComponent } from './html-elements-click-event/htm
 import { TooltipDirectionsComponent } from './tooltip-directions/tooltip-directions.component';
 
 @Component({
-  selector: 'app-tooltip',
-  standalone: true,
-  imports: [CommonModule,BasicTooltipComponent,ColoredTooltipComponent,FilledTooltipComponent
-  ,HtmlElementsClickEventComponent,TooltipDirectionsComponent],
-  templateUrl: './tooltip.component.html',
-  styleUrl: './tooltip.component.scss'
+    selector: 'app-tooltip',
+    imports: [CommonModule, BasicTooltipComponent, ColoredTooltipComponent, FilledTooltipComponent,
+        HtmlElementsClickEventComponent, TooltipDirectionsComponent],
+    templateUrl: './tooltip.component.html',
+    styleUrl: './tooltip.component.scss'
 })
 export class TooltipComponent {
 

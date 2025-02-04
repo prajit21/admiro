@@ -4,11 +4,10 @@ import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-pie-chart-3',
-  standalone: true,
-  imports: [CommonModule, Ng2GoogleChartsModule],
-  templateUrl: './pie-chart-3.component.html',
-  styleUrl: './pie-chart-3.component.scss'
+    selector: 'app-pie-chart-3',
+    imports: [CommonModule, Ng2GoogleChartsModule],
+    templateUrl: './pie-chart-3.component.html',
+    styleUrl: './pie-chart-3.component.scss'
 })
 export class PieChart3Component {
 

@@ -5,11 +5,10 @@ import { RouterModule } from '@angular/router';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-user-status',
-  standalone: true,
-  imports: [CommonModule,RouterModule,ClickOutsideDirective],
-  templateUrl: './user-status.component.html',
-  styleUrl: './user-status.component.scss'
+    selector: 'app-user-status',
+    imports: [CommonModule, RouterModule, ClickOutsideDirective],
+    templateUrl: './user-status.component.html',
+    styleUrl: './user-status.component.scss'
 })
 export class UserStatusComponent {
 

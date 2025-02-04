@@ -7,12 +7,11 @@ import { BrowseArticalCategoriesComponent } from './browse-artical-categories/br
 import { FeaturedTutorialsComponent } from '../faq/featured-tutorials/featured-tutorials.component';
 
 @Component({
-  selector: 'app-knowledgebase',
-  standalone: true,
-  imports: [CommonModule, KnowledgebaseTopDataComponent, KnowledgebaseFooterDataComponent,
-    BrowseArticalCategoriesComponent, FeaturedTutorialsComponent],
-  templateUrl: './knowledgebase.component.html',
-  styleUrl: './knowledgebase.component.scss'
+    selector: 'app-knowledgebase',
+    imports: [CommonModule, KnowledgebaseTopDataComponent, KnowledgebaseFooterDataComponent,
+        BrowseArticalCategoriesComponent, FeaturedTutorialsComponent],
+    templateUrl: './knowledgebase.component.html',
+    styleUrl: './knowledgebase.component.scss'
 })
 export class KnowledgebaseComponent {
 

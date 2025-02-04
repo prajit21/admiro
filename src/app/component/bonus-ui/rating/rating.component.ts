@@ -8,12 +8,11 @@ import { SquareRatingbarComponent } from './square-ratingbar/square-ratingbar.co
 import { StarRatingbarComponent } from './star-ratingbar/star-ratingbar.component';
 
 @Component({
-  selector: 'app-rating',
-  standalone: true,
-  imports: [CommonModule, CurrentRatingbarComponent, HorizontalRatingbarComponent, MovieRatingbarComponent, OneToTenRatingbarComponent, 
-    SquareRatingbarComponent, StarRatingbarComponent],
-  templateUrl: './rating.component.html',
-  styleUrl: './rating.component.scss'
+    selector: 'app-rating',
+    imports: [CommonModule, CurrentRatingbarComponent, HorizontalRatingbarComponent, MovieRatingbarComponent, OneToTenRatingbarComponent,
+        SquareRatingbarComponent, StarRatingbarComponent],
+    templateUrl: './rating.component.html',
+    styleUrl: './rating.component.scss'
 })
 export class RatingComponent {
 

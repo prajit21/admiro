@@ -3,11 +3,10 @@ import { allIcon } from '../../../shared/data/icons/thimify';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-ico-icon',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './ico-icon.component.html',
-  styleUrl: './ico-icon.component.scss'
+    selector: 'app-ico-icon',
+    imports: [CommonModule],
+    templateUrl: './ico-icon.component.html',
+    styleUrl: './ico-icon.component.scss'
 })
 export class IcoIconComponent {
 

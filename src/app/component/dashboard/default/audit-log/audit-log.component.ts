@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-audit-log',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,RouterModule],
-  templateUrl: './audit-log.component.html',
-  styleUrl: './audit-log.component.scss'
+    selector: 'app-audit-log',
+    imports: [CommonModule, ClickOutsideDirective, RouterModule],
+    templateUrl: './audit-log.component.html',
+    styleUrl: './audit-log.component.scss'
 })
 export class AuditLogComponent {
 

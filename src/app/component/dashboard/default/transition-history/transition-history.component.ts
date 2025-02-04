@@ -4,11 +4,10 @@ import { TransitionHistory } from '../../../../shared/data/dashboard/default/def
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-transition-history',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './transition-history.component.html',
-  styleUrl: './transition-history.component.scss'
+    selector: 'app-transition-history',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './transition-history.component.html',
+    styleUrl: './transition-history.component.scss'
 })
 export class TransitionHistoryComponent {
 

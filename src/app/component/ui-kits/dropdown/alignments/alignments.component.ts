@@ -4,11 +4,10 @@ import { Component } from '@angular/core';
 import * as Data from '../../../../shared/data/ui-kits/dropdown';
 
 @Component({
-  selector: 'app-alignments',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './alignments.component.html',
-  styleUrl: './alignments.component.scss'
+    selector: 'app-alignments',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './alignments.component.html',
+    styleUrl: './alignments.component.scss'
 })
 export class AlignmentsComponent {
 

@@ -5,11 +5,10 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 @Component({
-  selector: 'app-advance',
-  standalone: true,
-  imports: [CommonModule,AdditionalOptionsComponent,InventoryComponent,ShippingComponent],
-  templateUrl: './advance.component.html',
-  styleUrl: './advance.component.scss'
+    selector: 'app-advance',
+    imports: [CommonModule, AdditionalOptionsComponent, InventoryComponent, ShippingComponent],
+    templateUrl: './advance.component.html',
+    styleUrl: './advance.component.scss'
 })
 export class AdvanceComponent {
 

@@ -5,11 +5,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-total-investment',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule,ClickOutsideDirective],
-  templateUrl: './total-investment.component.html',
-  styleUrl: './total-investment.component.scss'
+    selector: 'app-total-investment',
+    imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
+    templateUrl: './total-investment.component.html',
+    styleUrl: './total-investment.component.scss'
 })
 export class TotalInvestmentComponent {
 

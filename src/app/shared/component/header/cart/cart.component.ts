@@ -41,11 +41,10 @@ export const carts:cartitem[] = [
 ]
 
 @Component({
-  selector: 'app-cart',
-  standalone: true,
-  imports: [CommonModule,RouterModule,FeathericonComponent,ClickOutsideDirective],
-  templateUrl: './cart.component.html',
-  styleUrl: './cart.component.scss'
+    selector: 'app-cart',
+    imports: [CommonModule, RouterModule, FeathericonComponent, ClickOutsideDirective],
+    templateUrl: './cart.component.html',
+    styleUrl: './cart.component.scss'
 })
 export class CartComponent {
 

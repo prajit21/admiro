@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-disabled',
-  standalone: true,
-  imports: [CommonModule,NgxSliderModule],
-  templateUrl: './disabled.component.html',
-  styleUrl: './disabled.component.scss'
+    selector: 'app-disabled',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './disabled.component.html',
+    styleUrl: './disabled.component.scss'
 })
 export class DisabledComponent {
 

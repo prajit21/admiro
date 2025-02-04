@@ -5,11 +5,10 @@ import { commonDetails } from '../../../../shared/data/widgets/general/general';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-customers-details',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './customers-details.component.html',
-  styleUrl: './customers-details.component.scss'
+    selector: 'app-customers-details',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './customers-details.component.html',
+    styleUrl: './customers-details.component.scss'
 })
 export class CustomersDetailsComponent {
 

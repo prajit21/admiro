@@ -8,11 +8,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 const Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 @Component({
-  selector: 'app-to-do',
-  standalone: true,
-  imports: [CommonModule, TodoFilterComponent, FormsModule, ReactiveFormsModule, NgbModule],
-  templateUrl: './to-do.component.html',
-  styleUrl: './to-do.component.scss'
+    selector: 'app-to-do',
+    imports: [CommonModule, TodoFilterComponent, FormsModule, ReactiveFormsModule, NgbModule],
+    templateUrl: './to-do.component.html',
+    styleUrl: './to-do.component.scss'
 })
 export class ToDoComponent {
 

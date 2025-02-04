@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-live-toast',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './live-toast.component.html',
-  styleUrl: './live-toast.component.scss'
+    selector: 'app-live-toast',
+    imports: [CommonModule],
+    templateUrl: './live-toast.component.html',
+    styleUrl: './live-toast.component.scss'
 })
 export class LiveToastComponent {
 

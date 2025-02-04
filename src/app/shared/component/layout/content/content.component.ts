@@ -10,11 +10,10 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
-  selector: 'app-content',
-  standalone: true,
-  imports: [CommonModule ,HeaderComponent ,SidebarComponent, BreadcrumbComponent ,CustomizerComponent,RouterOutlet ,FooterComponent],
-  templateUrl: './content.component.html',
-  styleUrl: './content.component.scss'
+    selector: 'app-content',
+    imports: [CommonModule, HeaderComponent, SidebarComponent, BreadcrumbComponent, CustomizerComponent, RouterOutlet, FooterComponent],
+    templateUrl: './content.component.html',
+    styleUrl: './content.component.scss'
 })
 export class ContentComponent {
 

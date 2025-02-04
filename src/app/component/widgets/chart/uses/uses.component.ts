@@ -4,11 +4,10 @@ import { uses } from '../../../../shared/data/widgets/chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-uses',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './uses.component.html',
-  styleUrl: './uses.component.scss'
+    selector: 'app-uses',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './uses.component.html',
+    styleUrl: './uses.component.scss'
 })
 export class UsesComponent {
 

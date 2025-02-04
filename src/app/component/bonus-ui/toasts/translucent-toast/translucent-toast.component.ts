@@ -4,11 +4,10 @@ import { TranslucentToasts } from '../../../../shared/data/bonus-ui/toasts';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-translucent-toast',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './translucent-toast.component.html',
-  styleUrl: './translucent-toast.component.scss'
+    selector: 'app-translucent-toast',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './translucent-toast.component.html',
+    styleUrl: './translucent-toast.component.scss'
 })
 export class TranslucentToastComponent {
 

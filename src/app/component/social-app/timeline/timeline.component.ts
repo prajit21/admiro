@@ -5,11 +5,10 @@ import { TimelineRightComponent } from './timeline-right/timeline-right.componen
 import { TimelineLeftComponent } from './timeline-left/timeline-left.component';
 
 @Component({
-  selector: 'app-timeline',
-  standalone: true,
-  imports: [CommonModule,TimelineCenterComponent,TimelineRightComponent,TimelineLeftComponent],
-  templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.scss'
+    selector: 'app-timeline',
+    imports: [CommonModule, TimelineCenterComponent, TimelineRightComponent, TimelineLeftComponent],
+    templateUrl: './timeline.component.html',
+    styleUrl: './timeline.component.scss'
 })
 export class TimelineComponent {
 

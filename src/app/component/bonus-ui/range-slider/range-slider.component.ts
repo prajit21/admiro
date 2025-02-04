@@ -7,11 +7,10 @@ import { MinMaxSliderComponent } from './min-max-slider/min-max-slider.component
 import { PrettifyNumberComponent } from './prettify-number/prettify-number.component';
 
 @Component({
-  selector: 'app-range-slider',
-  standalone: true,
-  imports: [CommonModule, CustomValuesComponent, DefaultRangeSliderComponent, DisabledComponent, MinMaxSliderComponent, PrettifyNumberComponent],
-  templateUrl: './range-slider.component.html',
-  styleUrl: './range-slider.component.scss'
+    selector: 'app-range-slider',
+    imports: [CommonModule, CustomValuesComponent, DefaultRangeSliderComponent, DisabledComponent, MinMaxSliderComponent, PrettifyNumberComponent],
+    templateUrl: './range-slider.component.html',
+    styleUrl: './range-slider.component.scss'
 })
 export class RangeSliderComponent {
 

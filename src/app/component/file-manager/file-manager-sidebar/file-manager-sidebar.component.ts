@@ -4,11 +4,10 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-file-manager-sidebar',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,FeathericonComponent],
-  templateUrl: './file-manager-sidebar.component.html',
-  styleUrl: './file-manager-sidebar.component.scss'
+    selector: 'app-file-manager-sidebar',
+    imports: [CommonModule, ClickOutsideDirective, FeathericonComponent],
+    templateUrl: './file-manager-sidebar.component.html',
+    styleUrl: './file-manager-sidebar.component.scss'
 })
 export class FileManagerSidebarComponent {
 

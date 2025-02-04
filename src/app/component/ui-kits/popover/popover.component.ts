@@ -5,11 +5,10 @@ import { PopoverDirectionComponent } from './popover-direction/popover-direction
 import { PopoverOffsetComponent } from './popover-offset/popover-offset.component';
 
 @Component({
-  selector: 'app-popover',
-  standalone: true,
-  imports: [CommonModule,BasicPopoverComponent,PopoverDirectionComponent,PopoverOffsetComponent],
-  templateUrl: './popover.component.html',
-  styleUrl: './popover.component.scss'
+    selector: 'app-popover',
+    imports: [CommonModule, BasicPopoverComponent, PopoverDirectionComponent, PopoverOffsetComponent],
+    templateUrl: './popover.component.html',
+    styleUrl: './popover.component.scss'
 })
 export class PopoverComponent {
 

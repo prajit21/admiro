@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { LearningFilterComponent } from '../learning-filter/learning-filter.component';
 
 @Component({
-  selector: 'app-learning-list',
-  standalone: true,
-  imports: [CommonModule,LearningFilterComponent],
-  templateUrl: './learning-list.component.html',
-  styleUrl: './learning-list.component.scss'
+    selector: 'app-learning-list',
+    imports: [CommonModule, LearningFilterComponent],
+    templateUrl: './learning-list.component.html',
+    styleUrl: './learning-list.component.scss'
 })
 export class LearningListComponent {
 

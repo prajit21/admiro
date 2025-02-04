@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-maintenance',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './maintenance.component.html',
-  styleUrl: './maintenance.component.scss'
+    selector: 'app-maintenance',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './maintenance.component.html',
+    styleUrl: './maintenance.component.scss'
 })
 export class MaintenanceComponent {
 

@@ -5,11 +5,10 @@ import { Editor, NgxEditorModule } from 'ngx-editor';
 import { FeathericonComponent } from '../../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-user-details',
-  standalone: true,
-  imports: [CommonModule, NgxEditorModule, FormsModule, ReactiveFormsModule, FeathericonComponent],
-  templateUrl: './user-details.component.html',
-  styleUrl: './user-details.component.scss'
+    selector: 'app-user-details',
+    imports: [CommonModule, NgxEditorModule, FormsModule, ReactiveFormsModule, FeathericonComponent],
+    templateUrl: './user-details.component.html',
+    styleUrl: './user-details.component.scss'
 })
 export class UserDetailsComponent {
 

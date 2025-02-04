@@ -5,11 +5,10 @@ import { TimelineRightComponent } from '../timeline/timeline-right/timeline-righ
 import { AboutCenterComponent } from './about-center/about-center.component';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [CommonModule,TimelineLeftComponent,TimelineRightComponent,AboutCenterComponent],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+    selector: 'app-about',
+    imports: [CommonModule, TimelineLeftComponent, TimelineRightComponent, AboutCenterComponent],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.scss'
 })
 export class AboutComponent {
 

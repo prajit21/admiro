@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-top-users',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective],
-  templateUrl: './top-users.component.html',
-  styleUrl: './top-users.component.scss'
+    selector: 'app-top-users',
+    imports: [CommonModule, ClickOutsideDirective],
+    templateUrl: './top-users.component.html',
+    styleUrl: './top-users.component.scss'
 })
 export class TopUsersComponent {
 

@@ -8,12 +8,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-support-ticket-datatable',
-  standalone: true,
-  imports: [NgbdSortableHeader2, CommonModule, FormsModule, ReactiveFormsModule, NgbModule],
-  providers: [SupportTicketService, DecimalPipe],
-  templateUrl: './support-ticket-datatable.component.html',
-  styleUrl: './support-ticket-datatable.component.scss'
+    selector: 'app-support-ticket-datatable',
+    imports: [NgbdSortableHeader2, CommonModule, FormsModule, ReactiveFormsModule, NgbModule],
+    providers: [SupportTicketService, DecimalPipe],
+    templateUrl: './support-ticket-datatable.component.html',
+    styleUrl: './support-ticket-datatable.component.scss'
 })
 export class SupportTicketDatatableComponent {
 

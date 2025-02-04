@@ -9,12 +9,11 @@ import { OrderComponent } from './order/order.component';
 import { VerticalAlignmentComponent } from './vertical-alignment/vertical-alignment.component';
 
 @Component({
-  selector: 'app-grid',
-  standalone: true,
-  imports: [CommonModule, GridColumnComponent, GridOptionComponent, HorizontalAlignmentComponent,
-    NestingComponent, OffsetComponent, OrderComponent, VerticalAlignmentComponent],
-  templateUrl: './grid.component.html',
-  styleUrl: './grid.component.scss'
+    selector: 'app-grid',
+    imports: [CommonModule, GridColumnComponent, GridOptionComponent, HorizontalAlignmentComponent,
+        NestingComponent, OffsetComponent, OrderComponent, VerticalAlignmentComponent],
+    templateUrl: './grid.component.html',
+    styleUrl: './grid.component.scss'
 })
 export class GridComponent {
 

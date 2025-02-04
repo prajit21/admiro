@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons-dropdowns',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './buttons-dropdowns.component.html',
-  styleUrl: './buttons-dropdowns.component.scss'
+    selector: 'app-buttons-dropdowns',
+    imports: [CommonModule],
+    templateUrl: './buttons-dropdowns.component.html',
+    styleUrl: './buttons-dropdowns.component.scss'
 })
 export class ButtonsDropdownsComponent {
 

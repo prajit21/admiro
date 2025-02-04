@@ -4,11 +4,10 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-new-contact',
-  standalone: true,
-  imports: [CommonModule,NgbModule,FormsModule,ReactiveFormsModule],
-  templateUrl: './new-contact.component.html',
-  styleUrl: './new-contact.component.scss'
+    selector: 'app-new-contact',
+    imports: [CommonModule, NgbModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './new-contact.component.html',
+    styleUrl: './new-contact.component.scss'
 })
 export class NewContactComponent {
 

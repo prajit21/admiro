@@ -11,13 +11,12 @@ import { VerticalStyleComponent } from './vertical-style/vertical-style.componen
 import { WithoutBordersStyleComponent } from './without-borders-style/without-borders-style.component';
 
 @Component({
-  selector: 'app-mega-options',
-  standalone: true,
-  imports: [CommonModule, DefaultStyleComponent, HorizontalStyleComponent, InlineStyleComponent
-    , OfferBordersStyleComponent, SolidBorderStyleComponent, VariationChecknoxComponent, VariationRadioComponent
-    , VerticalStyleComponent, WithoutBordersStyleComponent],
-  templateUrl: './mega-options.component.html',
-  styleUrl: './mega-options.component.scss'
+    selector: 'app-mega-options',
+    imports: [CommonModule, DefaultStyleComponent, HorizontalStyleComponent, InlineStyleComponent,
+        OfferBordersStyleComponent, SolidBorderStyleComponent, VariationChecknoxComponent, VariationRadioComponent,
+        VerticalStyleComponent, WithoutBordersStyleComponent],
+    templateUrl: './mega-options.component.html',
+    styleUrl: './mega-options.component.scss'
 })
 export class MegaOptionsComponent {
 

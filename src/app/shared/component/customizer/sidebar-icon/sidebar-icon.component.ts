@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
-  selector: 'app-sidebar-icon',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './sidebar-icon.component.html',
-  styleUrl: './sidebar-icon.component.scss'
+    selector: 'app-sidebar-icon',
+    imports: [CommonModule],
+    templateUrl: './sidebar-icon.component.html',
+    styleUrl: './sidebar-icon.component.scss'
 })
 export class SidebarIconComponent {
 

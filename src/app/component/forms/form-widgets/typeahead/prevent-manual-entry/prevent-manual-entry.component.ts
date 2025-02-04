@@ -71,11 +71,10 @@ const states: State[] = [
 
 
 @Component({
-  selector: 'app-prevent-manual-entry',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './prevent-manual-entry.component.html',
-  styleUrl: './prevent-manual-entry.component.scss'
+    selector: 'app-prevent-manual-entry',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './prevent-manual-entry.component.html',
+    styleUrl: './prevent-manual-entry.component.scss'
 })
 export class PreventManualEntryComponent {
 

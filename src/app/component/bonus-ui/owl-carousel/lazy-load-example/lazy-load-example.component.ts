@@ -4,11 +4,10 @@ import { commonImg, Lazyload0ptions } from '../../../../shared/data/bonus-ui/owl
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-lazy-load-example',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './lazy-load-example.component.html',
-  styleUrl: './lazy-load-example.component.scss'
+    selector: 'app-lazy-load-example',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './lazy-load-example.component.html',
+    styleUrl: './lazy-load-example.component.scss'
 })
 export class LazyLoadExampleComponent {
 

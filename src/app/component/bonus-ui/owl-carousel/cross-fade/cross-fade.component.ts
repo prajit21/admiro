@@ -4,11 +4,10 @@ import { fadeOptions, crossFade } from '../../../../shared/data/bonus-ui/owl-car
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-cross-fade',
-  standalone: true,
-  imports: [CommonModule,CarouselModule],
-  templateUrl: './cross-fade.component.html',
-  styleUrl: './cross-fade.component.scss'
+    selector: 'app-cross-fade',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './cross-fade.component.html',
+    styleUrl: './cross-fade.component.scss'
 })
 export class CrossFadeComponent {
 

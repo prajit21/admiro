@@ -3,11 +3,10 @@ import { outlinedtouchspin } from '../../../../../shared/data/forms-widgets/touc
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-outlined-touchspin',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './outlined-touchspin.component.html',
-  styleUrl: './outlined-touchspin.component.scss'
+    selector: 'app-outlined-touchspin',
+    imports: [CommonModule],
+    templateUrl: './outlined-touchspin.component.html',
+    styleUrl: './outlined-touchspin.component.scss'
 })
 export class OutlinedTouchspinComponent {
 

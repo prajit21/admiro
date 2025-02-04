@@ -14,13 +14,12 @@ import { TransitionHistoryComponent } from './transition-history/transition-hist
 import { EarningTrendComponent } from './earning-trend/earning-trend.component';
 
 @Component({
-  selector: 'app-default',
-  standalone: true,
-  imports: [CommonModule, AuditLogComponent, JobTodayComponent, LetestActivityComponent, ManageInvoiceComponent
-    , MonthlyRevenueGrowthComponent, NewsUpdateComponent, TopDefaultCardComponent, TopUsersComponent, TotalInvestComponent
-    , TotalInvestmentComponent,TransitionHistoryComponent,EarningTrendComponent],
-  templateUrl: './default.component.html',
-  styleUrl: './default.component.scss'
+    selector: 'app-default',
+    imports: [CommonModule, AuditLogComponent, JobTodayComponent, LetestActivityComponent, ManageInvoiceComponent,
+        MonthlyRevenueGrowthComponent, NewsUpdateComponent, TopDefaultCardComponent, TopUsersComponent, TotalInvestComponent,
+        TotalInvestmentComponent, TransitionHistoryComponent, EarningTrendComponent],
+    templateUrl: './default.component.html',
+    styleUrl: './default.component.scss'
 })
 export class DefaultComponent {
 

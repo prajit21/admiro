@@ -7,12 +7,11 @@ import { OutlinedTouchspinComponent } from './outlined-touchspin/outlined-touchs
 import { RoundedTouchspinComponent } from './rounded-touchspin/rounded-touchspin.component';
 
 @Component({
-  selector: 'app-touchspin',
-  standalone: true,
-  imports: [CommonModule, ButtonsWithPrefixPostfixComponent, DefaultTouchspinComponent, IconsWithPrefixPostfixComponent,
-  OutlinedTouchspinComponent, RoundedTouchspinComponent],
-  templateUrl: './touchspin.component.html',
-  styleUrl: './touchspin.component.scss'
+    selector: 'app-touchspin',
+    imports: [CommonModule, ButtonsWithPrefixPostfixComponent, DefaultTouchspinComponent, IconsWithPrefixPostfixComponent,
+        OutlinedTouchspinComponent, RoundedTouchspinComponent],
+    templateUrl: './touchspin.component.html',
+    styleUrl: './touchspin.component.scss'
 })
 export class TouchspinComponent {
 

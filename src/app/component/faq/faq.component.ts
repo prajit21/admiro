@@ -10,12 +10,11 @@ import { QuestionsComponent } from './questions/questions.component';
 import { SerachArticalComponent } from './serach-artical/serach-artical.component';
 
 @Component({
-  selector: 'app-faq',
-  standalone: true,
-  imports: [CommonModule, TopCommonFaqComponent, FeaturedTutorialsComponent, LatestArticalVideosComponent, LatestUpdateComponent
-    , NavigationComponent, QuestionsComponent, SerachArticalComponent],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.scss'
+    selector: 'app-faq',
+    imports: [CommonModule, TopCommonFaqComponent, FeaturedTutorialsComponent, LatestArticalVideosComponent, LatestUpdateComponent,
+        NavigationComponent, QuestionsComponent, SerachArticalComponent],
+    templateUrl: './faq.component.html',
+    styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
 

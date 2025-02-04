@@ -6,11 +6,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
-  selector: 'app-compose-email',
-  standalone: true,
-  imports: [CommonModule ,AngularEditorModule ,FormsModule ,ReactiveFormsModule],
-  templateUrl: './compose-email.component.html',
-  styleUrl: './compose-email.component.scss'
+    selector: 'app-compose-email',
+    imports: [CommonModule, AngularEditorModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './compose-email.component.html',
+    styleUrl: './compose-email.component.scss'
 })
 export class ComposeEmailComponent {
 

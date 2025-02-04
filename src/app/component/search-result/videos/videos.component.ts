@@ -4,11 +4,10 @@ import * as Data from '../../../shared/data/search-result/search-result';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-videos',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './videos.component.html',
-  styleUrl: './videos.component.scss'
+    selector: 'app-videos',
+    imports: [CommonModule],
+    templateUrl: './videos.component.html',
+    styleUrl: './videos.component.scss'
 })
 export class VideosComponent {
 

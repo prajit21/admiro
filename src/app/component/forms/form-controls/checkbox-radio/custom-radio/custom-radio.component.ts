@@ -4,11 +4,10 @@ import { BorderedRadio, IconsRadio, FilledRadio } from '../../../../../shared/da
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-custom-radio',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './custom-radio.component.html',
-  styleUrl: './custom-radio.component.scss'
+    selector: 'app-custom-radio',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './custom-radio.component.html',
+    styleUrl: './custom-radio.component.scss'
 })
 export class CustomRadioComponent {
 

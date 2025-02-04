@@ -4,11 +4,10 @@ import { defaultswitch } from '../../../../../shared/data/form-controls/checkbox
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-default-switch',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './default-switch.component.html',
-  styleUrl: './default-switch.component.scss'
+    selector: 'app-default-switch',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './default-switch.component.html',
+    styleUrl: './default-switch.component.scss'
 })
 export class DefaultSwitchComponent {
 

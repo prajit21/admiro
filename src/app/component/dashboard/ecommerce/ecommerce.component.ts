@@ -15,14 +15,13 @@ import { TopSellingProductsComponent } from './top-selling-products/top-selling-
 import { UserStatusComponent } from './user-status/user-status.component';
 
 @Component({
-  selector: 'app-ecommerce',
-  standalone: true,
-  imports: [CommonModule, ActivityTimelineComponent, BestSellerComponent, CommonValueChartComponent
-    , EcommerceCardComponent, ProductOfferComponent, ProductOffer2Component, RecentOrdersComponent
-    , SalesAnalyticsComponent, SellingChartComponent, TopEcommerceChartComponent, TopSellingProductsComponent,
-    UserStatusComponent],
-  templateUrl: './ecommerce.component.html',
-  styleUrl: './ecommerce.component.scss'
+    selector: 'app-ecommerce',
+    imports: [CommonModule, ActivityTimelineComponent, BestSellerComponent, CommonValueChartComponent,
+        EcommerceCardComponent, ProductOfferComponent, ProductOffer2Component, RecentOrdersComponent,
+        SalesAnalyticsComponent, SellingChartComponent, TopEcommerceChartComponent, TopSellingProductsComponent,
+        UserStatusComponent],
+    templateUrl: './ecommerce.component.html',
+    styleUrl: './ecommerce.component.scss'
 })
 export class EcommerceComponent {
 

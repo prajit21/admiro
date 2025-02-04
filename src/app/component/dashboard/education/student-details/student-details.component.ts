@@ -4,11 +4,10 @@ import { StudentDetails } from '../../../../shared/data/dashboard/education/educ
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-student-details',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './student-details.component.html',
-  styleUrl: './student-details.component.scss'
+    selector: 'app-student-details',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './student-details.component.html',
+    styleUrl: './student-details.component.scss'
 })
 export class StudentDetailsComponent {
 

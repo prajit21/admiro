@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/chartjs';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
-  selector: 'app-chartjs-polar-chart',
-  standalone: true,
-  imports: [CommonModule, BaseChartDirective],
-  templateUrl: './chartjs-polar-chart.component.html',
-  styleUrl: './chartjs-polar-chart.component.scss'
+    selector: 'app-chartjs-polar-chart',
+    imports: [CommonModule, BaseChartDirective],
+    templateUrl: './chartjs-polar-chart.component.html',
+    styleUrl: './chartjs-polar-chart.component.scss'
 })
 export class ChartjsPolarChartComponent {
 

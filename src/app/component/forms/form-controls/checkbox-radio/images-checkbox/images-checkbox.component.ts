@@ -4,11 +4,10 @@ import { imageChekbox } from '../../../../../shared/data/form-controls/checkbox-
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-images-checkbox',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './images-checkbox.component.html',
-  styleUrl: './images-checkbox.component.scss'
+    selector: 'app-images-checkbox',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './images-checkbox.component.html',
+    styleUrl: './images-checkbox.component.scss'
 })
 export class ImagesCheckboxComponent {
   

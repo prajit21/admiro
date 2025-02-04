@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-icons-tabs',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  templateUrl: './icons-tabs.component.html',
-  styleUrl: './icons-tabs.component.scss'
+    selector: 'app-icons-tabs',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './icons-tabs.component.html',
+    styleUrl: './icons-tabs.component.scss'
 })
 export class IconsTabsComponent {
 

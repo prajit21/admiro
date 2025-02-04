@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
-  selector: 'app-custom-values',
-  standalone: true,
-  imports: [CommonModule,NgxSliderModule],
-  templateUrl: './custom-values.component.html',
-  styleUrl: './custom-values.component.scss'
+    selector: 'app-custom-values',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './custom-values.component.html',
+    styleUrl: './custom-values.component.scss'
 })
 export class CustomValuesComponent {
 

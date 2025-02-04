@@ -4,12 +4,11 @@ import { NgbActiveModal, NgbModal, ModalDismissReasons, NgbModule } from '@ng-bo
 import * as data from "../../../../shared/data/contacts/all-contact";
 
 @Component({
-  selector: 'app-print',
-  standalone: true,
-  imports: [CommonModule,NgbModule],
-  providers: [NgbActiveModal],
-  templateUrl: './print.component.html',
-  styleUrl: './print.component.scss'
+    selector: 'app-print',
+    imports: [CommonModule, NgbModule],
+    providers: [NgbActiveModal],
+    templateUrl: './print.component.html',
+    styleUrl: './print.component.scss'
 })
 export class PrintComponent {
 

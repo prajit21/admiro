@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-github-avatar',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './github-avatar.component.html',
-  styleUrl: './github-avatar.component.scss'
+    selector: 'app-github-avatar',
+    imports: [CommonModule],
+    templateUrl: './github-avatar.component.html',
+    styleUrl: './github-avatar.component.scss'
 })
 export class GithubAvatarComponent {
 

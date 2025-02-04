@@ -4,11 +4,10 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
-  selector: 'app-products-gallery',
-  standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, DropzoneModule],
-  templateUrl: './products-gallery.component.html',
-  styleUrl: './products-gallery.component.scss'
+    selector: 'app-products-gallery',
+    imports: [CommonModule, FormsModule, ReactiveFormsModule, DropzoneModule],
+    templateUrl: './products-gallery.component.html',
+    styleUrl: './products-gallery.component.scss'
 })
 export class ProductsGalleryComponent {
 

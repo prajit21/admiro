@@ -34,12 +34,11 @@ export class WikipediaService {
 
 
 @Component({
-  selector: 'app-wikipedia-search',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgbModule],
-  templateUrl: './wikipedia-search.component.html',
-  styleUrl: './wikipedia-search.component.scss',
-  providers: [WikipediaService],
+    selector: 'app-wikipedia-search',
+    imports: [CommonModule, FormsModule, NgbModule],
+    templateUrl: './wikipedia-search.component.html',
+    styleUrl: './wikipedia-search.component.scss',
+    providers: [WikipediaService]
 })
 export class WikipediaSearchComponent {
 

@@ -4,11 +4,10 @@ import { defaultRedio } from '../../../../../shared/data/form-controls/checkbox-
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-default-radio',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './default-radio.component.html',
-  styleUrl: './default-radio.component.scss'
+    selector: 'app-default-radio',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './default-radio.component.html',
+    styleUrl: './default-radio.component.scss'
 })
 export class DefaultRadioComponent {
 

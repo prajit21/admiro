@@ -4,11 +4,10 @@ import { StackingToasts } from '../../../../shared/data/bonus-ui/toasts';
 import { FeathericonComponent } from '../../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-stacking-toast',
-  standalone: true,
-  imports: [CommonModule,FeathericonComponent],
-  templateUrl: './stacking-toast.component.html',
-  styleUrl: './stacking-toast.component.scss'
+    selector: 'app-stacking-toast',
+    imports: [CommonModule, FeathericonComponent],
+    templateUrl: './stacking-toast.component.html',
+    styleUrl: './stacking-toast.component.scss'
 })
 export class StackingToastComponent {
 

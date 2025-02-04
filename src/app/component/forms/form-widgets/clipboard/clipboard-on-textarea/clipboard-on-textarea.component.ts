@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-  selector: 'app-clipboard-on-textarea',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './clipboard-on-textarea.component.html',
-  styleUrl: './clipboard-on-textarea.component.scss'
+    selector: 'app-clipboard-on-textarea',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './clipboard-on-textarea.component.html',
+    styleUrl: './clipboard-on-textarea.component.scss'
 })
 export class ClipboardOnTextareaComponent {
 

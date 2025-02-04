@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { InverseTable } from '../../../../../shared/data/table/basic-tables';
 
 @Component({
-  selector: 'app-inverse-table',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './inverse-table.component.html',
-  styleUrl: './inverse-table.component.scss'
+    selector: 'app-inverse-table',
+    imports: [CommonModule],
+    templateUrl: './inverse-table.component.html',
+    styleUrl: './inverse-table.component.scss'
 })
 export class InverseTableComponent {
 

@@ -9,11 +9,10 @@ import { FeathericonComponent } from '../../../shared/component/feathericon/feat
 import { ContactDetailsComponent } from '../contact-details/contact-details.component';
 
 @Component({
-  selector: 'app-contact-sidebar',
-  standalone: true,
-  imports: [CommonModule, ClickOutsideDirective, FeathericonComponent, ContactDetailsComponent],
-  templateUrl: './contact-sidebar.component.html',
-  styleUrl: './contact-sidebar.component.scss'
+    selector: 'app-contact-sidebar',
+    imports: [CommonModule, ClickOutsideDirective, FeathericonComponent, ContactDetailsComponent],
+    templateUrl: './contact-sidebar.component.html',
+    styleUrl: './contact-sidebar.component.scss'
 })
 
 export class ContactSidebarComponent {

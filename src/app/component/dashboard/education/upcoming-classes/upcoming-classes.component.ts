@@ -4,11 +4,10 @@ import { UpcomingClasses } from '../../../../shared/data/dashboard/education/edu
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-  selector: 'app-upcoming-classes',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective],
-  templateUrl: './upcoming-classes.component.html',
-  styleUrl: './upcoming-classes.component.scss'
+    selector: 'app-upcoming-classes',
+    imports: [CommonModule, ClickOutsideDirective],
+    templateUrl: './upcoming-classes.component.html',
+    styleUrl: './upcoming-classes.component.scss'
 })
 export class UpcomingClassesComponent {
 

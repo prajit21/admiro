@@ -14,13 +14,12 @@ import { StripedRowInverseTableComponent } from './striped-row-inverse-table/str
 import { TableHeadOptionsComponent } from './table-head-options/table-head-options.component';
 
 @Component({
-  selector: 'app-basic-tables',
-  standalone: true,
-  imports: [CommonModule, BorderBottomColorComponent, BreckpointSpecificComponent, CaptionComponent, DashedBorderComponent
-    , HoverStrippedTableComponent, HoverableRowsHorizontalBorderComponent, InverseTableComponent, InverseTablePrimaryBackgroundComponent
-    , ResponsiveTablesLightBackgroundComponent, SizingTablesComponent, StripedRowInverseTableComponent, TableHeadOptionsComponent],
-  templateUrl: './basic-tables.component.html',
-  styleUrl: './basic-tables.component.scss'
+    selector: 'app-basic-tables',
+    imports: [CommonModule, BorderBottomColorComponent, BreckpointSpecificComponent, CaptionComponent, DashedBorderComponent,
+        HoverStrippedTableComponent, HoverableRowsHorizontalBorderComponent, InverseTableComponent, InverseTablePrimaryBackgroundComponent,
+        ResponsiveTablesLightBackgroundComponent, SizingTablesComponent, StripedRowInverseTableComponent, TableHeadOptionsComponent],
+    templateUrl: './basic-tables.component.html',
+    styleUrl: './basic-tables.component.scss'
 })
 export class BasicTablesComponent {
 

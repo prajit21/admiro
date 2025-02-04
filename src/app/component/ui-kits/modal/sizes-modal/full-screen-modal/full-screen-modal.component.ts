@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-full-screen-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './full-screen-modal.component.html',
-  styleUrl: './full-screen-modal.component.scss'
+    selector: 'app-full-screen-modal',
+    imports: [CommonModule],
+    templateUrl: './full-screen-modal.component.html',
+    styleUrl: './full-screen-modal.component.scss'
 })
 export class FullScreenModalComponent {
 

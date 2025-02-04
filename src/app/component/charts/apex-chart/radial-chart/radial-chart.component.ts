@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-radial-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './radial-chart.component.html',
-  styleUrl: './radial-chart.component.scss'
+    selector: 'app-radial-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './radial-chart.component.html',
+    styleUrl: './radial-chart.component.scss'
 })
 export class RadialChartComponent {
 

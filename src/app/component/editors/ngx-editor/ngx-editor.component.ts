@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { Editor, NgxEditorModule } from 'ngx-editor';
 
 @Component({
-  selector: 'app-ngx-editor',
-  standalone: true,
-  imports: [CommonModule,FormsModule,NgxEditorModule],
-  templateUrl: './ngx-editor.component.html',
-  styleUrl: './ngx-editor.component.scss'
+    selector: 'app-ngx-editor',
+    imports: [CommonModule, FormsModule, NgxEditorModule],
+    templateUrl: './ngx-editor.component.html',
+    styleUrl: './ngx-editor.component.scss'
 })
 export class NgxEditorComponent {
 

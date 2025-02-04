@@ -4,11 +4,10 @@ import { LightboxModule } from 'ng-gallery/lightbox';
 import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
-  selector: 'app-masonry-with-desc',
-  standalone: true,
-  imports: [CommonModule,NgxMasonryModule,LightboxModule],
-  templateUrl: './masonry-with-desc.component.html',
-  styleUrl: './masonry-with-desc.component.scss'
+    selector: 'app-masonry-with-desc',
+    imports: [CommonModule, NgxMasonryModule, LightboxModule],
+    templateUrl: './masonry-with-desc.component.html',
+    styleUrl: './masonry-with-desc.component.scss'
 })
 export class MasonryWithDescComponent {
 

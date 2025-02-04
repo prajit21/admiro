@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-extra-large-modal',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './extra-large-modal.component.html',
-  styleUrl: './extra-large-modal.component.scss'
+    selector: 'app-extra-large-modal',
+    imports: [CommonModule],
+    templateUrl: './extra-large-modal.component.html',
+    styleUrl: './extra-large-modal.component.scss'
 })
 export class ExtraLargeModalComponent {
 

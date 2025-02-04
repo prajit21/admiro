@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 import { FeathericonComponent } from '../../../shared/component/feathericon/feathericon.component';
 
 @Component({
-  selector: 'app-letter-top-section',
-  standalone: true,
-  imports: [CommonModule,NgbModule,ClickOutsideDirective,FeathericonComponent],
-  templateUrl: './letter-top-section.component.html',
-  styleUrl: './letter-top-section.component.scss'
+    selector: 'app-letter-top-section',
+    imports: [CommonModule, NgbModule, ClickOutsideDirective, FeathericonComponent],
+    templateUrl: './letter-top-section.component.html',
+    styleUrl: './letter-top-section.component.scss'
 })
 export class LetterTopSectionComponent {
 

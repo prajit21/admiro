@@ -5,11 +5,10 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-letest-activity',
-  standalone: true,
-  imports: [CommonModule,ClickOutsideDirective,RouterModule],
-  templateUrl: './letest-activity.component.html',
-  styleUrl: './letest-activity.component.scss'
+    selector: 'app-letest-activity',
+    imports: [CommonModule, ClickOutsideDirective, RouterModule],
+    templateUrl: './letest-activity.component.html',
+    styleUrl: './letest-activity.component.scss'
 })
 
 export class LetestActivityComponent {

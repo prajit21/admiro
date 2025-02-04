@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-  selector: 'app-copy-portion-from-paragraph',
-  standalone: true,
-  imports: [CommonModule,FormsModule],
-  templateUrl: './copy-portion-from-paragraph.component.html',
-  styleUrl: './copy-portion-from-paragraph.component.scss'
+    selector: 'app-copy-portion-from-paragraph',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './copy-portion-from-paragraph.component.html',
+    styleUrl: './copy-portion-from-paragraph.component.scss'
 })
 export class CopyPortionFromParagraphComponent {
 

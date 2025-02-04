@@ -8,12 +8,11 @@ import { SwitchWithIconsComponent } from './switch-with-icons/switch-with-icons.
 import { VariationOutlineSwitchComponent } from './variation-outline-switch/variation-outline-switch.component';
 
 @Component({
-  selector: 'app-switch',
-  standalone: true,
-  imports: [CommonModule, CommonSwitchComponent, DisabledOutlineSwitchComponent, CustomSwitchComponent, SwitchSizingComponent,
-    SwitchWithIconsComponent, VariationOutlineSwitchComponent],
-  templateUrl: './switch.component.html',
-  styleUrl: './switch.component.scss'
+    selector: 'app-switch',
+    imports: [CommonModule, CommonSwitchComponent, DisabledOutlineSwitchComponent, CustomSwitchComponent, SwitchSizingComponent,
+        SwitchWithIconsComponent, VariationOutlineSwitchComponent],
+    templateUrl: './switch.component.html',
+    styleUrl: './switch.component.scss'
 })
 export class SwitchComponent {
 

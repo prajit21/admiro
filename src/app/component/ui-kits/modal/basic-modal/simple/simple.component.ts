@@ -3,11 +3,10 @@ import { Component, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-simple',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './simple.component.html',
-  styleUrl: './simple.component.scss'
+    selector: 'app-simple',
+    imports: [CommonModule],
+    templateUrl: './simple.component.html',
+    styleUrl: './simple.component.scss'
 })
 export class SimpleComponent {
 

@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/chartjs';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
-  selector: 'app-chartjs-bar-chart',
-  standalone: true,
-  imports: [CommonModule, BaseChartDirective],
-  templateUrl: './chartjs-bar-chart.component.html',
-  styleUrl: './chartjs-bar-chart.component.scss'
+    selector: 'app-chartjs-bar-chart',
+    imports: [CommonModule, BaseChartDirective],
+    templateUrl: './chartjs-bar-chart.component.html',
+    styleUrl: './chartjs-bar-chart.component.scss'
 })
 export class ChartjsBarChartComponent {
 

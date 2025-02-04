@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-rtl-support',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './rtl-support.component.html',
-  styleUrl: './rtl-support.component.scss'
+    selector: 'app-rtl-support',
+    imports: [CommonModule],
+    templateUrl: './rtl-support.component.html',
+    styleUrl: './rtl-support.component.scss'
 })
 export class RtlSupportComponent {
 

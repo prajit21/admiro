@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-error-page-1',
-  standalone: true,
-  imports: [CommonModule,RouterModule],
-  templateUrl: './error-page-1.component.html',
-  styleUrl: './error-page-1.component.scss'
+    selector: 'app-error-page-1',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './error-page-1.component.html',
+    styleUrl: './error-page-1.component.scss'
 })
 export class ErrorPage1Component {
 

@@ -4,11 +4,10 @@ import { HorizontalStylelDelivery  } from '../../../../../shared/data/form-contr
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-horizontal-style',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './horizontal-style.component.html',
-  styleUrl: './horizontal-style.component.scss'
+    selector: 'app-horizontal-style',
+    imports: [CommonModule],
+    templateUrl: './horizontal-style.component.html',
+    styleUrl: './horizontal-style.component.scss'
 })
 export class HorizontalStyleComponent {
 

@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { basicTimeline } from '../../../../shared/data/bonus-ui/timeline';
 
 @Component({
-  selector: 'app-basic-timeline',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './basic-timeline.component.html',
-  styleUrl: './basic-timeline.component.scss'
+    selector: 'app-basic-timeline',
+    imports: [CommonModule],
+    templateUrl: './basic-timeline.component.html',
+    styleUrl: './basic-timeline.component.scss'
 })
 export class BasicTimelineComponent {
 

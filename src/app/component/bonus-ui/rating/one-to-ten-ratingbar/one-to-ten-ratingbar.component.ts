@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { BarRatingModule } from 'ngx-bar-rating';
 
 @Component({
-  selector: 'app-one-to-ten-ratingbar',
-  standalone: true,
-  imports: [CommonModule, BarRatingModule],
-  templateUrl: './one-to-ten-ratingbar.component.html',
-  styleUrl: './one-to-ten-ratingbar.component.scss'
+    selector: 'app-one-to-ten-ratingbar',
+    imports: [CommonModule, BarRatingModule],
+    templateUrl: './one-to-ten-ratingbar.component.html',
+    styleUrl: './one-to-ten-ratingbar.component.scss'
 })
 export class OneToTenRatingbarComponent {
 

@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-modal-with-image',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './modal-with-image.component.html',
-  styleUrl: './modal-with-image.component.scss'
+    selector: 'app-modal-with-image',
+    imports: [CommonModule],
+    templateUrl: './modal-with-image.component.html',
+    styleUrl: './modal-with-image.component.scss'
 })
 export class ModalWithImageComponent {
 

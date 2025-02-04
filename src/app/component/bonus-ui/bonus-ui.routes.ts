@@ -5,13 +5,13 @@ import { DropzoneComponent } from './dropzone/dropzone.component';
 import { Sweetalert2Component } from './sweetalert2/sweetalert2.component';
 import { RibbonsComponent } from './ribbons/ribbons.component';
 import { OwlCarouselComponent } from './owl-carousel/owl-carousel.component';
-import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import { BasicCardComponent } from './basic-card/basic-card.component';
 import { CreativeCardComponent } from './creative-card/creative-card.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RangeSliderComponent } from './range-slider/range-slider.component'
 import { PaginationComponent } from './pagination/pagination.component';
+import { ImageCropComponent } from './image-cropper/image-cropper.component';
 
 export const BonusUi: Routes = [
     {
@@ -91,7 +91,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'image-cropper',
-                component: ImageCropperComponent,
+                component: ImageCropComponent,
                 data: {
                     title: "Image Cropper",
                     breadcrumb: "Image Cropper",

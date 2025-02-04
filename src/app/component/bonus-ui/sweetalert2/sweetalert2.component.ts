@@ -11,13 +11,12 @@ import { RtlSupportComponent } from './rtl-support/rtl-support.component';
 import { UniqueSweetalertComponent } from './unique-sweetalert/unique-sweetalert.component';
 
 @Component({
-  selector: 'app-sweetalert2',
-  standalone: true,
-  imports: [CommonModule, AdvanceSweetalertComponent, BasicSweetalertComponent, DirectionSweetalertComponent
-    , GithubAvatarComponent, InputSweetalertComponent, MessageTimerComponent, ModalWithImageComponent, RtlSupportComponent
-    , UniqueSweetalertComponent],
-  templateUrl: './sweetalert2.component.html',
-  styleUrl: './sweetalert2.component.scss'
+    selector: 'app-sweetalert2',
+    imports: [CommonModule, AdvanceSweetalertComponent, BasicSweetalertComponent, DirectionSweetalertComponent,
+        GithubAvatarComponent, InputSweetalertComponent, MessageTimerComponent, ModalWithImageComponent, RtlSupportComponent,
+        UniqueSweetalertComponent],
+    templateUrl: './sweetalert2.component.html',
+    styleUrl: './sweetalert2.component.scss'
 })
 export class Sweetalert2Component {
 

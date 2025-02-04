@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { CommonRegisterFormComponent } from '../common-register-form/common-register-form.component';
 
 @Component({
-  selector: 'app-register-two-image',
-  standalone: true,
-  imports: [CommonModule,RouterModule,CommonRegisterFormComponent],
-  templateUrl: './register-two-image.component.html',
-  styleUrl: './register-two-image.component.scss'
+    selector: 'app-register-two-image',
+    imports: [CommonModule, RouterModule, CommonRegisterFormComponent],
+    templateUrl: './register-two-image.component.html',
+    styleUrl: './register-two-image.component.scss'
 })
 export class RegisterTwoImageComponent {
 

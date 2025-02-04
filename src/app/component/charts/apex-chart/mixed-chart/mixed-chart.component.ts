@@ -4,11 +4,10 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-mixed-chart',
-  standalone: true,
-  imports: [CommonModule,NgApexchartsModule],
-  templateUrl: './mixed-chart.component.html',
-  styleUrl: './mixed-chart.component.scss'
+    selector: 'app-mixed-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './mixed-chart.component.html',
+    styleUrl: './mixed-chart.component.scss'
 })
 export class MixedChartComponent {
 
