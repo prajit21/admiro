@@ -1,0 +1,22 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { Blockquotes } from './blockquotes/blockquotes';
+import { ColoredHeadings } from './colored-headings/colored-headings';
+import { DisplayHeading } from './display-heading/display-heading';
+import { FontWeight } from './font-weight/font-weight';
+import { Headings } from './headings/headings';
+import { ListingTypography } from './listing-typography/listing-typography';
+import { InlineTextElements } from './inline-text-elements/inline-text-elements';
+import { TextColor } from './text-color/text-color';
+
+@Component({
+    selector: 'app-typography',
+    imports: [CommonModule, Blockquotes, ColoredHeadings, DisplayHeading,
+        FontWeight, Headings, ListingTypography, InlineTextElements,
+        ListingTypography, TextColor],
+    templateUrl: './typography.html',
+    styleUrl: './typography.scss'
+})
+export class Typography {
+
+}

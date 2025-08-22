@@ -17,7 +17,7 @@ export const avatarSize = [
     },
 ]
 
-export const StatusIndicator = [
+export const StatusIndicators = [
     {
         Image: 'assets/images/user/1.jpg',
         class: 'img-100',
@@ -42,7 +42,7 @@ export const StatusIndicator = [
 
     },
 ]
-export const Shapes = [
+export const Shape = [
     {
         Image: 'assets/images/avtar/4.jpg',
         class: 'img-100 b-r-8',
@@ -60,7 +60,7 @@ export const Shapes = [
         class: 'img-70 rounded-circle',
     },
 ]
-export const Ratio = [
+export const Ratios= [
     {
         Image: 'assets/images/avtar/11.jpg',
         class: 'b-r-8 img-100',
@@ -83,7 +83,7 @@ export const Ratio = [
     }
 ]
 
-export const Grouping = [
+export const Groupings = [
     {
         id: 1,
         Data: [
@@ -138,7 +138,7 @@ export const Grouping = [
     }
 ]
 
-export const AvatarInitial = [
+export const AvatarInitials = [
     {
         class: 'img-80 bg-light-primary',
         span_class:'fs-1',
@@ -171,7 +171,7 @@ export const AvatarInitial = [
     }
 ]
 
-export const AvatarPing = [
+export const AvatarPings = [
     {
         class:'img-80 ',
         img:'assets/images/avtar/11.jpg'

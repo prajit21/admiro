@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { UsersProfileComponent } from './users-profile/users-profile.component';
-import { UsersCardsComponent } from './users-cards/users-cards.component';
-import { UsersEditComponent } from './users-edit/users-edit.component';
+
+
+
 
 export const User: Routes = [
     {
@@ -9,7 +9,7 @@ export const User: Routes = [
         children: [
             {
                 path: 'users-profile',
-                component: UsersProfileComponent,
+                loadComponent: () => import('./users-profile/users-profile').then(m => m.UsersProfile),
                 data: {
                     title: "User Profile",
                     breadcrumb: "User Profile",
@@ -17,7 +17,7 @@ export const User: Routes = [
             },
             {
                 path: 'profile-edit',
-                component: UsersEditComponent,
+                loadComponent: () => import('./users-edit/users-edit').then(m => m.UsersEdit),
                 data: {
                     title: "Edit Profile",
                     breadcrumb: "Edit Profile",
@@ -25,7 +25,7 @@ export const User: Routes = [
             },
             {
                 path: 'users-cards',
-                component: UsersCardsComponent,
+                loadComponent: () => import('./users-cards/users-cards').then(m => m.UsersCards),
                 data: {
                     title: "Users Cards",
                     breadcrumb: "Users Cards",

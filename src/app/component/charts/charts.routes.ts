@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { ApexChartComponent } from './apex-chart/apex-chart.component';
-import { GoogleChartComponent } from './google-chart/google-chart.component';
-import { ChartjsChartComponent } from './chartjs-chart/chartjs-chart.component';
-import { ChartistChartComponent } from './chartist-chart/chartist-chart.component';
+
+
+
+
 
 export const Charts: Routes = [
     {
@@ -10,7 +10,7 @@ export const Charts: Routes = [
         children: [
             {
                 path: 'apex-chart',
-                component: ApexChartComponent,
+                loadComponent: () => import('./apex-chart/apex-chart').then(m => m.ApexChart),
                 data: {
                     title: "Apex Chart",
                     breadcrumb: "Apex Chart",
@@ -19,7 +19,7 @@ export const Charts: Routes = [
             },
              {
                 path: 'google-chart',
-                component: GoogleChartComponent,
+                loadComponent: () => import('./google-chart/google-chart').then(m => m.GoogleChart),
                 data: {
                     title: "Google Chart",
                     breadcrumb: "Google Chart",
@@ -28,7 +28,7 @@ export const Charts: Routes = [
             },
             {
                 path: 'chartjs-chart',
-                component: ChartjsChartComponent,
+                loadComponent: () => import('./chartjs-chart/chartjs-chart').then(m => m.ChartjsChart),
                 data: {
                     title: "Chatjs Chart",
                     breadcrumb: "Chatjs Chart",
@@ -37,7 +37,7 @@ export const Charts: Routes = [
             },
             {
                 path: 'chartist-chart',
-                component: ChartistChartComponent,
+                loadComponent: () => import('./chartist-chart/chartist-chart').then(m => m.ChartistChart),
                 data: {
                     title: "Chartist Chart",
                     breadcrumb: "Chartist Chart",

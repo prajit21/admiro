@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import { DefaultComponent } from './default/default.component';
-import { EcommerceComponent } from './ecommerce/ecommerce.component';
-import { EducationComponent } from './education/education.component';
-
 
 export const dashboard: Routes = [
   {
@@ -10,7 +6,7 @@ export const dashboard: Routes = [
     children: [
       {
         path: 'default',
-        component: DefaultComponent,
+        loadComponent: () => import('./default/default').then(m => m.Default),
         data: {
           title: 'Default Dashboard',
           breadcrumb: 'Default',
@@ -19,7 +15,7 @@ export const dashboard: Routes = [
       },
       {
         path: 'ecommerce',
-        component: EcommerceComponent,
+        loadComponent: () => import('./ecommerce/ecommerce').then(m => m.Ecommerce),
         data: {
           title: 'Ecommerce Dashboard',
           breadcrumb: 'Ecommerce Dashboard',
@@ -28,7 +24,7 @@ export const dashboard: Routes = [
       },
       {
         path: 'education',
-        component: EducationComponent,
+        loadComponent: () => import('./education/education').then(m => m.Education),
         data: {
           title: 'Education Dashboard',
           breadcrumb: 'Education Dashboard',

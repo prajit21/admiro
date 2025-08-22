@@ -115,7 +115,7 @@ export const findCourse : course[] = [
 },
 ];
 
-export const Categories = [
+export const Category = [
   {
       title: "Design",
       padding: false,

@@ -377,7 +377,7 @@ export const monthlyHistoryData: ChartOptions | any = {
     ]
 }
 
-export const SkillStatus: ChartOptions | any = {
+export const SkillStatusChart: ChartOptions | any = {
     chart: {
         type: "radialBar",
         height: 355,
@@ -831,7 +831,7 @@ export const Progress5: ChartOptions | any = {
     }]
 }
 
-export const LiveProducts: ChartOptions | any = {
+export const LiveProductsChart: ChartOptions | any = {
     chart: {
         height: 320,
         type: "area",
@@ -982,7 +982,7 @@ export const Turnover: ChartOptions | any = {
     },
 }
 
-export const CryptocurrencyPrices: ChartOptions | any = {
+export const CryptocurrencyPricesChart: ChartOptions | any = {
     chart: {
         toolbar: {
             show: false,
@@ -1193,7 +1193,7 @@ export const CryptoAnnotations: ChartOptions | any = {
         },
     }]
 }
-export const StockMarket: ChartOptions | any = {
+export const StockMarketChart: ChartOptions | any = {
     series: [
         {
             name: "line",
@@ -1676,7 +1676,7 @@ export const orderstatus: ChartOptions | any = {
     ]
 }
 
-export const Finance: ChartOptions | any = {
+export const FinanceChart: ChartOptions | any = {
     chart: {
         height: 350,
         type: 'line',
@@ -1776,7 +1776,7 @@ export const Finance: ChartOptions | any = {
 }
 
 
-export const MonthlySales: ChartOptions | any = {
+export const MonthlySalesChart: ChartOptions | any = {
     fill: {
         type: "gradient",
         gradient: {

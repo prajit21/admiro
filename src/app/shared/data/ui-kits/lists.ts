@@ -113,7 +113,7 @@ export const topcommonlists = [
         ]
     },
 ];
-export const ContextualClasses = [
+export const ContextualClass = [
     {
         class: 'primary',
         list: 'This is Primary bg you can use <em class="text-primary fw-bold">.list-group-item-primary</em>  class.'
@@ -142,7 +142,7 @@ export const ContextualClasses = [
 
 ]
 
-export const HorizontalLists = [
+export const HorizontalList = [
     {
         bordercolor: 'primary',
         data: [
@@ -267,7 +267,7 @@ export const HorizontalLists = [
         ]
     },
 ]
-export const CustomContentLists = [
+export const CustomContentList = [
 
     {
         class: 'active bg-primary',
@@ -371,7 +371,7 @@ export const NumberedBadgeLists = [
         class: ' bg-danger text-white'
     },
 ];
-export const DisabledLists = [
+export const DisabledList = [
     {
         class: 'list-hover-primary active',
         img: 'assets/images/user/1.jpg',
@@ -394,7 +394,7 @@ export const DisabledLists = [
     },
 ]
 
-export const ScrollableLists = [
+export const ScrollableList = [
     {
         class: 'active',
         img: 'assets/images/user/9.jpg',

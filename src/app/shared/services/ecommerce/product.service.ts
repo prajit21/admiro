@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { inject } from '@angular/core';
 import {  map, Observable } from 'rxjs';
 import { Products } from '../../../shared/model/product.model';
 
@@ -11,7 +12,7 @@ export class ProductService {
 
     listData: Products[] | undefined;
 
-    constructor(private http: HttpClient) { }
+    private http = inject(HttpClient);
 
     products(): Observable<any> {
         return this.http.get('assets/data/product.json').pipe(

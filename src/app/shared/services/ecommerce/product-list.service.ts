@@ -1,4 +1,4 @@
-import { Injectable, PipeTransform } from '@angular/core';
+import { inject, Injectable, PipeTransform } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { productListData, productListInterface } from '../../../shared/data/ecommerce/product-list';
@@ -49,6 +49,8 @@ function matches(ticket: productListInterface, term: string, pipe: PipeTransform
 })
 export class ProductListService {
 
+    private pipe = inject(DecimalPipe);
+
     private _loading$ = new BehaviorSubject<boolean>(true);
     private _search$ = new Subject<void>();
     private _support$ = new BehaviorSubject<productListInterface[]>([]);
@@ -62,7 +64,7 @@ export class ProductListService {
         sortDirection: ''
     };
 
-    constructor(private pipe: DecimalPipe) {
+    constructor() {
         this._search$.pipe(
             tap(() => this._loading$.next(true)),
             debounceTime(200),

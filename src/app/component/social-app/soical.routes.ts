@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { SocialAppComponent } from './social-app.component';
+
 
 export const SoicalApp: Routes = [
     {
         path: '',
-        component: SocialAppComponent,
+        loadComponent: () => import('./social-app').then(m => m.SocialApp),
         data: {
             title: "Soical App",
             breadcrumb: "Soical App",

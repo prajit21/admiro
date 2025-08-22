@@ -1,4 +1,4 @@
-export const UpcomingClasses = [
+export const UpcomingClass = [
     {
         date: '15 march',
         details: [
@@ -41,7 +41,7 @@ export const UpcomingClasses = [
     },
 ]
 
-export const NoticeBoard = [
+export const NoticeBoards = [
     {
         img: 'assets/images/dashboard-1/news-update/1.png',
         title: 'Virtual STEM Clubs for 4-8 with Destina...',
@@ -74,7 +74,7 @@ export const NoticeBoard = [
     },
 ]
 
-export const StudentDetails = [
+export const StudentDetail = [
     {
         img: 'assets/images/dashboard-3/user/7.png',
         customer: 'Gary Goodwin',
@@ -132,7 +132,7 @@ export const StudentDetails = [
 ]
 
 
-export const NewCourses = [
+export const NewCourse = [
     {
         img: 'assets/images/dashboard-3/user/13.png',
         name: 'Gary Goodwin',
@@ -250,7 +250,7 @@ export const Todolist = [
     },
 ]
 
-export const Assignments = [
+export const Assignment = [
     {
         img: 'assets/images/dashboard-3/user/1.png',
         class: 'success',

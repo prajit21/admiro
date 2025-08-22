@@ -1,5 +1,6 @@
 
 import { Injectable } from '@angular/core';
+import { inject } from '@angular/core';
 import { ActivatedRouteSnapshot, Router, RouterStateSnapshot, CanActivateFn } from '@angular/router';
 import { Observable } from 'rxjs';
 
@@ -8,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AdminGuard {
   public url: any;
-  constructor(public router: Router) { }
+  public router = inject(Router);
   ngOnInit() {
     this.url = this.router.url;
   }

@@ -34,7 +34,7 @@ export const dashData: Routes = [
             title: "File manager",
             breadcrumb: "File manager"
         },
-        loadChildren: () => import('../../../app/component/file-manager/file-manager.routes').then(r => r.FileManager)
+        loadChildren: () => import('../../../app/component/file-manager/file-manager.routes').then(r => r.FileManagers)
     },
     {
         path: 'ecommerce',
@@ -82,7 +82,7 @@ export const dashData: Routes = [
             title: "Bookmark",
             breadcrumb: "App"
         },
-        loadChildren: () => import('../../component/bookmarks/bookmarks.routes').then(r => r.Bookmarks)
+        loadChildren: () => import('../../component/bookmarks/bookmarks.routes').then(r => r.Bookmark)
     },
     {
         path: 'contacts',
@@ -134,7 +134,7 @@ export const dashData: Routes = [
             breadcrumb: "Buttons",
 
         },
-        loadChildren: () => import('../../component/buttons/buttons.routes').then(r => r.Buttons),
+        loadChildren: () => import('../../component/buttons/buttons.routes').then(r => r.Button),
     },
     {
         path: 'ui-kits',
@@ -197,7 +197,7 @@ export const dashData: Routes = [
             title: "Data Table",
             breadcrumb: "Data Table",
         },
-        loadChildren: () => import('../../component/table/data-table/data-table.routes').then(r => r.DataTable),
+        loadChildren: () => import('../../component/table/data-table/data-table.routes').then(r => r.DataTables),
     },
     {
         path: 'sample-page',
@@ -205,7 +205,7 @@ export const dashData: Routes = [
             title: "Sample Page",
             breadcrumb: "Sample Page",
         },
-        loadChildren: () => import('../../component/sample-page/sample-page.routes').then(r => r.SamplePage),
+        loadChildren: () => import('../../component/sample-page/sample-page.routes').then(r => r.SamplePages),
     },
     {
         path: 'gallary',
@@ -226,7 +226,7 @@ export const dashData: Routes = [
         data: {
             breadcrumb: 'FAQ'
         },
-        loadChildren: () => import('../../component/faq/faq.routes').then(r => r.Faq),
+        loadChildren: () => import('../../component/faq/faq.routes').then(r => r.Faqs),
     },
     {
         path: 'job',
@@ -262,7 +262,7 @@ export const dashData: Routes = [
             title:'Knowledgebase',
             breadcrumb: 'knowledgebase'
         },
-        loadChildren: () => import('../../component/knowledgebase/knowlegebase.routes').then(r => r.Knowledgebase),
+        loadChildren: () => import('../../component/knowledgebase/knowlegebase.routes').then(r => r.Knowledgebases),
     },
     {
         path: 'support-ticket',
@@ -270,6 +270,6 @@ export const dashData: Routes = [
             title: "Support Ticket",
             breadcrumb: 'Apps'
         },
-        loadChildren: () => import('../../component/support-ticket/support-ticket.routes').then(r => r.SupportTicket),
+        loadChildren: () => import('../../component/support-ticket/support-ticket.routes').then(r => r.SupportTickets),
     },
 ]

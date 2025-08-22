@@ -1,7 +1,4 @@
 import { Routes } from '@angular/router';
-import { GoogleMapComponent } from './google-map/google-map.component';
-import { LeafletMapComponent } from './leaflet-map/leaflet-map.component';
-
 
 export const Maps: Routes = [
     {
@@ -9,7 +6,7 @@ export const Maps: Routes = [
         children: [
             {
                 path: 'map-google',
-                component: GoogleMapComponent,
+                loadComponent: () => import('./google-map/google-map').then(m => m.GoogleMaps),
                 data: {
                     title: 'Google Map',
                     breadcrumb: 'Google Map'
@@ -17,7 +14,7 @@ export const Maps: Routes = [
             },
             {
                 path: 'leaflet-map',
-                component: LeafletMapComponent,
+                loadComponent: () => import('./leaflet-map/leaflet-map').then(m => m.LeafletMap),
                 data: {
                     title: 'Leaflet Map',
                     breadcrumb: 'Leaflet Map'

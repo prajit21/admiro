@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { SimpleComingComponent } from './simple-coming/simple-coming.component';
-import { ComingBgVideoComponent } from './coming-bg-video/coming-bg-video.component';
-import { ComingBgImageComponent } from './coming-bg-image/coming-bg-image.component';
+
+
+
 
 export const CommingSoonPages: Routes = [
   {
@@ -9,15 +9,15 @@ export const CommingSoonPages: Routes = [
     children: [
       {
         path: 'coming-soon-simple',
-        component: SimpleComingComponent
+        loadComponent: () => import('./simple-coming/simple-coming').then(m => m.SimpleComing)
       },
       {
         path: 'coming-soon-video',
-        component: ComingBgVideoComponent
+        loadComponent: () => import('./coming-bg-video/coming-bg-video').then(m => m.ComingBgVideo)
       },
       {
         path: 'coming-soon-image',
-        component: ComingBgImageComponent
+        loadComponent: () => import('./coming-bg-image/coming-bg-image').then(m => m.ComingBgImage)
       },
     ]
   }

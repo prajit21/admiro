@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Input, Output } from '@angular/core';
+import { Directive, Input, input, output } from '@angular/core';
 import { ORDERS } from '../interface/odershistory';
 
 export type SortColumn = keyof ORDERS | '';
@@ -20,14 +20,13 @@ export interface SortEvent {
 })
 export class OrderdataTableDirective {
 
-  constructor() { }
-  @Input() sortableOrder: SortColumn = '';
+  readonly sortableOrder = input<SortColumn>('');
   @Input() direction: SortDirection = '';
-  @Output() sort = new EventEmitter<SortEvent>();
+  readonly sort = output<SortEvent>();
 
   rotate() {
     this.direction = rotate[this.direction];
-    this.sort.emit({ column: this.sortableOrder, direction: this.direction });
+    this.sort.emit({ column: this.sortableOrder(), direction: this.direction });
   }
 
 }

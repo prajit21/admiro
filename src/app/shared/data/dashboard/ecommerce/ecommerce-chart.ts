@@ -46,7 +46,7 @@ export type ChartOptions = {
 let primary_color = localStorage.getItem('primary_color') || '#308e87';
 let secondary_color = localStorage.getItem('secondary_color') || '#f39159';
 
-export const SalesAnalytics: ChartOptions | any = {
+export const SalesAnalyticsChart: ChartOptions | any = {
     series: [
         {
             name: "series1",

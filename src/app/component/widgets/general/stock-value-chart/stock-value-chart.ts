@@ -1,0 +1,16 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { stockValue } from '../../../../shared/data/widgets/general/general-chart';
+import { NgApexchartsModule } from 'ng-apexcharts';
+
+@Component({
+    selector: 'app-stock-value-chart',
+    imports: [CommonModule, NgApexchartsModule],
+    templateUrl: './stock-value-chart.html',
+    styleUrl: './stock-value-chart.scss'
+})
+export class StockValueChart {
+
+  public stockChart = stockValue;
+
+}

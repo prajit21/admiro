@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { KnowledgebaseComponent } from './knowledgebase.component';
 
-export const Knowledgebase: Routes = [
+
+export const Knowledgebases: Routes = [
     {
         path: '',
-        component: KnowledgebaseComponent,
+        loadComponent: () => import('./knowledgebase').then(m => m.Knowledgebase),
         data: {
             breadcrumb: 'Knowledgebase'
         },

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { BasicTablesComponent } from './basic-tables/basic-tables.component';
-import { TableComponentComponent } from './table-component/table-component.component';
+
+
 
 export const bootstrapTables: Routes = [
     {
@@ -8,7 +8,7 @@ export const bootstrapTables: Routes = [
         children: [
             {
                 path: 'basic-table',
-                component: BasicTablesComponent,
+                loadComponent: () => import('./basic-tables/basic-tables').then(m => m.BasicTables),
                 data: {
                     title: "Bootstrap Basic Tables",
                     breadcrumb: "Bootstrap Basic Tables",
@@ -16,7 +16,7 @@ export const bootstrapTables: Routes = [
             },
             {
                 path: 'table-components',
-                component: TableComponentComponent,
+                loadComponent: () => import('./table-component/table-component').then(m => m.TableComponent),
                 data: {
                   title: "Table Components",
                   breadcrumb: "Table Components",

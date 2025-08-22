@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { ButtonsComponent } from './buttons.component';
 
-export const Buttons: Routes = [
+
+export const Button: Routes = [
     {
         path: '',
-        component: ButtonsComponent
+        loadComponent: () => import('./buttons').then(m => m.Buttons)
     }
 ]

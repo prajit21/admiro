@@ -1,0 +1,54 @@
+import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { LayoutService } from '../../../services/layout.service';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+    selector: 'app-color-picker',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './color-picker.html',
+    styleUrl: './color-picker.scss'
+})
+export class ColorPicker {
+
+  public layout = inject(LayoutService);
+
+  public primary: string = "#308e87";
+  public secondary: string = "#f39159";
+  public MIXLayout: string = "default";
+
+  public primary_color = localStorage.getItem('primary_color') || '#308e87';
+  public secondary_color = localStorage.getItem('secondary_color') || '#f39159';
+
+  constructor() {
+    document.documentElement.style.setProperty("--theme-default", localStorage.getItem("primary_color"));
+    document.documentElement.style.setProperty("--theme-secondary", localStorage.getItem("secondary_color"));
+    var primary = localStorage.getItem("primary_color") || this.layout.config.color.secondary_color;
+    var secondary = localStorage.getItem("secondary_color") || this.layout.config.color.secondary_color;
+    this.layout.config.color.primary_color = primary;
+    this.layout.config.color.secondary_color = secondary;
+    localStorage.getItem("primary_color") || this.layout.config.color.primary_color;
+    localStorage.getItem("secondary_color") || this.layout.config.color.secondary_color;
+  }
+
+  applyColor() {
+    localStorage.setItem("primary_color", this.primary_color);
+    localStorage.setItem("secondary_color", this.secondary_color);
+    this.layout.config.color.primary_color = this.primary_color;
+    this.layout.config.color.secondary_color = this.secondary_color;
+    window.location.reload();
+  }
+
+  resetColor() {
+    document.documentElement.style.setProperty("--theme-default", "#308e87");
+    document.documentElement.style.setProperty("--theme-secondary", "#f39159");
+    (<HTMLInputElement>document.getElementById("ColorPicker1")).value = "#308e87";
+    (<HTMLInputElement>document.getElementById("ColorPicker2")).value = "#f39159";
+    this.layout.config.color.primary_color = "#308e87";
+    this.layout.config.color.secondary_color = "#f39159";
+    localStorage.setItem("primary_color", "#308e87");
+    localStorage.setItem("secondary_color", "#f39159");
+    window.location.reload();
+  }
+
+}

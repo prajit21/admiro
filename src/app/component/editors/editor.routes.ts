@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { MdeEditorComponent } from './mde-editor/mde-editor.component';
-import { NgxEditorComponent } from './ngx-editor/ngx-editor.component';
+
+
 
 export const Editor: Routes = [
     {
@@ -8,7 +8,7 @@ export const Editor: Routes = [
         children: [
             {
                 path: 'ngx-editors',
-                component: NgxEditorComponent,
+                loadComponent: () => import('./ngx-editor/ngx-editor').then(m => m.NgxEditor),
                 data: {
                     title: 'Ngx Editor',
                     breadcrumb: 'Ngx Editor'
@@ -16,7 +16,7 @@ export const Editor: Routes = [
             },
             {
                 path: 'mde-editors',
-                component: MdeEditorComponent   ,
+                loadComponent: () => import('./mde-editor/mde-editor').then(m => m.MdeEditor),
                 data: {
                     title: 'MDE Editor',
                     breadcrumb: 'MDE Editor'

@@ -6,7 +6,7 @@ export interface staps {
     active:boolean;
 }
 
-export const AddProduct:staps[] = [
+export const AddProducts:staps[] = [
     {
         stepNumber:1,
         icon:'product-detail',

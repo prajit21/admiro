@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { DataTableComponent } from './data-table.component'
 
-export const DataTable: Routes = [
+
+export const DataTables: Routes = [
     {
         path: '',
-        component: DataTableComponent,
+        loadComponent: () => import('./data-table').then(m => m.DataTable),
         data: {
           title: "Data Table",
           breadcrumb: "Data Table",

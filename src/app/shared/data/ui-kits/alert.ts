@@ -208,7 +208,7 @@ export const IconandTextAlert: Icons[] = [
     },
 ];;
 
-export const AdditionalContent = [
+export const AdditionalContents = [
     {
         heading: 'Please! Check your notifications',
         title: 'The duty of notification is imposed upon the head of the family, and also upon the medical practitioner who may be in attendance on the patient.',

@@ -17,7 +17,7 @@ export interface Project {
   projectLaval: string,
 }
 
-export const ProjectList: Project[] = [
+export const ProjectLists: Project[] = [
   {
     id: 1,
     title: 'Cutting-Edge Design',

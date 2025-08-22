@@ -91,7 +91,7 @@ export const basictable = [
         class2: 'success',
     },
 ]
-export const InverseTable = [
+export const InverseTables = [
     {
         id: 1,
         name: 'Stephan',
@@ -497,7 +497,7 @@ export const customHover = [
     },
 ]
 
-export const DashedBorder = [
+export const DashedBorders = [
     {
         id: 1,
         classname: 'Crit Cardio',

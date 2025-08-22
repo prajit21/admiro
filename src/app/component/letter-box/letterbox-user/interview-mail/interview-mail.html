@@ -1,0 +1,31 @@
+<div id="print-section">
+  <div class="mail-header-wrapper header-wrapper1">
+    <div class="mail-header1">
+      <div class="light-square">
+        <div class="feather btn-email" (click)="openFilter()">
+          <app-feather-icon [icon]="'arrow-left'" />
+        </div>
+      </div><span>Interview Mail</span>
+    </div>
+    <div class="mail-body1">
+      <div class="light-square">
+        <app-feather-icon [icon]="'printer'" />
+      </div>
+      <div class="light-square">
+        <app-feather-icon [icon]="'bookmark'" class="feather bookmark-box" />
+      </div>
+      <div class="light-square">
+        <app-feather-icon [icon]="'alert-circle'" />
+      </div>
+      <div class="light-square">
+        <app-feather-icon [icon]="'trash-2'" class="stroke-danger" />
+      </div>
+      <div class="light-square">
+        <app-feather-icon [icon]="'settings'" />
+      </div>
+    </div>
+  </div>
+  <div class="mail-body-wrapper">
+    <app-user-details />
+  </div>
+</div>

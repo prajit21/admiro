@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { GeneralComponent } from './general/general.component';
-import { ChartComponent } from './chart/chart.component';
+
+
 
 export const widgets: Routes = [
     {
@@ -8,7 +8,7 @@ export const widgets: Routes = [
         children: [
             {
                 path: 'general',
-                component: GeneralComponent,
+                loadComponent: () => import('./general/general').then(m => m.General),
                 data: {
                     title: "General",
                     breadcrumb: "General",
@@ -16,7 +16,7 @@ export const widgets: Routes = [
             },
             {
                 path: 'chart',
-                component: ChartComponent,
+                loadComponent: () => import('./chart/chart').then(m => m.Chart),
                 data: {
                     title: "chart",
                     breadcrumb: "chart",

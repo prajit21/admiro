@@ -422,7 +422,7 @@ export const educationchart3: ChartOptions | any = {
     rating: '9.5'
 }
 
-export const SchoolPerformance: ChartOptions | any = {
+export const SchoolPerformanceChart: ChartOptions | any = {
     series: [
         {
             name: "Good",

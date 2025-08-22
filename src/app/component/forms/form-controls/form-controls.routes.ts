@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { BaseInputComponent } from './base-input/base-input.component';
-import { CheckboxRadioComponent } from './checkbox-radio/checkbox-radio.component';
-import { InputGroupComponent } from './input-group/input-group.component';
-import { MegaOptionsComponent } from './mega-options/mega-options.component';
-import { FormsValidationComponent } from './forms-validation/forms-validation.component';
-import { InputMaskComponent } from './input-mask/input-mask.component';
+
+
+
+
+
+
 
 export const formContols: Routes = [
     {
@@ -12,7 +12,7 @@ export const formContols: Routes = [
         children: [
           {
             path: 'base-input',
-            component: BaseInputComponent,
+            loadComponent: () => import('./base-input/base-input').then(m => m.BaseInput),
             data: {
               title: "Base Inputs",
               breadcrumb: "Base Inputs",
@@ -20,7 +20,7 @@ export const formContols: Routes = [
           },
           {
             path: 'checkbox-radio',
-            component: CheckboxRadioComponent,
+            loadComponent: () => import('./checkbox-radio/checkbox-radio').then(m => m.CheckboxRadio),
             data: {
               title: "Checkbox & Radio",
               breadcrumb: "Checkbox-Radio",
@@ -28,7 +28,7 @@ export const formContols: Routes = [
           },
           {
             path: 'input-groups',
-            component: InputGroupComponent,
+            loadComponent: () => import('./input-group/input-group').then(m => m.InputGroup),
             data: {
               title: "Input Groups",
               breadcrumb: "Input Groups",
@@ -36,7 +36,7 @@ export const formContols: Routes = [
           },
           {
             path: 'mega-options',
-            component: MegaOptionsComponent,
+            loadComponent: () => import('./mega-options/mega-options').then(m => m.MegaOptions),
             data: {
               title: "Mega Options",
               breadcrumb: "Mega Options",
@@ -44,7 +44,7 @@ export const formContols: Routes = [
           },
           {
             path: 'input-mask',
-            component: InputMaskComponent,
+            loadComponent: () => import('./input-mask/input-mask').then(m => m.InputMask),
             data: {
               title: "Input Mask",
               breadcrumb: "Input Mask",
@@ -52,7 +52,7 @@ export const formContols: Routes = [
           },
           {
             path: 'validation',
-            component: FormsValidationComponent,
+            loadComponent: () => import('./forms-validation/forms-validation').then(m => m.FormsValidation),
             data: {
               title: "Validation Form",
               breadcrumb: "Validation Form",

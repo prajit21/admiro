@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { FaqComponent } from './faq.component';
 
-export const Faq: Routes = [
+
+export const Faqs: Routes = [
     {
         path: '',
-        component: FaqComponent,
+        loadComponent: () => import('./faq').then(m => m.Faq),
         data: {
             title: 'FAQ',
             breadcrumb: 'FAQ'

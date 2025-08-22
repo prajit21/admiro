@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Input, Output } from '@angular/core';
+import { Directive, Input, input, output } from '@angular/core';
 import { productListInterface } from '../data/ecommerce/product-list';
 
 export type SortColumn = keyof productListInterface | '';
@@ -19,14 +19,13 @@ export interface SortEvent {
 })
 export class ProductListDirective {
 
-  constructor() { }
-  @Input() sortable: SortColumn = '';
+  readonly sortable = input<SortColumn>('');
   @Input() direction: SortDirection = '';
-  @Output() sort = new EventEmitter<SortEvent>();
+  readonly sort = output<SortEvent>();
 
   rotate() {
     this.direction = rotate[this.direction];
-    this.sort.emit({ column: this.sortable, direction: this.direction });
+    this.sort.emit({ column: this.sortable(), direction: this.direction });
   }
 }
 

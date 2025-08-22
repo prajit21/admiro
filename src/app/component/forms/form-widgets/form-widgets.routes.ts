@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { DatepickerComponent } from './datepicker/datepicker.component';
-import { Select2Component } from './select2/select2.component';
-import { TouchspinComponent } from './touchspin/touchspin.component';
-import { SwitchComponent } from './switch/switch.component';
-import { ClipboardComponent } from './clipboard/clipboard.component';
-import { TypeaheadComponent } from './typeahead/typeahead.component';
+
+
+
+
+
+
 
 export const formWidgets: Routes = [
     {
@@ -12,7 +12,7 @@ export const formWidgets: Routes = [
         children: [
             {
                 path: 'datepicker',
-                component: DatepickerComponent,
+                loadComponent: () => import('./datepicker/datepicker').then(m => m.Datepicker),
                 data: {
                     title: "Datepicker",
                     breadcrumb: "Datepicker",
@@ -20,7 +20,7 @@ export const formWidgets: Routes = [
             },
             {
                 path: 'touchspin',
-                component: TouchspinComponent,
+                loadComponent: () => import('./touchspin/touchspin').then(m => m.Touchspin),
                 data: {
                     title: "Touchspin",
                     breadcrumb: "Touchspin",
@@ -28,7 +28,7 @@ export const formWidgets: Routes = [
             },
             {
                 path: 'select2',
-                component: Select2Component,
+                loadComponent: () => import('./select2/select2').then(m => m.Select2),
                 data: {
                     title: "Select2",
                     breadcrumb: "Select2",
@@ -36,7 +36,7 @@ export const formWidgets: Routes = [
             },
             {
                 path: 'switch',
-                component: SwitchComponent,
+                loadComponent: () => import('./switch/switch').then(m => m.Switch),
                 data: {
                     title: "Switch",
                     breadcrumb: "Switch",
@@ -44,7 +44,7 @@ export const formWidgets: Routes = [
             },
             {
                 path: 'typeahead',
-                component: TypeaheadComponent,
+                loadComponent: () => import('./typeahead/typeahead').then(m => m.Typeahead),
                 data: {
                     title: "Typeahead",
                     breadcrumb: "Typeahead",
@@ -52,7 +52,7 @@ export const formWidgets: Routes = [
             },
             {
                 path: 'clipboard',
-                component: ClipboardComponent,
+                loadComponent: () => import('./clipboard/clipboard').then(m => m.Clipboard),
                 data: {
                     title: "Clipboard",
                     breadcrumb: "Clipboard",

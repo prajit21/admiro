@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { SimpleLoginComponent } from './simple-login/simple-login.component';
-import { LoginBgImgComponent } from './login-bg-img/login-bg-img.component';
-import { LoginImgTwoComponent } from './login-img-two/login-img-two.component';
-import { LoginVaildationComponent } from './login-vaildation/login-vaildation.component';
-import { LoginTooltipComponent } from './login-tooltip/login-tooltip.component';
-import { LoginSweetalertComponent } from './login-sweetalert/login-sweetalert.component';
-import { RegisterSimpleComponent } from './register-simple/register-simple.component';
-import { RegisterBgImageComponent } from './register-bg-image/register-bg-image.component';
-import { RegisterTwoImageComponent } from './register-two-image/register-two-image.component';
-import { UnloackUserComponent } from './unloack-user/unloack-user.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-import { MaintenanceComponent } from './maintenance/maintenance.component';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 export const AuthenticationPages: Routes = [
@@ -20,55 +20,55 @@ export const AuthenticationPages: Routes = [
         children: [
             {
                 path: 'simple',
-                component: SimpleLoginComponent,
+                loadComponent: () => import('./simple-login/simple-login').then(m => m.SimpleLogin),
             },
             {
                 path: 'image-one',
-                component: LoginBgImgComponent,
+                loadComponent: () => import('./login-bg-img/login-bg-img').then(m => m.LoginBgImg),
             },
             {
                 path: 'image-two',
-                component: LoginImgTwoComponent,
+                loadComponent: () => import('./login-img-two/login-img-two').then(m => m.LoginImgTwo),
             },
             {
                 path: 'validation',
-                component: LoginVaildationComponent,
+                loadComponent: () => import('./login-vaildation/login-vaildation').then(m => m.LoginVaildation),
             },
             {
                 path: 'tooltip',
-                component: LoginTooltipComponent,
+                loadComponent: () => import('./login-tooltip/login-tooltip').then(m => m.LoginTooltip),
             },
             {
                 path: 'sweetalert',
-                component: LoginSweetalertComponent,
+                loadComponent: () => import('./login-sweetalert/login-sweetalert').then(m => m.LoginSweetalert),
             },
             {
                 path: 'register-simple',
-                component: RegisterSimpleComponent,
+                loadComponent: () => import('./register-simple/register-simple').then(m => m.RegisterSimple),
             },
             {
                 path: 'register-image-one',
-                component: RegisterBgImageComponent,
+                loadComponent: () => import('./register-bg-image/register-bg-image').then(m => m.RegisterBgImage),
             },
             {
                 path: 'register-image-two',
-                component: RegisterTwoImageComponent,
+                loadComponent: () => import('./register-two-image/register-two-image').then(m => m.RegisterTwoImage),
             },
             {
                 path: 'unlock-user',
-                component: UnloackUserComponent,
+                loadComponent: () => import('./unloack-user/unloack-user').then(m => m.UnloackUser),
             },
             {
                 path: 'forget-password',
-                component: ForgetPasswordComponent,
+                loadComponent: () => import('./forget-password/forget-password').then(m => m.ForgetPassword),
             },
             {
                 path: 'reset-password',
-                component: ResetPasswordComponent,
+                loadComponent: () => import('./reset-password/reset-password').then(m => m.ResetPassword),
             },
             {
                 path: 'maintenance',
-                component: MaintenanceComponent,
+                loadComponent: () => import('./maintenance/maintenance').then(m => m.Maintenance),
             },
         ]
     }

@@ -49,7 +49,7 @@ export const userStatus = [
     },
 ]
 
-export const TopSellingProducts = [
+export const TopSellingProduct = [
     {
         icon: 'headphone',
         class: 'primary',
@@ -108,7 +108,7 @@ export const TopSellingProducts = [
     },
 ]
 
-export const BestSeller = [
+export const BestSellers = [
     {
         customer: 'Evans Mayo',
         img: 'assets/images/dashboard-2/user/07.png',
@@ -177,7 +177,7 @@ export const BestSeller = [
     },
 ]
 
-export const ActivityTimeline = [
+export const ActivityTimelines = [
     {
         class: 'primary',
         date: '30-06-2022',

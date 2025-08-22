@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
-import { ProductComponent } from './product/product.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { AddProductComponent } from './add-product/add-product.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { PaymentDetailsComponent } from './payment-details/payment-details.component';
-import { OrderHistoryComponent } from './order-history/order-history.component';
-import { CartComponent } from './cart/cart.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { CategoryPageComponent } from './category-page/category-page.component';
+
+
+
+
+
+
+
+
+
+
+
 
 export const Ecommerce: Routes = [
   {
@@ -17,7 +17,7 @@ export const Ecommerce: Routes = [
     children: [
       {
         path: 'add-products',
-        component: AddProductComponent,
+        loadComponent: () => import('./add-product/add-product').then(m => m.AddProduct),
         data: {
           title: "Add Products",
           breadcrumb: "Add Products",
@@ -25,7 +25,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'products',
-        component: ProductComponent,
+        loadComponent: () => import('./product/product').then(m => m.Product),
         data: {
           title: "Product",
           breadcrumb: "Product",
@@ -33,7 +33,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'product-page',
-        component: ProductPageComponent,
+        loadComponent: () => import('./product-page/product-page').then(m => m.ProductPage),
         data: {
           title: "Product Page",
           breadcrumb: "Product Page",
@@ -41,7 +41,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'product-list',
-        component: ProductListComponent,
+        loadComponent: () => import('./product-list/product-list').then(m => m.ProductList),
         data: {
           title: "Product List",
           breadcrumb: "Product List",
@@ -49,7 +49,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'payment-details',
-        component: PaymentDetailsComponent,
+        loadComponent: () => import('./payment-details/payment-details').then(m => m.PaymentDetails),
         data: {
           title: "Payment Details",
           breadcrumb: "Payment Details",
@@ -57,7 +57,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'category-page',
-        component: CategoryPageComponent,
+        loadComponent: () => import('./category-page/category-page').then(m => m.CategoryPage),
         data: {
           title: "Category",
           breadcrumb: "Category",
@@ -65,7 +65,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'order-history',
-        component: OrderHistoryComponent,
+        loadComponent: () => import('./order-history/order-history').then(m => m.OrderHistory),
         data: {
           title: "Order History",
           breadcrumb: "Order History",
@@ -73,7 +73,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'cart',
-        component: CartComponent,
+        loadComponent: () => import('./cart/cart').then(m => m.Cart),
         data: {
           title: "Cart",
           breadcrumb: "Cart",
@@ -81,7 +81,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'wishlist',
-        component: WishlistComponent,
+        loadComponent: () => import('./wishlist/wishlist').then(m => m.Wishlist),
         data: {
           title: "Wishlist",
           breadcrumb: "Wishlist",
@@ -89,7 +89,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'checkout',
-        component: CheckoutComponent,
+        loadComponent: () => import('./checkout/checkout').then(m => m.Checkout),
         data: {
           title: "Checkout",
           breadcrumb: "Checkout",
@@ -97,7 +97,7 @@ export const Ecommerce: Routes = [
       },
       {
         path: 'pricing',
-        component: PricingComponent,
+        loadComponent: () => import('./pricing/pricing').then(m => m.Pricing),
         data: {
           title: "Pricing",
           breadcrumb: "Pricing",

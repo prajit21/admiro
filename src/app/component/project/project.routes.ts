@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { ProjectListComponent } from './project-list/project-list.component';
-import { CreateNewComponent } from './create-new/create-new.component';
+
+
 
 export const Project: Routes = [
     {
@@ -8,7 +8,7 @@ export const Project: Routes = [
         children: [
             {
                 path: 'list',
-                component: ProjectListComponent,
+                loadComponent: () => import('./project-list/project-list').then(m => m.ProjectList),
                 data: {
                     title: "Project List",
                     breadcrumb: "Project List",
@@ -16,7 +16,7 @@ export const Project: Routes = [
             },
             {
                 path: 'create',
-                component: CreateNewComponent,
+                loadComponent: () => import('./create-new/create-new').then(m => m.CreateNew),
                 data: {
                     title: "Project Create",
                     breadcrumb: "Project Create",

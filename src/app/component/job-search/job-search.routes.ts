@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { CardsViewComponent } from './cards-view/cards-view.component';
-import { ListViewComponent } from './list-view/list-view.component';
-import { JobDetailsComponent } from './job-details/job-details.component';
-import { ApplyComponent } from './apply/apply.component';
+
+
+
+
 
 export const JobSearch: Routes = [
 
@@ -11,7 +11,7 @@ export const JobSearch: Routes = [
         children: [
             {
                 path: 'cards-view',
-                component: CardsViewComponent,
+                loadComponent: () => import('./cards-view/cards-view').then(m => m.CardsView),
                 data: {
                     title: 'Cards View',
                     breadcrumb: 'Cards View',
@@ -19,7 +19,7 @@ export const JobSearch: Routes = [
             },
             {
                 path: 'list-view',
-                component: ListViewComponent,
+                loadComponent: () => import('./list-view/list-view').then(m => m.ListView),
                 data: {
                     title: 'List View',
                     breadcrumb: 'List View',
@@ -27,7 +27,7 @@ export const JobSearch: Routes = [
             },
             {
                 path: 'job-details',
-                component: JobDetailsComponent,
+                loadComponent: () => import('./job-details/job-details').then(m => m.JobDetails),
                 data: {
                     title: 'Job Details',
                     breadcrumb: 'Job Details',
@@ -35,7 +35,7 @@ export const JobSearch: Routes = [
             },
             {
                 path: 'apply',
-                component: ApplyComponent,
+                loadComponent: () => import('./apply/apply').then(m => m.Apply),
                 data: {
                     title: 'Apply',
                     breadcrumb: 'Apply',

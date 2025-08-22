@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { LearningListComponent } from './learning-list/learning-list.component';
-import { DetailedCourseComponent } from './detailed-course/detailed-course.component';
+
+
 
 
 export const Learning: Routes = [
@@ -9,7 +9,7 @@ export const Learning: Routes = [
     children: [
       {
         path: 'learning-list',
-        component: LearningListComponent,
+        loadComponent: () => import('./learning-list/learning-list').then(m => m.LearningList),
         data: {
           title: 'Learning List',
           breadcrumb: 'Learning List',
@@ -17,7 +17,7 @@ export const Learning: Routes = [
       },
       {
         path: 'detailed-course',
-        component: DetailedCourseComponent,
+        loadComponent: () => import('./detailed-course/detailed-course').then(m => m.DetailedCourse),
         data: {
           title: 'Detailed Course',
           breadcrumb: 'Detailed Course',

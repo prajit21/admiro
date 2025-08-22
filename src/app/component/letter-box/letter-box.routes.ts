@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { LetterBoxComponent } from './letter-box.component';
+
 
 export const Email: Routes = [
   {
     path: '',
-    component:LetterBoxComponent ,
+    loadComponent: () => import('./letter-box').then(m => m.LetterBox),
     data : {
       breadcrumb : 'Letter Box'
     }

@@ -1,0 +1,15 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { TimelineLeft } from '../timeline/timeline-left/timeline-left';
+import { TimelineRight } from '../timeline/timeline-right/timeline-right';
+import { AboutCenter } from './about-center/about-center';
+
+@Component({
+    selector: 'app-about',
+    imports: [CommonModule, TimelineLeft, TimelineRight, AboutCenter],
+    templateUrl: './about.html',
+    styleUrl: './about.scss'
+})
+export class About {
+
+}

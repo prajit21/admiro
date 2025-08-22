@@ -1,0 +1,16 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import * as data from '../../../../../shared/data/social-media/social-media-data';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+@Component({
+    selector: 'app-follwings',
+    imports: [CommonModule, NgbModule],
+    templateUrl: './follwings.html',
+    styleUrl: './follwings.scss'
+})
+export class Follwings {
+
+  public followingData = data.Following;
+
+}

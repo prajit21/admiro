@@ -1,4 +1,4 @@
-export const JobToday = [
+export const JobTodays = [
     {
         time: '10:AM',
         job: 'Maintenace',
@@ -22,7 +22,7 @@ export const JobToday = [
     },
 ]
 
-export const TransitionHistory = [
+export const TransitionHistoryItem = [
     {
         name: 'Samsung TV',
         itemStatus: 'Item Sold',
@@ -286,7 +286,7 @@ export const newsupdate = [
     },
 ]
 
-export const ManageInvoice = [
+export const ManageInvoices = [
     {
         client:'Comelune',
         date:'27 Nov',

@@ -550,7 +550,7 @@ export const FontStyle = [
     },
 ];
 
-export const FontSize = [
+export const FontSizes = [
     {
         class: 'fs-6',
         text: 'Font-size .f-6'

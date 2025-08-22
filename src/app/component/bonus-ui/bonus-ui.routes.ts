@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { ToastsComponent } from './toasts/toasts.component'
-import { RatingComponent } from './rating/rating.component';
-import { DropzoneComponent } from './dropzone/dropzone.component';
-import { Sweetalert2Component } from './sweetalert2/sweetalert2.component';
-import { RibbonsComponent } from './ribbons/ribbons.component';
-import { OwlCarouselComponent } from './owl-carousel/owl-carousel.component';
-import { BasicCardComponent } from './basic-card/basic-card.component';
-import { CreativeCardComponent } from './creative-card/creative-card.component';
-import { TimelineComponent } from './timeline/timeline.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
-import { RangeSliderComponent } from './range-slider/range-slider.component'
-import { PaginationComponent } from './pagination/pagination.component';
-import { ImageCropComponent } from './image-cropper/image-cropper.component';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const BonusUi: Routes = [
     {
@@ -19,7 +19,7 @@ export const BonusUi: Routes = [
         children: [
             {
                 path: 'toasts',
-                component: ToastsComponent,
+                loadComponent: () => import('./toasts/toasts').then(m => m.Toasts),
                 data: {
                     title: "Toasts",
                     breadcrumb: "Toasts",
@@ -27,7 +27,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'rating',
-                component: RatingComponent,
+                loadComponent: () => import('./rating/rating').then(m => m.Rating),
                 data: {
                     title: "Rating",
                     breadcrumb: "Rating",
@@ -35,7 +35,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'dropzone',
-                component: DropzoneComponent,
+                loadComponent: () => import('./dropzone/dropzone').then(m => m.Dropzone),
                 data: {
                     title: "Dropzone",
                     breadcrumb: "Dropzone",
@@ -43,7 +43,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'sweetalert2',
-                component: Sweetalert2Component,
+                loadComponent: () => import('./sweetalert2/sweetalert2').then(m => m.Sweetalert2),
                 data: {
                     title: "Sweet Alert",
                     breadcrumb: "Sweet Alert",
@@ -51,7 +51,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'owl-carousel',
-                component: OwlCarouselComponent,
+                loadComponent: () => import('./owl-carousel/owl-carousel').then(m => m.OwlCarousel),
                 data: {
                     title: "Owl Carousel",
                     breadcrumb: "Owl Carousel",
@@ -59,7 +59,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'ribbons',
-                component: RibbonsComponent,
+                loadComponent: () => import('./ribbons/ribbons').then(m => m.Ribbons),
                 data: {
                     title: "Ribbons",
                     breadcrumb: "Ribbons",
@@ -67,7 +67,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'pagination',
-                component: PaginationComponent,
+                loadComponent: () => import('./pagination/pagination').then(m => m.Pagination),
                 data: {
                     title: "Paginations",
                     breadcrumb: "Paginations",
@@ -75,7 +75,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'breadcrumb',
-                component: BreadcrumbComponent,
+                loadComponent: () => import('./breadcrumb/breadcrumb').then(m => m.Breadcrumb),
                 data: {
                     title: "Breadcrumb",
                     breadcrumb: "Breadcrumb",
@@ -83,7 +83,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'range-slider',
-                component: RangeSliderComponent,
+                loadComponent: () => import('./range-slider/range-slider').then(m => m.RangeSlider),
                 data: {
                     title: "Range Slider",
                     breadcrumb: "Range Slider",
@@ -91,7 +91,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'image-cropper',
-                component: ImageCropComponent,
+                loadComponent: () => import('./image-cropper/image-cropper').then(m => m.ImageCrop),
                 data: {
                     title: "Image Cropper",
                     breadcrumb: "Image Cropper",
@@ -99,7 +99,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'basic-card',
-                component: BasicCardComponent,
+                loadComponent: () => import('./basic-card/basic-card').then(m => m.BasicCard),
                 data: {
                     title: "Basic Card",
                     breadcrumb: "Basic Card",
@@ -107,7 +107,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'creative-card',
-                component: CreativeCardComponent,
+                loadComponent: () => import('./creative-card/creative-card').then(m => m.CreativeCard),
                 data: {
                     title: "Creative Card",
                     breadcrumb: "Creative Card",
@@ -115,7 +115,7 @@ export const BonusUi: Routes = [
             },
             {
                 path: 'timeline',
-                component: TimelineComponent,
+                loadComponent: () => import('./timeline/timeline').then(m => m.Timeline),
                 data: {
                     title: "Timeline",
                     breadcrumb: "Timeline",

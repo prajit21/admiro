@@ -1,4 +1,4 @@
-import { Injectable, PipeTransform } from '@angular/core';
+import { inject, Injectable, PipeTransform } from '@angular/core';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { supportDB } from '../interface/support';
 import { SUPPORTDB } from '../../shared/data/table/SupportTdb';
@@ -44,6 +44,9 @@ function matches(support: supportDB, term: string) {
 @Injectable({ providedIn: 'root' })
 
 export class TableService {
+
+  private pipe = inject(DecimalPipe);
+
   private _loading$ = new BehaviorSubject<boolean>(true);
   private _search$ = new Subject<void>();
   private _data$ = new BehaviorSubject<supportDB[]>([]);
@@ -57,7 +60,7 @@ export class TableService {
     sortDirection: '',
   };
 
-  constructor(private pipe: DecimalPipe) {
+  constructor() {
     this._search$
       .pipe(
         tap(() => this._loading$.next(true)),

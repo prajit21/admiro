@@ -1,0 +1,17 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { productoffer, sildesOptions } from '../../../../shared/data/dashboard/ecommerce/ecommerce-chart';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+@Component({
+    selector: 'app-product-offer',
+    imports: [CommonModule, CarouselModule],
+    templateUrl: './product-offer.html',
+    styleUrl: './product-offer.scss'
+})
+export class ProductOffer {
+
+  public SildesoptionsData = sildesOptions;
+  public productoffer = productoffer;
+
+}

@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { GalleryGridComponent } from './gallery-grid/gallery-grid.component';
-import { GalleryGridDescComponent } from './gallery-grid-desc/gallery-grid-desc.component';
-import { MasonryGalleryComponent } from './masonry-gallery/masonry-gallery.component';
-import { HoverEffectComponent } from './hover-effect/hover-effect.component';
-import { MasonryWithDescComponent } from './masonry-with-desc/masonry-with-desc.component';
+
+
+
+
+
 
 
 export const Gallery: Routes = [
@@ -12,7 +12,7 @@ export const Gallery: Routes = [
         children: [
           {
             path: 'gallary-grid',
-            component: GalleryGridComponent,
+            loadComponent: () => import('./gallery-grid/gallery-grid').then(m => m.GalleryGrid),
             data: {
               title: 'Gallery',
               breadcrumb: 'Gallery'
@@ -20,7 +20,7 @@ export const Gallery: Routes = [
           },
           {
             path: 'gallery-grid-desc',
-            component: GalleryGridDescComponent,
+            loadComponent: () => import('./gallery-grid-desc/gallery-grid-desc').then(m => m.GalleryGridDesc),
             data: {
               title: 'Gallery Grid With Description',
               breadcrumb: 'Gallery Grid With Description'
@@ -28,7 +28,7 @@ export const Gallery: Routes = [
           },
           {
             path: 'masonry-gallery',
-            component: MasonryGalleryComponent,
+            loadComponent: () => import('./masonry-gallery/masonry-gallery').then(m => m.MasonryGallery),
             data: {
               title: 'Masonry Gallery',
               breadcrumb: 'Masonry Gallery'
@@ -36,7 +36,7 @@ export const Gallery: Routes = [
           },
           {
             path: 'masonry-with-desc',
-            component: MasonryWithDescComponent,
+            loadComponent: () => import('./masonry-with-desc/masonry-with-desc').then(m => m.MasonryWithDesc),
             data: {
               title: 'Masonry Gallery With Description',
               breadcrumb: 'Masonry Gallery With Description'
@@ -44,7 +44,7 @@ export const Gallery: Routes = [
           },
           {
             path: 'hover-effects',
-            component: HoverEffectComponent,
+            loadComponent: () => import('./hover-effect/hover-effect').then(m => m.HoverEffect),
             data: {
               title: 'Image Hover Effects',
               breadcrumb: 'Image Hover Effects'

@@ -157,7 +157,7 @@ export const EarningsTrend: ChartOptions | any = {
     ],
 }
 
-export const TotalInvestment: ChartOptions | any = {
+export const TotalInvestmentChart: ChartOptions | any = {
     series: [76, 67, 61, 90],
     chart: {
         height: 380,

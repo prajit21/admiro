@@ -1,18 +1,18 @@
 import { Routes } from '@angular/router';
-import { TypographyComponent } from './typography/typography.component';
-import { AvatarsComponent } from './avatars/avatars.component';
-import { GridComponent } from './grid/grid.component';
-import { HelperClassesComponent } from './helper-classes/helper-classes.component';
-import { TagPillsComponent } from './tag-pills/tag-pills.component';
-import { ProgressComponent } from './progress/progress.component';
-import { PopoverComponent } from './popover/popover.component';
-import { AlertComponent } from './alert/alert.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
-import { ModalComponent } from './modal/modal.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { AccordionComponent } from './accordion/accordion.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { ListsComponent } from './lists/lists.component';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const UiKits: Routes = [
     {
@@ -20,7 +20,7 @@ export const UiKits: Routes = [
         children: [
             {
                 path: 'typography',
-                component: TypographyComponent,
+                loadComponent: () => import('./typography/typography').then(m => m.Typography),
                 data: {
                     title: "Typography",
                     breadcrumb: "Typography",
@@ -28,7 +28,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'avatars',
-                component: AvatarsComponent,
+                loadComponent: () => import('./avatars/avatars').then(m => m.Avatars),
                 data: {
                     title: "Avatars",
                     breadcrumb: "Avatars",
@@ -36,7 +36,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'grid',
-                component: GridComponent,
+                loadComponent: () => import('./grid/grid').then(m => m.Grid),
                 data: {
                     title: "Grid",
                     breadcrumb: "Grid",
@@ -44,7 +44,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'helper-classes',
-                component: HelperClassesComponent,
+                loadComponent: () => import('./helper-classes/helper-classes').then(m => m.HelperClasses),
                 data: {
                     title: "Helper classes",
                     breadcrumb: "Helper classes",
@@ -52,7 +52,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'tag-n-pills',
-                component: TagPillsComponent,
+                loadComponent: () => import('./tag-pills/tag-pills').then(m => m.TagPills),
                 data: {
                     title: "Tag & Pills",
                     breadcrumb: "Tag & Pills",
@@ -60,7 +60,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'progress-bar',
-                component: ProgressComponent,
+                loadComponent: () => import('./progress/progress').then(m => m.Progress),
                 data: {
                     title: "Progress Bar",
                     breadcrumb: "Progress Bar",
@@ -68,7 +68,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'popover',
-                component: PopoverComponent,
+                loadComponent: () => import('./popover/popover').then(m => m.Popover),
                 data: {
                     title: "Popover",
                     breadcrumb: "Popover",
@@ -76,7 +76,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'alert',
-                component: AlertComponent,
+                loadComponent: () => import('./alert/alert').then(m => m.Alert),
                 data: {
                     title: "Alert",
                     breadcrumb: "Alert",
@@ -84,7 +84,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'tooltip',
-                component: TooltipComponent,
+                loadComponent: () => import('./tooltip/tooltip').then(m => m.Tooltip),
                 data: {
                     title: "Tooltip",
                     breadcrumb: "Tooltip",
@@ -92,7 +92,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'modal',
-                component: ModalComponent,
+                loadComponent: () => import('./modal/modal').then(m => m.Modal),
                 data: {
                     title: "Modal",
                     breadcrumb: "Modal",
@@ -100,7 +100,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'dropdown',
-                component: DropdownComponent,
+                loadComponent: () => import('./dropdown/dropdown').then(m => m.Dropdown),
                 data: {
                     title: "Dropdown",
                     breadcrumb: "Dropdown",
@@ -108,7 +108,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'according',
-                component: AccordionComponent,
+                loadComponent: () => import('./accordion/accordion').then(m => m.Accordion),
                 data: {
                     title: "Accordion",
                     breadcrumb: "Accordion",
@@ -116,7 +116,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'tabs',
-                component: TabsComponent,
+                loadComponent: () => import('./tabs/tabs').then(m => m.Tabs),
                 data: {
                     title: "Tab bootstrap",
                     breadcrumb: "Tab bootstrap",
@@ -124,7 +124,7 @@ export const UiKits: Routes = [
             },
             {
                 path: 'list',
-                component: ListsComponent,
+                loadComponent: () => import('./lists/lists').then(m => m.Lists),
                 data: {
                     title: "Lists",
                     breadcrumb: "Lists",

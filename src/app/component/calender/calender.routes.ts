@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { CalenderComponent } from './calender.component'
+
 
 export const calendar: Routes = [
     {
         path: '',
-        component: CalenderComponent,
+        loadComponent: () => import('./calender').then(m => m.Calender),
         data: {
             title: 'Canlender',
             breadcrumb: 'Canlender'

@@ -1,4 +1,4 @@
-import { Injectable, PipeTransform } from '@angular/core';
+import { inject, Injectable, PipeTransform } from '@angular/core';
 import { BehaviorSubject, Observable, Subject, debounceTime, delay, of, pipe, switchMap, tap } from 'rxjs';
 import { DecimalPipe } from '@angular/common';
 import { SUPPORTDB, supportDB } from '../data/support-ticket/support-ticket';
@@ -46,6 +46,8 @@ function matches(country: supportDB, term: string, pipe: PipeTransform) {
 
 export class SupportTicketService {
 
+  private pipe = inject(DecimalPipe);
+
   private _loading$ = new BehaviorSubject<boolean>(true);
   private _search$ = new Subject<void>();
   private _support$ = new BehaviorSubject<supportDB[]>([]);
@@ -59,7 +61,7 @@ export class SupportTicketService {
     sortDirection: '',
   };
 
-  constructor(private pipe: DecimalPipe) {
+  constructor() {
     this._search$
       .pipe(
         tap(() => this._loading$.next(true)),

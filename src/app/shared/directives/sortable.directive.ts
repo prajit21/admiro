@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Input, Output } from '@angular/core';
+import { Directive, Input, input, output } from '@angular/core';
 import { supportDB } from '../interface/support';
 export type SortColumn = keyof supportDB | '';
 export type SortDirection = 'asc' | 'desc' | '';
@@ -20,12 +20,12 @@ export interface SortEvent {
 
 export class NgbdSortableHeader {
 
-    @Input() sortable: SortColumn = '';
+    readonly sortable = input<SortColumn>('');
     @Input() direction: SortDirection = '';
-    @Output() sort = new EventEmitter<SortEvent>();
+    readonly sort = output<SortEvent>();
 
     rotate() {
         this.direction = rotate[this.direction];
-        this.sort.emit({ column: this.sortable, direction: this.direction });
+        this.sort.emit({ column: this.sortable(), direction: this.direction });
     }
 }

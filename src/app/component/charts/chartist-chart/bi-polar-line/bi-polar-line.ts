@@ -1,0 +1,16 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import * as chartData from '../../../../shared/data/charts/chartist-chart';
+import { ChartistModule } from 'ng-chartist';
+
+@Component({
+    selector: 'app-bi-polar-line',
+    imports: [CommonModule, ChartistModule],
+    templateUrl: './bi-polar-line.html',
+    styleUrl: './bi-polar-line.scss'
+})
+export class BiPolarLine {
+
+  public chart4 = chartData.chart4;
+
+}

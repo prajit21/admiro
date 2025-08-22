@@ -1,0 +1,21 @@
+import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-default-range-slider',
+    imports: [CommonModule, NgxSliderModule],
+    templateUrl: './default-range-slider.html',
+    styleUrl: './default-range-slider.scss'
+})
+export class DefaultRangeSlider {
+
+  public value: number = 550;
+
+  public options: Options = {
+    floor: 100,
+    ceil: 1000
+  };
+
+
+}

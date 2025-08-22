@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { BlogSingleComponent } from './blog-single/blog-single.component';
-import { BlogDetailsComponent } from './blog-details/blog-details.component';
-import { BlogAddPostComponent } from './blog-add-post/blog-add-post.component';
+
+
+
 
 export const Blog: Routes = [
   {
@@ -9,7 +9,7 @@ export const Blog: Routes = [
     children: [
       {
         path: 'blog-details',
-        component: BlogDetailsComponent,
+        loadComponent: () => import('./blog-details/blog-details').then(m => m.BlogDetails),
         data: {
           title: 'Blog Details',
           breadcrumb: 'Blog Details'
@@ -17,7 +17,7 @@ export const Blog: Routes = [
       },
       {
         path: 'blog-single',
-        component: BlogSingleComponent,
+        loadComponent: () => import('./blog-single/blog-single').then(m => m.BlogSingle),
         data: {
           title: 'Blog Single',
           breadcrumb: 'Blog Single'
@@ -25,7 +25,7 @@ export const Blog: Routes = [
       },
       {
         path: 'add-post',
-        component: BlogAddPostComponent,
+        loadComponent: () => import('./blog-add-post/blog-add-post').then(m => m.BlogAddPost),
         data: {
           title: 'Add Post',
           breadcrumb: 'Add Post'

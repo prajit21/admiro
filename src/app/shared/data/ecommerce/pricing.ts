@@ -18,7 +18,7 @@ export const simplePricingCard = [
    },
 ]
 
-export const BecomeMember = [
+export const BecomeMembers = [
    {
       title: 'STANDARD',
       price: '10',

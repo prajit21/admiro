@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { SearchResultComponent } from './search-result.component';
+
 
 export const Search: Routes = [
     {
         path: '',
-        component: SearchResultComponent,
+        loadComponent: () => import('./search-result').then(m => m.SearchResult),
         data: {
             title: 'Search Website',
             breadcrumb: 'Search Website'

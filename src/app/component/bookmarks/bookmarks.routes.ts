@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { BookmarksComponent } from './bookmarks.component';
 
-export const Bookmarks: Routes = [
+
+export const Bookmark: Routes = [
     {
         path: '',
-        component: BookmarksComponent,
+        loadComponent: () => import('./bookmarks').then(m => m.Bookmarks),
         data: {
             title: 'Bookmarks',
             breadcrumb: 'Bookmarks'

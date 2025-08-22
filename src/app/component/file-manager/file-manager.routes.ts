@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { FileManagerComponent } from './file-manager.component'
 
-export const FileManager: Routes = [
+
+export const FileManagers: Routes = [
     {
         path: '',
-        component: FileManagerComponent,
+        loadComponent: () => import('./file-manager').then(m => m.FileManager),
     }
 ];

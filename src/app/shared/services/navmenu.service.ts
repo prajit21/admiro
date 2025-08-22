@@ -30,8 +30,6 @@ export class NavmenuService {
   public closeSidebar: boolean = false;
   public fullScreen: any;
 
-  constructor() { }
-
   MENUITEMS: Menu[] = [
     {
       headTitle1: "General",

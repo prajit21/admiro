@@ -19,7 +19,7 @@ export const simpleAccordion = [
         class: 'accordion-light-primary text-primary rounded-1'
     },
 ];
-export const FlushAccordion = [
+export const FlushAccordions = [
     {
         panel: 'First',
         class: 'text-success accordion-light-success active',
@@ -72,7 +72,7 @@ export const FlushAccordion = [
 
 
 
-export const OutlineAccordion = [
+export const OutlineAccordions = [
     {
         title: 'What do web designers do?',
         text: 'Web design<em class="text-danger"> identifies the goals</em> of a website or webpage and promotes accessibility for all potential users.This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.',

@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { SamplePageComponent } from './sample-page.component'
 
-export const SamplePage: Routes = [
+
+export const SamplePages: Routes = [
     {
         path: '',
-        component: SamplePageComponent,
+        loadComponent: () => import('./sample-page').then(m => m.SamplePage),
         data: {
             title: "Sample Page",
             breadcrumb: "Sample Page",

@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { ToDoComponent } from './to-do.component';
+
 
 
 export const Todo: Routes = [
     {
         path: '',
-        component: ToDoComponent,
+        loadComponent: () => import('./to-do').then(m => m.ToDo),
         data: {
           title: 'To-Do',
           breadcrumb: 'To-Do'

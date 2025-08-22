@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { SupportTicketComponent } from './support-ticket.component';
 
-export const SupportTicket: Routes = [
+
+export const SupportTickets: Routes = [
     {
         path: '',
-        component: SupportTicketComponent,
+        loadComponent: () => import('./support-ticket').then(m => m.SupportTicket),
         data: {
             breadcrumb: 'Support Ticket'
         },

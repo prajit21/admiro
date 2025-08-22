@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { ContactsComponent } from './contacts.component';
+
 
 export const Contact: Routes = [
     {
         path: '',
-        component: ContactsComponent,
+        loadComponent: () => import('./contacts').then(m => m.Contacts),
         data: {
             title: "Contacts",
             breadcrumb: "Contacts",
