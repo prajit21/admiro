@@ -1,10 +1,12 @@
-import { inject, Injectable, PipeTransform } from '@angular/core';
-import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
-import { supportDB } from '../interface/support';
-import { SUPPORTDB } from '../../shared/data/table/SupportTdb';
 import { DecimalPipe } from '@angular/common';
+import { inject, Injectable } from '@angular/core';
+
+import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { debounceTime, delay, switchMap, tap } from 'rxjs/operators';
+
+import { SUPPORTDB } from '../../shared/data/table/SupportTdb';
 import { SortColumn, SortDirection } from '../directives/sortable.directive';
+import { supportDB } from '../interface/support';
 
 interface SearchResult {
   Details: supportDB[];
@@ -42,9 +44,7 @@ function matches(support: supportDB, term: string) {
 }
 
 @Injectable({ providedIn: 'root' })
-
 export class TableService {
-
   private pipe = inject(DecimalPipe);
 
   private _loading$ = new BehaviorSubject<boolean>(true);
@@ -69,14 +69,13 @@ export class TableService {
         delay(200),
         tap(() => this._loading$.next(false)),
       )
-      .subscribe((result) => {
+      .subscribe(result => {
         this._data$.next(result.Details);
         this._total$.next(result.total);
       });
 
     this._search$.next();
   }
-
 
   get supportdata$() {
     return this._data$.asObservable();
@@ -96,7 +95,6 @@ export class TableService {
   get searchTerm() {
     return this._state.searchTerm;
   }
-
 
   set page(page: number) {
     this._set({ page });
@@ -126,7 +124,7 @@ export class TableService {
     let Details = sort(SUPPORTDB, sortColumn, sortDirection);
 
     // 2. filter
-    Details = Details.filter((support) => matches(support, searchTerm));
+    Details = Details.filter(support => matches(support, searchTerm));
     const total = Details.length;
 
     // 3. paginate

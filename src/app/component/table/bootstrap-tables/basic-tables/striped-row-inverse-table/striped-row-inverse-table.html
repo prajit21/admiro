@@ -1,34 +1,37 @@
 <div class="card basic-with-border overflow-hidden">
-    <div class="card-header card-no-border">
-        <h3>Striped Row with Inverse Table</h3>
-        <p class="desc mb-0 mt-1"><span>use a class</span><code>.table-striped</code><span>to add zebra-striping to any table row within the This styling</span></p>
+  <div class="card-header card-no-border">
+    <h3>Striped Row with Inverse Table</h3>
+    <p class="desc mb-0 mt-1">
+      <span>use a class</span><code>.table-striped</code
+      ><span>to add zebra-striping to any table row within the This styling</span>
+    </p>
+  </div>
+  <div class="card-block row">
+    <div class="col-sm-12 col-lg-12 col-xl-12">
+      <div class="table-responsive">
+        <table class="table table-inverse table-striped table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Dessert</th>
+              <th scope="col">Calories</th>
+              <th scope="col">Fat</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of striped; track item) {
+              <tr>
+                <th scope="row">{{ item.td }}</th>
+                <td>{{ item.dessert }}</td>
+                <td>{{ item.calories }}</td>
+                <td>{{ item.fat }}</td>
+                <td>{{ item.price }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
       </div>
-    <div class="card-block row">
-        <div class="col-sm-12 col-lg-12 col-xl-12">
-            <div class="table-responsive">
-                <table class="table table-inverse table-striped table-borderless">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Dessert</th>
-                            <th scope="col">Calories</th>
-                            <th scope="col">Fat</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @for( item of striped; track item){
-                            <tr>
-                                <th scope="row">{{item.td}}</th>
-                                <td>{{item.dessert}}</td>
-                                <td>{{item.calories}}</td>
-                                <td>{{item.fat}}</td>
-                                <td>{{item.price}}</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
+  </div>
 </div>

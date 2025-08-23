@@ -1,42 +1,42 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import Swal from 'sweetalert2';
 
 @Component({
-    selector: 'app-unique-sweetalert',
-    imports: [CommonModule],
-    templateUrl: './unique-sweetalert.html',
-    styleUrl: './unique-sweetalert.scss'
+  selector: 'app-unique-sweetalert',
+  imports: [CommonModule],
+  templateUrl: './unique-sweetalert.html',
+  styleUrl: './unique-sweetalert.scss',
 })
 export class UniqueSweetalert {
-
   danger() {
     Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Something went wrong!",
-      footer: '<a>Why do I have this issue?</a>'
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      footer: '<a>Why do I have this issue?</a>',
     });
   }
 
   animation() {
     Swal.fire({
-      title: "Custom animation with Animate.css",
+      title: 'Custom animation with Animate.css',
       showClass: {
         popup: `
             animate__animated
             animate__fadeInUp
             animate__faster
-          `
+          `,
       },
       hideClass: {
         popup: `
             animate__animated
             animate__fadeOutDown
             animate__faster
-          `
-      }
-    })
+          `,
+      },
+    });
   }
 
   timer() {
@@ -48,13 +48,11 @@ export class UniqueSweetalert {
       timerProgressBar: true,
       confirmButtonColor: 'var(--theme-default)',
       willClose: () => {
-        clearInterval(timerInterval)
-      }
-    }).then((result) => {
+        clearInterval(timerInterval);
+      },
+    }).then(result => {
       if (result.dismiss === Swal.DismissReason.timer) {
-
       }
-    })
+    });
   }
-
 }

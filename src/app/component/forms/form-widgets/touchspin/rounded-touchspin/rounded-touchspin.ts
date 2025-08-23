@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
-import { roundedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+import { roundedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 
 @Component({
-    selector: 'app-rounded-touchspin',
-    imports: [CommonModule],
-    templateUrl: './rounded-touchspin.html',
-    styleUrl: './rounded-touchspin.scss'
+  selector: 'app-rounded-touchspin',
+  imports: [CommonModule],
+  templateUrl: './rounded-touchspin.html',
+  styleUrl: './rounded-touchspin.scss',
 })
 export class RoundedTouchspin {
-
   public roundedData = roundedtouchspin;
 
   decrement(i: number) {
@@ -20,5 +20,4 @@ export class RoundedTouchspin {
   increment(i: number) {
     this.roundedData[i].value += 1;
   }
-
 }

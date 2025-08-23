@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, TemplateRef } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-open-modal',
-    imports: [CommonModule],
-    templateUrl: './open-modal.html',
-    styleUrl: './open-modal.scss'
+  selector: 'app-open-modal',
+  imports: [CommonModule],
+  templateUrl: './open-modal.html',
+  styleUrl: './open-modal.scss',
 })
 export class OpenModal {
-
   public validate = false;
 
   private modalService = inject(NgbModal);
@@ -21,7 +20,6 @@ export class OpenModal {
   }
 
   OpenModal(openmodal: TemplateRef<NgbModal>) {
-    const modalRef = this.modalService.open(openmodal);
+    this.modalService.open(openmodal);
   }
-
 }

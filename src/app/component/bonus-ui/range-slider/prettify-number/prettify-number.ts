@@ -1,15 +1,15 @@
-import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
+
 @Component({
-    selector: 'app-prettify-number',
-    imports: [CommonModule, NgxSliderModule],
-    templateUrl: './prettify-number.html',
-    styleUrl: './prettify-number.scss'
+  selector: 'app-prettify-number',
+  imports: [CommonModule, NgxSliderModule],
+  templateUrl: './prettify-number.html',
+  styleUrl: './prettify-number.scss',
 })
 export class PrettifyNumber {
-
   public value3: number = 2000;
 
   public options3: Options = {
@@ -17,7 +17,6 @@ export class PrettifyNumber {
     ceil: 10000,
     showTicksValues: true,
     tickStep: 3000,
-    tickValueStep: 100
+    tickValueStep: 100,
   };
-
 }

@@ -1,6 +1,17 @@
-import { inject, Injectable, PipeTransform } from '@angular/core';
-import { BehaviorSubject, Observable, Subject, debounceTime, delay, of, pipe, switchMap, tap } from 'rxjs';
 import { DecimalPipe } from '@angular/common';
+import { inject, Injectable, PipeTransform } from '@angular/core';
+
+import {
+  BehaviorSubject,
+  debounceTime,
+  delay,
+  Observable,
+  of,
+  Subject,
+  switchMap,
+  tap,
+} from 'rxjs';
+
 import { SUPPORTDB, supportDB } from '../data/support-ticket/support-ticket';
 import { SortColumn, SortDirection } from '../directives/support-ticket.directive';
 
@@ -30,7 +41,7 @@ function sort(support: supportDB[], column: SortColumn, direction: string): supp
   }
 }
 
-function matches(country: supportDB, term: string, pipe: PipeTransform) {
+function matches(country: supportDB, term: string, _pipe: PipeTransform) {
   return (
     country.name.toLowerCase().includes(term.toLowerCase()) ||
     country.position.toLowerCase().includes(term.toLowerCase()) ||
@@ -41,11 +52,9 @@ function matches(country: supportDB, term: string, pipe: PipeTransform) {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class SupportTicketService {
-
   private pipe = inject(DecimalPipe);
 
   private _loading$ = new BehaviorSubject<boolean>(true);
@@ -70,7 +79,7 @@ export class SupportTicketService {
         delay(200),
         tap(() => this._loading$.next(false)),
       )
-      .subscribe((result) => {
+      .subscribe(result => {
         this._support$.next(result.support);
         this._total$.next(result.total);
       });
@@ -125,7 +134,7 @@ export class SupportTicketService {
     let support = sort(SUPPORTDB, sortColumn, sortDirection);
 
     // 2. filter
-    support = support.filter((country) => matches(country, searchTerm, this.pipe));
+    support = support.filter(country => matches(country, searchTerm, this.pipe));
     const total = support.length;
 
     // 3. paginate
@@ -133,4 +142,3 @@ export class SupportTicketService {
     return of({ support, total });
   }
 }
-

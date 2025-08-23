@@ -76,7 +76,7 @@ div {
     border-radius: 0.25rem;
     color: var(--white);
   }
-  &+.dataTables_wrapper {
+  & + .dataTables_wrapper {
     margin-top: 20px;
   }
   .dataTables_paginate {
@@ -147,7 +147,7 @@ div {
   .dataTables_filter {
     margin-bottom: 25px;
     margin-left: 15px;
-    input[type="search"] {
+    input[type='search'] {
       border: 1px solid var(--gray-200);
       background-color: var(--white);
       padding: 0 10px;
@@ -202,7 +202,7 @@ table {
   width: 100% !important;
 }
 table {
-  &.table-borderless{
+  &.table-borderless {
     border: 0;
   }
   .fixedHeader-floating {
@@ -210,7 +210,7 @@ table {
     background-color: var(--white);
   }
   .box {
-    >div {
+    > div {
       padding: 5px 15px;
       background-color: var(--theme-default);
       display: inline-block;
@@ -294,7 +294,7 @@ table {
     height: 16px;
   }
 }
-table.dataTable.display tbody tr.even>.sorting_1 {
+table.dataTable.display tbody tr.even > .sorting_1 {
   background-color: rgba($light-color, 0.5) !important;
 }
 .toolbar {
@@ -342,7 +342,7 @@ code {
         &.next {
           &:before {
             @include media-breakpoint-down(sm) {
-              content: "\e649";
+              content: '\e649';
               font-family: themify;
               font-size: 11px;
               padding: 0 5px;
@@ -356,7 +356,7 @@ code {
         &.previous {
           &:before {
             @include media-breakpoint-down(sm) {
-              content: "\e64a";
+              content: '\e64a';
               font-family: themify;
               font-size: 11px;
               padding: 0 5px;
@@ -419,22 +419,22 @@ code {
     table.dataTable td.focus {
       outline: 3px solid var(--theme-default);
     }
-    table.dataTable.display tbody>tr.odd.selected>.sorting_1,
-    table.dataTable.order-column.stripe tbody>tr.odd.selected>.sorting_1 {
+    table.dataTable.display tbody > tr.odd.selected > .sorting_1,
+    table.dataTable.order-column.stripe tbody > tr.odd.selected > .sorting_1 {
       background-color: rgba($primary-color, 0.38);
     }
-    table.dataTable.stripe tbody>tr.odd.selected,
-    table.dataTable.stripe tbody>tr.odd>.selected,
-    table.dataTable.display tbody>tr.odd.selected,
-    table.dataTable.display tbody>tr.odd>.selected {
+    table.dataTable.stripe tbody > tr.odd.selected,
+    table.dataTable.stripe tbody > tr.odd > .selected,
+    table.dataTable.display tbody > tr.odd.selected,
+    table.dataTable.display tbody > tr.odd > .selected {
       background-color: rgba($primary-color, 0.38);
     }
-    table.dataTable.display tbody>tr.even.selected>.sorting_1,
-    table.dataTable.order-column.stripe tbody>tr.even.selected>.sorting_1 {
+    table.dataTable.display tbody > tr.even.selected > .sorting_1,
+    table.dataTable.order-column.stripe tbody > tr.even.selected > .sorting_1 {
       background-color: rgba($primary-color, 0.38);
     }
-    table.dataTable tbody>tr.selected,
-    table.dataTable tbody>tr>.selected {
+    table.dataTable tbody > tr.selected,
+    table.dataTable tbody > tr > .selected {
       background-color: rgba($primary-color, 0.38);
     }
   }
@@ -450,7 +450,7 @@ tr.shown td.details-control {
   background: url('../../images/details_close.png') no-repeat center center;
 }
 .dataTables_scroll {
-  &~.dataTables_paginate {
+  & ~ .dataTables_paginate {
     margin-top: 20px !important;
   }
 }
@@ -471,7 +471,7 @@ table {
       tbody {
         tr {
           &.odd {
-            >.sorting_1 {
+            > .sorting_1 {
               background-color: var(--light-color);
             }
             .badge {
@@ -551,7 +551,7 @@ table {
     @include media-breakpoint-down(sm) {
       font-size: 12px;
     }
-    @media (max-width:360px) {
+    @media (max-width: 360px) {
       font-size: 11px;
     }
   }
@@ -562,7 +562,7 @@ table {
       .paginate_button.previous {
         &:before {
           @include media-breakpoint-down(sm) {
-            content: "\e64a";
+            content: '\e64a';
             font-family: themify;
             font-size: 11px;
             padding: 0 5px;
@@ -573,7 +573,7 @@ table {
       .paginate_button.next {
         &:before {
           @include media-breakpoint-down(sm) {
-            content: "\e649";
+            content: '\e649';
             font-family: themify;
             font-size: 11px;
             padding: 0 5px;
@@ -614,7 +614,7 @@ table {
     }
   }
   .table-light {
-    [data-theme="dark"] & {
+    [data-theme='dark'] & {
       --bs-table-bg: var(--card-color);
       --bs-table-striped-bg: var(--body-color);
       --bs-table-hover-bg: var(--body-color);
@@ -632,7 +632,7 @@ table {
             }
           }
         }
-        +tr {
+        + tr {
           th {
             &:first-child {
               @media (max-width: 1630px) {

@@ -1,30 +1,55 @@
 <div class="card growthcard">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>Monthly Revenue Growth</h3>
-            <ul class="simple-wrapper nav nav-pills" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link" id="home-tab" (click)="tab('timeline')"
-                        [ngClass]="{'active': openTab == 'timeline'}">Yearly</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tabs" (click)="tab('Monthly')"
-                        [ngClass]="{'active': openTab == 'Monthly'}">Monthly</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" id="contact-tab" (click)="tab('Weekly')"
-                        [ngClass]="{'active': openTab == 'Weekly'}">Weekly</a>
-                </li>
-            </ul>
-        </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>Monthly Revenue Growth</h3>
+      <ul class="simple-wrapper nav nav-pills" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="home-tab"
+            (click)="tab('timeline')"
+            [ngClass]="{ active: openTab === 'timeline' }"
+            >Yearly</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="profile-tabs"
+            (click)="tab('Monthly')"
+            [ngClass]="{ active: openTab === 'Monthly' }"
+            >Monthly</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="contact-tab"
+            (click)="tab('Weekly')"
+            [ngClass]="{ active: openTab === 'Weekly' }"
+            >Weekly</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="card-body pb-0">
-        <div id="growth-chart">
-            <apx-chart [series]="GrowthChart.series" [chart]="GrowthChart.chart" [stroke]="GrowthChart.stroke"
-                [colors]="GrowthChart.colors" [markers]="GrowthChart.markers" [tooltip]="GrowthChart.tooltip"
-                [dataLabels]="GrowthChart.dataLabels" [grid]="GrowthChart.grid" [yaxis]="GrowthChart.yaxis"
-                [responsive]="GrowthChart.responsive" [xaxis]="GrowthChart.xaxis" [theme]="GrowthChart.theme"
-                [fill]="GrowthChart.fill" />
-        </div>
+  </div>
+  <div class="card-body pb-0">
+    <div id="growth-chart">
+      <apx-chart
+        [series]="GrowthChart.series"
+        [chart]="GrowthChart.chart"
+        [stroke]="GrowthChart.stroke"
+        [colors]="GrowthChart.colors"
+        [markers]="GrowthChart.markers"
+        [tooltip]="GrowthChart.tooltip"
+        [dataLabels]="GrowthChart.dataLabels"
+        [grid]="GrowthChart.grid"
+        [yaxis]="GrowthChart.yaxis"
+        [responsive]="GrowthChart.responsive"
+        [xaxis]="GrowthChart.xaxis"
+        [theme]="GrowthChart.theme"
+        [fill]="GrowthChart.fill"
+      />
     </div>
+  </div>
 </div>

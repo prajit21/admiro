@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
-import { allIcon } from '../../../shared/data/icons/thimify';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+import { allIcon } from '../../../shared/data/icons/thimify';
 
 @Component({
-    selector: 'app-ico-icon',
-    imports: [CommonModule],
-    templateUrl: './ico-icon.html',
-    styleUrl: './ico-icon.scss'
+  selector: 'app-ico-icon',
+  imports: [CommonModule],
+  templateUrl: './ico-icon.html',
+  styleUrl: './ico-icon.scss',
 })
 export class IcoIcon {
-
   public detail: boolean = false;
   public icon: string;
   public val: string;
-  public allIconData = allIcon.ico
+  public allIconData = allIcon.ico;
 
   toggleWithInfo(icon: string) {
     this.detail = true;
@@ -34,5 +34,4 @@ export class IcoIcon {
     document.execCommand('copy');
     document.body.removeChild(selBox);
   }
-
 }

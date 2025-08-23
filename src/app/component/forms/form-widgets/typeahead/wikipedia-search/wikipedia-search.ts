@@ -1,11 +1,18 @@
-import { Component, Injectable } from '@angular/core';
-import { inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { Component, Injectable, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, of, OperatorFunction } from 'rxjs';
-import { catchError, debounceTime, distinctUntilChanged, map, tap, switchMap } from 'rxjs/operators';
+import {
+  catchError,
+  debounceTime,
+  distinctUntilChanged,
+  map,
+  tap,
+  switchMap,
+} from 'rxjs/operators';
 
 const WIKI_URL = 'https://en.wikipedia.org/w/api.php';
 
@@ -18,7 +25,6 @@ const PARAMS = new HttpParams({
 });
 
 @Injectable()
-
 export class WikipediaService {
   private http = inject(HttpClient);
 
@@ -28,34 +34,31 @@ export class WikipediaService {
     }
 
     return this.http
-      .get<[any, string[]]>(WIKI_URL, { params: PARAMS.set('search', term) })
-      .pipe(map((response) => response[1]));
+      .get<[string, string[], string[], string[]]>(WIKI_URL, { params: PARAMS.set('search', term) })
+      .pipe(map(response => response[1]));
   }
 }
 
-
 @Component({
-    selector: 'app-wikipedia-search',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './wikipedia-search.html',
-    styleUrl: './wikipedia-search.scss',
-    providers: [WikipediaService]
+  selector: 'app-wikipedia-search',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './wikipedia-search.html',
+  styleUrl: './wikipedia-search.scss',
+  providers: [WikipediaService],
 })
 export class WikipediaSearch {
-
   public model: string;
   public searching = false;
   public searchFailed = false;
 
   private _service = inject(WikipediaService);
 
-
   search: OperatorFunction<string, readonly string[]> = (text$: Observable<string>) =>
     text$.pipe(
       debounceTime(300),
       distinctUntilChanged(),
       tap(() => (this.searching = true)),
-      switchMap((term) =>
+      switchMap(term =>
         this._service.search(term).pipe(
           tap(() => (this.searchFailed = false)),
           catchError(() => {
@@ -66,6 +69,4 @@ export class WikipediaSearch {
       ),
       tap(() => (this.searching = false)),
     );
-
-
 }

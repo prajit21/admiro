@@ -1,22 +1,22 @@
 <div class="card" ngbAccordion [closeOthers]="true">
-    <div ngbAccordionItem [collapsed]="false">
-        <div class="card-header accordion" ngbAccordionHeader>
-            <h5 class="mb-0">
-                <button class="btn btn-link accordion-button" ngbAccordionButton>Friends</button>
-            </h5>
-        </div>
-        <div class="collapse show" ngbAccordionCollapse>
-            <div class="card-body avatar-showcase filter-cards-view" ngbAccordionBody>
-                <ng-template>
-                    <ul class="common-flex justify-content-center">
-                        @for(images of friednsData; track images){
-                            <li>
-                                <img class="img-50 rounded-circle" src="{{ images.image }}" alt="#">
-                            </li>
-                        }
-                    </ul>
-                </ng-template>
-            </div>
-        </div>
+  <div ngbAccordionItem [collapsed]="false">
+    <div class="card-header accordion" ngbAccordionHeader>
+      <h5 class="mb-0">
+        <button class="btn btn-link accordion-button" ngbAccordionButton>Friends</button>
+      </h5>
     </div>
+    <div class="collapse show" ngbAccordionCollapse>
+      <div class="card-body avatar-showcase filter-cards-view" ngbAccordionBody>
+        <ng-template>
+          <ul class="common-flex justify-content-center">
+            @for (images of friednsData; track images) {
+              <li>
+                <img class="img-50 rounded-circle" src="{{ images.image }}" alt="#" />
+              </li>
+            }
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
 </div>

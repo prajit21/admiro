@@ -1,15 +1,15 @@
 <div class="card">
-    <div class="card-header card-no-border pb-0">
-        <h3>Avatar Initial</h3>
-        <p class="mb-0 mt-1">Use initial letter to set avatars.</p>
-    </div>
-    <div class="card-body avatar-showcase">
-        <div class="avatars">
-            @for( data of avatarIntial;track data){
-                <div class="avatar-intial {{ data.class }}">
-                    <span class="{{ data.span_class }}">{{ data.text }}</span>
-                </div>
-            }
+  <div class="card-header card-no-border pb-0">
+    <h3>Avatar Initial</h3>
+    <p class="mb-0 mt-1">Use initial letter to set avatars.</p>
+  </div>
+  <div class="card-body avatar-showcase">
+    <div class="avatars">
+      @for (data of avatarIntial; track data) {
+        <div class="avatar-intial {{ data.class }}">
+          <span class="{{ data.span_class }}">{{ data.text }}</span>
         </div>
+      }
     </div>
+  </div>
 </div>

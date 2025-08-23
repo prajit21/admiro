@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { Editor, NgxEditorModule } from 'ngx-editor';
 
 @Component({
-    selector: 'app-ngx-editor',
-    imports: [CommonModule, FormsModule, NgxEditorModule],
-    templateUrl: './ngx-editor.html',
-    styleUrl: './ngx-editor.scss'
+  selector: 'app-ngx-editor',
+  imports: [CommonModule, FormsModule, NgxEditorModule],
+  templateUrl: './ngx-editor.html',
+  styleUrl: './ngx-editor.scss',
 })
 export class NgxEditor {
-
   public editor: Editor;
   public html = '';
 
@@ -19,9 +19,8 @@ export class NgxEditor {
   }
 
   // make sure to destory the editor
-  
+
   ngOnDestroy(): void {
     this.editor.destroy();
   }
-
 }

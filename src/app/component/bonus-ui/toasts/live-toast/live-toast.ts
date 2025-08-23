@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-live-toast',
-    imports: [CommonModule],
-    templateUrl: './live-toast.html',
-    styleUrl: './live-toast.scss'
+  selector: 'app-live-toast',
+  imports: [CommonModule],
+  templateUrl: './live-toast.html',
+  styleUrl: './live-toast.scss',
 })
 export class LiveToast {
-
   public topright: boolean = false;
   public boottomright: boolean = false;
   public topleft: boolean = false;
@@ -40,5 +39,4 @@ export class LiveToast {
   close4() {
     this.boottomleft = false;
   }
-
 }

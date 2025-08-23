@@ -1,67 +1,51 @@
 import {
-  ApexNonAxisChartSeries,
-  ApexPlotOptions,
+  ApexAxisChartSeries,
   ApexChart,
+  ApexPlotOptions,
+  ApexGrid,
+  ApexStates,
+  ApexDataLabels,
   ApexLegend,
-  ApexResponsive,
-  ApexStroke,
   ApexXAxis,
   ApexYAxis,
-  ApexFill,
-  ApexDataLabels,
-  ApexAxisChartSeries,
-  ApexMarkers,
-  ApexTheme,
-  ApexTitleSubtitle,
-  ApexAnnotations,
-  ApexGrid
-} from "ng-apexcharts";
-
-
-export type ChartOptions = {
-  series?: ApexAxisChartSeries;
-  chart?: ApexChart;
-  xaxis?: ApexXAxis;
-  stroke?: ApexStroke;
-  tooltip?: string[] | boolean;
-  dataLabels?: ApexDataLabels;
-  yaxis?: ApexYAxis;
-  legend?: ApexLegend;
-  labels?: string[];
-  shared?: boolean;
-  plotOptions?: ApexPlotOptions;
-  fill?: ApexFill;
-  responsive?: ApexResponsive[];
-  pieseries?: ApexNonAxisChartSeries;
-  title?: ApexTitleSubtitle;
-  theme?: ApexTheme;
-  colors?: string[];
-  markers?: ApexMarkers;
-  annotations?: ApexAnnotations;
-  grid?: ApexGrid;
-  formatter?: Function;
-}
+  ApexTooltip,
+  ApexResponsive,
+  ApexStroke,
+} from 'ng-apexcharts';
 
 let primary_color = localStorage.getItem('primary_color') || '#308e87';
 let secondary_color = localStorage.getItem('secondary_color') || '#f39159';
 
+export interface SaleValueChartOptions {
+  series: ApexAxisChartSeries;
+  chart: ApexChart;
+  plotOptions: ApexPlotOptions;
+  grid: ApexGrid;
+  states: ApexStates;
+  dataLabels: ApexDataLabels;
+  legend: ApexLegend;
+  colors: string[];
+  xaxis: ApexXAxis;
+  yaxis: ApexYAxis;
+  tooltip: ApexTooltip;
+  responsive: ApexResponsive[];
+}
 
-export const saleValue: ChartOptions | any = {
+export const saleValue: SaleValueChartOptions = {
   series: [
     {
-      name: "Statistics",
+      name: 'Statistics',
       data: [80, 40, 50, 30, 60, 20, 10],
     },
     {
-      name: "Statistics",
+      name: 'Statistics',
       data: [20, 60, 50, 70, 40, 80, 5],
     },
   ],
   chart: {
-    type: "bar",
+    type: 'bar',
     height: 110,
-    stacked: true,
-    stackType: "100%",
+    stacked: false,
     toolbar: {
       show: false,
     },
@@ -69,7 +53,7 @@ export const saleValue: ChartOptions | any = {
   plotOptions: {
     bar: {
       horizontal: false,
-      columnWidth: "40px",
+      columnWidth: '70%',
       borderRadius: 2,
     },
   },
@@ -84,7 +68,7 @@ export const saleValue: ChartOptions | any = {
   states: {
     hover: {
       filter: {
-        type: "darken",
+        type: 'darken',
         value: 1,
       },
     },
@@ -95,9 +79,8 @@ export const saleValue: ChartOptions | any = {
   legend: {
     show: false,
   },
-  colors: ["#D5E8E6", primary_color,],
+  colors: ['#D5E8E6', primary_color],
   xaxis: {
-    show: false,
     labels: {
       show: false,
     },
@@ -119,7 +102,7 @@ export const saleValue: ChartOptions | any = {
     },
     fixed: {
       enabled: false,
-      position: "bottomRight",
+      position: 'bottomRight',
       offsetX: 0,
       offsetY: 0,
     },
@@ -169,24 +152,37 @@ export const saleValue: ChartOptions | any = {
       },
     },
   ],
-}
+};
 
-export const stockValue: ChartOptions | any = {
+export interface StockValueChartOptions {
+  series: ApexAxisChartSeries;
+  chart: ApexChart;
+  plotOptions: ApexPlotOptions;
+  grid: ApexGrid;
+  states: ApexStates;
+  dataLabels: ApexDataLabels;
+  legend: ApexLegend;
+  colors: string[];
+  xaxis: ApexXAxis;
+  yaxis: ApexYAxis;
+  tooltip: ApexTooltip;
+  responsive: ApexResponsive[];
+}
+export const stockValue: StockValueChartOptions = {
   series: [
     {
-      name: "Statistics",
+      name: 'Statistics',
       data: [80, 40, 50, 30, 60, 20, 10],
     },
     {
-      name: "Statistics",
+      name: 'Statistics',
       data: [20, 60, 50, 70, 40, 80, 5],
     },
   ],
   chart: {
-    type: "bar",
+    type: 'bar',
     height: 120,
-    stacked: true,
-    stackType: "100%",
+    stacked: false,
     toolbar: {
       show: false,
     },
@@ -194,7 +190,7 @@ export const stockValue: ChartOptions | any = {
   plotOptions: {
     bar: {
       horizontal: false,
-      columnWidth: "40px",
+      columnWidth: '50%',
       borderRadius: 0,
     },
   },
@@ -209,7 +205,7 @@ export const stockValue: ChartOptions | any = {
   states: {
     hover: {
       filter: {
-        type: "darken",
+        type: 'darken',
         value: 1,
       },
     },
@@ -220,9 +216,8 @@ export const stockValue: ChartOptions | any = {
   legend: {
     show: false,
   },
-  colors: ["#faded1", secondary_color,],
+  colors: ['#faded1', secondary_color],
   xaxis: {
-    show: false,
     labels: {
       show: false,
     },
@@ -244,7 +239,7 @@ export const stockValue: ChartOptions | any = {
     },
     fixed: {
       enabled: false,
-      position: "bottomRight",
+      position: 'bottomRight',
       offsetX: 0,
       offsetY: 0,
     },
@@ -293,13 +288,23 @@ export const stockValue: ChartOptions | any = {
       },
     },
   ],
+};
+
+export interface InvestmentChartOptions {
+  series: number[];
+  chart: ApexChart;
+  plotOptions: ApexPlotOptions;
+  colors: string[];
+  labels: string[];
+  legend: ApexLegend;
+  responsive: ApexResponsive[];
 }
 
-export const InvestmentChart: ChartOptions | any = {
+export const InvestmentChart: InvestmentChartOptions = {
   series: [76, 67, 61, 90],
   chart: {
     height: 300,
-    type: "radialBar",
+    type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
@@ -308,44 +313,39 @@ export const InvestmentChart: ChartOptions | any = {
       endAngle: 270,
       hollow: {
         margin: 5,
-        size: "30%",
-        background: "transparent",
+        size: '30%',
+        background: 'transparent',
         image: undefined,
       },
       dataLabels: {
         name: {
-          fontSize: "22px",
+          fontSize: '22px',
         },
         value: {
-          fontSize: "16px",
+          fontSize: '16px',
         },
         total: {
           show: true,
-          label: "Total",
-          formatter: function (w: number) {
-            return 249;
+          label: 'Total',
+          formatter: function (_w: number) {
+            return '249';
           },
         },
       },
       track: {
-        background: "var(--body-color)",
+        background: 'var(--body-color)',
       },
     },
   },
 
-  colors: [
-    primary_color, secondary_color, "#ea9200", "#e74b2b",
-  ],
-  labels: ["Vimeo", "Messenger", "Facebook", "LinkedIn"],
+  colors: [primary_color, secondary_color, '#ea9200', '#e74b2b'],
+  labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
   legend: {
     labels: {
       useSeriesColors: true,
     },
-    markers: {
-      size: 0,
-    },
-    formatter: function (seriesName: string, opts: any) {
-      return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex];
+    formatter: function (seriesName: string, opts) {
+      return seriesName + ':  ' + opts.w.globals.series[opts.seriesIndex];
     },
     itemMargin: {
       vertical: 2,
@@ -375,7 +375,7 @@ export const InvestmentChart: ChartOptions | any = {
           radialBar: {
             hollow: {
               margin: 2,
-              size: "20%",
+              size: '20%',
             },
             dataLabels: {
               total: {
@@ -444,7 +444,7 @@ export const InvestmentChart: ChartOptions | any = {
           radialBar: {
             hollow: {
               margin: 5,
-              size: "30%",
+              size: '30%',
             },
             dataLabels: {
               total: {
@@ -456,19 +456,31 @@ export const InvestmentChart: ChartOptions | any = {
       },
     },
   ],
-}
+};
 
-export const DataChart: ChartOptions | any = {
+export interface DataChartOptions {
+  series: ApexAxisChartSeries;
+  chart: ApexChart;
+  colors: string[];
+  dataLabels: ApexDataLabels;
+  stroke: ApexStroke;
+  grid: ApexGrid;
+  tooltip: ApexTooltip;
+  xaxis: ApexXAxis;
+  yaxis: ApexYAxis;
+  responsive: ApexResponsive[];
+}
+export const DataChart: DataChartOptions = {
   series: [
     {
-      name: "Desktops",
+      name: 'Desktops',
       data: [210, 180, 650, 200, 600, 100, 800, 300, 500],
     },
   ],
   chart: {
     width: 200,
     height: 150,
-    type: "line",
+    type: 'line',
     toolbar: {
       show: false,
     },
@@ -491,7 +503,7 @@ export const DataChart: ChartOptions | any = {
   },
   stroke: {
     width: 2,
-    curve: "smooth",
+    curve: 'smooth',
   },
   grid: {
     show: false,
@@ -500,28 +512,14 @@ export const DataChart: ChartOptions | any = {
     x: {
       show: false,
     },
-    y: {
-      show: false,
-    },
-    z: {
-      show: false,
-    },
+    y: {},
+    z: {},
     marker: {
       show: false,
     },
   },
   xaxis: {
-    categories: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-    ],
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
     labels: {
       show: false,
     },
@@ -631,31 +629,46 @@ export const DataChart: ChartOptions | any = {
   ],
 };
 
-export const OrderDatachart: ChartOptions | any = {
-  series: [{
-    name: 'Daily',
-    data: [2.15, 3, 1.5, 2, 2.4, 3, 2.4,
-      2.8, 1.5, 1.7, 3, 2.50, 3, 2, 2.15, 3, 1.10
-    ]
-  },
-  {
-    name: 'Weekly',
-    data: [-2.15, -3, -1.5, -2, -2.4, -3, -2.4,
-    -2.8, -1.5, -1.7, -3, -2.50, -3, -2, -2.15, -3, -1.10
-    ]
-  },
-  {
-    name: 'Monthly',
-    data: [-2.25, -2.35, -2.45, -2.55, -2.65, -2.75, -2.85,
-    -2.95, -3.00, -3.10, -3.20, -3.25, -3.10, -3.00, -2.95, -2.85, -2.75
-    ]
-  },
-  {
-    name: 'Yearly',
-    data: [2.25, 2.35, 2.45, 2.55, 2.65, 2.75, 2.85,
-      2.95, 3.00, 3.10, 3.20, 3.25, 3.10, 3.00, 2.95, 2.85, 2.75
-    ]
-  }
+export interface OrderDataChartOptions {
+  series: ApexAxisChartSeries;
+  chart: ApexChart;
+  plotOptions: ApexPlotOptions;
+  colors: string[];
+  dataLabels: ApexDataLabels;
+  stroke: ApexStroke;
+  legend: ApexLegend;
+  grid: ApexGrid;
+  yaxis: ApexYAxis;
+  tooltip: ApexTooltip;
+  xaxis: ApexXAxis;
+  responsive: ApexResponsive[];
+}
+export const OrderDatachart: OrderDataChartOptions = {
+  series: [
+    {
+      name: 'Daily',
+      data: [2.15, 3, 1.5, 2, 2.4, 3, 2.4, 2.8, 1.5, 1.7, 3, 2.5, 3, 2, 2.15, 3, 1.1],
+    },
+    {
+      name: 'Weekly',
+      data: [
+        -2.15, -3, -1.5, -2, -2.4, -3, -2.4, -2.8, -1.5, -1.7, -3, -2.5, -3, -2, -2.15, -3, -1.1,
+      ],
+    },
+    {
+      name: 'Monthly',
+      data: [
+        -2.25, -2.35, -2.45, -2.55, -2.65, -2.75, -2.85, -2.95, -3.0, -3.1, -3.2, -3.25, -3.1, -3.0,
+        -2.95, -2.85, -2.75,
+      ],
+    },
+    {
+      name: 'Yearly',
+      data: [
+        2.25, 2.35, 2.45, 2.55, 2.65, 2.75, 2.85, 2.95, 3.0, 3.1, 3.2, 3.25, 3.1, 3.0, 2.95, 2.85,
+        2.75,
+      ],
+    },
   ],
   chart: {
     type: 'bar',
@@ -663,21 +676,18 @@ export const OrderDatachart: ChartOptions | any = {
     height: 135,
     stacked: true,
     toolbar: {
-      show: false
+      show: false,
     },
   },
   plotOptions: {
     bar: {
-      vertical: true,
       columnWidth: '40%',
       barHeight: '80%',
-      startingShape: 'rounded',
-      endingShape: 'rounded'
     },
   },
-  colors: [primary_color, primary_color, "#F2F3F7", "#F2F3F7"],
+  colors: [primary_color, primary_color, '#F2F3F7', '#F2F3F7'],
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   stroke: {
     width: 0,
@@ -687,15 +697,14 @@ export const OrderDatachart: ChartOptions | any = {
   },
   grid: {
     xaxis: {
-      offsetX: -2,
       lines: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       lines: {
-        show: false
-      }
+        show: false,
+      },
     },
   },
   yaxis: {
@@ -703,7 +712,7 @@ export const OrderDatachart: ChartOptions | any = {
     max: 5,
     show: false,
     axisBorder: {
-      show: false
+      show: false,
     },
     axisTicks: {
       show: false,
@@ -714,108 +723,115 @@ export const OrderDatachart: ChartOptions | any = {
     x: {
       show: false,
     },
-    y: {
-      show: false,
-    },
-    z: {
-      show: false,
-    },
+    y: {},
+    z: {},
   },
   xaxis: {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug',
-      'Sep', 'Oct', 'Nov', 'Dec'
+    categories: [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'July',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
     ],
     offsetX: 0,
     offsetY: 0,
     labels: {
       offsetX: 0,
       offsetY: 0,
-      show: false
+      show: false,
     },
     axisBorder: {
       offsetX: 0,
       offsetY: 0,
-      show: false
+      show: false,
     },
     axisTicks: {
       offsetX: 0,
       offsetY: 0,
-      show: false
-    }
-  },
-  responsive: [{
-    breakpoint: 1760,
-    options: {
-      chart: {
-        width: 160,
-      }
+      show: false,
     },
   },
-  {
-    breakpoint: 1601,
-    options: {
-      chart: {
-        height: 110,
-      }
+  responsive: [
+    {
+      breakpoint: 1760,
+      options: {
+        chart: {
+          width: 160,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 1560,
-    options: {
-      chart: {
-        width: 140,
-        height: 150,
-      }
+    {
+      breakpoint: 1601,
+      options: {
+        chart: {
+          height: 110,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      chart: {
-        width: 120,
-      }
+    {
+      breakpoint: 1560,
+      options: {
+        chart: {
+          width: 140,
+          height: 150,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        width: 150,
-      }
+    {
+      breakpoint: 1460,
+      options: {
+        chart: {
+          width: 120,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 1110,
-    options: {
-      chart: {
-        width: 200,
-      }
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          width: 150,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 700,
-    options: {
-      chart: {
-        width: 150,
-      }
+    {
+      breakpoint: 1110,
+      options: {
+        chart: {
+          width: 200,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 576,
-    options: {
-      chart: {
-        width: 220,
-      }
+    {
+      breakpoint: 700,
+      options: {
+        chart: {
+          width: 150,
+        },
+      },
     },
-  },
-  {
-    breakpoint: 420,
-    options: {
-      chart: {
-        width: 150,
-      }
+    {
+      breakpoint: 576,
+      options: {
+        chart: {
+          width: 220,
+        },
+      },
     },
-  },
+    {
+      breakpoint: 420,
+      options: {
+        chart: {
+          width: 150,
+        },
+      },
+    },
   ],
-
-}
+};

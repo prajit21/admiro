@@ -25,7 +25,7 @@
     height: calc(100% - 30px);
     background-color: rgba($white, 0.7);
   }
-  >div {
+  > div {
     @include media-breakpoint-down(sm) {
       width: 100%;
       text-align: center;
@@ -58,11 +58,11 @@
       width: 90%;
       padding: 3px 45px;
     }
-    @include media-breakpoint-down(xl){
+    @include media-breakpoint-down(xl) {
       width: 400px;
       padding: 7px 45px;
     }
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       width: 90%;
       padding: 3px 45px;
     }
@@ -136,7 +136,7 @@
 }
 @media only screen and (max-width: 1366px) {
   .browse {
-    div[class^="col-"] {
+    div[class^='col-'] {
       &:nth-child(3) {
         margin-top: 30px;
       }

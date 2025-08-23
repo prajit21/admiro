@@ -1,32 +1,32 @@
 <div class="card">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>Notice Board</h3>
-            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
-                <button class="btn" id="userdropdown4" type="button" (click)="open()">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
-            </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>Notice Board</h3>
+      <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
+        <button class="btn" id="userdropdown4" type="button" (click)="open()">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
         </div>
+      </div>
     </div>
-    <div class="card-body notice-board">
-        <ul>
-            @for( data of noticeBoard;track data){
-            <li class="d-flex gap-2">
-                <div class="flex-shrink-0">
-                    <img class="img-fluid" src="{{ data.img }}" alt="img" />
-                </div>
-                <div class="flex-grow-1">
-                    <h6>{{ data.title }}</h6>
-                    <p class="text-truncate">{{ data.timeline }}</p>
-                </div>
-            </li>
-            }
-        </ul>
-    </div>
+  </div>
+  <div class="card-body notice-board">
+    <ul>
+      @for (data of noticeBoard; track data) {
+        <li class="d-flex gap-2">
+          <div class="flex-shrink-0">
+            <img class="img-fluid" src="{{ data.img }}" alt="img" />
+          </div>
+          <div class="flex-grow-1">
+            <h6>{{ data.title }}</h6>
+            <p class="text-truncate">{{ data.timeline }}</p>
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
 </div>

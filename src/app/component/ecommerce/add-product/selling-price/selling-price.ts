@@ -1,48 +1,53 @@
 import { CommonModule } from '@angular/common';
 import { Component, output } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 
 @Component({
-    selector: 'app-selling-price',
-    imports: [CommonModule, FormsModule, ReactiveFormsModule],
-    templateUrl: './selling-price.html',
-    styleUrl: './selling-price.scss'
+  selector: 'app-selling-price',
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  templateUrl: './selling-price.html',
+  styleUrl: './selling-price.scss',
 })
 export class SellingPrice {
-
   readonly activeSteps = output<number>();
 
   public activeStep: number = 4;
   public validate: boolean;
 
   myForm = new FormGroup({
-    initalcost: new FormControl('',Validators.required),
-    sellingPrice: new FormControl('',Validators.required),
-    currency: new FormControl('',Validators.required),
-    Productstocks: new FormControl('',Validators.required),
- });
+    initalcost: new FormControl('', Validators.required),
+    sellingPrice: new FormControl('', Validators.required),
+    currency: new FormControl('', Validators.required),
+    Productstocks: new FormControl('', Validators.required),
+  });
 
-  get initalcost() { 
-    return this.myForm.get('initalcost'); 
+  get initalcost() {
+    return this.myForm.get('initalcost');
   }
 
-  get sellingPrice() { 
-    return this.myForm.get('sellingPrice'); 
+  get sellingPrice() {
+    return this.myForm.get('sellingPrice');
   }
 
-  get currency() { 
-    return this.myForm.get('currency'); 
+  get currency() {
+    return this.myForm.get('currency');
   }
 
-  get Productstocks() { 
-    return this.myForm.get('Productstocks'); 
+  get Productstocks() {
+    return this.myForm.get('Productstocks');
   }
 
-  next(myForm:FormGroup) {
-   this.validate = true;
-   if (this.myForm.valid) {
-     const number = this.activeStep + 1;
-     this.activeSteps.emit(number);
+  next(_myForm: FormGroup) {
+    this.validate = true;
+    if (this.myForm.valid) {
+      const number = this.activeStep + 1;
+      this.activeSteps.emit(number);
     }
   }
 
@@ -50,5 +55,4 @@ export class SellingPrice {
     const number = this.activeStep - 1;
     this.activeSteps.emit(number);
   }
-
 }

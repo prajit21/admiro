@@ -1,4 +1,5 @@
 import { Directive, Input, input, output } from '@angular/core';
+
 import { ORDERS } from '../interface/odershistory';
 
 export type SortColumn = keyof ORDERS | '';
@@ -19,7 +20,6 @@ export interface SortEvent {
   },
 })
 export class OrderdataTableDirective {
-
   readonly sortableOrder = input<SortColumn>('');
   @Input() direction: SortDirection = '';
   readonly sort = output<SortEvent>();
@@ -28,5 +28,4 @@ export class OrderdataTableDirective {
     this.direction = rotate[this.direction];
     this.sort.emit({ column: this.sortableOrder(), direction: this.direction });
   }
-
 }

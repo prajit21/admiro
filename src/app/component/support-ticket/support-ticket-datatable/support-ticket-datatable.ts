@@ -1,28 +1,38 @@
 import { CommonModule, DecimalPipe } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
-import { Observable } from 'rxjs';
-import { SUPPORTDB, supportDB } from '../../../shared/data/support-ticket/support-ticket';
-import { NgbdSortableHeader2, SortEvent } from '../../../shared/directives/support-ticket.directive';
-import { SupportTicketService } from '../../../shared/services/support-ticket.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Observable } from 'rxjs';
+
+import { SUPPORTDB, supportDB } from '../../../shared/data/support-ticket/support-ticket';
+import {
+  NgbdSortableHeader2Directive,
+  SortEvent,
+} from '../../../shared/directives/support-ticket.directive';
+import { SupportTicketService } from '../../../shared/services/support-ticket.service';
 
 @Component({
-    selector: 'app-support-ticket-datatable',
-    imports: [NgbdSortableHeader2, CommonModule, FormsModule, ReactiveFormsModule, NgbModule],
-    providers: [SupportTicketService, DecimalPipe],
-    templateUrl: './support-ticket-datatable.html',
-    styleUrl: './support-ticket-datatable.scss'
+  selector: 'app-support-ticket-datatable',
+  imports: [
+    NgbdSortableHeader2Directive,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule,
+  ],
+  providers: [SupportTicketService, DecimalPipe],
+  templateUrl: './support-ticket-datatable.html',
+  styleUrl: './support-ticket-datatable.scss',
 })
 export class SupportTicketDatatable {
-
   public service = inject(SupportTicketService);
 
   public countries$: Observable<supportDB[]>;
   public total$: Observable<number>;
   public supportData = SUPPORTDB;
 
-  readonly headers = viewChildren(NgbdSortableHeader2);
+  readonly headers = viewChildren(NgbdSortableHeader2Directive);
 
   constructor() {
     this.countries$ = this.service.support$;
@@ -30,16 +40,26 @@ export class SupportTicketDatatable {
   }
 
   get filteredData(): supportDB[] {
-    return this.supportData.filter((person: { img: string, position: string, name: string, office: string, email: string ,experience:string }) => {
-      return person.img.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.position.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.name.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
-        person.office.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
-        person.experience.toLowerCase().includes(this.service.searchTerm.toLowerCase())||
-        person.email.toLowerCase().includes(this.service.searchTerm.toLowerCase())    
-    });
+    return this.supportData.filter(
+      (person: {
+        img: string;
+        position: string;
+        name: string;
+        office: string;
+        email: string;
+        experience: string;
+      }) => {
+        return (
+          person.img.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.position.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.name.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.office.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.experience.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.email.toLowerCase().includes(this.service.searchTerm.toLowerCase())
+        );
+      },
+    );
   }
-
 
   getStartingIndex(): number {
     if (this.filteredData.length === 0) {
@@ -63,5 +83,4 @@ export class SupportTicketDatatable {
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
   }
-
 }

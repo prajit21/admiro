@@ -1,32 +1,44 @@
 <div class="card earning-card">
-    <div class="card-header pb-0 card-no-border">
-        <div class="header-top">
-            <h3>Earnings Trend </h3>
-            <div class="dropdown" (clickOutside)="clickOutside()">
-                <button class="btn dropdown-toggle" id="userdropdown3" type="button"(click)="open()">Monthly</button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
-            </div>
+  <div class="card-header pb-0 card-no-border">
+    <div class="header-top">
+      <h3>Earnings Trend</h3>
+      <div class="dropdown" (clickOutside)="clickOutside()">
+        <button class="btn dropdown-toggle" id="userdropdown3" type="button" (click)="open()">
+          Monthly
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
         </div>
+      </div>
     </div>
-    <div class="card-body pb-0">
-        <div class="d-flex align-center gap-3">
-            <h2>$4,875</h2>
-            <span class="text-primary"> 36.28%
-                <svg class="stroke-icon stroke-primary">
-                    <use href="assets/svg/icon-sprite.svg#arrow-down"></use>
-                </svg>
-            </span>
-        </div>
-        <div id="earnings-chart">
-            <apx-chart [series]="earningChart.series" [chart]="earningChart.chart" [stroke]="earningChart.stroke"
-                [colors]="earningChart.colors" [plotOptions]="earningChart.plotOptions"
-                [dataLabels]="earningChart.dataLabels" [grid]="earningChart.grid" [yaxis]="earningChart.yaxis"
-                [responsive]="earningChart.responsive" [xaxis]="earningChart.xaxis" [legend]="earningChart.legend"
-                [fill]="earningChart.fill" />
-        </div>
+  </div>
+  <div class="card-body pb-0">
+    <div class="d-flex align-center gap-3">
+      <h2>$4,875</h2>
+      <span class="text-primary">
+        36.28%
+        <svg class="stroke-icon stroke-primary">
+          <use href="assets/svg/icon-sprite.svg#arrow-down"></use>
+        </svg>
+      </span>
     </div>
+    <div id="earnings-chart">
+      <apx-chart
+        [series]="earningChart.series"
+        [chart]="earningChart.chart"
+        [stroke]="earningChart.stroke"
+        [colors]="earningChart.colors"
+        [plotOptions]="earningChart.plotOptions"
+        [dataLabels]="earningChart.dataLabels"
+        [grid]="earningChart.grid"
+        [yaxis]="earningChart.yaxis"
+        [responsive]="earningChart.responsive"
+        [xaxis]="earningChart.xaxis"
+        [legend]="earningChart.legend"
+        [fill]="earningChart.fill"
+      />
+    </div>
+  </div>
 </div>

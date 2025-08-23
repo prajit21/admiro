@@ -1,58 +1,82 @@
 <div class="card analytics-card">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>Sales Analytics</h3>
-            <ul class="simple-wrapper nav nav-pills" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link" id="home-tab" (click)="tab('timeline')"
-                        [ngClass]="{'active': openTab == 'timeline'}">Yearly</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tabs" (click)="tab('Monthly')"
-                        [ngClass]="{'active': openTab == 'Monthly'}">Monthly</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" id="contact-tab" (click)="tab('Weekly')"
-                        [ngClass]="{'active': openTab == 'Weekly'}">Weekly</a>
-                </li>
-            </ul>
-        </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>Sales Analytics</h3>
+      <ul class="simple-wrapper nav nav-pills" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="home-tab"
+            (click)="tab('timeline')"
+            [ngClass]="{ active: openTab === 'timeline' }"
+            >Yearly</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="profile-tabs"
+            (click)="tab('Monthly')"
+            [ngClass]="{ active: openTab === 'Monthly' }"
+            >Monthly</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="contact-tab"
+            (click)="tab('Weekly')"
+            [ngClass]="{ active: openTab === 'Weekly' }"
+            >Weekly</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="card-body sale-chart-box">
-        <ul class="d-flex">
-            <li class="statistic-icon">
-                <div>
-                    <div>
-                        <div class="statistic-content"><span class="primary-dot"> </span>Pending</div>
-                    </div>
-                    <div class="statistic-num ms-auto text-end font-danger d-flex align-items-center">
-                        <h5>$4,875</h5>
-                        <div><span>28%</span>
-                            <i class="fa-solid fa-chevron-up ms-1"></i>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="statistic-icon">
-                <div>
-                    <div>
-                        <div class="statistic-content"><span class="secondary-dot"> </span>Complete</div>
-                    </div>
-                    <div class="statistic-num ms-auto text-end font-primary d-flex align-items-center">
-                        <h5>$1,320</h5>
-                        <div><span>36.28%</span>
-                            <i class="fa-solid fa-chevron-down ms-1"></i>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div id="chart-school-performance">
-            <apx-chart [series]="salesAnalytics.series" [chart]="salesAnalytics.chart"
-                [dataLabels]="salesAnalytics.dataLabels" [stroke]="salesAnalytics.stroke"
-                [colors]="salesAnalytics.colors" [grid]="salesAnalytics.grid" [yaxis]="salesAnalytics.yaxis"
-                [responsive]="salesAnalytics.responsive" [xaxis]="salesAnalytics.xaxis"
-                [legend]="salesAnalytics.legend" />
+  </div>
+  <div class="card-body sale-chart-box">
+    <ul class="d-flex">
+      <li class="statistic-icon">
+        <div>
+          <div>
+            <div class="statistic-content"><span class="primary-dot"> </span>Pending</div>
+          </div>
+          <div class="statistic-num ms-auto text-end font-danger d-flex align-items-center">
+            <h5>$4,875</h5>
+            <div>
+              <span>28%</span>
+              <i class="fa-solid fa-chevron-up ms-1"></i>
+            </div>
+          </div>
         </div>
+      </li>
+      <li class="statistic-icon">
+        <div>
+          <div>
+            <div class="statistic-content"><span class="secondary-dot"> </span>Complete</div>
+          </div>
+          <div class="statistic-num ms-auto text-end font-primary d-flex align-items-center">
+            <h5>$1,320</h5>
+            <div>
+              <span>36.28%</span>
+              <i class="fa-solid fa-chevron-down ms-1"></i>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div id="chart-school-performance">
+      <apx-chart
+        [series]="salesAnalytics.series"
+        [chart]="salesAnalytics.chart"
+        [dataLabels]="salesAnalytics.dataLabels"
+        [stroke]="salesAnalytics.stroke"
+        [colors]="salesAnalytics.colors"
+        [grid]="salesAnalytics.grid"
+        [yaxis]="salesAnalytics.yaxis"
+        [responsive]="salesAnalytics.responsive"
+        [xaxis]="salesAnalytics.xaxis"
+        [legend]="salesAnalytics.legend"
+      />
     </div>
+  </div>
 </div>

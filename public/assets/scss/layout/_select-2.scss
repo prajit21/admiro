@@ -21,7 +21,7 @@
     }
   }
   .note {
-    @media (max-width:360px) {
+    @media (max-width: 360px) {
       min-width: unset !important;
     }
   }
@@ -75,11 +75,11 @@
     .form-control {
       border: 1px solid var(--light-semi-gray);
       &::placeholder {
-        [data-theme="dark"] & {
+        [data-theme='dark'] & {
           color: var(--light-color);
         }
       }
-      [data-theme="dark"] & {
+      [data-theme='dark'] & {
         border-color: var(--light-color);
       }
     }
@@ -156,9 +156,9 @@
     info: var(--info-color),
     warning: var(--warning-color),
     danger: var(--danger-color),
-    inverse: var(--dark)
+    inverse: var(--dark),
   );
-  
+
   @mixin form-control-fill($color, $focus-color) {
     background-color: $color;
     color: $white;
@@ -166,7 +166,7 @@
       border-color: $focus-color;
     }
   }
-  
+
   @each $name, $color in $colors {
     .form-control-#{$name}-fill {
       @include form-control-fill($color, $color);
@@ -179,7 +179,7 @@
       border-color: $color;
     }
   }
-  
+
   @each $name, $color in $colors {
     .form-control-#{$name} {
       @include form-control($color);
@@ -221,9 +221,9 @@
   }
   .tagify__tag__removeBtn {
     opacity: 0;
-    transform: translateX(-6px) scale(.5);
+    transform: translateX(-6px) scale(0.5);
     margin-left: -3ch;
-    transition: .12s;
+    transition: 0.12s;
   }
   + {
     button {
@@ -237,7 +237,7 @@
       height: 1.65em;
       cursor: pointer;
       outline: none;
-      transition: .1s ease-out;
+      transition: 0.1s ease-out;
       margin: 0 0 0 5px;
       vertical-align: unset;
       &:hover {
@@ -257,7 +257,7 @@
   }
 }
 .customSuggestionsList {
-  >div {
+  > div {
     max-height: 300px;
     min-height: 50px;
     border: 2px solid var(--light-color);
@@ -273,24 +273,24 @@
 // Flag tags
 .tagify__dropdown.extra-properties {
   .tagify__dropdown__item {
-    >img {
+    > img {
       display: inline-block;
       vertical-align: middle;
       height: 20px;
-      transform: scale(.75);
+      transform: scale(0.75);
       margin-right: 5px;
       border-radius: 2px;
-      transition: .12s ease-out;
+      transition: 0.12s ease-out;
     }
     &:hover {
-      >img {
+      > img {
         transform: none;
         margin-right: 12px;
       }
     }
   }
   .tagify__dropdown__item--active {
-    >img {
+    > img {
       transform: none;
       margin-right: 12px;
     }
@@ -325,7 +325,7 @@
 .tagify {
   --tags-focus-border-color: var(--light-border);
   --tags-border-color: var(--light-border) !important;
-  border-color:  var(--light-border) !important;
+  border-color: var(--light-border) !important;
 }
 .tagify__input {
   color: var(--dark);
@@ -393,13 +393,13 @@
     opacity: 1;
     overflow-y: scroll;
     margin-top: 53px;
-    @media (min-width:1007px) and (max-width:1920px) {
+    @media (min-width: 1007px) and (max-width: 1920px) {
       max-width: calc(265px + (400 - 265) * ((100vw - 1007px) / (1920 - 1007)));
     }
-    @media (min-width:768px) and (max-width:1006px) {
+    @media (min-width: 768px) and (max-width: 1006px) {
       max-width: calc(295px + (350 - 295) * ((100vw - 1007px) / (1006 - 768)));
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       max-width: calc(242px + (415 - 242) * ((100vw - 320px) / (767 - 320)));
       margin-top: 46px;
     }
@@ -441,18 +441,18 @@
   order: 0;
   padding: 12px 24px;
   cursor: pointer;
-  @media (min-width:1007px) and (max-width:1920px) {
+  @media (min-width: 1007px) and (max-width: 1920px) {
     max-width: calc(265px + (400 - 265) * ((100vw - 1007px) / (1920 - 1007)));
   }
-  @media (min-width:768px) and (max-width:1006px) {
+  @media (min-width: 768px) and (max-width: 1006px) {
     max-width: calc(295px + (350 - 295) * ((100vw - 1007px) / (1006 - 768)));
   }
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     max-width: calc(242px + (415 - 242) * ((100vw - 320px) / (767 - 320)));
   }
   &::after {
-    content: "\f078";
-    font-family: "FontAwesome";
+    content: '\f078';
+    font-family: 'FontAwesome';
     position: absolute;
     height: 100%;
     width: 32px;
@@ -473,13 +473,13 @@
     pointer-events: none;
     transition: all 0.4s;
     border-radius: 6px;
-    @media (min-width:1007px) and (max-width:1920px) {
+    @media (min-width: 1007px) and (max-width: 1920px) {
       max-width: calc(265px + (400 - 265) * ((100vw - 1007px) / (1920 - 1007)));
     }
-    @media (min-width:768px) and (max-width:1006px) {
+    @media (min-width: 768px) and (max-width: 1006px) {
       max-width: calc(295px + (350 - 295) * ((100vw - 1007px) / (1006 - 768)));
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       max-width: calc(242px + (415 - 242) * ((100vw - 320px) / (767 - 320)));
       padding: 9px 16px;
     }
@@ -489,26 +489,26 @@
   }
 }
 .tagify__tag {
-	&:hover {
-		&:not([readonly]) {
-			div {
-				&::before {
+  &:hover {
+    &:not([readonly]) {
+      div {
+        &::before {
           --tag-bg-inset: unset !important;
-				}
-			}
-		}
-	}
+        }
+      }
+    }
+  }
 }
 .add-post {
-	form {
-		.m-checkbox-inline {
-			label {
-                @media (max-width: 360px) {
-                    margin-bottom: 8px !important;
-                }
-			}
-		}
-	}
+  form {
+    .m-checkbox-inline {
+      label {
+        @media (max-width: 360px) {
+          margin-bottom: 8px !important;
+        }
+      }
+    }
+  }
 }
 /**=====================
       5.6 Select2 CSS Ends

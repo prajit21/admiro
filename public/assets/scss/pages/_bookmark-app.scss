@@ -37,7 +37,7 @@
           height: 18px;
           vertical-align: middle;
         }
-        >.main-title {
+        > .main-title {
           color: var(--theme-default);
           font-weight: 700;
           margin-bottom: 5px;
@@ -56,7 +56,7 @@
           }
         }
         a {
-          >.title {
+          > .title {
             text-transform: capitalize;
           }
         }
@@ -129,7 +129,7 @@
           right: 15px;
           top: 15px;
           opacity: 0;
-          [dir="rtl"] & {
+          [dir='rtl'] & {
             right: unset;
             left: 15px;
           }
@@ -159,7 +159,7 @@
           padding: 15px !important;
           border-top: 1px solid var(--light-color);
           position: relative;
-          [dir="rtl"] & {
+          [dir='rtl'] & {
             text-align: right;
           }
           h5 {
@@ -183,9 +183,9 @@
             ul {
               li {
                 display: inline-block;
-                +li {
+                + li {
                   margin-left: 5px;
-                  [dir="rtl"] & {
+                  [dir='rtl'] & {
                     margin-left: unset;
                     margin-right: 5px;
                   }
@@ -197,7 +197,7 @@
                 }
               }
             }
-            [dir="rtl"] & {
+            [dir='rtl'] & {
               left: unset;
               right: 0;
             }
@@ -223,9 +223,9 @@
     }
     &.list-bookmark {
       .row {
-        >div {
+        > div {
           flex: 0 0 100%;
-          max-width: 100%
+          max-width: 100%;
         }
       }
       .bookmark-card {
@@ -246,7 +246,7 @@
               right: 30px;
               opacity: 1;
               text-align: right;
-              [dir="rtl"] & {
+              [dir='rtl'] & {
                 right: unset;
                 left: 30px;
                 text-align: left;
@@ -278,12 +278,12 @@
                 content: '-';
                 right: 0;
                 color: var(--gray-700);
-                [dir="rtl"] & {
+                [dir='rtl'] & {
                   left: 0;
                   right: unset;
                 }
               }
-              [dir="rtl"] & {
+              [dir='rtl'] & {
                 padding-right: unset;
                 padding-left: 15px;
               }
@@ -293,7 +293,7 @@
               p {
                 width: 68%;
                 margin-right: 20px;
-                [dir="rtl"] & {
+                [dir='rtl'] & {
                   margin-right: unset;
                   margin-left: 20px;
                 }
@@ -319,9 +319,9 @@
         ul {
           li {
             display: inline-block;
-            +li {
+            + li {
               margin-left: 5px;
-              [dir="rtl"] & {
+              [dir='rtl'] & {
                 margin-left: unset;
                 margin-right: 5px;
               }
@@ -331,7 +331,7 @@
       }
     }
     .tab-pane {
-      >.card {
+      > .card {
         box-shadow: none;
       }
     }
@@ -343,14 +343,14 @@
       .details-website {
         box-shadow: 0px 9px 20px rgba($black, 0.02);
         background-color: var(--body-color);
-        img{
+        img {
           width: 100%;
         }
       }
     }
   }
 }
-// responsive 
+// responsive
 @media only screen and (max-width: 1660px) {
   .bookmark-tabcontent {
     .details-bookmark {
@@ -452,7 +452,7 @@
                     position: relative;
                     right: unset;
                     top: unset;
-                    [dir="rtl"] & {
+                    [dir='rtl'] & {
                       left: unset;
                     }
                   }
@@ -480,7 +480,7 @@
             display: block;
             .title-bookmark {
               padding-left: 15px;
-              [dir="rtl"] & {
+              [dir='rtl'] & {
                 padding-left: unset;
                 padding-right: 15px;
               }
@@ -490,7 +490,7 @@
                 text-align: left;
                 top: unset;
                 padding: 0;
-                [dir="rtl"] & {
+                [dir='rtl'] & {
                   text-align: right;
                   left: unset;
                 }
@@ -526,7 +526,7 @@
 .email-wrap {
   .email-app-sidebar {
     .main-menu {
-      >li {
+      > li {
         a {
           &:hover {
             background-color: rgba($gray-700, 0.07);
@@ -537,7 +537,7 @@
     ul {
       li {
         a {
-          >.title {
+          > .title {
             color: var(--gray-700);
             font-weight: 600;
           }

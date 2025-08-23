@@ -1,21 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, TemplateRef } from '@angular/core';
-import { LayoutService } from '../../services/layout.service';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { ColorPicker } from './color-picker/color-picker';
 import { LayoutType } from './layout-type/layout-type';
 import { SidebarIcon } from './sidebar-icon/sidebar-icon';
 import { SidebarType } from './sidebar-type/sidebar-type';
 import { ThemeMode } from './theme-mode/theme-mode';
+import { ConfigData, LayoutService } from '../../services/layout.service';
 
 @Component({
-    selector: 'app-customizer',
-    imports: [CommonModule, ColorPicker, LayoutType, SidebarIcon, SidebarType, ThemeMode],
-    templateUrl: './customizer.html',
-    styleUrl: './customizer.scss'
+  selector: 'app-customizer',
+  imports: [CommonModule, ColorPicker, LayoutType, SidebarIcon, SidebarType, ThemeMode],
+  templateUrl: './customizer.html',
+  styleUrl: './customizer.scss',
 })
 export class Customizer {
-
   private modalService = inject(NgbModal);
   public layoutService = inject(LayoutService);
 
@@ -27,8 +28,7 @@ export class Customizer {
     this.layoutService.customizer = val;
   }
 
-
-  copyText(data: any) {
+  copyText(data: ConfigData) {
     let selBox = document.createElement('textarea');
     selBox.style.position = 'fixed';
     selBox.style.left = '0';
@@ -39,7 +39,6 @@ export class Customizer {
     selBox.focus();
     selBox.select();
     document.execCommand('copy');
-    document.body.removeChild(selBox)
+    document.body.removeChild(selBox);
   }
-
 }

@@ -1,26 +1,27 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
+
 import { NgApexchartsModule } from 'ng-apexcharts';
 
+import { EducationChart } from '../../../../shared/data/dashboard/education/education-chart';
+import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
+
 @Component({
-    selector: 'app-top-common-educationchart',
-    imports: [CommonModule, ClickOutsideDirective, NgApexchartsModule],
-    templateUrl: './top-common-educationchart.html',
-    styleUrl: './top-common-educationchart.scss'
+  selector: 'app-top-common-educationchart',
+  imports: [CommonModule, ClickOutsideDirective, NgApexchartsModule],
+  templateUrl: './top-common-educationchart.html',
+  styleUrl: './top-common-educationchart.scss',
 })
 export class TopCommonEducationchart {
+  readonly data = input<EducationChart>();
 
-  readonly data = input<any>();
+  public isopen: boolean = false;
 
-  public isopen:boolean = false;
-
-  open(){
-   this.isopen = !this.isopen
+  open() {
+    this.isopen = !this.isopen;
   }
 
-  clickOutside():void { 
+  clickOutside(): void {
     this.isopen = false;
   }
-
 }

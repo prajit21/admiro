@@ -1,24 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { About } from '../about/about';
-import { Photos } from '../photos/photos';
 import { Friends } from '../friends/friends';
+import { Photos } from '../photos/photos';
 import { Timeline } from '../timeline/timeline';
 
 @Component({
-    selector: 'app-soical-profile',
-    imports: [CommonModule, About, Photos, Friends,
-        Timeline],
-    templateUrl: './soical-profile.html',
-    styleUrl: './soical-profile.scss'
+  selector: 'app-soical-profile',
+  imports: [CommonModule, About, Photos, Friends, Timeline],
+  templateUrl: './soical-profile.html',
+  styleUrl: './soical-profile.scss',
 })
 export class SoicalProfile {
-
   public active = 1;
-  public openTab: string = "timeline";
+  public openTab: string = 'timeline';
 
   tab(value: string) {
-    this.openTab = value
+    this.openTab = value;
   }
-
 }

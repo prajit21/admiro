@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { NgbModule, NgbTypeaheadConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
-import { NgbTypeaheadConfig } from '@ng-bootstrap/ng-bootstrap';
 
 const states = [
   'Alabama',
@@ -65,22 +65,21 @@ const states = [
   'Washington',
   'West Virginia',
   'Wisconsin',
-  'Wyoming']
+  'Wyoming',
+];
 
 @Component({
-    selector: 'app-global-configuration-typeaheads',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './global-configuration-typeaheads.html',
-    styleUrl: './global-configuration-typeaheads.scss'
+  selector: 'app-global-configuration-typeaheads',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './global-configuration-typeaheads.html',
+  styleUrl: './global-configuration-typeaheads.scss',
 })
 export class GlobalConfigurationTypeaheads {
-
   public config = inject(NgbTypeaheadConfig);
 
   public model: string;
 
   constructor() {
-
     this.config.showHint = true;
   }
 
@@ -88,9 +87,10 @@ export class GlobalConfigurationTypeaheads {
     text$.pipe(
       debounceTime(200),
       distinctUntilChanged(),
-      map((term) =>
-        term.length < 2 ? [] : states.filter((v) => v.toLowerCase().startsWith(term.toLocaleLowerCase())).splice(0, 10),
+      map(term =>
+        term.length < 2
+          ? []
+          : states.filter(v => v.toLowerCase().startsWith(term.toLocaleLowerCase())).splice(0, 10),
       ),
-    )
-
+    );
 }

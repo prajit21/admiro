@@ -1,23 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, SimpleChanges, input, viewChild } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, Input, SimpleChanges, input, viewChild, inject } from '@angular/core';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import * as data from "../../../../shared/data/contacts/all-contact";
-import { contactData, lastDataList } from '../../../../shared/data/contacts/all-contact';
-import { Print } from '../../contact-modal/print/print';
 import Swal from 'sweetalert2';
+
 import { AddressContact } from './edit-profile/address-contact/address-contact';
 import { General } from './edit-profile/general/general';
 import { PersonalContact } from './edit-profile/personal-contact/personal-contact';
+import { contactData, lastDataList } from '../../../../shared/data/contacts/all-contact';
+import * as data from '../../../../shared/data/contacts/all-contact';
+import { Print } from '../../contact-modal/print/print';
 
 @Component({
-    selector: 'app-profile-data',
-    imports: [CommonModule, AddressContact, General, PersonalContact, Print],
-    templateUrl: './profile-data.html',
-    styleUrl: './profile-data.scss'
+  selector: 'app-profile-data',
+  imports: [CommonModule, AddressContact, General, PersonalContact, Print],
+  templateUrl: './profile-data.html',
+  styleUrl: './profile-data.scss',
 })
 export class ProfileData {
-
   readonly selectedSubId = input<number>();
   readonly status = input<boolean>();
   @Input() lastData: lastDataList;
@@ -29,38 +29,38 @@ export class ProfileData {
   public Organization = data.Organization;
   public statusData: contactData;
 
-  readonly PrintModal = viewChild<Print>("printModal");
+  readonly PrintModal = viewChild<Print>('printModal');
 
   private modalService = inject(NgbModal);
-  
+
   ngOnInit() {
-    this.Personal.map((data) => {
+    this.Personal.map(data => {
       if (data.status) {
         this.statusData = data;
       }
       const listnewData = this.statusData.data;
-      const currentData = listnewData.filter((data: { status: boolean; }) => {
+      const currentData = listnewData.filter((data: { status: boolean }) => {
         return data.status === true;
-      })
+      });
       this.lastData = currentData[0];
-    })
+    });
   }
 
   ngOnChanges(changes: SimpleChanges) {
     let id = changes['selectedSubId']?.currentValue;
-    this.Personal.map((data) => {
+    this.Personal.map(data => {
       if (data.title_id === id) {
         this.statusData = data;
       }
-    })
+    });
   }
 
   openHistory() {
     this.open = !this.open;
   }
 
-  printContact(id: number) {
-    const modalRef = this.modalService.open(Print);
+  printContact(_id: number) {
+    this.modalService.open(Print);
   }
 
   deleteContact() {
@@ -71,12 +71,11 @@ export class ProfileData {
       showCancelButton: true,
       cancelButtonColor: '#EFEFEE !important',
       confirmButtonColor: 'var(--theme-default)',
-    }).then((result: { isConfirmed: boolean; isDenied: boolean; }) => {
+    }).then((result: { isConfirmed: boolean; isDenied: boolean }) => {
       if (result.isConfirmed) {
       } else {
-        Swal.fire('', 'Your contact is safe!')
+        Swal.fire('', 'Your contact is safe!');
       }
-    })
+    });
   }
-
 }

@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
-import { outlinedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+import { outlinedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 
 @Component({
-    selector: 'app-outlined-touchspin',
-    imports: [CommonModule],
-    templateUrl: './outlined-touchspin.html',
-    styleUrl: './outlined-touchspin.scss'
+  selector: 'app-outlined-touchspin',
+  imports: [CommonModule],
+  templateUrl: './outlined-touchspin.html',
+  styleUrl: './outlined-touchspin.scss',
 })
 export class OutlinedTouchspin {
-
   public OutlinedData = outlinedtouchspin;
 
   decrement(i: number) {
@@ -20,5 +20,4 @@ export class OutlinedTouchspin {
   increment(i: number) {
     this.OutlinedData[i].value += 1;
   }
-
 }

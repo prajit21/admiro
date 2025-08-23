@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
-import { ClipboardService } from 'ngx-clipboard';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { ClipboardService } from 'ngx-clipboard';
+
 @Component({
-    selector: 'app-clipboard-on-paragraph',
-    imports: [CommonModule, FormsModule],
-    templateUrl: './clipboard-on-paragraph.html',
-    styleUrl: './clipboard-on-paragraph.scss'
+  selector: 'app-clipboard-on-paragraph',
+  imports: [CommonModule, FormsModule],
+  templateUrl: './clipboard-on-paragraph.html',
+  styleUrl: './clipboard-on-paragraph.scss',
 })
 export class ClipboardOnParagraph {
-
-  public paragraphData = "On that day, hopes and dreams were crushed. Even though it should have been anticipated, it nonetheless surprised me. The warning indicators have been disregarded in favour of the slim chance that it would actually occur. From a hopeful prospect, it had evolved into an unquestionable conviction that it must be fate. That was up until it wasn't, at which point all of the aspirations and dreams collapsed."
+  public paragraphData =
+    "On that day, hopes and dreams were crushed. Even though it should have been anticipated, it nonetheless surprised me. The warning indicators have been disregarded in favour of the slim chance that it would actually occur. From a hopeful prospect, it had evolved into an unquestionable conviction that it must be fate. That was up until it wasn't, at which point all of the aspirations and dreams collapsed.";
   public basic = false;
-  public copyText: string = ""
+  public copyText: string = '';
 
   private _clipboardService = inject(ClipboardService);
 
@@ -28,7 +28,7 @@ export class ClipboardOnParagraph {
 
   copyFunction(txt: string) {
     navigator.clipboard.writeText(txt);
-    alert("Copied")
+    alert('Copied');
   }
 
   ngOnInit(): void {
@@ -38,6 +38,4 @@ export class ClipboardOnParagraph {
       }
     });
   }
-
-
 }

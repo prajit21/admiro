@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, OperatorFunction } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
@@ -68,14 +69,13 @@ const states = [
 ];
 
 @Component({
-    selector: 'app-formatted-results',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './formatted-results.html',
-    styleUrl: './formatted-results.scss'
+  selector: 'app-formatted-results',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './formatted-results.html',
+  styleUrl: './formatted-results.scss',
 })
 export class FormattedResults {
-
-  public model: string
+  public model: string;
 
   formatter = (result: string) => result.toUpperCase();
 
@@ -83,10 +83,10 @@ export class FormattedResults {
     text$.pipe(
       debounceTime(200),
       distinctUntilChanged(),
-      map((term) =>
-        term === '' ? [] : states.filter((v) => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10),
+      map(term =>
+        term === ''
+          ? []
+          : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10),
       ),
     );
-
-
 }

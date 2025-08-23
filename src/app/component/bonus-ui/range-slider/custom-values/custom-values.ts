@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
-    selector: 'app-custom-values',
-    imports: [CommonModule, NgxSliderModule],
-    templateUrl: './custom-values.html',
-    styleUrl: './custom-values.scss'
+  selector: 'app-custom-values',
+  imports: [CommonModule, NgxSliderModule],
+  templateUrl: './custom-values.html',
+  styleUrl: './custom-values.scss',
 })
 export class CustomValues {
-
   public options2Value: number = 4;
 
   public options2: Options = {
@@ -27,7 +27,6 @@ export class CustomValues {
       { value: 10, legend: 'Oct' },
       { value: 11, legend: 'Nov' },
       { value: 12, legend: 'Dec' },
-    ]
-  }
-
+    ],
+  };
 }

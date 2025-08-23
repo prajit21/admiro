@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-buttons-dropdowns',
-    imports: [CommonModule],
-    templateUrl: './buttons-dropdowns.html',
-    styleUrl: './buttons-dropdowns.scss'
+  selector: 'app-buttons-dropdowns',
+  imports: [CommonModule],
+  templateUrl: './buttons-dropdowns.html',
+  styleUrl: './buttons-dropdowns.scss',
 })
 export class ButtonsDropdowns {
-
   public open: boolean = false;
   public open2: boolean = false;
   public open3: boolean = false;
@@ -19,16 +18,14 @@ export class ButtonsDropdowns {
   }
 
   openMenu2() {
-    this.open2 = !this.open2
+    this.open2 = !this.open2;
   }
 
   openMenu3() {
-    this.open3 = !this.open3
+    this.open3 = !this.open3;
   }
 
   openMenu4() {
-    this.open4 = !this.open4
+    this.open4 = !this.open4;
   }
-
-
 }

@@ -2,16 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-top-default-card',
-    imports: [CommonModule],
-    templateUrl: './top-default-card.html',
-    styleUrl: './top-default-card.scss'
+  selector: 'app-top-default-card',
+  imports: [CommonModule],
+  templateUrl: './top-default-card.html',
+  styleUrl: './top-default-card.scss',
 })
-
 export class TopDefaultCard {
-
   public time = new Date();
-  public intervalId: any;
+  public intervalId: ReturnType<typeof setInterval>;
 
   ngOnInit() {
     this.intervalId = setInterval(() => {
@@ -22,5 +20,4 @@ export class TopDefaultCard {
   ngOnDestroy() {
     clearInterval(this.intervalId);
   }
-
 }

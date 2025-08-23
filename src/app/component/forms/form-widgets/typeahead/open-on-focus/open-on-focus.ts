@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbTypeahead } from '@ng-bootstrap/ng-bootstrap';
+
+import { NgbModule, NgbTypeahead } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, Subject, merge, OperatorFunction } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, map } from 'rxjs/operators';
 
@@ -68,15 +68,13 @@ const states = [
   'Wyoming',
 ];
 
-
 @Component({
-    selector: 'app-open-on-focus',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './open-on-focus.html',
-    styleUrl: './open-on-focus.scss'
+  selector: 'app-open-on-focus',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './open-on-focus.html',
+  styleUrl: './open-on-focus.scss',
 })
 export class OpenOnFocus {
-
   public model: string;
 
   readonly instance = viewChild<NgbTypeahead>('instance');
@@ -89,10 +87,12 @@ export class OpenOnFocus {
     const inputFocus$ = this.focus$;
 
     return merge(debouncedText$, inputFocus$, clicksWithClosedPopup$).pipe(
-      map((term) =>
-        (term === '' ? states : states.filter((v) => v.toLowerCase().indexOf(term.toLowerCase()) > -1)).slice(0, 10),
+      map(term =>
+        (term === ''
+          ? states
+          : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1)
+        ).slice(0, 10),
       ),
     );
   };
-
 }

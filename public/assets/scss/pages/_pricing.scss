@@ -2,7 +2,9 @@
     3.33 Pricing CSS Start
 ==========================**/
 .pricing-simple {
-  box-shadow: 0 10px 20px rgba($black, 0.2), 0 6px 6px rgba($black, 0.1);
+  box-shadow:
+    0 10px 20px rgba($black, 0.2),
+    0 6px 6px rgba($black, 0.1);
   margin-bottom: 0 !important;
   .card-body {
     border-bottom: none;
@@ -34,14 +36,16 @@
   padding-top: 45px;
   padding-bottom: 45px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba($black, 0.2), 0 6px 6px rgba($black, 0.1);
+  box-shadow:
+    0 10px 20px rgba($black, 0.2),
+    0 6px 6px rgba($black, 0.1);
   overflow: hidden;
   position: relative;
   z-index: 1;
   height: 100%;
   &:before,
   &:after {
-    content: "";
+    content: '';
     background-color: var(--theme-default);
     width: 300px;
     height: 300px;
@@ -101,7 +105,7 @@
         margin: 0;
       }
       &:before {
-        content: "\f00c";
+        content: '\f00c';
         color: varvar(--theme-default);
         font-family: FontAwesome;
         text-align: center;
@@ -115,11 +119,11 @@
     }
   }
 }
-@media (max-width:1470px) {
+@media (max-width: 1470px) {
   .pricing-block {
-    >div {
+    > div {
       flex: 50%;
-      &:nth-child(n+3) {
+      &:nth-child(n + 3) {
         margin-top: 30px;
       }
     }
@@ -137,8 +141,8 @@
     }
   }
   .pricing-block {
-    >div {
-      &:nth-child(n+2) {
+    > div {
+      &:nth-child(n + 2) {
         margin-top: 20px;
       }
     }
@@ -153,7 +157,7 @@
     }
   }
   .pricing-block {
-    >div {
+    > div {
       flex: 100%;
     }
   }

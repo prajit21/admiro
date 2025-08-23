@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { NgxPrintModule } from 'ngx-print';
+
 import { Invoice4Table } from './invoice4-table/invoice4-table';
 
 @Component({
-    selector: 'app-invoice-4',
-    imports: [CommonModule, NgxPrintModule, Invoice4Table],
-    templateUrl: './invoice-4.html',
-    styleUrl: './invoice-4.scss'
+  selector: 'app-invoice-4',
+  imports: [CommonModule, NgxPrintModule, Invoice4Table],
+  templateUrl: './invoice-4.html',
+  styleUrl: './invoice-4.scss',
 })
-export class Invoice4 {
-
-}
+export class Invoice4 {}

@@ -51,8 +51,8 @@
       .page-header {
         .header-wrapper {
           .nav-right {
-            >ul {
-              >li {
+            > ul {
+              > li {
                 .form-group {
                   .Typeahead {
                     .u-posRelative {
@@ -78,17 +78,17 @@
           }
         }
       }
-      &.sidebar-open{
-        .page-body-wrapper{
-          .page-sidebar{
+      &.sidebar-open {
+        .page-body-wrapper {
+          .page-sidebar {
             left: -($sidebar-width + 10px) !important;
             transition: 0.5s all !important;
           }
-          .page-body{
+          .page-body {
             margin-left: 0 !important;
             transition: 0.5s all !important;
           }
-          .footer{
+          .footer {
             padding-left: 20px !important;
             transition: 0.5s all !important;
           }
@@ -141,7 +141,7 @@
       }
     }
     .currency-widget {
-      div[class*=bg-light-] {
+      div[class*='bg-light-'] {
         display: none;
       }
     }
@@ -188,7 +188,7 @@
     .apache-cotainer-large,
     #line-visual,
     #line-visulH {
-      >div,
+      > div,
       canvas {
         width: 100% !important;
       }
@@ -382,7 +382,7 @@
               align-items: center;
               justify-content: center;
               min-width: 300px;
-              >div {
+              > div {
                 z-index: 8;
                 background-color: rgba(255, 255, 255, 0.75);
                 background-blend-mode: overlay;
@@ -466,7 +466,7 @@
       }
       ul {
         &.close_icon {
-          >li {
+          > li {
             label {
               padding: 0;
               &:after {
@@ -499,7 +499,7 @@
         .btn-radio {
           .btn-group {
             .radio {
-              input[type="radio"] {
+              input[type='radio'] {
                 display: none;
               }
             }
@@ -517,7 +517,7 @@
           .bitcoin-content {
             .bitcoin-numbers {
               h6 {
-                font-size: 14PX;
+                font-size: 14px;
               }
             }
             &.text-right {
@@ -682,7 +682,7 @@
             padding-left: 12px;
           }
           .col-xl-3 {
-            +.col-xl-3 {
+            + .col-xl-3 {
               padding-right: 12px;
             }
           }
@@ -891,7 +891,7 @@
       }
     }
     header {
-      .form-group-header{
+      .form-group-header {
         width: 300px;
       }
     }

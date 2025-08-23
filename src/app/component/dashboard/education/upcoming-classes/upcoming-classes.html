@@ -1,37 +1,38 @@
 <div class="card upcoming-card">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>Upcoming Classes</h3> 
-            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
-                <button class="btn" id="userdropdown1" type="button" (click)="open()">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="isopen">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>Upcoming Classes</h3>
+      <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
+        <button class="btn" id="userdropdown1" type="button" (click)="open()">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="isopen">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body upcoming-class pt-0">
+    @for (data of upCommingclasses; track data) {
+      <div class="activity-day">
+        <h6>{{ data.date }}</h6>
+      </div>
+      <ul>
+        @for (item of data.details; track item) {
+          <li class="d-flex align-items-center gap-2">
+            <div class="flex-shrink-0">
+              <h5>{{ item.time }}</h5>
             </div>
-        </div>
-    </div>
-    <div class="card-body upcoming-class pt-0">
-        @for( data of upCommingclasses; track data){
-        <div class="activity-day">
-            <h6>{{ data.date }}</h6>
-        </div>
-        <ul>
-            @for( item of data.details; track item){
-            <li class="d-flex align-items-center gap-2">
-                <div class="flex-shrink-0">
-                    <h5>{{ item.time }}</h5>
-                </div>
-                <div class="flex-grow-1 border-2 b-l-{{item.class}}">
-                    <h6>{{ item.title }}</h6>
-                    <p>{{ item.activity }}</p>
-                </div><i class="fa-solid fa-circle circle-dot-{{item.class}} pull-right"></i>
-            </li>
-            }
-        </ul>
+            <div class="flex-grow-1 border-2 b-l-{{ item.class }}">
+              <h6>{{ item.title }}</h6>
+              <p>{{ item.activity }}</p>
+            </div>
+            <i class="fa-solid fa-circle circle-dot-{{ item.class }} pull-right"></i>
+          </li>
         }
-    </div>
+      </ul>
+    }
+  </div>
 </div>

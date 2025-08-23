@@ -22,13 +22,13 @@
   font-weight: 700;
   color: var(--body-font-color);
 }
-.choices[data-type*=text] {
+.choices[data-type*='text'] {
   .choices__button {
     margin-bottom: 0;
     border-left: 0;
   }
 }
-.choices[data-type*=select-multiple] {
+.choices[data-type*='select-multiple'] {
   .choices__button {
     margin-bottom: 0;
     border-left: 0;

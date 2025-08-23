@@ -1,578 +1,560 @@
 export const paymentData = [
-    {
-        text: 'Visa',
-        value: false,
-        class:'primary'
-    },
-    {
-        text: 'MasterCard',
-        value: false,
-        class:'secondary'
-
-    },
-    {
-        text: 'Paypal',
-        value: true,
-        class:'tertiary'
-    },
-    {
-        text: 'G-pay',
-        value: false,
-        class:'success'
-    },
-    {
-        text: 'Bitpay',
-        value: false,
-        class:'info'
-    },
-]
+  {
+    text: 'Visa',
+    value: false,
+    class: 'primary',
+  },
+  {
+    text: 'MasterCard',
+    value: false,
+    class: 'secondary',
+  },
+  {
+    text: 'Paypal',
+    value: true,
+    class: 'tertiary',
+  },
+  {
+    text: 'G-pay',
+    value: false,
+    class: 'success',
+  },
+  {
+    text: 'Bitpay',
+    value: false,
+    class: 'info',
+  },
+];
 
 export const soicaMidia = [
-    {
-        text: 'Instagram',
-        value: false,
-        class:'primary'
-       
-    },
-    {
-        text: 'Facebook',
-        value: false,
-        class:'secondary'
-    },
-    {
-        text: 'Whatsapp',
-        value: true,
-        class:'tertiary'
-
-    },
-    {
-        text: 'Twitter',
-        value: false,
-        class:'danger'
-    },
-    {
-        text: 'Twitter',
-        value: false,
-        class:'info'
-      
-    },
-]
+  {
+    text: 'Instagram',
+    value: false,
+    class: 'primary',
+  },
+  {
+    text: 'Facebook',
+    value: false,
+    class: 'secondary',
+  },
+  {
+    text: 'Whatsapp',
+    value: true,
+    class: 'tertiary',
+  },
+  {
+    text: 'Twitter',
+    value: false,
+    class: 'danger',
+  },
+  {
+    text: 'Twitter',
+    value: false,
+    class: 'info',
+  },
+];
 
 export const imageRadio = [
-    {
-        title: 'Custom',
-        img: 'assets/images/switch/5.jpg',
-        check: false,
-        index: 1,
-        disabled: false
-    },
-    {
-        title: 'Checked Image',
-        img: 'assets/images/switch/6.jpg',
-        check: false,
-        index: 2,
-        disabled: false
-    },
-    {
-        title: 'Disable Image',
-        img: 'assets/images/switch/7.jpg',
-        check: false,
-        index: 3,
-        disabled: true
-    },
-    {
-        title: 'Disable Checked Image',
-        img: 'assets/images/switch/8.jpg',
-        check: true,
-        index: 4,
-        disabled: true
-    },
-]
+  {
+    title: 'Custom',
+    img: 'assets/images/switch/5.jpg',
+    check: false,
+    index: 1,
+    disabled: false,
+  },
+  {
+    title: 'Checked Image',
+    img: 'assets/images/switch/6.jpg',
+    check: false,
+    index: 2,
+    disabled: false,
+  },
+  {
+    title: 'Disable Image',
+    img: 'assets/images/switch/7.jpg',
+    check: false,
+    index: 3,
+    disabled: true,
+  },
+  {
+    title: 'Disable Checked Image',
+    img: 'assets/images/switch/8.jpg',
+    check: true,
+    index: 4,
+    disabled: true,
+  },
+];
 export const imageChekbox = [
-    {
-        title: 'Custom',
-        img: 'assets/images/switch/1.jpg',
-        check: false,
-        index: 1,
-        disabled: false
-    },
-    {
-        title: 'Checked Image',
-        img: 'assets/images/switch/2.jpg',
-        check: true,
-        index: 2,
-        disabled: false
-    },
-    {
-        title: 'Disable Image',
-        img: 'assets/images/switch/3.jpg',
-        check: false,
-        index: 3,
-        disabled: true
-    },
-    {
-        title: 'Disable Checked Image',
-        img: 'assets/images/switch/4.jpg',
-        check: true,
-        index: 4,
-        disabled: true
-    },
-]
+  {
+    title: 'Custom',
+    img: 'assets/images/switch/1.jpg',
+    check: false,
+    index: 1,
+    disabled: false,
+  },
+  {
+    title: 'Checked Image',
+    img: 'assets/images/switch/2.jpg',
+    check: true,
+    index: 2,
+    disabled: false,
+  },
+  {
+    title: 'Disable Image',
+    img: 'assets/images/switch/3.jpg',
+    check: false,
+    index: 3,
+    disabled: true,
+  },
+  {
+    title: 'Disable Checked Image',
+    img: 'assets/images/switch/4.jpg',
+    check: true,
+    index: 4,
+    disabled: true,
+  },
+];
 
 export const basicdata = [
-    {
-        text: 'Blog',
-        check: false,
-        index: 1,
-    },
-    {
-        text: 'Gallery',
-        check: true,
-        index: 2
-    },
-    {
-        text: 'Faq',
-        check: false,
-        index: 3
-    },
-    {
-        text: 'Email',
-        check: false,
-        index: 4
-    },
-    {
-        text: 'Icons',
-        check: false,
-        index: 5
-    },
-]
+  {
+    text: 'Blog',
+    check: false,
+    index: 1,
+  },
+  {
+    text: 'Gallery',
+    check: true,
+    index: 2,
+  },
+  {
+    text: 'Faq',
+    check: false,
+    index: 3,
+  },
+  {
+    text: 'Email',
+    check: false,
+    index: 4,
+  },
+  {
+    text: 'Icons',
+    check: false,
+    index: 5,
+  },
+];
 export const simpleRadio = [
-    {
-        text: 'Maps',
-        check: true,
-        id: 'radioinline1'
-    },
-    {
-        text: 'Tasks',
-        check: false,
-        id: 'radioinline2'
-    },
-    {
-        text: 'To-do',
-        check: false,
-        id: 'radioinline3'
-    },
-    {
-        text: 'Forms',
-        check: false,
-        id: 'radioinline4'
-    },
-    {
-        text: 'Login',
-        check: false,
-        id: 'radioinline5'
-    },
-]
+  {
+    text: 'Maps',
+    check: true,
+    id: 'radioinline1',
+  },
+  {
+    text: 'Tasks',
+    check: false,
+    id: 'radioinline2',
+  },
+  {
+    text: 'To-do',
+    check: false,
+    id: 'radioinline3',
+  },
+  {
+    text: 'Forms',
+    check: false,
+    id: 'radioinline4',
+  },
+  {
+    text: 'Login',
+    check: false,
+    id: 'radioinline5',
+  },
+];
 
 export const BorderedRadio = [
-    {
-        text: 'Koho Theme',
-        check: true,
-        class: 'secondary',
-        id: 'radio22'
-    },
-    {
-        text: 'Roxo Theme',
-        check: false,
-        class: 'success',
-        id: 'radio55'
-
-    },
-    {
-        text: 'Voxo Theme',
-        check: false,
-        class: 'danger',
-        id: 'radio33'
-
-    },
-    {
-        text: 'Zeta Theme',
-        check: false,
-        class: 'info',
-        id: 'radio66'
-
-    },
-]
+  {
+    text: 'Koho Theme',
+    check: true,
+    class: 'secondary',
+    id: 'radio22',
+  },
+  {
+    text: 'Roxo Theme',
+    check: false,
+    class: 'success',
+    id: 'radio55',
+  },
+  {
+    text: 'Voxo Theme',
+    check: false,
+    class: 'danger',
+    id: 'radio33',
+  },
+  {
+    text: 'Zeta Theme',
+    check: false,
+    class: 'info',
+    id: 'radio66',
+  },
+];
 
 export const IconsRadio = [
-    {
-        text: 'Sliders',
-        icon: 'sliders',
-        check: false,
-        id: 'radio-icon'
-    },
-    {
-        text: 'Hidden',
-        icon: 'eye-slash',
-        check: true,
-        id: 'radio-icon4'
-    },
-    {
-        text: 'Folder',
-        icon: 'folder-open',
-        check: false,
-        id: 'radio-icon5'
-
-    },
-    {
-        text: 'Send',
-        icon: 'paper-plane',
-        check: false,
-        id: 'radio-icon7'
-
-    },
-    {
-        text: 'Users',
-        icon: 'user',
-        check: false,
-        id: 'radio-icon8'
-
-    },
-    {
-        text: 'Trash',
-        icon: 'trash-o',
-        check: false,
-        id: 'radio-icon9'
-
-    },
-    {
-        text: 'github',
-        icon: 'github',
-        check: false,
-        id: 'radio-icon10'
-
-    },
-    {
-        text: 'Play',
-        icon: 'play-circle',
-        check: false,
-        id: 'radio-icon10'
-
-    },
-]
+  {
+    text: 'Sliders',
+    icon: 'sliders',
+    check: false,
+    id: 'radio-icon',
+  },
+  {
+    text: 'Hidden',
+    icon: 'eye-slash',
+    check: true,
+    id: 'radio-icon4',
+  },
+  {
+    text: 'Folder',
+    icon: 'folder-open',
+    check: false,
+    id: 'radio-icon5',
+  },
+  {
+    text: 'Send',
+    icon: 'paper-plane',
+    check: false,
+    id: 'radio-icon7',
+  },
+  {
+    text: 'Users',
+    icon: 'user',
+    check: false,
+    id: 'radio-icon8',
+  },
+  {
+    text: 'Trash',
+    icon: 'trash-o',
+    check: false,
+    id: 'radio-icon9',
+  },
+  {
+    text: 'github',
+    icon: 'github',
+    check: false,
+    id: 'radio-icon10',
+  },
+  {
+    text: 'Play',
+    icon: 'play-circle',
+    check: false,
+    id: 'radio-icon10',
+  },
+];
 
 export const basicCheckbox = [
-    {
-        text: 'Blog',
-        value: false,
-        id: 'inline-1',
-
-    },
-    {
-        text: 'Gallery',
-        value: true,
-        id: 'inline-2',
-    },
-    {
-        text: 'Faq',
-        value: false,
-        id: 'inline-3',
-    },
-    {
-        text: 'Email',
-        value: false,
-        id: 'inline-4',
-    },
-    {
-        text: 'Icons',
-        value: false,
-        id: 'inline-5',
-    },
-]
+  {
+    text: 'Blog',
+    value: false,
+    id: 'inline-1',
+  },
+  {
+    text: 'Gallery',
+    value: true,
+    id: 'inline-2',
+  },
+  {
+    text: 'Faq',
+    value: false,
+    id: 'inline-3',
+  },
+  {
+    text: 'Email',
+    value: false,
+    id: 'inline-4',
+  },
+  {
+    text: 'Icons',
+    value: false,
+    id: 'inline-5',
+  },
+];
 
 export const FilledRadio = [
-    {
-        class: 'primary',
-        text: 'Product',
-        check: true,
-        id: 'radio111'
-    },
-    {
-        class: 'warning',
-        text: 'Order history',
-        check: false,
-        id: 'radio333'
-    },
-    {
-        class: 'danger',
-        text: 'Invoice',
-        check: false,
-        id: 'radio444'
-    },
-    {
-        class: 'info',
-        text: 'Wishlist',
-        check: false,
-        id: 'radio666'
-    },
-]
+  {
+    class: 'primary',
+    text: 'Product',
+    check: true,
+    id: 'radio111',
+  },
+  {
+    class: 'warning',
+    text: 'Order history',
+    check: false,
+    id: 'radio333',
+  },
+  {
+    class: 'danger',
+    text: 'Invoice',
+    check: false,
+    id: 'radio444',
+  },
+  {
+    class: 'info',
+    text: 'Wishlist',
+    check: false,
+    id: 'radio666',
+  },
+];
 
 export const BorderCheckbox = [
-    {
-        class: 'primary',
-        for:'checkbox-primary-1',
-        text: 'Primary - checkbox-primary',
-        value: true
-    },
-    {
-        class: 'secondary',
-        for:'checkbox-secondary-1',
-        text: 'Secondary - checkbox-secondary',
-        value: false
-
-    },
-    {
-        class: 'success',
-        for:'checkbox-success-1',
-        text: 'Success - checkbox-success',
-        value: false
-
-    }
-]
+  {
+    class: 'primary',
+    for: 'checkbox-primary-1',
+    text: 'Primary - checkbox-primary',
+    value: true,
+  },
+  {
+    class: 'secondary',
+    for: 'checkbox-secondary-1',
+    text: 'Secondary - checkbox-secondary',
+    value: false,
+  },
+  {
+    class: 'success',
+    for: 'checkbox-success-1',
+    text: 'Success - checkbox-success',
+    value: false,
+  },
+];
 
 export const IconsCheckbox = [
-    {
-        text: 'Sliders',
-        for:'checkbox-1',
-        icon: 'fa-solid fa-sliders',
-        value: false
-    },
-    {
-        text: 'User',
-        for:'checkbox-2',
-        icon: 'fa-solid fa-user',
-        value: true
-    },
-    {
-        text: 'Tags',
-        for:'checkbox-3',
-        icon: 'fa-solid fa-tag',
-        value: false
-    },
-    {
-        text: 'Android',
-        for:'checkbox-4',
-        icon: 'fa-brands fa-android',
-        value: false
-    },
-    {
-        text: 'Hidden',
-        for:'checkbox-5',
-        icon: 'fa-regular fa-eye-slash',
-        value: false
-    },
-    {
-        text: 'Folder',
-        for:'checkbox-6',
-        icon: 'fa-regular fa-folder-open',
-        value: false
-    },
-    {
-        text: 'Send',
-        for:'checkbox-7',
-        icon: 'fa-solid fa-paper-plane',
-        value: false
-    },
-    {
-        text: 'Upload',
-        for:'checkbox-8',
-        icon: 'fa-solid fa-cloud-arrow-up',
-        value: false
-    },
-
-]
+  {
+    text: 'Sliders',
+    for: 'checkbox-1',
+    icon: 'fa-solid fa-sliders',
+    value: false,
+  },
+  {
+    text: 'User',
+    for: 'checkbox-2',
+    icon: 'fa-solid fa-user',
+    value: true,
+  },
+  {
+    text: 'Tags',
+    for: 'checkbox-3',
+    icon: 'fa-solid fa-tag',
+    value: false,
+  },
+  {
+    text: 'Android',
+    for: 'checkbox-4',
+    icon: 'fa-brands fa-android',
+    value: false,
+  },
+  {
+    text: 'Hidden',
+    for: 'checkbox-5',
+    icon: 'fa-regular fa-eye-slash',
+    value: false,
+  },
+  {
+    text: 'Folder',
+    for: 'checkbox-6',
+    icon: 'fa-regular fa-folder-open',
+    value: false,
+  },
+  {
+    text: 'Send',
+    for: 'checkbox-7',
+    icon: 'fa-solid fa-paper-plane',
+    value: false,
+  },
+  {
+    text: 'Upload',
+    for: 'checkbox-8',
+    icon: 'fa-solid fa-cloud-arrow-up',
+    value: false,
+  },
+];
 export const FilledCheckbox = [
-    {
-        class: 'solid-warning',
-        for:'filed-checkbox1',
-        text: 'Warning-checkbox-solid-warning',
-        value: true,
-        id: 'solid4'
-    },
-    {
-        class: 'solid-danger',
-        for:'filed-checkbox2',
-        text: 'Danger- checkbox-solid-dangery',
-        value: true,
-        id: 'solid5'
-
-    },
-    {
-        class: 'solid-info',
-        for:'filed-checkbox3',
-        text: 'Info - checkbox-solid-info',
-        value: true,
-        id: 'solid6'
-    }
-]
+  {
+    class: 'solid-warning',
+    for: 'filed-checkbox1',
+    text: 'Warning-checkbox-solid-warning',
+    value: true,
+    id: 'solid4',
+  },
+  {
+    class: 'solid-danger',
+    for: 'filed-checkbox2',
+    text: 'Danger- checkbox-solid-dangery',
+    value: true,
+    id: 'solid5',
+  },
+  {
+    class: 'solid-info',
+    for: 'filed-checkbox3',
+    text: 'Info - checkbox-solid-info',
+    value: true,
+    id: 'solid6',
+  },
+];
 
 export const defaultswitch = [
-    {
-        id: 1,
-        title: 'Custom Switches',
-        class:'col-md-6 col-xl-4',
-        data: [
-            {
-                text: 'Default switch checkbox input',
-                value: false,
-                disable: false
-            },
-            {
-                text: 'Checked switch checkbox input',
-                value: true,
-                disable: false
-            },
-        ]
-    },
-    {
-        id: 2,
-        title: 'Disabled Switchess',
-        class:'col-md-6 col-xl-4',
-        data: [
-            {
-                text: 'Disabled switch checkbox input',
-                value: false,
-                disable: true
-            },
-            {
-                text: 'Disabled checked switch checkbox',
-                value: true,
-                disable: true
-            },
-        ]
-    },
-    {
-        id: 3,
-        title: 'Right Switches',
-        class:'col-md-12 col-xl-4',
-        data: [
-            {
-                text: 'Reverse switch checkbox input',
-                value: false,
-                disable: false
-            },
-            {
-                text: 'Disabled switch checkbox input',
-                value: false,
-                disable: true
-            },
-        ]
-    }
-]
+  {
+    id: 1,
+    title: 'Custom Switches',
+    class: 'col-md-6 col-xl-4',
+    data: [
+      {
+        text: 'Default switch checkbox input',
+        value: false,
+        disable: false,
+      },
+      {
+        text: 'Checked switch checkbox input',
+        value: true,
+        disable: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Disabled Switchess',
+    class: 'col-md-6 col-xl-4',
+    data: [
+      {
+        text: 'Disabled switch checkbox input',
+        value: false,
+        disable: true,
+      },
+      {
+        text: 'Disabled checked switch checkbox',
+        value: true,
+        disable: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Right Switches',
+    class: 'col-md-12 col-xl-4',
+    data: [
+      {
+        text: 'Reverse switch checkbox input',
+        value: false,
+        disable: false,
+      },
+      {
+        text: 'Disabled switch checkbox input',
+        value: false,
+        disable: true,
+      },
+    ],
+  },
+];
 
 export const defaultRedio = [
-    {
-        id: 1,
-        title: 'Custom Radios',
-        data: [
-            {
-                for: 'flexRadioDefault1',
-                text: 'Default radio',
-                value: false,
-                disable: false
-            },
-            {
-                for: 'flexRadioDefault2',
-                text: 'Default checked radio',
-                value: false,
-                disable: false
-            },
-        ]
-    },
-    {
-        id: 2,
-        title: 'Disabled Radios',
-        data: [
-            {
-                for: 'flexRadioDisabled',
-                text: 'Disabled radio',
-                value: false,
-                disable: true
-            },
-            {
-                for: 'flexRadioCheckedDisabled',
-                text: 'Disabled checked radio',
-                value: false,
-                disable: true
-            },
-        ]
-    },
-    {
-        id: 3,
-        title: 'Right Checks',
-        data: [
-            {
-                for: 'flexRadioDefault3',
-                text: 'Default radio',
-                value: false,
-                disable: false
-            },
-            {
-                for: 'flexRadioCheckedDisabled1',
-                text: 'Disabled checked radio',
-                value: true,
-                disable: true
-            },
-        ]
-    }
-]
+  {
+    id: 1,
+    title: 'Custom Radios',
+    data: [
+      {
+        for: 'flexRadioDefault1',
+        text: 'Default radio',
+        value: false,
+        disable: false,
+      },
+      {
+        for: 'flexRadioDefault2',
+        text: 'Default checked radio',
+        value: false,
+        disable: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Disabled Radios',
+    data: [
+      {
+        for: 'flexRadioDisabled',
+        text: 'Disabled radio',
+        value: false,
+        disable: true,
+      },
+      {
+        for: 'flexRadioCheckedDisabled',
+        text: 'Disabled checked radio',
+        value: false,
+        disable: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Right Checks',
+    data: [
+      {
+        for: 'flexRadioDefault3',
+        text: 'Default radio',
+        value: false,
+        disable: false,
+      },
+      {
+        for: 'flexRadioCheckedDisabled1',
+        text: 'Disabled checked radio',
+        value: true,
+        disable: true,
+      },
+    ],
+  },
+];
 export const checkbox = [
-    {
-        id: 1,
-        title: 'Default Checks',
-        data: [
-            {
-                text: 'Default checkbox',
-                value: false,
-                disable: false
-            },
-            {
-                text: 'Checked checkbox',
-                value: true,
-                disable: false
-            },
-        ]
-    },
-    {
-        id: 2,
-        title: 'Disabled Checks',
-        data: [
-            {
-                text: 'Disabled checkbox',
-                value: false,
-                disable: true
-            },
-            {
-                text: 'Disabled checked checkbox',
-                value: true,
-                disable: true
-            },
-        ]
-    },
-    {
-        id: 3,
-        title: 'Right Checks',
-        data: [
-            {
-                text: 'Reverse checkbox',
-                value: false,
-                disable: false
-            },
-            {
-                text: 'Disabled reverse checkbox',
-                value: true,
-                disable: true
-            },
-        ]
-    }
-]
+  {
+    id: 1,
+    title: 'Default Checks',
+    data: [
+      {
+        text: 'Default checkbox',
+        value: false,
+        disable: false,
+      },
+      {
+        text: 'Checked checkbox',
+        value: true,
+        disable: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Disabled Checks',
+    data: [
+      {
+        text: 'Disabled checkbox',
+        value: false,
+        disable: true,
+      },
+      {
+        text: 'Disabled checked checkbox',
+        value: true,
+        disable: true,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Right Checks',
+    data: [
+      {
+        text: 'Reverse checkbox',
+        value: false,
+        disable: false,
+      },
+      {
+        text: 'Disabled reverse checkbox',
+        value: true,
+        disable: true,
+      },
+    ],
+  },
+];

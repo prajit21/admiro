@@ -129,7 +129,7 @@
       top: 10px;
       width: 16px;
       height: 16px;
-      svg{
+      svg {
         width: 16px;
         top: 10px;
         height: 16px;
@@ -205,7 +205,7 @@
 .updates-bottom-time {
   p {
     margin-bottom: 2px;
-    +p {
+    + p {
       color: var(--light-gray-color);
     }
   }
@@ -275,7 +275,6 @@
 }
 .header-faq {
   margin-bottom: 30px;
-  
 }
 .m-r-30 {
   margin-right: 30px;

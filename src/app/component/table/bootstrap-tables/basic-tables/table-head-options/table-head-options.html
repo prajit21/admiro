@@ -1,8 +1,10 @@
 <div class="card basic-with-border overflow-hidden">
   <div class="card-header card-no-border">
     <h3>Table head options</h3>
-    <p class="desc mb-0 mt-1"><span>Similar to tables,use the modifier
-        classes</span><code>.table-[color]-*thead-*</code><span>appear in any color.</span></p>
+    <p class="desc mb-0 mt-1">
+      <span>Similar to tables,use the modifier classes</span><code>.table-[color]-*thead-*</code
+      ><span>appear in any color.</span>
+    </p>
   </div>
   <div class="card-block row">
     <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -17,13 +19,13 @@
             </tr>
           </thead>
           <tbody>
-            @for( item of headoptionsData; track item){
-            <tr>
-              <th scope="row">{{item.id}}</th>
-              <td>{{item.name}}</td>
-              <td>{{item.lastname}}</td>
-              <td>{{item.username}}</td>
-            </tr>
+            @for (item of headoptionsData; track item) {
+              <tr>
+                <th scope="row">{{ item.id }}</th>
+                <td>{{ item.name }}</td>
+                <td>{{ item.lastname }}</td>
+                <td>{{ item.username }}</td>
+              </tr>
             }
           </tbody>
         </table>

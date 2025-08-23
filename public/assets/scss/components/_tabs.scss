@@ -1,99 +1,95 @@
-.nav-tabs{
-    .nav-link{
-      color: var(--gray-700);
+.nav-tabs {
+  .nav-link {
+    color: var(--gray-700);
+    font-weight: 700;
+    &.active {
       font-weight: 700;
-        &.active{
-            font-weight: 700;
-        }
     }
+  }
 }
 .flex-space {
-    display: flex;
-    gap: 16px;
-  
-    @include media-breakpoint-down(sm) {
-      justify-content: center;
-    }
-  
+  display: flex;
+  gap: 16px;
+
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+  }
 }
 .tab-image {
-    height: 100px;
+  height: 100px;
 }
 
-.nav{
-    i{
-        margin-right: 10px;   
-    }
+.nav {
+  i {
+    margin-right: 10px;
+  }
 }
 .nav-success {
-    .nav-link{
-        color: var(--success-color);
-        font-weight: 700;
-        &.active{
-            background-color: var(--success-color);
-            color: var(--white);
-        }
+  .nav-link {
+    color: var(--success-color);
+    font-weight: 700;
+    &.active {
+      background-color: var(--success-color);
+      color: var(--white);
     }
+  }
 }
-.nav-primary{
-    .nav-link{
-        color: var(--theme-default);
-        font-weight: 700;
-        &.active{
-            background-color: var(--theme-default);
-            color: var(--white);
-        }
+.nav-primary {
+  .nav-link {
+    color: var(--theme-default);
+    font-weight: 700;
+    &.active {
+      background-color: var(--theme-default);
+      color: var(--white);
     }
-}   
+  }
+}
 .blog-wrapper {
-    .blog-img {
-      width: 100px;
-      height: 100px;
-    }
+  .blog-img {
+    width: 100px;
+    height: 100px;
+  }
 }
 .designer-details {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  
-    @media (max-width:1400px) {
-      gap: calc(14px + (35 - 14) * ((100vw - 320px) / (1400 - 320)));
-    }
-  
-    .designer-profile {
-      display: inline-block;
-  
-      .designer-wrap {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-  
-  
-        .designer-img {
-          height: 50px;
-          border-radius: 100%;
-        }
-  
-        .designer-content {
-            h6 {
-                font-weight: 600;
-            }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 
-            p {
-                color: var(--light-text);
-            }
+  @media (max-width: 1400px) {
+    gap: calc(14px + (35 - 14) * ((100vw - 320px) / (1400 - 320)));
+  }
+
+  .designer-profile {
+    display: inline-block;
+
+    .designer-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .designer-img {
+        height: 50px;
+        border-radius: 100%;
+      }
+
+      .designer-content {
+        h6 {
+          font-weight: 600;
+        }
+
+        p {
+          color: var(--light-text);
         }
       }
     }
+  }
 }
 
-@each $nav-name, $nav-color in (primary, var(--theme-default)),
-  (secondary, var(--theme-secondary)), (success, var(--success-color)),
-  (danger, var(--danger-color)), (warning, var(--warning-color)),
-  (info, var(--info-color)), (light, var(--light-color)),(dark, var(--body-font-color))
+@each $nav-name, $nav-color in (primary, var(--theme-default)), (secondary, var(--theme-secondary)),
+  (success, var(--success-color)), (danger, var(--danger-color)), (warning, var(--warning-color)),
+  (info, var(--info-color)), (light, var(--light-color)), (dark, var(--body-font-color))
 {
-
   .nav-#{$nav-name},
   .nav-pills.nav-#{$nav-name} {
     .nav-link {
@@ -101,7 +97,7 @@
     }
 
     .nav-link.active,
-    .show>.nav-link {
+    .show > .nav-link {
       background-color: $nav-color;
       color: var(--white);
     }
@@ -110,12 +106,10 @@
 
 @each $m-nav-name, $nav-color in (primary, var(--theme-default)),
   (secondary, var(--theme-secondary)), (success, var(--success-color)),
-  (danger, var(--danger-color)), (warning, var(--warning-color)),
-  (info, var(--info-color)), (light, var(--light-color)),(dark, var(--body-font-color))
+  (danger, var(--danger-color)), (warning, var(--warning-color)), (info, var(--info-color)),
+  (light, var(--light-color)), (dark, var(--body-font-color))
 {
-
   .border-tab.nav-#{$m-nav-name} {
-
     .nav-link.active,
     .nav-item.show,
     .nav-link:focus,
@@ -145,18 +139,16 @@
   }
 
   .border-tab.nav-left.nav-#{$m-nav-name} {
-
     .nav-link.active,
-    .show>.nav-link {
+    .show > .nav-link {
       border-left-color: $nav-color;
       color: $nav-color;
     }
   }
 
   .border-tab.nav-right.nav-#{$m-nav-name} {
-
     .nav-link.active,
-    .show>.nav-link {
+    .show > .nav-link {
       border-right-color: $nav-color;
       color: $nav-color;
     }
@@ -164,56 +156,56 @@
 }
 
 .material-wrapper {
-    display: flex;
-    gap: 12px;
-  
-    @media (max-width:576px) {
-      flex-direction: column;
-      align-items: center;
-    }
+  display: flex;
+  gap: 12px;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-inbox {
-    .header-inbox {
+  .header-inbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 8px;
+
+    .header-left-inbox {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--light-gray);
-      padding-bottom: 8px;
-  
-      .header-left-inbox {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex-wrap: wrap;
-  
-        .inbox-img {
-          img {
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-          }
-        }
-      }
-  
-      .header-right-inbox {
-        display: flex;
-        gap: 5px;
-  
-        @include media-breakpoint-down(sm) {
-          display: none;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      .inbox-img {
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
         }
       }
     }
-  
-    .body-inbox {
-      .body-h-wrapper {
-        display: flex;
-        padding-bottom: 6px;
-        border-bottom: 1px solid var(--light-color);
-        align-items: center;
+
+    .header-right-inbox {
+      display: flex;
+      gap: 5px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
       }
     }
+  }
+
+  .body-inbox {
+    .body-h-wrapper {
+      display: flex;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--light-color);
+      align-items: center;
+    }
+  }
 }
 
 .border-tab.nav-tabs {
@@ -242,12 +234,11 @@
       &:hover {
         color: var(--theme-default);
       }
-
     }
   }
 }
-.user-content{
-  .icbo{
+.user-content {
+  .icbo {
     color: var(--theme-secondary);
   }
 }
@@ -256,7 +247,6 @@
     &.nav-secondary {
       &.nav-left {
         .nav-link {
-
           &:hover,
           &.active {
             background-color: unset;
@@ -285,8 +275,12 @@
       border-bottom: 1px solid;
       margin-top: 10px;
       opacity: 0;
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transition:
+        opacity 0.35s,
+        -webkit-transform 0.35s;
+      transition:
+        opacity 0.35s,
+        transform 0.35s;
       -webkit-transform: scale(0, 1);
       transform: scale(0, 1);
     }
@@ -301,16 +295,11 @@
   }
 }
 
-
-
-
 @each $tabs-name, $tab-color in (primary, var(--theme-default)),
   (secondary, var(--theme-secondary)), (success, var(--success-color)),
-  (danger, var(--danger-color)), (warning, var(--warning-color)),
-  (info, var(--info-color)), (light, var(--light-color)),(dark, var(--body-font-color))
-
+  (danger, var(--danger-color)), (warning, var(--warning-color)), (info, var(--info-color)),
+  (light, var(--light-color)), (dark, var(--body-font-color))
 {
-
   #bottom-tab {
     .nav-border {
       &.tab-#{$tabs-name} {
@@ -334,7 +323,6 @@
     &.nav-secondary {
       &.nav-left {
         .nav-link {
-
           &:hover,
           &.active {
             background-color: unset;
@@ -355,7 +343,7 @@
   }
 
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-left-color: var(--body-font-color);
     color: var(--body-font-color);
@@ -373,7 +361,7 @@
   }
 
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-right-color: var(--body-font-color);
     color: var(--body-font-color);

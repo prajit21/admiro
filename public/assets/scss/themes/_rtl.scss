@@ -1,4 +1,4 @@
-html[dir="rtl"] {
+html[dir='rtl'] {
   // common css
   .float-end {
     float: left !important;
@@ -317,13 +317,19 @@ html[dir="rtl"] {
       }
     }
   }
-  .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+      .invalid-tooltip
+    ):not(.invalid-feedback) {
     border-top-left-radius: inherit;
     border-top-right-radius: 5px;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: 5px;
   }
-  .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+      .invalid-tooltip
+    ):not(.invalid-feedback) {
     margin-left: unset !important;
     margin-right: calc(1px * -1) !important;
   }
@@ -342,7 +348,7 @@ html[dir="rtl"] {
   .email-wrap {
     .email-app-sidebar {
       .main-menu {
-        >li {
+        > li {
           text-align: right;
         }
       }
@@ -671,7 +677,7 @@ html[dir="rtl"] {
                   .product-size {
                     ul {
                       li {
-                        &:nth-child(n+2) {
+                        &:nth-child(n + 2) {
                           margin-left: unset;
                           margin-right: 15px;
                         }
@@ -905,7 +911,7 @@ html[dir="rtl"] {
     left: 11px;
     right: unset;
   }
-  pre[class*=language-] {
+  pre[class*='language-'] {
     text-align: right;
   }
   .alert {
@@ -951,7 +957,7 @@ html[dir="rtl"] {
     }
   }
   .btn-group {
-    >.btn {
+    > .btn {
       &:not(:last-child) {
         &:not(.dropdown-toggle) {
           border-top-left-radius: 0;
@@ -967,7 +973,7 @@ html[dir="rtl"] {
   .list-group-horizontal-lg,
   .list-group-horizontal-xl,
   .list-group-horizontal-xxl {
-    >.list-group-item {
+    > .list-group-item {
       + {
         .list-group-item {
           border-left-width: 1px;
@@ -1029,7 +1035,7 @@ html[dir="rtl"] {
   }
   .treejs {
     .treejs-node__halfchecked {
-      >.treejs-checkbox {
+      > .treejs-checkbox {
         &:after {
           right: 3px;
           left: unset;
@@ -1097,27 +1103,30 @@ html[dir="rtl"] {
     }
   }
   .img-cropper {
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+        .invalid-tooltip
+      ):not(.invalid-feedback) {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
@@ -1349,7 +1358,7 @@ html[dir="rtl"] {
       border-bottom-right-radius: 0 !important;
     }
   }
-  .choices[data-type*=select-one] {
+  .choices[data-type*='select-one'] {
     .choices__button {
       right: unset;
       left: 0;
@@ -1357,7 +1366,7 @@ html[dir="rtl"] {
       margin-left: 25px;
     }
   }
-  .choices[data-type*=select-one] {
+  .choices[data-type*='select-one'] {
     &::after {
       right: unset;
       left: 11.5px;
@@ -1391,13 +1400,20 @@ html[dir="rtl"] {
       }
     }
   }
-  .email-verify .card-wrapper .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .email-verify
+    .card-wrapper
+    .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+      .invalid-tooltip
+    ):not(.invalid-feedback) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: initial;
     border-bottom-left-radius: initial;
   }
-  .email-verify .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  .email-verify
+    .input-group:not(.has-validation)
+    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
   }
@@ -1451,8 +1467,8 @@ html[dir="rtl"] {
   }
   table.dataTable {
     thead {
-      >tr {
-        >th {
+      > tr {
+        > th {
           &:after {
             left: 0.5em !important;
             right: unset;
@@ -1516,8 +1532,8 @@ html[dir="rtl"] {
   }
   table.dataTable {
     thead {
-      >tr {
-        >th {
+      > tr {
+        > th {
           padding-left: 30px;
           padding-right: 12px;
         }
@@ -1529,7 +1545,7 @@ html[dir="rtl"] {
       margin-left: unset;
       margin-right: 15px;
       float: left;
-      input[type=search] {
+      input[type='search'] {
         margin-left: unset;
         margin-right: 10px;
       }
@@ -1794,22 +1810,10 @@ html[dir="rtl"] {
   }
   //general-widget
   .general-widget {
-    $b-name: primary,
-      secondary,
-      success,
-      danger,
-      warning,
-      info,
-      light,
-      dark;
-    $b-color: var(--theme-default),
-      var(--theme-secondary),
-      var(--success-color),
-      var(--danger-color),
-      var(--warning-color),
-      var(--info-color),
-      var(--light-color),
-      var(--body-font-color);
+    $b-name: primary, secondary, success, danger, warning, info, light, dark;
+    $b-color:
+      var(--theme-default), var(--theme-secondary), var(--success-color), var(--danger-color),
+      var(--warning-color), var(--info-color), var(--light-color), var(--body-font-color);
     @each $var in $b-name {
       $i: index($b-name, $var);
       .b-l-#{$var} {
@@ -1915,7 +1919,10 @@ html[dir="rtl"] {
         left: -12px;
       }
     }
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+        .invalid-tooltip
+      ):not(.invalid-feedback) {
       margin-right: 0 !important;
     }
   }
@@ -2086,7 +2093,10 @@ html[dir="rtl"] {
         }
       }
     }
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+        .invalid-tooltip
+      ):not(.invalid-feedback) {
       margin-right: 0 !important;
     }
     .timeline-card {
@@ -2109,22 +2119,10 @@ html[dir="rtl"] {
   }
   // dashboard-3
   .dashboard-3 {
-    $b-name: primary,
-      secondary,
-      success,
-      danger,
-      warning,
-      info,
-      light,
-      dark;
-    $b-color: var(--theme-default),
-      var(--theme-secondary),
-      var(--success-color),
-      var(--danger-color),
-      var(--warning-color),
-      var(--info-color),
-      var(--light-color),
-      var(--body-font-color);
+    $b-name: primary, secondary, success, danger, warning, info, light, dark;
+    $b-color:
+      var(--theme-default), var(--theme-secondary), var(--success-color), var(--danger-color),
+      var(--warning-color), var(--info-color), var(--light-color), var(--body-font-color);
     @each $var in $b-name {
       $i: index($b-name, $var);
       .b-l-#{$var} {
@@ -2195,10 +2193,10 @@ html[dir="rtl"] {
     .pie-card {
       .revenue-category {
         .donut-legend {
-          >span {
+          > span {
             margin-right: unset;
             margin-left: 8px;
-            >i {
+            > i {
               margin-right: unset;
               margin-left: 7px;
             }
@@ -2221,7 +2219,7 @@ html[dir="rtl"] {
   .file-manager {
     .folder {
       li {
-        &:nth-child(n+2) {
+        &:nth-child(n + 2) {
           margin-left: unset;
           margin-right: 12px;
         }
@@ -2261,7 +2259,7 @@ html[dir="rtl"] {
   }
   .treejs {
     .treejs-node__checked {
-      >.treejs-checkbox {
+      > .treejs-checkbox {
         &:after {
           left: unset;
           right: 6px;
@@ -2300,8 +2298,8 @@ html[dir="rtl"] {
     }
   }
   header {
-    ul[class*=header-] {
-      >li {
+    ul[class*='header-'] {
+      > li {
         &:last-child {
           .cloud-mode {
             padding: 8px 10px 8px 14px;
@@ -2500,7 +2498,7 @@ html[dir="rtl"] {
                   .product-size {
                     ul {
                       li {
-                        &:nth-child(n+2) {
+                        &:nth-child(n + 2) {
                           margin-left: unset;
                           margin-right: 15px;
                         }
@@ -2731,7 +2729,7 @@ html[dir="rtl"] {
     left: 11px;
     right: unset;
   }
-  pre[class*=language-] {
+  pre[class*='language-'] {
     text-align: right;
   }
   .alert {
@@ -2793,7 +2791,7 @@ html[dir="rtl"] {
     }
   }
   .btn-group {
-    >.btn {
+    > .btn {
       &:not(:last-child) {
         &:not(.dropdown-toggle) {
           border-top-left-radius: 0;
@@ -2809,7 +2807,7 @@ html[dir="rtl"] {
   .list-group-horizontal-lg,
   .list-group-horizontal-xl,
   .list-group-horizontal-xxl {
-    >.list-group-item {
+    > .list-group-item {
       + {
         .list-group-item {
           border-left-width: 1px;
@@ -2878,7 +2876,7 @@ html[dir="rtl"] {
   }
   .treejs {
     .treejs-node__halfchecked {
-      >.treejs-checkbox {
+      > .treejs-checkbox {
         &:after {
           right: 3px;
           left: unset;
@@ -2946,27 +2944,30 @@ html[dir="rtl"] {
     }
   }
   .img-cropper {
-    .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+        .invalid-tooltip
+      ):not(.invalid-feedback) {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
@@ -3198,7 +3199,7 @@ html[dir="rtl"] {
       border-bottom-right-radius: 0 !important;
     }
   }
-  .choices[data-type*=select-one] {
+  .choices[data-type*='select-one'] {
     .choices__button {
       right: unset;
       left: 0;
@@ -3206,7 +3207,7 @@ html[dir="rtl"] {
       margin-left: 25px;
     }
   }
-  .choices[data-type*=select-one] {
+  .choices[data-type*='select-one'] {
     &::after {
       right: unset;
       left: 11.5px;
@@ -3240,13 +3241,20 @@ html[dir="rtl"] {
       }
     }
   }
-  .email-verify .card-wrapper .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .email-verify
+    .card-wrapper
+    .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+      .invalid-tooltip
+    ):not(.invalid-feedback) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: initial;
     border-bottom-left-radius: initial;
   }
-  .email-verify .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  .email-verify
+    .input-group:not(.has-validation)
+    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
   }
@@ -3300,8 +3308,8 @@ html[dir="rtl"] {
   }
   table.dataTable {
     thead {
-      >tr {
-        >th {
+      > tr {
+        > th {
           &:after {
             left: 0.5em !important;
             right: unset;
@@ -3365,8 +3373,8 @@ html[dir="rtl"] {
   }
   table.dataTable {
     thead {
-      >tr {
-        >th {
+      > tr {
+        > th {
           padding-left: 30px;
           padding-right: 12px;
         }
@@ -3632,22 +3640,22 @@ html[dir="rtl"] {
     direction: ltr;
   }
 
-    header {
-      .cart-dropdown {
-        .close-circle {
-          right: unset;
-          left: 0;
-        }
+  header {
+    .cart-dropdown {
+      .close-circle {
+        right: unset;
+        left: 0;
       }
     }
-    .ProfileCard-avatar{
-      left: unset;
-      right: 10px;
-    }
-    .ProfileCard-details {
-      padding-left: unset;
-      padding-right: 35px;
-      float: right;
+  }
+  .ProfileCard-avatar {
+    left: unset;
+    right: 10px;
+  }
+  .ProfileCard-details {
+    padding-left: unset;
+    padding-right: 35px;
+    float: right;
   }
   .user-profile .border-right {
     border-right: unset !important;
@@ -3674,35 +3682,41 @@ html[dir="rtl"] {
       margin-left: unset;
       margin-right: 40px;
     }
-    
   }
-  .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
-    border-top-right-radius: .25rem !important;
-    border-bottom-right-radius: .25rem !important;
+  .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+      .invalid-tooltip
+    ):not(.invalid-feedback) {
     margin-left: unset;
     margin-right: -1px;
-    border-top-left-radius: .25rem !important;
-    border-bottom-left-radius: .25rem !important;
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
-  .bootstrap-touchspin{
-    .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+  .bootstrap-touchspin {
+    .input-group:not(.has-validation)
+      > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
     }
-    .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    .input-group
+      > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(
+        .invalid-tooltip
+      ):not(.invalid-feedback) {
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
     }
   }
   .ui-components {
     .btn-group {
-      >.btn {
+      > .btn {
         &:not(:first-child) {
           border-top-left-radius: 0.25rem;
           border-bottom-left-radius: 0.25rem;
@@ -3711,20 +3725,20 @@ html[dir="rtl"] {
         }
       }
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
   }
   .ui-components {
     .btn-group {
-      >.btn {
+      > .btn {
         &:not(:first-child) {
           border-top-left-radius: 0.25rem;
           border-bottom-left-radius: 0.25rem;
@@ -3733,14 +3747,14 @@ html[dir="rtl"] {
         }
       }
     }
-    .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group> :not(:last-child)>.btn {
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+    .btn-group > :not(:last-child) > .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
     }
-    .btn-group>.btn:nth-child(2) {
+    .btn-group > .btn:nth-child(2) {
       border-radius: 0 !important;
     }
   }
@@ -3796,7 +3810,7 @@ html[dir="rtl"] {
         margin-right: 135px;
         margin-left: unset;
         padding-right: 0;
-        @media (max-width: 1199.98px){
+        @media (max-width: 1199.98px) {
           margin-right: 0;
         }
       }

@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, SimpleChanges, input } from '@angular/core';
-import * as data from '../../../shared/data/contacts/all-contact';
+
 import { ProfileData } from './profile-data/profile-data';
+import * as data from '../../../shared/data/contacts/all-contact';
 
 @Component({
-    selector: 'app-contact-details',
-    imports: [CommonModule, ProfileData],
-    templateUrl: './contact-details.html',
-    styleUrl: './contact-details.scss'
+  selector: 'app-contact-details',
+  imports: [CommonModule, ProfileData],
+  templateUrl: './contact-details.html',
+  styleUrl: './contact-details.scss',
 })
 export class ContactDetails {
-
   readonly selectedId = input<number>();
   readonly statusData = input<boolean>();
 
@@ -22,27 +22,27 @@ export class ContactDetails {
   public open: boolean = false;
 
   ngOnInit() {
-    this.Personal.map((data) => {
+    this.Personal.map(data => {
       if (data.status) {
         this.getTaskData = data;
       }
-    })
+    });
   }
 
   ngOnChanges(changes: SimpleChanges) {
     let oragnization_Id = changes['selectedId']?.currentValue;
-    this.Organization.map((data) => {
+    this.Organization.map(data => {
       if (data.title_id === oragnization_Id) {
         this.getTaskData = data;
       }
-    })
-    
+    });
+
     let persnol_Id = changes['selectedId']?.currentValue;
-    this.Personal.map((data) => {
+    this.Personal.map(data => {
       if (data.title_id === persnol_Id) {
         this.getTaskData = data;
       }
-    })
+    });
   }
 
   changeData(list: data.lastDataList) {
@@ -50,7 +50,7 @@ export class ContactDetails {
     if (!list.status) {
       this.getTaskData.data.forEach((a: data.lastDataList) => {
         a.status = false;
-      })
+      });
     }
     list.status = !list.status;
   }
@@ -58,5 +58,4 @@ export class ContactDetails {
   openHistory() {
     this.open = !this.open;
   }
-
 }

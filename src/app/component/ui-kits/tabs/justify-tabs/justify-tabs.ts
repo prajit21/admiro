@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { webDesigner, UxDesigner, IOTdeveloper } from '../../../../shared/data/ui-kits/tab';
 
 @Component({
-    selector: 'app-justify-tabs',
-    imports: [CommonModule, NgbModule],
-    templateUrl: './justify-tabs.html',
-    styleUrl: './justify-tabs.scss'
+  selector: 'app-justify-tabs',
+  imports: [CommonModule, NgbModule],
+  templateUrl: './justify-tabs.html',
+  styleUrl: './justify-tabs.scss',
 })
 export class JustifyTabs {
-
   public active = 2;
   public webdesignerData = webDesigner;
   public UXdesignerData = UxDesigner;
   public iotDeveloperData = IOTdeveloper;
-
 }

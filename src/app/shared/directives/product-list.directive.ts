@@ -1,9 +1,10 @@
 import { Directive, Input, input, output } from '@angular/core';
+
 import { productListInterface } from '../data/ecommerce/product-list';
 
 export type SortColumn = keyof productListInterface | '';
 export type SortDirection = 'asc' | 'desc' | '';
-const rotate: { [key: string]: SortDirection } = { 'asc': 'desc', 'desc': '', '': 'asc' };
+const rotate: { [key: string]: SortDirection } = { asc: 'desc', desc: '', '': 'asc' };
 
 export interface SortEvent {
   column: SortColumn;
@@ -14,11 +15,10 @@ export interface SortEvent {
   host: {
     '[class.asc]': 'direction === "asc"',
     '[class.desc]': 'direction === "desc"',
-    '(click)': 'rotate()'
-  }
+    '(click)': 'rotate()',
+  },
 })
 export class ProductListDirective {
-
   readonly sortable = input<SortColumn>('');
   @Input() direction: SortDirection = '';
   readonly sort = output<SortEvent>();
@@ -28,4 +28,3 @@ export class ProductListDirective {
     this.sort.emit({ column: this.sortable(), direction: this.direction });
   }
 }
-

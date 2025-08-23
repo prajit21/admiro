@@ -1,11 +1,8 @@
-@each $page-name,
-$page-color in (primary, var(--theme-default)),
-(secondary, var(--theme-secondary)),
-(warning, var(--warning-color)),
-(success, var(--success-color)),
-(danger, var(--danger-color)),
-(info, var(--info-color)),
-(light, var(--light-color)) {
+@each $page-name, $page-color in (primary, var(--theme-default)),
+  (secondary, var(--theme-secondary)), (warning, var(--warning-color)),
+  (success, var(--success-color)), (danger, var(--danger-color)), (info, var(--info-color)),
+  (light, var(--light-color))
+{
   .pagination-#{$page-name} {
     .page-item {
       .page-link {

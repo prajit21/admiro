@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { BorderBottomColor } from './border-bottom-color/border-bottom-color';
 import { BreckpointSpecific } from './breckpoint-specific/breckpoint-specific';
 import { Caption } from './caption/caption';
@@ -14,13 +15,23 @@ import { StripedRowInverseTable } from './striped-row-inverse-table/striped-row-
 import { TableHeadOptions } from './table-head-options/table-head-options';
 
 @Component({
-    selector: 'app-basic-tables',
-    imports: [CommonModule, BorderBottomColor, BreckpointSpecific, Caption, DashedBorder,
-        HoverStrippedTable, HoverableRowsHorizontalBorder, InverseTable, InverseTablePrimaryBackground,
-        ResponsiveTablesLightBackground, SizingTables, StripedRowInverseTable, TableHeadOptions],
-    templateUrl: './basic-tables.html',
-    styleUrl: './basic-tables.scss'
+  selector: 'app-basic-tables',
+  imports: [
+    CommonModule,
+    BorderBottomColor,
+    BreckpointSpecific,
+    Caption,
+    DashedBorder,
+    HoverStrippedTable,
+    HoverableRowsHorizontalBorder,
+    InverseTable,
+    InverseTablePrimaryBackground,
+    ResponsiveTablesLightBackground,
+    SizingTables,
+    StripedRowInverseTable,
+    TableHeadOptions,
+  ],
+  templateUrl: './basic-tables.html',
+  styleUrl: './basic-tables.scss',
 })
-export class BasicTables {
-
-}
+export class BasicTables {}

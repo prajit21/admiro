@@ -1,17 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, TemplateRef, viewChild } from '@angular/core';
-import { NgbActiveModal, NgbModal, ModalDismissReasons, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import * as data from "../../../../shared/data/contacts/all-contact";
+
+import {
+  NgbActiveModal,
+  NgbModal,
+  ModalDismissReasons,
+  NgbModule,
+} from '@ng-bootstrap/ng-bootstrap';
+
+import * as data from '../../../../shared/data/contacts/all-contact';
 
 @Component({
-    selector: 'app-print',
-    imports: [CommonModule, NgbModule],
-    providers: [NgbActiveModal],
-    templateUrl: './print.html',
-    styleUrl: './print.scss'
+  selector: 'app-print',
+  imports: [CommonModule, NgbModule],
+  providers: [NgbActiveModal],
+  templateUrl: './print.html',
+  styleUrl: './print.scss',
 })
 export class Print {
-
   public activeModal = inject(NgbActiveModal);
   private modalService = inject(NgbModal);
 
@@ -20,23 +26,25 @@ export class Print {
 
   public printData: data.lastDataList;
 
-  readonly printModal = viewChild<TemplateRef<data.lastDataList>>("printModal");
-
-  ngOnInit() {
-  }
+  readonly printModal = viewChild<TemplateRef<data.lastDataList>>('printModal');
 
   async openModal(data: data.lastDataList) {
     this.printData = data;
     this.modalOpen = true;
-    this.modalService.open(this.printModal(), {
-      ariaLabelledBy: 'Confirmation-Modal',
-      centered: true,
-      windowClass: 'modal-md modal-dialog-centered'
-    }).result.then((result) => {
-      `Result ${result}`
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
+    this.modalService
+      .open(this.printModal(), {
+        ariaLabelledBy: 'Confirmation-Modal',
+        centered: true,
+        windowClass: 'modal-md modal-dialog-centered',
+      })
+      .result.then(
+        result => {
+          `Result ${result}`;
+        },
+        reason => {
+          this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+        },
+      );
   }
 
   private getDismissReason(reason: ModalDismissReasons): string {
@@ -47,6 +55,5 @@ export class Print {
     } else {
       return `with: ${reason}`;
     }
-
-}
+  }
 }

@@ -10,7 +10,7 @@ export const dashboard: Routes = [
         data: {
           title: 'Default Dashboard',
           breadcrumb: 'Default',
-          des:'Welcome back! Let’s start from where you left'
+          des: 'Welcome back! Let’s start from where you left',
         },
       },
       {
@@ -19,8 +19,8 @@ export const dashboard: Routes = [
         data: {
           title: 'Ecommerce Dashboard',
           breadcrumb: 'Ecommerce Dashboard',
-          des:'"Welcome back! Continue your journey."'
-        }
+          des: '"Welcome back! Continue your journey."',
+        },
       },
       {
         path: 'education',
@@ -28,9 +28,9 @@ export const dashboard: Routes = [
         data: {
           title: 'Education Dashboard',
           breadcrumb: 'Education Dashboard',
-          des:'"Welcome back to your educational adventure!"'
+          des: '"Welcome back to your educational adventure!"',
         },
       },
     ],
-  }
+  },
 ];

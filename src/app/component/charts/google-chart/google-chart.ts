@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { AreaChart1 } from './area-chart-1/area-chart-1';
 import { AreaChart2 } from './area-chart-2/area-chart-2';
 import { BarChart2 } from './bar-chart-2/bar-chart-2';
@@ -13,13 +14,22 @@ import { PieChart3 } from './pie-chart-3/pie-chart-3';
 import { PieChart4 } from './pie-chart-4/pie-chart-4';
 
 @Component({
-    selector: 'app-google-chart',
-    imports: [CommonModule, AreaChart1, AreaChart2, BarChart2,
-        ColumnChart1, ColumnChart2, ComboChart, GoogleLineChart, PieChart1,
-        PieChart2, PieChart3, PieChart4],
-    templateUrl: './google-chart.html',
-    styleUrl: './google-chart.scss'
+  selector: 'app-google-chart',
+  imports: [
+    CommonModule,
+    AreaChart1,
+    AreaChart2,
+    BarChart2,
+    ColumnChart1,
+    ColumnChart2,
+    ComboChart,
+    GoogleLineChart,
+    PieChart1,
+    PieChart2,
+    PieChart3,
+    PieChart4,
+  ],
+  templateUrl: './google-chart.html',
+  styleUrl: './google-chart.scss',
 })
-export class GoogleChart {
-
-}
+export class GoogleChart {}

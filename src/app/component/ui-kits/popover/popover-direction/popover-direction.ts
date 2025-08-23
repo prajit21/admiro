@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-popover-direction',
-    imports: [CommonModule, NgbModule],
-    templateUrl: './popover-direction.html',
-    styleUrl: './popover-direction.scss'
+  selector: 'app-popover-direction',
+  imports: [CommonModule, NgbModule],
+  templateUrl: './popover-direction.html',
+  styleUrl: './popover-direction.scss',
 })
-export class PopoverDirection {
-
-}
+export class PopoverDirection {}

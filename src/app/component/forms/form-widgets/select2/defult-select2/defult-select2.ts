@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 @Component({
-    selector: 'app-defult-select2',
-    imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, NgbModule],
-    templateUrl: './defult-select2.html',
-    styleUrl: './defult-select2.scss'
+  selector: 'app-defult-select2',
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSelectModule, NgbModule],
+  templateUrl: './defult-select2.html',
+  styleUrl: './defult-select2.scss',
 })
 export class DefultSelect2 {
-
   selectedCity: string;
   selectedCityIds: string[] = [];
   selectedCityIds3: string[] = [];
@@ -29,7 +29,7 @@ export class DefultSelect2 {
     { id: 2, name: 'Kaunas' },
     { id: 3, name: 'Pavilnys', disabled: true },
     { id: 4, name: 'Pabradė' },
-    { id: 5, name: 'Klaipėda' }
+    { id: 5, name: 'Klaipėda' },
   ];
 
   Placeholder = [
@@ -50,5 +50,4 @@ export class DefultSelect2 {
   Enable(val: boolean): void {
     this.store = val;
   }
-
 }

@@ -1,21 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component, TemplateRef } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-extra-large-modal',
-    imports: [CommonModule],
-    templateUrl: './extra-large-modal.html',
-    styleUrl: './extra-large-modal.scss'
+  selector: 'app-extra-large-modal',
+  imports: [CommonModule],
+  templateUrl: './extra-large-modal.html',
+  styleUrl: './extra-large-modal.scss',
 })
 export class ExtraLargeModal {
-
   private modalService = inject(NgbModal);
 
   ExtraLargemodal(ExtralargeContent: TemplateRef<NgbModal>) {
-    const modalRef = this.modalService.open(ExtralargeContent, { size: 'xl' });
+    this.modalService.open(ExtralargeContent, { size: 'xl' });
   }
-
-
 }

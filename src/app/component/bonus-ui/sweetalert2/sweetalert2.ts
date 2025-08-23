@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { AdvanceSweetalert } from './advance-sweetalert/advance-sweetalert';
 import { BasicSweetalert } from './basic-sweetalert/basic-sweetalert';
 import { DirectionSweetalert } from './direction-sweetalert/direction-sweetalert';
@@ -11,13 +12,20 @@ import { RtlSupport } from './rtl-support/rtl-support';
 import { UniqueSweetalert } from './unique-sweetalert/unique-sweetalert';
 
 @Component({
-    selector: 'app-sweetalert2',
-    imports: [CommonModule, AdvanceSweetalert, BasicSweetalert, DirectionSweetalert,
-        GithubAvatar, InputSweetalert, MessageTimer, ModalWithImage, RtlSupport,
-        UniqueSweetalert],
-    templateUrl: './sweetalert2.html',
-    styleUrl: './sweetalert2.scss'
+  selector: 'app-sweetalert2',
+  imports: [
+    CommonModule,
+    AdvanceSweetalert,
+    BasicSweetalert,
+    DirectionSweetalert,
+    GithubAvatar,
+    InputSweetalert,
+    MessageTimer,
+    ModalWithImage,
+    RtlSupport,
+    UniqueSweetalert,
+  ],
+  templateUrl: './sweetalert2.html',
+  styleUrl: './sweetalert2.scss',
 })
-export class Sweetalert2 {
-
-}
+export class Sweetalert2 {}

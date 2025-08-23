@@ -3,11 +3,9 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-maintenance',
-    imports: [CommonModule, RouterModule],
-    templateUrl: './maintenance.html',
-    styleUrl: './maintenance.scss'
+  selector: 'app-maintenance',
+  imports: [CommonModule, RouterModule],
+  templateUrl: './maintenance.html',
+  styleUrl: './maintenance.scss',
 })
-export class Maintenance {
-
-}
+export class Maintenance {}

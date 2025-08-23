@@ -1,16 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
+
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-edit-bookmark',
-    imports: [CommonModule],
-    templateUrl: './edit-bookmark.html',
-    styleUrl: './edit-bookmark.scss'
+  selector: 'app-edit-bookmark',
+  imports: [CommonModule],
+  templateUrl: './edit-bookmark.html',
+  styleUrl: './edit-bookmark.scss',
 })
 export class EditBookmark {
-
   public activeModal = inject(NgbActiveModal);
-
 }

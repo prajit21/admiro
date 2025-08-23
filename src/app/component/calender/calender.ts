@@ -1,16 +1,32 @@
 import { CommonModule } from '@angular/common';
+import { Component, TemplateRef, viewChild, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NgbModule , NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
-import { CalendarA11y, CalendarDateFormatter, CalendarEventTitleFormatter, CalendarModule, CalendarUtils ,CalendarEvent,
-   CalendarEventAction, CalendarEventTimesChangedEvent, CalendarView, } from 'angular-calendar';
+import { NgbModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {
+  CalendarA11y,
+  CalendarDateFormatter,
+  CalendarEventTitleFormatter,
+  CalendarModule,
+  CalendarUtils,
+  CalendarEvent,
+  CalendarEventAction,
+  CalendarEventTimesChangedEvent,
+  CalendarView,
+} from 'angular-calendar';
 import { FlatpickrDefaults, FlatpickrModule } from 'angularx-flatpickr';
-import { Component, TemplateRef, viewChild } from '@angular/core';
-import { inject } from '@angular/core';
-import { startOfDay, endOfDay, subDays, addDays, endOfMonth, isSameDay, isSameMonth, addHours, } from 'date-fns';
-
-import { Subject } from 'rxjs';
 import { EventColor } from 'calendar-utils';
+import {
+  startOfDay,
+  endOfDay,
+  subDays,
+  addDays,
+  endOfMonth,
+  isSameDay,
+  isSameMonth,
+  addHours,
+} from 'date-fns';
+import { Subject } from 'rxjs';
 
 const colors: Record<string, EventColor> = {
   red: {
@@ -28,14 +44,19 @@ const colors: Record<string, EventColor> = {
 };
 
 @Component({
-    selector: 'app-calender',
-    imports: [CommonModule, NgbModule, FormsModule, CalendarModule, FlatpickrModule],
-    providers: [CalendarDateFormatter, CalendarUtils, FlatpickrDefaults, CalendarA11y, CalendarEventTitleFormatter],
-    templateUrl: './calender.html',
-    styleUrl: './calender.scss'
+  selector: 'app-calender',
+  imports: [CommonModule, NgbModule, FormsModule, CalendarModule, FlatpickrModule],
+  providers: [
+    CalendarDateFormatter,
+    CalendarUtils,
+    FlatpickrDefaults,
+    CalendarA11y,
+    CalendarEventTitleFormatter,
+  ],
+  templateUrl: './calender.html',
+  styleUrl: './calender.scss',
 })
 export class Calender {
-
   public readonly modalContent = viewChild.required<TemplateRef<Component>>('modalContent');
   public view: CalendarView = CalendarView.Month;
   public CalendarView = CalendarView;
@@ -58,7 +79,7 @@ export class Calender {
       label: '<i class="fas fa-fw fa-trash-alt"></i>',
       a11yLabel: 'Delete',
       onClick: ({ event }: { event: CalendarEvent }): void => {
-        this.events = this.events.filter((iEvent) => iEvent !== event);
+        this.events = this.events.filter(iEvent => iEvent !== event);
         this.handleEvent('Deleted', event);
       },
     },
@@ -73,7 +94,7 @@ export class Calender {
       title: 'A 3 day event',
       color: {
         primary: '#ad2121',
-        secondary: '#FAE3E3'
+        secondary: '#FAE3E3',
       },
       actions: this.actions,
       allDay: true,
@@ -111,7 +132,7 @@ export class Calender {
   ];
 
   activeDayIsOpen: boolean = true;
-  color: string
+  color: string;
   private modal = inject(NgbModal);
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
@@ -128,12 +149,8 @@ export class Calender {
     }
   }
 
-  eventTimesChanged({
-    event,
-    newStart,
-    newEnd,
-  }: CalendarEventTimesChangedEvent): void {
-    this.events = this.events.map((iEvent) => {
+  eventTimesChanged({ event, newStart, newEnd }: CalendarEventTimesChangedEvent): void {
+    this.events = this.events.map(iEvent => {
       if (iEvent === event) {
         return {
           ...event,
@@ -169,7 +186,7 @@ export class Calender {
   }
 
   deleteEvent(eventToDelete: CalendarEvent) {
-    this.events = this.events.filter((event) => event !== eventToDelete);
+    this.events = this.events.filter(event => event !== eventToDelete);
   }
 
   setView(view: CalendarView) {
@@ -179,5 +196,4 @@ export class Calender {
   closeOpenMonthViewDay() {
     this.activeDayIsOpen = false;
   }
-
 }

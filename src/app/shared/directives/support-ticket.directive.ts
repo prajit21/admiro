@@ -1,9 +1,10 @@
 import { Directive, Input, input, output } from '@angular/core';
+
 import { supportDB } from '../data/support-ticket/support-ticket';
 
 export type SortColumn = keyof supportDB | '';
 export type SortDirection = 'asc' | 'desc' | '';
-const rotate: { [key: string]: SortDirection } = { 'asc': 'desc', 'desc': '', '': 'asc' };
+const rotate: { [key: string]: SortDirection } = { asc: 'desc', desc: '', '': 'asc' };
 
 export interface SortEvent {
   column: SortColumn;
@@ -14,11 +15,10 @@ export interface SortEvent {
   host: {
     '[class.asc]': 'direction === "asc"',
     '[class.desc]': 'direction === "desc"',
-    '(click)': 'rotate()'
-  }
+    '(click)': 'rotate()',
+  },
 })
-export class NgbdSortableHeader2 {
-
+export class NgbdSortableHeader2Directive {
   readonly sortable = input<SortColumn>('');
   @Input() direction: SortDirection = '';
   readonly sort = output<SortEvent>();

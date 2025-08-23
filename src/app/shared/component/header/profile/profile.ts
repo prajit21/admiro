@@ -1,22 +1,21 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
-    selector: 'app-profile',
-    imports: [CommonModule, RouterModule, ClickOutsideDirective],
-    templateUrl: './profile.html',
-    styleUrl: './profile.scss'
+  selector: 'app-profile',
+  imports: [CommonModule, RouterModule, ClickOutsideDirective],
+  templateUrl: './profile.html',
+  styleUrl: './profile.scss',
 })
 export class Profile {
-
   public profile: boolean = false;
   private router = inject(Router);
 
   open() {
-    this.profile = !this.profile
+    this.profile = !this.profile;
   }
 
   clickOutside(): void {
@@ -25,8 +24,6 @@ export class Profile {
 
   logOut() {
     localStorage.clear();
-    this.router.navigate(['/auth/login'])
+    this.router.navigate(['/auth/login']);
   }
-
-
 }

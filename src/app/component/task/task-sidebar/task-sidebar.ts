@@ -1,23 +1,22 @@
-import { Component ,Output, EventEmitter } from '@angular/core';
-import { inject } from '@angular/core';
-import * as Data from '../../../shared/data/tasks/task-list';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { AddtaskTag } from '../task-modal/addtask-tag/addtask-tag';
-import { NewTask } from '../task-modal/new-task/new-task';
 import { CommonModule } from '@angular/common';
+import { Component, inject, Output } from '@angular/core';
+
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { Feathericon } from '../../../shared/component/feathericon/feathericon';
+import * as Data from '../../../shared/data/tasks/task-list';
 import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
 import { AllTask } from '../all-task/all-task';
-import { Feathericon } from '../../../shared/component/feathericon/feathericon';
+import { AddtaskTag } from '../task-modal/addtask-tag/addtask-tag';
+import { NewTask } from '../task-modal/new-task/new-task';
 
 @Component({
-    selector: 'app-task-sidebar',
-    imports: [CommonModule, ClickOutsideDirective, AllTask, Feathericon],
-    templateUrl: './task-sidebar.html',
-    styleUrl: './task-sidebar.scss'
+  selector: 'app-task-sidebar',
+  imports: [CommonModule, ClickOutsideDirective, AllTask, Feathericon],
+  templateUrl: './task-sidebar.html',
+  styleUrl: './task-sidebar.scss',
 })
 export class TaskSidebar {
-
-
   @Output() selectedheading_id: number;
   @Output() selectedTagId: number;
 
@@ -25,37 +24,36 @@ export class TaskSidebar {
   public taskTagSidemenu = Data.TagData;
   public open: boolean = false;
 
-
   private modalService = inject(NgbModal);
-  
+
   getData(title_id: number) {
-    const getHeadingData = this.taskSidemenu.filter((data) => {
-      return data.title_id === title_id
-    })
-    this.selectedheading_id = getHeadingData[0].title_id
+    const getHeadingData = this.taskSidemenu.filter(data => {
+      return data.title_id === title_id;
+    });
+    this.selectedheading_id = getHeadingData[0].title_id;
   }
 
   getTagData(title_id: number) {
-    const getTagData = this.taskTagSidemenu.filter((data) => {
-      return data.title_id === title_id
-    })
+    const getTagData = this.taskTagSidemenu.filter(data => {
+      return data.title_id === title_id;
+    });
 
-    this.selectedTagId = getTagData[0].title_id
+    this.selectedTagId = getTagData[0].title_id;
   }
 
   openMenu() {
-    this.open = !this.open
+    this.open = !this.open;
   }
 
   openAddTask() {
-    this.modalService.open(NewTask, { size: 'lg' })
+    this.modalService.open(NewTask, { size: 'lg' });
   }
 
   openAddTag() {
-    this.modalService.open(AddtaskTag, { size: 'lg' })
+    this.modalService.open(AddtaskTag, { size: 'lg' });
   }
-  
-  clickOutside():void { 
+
+  clickOutside(): void {
     this.open = false;
   }
 }

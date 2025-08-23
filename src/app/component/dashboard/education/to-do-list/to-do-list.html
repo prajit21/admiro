@@ -1,36 +1,43 @@
 <div class="card">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>To-do list</h3>
-            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
-                <button class="btn" id="userdropdown1" type="button" (click)="open()">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="isopen">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
-            </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>To-do list</h3>
+      <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
+        <button class="btn" id="userdropdown1" type="button" (click)="open()">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="isopen">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
         </div>
+      </div>
     </div>
-    <div class="card-body todo-list filled-checkbox">
-        <ul>
-            @for( list of TodoList;track list){
-            <li class="d-flex line-{{ list.class }}">
-                <div class="flex-shrink-0">
-                    <div class="form-check checkbox checkbox-solid-primary">
-                        <input class="form-check-input" id="{{ list.for }}"  [(ngModel)]="list.value" type="checkbox" />
-                        <label class="form-check-label" for="{{ list.for }}"> </label>
-                    </div>
-                </div>
-                <div class="flex-grow-1"><a [routerLink]="['/task']">
-                        <h5 class="f-w-500">{{list.list }}</h5>
-                    </a>
-                    <h6>{{ list.status }}</h6>
-                </div><span>{{ list.hours }} hours</span>
-            </li>
-            }
-        </ul>
-    </div>
+  </div>
+  <div class="card-body todo-list filled-checkbox">
+    <ul>
+      @for (list of TodoList; track list) {
+        <li class="d-flex line-{{ list.class }}">
+          <div class="flex-shrink-0">
+            <div class="form-check checkbox checkbox-solid-primary">
+              <input
+                class="form-check-input"
+                id="{{ list.for }}"
+                [(ngModel)]="list.value"
+                type="checkbox"
+              />
+              <label class="form-check-label" for="{{ list.for }}"> </label>
+            </div>
+          </div>
+          <div class="flex-grow-1">
+            <a [routerLink]="['/task']">
+              <h5 class="f-w-500">{{ list.list }}</h5>
+            </a>
+            <h6>{{ list.status }}</h6>
+          </div>
+          <span>{{ list.hours }} hours</span>
+        </li>
+      }
+    </ul>
+  </div>
 </div>

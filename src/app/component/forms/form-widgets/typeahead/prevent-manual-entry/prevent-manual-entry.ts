@@ -1,11 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, OperatorFunction } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map, filter } from 'rxjs/operators';
 
-type State = { id: number; name: string };
+interface State {
+  id: number;
+  name: string;
+}
 
 const states: State[] = [
   { id: 0, name: 'Alabama' },
@@ -69,26 +73,24 @@ const states: State[] = [
   { id: 58, name: 'Wyoming' },
 ];
 
-
 @Component({
-    selector: 'app-prevent-manual-entry',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './prevent-manual-entry.html',
-    styleUrl: './prevent-manual-entry.scss'
+  selector: 'app-prevent-manual-entry',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './prevent-manual-entry.html',
+  styleUrl: './prevent-manual-entry.scss',
 })
 export class PreventManualEntry {
-
   public model: State;
 
   formatter = (state: State) => state.name;
 
-  search: OperatorFunction<string, readonly { id: number; 'name': string }[]> = (text$: Observable<string>) =>
+  search: OperatorFunction<string, readonly { id: number; name: string }[]> = (
+    text$: Observable<string>,
+  ) =>
     text$.pipe(
       debounceTime(200),
       distinctUntilChanged(),
-      filter((term) => term.length >= 2),
-      map((term) => states.filter((state) => new RegExp(term, 'mi').test(state.name)).slice(0, 10)),
+      filter(term => term.length >= 2),
+      map(term => states.filter(state => new RegExp(term, 'mi').test(state.name)).slice(0, 10)),
     );
-
-
 }

@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
-    selector: 'app-upload-file',
-    imports: [CommonModule, DropzoneModule],
-    templateUrl: './upload-file.html',
-    styleUrl: './upload-file.scss'
+  selector: 'app-upload-file',
+  imports: [CommonModule, DropzoneModule],
+  templateUrl: './upload-file.html',
+  styleUrl: './upload-file.scss',
 })
-
 export class UploadFile {
-
   public Config: DropzoneConfigInterface = {
     clickable: true,
     url: 'https://httpbin.org/post',
@@ -18,13 +17,11 @@ export class UploadFile {
     addRemoveLinks: true,
     parallelUploads: 1,
   };
-  
-  public text =' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
 
-  onUploadError(args: DropzoneConfigInterface): void {
-  }
+  public text =
+    ' <div class="dz-message needsclick"><i class="icon-cloud-up"></i><p>Drop files here or click to upload.</p></div>';
 
-  onUploadSuccess(args: DropzoneConfigInterface): void {
+  onUploadError(_args: DropzoneConfigInterface): void {}
 
-  }
+  onUploadSuccess(_args: DropzoneConfigInterface): void {}
 }

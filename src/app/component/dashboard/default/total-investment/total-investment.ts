@@ -1,28 +1,27 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TotalInvestmentChart } from '../../../../shared/data/dashboard/default/default-charts';
+
 import { NgApexchartsModule } from 'ng-apexcharts';
+
+import { TotalInvestmentChart } from '../../../../shared/data/dashboard/default/default-charts';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
 
 @Component({
-    selector: 'app-total-investment',
-    imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
-    templateUrl: './total-investment.html',
-    styleUrl: './total-investment.scss'
+  selector: 'app-total-investment',
+  imports: [CommonModule, NgApexchartsModule, ClickOutsideDirective],
+  templateUrl: './total-investment.html',
+  styleUrl: './total-investment.scss',
 })
 export class TotalInvestment {
-
   public InvestmentChart = TotalInvestmentChart;
 
   public show: boolean = false;
 
   open() {
-    this.show = !this.show
+    this.show = !this.show;
   }
 
   clickOutside(): void {
-    this.show = false
+    this.show = false;
   }
-
-
 }

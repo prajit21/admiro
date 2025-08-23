@@ -88,7 +88,7 @@
     }
   }
   .customizer-body {
-    >div {
+    > div {
       background-color: rgba(241, 242, 242, 0.5);
       box-shadow: 0px 0px 4px 3px rgba(186, 186, 187, 0.3);
     }
@@ -133,7 +133,7 @@
           justify-content: center;
           align-items: center;
           opacity: 0;
-          transition: opacity .35s ease;
+          transition: opacity 0.35s ease;
           a {
             padding: 3px 6px;
             text-align: center;
@@ -166,7 +166,7 @@
           width: unset;
           height: unset;
           padding: 8px 15px;
-          .form-check-input:checked[type=radio] {
+          .form-check-input:checked[type='radio'] {
             --bs-form-check-bg-image: none;
             background-image: none;
           }
@@ -223,35 +223,35 @@
           position: relative;
           cursor: pointer;
           opacity: 0.9;
-          >div {
-            background-color: #308E87;
+          > div {
+            background-color: #308e87;
             height: 100%;
             width: 100%;
             border-radius: 5px;
           }
-          &[data-attr="color-2"] {
+          &[data-attr='color-2'] {
             div {
-              background-color: #57375D;
+              background-color: #57375d;
             }
           }
-          &[data-attr="color-3"] {
+          &[data-attr='color-3'] {
             div {
-              background-color: #0766AD;
+              background-color: #0766ad;
             }
           }
-          &[data-attr="color-4"] {
+          &[data-attr='color-4'] {
             div {
               background-color: #025464;
             }
           }
-          &[data-attr="color-5"] {
+          &[data-attr='color-5'] {
             div {
-              background-color: #884A39;
+              background-color: #884a39;
             }
           }
-          &[data-attr="color-6"] {
+          &[data-attr='color-6'] {
             div {
-              background-color: #0C356A;
+              background-color: #0c356a;
             }
           }
         }
@@ -265,10 +265,13 @@
       align-items: center;
       display: flex;
       gap: 6px;
-      box-shadow: 0 3px 3px 0 rgba(52, 71, 103, .15), 0 3px 1px -2px rgba(52, 71, 103, .2), 0 1px 5px 0 rgba(52, 71, 103, .15);
+      box-shadow:
+        0 3px 3px 0 rgba(52, 71, 103, 0.15),
+        0 3px 1px -2px rgba(52, 71, 103, 0.2),
+        0 1px 5px 0 rgba(52, 71, 103, 0.15);
       &:hover {
         animation: pulse 1s infinite;
-        transition: .3s;
+        transition: 0.3s;
         svg {
           animation: swing ease-in-out 0.5s 1 alternate;
         }

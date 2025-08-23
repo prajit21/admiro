@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { jobcardsListView } from '../../../shared/data/job-search/job-search';
+
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+
+import { jobcardsListView } from '../../../shared/data/job-search/job-search';
 import { JobFilter } from '../job-filter/job-filter';
 
 @Component({
-    selector: 'app-list-view',
-    imports: [CommonModule, NgbModule, JobFilter],
-    templateUrl: './list-view.html',
-    styleUrl: './list-view.scss'
+  selector: 'app-list-view',
+  imports: [CommonModule, NgbModule, JobFilter],
+  templateUrl: './list-view.html',
+  styleUrl: './list-view.scss',
 })
 export class ListView {
-
   public config = inject(NgbRatingConfig);
 
   public jobcardsListView = jobcardsListView;
@@ -21,5 +22,4 @@ export class ListView {
     this.config.max = 5;
     this.config.readonly = true;
   }
-
 }

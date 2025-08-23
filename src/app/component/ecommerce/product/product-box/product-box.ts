@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, inject,  } from '@angular/core';
-import { ProductService } from '../../../../shared/services/ecommerce/product.service';
-import { Products } from '../../../../shared/model/product.model';
-import { NgbModal, NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
-import { ProductBoxFilterService } from '../../../../shared/services/ecommerce/product-box-filter.service';
-import { QuickView } from '../quick-view/quick-view';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { NgbModal, NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+
+import { Products } from '../../../../shared/model/product.model';
+import { ProductBoxFilterService } from '../../../../shared/services/ecommerce/product-box-filter.service';
+import { ProductService } from '../../../../shared/services/ecommerce/product.service';
+import { QuickView } from '../quick-view/quick-view';
+
 @Component({
-    selector: 'app-product-box',
-    imports: [CommonModule, RouterModule, NgbModule],
-    templateUrl: './product-box.html',
-    styleUrl: './product-box.scss'
+  selector: 'app-product-box',
+  imports: [CommonModule, RouterModule, NgbModule],
+  templateUrl: './product-box.html',
+  styleUrl: './product-box.scss',
 })
 export class ProductBox {
-
   private ProductService = inject(ProductService);
   private modalService = inject(NgbModal);
   private ProductBoxFilterService = inject(ProductBoxFilterService);
@@ -22,7 +23,7 @@ export class ProductBox {
   public config = inject(NgbRatingConfig);
 
   public product!: string;
-  public listData: Products[] = []
+  public listData: Products[] = [];
 
   public sidebaron: boolean = false;
   public show: boolean = false;
@@ -48,13 +49,13 @@ export class ProductBox {
 
   openMediaFilter() {
     if (this.show == false && this.sidebaron == false && this.open == false) {
-      this.show = true
-      this.sidebaron = true
-      this.open = true
+      this.show = true;
+      this.sidebaron = true;
+      this.open = true;
     } else {
-      this.show = false
-      this.sidebaron = false
-      this.open = false
+      this.show = false;
+      this.sidebaron = false;
+      this.open = false;
     }
   }
 
@@ -63,11 +64,10 @@ export class ProductBox {
     modalRef.componentInstance.productDetails = product;
   }
 
-
   ngOnInit() {
-    this.ProductService.products().subscribe((data) => {
+    this.ProductService.products().subscribe(data => {
       this.listData = data;
-    })
+    });
   }
 
   ngDoCheck() {
@@ -81,6 +81,4 @@ export class ProductBox {
     this.col_sm_6 = this.ProductBoxFilterService.col_sm_6;
     this.col_xl_6 = this.ProductBoxFilterService.col_xl_6;
   }
-
-
 }

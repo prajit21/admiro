@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-buttons-with-prefix-postfix',
-    imports: [CommonModule],
-    templateUrl: './buttons-with-prefix-postfix.html',
-    styleUrl: './buttons-with-prefix-postfix.scss'
+  selector: 'app-buttons-with-prefix-postfix',
+  imports: [CommonModule],
+  templateUrl: './buttons-with-prefix-postfix.html',
+  styleUrl: './buttons-with-prefix-postfix.scss',
 })
 export class ButtonsWithPrefixPostfix {
-
   public counter: number[] = [0, 0];
 
   public increment(i: number) {
@@ -24,5 +23,4 @@ export class ButtonsWithPrefixPostfix {
       }
     }
   }
-
 }

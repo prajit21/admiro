@@ -1,22 +1,25 @@
 <div class="card">
-    <div class="card-header card-no-border pb-0">
-        <h3>Borders Style</h3>
-        <p class="mt-1 mb-0">Use of any component to give the different styles of border using  <code>border-*radius/border-color/border-width  </code>class.</p>
+  <div class="card-header card-no-border pb-0">
+    <h3>Borders Style</h3>
+    <p class="mt-1 mb-0">
+      Use of any component to give the different styles of border using
+      <code>border-*radius/border-color/border-width </code>class.
+    </p>
+  </div>
+  <div class="card-body">
+    <div class="row g-3">
+      <div class="col-xxl-3 col-sm-6">
+        <app-common-borderstyle [data]="customborder" />
       </div>
-    <div class="card-body">
-        <div class="row g-3">
-            <div class="col-xxl-3 col-sm-6">
-                <app-common-borderstyle [data]="customborder" />
-            </div>
-            <div class="col-xxl-3 col-sm-6">
-                <app-common-borderstyle [data]="borderColor" />
-            </div>
-            <div class="col-xxl-3 col-sm-6">
-                <app-common-borderstyle [data]="borderWidth" />
-            </div>
-            <div class="col-xxl-3 col-sm-6">
-                <app-common-borderstyle [data]="textColors" />
-            </div>
-        </div>
+      <div class="col-xxl-3 col-sm-6">
+        <app-common-borderstyle [data]="borderColor" />
+      </div>
+      <div class="col-xxl-3 col-sm-6">
+        <app-common-borderstyle [data]="borderWidth" />
+      </div>
+      <div class="col-xxl-3 col-sm-6">
+        <app-common-borderstyle [data]="textColors" />
+      </div>
     </div>
+  </div>
 </div>

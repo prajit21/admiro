@@ -1,17 +1,17 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card gallery-grid">
-                <div class="gallery my-gallery card-body row" itemscope="" gallerize>
-                    @for(img of galleryGridData; track img){
-                    <figure class="pswp-gallery col-xl-3 col-md-4 col-6" itemprop="associatedMedia">
-                        <a href="javascript:void(0)" itemprop="contentUrl">
-                            <img class="img-thumbnail" [src]="img.srcUrl" />
-                        </a>
-                    </figure>
-                    }
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card gallery-grid">
+        <div class="gallery my-gallery card-body row" itemscope="" gallerize>
+          @for (img of galleryGridData; track img) {
+            <figure class="pswp-gallery col-xl-3 col-md-4 col-6" itemprop="associatedMedia">
+              <a href="javascript:void(0)" itemprop="contentUrl">
+                <img class="img-thumbnail" [src]="img.srcUrl" alt />
+              </a>
+            </figure>
+          }
         </div>
+      </div>
     </div>
+  </div>
 </div>

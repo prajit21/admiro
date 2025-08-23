@@ -76,30 +76,30 @@
     }
   }
   .card-footer {
-    >div {
+    > div {
       h3 {
         font-size: 16px;
       }
     }
   }
   .default-according {
-		.filter-cards-view {
-			.latest-photos.common-flex {
-				justify-content: center;
+    .filter-cards-view {
+      .latest-photos.common-flex {
+        justify-content: center;
         li {
-					border: none;
-					display: inline-block;
-					margin: 0;
-					padding: 0;
-					width: 70px;
-				}
-			}
+          border: none;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          width: 70px;
+        }
+      }
       .common-flex {
-				flex-direction: row !important;
-				flex-wrap: wrap;
-			}
-		}
-	}
+        flex-direction: row !important;
+        flex-wrap: wrap;
+      }
+    }
+  }
 }
 .market-tabs {
   .border-tab.nav-tabs .nav-item .nav-link.active {
@@ -237,12 +237,12 @@
     i {
       color: var(--light-text);
       margin: 0px 4px;
-      [dir="rtl"] & {
+      [dir='rtl'] & {
         margin-left: 0;
         margin-right: 4px !important;
       }
     }
-    [dir="rtl"] & {
+    [dir='rtl'] & {
       margin-right: unset;
       margin-left: 7px;
     }
@@ -397,7 +397,7 @@
         margin-bottom: 5px;
       }
       span {
-        +span {
+        + span {
           color: var(--light-text);
         }
       }
@@ -424,7 +424,7 @@
   }
 }
 .details-about {
-  +.details-about {
+  + .details-about {
     margin-top: 30px;
   }
   .your-details {
@@ -473,7 +473,7 @@
 }
 .activity-log {
   .my-activity {
-    +.my-activity {
+    + .my-activity {
       margin-top: 30px;
     }
     p {

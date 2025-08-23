@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, viewChild } from '@angular/core';
+
 import { LightboxModule } from 'ng-gallery/lightbox';
 import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
-    selector: 'app-masonry-gallery',
-    imports: [CommonModule, NgxMasonryModule, LightboxModule],
-    templateUrl: './masonry-gallery.html',
-    styleUrl: './masonry-gallery.scss'
+  selector: 'app-masonry-gallery',
+  imports: [CommonModule, NgxMasonryModule, LightboxModule],
+  templateUrl: './masonry-gallery.html',
+  styleUrl: './masonry-gallery.scss',
 })
 export class MasonryGallery {
-
   public masonryOptions: NgxMasonryOptions = {
     gutter: 20,
   };
@@ -42,5 +42,4 @@ export class MasonryGallery {
   ngOnInit() {
     this.masonryImages = this.dummyPictures.slice(0, this.limit);
   }
-
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { ApexBarChart } from './apex-bar-chart/apex-bar-chart';
 import { ApexColumnChart } from './apex-column-chart/apex-column-chart';
 import { BasicAreaChart } from './basic-area-chart/basic-area-chart';
@@ -15,14 +16,24 @@ import { RadialChart } from './radial-chart/radial-chart';
 import { SteplineChart } from './stepline-chart/stepline-chart';
 
 @Component({
-    selector: 'app-apex-chart',
-    imports: [CommonModule, ApexBarChart, ApexColumnChart, BasicAreaChart,
-        BasicLineChart, BubbleChart, CandlestickChart, ColumnChart,
-        DountChart, MixedChart, PieChart, RadarChart, RadialChart,
-        SteplineChart],
-    templateUrl: './apex-chart.html',
-    styleUrl: './apex-chart.scss'
+  selector: 'app-apex-chart',
+  imports: [
+    CommonModule,
+    ApexBarChart,
+    ApexColumnChart,
+    BasicAreaChart,
+    BasicLineChart,
+    BubbleChart,
+    CandlestickChart,
+    ColumnChart,
+    DountChart,
+    MixedChart,
+    PieChart,
+    RadarChart,
+    RadialChart,
+    SteplineChart,
+  ],
+  templateUrl: './apex-chart.html',
+  styleUrl: './apex-chart.scss',
 })
-export class ApexChart {
-
-} 
+export class ApexChart {}

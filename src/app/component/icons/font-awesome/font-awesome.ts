@@ -1,21 +1,20 @@
-import { Component } from '@angular/core';
-import { allIcon } from '../../../shared/data/icons/thimify';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+import { allIcon } from '../../../shared/data/icons/thimify';
 
 @Component({
-    selector: 'app-font-awesome',
-    imports: [CommonModule],
-    templateUrl: './font-awesome.html',
-    styleUrl: './font-awesome.scss'
+  selector: 'app-font-awesome',
+  imports: [CommonModule],
+  templateUrl: './font-awesome.html',
+  styleUrl: './font-awesome.scss',
 })
 export class FontAwesome {
-
-  
   public detail: boolean = false;
   public icon: string;
   public val: string;
 
-  public allIconData = allIcon.fontawesome
+  public allIconData = allIcon.fontawesome;
 
   toggleWithInfo(icon: string) {
     this.detail = true;
@@ -35,7 +34,5 @@ export class FontAwesome {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
-
   }
-
 }

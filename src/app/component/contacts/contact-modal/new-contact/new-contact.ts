@@ -1,27 +1,36 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+
 import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-new-contact',
-    imports: [CommonModule, NgbModule, FormsModule, ReactiveFormsModule],
-    templateUrl: './new-contact.html',
-    styleUrl: './new-contact.scss'
+  selector: 'app-new-contact',
+  imports: [CommonModule, NgbModule, FormsModule, ReactiveFormsModule],
+  templateUrl: './new-contact.html',
+  styleUrl: './new-contact.scss',
 })
 export class NewContact {
-
   public validate: boolean = false;
   public activeModal = inject(NgbActiveModal);
-  
+
   myForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
     email: new FormControl('', [Validators.email, Validators.required]),
-    mobile: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]),
+    mobile: new FormControl('', [
+      Validators.required,
+      Validators.minLength(10),
+      Validators.maxLength(10),
+    ]),
     img: new FormControl('assets/images/user/2.png'),
-  })
+  });
 
   add() {
     this.activeModal.dismiss();
@@ -42,5 +51,4 @@ export class NewContact {
   get mobile() {
     return this.myForm.get('mobile');
   }
-
 }

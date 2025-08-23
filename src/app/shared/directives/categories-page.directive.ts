@@ -1,4 +1,5 @@
 import { Directive, Input, input, output } from '@angular/core';
+
 import { Category } from '../data/ecommerce/categoies-page';
 
 export type SortColumn = keyof Category | '';
@@ -19,7 +20,6 @@ export interface SortEvent {
   },
 })
 export class CategoriesDirective {
-
   readonly sortableCategory = input<SortColumn>('');
   @Input() direction: SortDirection = '';
   readonly sort = output<SortEvent>();
@@ -28,5 +28,4 @@ export class CategoriesDirective {
     this.direction = rotate[this.direction];
     this.sort.emit({ column: this.sortableCategory(), direction: this.direction });
   }
-
 }

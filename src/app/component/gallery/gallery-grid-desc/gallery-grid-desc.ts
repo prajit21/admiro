@@ -1,18 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { gallerydes } from '../../../shared/data/gallery/gallery-grid';
+
+import {
+  Gallery,
+  GalleryItem,
+  ImageItem,
+  ImageSize,
+  ThumbnailsPosition,
+  GalleryModule,
+} from 'ng-gallery';
 import { Lightbox, LightboxModule } from 'ng-gallery/lightbox';
-import { Gallery, GalleryItem, ImageItem, ImageSize, ThumbnailsPosition } from 'ng-gallery';
-import { GalleryModule } from 'ng-gallery';
+
+import { gallerydes } from '../../../shared/data/gallery/gallery-grid';
 
 @Component({
-    selector: 'app-gallery-grid-desc',
-    imports: [CommonModule, LightboxModule, GalleryModule],
-    templateUrl: './gallery-grid-desc.html',
-    styleUrl: './gallery-grid-desc.scss'
+  selector: 'app-gallery-grid-desc',
+  imports: [CommonModule, LightboxModule, GalleryModule],
+  templateUrl: './gallery-grid-desc.html',
+  styleUrl: './gallery-grid-desc.scss',
 })
 export class GalleryGridDesc {
-
   public gallery = inject(Gallery);
   public lightbox = inject(Lightbox);
 
@@ -20,8 +27,9 @@ export class GalleryGridDesc {
   public items: GalleryItem[];
 
   ngOnInit() {
-
-    this.items = this.galleryGrid.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+    this.items = this.galleryGrid.map(
+      item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }),
+    );
     const lightboxRef = this.gallery.ref('lightbox');
 
     lightboxRef.setConfig({
@@ -29,8 +37,6 @@ export class GalleryGridDesc {
       thumbPosition: ThumbnailsPosition.Top,
     });
 
-    lightboxRef.load(this.items)
+    lightboxRef.load(this.items);
   }
-
-
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { CurrentRatingbar } from './current-ratingbar/current-ratingbar';
 import { HorizontalRatingbar } from './horizontal-ratingbar/horizontal-ratingbar';
 import { MovieRatingbar } from './movie-ratingbar/movie-ratingbar';
@@ -8,12 +9,17 @@ import { SquareRatingbar } from './square-ratingbar/square-ratingbar';
 import { StarRatingbar } from './star-ratingbar/star-ratingbar';
 
 @Component({
-    selector: 'app-rating',
-    imports: [CommonModule, CurrentRatingbar, HorizontalRatingbar, MovieRatingbar, OneToTenRatingbar,
-        SquareRatingbar, StarRatingbar],
-    templateUrl: './rating.html',
-    styleUrl: './rating.scss'
+  selector: 'app-rating',
+  imports: [
+    CommonModule,
+    CurrentRatingbar,
+    HorizontalRatingbar,
+    MovieRatingbar,
+    OneToTenRatingbar,
+    SquareRatingbar,
+    StarRatingbar,
+  ],
+  templateUrl: './rating.html',
+  styleUrl: './rating.scss',
 })
-export class Rating {
-
-}
+export class Rating {}

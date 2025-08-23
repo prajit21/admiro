@@ -1,22 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faStar, faStarHalfAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
-import { BarRatingModule } from "ngx-bar-rating";
 import { FormControl, FormsModule, Validators } from '@angular/forms';
+
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar, faStarHalfAlt, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BarRatingModule } from 'ngx-bar-rating';
 
 @Component({
-    selector: 'app-current-ratingbar',
-    imports: [CommonModule, FormsModule, NgbModule, BarRatingModule, FontAwesomeModule],
-    templateUrl: './current-ratingbar.html',
-    styleUrl: './current-ratingbar.scss'
+  selector: 'app-current-ratingbar',
+  imports: [CommonModule, FormsModule, NgbModule, BarRatingModule, FontAwesomeModule],
+  templateUrl: './current-ratingbar.html',
+  styleUrl: './current-ratingbar.scss',
 })
 export class CurrentRatingbar {
-
   public library = inject(FaIconLibrary);
-  
+
   public faoRate = 5.6;
   public faoRated = false;
 

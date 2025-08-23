@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import * as Data from '../../../shared/data/social-media/social-media-data';
+
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
 
+import * as Data from '../../../shared/data/social-media/social-media-data';
+
 @Component({
-    selector: 'app-images',
-    imports: [CommonModule, GalleryModule, LightboxModule],
-    templateUrl: './images.html',
-    styleUrl: './images.scss'
+  selector: 'app-images',
+  imports: [CommonModule, GalleryModule, LightboxModule],
+  templateUrl: './images.html',
+  styleUrl: './images.scss',
 })
 export class Images {
-
   public photosData = Data.photosData;
-
 }

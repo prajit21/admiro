@@ -1,28 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 import { Todolist } from '../../../../shared/data/dashboard/education/education';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
-import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'app-to-do-list',
-    imports: [CommonModule, RouterModule, ClickOutsideDirective, FormsModule],
-    templateUrl: './to-do-list.html',
-    styleUrl: './to-do-list.scss'
+  selector: 'app-to-do-list',
+  imports: [CommonModule, RouterModule, ClickOutsideDirective, FormsModule],
+  templateUrl: './to-do-list.html',
+  styleUrl: './to-do-list.scss',
 })
 export class ToDoList {
-  
   public TodoList = Todolist;
-  public isopen:boolean = false;
+  public isopen: boolean = false;
 
-  open(){
-   this.isopen = !this.isopen
+  open() {
+    this.isopen = !this.isopen;
   }
 
-  clickOutside():void { 
+  clickOutside(): void {
     this.isopen = false;
   }
-
-
 }

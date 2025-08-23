@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, OperatorFunction } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
@@ -68,23 +69,22 @@ const states = [
 ];
 
 @Component({
-    selector: 'app-simple-typeahead',
-    imports: [CommonModule, FormsModule, NgbModule],
-    templateUrl: './simple-typeahead.html',
-    styleUrl: './simple-typeahead.scss'
+  selector: 'app-simple-typeahead',
+  imports: [CommonModule, FormsModule, NgbModule],
+  templateUrl: './simple-typeahead.html',
+  styleUrl: './simple-typeahead.scss',
 })
 export class SimpleTypeahead {
-
   public model: string;
 
   search: OperatorFunction<string, readonly string[]> = (text$: Observable<string>) =>
     text$.pipe(
       debounceTime(200),
       distinctUntilChanged(),
-      map((term) =>
-        term.length < 2 ? [] : states.filter((v) => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10),
+      map(term =>
+        term.length < 2
+          ? []
+          : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10),
       ),
     );
-
-
 }

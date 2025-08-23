@@ -16,7 +16,8 @@ $ct-scales: (
   (2/5),
   (3/8),
   (1/3),
-  (1/4)) !default;
+  (1/4)
+) !default;
 $ct-scales-names: (
   ct-square,
   ct-minor-second,
@@ -34,7 +35,8 @@ $ct-scales-names: (
   ct-major-tenth,
   ct-major-eleventh,
   ct-major-twelfth,
-  ct-double-octave) !default;
+  ct-double-octave
+) !default;
 
 // Class names to be used when generating CSS
 $ct-class-chart: ct-chart !default;
@@ -60,8 +62,7 @@ $ct-class-start: ct-start !default;
 $ct-class-end: ct-end !default;
 
 // Container ratio
-$ct-container-ratio: (
-  1/1.618) !default;
+$ct-container-ratio: (1/1.618) !default;
 
 // Text styles for labels
 $ct-text-color: rgba(0, 0, 0, 0.4) !default;
@@ -97,33 +98,18 @@ $ct-include-classes: true !default;
 
 // If this is set to true the CSS will contain colored series. You can extend or change the color with the
 // properties below
-$ct-include-colored-series: $ct-include-classes  !default;
+$ct-include-colored-series: $ct-include-classes !default;
 
 // If set to true this will include all responsive container variations using the scales defined at the top of the script
-$ct-include-alternative-responsive-containers: $ct-include-classes  !default;
+$ct-include-alternative-responsive-containers: $ct-include-classes !default;
 
 // Series names and colors. This can be extended or customized as desired. Just add more series and colors.
-$ct-series-names: (
-  a,
-  b,
-  c,
-  d,
-  e,
-  f,
-  g,
-  h,
-  i,
-  j,
-  k,
-  l,
-  m,
-  n,
-  o) !default;
+$ct-series-names: (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o) !default;
 $ct-series-colors: (
-  #33BFBF,
-  #FF6150,
+  #33bfbf,
+  #ff6150,
   #63d5be,
-  #F8AA4B,
+  #f8aa4b,
   #b52af6,
   #f1523d,
   #35bfbf,
@@ -134,4 +120,5 @@ $ct-series-colors: (
   #35bfbf,
   #35bfbf,
   #35bfbf,
-  #35bfbf) !default;
+  #35bfbf
+) !default;

@@ -21,7 +21,7 @@
 
 // *** components ***
 @import './components/dark';
-@import "./components/according";
+@import './components/according';
 @import './components/forms';
 @import './components/dropdown';
 @import './components/color';
@@ -76,9 +76,9 @@
 
 // *** pages ***
 
-@import "./pages/dashboard_2";
-@import "./pages/dashboard_3";
-@import "./pages/dashboard_default";
+@import './pages/dashboard_2';
+@import './pages/dashboard_3';
+@import './pages/dashboard_default';
 @import './pages/progress';
 @import './pages/page';
 @import './pages/checkout';
@@ -86,7 +86,7 @@
 @import './pages/charts';
 @import './pages/chat';
 @import './pages/choice';
-@import './pages/faq' ;
+@import './pages/faq';
 @import './pages/project';
 @import './pages/general';
 @import './pages/file';
@@ -120,9 +120,7 @@
 @import './pages/loader';
 @import './pages/wheathericon';
 
-
-
-// *** Themes *** 
+// *** Themes ***
 @import './themes/rtl';
 @import './themes/update';
 @import './themes/theme-customizer';

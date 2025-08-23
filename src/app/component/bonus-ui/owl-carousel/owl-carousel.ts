@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { AutoHeightExample } from './auto-height-example/auto-height-example';
 import { AutoPlay } from './auto-play/auto-play';
 import { AutoWidhtExample } from './auto-widht-example/auto-widht-example';
@@ -11,12 +12,20 @@ import { RightLeftExample } from './right-left-example/right-left-example';
 import { SlidesOnly } from './slides-only/slides-only';
 
 @Component({
-    selector: 'app-owl-carousel',
-    imports: [CommonModule, AutoHeightExample, AutoPlay, AutoWidhtExample, CenterExample,
-        CrossFade, LazyLoadExample, ResponsiveExample, RightLeftExample, SlidesOnly],
-    templateUrl: './owl-carousel.html',
-    styleUrl: './owl-carousel.scss'
+  selector: 'app-owl-carousel',
+  imports: [
+    CommonModule,
+    AutoHeightExample,
+    AutoPlay,
+    AutoWidhtExample,
+    CenterExample,
+    CrossFade,
+    LazyLoadExample,
+    ResponsiveExample,
+    RightLeftExample,
+    SlidesOnly,
+  ],
+  templateUrl: './owl-carousel.html',
+  styleUrl: './owl-carousel.scss',
 })
-export class OwlCarousel {
-
-}
+export class OwlCarousel {}

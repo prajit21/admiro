@@ -1,35 +1,35 @@
 <div class="card height-equal" (clickOutside)="clickOutside()">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>News & Update</h3>
-            <div class="dropdown icon-dropdown">
-                <button class="btn" id="userdropdown4" type="button" (click)="open()">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
-            </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>News & Update</h3>
+      <div class="dropdown icon-dropdown">
+        <button class="btn" id="userdropdown4" type="button" (click)="open()">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
         </div>
+      </div>
     </div>
-    <div class="card-body news-update">
-        <ul>
-            @for( data of NewsUpdate;track data){
-            <li class="d-flex gap-2">
-                <div class="flex-shrink-0">
-                    <img class="img-fluid" src="{{ data.img }}" alt="" />
-                </div>
-                <div class="flex-grow-1">
-                    <a [routerLink]="['/chat/private-chat']">
-                        <h6>{{ data.title }}</h6>
-                    </a>
-                    <p class="text-truncate">{{ data.des }}</p>
-                </div>
-                <span>{{ data.hours }} hours</span>
-            </li>
-            }
-        </ul>
-    </div>
+  </div>
+  <div class="card-body news-update">
+    <ul>
+      @for (data of NewsUpdate; track data) {
+        <li class="d-flex gap-2">
+          <div class="flex-shrink-0">
+            <img class="img-fluid" src="{{ data.img }}" alt="" />
+          </div>
+          <div class="flex-grow-1">
+            <a [routerLink]="['/chat/private-chat']">
+              <h6>{{ data.title }}</h6>
+            </a>
+            <p class="text-truncate">{{ data.des }}</p>
+          </div>
+          <span>{{ data.hours }} hours</span>
+        </li>
+      }
+    </ul>
+  </div>
 </div>

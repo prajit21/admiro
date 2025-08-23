@@ -1,37 +1,39 @@
 <div class="card basic-with-border overflow-hidden">
-    <div class="card-header card-no-border">
-        <h3>Sizing Tables</h3>
-        <p class="desc mb-0 mt-1"><span>Example of Extra large table
-                Add</span><code>.table-xl-*.table-lg-*.table-de-*.table-sm -*</code><span>to create a table.</span></p>
+  <div class="card-header card-no-border">
+    <h3>Sizing Tables</h3>
+    <p class="desc mb-0 mt-1">
+      <span>Example of Extra large table Add</span
+      ><code>.table-xl-*.table-lg-*.table-de-*.table-sm -*</code><span>to create a table.</span>
+    </p>
+  </div>
+  <div class="card-block row">
+    <div class="col-sm-12 col-lg-12 col-xl-12">
+      <div class="table-responsive">
+        <table class="table table-lg table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Employee Name</th>
+              <th scope="col">Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Hours</th>
+              <th scope="col">Performance</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (table of sizingData; track table) {
+              <tr>
+                <th scope="row">{{ table.id }}</th>
+                <td>{{ table.name }}</td>
+                <td>{{ table.date }}</td>
+                <td class="font-{{ table.class }}">{{ table.text }}</td>
+                <td>{{ table.performance }}</td>
+                <td>{{ table.hours }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="card-block row">
-        <div class="col-sm-12 col-lg-12 col-xl-12">
-            <div class="table-responsive">
-                <table class="table table-lg table-borderless">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Employee Name</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Hours</th>
-                            <th scope="col">Performance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @for( table of sizingData; track table){
-                        <tr>
-                            <th scope="row">{{table.id}}</th>
-                            <td>{{table.name}}</td>
-                            <td>{{table.date}}</td>
-                            <td class="font-{{table.class}}">{{table.text}}</td>
-                            <td>{{table.performance}}</td>
-                            <td>{{table.hours}}</td>
-                        </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>

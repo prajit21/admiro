@@ -1,22 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { Component ,HostListener, inject } from '@angular/core';
-import { Menu, NavmenuService } from '../../services/navmenu.service';
+import { Component, HostListener, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { LayoutService } from '../../services/layout.service';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Feathericon } from '../feathericon/feathericon';
-import { SvgIcon } from '../svg-icon/svg-icon';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { LayoutService } from '../../services/layout.service';
+import { Menu, NavmenuService } from '../../services/navmenu.service';
+import { Feathericon } from '../feathericon/feathericon';
+import { SvgIcon } from '../svg-icon/svg-icon';
+
 @Component({
-    selector: 'app-sidebar',
-    imports: [CommonModule, NgbModule, Feathericon, SvgIcon,
-        RouterModule, TranslateModule],
-    templateUrl: './sidebar.html',
-    styleUrl: './sidebar.scss'
+  selector: 'app-sidebar',
+  imports: [CommonModule, NgbModule, Feathericon, SvgIcon, RouterModule, TranslateModule],
+  templateUrl: './sidebar.html',
+  styleUrl: './sidebar.scss',
 })
 export class Sidebar {
-
   public layout = inject(LayoutService);
   public navServices = inject(NavmenuService);
   private router = inject(Router);
@@ -34,7 +34,7 @@ export class Sidebar {
   constructor() {
     this.navServices.item.subscribe((menuItems: Menu[]) => {
       this.menuItems = menuItems;
-      this.router.events.subscribe((event) => {
+      this.router.events.subscribe(event => {
         if (event instanceof NavigationEnd) {
           menuItems.filter(items => {
             if (items.path === event.url) {
@@ -50,14 +50,14 @@ export class Sidebar {
               if (!subItems.children) {
                 return false;
               }
-              subItems.children.filter((subSubItems) => {
+              subItems.children.filter(subSubItems => {
                 if (subSubItems.path === event.url) {
                   this.setNavActive(subSubItems);
                 }
               });
-              return
+              return;
             });
-            return
+            return;
           });
         }
       });
@@ -81,8 +81,7 @@ export class Sidebar {
           if (submenuItems.children && submenuItems.children.includes(item)) {
             menuItem.active = true;
             submenuItems.active = true;
-          }
-          else {
+          } else {
             submenuItems.active = false;
           }
         });
@@ -110,12 +109,10 @@ export class Sidebar {
     item.active = !item.active;
   }
 
-
-  @HostListener("window:resize", ["$event"])
+  @HostListener('window:resize', ['$event'])
   onResize(event: { target: { innerWidth: number } }) {
     this.width = event.target.innerWidth - 500;
   }
-
 
   scrollToLeft() {
     if (this.margin >= -this.width) {
@@ -139,18 +136,15 @@ export class Sidebar {
     }
   }
 
-
-
-
   openMenu() {
     this.navServices.closeSidebar = !this.navServices.closeSidebar;
   }
 
-  isPined(itemid:number) {
+  isPined(itemid: number) {
     return this.pinedItem.includes(itemid);
   }
 
-  togglePined(id:number): void {
+  togglePined(id: number): void {
     const index = this.pinedItem.indexOf(id);
     if (index !== -1) {
       this.pinedItem.splice(index, 1);
@@ -163,5 +157,4 @@ export class Sidebar {
       this.pined = true;
     }
   }
-
 }

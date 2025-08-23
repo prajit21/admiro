@@ -1,20 +1,20 @@
 export interface Project {
-  id: number,
-  title: string,
-  badge: string,
-  img: string,
-  sites: string,
-  desc: string,
-  issue: number,
-  resolved: number,
-  class?: string,
-  comment: number,
-  like: number,
-  progress: number,
-  customers_img1: string,
-  customers_img2: string,
-  customers_img3: string,
-  projectLaval: string,
+  id: number;
+  title: string;
+  badge: string;
+  img: string;
+  sites: string;
+  desc: string;
+  issue: number;
+  resolved: number;
+  class?: string;
+  comment: number;
+  like: number;
+  progress: number;
+  customers_img1: string;
+  customers_img2: string;
+  customers_img3: string;
+  projectLaval: string;
 }
 
 export const ProjectLists: Project[] = [
@@ -34,7 +34,7 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/3.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '70%'
+    projectLaval: '70%',
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/2.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '100%'
+    projectLaval: '100%',
   },
 
   {
@@ -71,7 +71,7 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/4.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '100%'
+    projectLaval: '100%',
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/6.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '100%'
+    projectLaval: '100%',
   },
   {
     id: 5,
@@ -107,7 +107,7 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/6.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '70%'
+    projectLaval: '70%',
   },
   {
     id: 6,
@@ -125,6 +125,6 @@ export const ProjectLists: Project[] = [
     customers_img1: 'assets/images/user/4.jpg',
     customers_img2: 'assets/images/user/5.jpg',
     customers_img3: 'assets/images/user/1.jpg',
-    projectLaval: '100%'
-  }
+    projectLaval: '100%',
+  },
 ];

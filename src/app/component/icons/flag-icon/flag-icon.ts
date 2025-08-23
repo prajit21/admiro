@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
-import { icon } from '../../../shared/data/icons/flags';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+import { icon } from '../../../shared/data/icons/flags';
 
 @Component({
-    selector: 'app-flag-icon',
-    imports: [CommonModule],
-    templateUrl: './flag-icon.html',
-    styleUrl: './flag-icon.scss'
+  selector: 'app-flag-icon',
+  imports: [CommonModule],
+  templateUrl: './flag-icon.html',
+  styleUrl: './flag-icon.scss',
 })
 export class FlagIcon {
-
   public detail: boolean = false;
   public flag: string;
   public val: string;
@@ -32,7 +32,5 @@ export class FlagIcon {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
-
   }
-
 }

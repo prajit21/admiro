@@ -14,9 +14,9 @@
       &:focus {
         outline: none;
       }
-      [dir="rtl"] & {
+      [dir='rtl'] & {
         border-radius: 0 10px 10px 0 !important;
-			}
+      }
     }
     .input-group {
       .btn {
@@ -71,7 +71,7 @@
       color: var(--theme-default);
       font-weight: 600;
     }
-    +.info-block {
+    + .info-block {
       margin-top: 20px;
     }
   }
@@ -99,11 +99,11 @@
       font-size: 12px;
       line-height: 1;
       color: var(--body-font-color);
-      +li {
+      + li {
         border-left: 1px solid rgba($dark, 0.5);
         padding-left: 8px;
         margin-left: 8px;
-        [dir="rtl"] & {
+        [dir='rtl'] & {
           border-left: unset;
           border-right: 1px solid rgba($dark, 0.5);
           padding-left: unset;
@@ -116,7 +116,7 @@
         color: var(--warning-color);
         &:not(:last-child) {
           margin-right: 4px;
-          [dir="rtl"] & {
+          [dir='rtl'] & {
             margin-right: unset;
             margin-left: 4px;
           }
@@ -125,7 +125,7 @@
     }
   }
   #video-links {
-    .embed-responsive+.embed-responsive {
+    .embed-responsive + .embed-responsive {
       margin-top: 30px;
     }
   }
@@ -146,16 +146,16 @@
   .nav-item {
     background-color: rgba($primary-color, 0.9);
     color: $white;
-    &.bg-light-success{
+    &.bg-light-success {
       background-color: rgba($success-color, 0.9) !important;
-      a{
+      a {
         color: $white !important;
         background-color: rgba($success-color, 0.9) !important;
       }
     }
-    &.bg-light-secondary{
+    &.bg-light-secondary {
       background-color: rgba($secondary-color, 0.9) !important;
-      a{
+      a {
         color: $white !important;
         background-color: rgba($secondary-color, 0.9) !important;
       }

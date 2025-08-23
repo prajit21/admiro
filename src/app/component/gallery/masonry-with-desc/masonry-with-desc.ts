@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, viewChild } from '@angular/core';
+
 import { LightboxModule } from 'ng-gallery/lightbox';
 import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-masonry';
 
 @Component({
-    selector: 'app-masonry-with-desc',
-    imports: [CommonModule, NgxMasonryModule, LightboxModule],
-    templateUrl: './masonry-with-desc.html',
-    styleUrl: './masonry-with-desc.scss'
+  selector: 'app-masonry-with-desc',
+  imports: [CommonModule, NgxMasonryModule, LightboxModule],
+  templateUrl: './masonry-with-desc.html',
+  styleUrl: './masonry-with-desc.scss',
 })
 export class MasonryWithDesc {
-
   public masonryOptions: NgxMasonryOptions = {
     gutter: 20,
   };
@@ -19,8 +19,8 @@ export class MasonryWithDesc {
 
   masonryImages: (string | boolean)[][];
   limit = 20;
-  
-  dummyPictures  = [
+
+  dummyPictures = [
     [false, 'assets/images/masonry/1.jpg'],
     [false, 'assets/images/masonry/2.jpg'],
     [false, 'assets/images/masonry/3.jpg'],
@@ -39,11 +39,7 @@ export class MasonryWithDesc {
 
   ngOnInit() {
     this.masonryImages = this.dummyPictures.slice(0, this.limit);
-
   }
 
-  itemsLoaded() {
- 
-  }
-
+  itemsLoaded() {}
 }

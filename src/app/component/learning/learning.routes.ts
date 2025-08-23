@@ -1,8 +1,5 @@
 import { Routes } from '@angular/router';
 
-
-
-
 export const Learning: Routes = [
   {
     path: '',
@@ -13,16 +10,17 @@ export const Learning: Routes = [
         data: {
           title: 'Learning List',
           breadcrumb: 'Learning List',
-        }
+        },
       },
       {
         path: 'detailed-course',
-        loadComponent: () => import('./detailed-course/detailed-course').then(m => m.DetailedCourse),
+        loadComponent: () =>
+          import('./detailed-course/detailed-course').then(m => m.DetailedCourse),
         data: {
           title: 'Detailed Course',
           breadcrumb: 'Detailed Course',
-        }
+        },
       },
-    ]
-  }
-]
+    ],
+  },
+];

@@ -1,24 +1,35 @@
 import { CommonModule, DecimalPipe } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
-import { Observable } from 'rxjs';
-import { OrderdataTableDirective, SortEvent } from '../../../../shared/directives/orderdata.directive';
-import { ORDERS } from '../../../../shared/interface/odershistory';
-import { orderHistoryTable } from '../../../../shared/data/ecommerce/orderhistory';
-import { OrderService } from '../../../../shared/services/ecommerce/order.service';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Observable } from 'rxjs';
+
+import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
+import { orderHistoryTable } from '../../../../shared/data/ecommerce/orderhistory';
+import {
+  OrderdataTableDirective,
+  SortEvent,
+} from '../../../../shared/directives/orderdata.directive';
+import { ORDERS } from '../../../../shared/interface/odershistory';
+import { OrderService } from '../../../../shared/services/ecommerce/order.service';
+
 @Component({
-    selector: 'app-datatable-order-history',
-    imports: [CommonModule, NgbModule, OrderdataTableDirective, Feathericon, FormsModule, RouterModule],
-    providers: [OrderService, DecimalPipe],
-    templateUrl: './datatable-order-history.html',
-    styleUrl: './datatable-order-history.scss'
+  selector: 'app-datatable-order-history',
+  imports: [
+    CommonModule,
+    NgbModule,
+    OrderdataTableDirective,
+    Feathericon,
+    FormsModule,
+    RouterModule,
+  ],
+  providers: [OrderService, DecimalPipe],
+  templateUrl: './datatable-order-history.html',
+  styleUrl: './datatable-order-history.scss',
 })
 export class DatatableOrderHistory {
-
   public service = inject(OrderService);
 
   public products$: Observable<ORDERS[]>;
@@ -29,29 +40,37 @@ export class DatatableOrderHistory {
   readonly headers = viewChildren(OrderdataTableDirective);
 
   constructor() {
-     const service = this.service
+    const service = this.service;
 
     this.products$ = service.support$;
     this.total$ = service.total$;
   }
 
   ngOnInit() {
-    this.products$.subscribe((res) => {
+    this.products$.subscribe(res => {
       this.Data = res;
     });
   }
 
-
   get filteredData(): ORDERS[] {
-    return this.orderHistoryData.filter((person: { productimg: string, product: string, size: string, status: string, color: string }) => {
-      return person.productimg.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.product.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.status.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.size.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
-        person.color.toLowerCase().includes(this.service.searchTerm.toLowerCase())
-    });
+    return this.orderHistoryData.filter(
+      (person: {
+        productimg: string;
+        product: string;
+        size: string;
+        status: string;
+        color: string;
+      }) => {
+        return (
+          person.productimg.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.product.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.status.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.size.toLowerCase().includes(this.service.searchTerm.toLowerCase()) ||
+          person.color.toLowerCase().includes(this.service.searchTerm.toLowerCase())
+        );
+      },
+    );
   }
-
 
   getStartingIndex(): number {
     if (this.filteredData.length === 0) {
@@ -74,6 +93,4 @@ export class DatatableOrderHistory {
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
   }
-
-
 }

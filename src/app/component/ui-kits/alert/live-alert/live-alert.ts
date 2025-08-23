@@ -2,16 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-live-alert',
-    imports: [CommonModule],
-    templateUrl: './live-alert.html',
-    styleUrl: './live-alert.scss'
+  selector: 'app-live-alert',
+  imports: [CommonModule],
+  templateUrl: './live-alert.html',
+  styleUrl: './live-alert.scss',
 })
 export class LiveAlert {
-
   public showLog = false;
   public counter: number = 0;
-  public array: number[] = []
+  public array: number[] = [];
   public alerts2: boolean = true;
 
   onShowLog() {
@@ -27,5 +26,4 @@ export class LiveAlert {
   close2() {
     this.alerts2 = false;
   }
-
 }

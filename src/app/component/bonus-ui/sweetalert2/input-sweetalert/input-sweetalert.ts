@@ -1,160 +1,160 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import Swal from 'sweetalert2';
 
 @Component({
-    selector: 'app-input-sweetalert',
-    imports: [CommonModule],
-    templateUrl: './input-sweetalert.html',
-    styleUrl: './input-sweetalert.scss'
+  selector: 'app-input-sweetalert',
+  imports: [CommonModule],
+  templateUrl: './input-sweetalert.html',
+  styleUrl: './input-sweetalert.scss',
 })
 export class InputSweetalert {
-
-  inputText(){
+  inputText() {
     (async () => {
-      const ipAPI = "//api.ipify.org?format=json";
+      const ipAPI = '//api.ipify.org?format=json';
       const response = await fetch(ipAPI);
       const data = await response.json();
       const inputValue = data.ip;
       const { value: ipAddress } = await Swal.fire({
-        title: "Enter your IP address",
-        input: "text",
-        inputLabel: "Your IP address",
+        title: 'Enter your IP address',
+        input: 'text',
+        inputLabel: 'Your IP address',
         inputValue,
         showCancelButton: true,
-        inputValidator: (value) => {
+        inputValidator: value => {
           if (!value) {
-            return "You need to write something!";
+            return 'You need to write something!';
           }
           return undefined;
-        }
+        },
       });
       if (ipAddress) {
         Swal.fire(`Your IP address is ${ipAddress}`);
       }
-    })()
+    })();
   }
 
-  async loginEmail(){
+  async loginEmail() {
     const { value: email } = await Swal.fire({
-      title: "Input email address",
-      input: "email",
-      inputLabel: "Your email address",
-      inputPlaceholder: "Enter your email address"
+      title: 'Input email address',
+      input: 'email',
+      inputLabel: 'Your email address',
+      inputPlaceholder: 'Enter your email address',
     });
     if (email) {
       Swal.fire(`Entered email: ${email}`);
     }
   }
 
-  async url(){
+  async url() {
     const { value: url } = await Swal.fire({
-      input: "url",
-      inputLabel: "URL address",
-      inputPlaceholder: "Enter the URL"
+      input: 'url',
+      inputLabel: 'URL address',
+      inputPlaceholder: 'Enter the URL',
     });
     if (url) {
       Swal.fire(`Entered URL: ${url}`);
     }
   }
 
-  async password(){
+  async password() {
     const { value: password } = await Swal.fire({
-      title: "Enter your password",
-      input: "password",
-      inputLabel: "Password",
-      inputPlaceholder: "Enter your password",
+      title: 'Enter your password',
+      input: 'password',
+      inputLabel: 'Password',
+      inputPlaceholder: 'Enter your password',
       inputAttributes: {
-        maxlength: "10",
-        autocapitalize: "off",
-        autocorrect: "off"
-      }
+        maxlength: '10',
+        autocapitalize: 'off',
+        autocorrect: 'off',
+      },
     });
     if (password) {
       Swal.fire(`Entered password: ${password}`);
     }
   }
 
-  async Textarea(){
+  async Textarea() {
     const { value: text } = await Swal.fire({
-      input: "textarea",
-      inputLabel: "Message",
-      inputPlaceholder: "Type your message here...",
+      input: 'textarea',
+      inputLabel: 'Message',
+      inputPlaceholder: 'Type your message here...',
       inputAttributes: {
-        "aria-label": "Type your message here"
+        'aria-label': 'Type your message here',
       },
-      showCancelButton: true
+      showCancelButton: true,
     });
     if (text) {
       Swal.fire(text);
     }
   }
-  
-  async SelectInput(){
+
+  async SelectInput() {
     const { value: fruit } = await Swal.fire({
-      title: "Select field validation",
-      input: "select",
+      title: 'Select field validation',
+      input: 'select',
       inputOptions: {
         Fruits: {
-          apples: "Apples",
-          bananas: "Bananas",
-          grapes: "Grapes",
-          oranges: "Oranges"
+          apples: 'Apples',
+          bananas: 'Bananas',
+          grapes: 'Grapes',
+          oranges: 'Oranges',
         },
         Vegetables: {
-          potato: "Potato",
-          broccoli: "Broccoli",
-          carrot: "Carrot"
+          potato: 'Potato',
+          broccoli: 'Broccoli',
+          carrot: 'Carrot',
         },
-        icecream: "Ice cream"
+        icecream: 'Ice cream',
       },
-      inputPlaceholder: "Select a fruit",
+      inputPlaceholder: 'Select a fruit',
       showCancelButton: true,
-      inputValidator: (value) => {
-        return new Promise((resolve) => {
-          if (value === "oranges") {
+      inputValidator: value => {
+        return new Promise(resolve => {
+          if (value === 'oranges') {
             resolve();
           } else {
-            resolve("You need to select oranges :)");
+            resolve('You need to select oranges :)');
           }
         });
-      }
+      },
     });
     if (fruit) {
       Swal.fire(`You selected: ${fruit}`);
     }
   }
 
-  async radio(){
-    const inputOptions = new Promise((resolve) => {
+  async radio() {
+    const inputOptions = new Promise(resolve => {
       setTimeout(() => {
         resolve({
-          "#ff0000": "Red",
-          "#00ff00": "Green",
-          "#0000ff": "Blue"
+          '#ff0000': 'Red',
+          '#00ff00': 'Green',
+          '#0000ff': 'Blue',
         });
       }, 1000);
     });
     const { value: color } = await Swal.fire({
-      title: "Select color",
-      input: "radio",
+      title: 'Select color',
+      input: 'radio',
       inputOptions,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
-          return "You need to choose something!";
+          return 'You need to choose something!';
         }
         return undefined;
-      }
+      },
     });
     if (color) {
       Swal.fire({ html: `You selected: ${color}` });
     }
   }
 
-  async checkbox(){
+  async checkbox() {
     const { value: accept } = await Swal.fire({
-      title: "Terms and conditions",
-      input: "checkbox",
+      title: 'Terms and conditions',
+      input: 'checkbox',
       inputValue: 1,
       inputPlaceholder: `
         I agree with the terms and conditions
@@ -162,27 +162,27 @@ export class InputSweetalert {
       confirmButtonText: `
         Continue&nbsp;<i class="fa fa-arrow-right"></i>
       `,
-      inputValidator: (result) => {
-        return !result && "You need to agree with T&C";
-      }
+      inputValidator: result => {
+        return !result && 'You need to agree with T&C';
+      },
     });
     if (accept) {
-      Swal.fire("You agreed with T&C :)");
+      Swal.fire('You agreed with T&C :)');
     }
   }
 
-  range(){
+  range() {
     Swal.fire({
-      title: "How old are you?",
-      icon: "question",
-      input: "range",
-      inputLabel: "Your age",
+      title: 'How old are you?',
+      icon: 'question',
+      input: 'range',
+      inputLabel: 'Your age',
       inputAttributes: {
-        min: "8",
-        max: "120",
-        step: "1"
+        min: '8',
+        max: '120',
+        step: '1',
       },
-      inputValue: 25
+      inputValue: 25,
     });
   }
 }

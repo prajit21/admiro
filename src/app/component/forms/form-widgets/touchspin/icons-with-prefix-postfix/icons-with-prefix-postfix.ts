@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-icons-with-prefix-postfix',
-    imports: [CommonModule],
-    templateUrl: './icons-with-prefix-postfix.html',
-    styleUrl: './icons-with-prefix-postfix.scss'
+  selector: 'app-icons-with-prefix-postfix',
+  imports: [CommonModule],
+  templateUrl: './icons-with-prefix-postfix.html',
+  styleUrl: './icons-with-prefix-postfix.scss',
 })
 export class IconsWithPrefixPostfix {
-
   public counter: number[] = [0, 0];
 
   public increment(i: number) {
@@ -24,5 +23,4 @@ export class IconsWithPrefixPostfix {
       }
     }
   }
-
 }

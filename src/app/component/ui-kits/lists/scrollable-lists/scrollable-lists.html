@@ -1,22 +1,27 @@
 <div class="card">
-    <div class="card-header card-no-border pb-0">
-        <h3>Scrollable Lists </h3>
-        <p class="mt-1 mb-0">Use the property<code>overflow:auto   </code>through scrollable lists.</p>
+  <div class="card-header card-no-border pb-0">
+    <h3>Scrollable Lists</h3>
+    <p class="mt-1 mb-0">Use the property<code>overflow:auto </code>through scrollable lists.</p>
+  </div>
+  <div class="card-body">
+    <div class="list-group main-lists-content scrollbar-wrapper">
+      @for (scrollableItem of scrollableData; track scrollableItem) {
+        <a
+          class="list-group-item list-group-item-action {{
+            scrollableItem.class
+          }} list-hover-primary"
+          href="javascript:void(0)"
+        >
+          <div class="list-wrapper gap-0">
+            <img class="list-img" src="{{ scrollableItem.img }}" alt="profile" />
+            <div class="list-content">
+              <h6>{{ scrollableItem.name }}</h6>
+              <p class="font-white">{{ scrollableItem.email }}</p>
+              <small>{{ scrollableItem.time }}</small>
+            </div>
+          </div>
+        </a>
+      }
     </div>
-    <div class="card-body">
-        <div class="list-group main-lists-content scrollbar-wrapper">
-            @for( scrollableItem of scrollableData; track scrollableItem){
-            <a class="list-group-item list-group-item-action {{scrollableItem.class}} list-hover-primary"
-                href="javascript:void(0)">
-                <div class="list-wrapper gap-0"><img class="list-img" src="{{scrollableItem.img}}" alt="profile">
-                    <div class="list-content">
-                        <h6>{{scrollableItem.name}}</h6>
-                        <p class="font-white">{{scrollableItem.email}}</p>
-                        <small>{{scrollableItem.time}}</small>
-                    </div>
-                </div>
-            </a>
-            }
-        </div>
-    </div>
+  </div>
 </div>

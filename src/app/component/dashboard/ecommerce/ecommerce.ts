@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { salesvaluechart, visitorchart } from '../../../shared/data/dashboard/ecommerce/ecommerce-chart';
+
 import { ActivityTimeline } from './activity-timeline/activity-timeline';
 import { BestSeller } from './best-seller/best-seller';
 import { CommonValueChart } from './common-value-chart/common-value-chart';
@@ -13,19 +13,32 @@ import { SellingChart } from './selling-chart/selling-chart';
 import { TopEcommerceChart } from './top-ecommerce-chart/top-ecommerce-chart';
 import { TopSellingProducts } from './top-selling-products/top-selling-products';
 import { UserStatus } from './user-status/user-status';
+import {
+  salesvaluechart,
+  visitorchart,
+} from '../../../shared/data/dashboard/ecommerce/ecommerce-chart';
 
 @Component({
-    selector: 'app-ecommerce',
-    imports: [CommonModule, ActivityTimeline, BestSeller, CommonValueChart,
-        EcommerceCard, ProductOffer, ProductOffer2, RecentOrders,
-        SalesAnalytics, SellingChart, TopEcommerceChart, TopSellingProducts,
-        UserStatus],
-    templateUrl: './ecommerce.html',
-    styleUrl: './ecommerce.scss'
+  selector: 'app-ecommerce',
+  imports: [
+    CommonModule,
+    ActivityTimeline,
+    BestSeller,
+    CommonValueChart,
+    EcommerceCard,
+    ProductOffer,
+    ProductOffer2,
+    RecentOrders,
+    SalesAnalytics,
+    SellingChart,
+    TopEcommerceChart,
+    TopSellingProducts,
+    UserStatus,
+  ],
+  templateUrl: './ecommerce.html',
+  styleUrl: './ecommerce.scss',
 })
 export class Ecommerce {
-
   public salesValueChart = salesvaluechart;
   public visitorChart = visitorchart;
-
 }

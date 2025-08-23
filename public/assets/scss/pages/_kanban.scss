@@ -34,19 +34,19 @@
   border-bottom: 1px solid var(--gray-200);
   padding: 16px;
   &.bg-info {
-    &~.kanban-drag {
+    & ~ .kanban-drag {
       padding: 20px;
       background-color: rgba($info-color, 0.3) !important;
     }
   }
   &.bg-primary {
-    &~.kanban-drag {
+    & ~ .kanban-drag {
       padding: 20px;
       background-color: rgba($primary-color, 0.3) !important;
     }
   }
   &.bg-success {
-    &~.kanban-drag {
+    & ~ .kanban-drag {
       padding: 20px;
       background-color: rgba($success-color, 0.3) !important;
     }
@@ -130,7 +130,7 @@
     &:hover {
       color: inherit;
     }
-    &+.kanban-box {
+    & + .kanban-box {
       margin-top: 20px;
     }
     .badge {
@@ -177,7 +177,7 @@
     .customers {
       ul {
         li {
-          +li {
+          + li {
             margin-left: -10px;
           }
         }
@@ -191,12 +191,12 @@
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   //   .jkanban-container{
-  //     .kanban-container{ 
-  //       .kanban-board{ 
+  //     .kanban-container{
+  //       .kanban-board{
   //         width: calc(100% / 3 - 20px) !important;
   //       }
   //     }
-  //   } 
+  //   }
   .kanban-item {
     .kanban-box {
       padding: 15px;

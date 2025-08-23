@@ -1,16 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-login',
-    imports: [RouterModule, FormsModule, ReactiveFormsModule, CommonModule],
-    templateUrl: './login.html',
-    styleUrl: './login.scss'
+  selector: 'app-login',
+  imports: [RouterModule, FormsModule, ReactiveFormsModule, CommonModule],
+  templateUrl: './login.html',
+  styleUrl: './login.scss',
 })
 export class Login {
-
   private fb = inject(FormBuilder);
   public router = inject(Router);
 
@@ -20,14 +25,13 @@ export class Login {
   constructor() {
     const userData = localStorage.getItem('user');
     if (userData?.length != null) {
-      this.router.navigate(['/dashboard/default'])
+      this.router.navigate(['/dashboard/default']);
     }
 
     this.loginForm = this.fb.group({
-      email: ["Test@gmail.com", [Validators.required, Validators.email]],
-      password: ["test123", Validators.required],
+      email: ['Test@gmail.com', [Validators.required, Validators.email]],
+      password: ['test123', Validators.required],
     });
-
   }
   showPassword() {
     this.show = !this.show;
@@ -35,16 +39,18 @@ export class Login {
 
   // Simple Login
   login() {
-    if (this.loginForm.value["email"] == "Test@gmail.com" && this.loginForm.value["password"] == "test123") {
+    if (
+      this.loginForm.value['email'] == 'Test@gmail.com' &&
+      this.loginForm.value['password'] == 'test123'
+    ) {
       let user = {
-        email: "Test@gmail.com",
-        password: "test123",
-        name: "test user",
+        email: 'Test@gmail.com',
+        password: 'test123',
+        name: 'test user',
       };
 
-      localStorage.setItem("user", JSON.stringify(user));
-      this.router.navigate(["/dashboard/default"]);
+      localStorage.setItem('user', JSON.stringify(user));
+      this.router.navigate(['/dashboard/default']);
     }
   }
-
 }

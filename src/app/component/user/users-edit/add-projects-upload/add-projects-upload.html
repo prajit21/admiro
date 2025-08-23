@@ -22,20 +22,29 @@
         </tr>
       </thead>
       <tbody>
-        @for(item of projectitem; track item){
-        <tr>
-          <td><a class="text-inherit" href="javascript:void(0)">{{item.text}} </a></td>
-          <td>{{item.date}}</td>
-          <td><span class="status-icon bg-success"></span> {{item.status}}</td>
-          <td>{{item.price}}</td>
-          <td class="text-end"><a class="icon" href="javascript:void(0)"></a>
-            <a class="btn btn-primary btn-sm" href="javascript:void(0)"><i class="fa fa-pencil"></i> Edit</a>
-            <a class="icon" href="javascript:void(0)"></a>
-            <a class="btn btn-transparent btn-sm" href="javascript:void(0)"><i class="fa fa-link"></i> Update</a>
-            <a class="icon" href="javascript:void(0)"></a>
-            <a class="btn btn-danger btn-sm" href="javascript:void(0)"><i class="fa fa-trash"></i> Delete</a>
-          </td>
-        </tr>
+        @for (item of projectitem; track item) {
+          <tr>
+            <td>
+              <a class="text-inherit" href="javascript:void(0)">{{ item.text }} </a>
+            </td>
+            <td>{{ item.date }}</td>
+            <td><span class="status-icon bg-success"></span> {{ item.status }}</td>
+            <td>{{ item.price }}</td>
+            <td class="text-end">
+              <a class="icon" href="javascript:void(0)"></a>
+              <a class="btn btn-primary btn-sm" href="javascript:void(0)"
+                ><i class="fa fa-pencil"></i> Edit</a
+              >
+              <a class="icon" href="javascript:void(0)"></a>
+              <a class="btn btn-transparent btn-sm" href="javascript:void(0)"
+                ><i class="fa fa-link"></i> Update</a
+              >
+              <a class="icon" href="javascript:void(0)"></a>
+              <a class="btn btn-danger btn-sm" href="javascript:void(0)"
+                ><i class="fa fa-trash"></i> Delete</a
+              >
+            </td>
+          </tr>
         }
       </tbody>
     </table>

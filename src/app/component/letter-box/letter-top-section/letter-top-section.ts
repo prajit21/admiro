@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
+
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
+import { ClickOutsideDirective } from '../../../shared/directives/outside.directive';
 
 @Component({
-    selector: 'app-letter-top-section',
-    imports: [CommonModule, NgbModule, ClickOutsideDirective, Feathericon],
-    templateUrl: './letter-top-section.html',
-    styleUrl: './letter-top-section.scss'
+  selector: 'app-letter-top-section',
+  imports: [CommonModule, NgbModule, ClickOutsideDirective, Feathericon],
+  templateUrl: './letter-top-section.html',
+  styleUrl: './letter-top-section.scss',
 })
 export class LetterTopSection {
-
   public active = 1;
   public isOpen: boolean = false;
 
@@ -19,8 +20,7 @@ export class LetterTopSection {
     this.isOpen = !this.isOpen;
   }
 
-  clickOutside():void { 
+  clickOutside(): void {
     this.isOpen = false;
   }
-
 }

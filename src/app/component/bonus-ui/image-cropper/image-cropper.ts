@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
-import { Dimensions, ImageCroppedEvent, ImageCropperComponent, ImageTransform } from 'ngx-image-cropper';
+
+import {
+  Dimensions,
+  ImageCroppedEvent,
+  ImageCropperComponent,
+  ImageTransform,
+} from 'ngx-image-cropper';
 
 @Component({
-    selector: 'app-image-cropper',
-    imports: [ImageCropperComponent],
-    templateUrl: './image-cropper.html',
-    styleUrls: ['./image-cropper.scss']
+  selector: 'app-image-cropper',
+  imports: [ImageCropperComponent],
+  templateUrl: './image-cropper.html',
+  styleUrls: ['./image-cropper.scss'],
 })
 export class ImageCrop {
-
-  public imageChangedEvent: any = '';
+  public imageChangedEvent: Event | null = null;
   public croppedImage: string | null | undefined = '';
   public canvasRotation = 0;
   public rotation = 0;
@@ -18,7 +23,7 @@ export class ImageCrop {
   public containWithinAspectRatio = false;
   public transform: ImageTransform = {};
 
-  fileChangeEvent(event: any): void {
+  fileChangeEvent(event: Event): void {
     this.imageChangedEvent = event;
   }
 
@@ -28,14 +33,11 @@ export class ImageCrop {
 
   imageLoaded() {
     this.showCropper = true;
-
   }
 
-  cropperReady(sourceImageDimensions: Dimensions) {
-  }
+  cropperReady(_sourceImageDimensions: Dimensions) {}
 
-  loadImageFailed() {
-  }
+  loadImageFailed() {}
 
   rotateLeft() {
     this.canvasRotation--;
@@ -53,22 +55,21 @@ export class ImageCrop {
     this.transform = {
       ...this.transform,
       flipH: flippedV,
-      flipV: flippedH
+      flipV: flippedH,
     };
   }
-
 
   flipHorizontal() {
     this.transform = {
       ...this.transform,
-      flipH: !this.transform.flipH
+      flipH: !this.transform.flipH,
     };
   }
 
   flipVertical() {
     this.transform = {
       ...this.transform,
-      flipV: !this.transform.flipV
+      flipV: !this.transform.flipV,
     };
   }
 
@@ -80,18 +81,18 @@ export class ImageCrop {
   }
 
   zoomOut() {
-    this.scale -= .1;
+    this.scale -= 0.1;
     this.transform = {
       ...this.transform,
-      scale: this.scale
+      scale: this.scale,
     };
   }
 
   zoomIn() {
-    this.scale += .1;
+    this.scale += 0.1;
     this.transform = {
       ...this.transform,
-      scale: this.scale
+      scale: this.scale,
     };
   }
 
@@ -102,8 +103,7 @@ export class ImageCrop {
   updateRotation() {
     this.transform = {
       ...this.transform,
-      rotate: this.rotation
+      rotate: this.rotation,
     };
   }
-
 }

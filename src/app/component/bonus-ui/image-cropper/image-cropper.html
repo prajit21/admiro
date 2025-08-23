@@ -7,19 +7,36 @@
             <h3>Image Cropper</h3>
           </div>
           <div class="card-body">
-            <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
-              [containWithinAspectRatio]="containWithinAspectRatio" [aspectRatio]="4 / 3" [resizeToWidth]="256"
-              [cropperMinWidth]="128" [onlyScaleDown]="true" [roundCropper]="false" [canvasRotation]="canvasRotation"
-              [transform]="transform" [alignImage]="'left'" [style.display]="showCropper ? null : 'none'" format="png"
-              (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded()" (cropperReady)="cropperReady($event)"
-              (loadImageFailed)="loadImageFailed()" />
+            <image-cropper
+              [imageChangedEvent]="imageChangedEvent"
+              [maintainAspectRatio]="true"
+              [containWithinAspectRatio]="containWithinAspectRatio"
+              [aspectRatio]="4 / 3"
+              [resizeToWidth]="256"
+              [cropperMinWidth]="128"
+              [onlyScaleDown]="true"
+              [roundCropper]="false"
+              [canvasRotation]="canvasRotation"
+              [transform]="transform"
+              [alignImage]="'left'"
+              [style.display]="showCropper ? null : 'none'"
+              format="png"
+              (imageCropped)="imageCropped($event)"
+              (imageLoaded)="imageLoaded()"
+              (cropperReady)="cropperReady($event)"
+              (loadImageFailed)="loadImageFailed()"
+            />
             <div class="btn-showcase">
               <div class="text-center my-2">
-                <img [src]="croppedImage" />
+                <img [src]="croppedImage" alt />
               </div>
               <div class="image-cropper-btn">
-                <input class="btn btn-outline-primary" placeholder="Choose Your Image" type="file"
-                  (change)="fileChangeEvent($event)" />
+                <input
+                  class="btn btn-outline-primary"
+                  placeholder="Choose Your Image"
+                  type="file"
+                  (change)="fileChangeEvent($event)"
+                />
               </div>
               <div>
                 <button class="btn btn-primary" (click)="rotateLeft()">Rotate left</button>
@@ -30,27 +47,25 @@
               <div>
                 <button class="btn btn-primary" (click)="toggleContainWithinAspectRatio()">
                   {{
-                    containWithinAspectRatio
-                      ? "Fill Aspect Ratio"
-                      : "Contain Within Aspect Ratio"
+                    containWithinAspectRatio ? 'Fill Aspect Ratio' : 'Contain Within Aspect Ratio'
                   }}
                 </button>
-                <button class="btn btn-primary" (click)="resetImage()">
-                  Reset image
-                </button>
+                <button class="btn btn-primary" (click)="resetImage()">Reset image</button>
               </div>
               <div>
                 <label class="col-form-label" for="rotation">Rotation</label>
-                <input class="btn btn-outline-primary ms-2" (ngModel)="rotation" placeholder="Rotation"
-                  (keyup)="updateRotation()" type="text" onlyNumbers />
+                <input
+                  class="btn btn-outline-primary ms-2"
+                  (ngModel)="(rotation)"
+                  placeholder="Rotation"
+                  (keyup)="updateRotation()"
+                  type="text"
+                  onlyNumbers
+                />
               </div>
               <div>
-                <button class="btn btn-primary" (click)="zoomOut()">
-                  Zoom -
-                </button>
-                <button class="btn btn-primary" (click)="zoomIn()">
-                  Zoom +
-                </button>
+                <button class="btn btn-primary" (click)="zoomOut()">Zoom -</button>
+                <button class="btn btn-primary" (click)="zoomIn()">Zoom +</button>
               </div>
             </div>
           </div>

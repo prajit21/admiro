@@ -2,43 +2,51 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-coming-bg-video',
-    imports: [CommonModule],
-    templateUrl: './coming-bg-video.html',
-    styleUrl: './coming-bg-video.scss'
+  selector: 'app-coming-bg-video',
+  imports: [CommonModule],
+  templateUrl: './coming-bg-video.html',
+  styleUrl: './coming-bg-video.scss',
 })
 export class ComingBgVideo {
-
   public seconds: number;
-  public interval: any
+  public interval: ReturnType<typeof setInterval>;
 
   constructor() {
-    this.interval = setInterval(function (this: any) {
-      let currentDate = new Date();
-      currentDate.setHours(0);  // Set the desired hours
-      currentDate.setMinutes(0); // Set the desired minutes
-      currentDate.setSeconds(0);
+    this.interval = setInterval(
+      function (this: ComingBgVideo) {
+        const currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0);
+        currentDate.setDate(currentDate.getDate() + 7);
 
-      let nowDate = new Date();
-      let daysToAdd = 7;
-      currentDate.setDate(currentDate.getDate() + daysToAdd);
-      let distance = currentDate.getTime() - nowDate.getTime();
-      this.document.querySelectorAll('#days').forEach((element: { innerHTML: Number }) => {
-        element.innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
-      });
+        const nowDate = new Date();
+        const distance = currentDate.getTime() - nowDate.getTime();
 
-      this.document.querySelectorAll('#hours').forEach((element: { innerHTML: Number }) => {
-        element.innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      });
+        document.querySelectorAll('#day').forEach(element => {
+          (element as HTMLElement).innerHTML = Math.floor(
+            distance / (1000 * 60 * 60 * 24),
+          ).toString();
+        });
 
-      this.document.querySelectorAll('#minutes').forEach((element: { innerHTML: Number }) => {
-        element.innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      });
+        document.querySelectorAll('#hour').forEach(element => {
+          (element as HTMLElement).innerHTML = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          ).toString();
+        });
 
-      this.document.querySelectorAll('#seconds').forEach((element: { innerHTML: Number }) => {
-        element.innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
-      });
-    }, this.seconds);
+        document.querySelectorAll('#minute').forEach(element => {
+          (element as HTMLElement).innerHTML = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60),
+          ).toString();
+        });
+
+        document.querySelectorAll('#second').forEach(element => {
+          (element as HTMLElement).innerHTML = Math.floor(
+            (distance % (1000 * 60)) / 1000,
+          ).toString();
+        });
+      }.bind(this),
+      this.seconds,
+    );
   }
 
   ngOnDestroy() {
@@ -46,5 +54,4 @@ export class ComingBgVideo {
       clearInterval(this.interval);
     }
   }
-
 }

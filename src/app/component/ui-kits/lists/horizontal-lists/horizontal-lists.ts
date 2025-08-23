@@ -1,15 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { HorizontalList } from '../../../../shared/data/ui-kits/lists';
 
 @Component({
-    selector: 'app-horizontal-lists',
-    imports: [CommonModule],
-    templateUrl: './horizontal-lists.html',
-    styleUrl: './horizontal-lists.scss'
+  selector: 'app-horizontal-lists',
+  imports: [CommonModule],
+  templateUrl: './horizontal-lists.html',
+  styleUrl: './horizontal-lists.scss',
 })
 export class HorizontalLists {
-
   public HorizontalData = HorizontalList;
-
 }

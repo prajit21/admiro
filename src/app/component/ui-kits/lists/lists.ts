@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 import { CheckboxLists } from './checkbox-lists/checkbox-lists';
 import { ContextualClasses } from './contextual-classes/contextual-classes';
 import { CustomContentLists } from './custom-content-lists/custom-content-lists';
@@ -13,13 +14,22 @@ import { ScrollableLists } from './scrollable-lists/scrollable-lists';
 import { TopCommonLists } from './top-common-lists/top-common-lists';
 
 @Component({
-    selector: 'app-lists',
-    imports: [CommonModule, CheckboxLists, ContextualClasses, CustomContentLists,
-        DisabledLists, HorizontalLists, JavaScriptBehavior, NumbersBadgeLists,
-        NumbersLists, RadiosLists, ScrollableLists, TopCommonLists],
-    templateUrl: './lists.html',
-    styleUrl: './lists.scss'
+  selector: 'app-lists',
+  imports: [
+    CommonModule,
+    CheckboxLists,
+    ContextualClasses,
+    CustomContentLists,
+    DisabledLists,
+    HorizontalLists,
+    JavaScriptBehavior,
+    NumbersBadgeLists,
+    NumbersLists,
+    RadiosLists,
+    ScrollableLists,
+    TopCommonLists,
+  ],
+  templateUrl: './lists.html',
+  styleUrl: './lists.scss',
 })
-export class Lists {
-
-}
+export class Lists {}

@@ -1,39 +1,40 @@
 <div class="card selling-product">
-    <div class="card-header card-no-border pb-0">
-        <div class="header-top">
-            <h3>Top Selling Products</h3>
-            <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
-                <button class="btn" id="userdropdown4" type="button" (click)="open()">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
-                    <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
-                </div>
-            </div>
+  <div class="card-header card-no-border pb-0">
+    <div class="header-top">
+      <h3>Top Selling Products</h3>
+      <div class="dropdown icon-dropdown" (clickOutside)="clickOutside()">
+        <button class="btn" id="userdropdown4" type="button" (click)="open()">
+          <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" [class.show]="show">
+          <a class="dropdown-item" href="javascript:void(0)">Weekly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Monthly</a>
+          <a class="dropdown-item" href="javascript:void(0)">Yearly</a>
         </div>
+      </div>
     </div>
-    <div class="card-body">
-        <ul>
-            @for( data of TopsellingProduct;track data){
-            <li class="d-flex align-items-center gap-2">
-                <div class="flex-shrink-0 bg-light-{{data.class}} border-light-{{data.class}}">
-                    <svg class="stroke-icon stroke-{{data.class}}">
-                        <use attr.xlink:href="assets/svg/icon-sprite.svg#{{data.icon}}"></use>
-                    </svg>
-                </div>
-                <div class="flex-grow-1"><a [routerLink]="['/ecommerce/product-page']">
-                        <h6>{{ data.title }}</h6>
-                    </a>
-                    <p>Art.{{ data.art}}</p>
-                </div>
-                <div class="recent-text">
-                    <h5>${{data.price}}.00</h5>
-                    <p>{{ data.sales }} Sales</p>
-                </div>
-            </li>
-            }
-        </ul>
-    </div>
+  </div>
+  <div class="card-body">
+    <ul>
+      @for (data of TopsellingProduct; track data) {
+        <li class="d-flex align-items-center gap-2">
+          <div class="flex-shrink-0 bg-light-{{ data.class }} border-light-{{ data.class }}">
+            <svg class="stroke-icon stroke-{{ data.class }}">
+              <use attr.xlink:href="assets/svg/icon-sprite.svg#{{ data.icon }}"></use>
+            </svg>
+          </div>
+          <div class="flex-grow-1">
+            <a [routerLink]="['/ecommerce/product-page']">
+              <h6>{{ data.title }}</h6>
+            </a>
+            <p>Art.{{ data.art }}</p>
+          </div>
+          <div class="recent-text">
+            <h5>${{ data.price }}.00</h5>
+            <p>{{ data.sales }} Sales</p>
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
 </div>

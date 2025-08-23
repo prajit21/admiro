@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TapToTop } from './shared/component/tap-to-top/tap-to-top';
+
 import { Loader } from './shared/component/loader/loader';
+import { TapToTop } from './shared/component/tap-to-top/tap-to-top';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,TapToTop,Loader],
+  imports: [RouterOutlet, TapToTop, Loader],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
-export class App {
-
-}
+export class App {}

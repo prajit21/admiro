@@ -1,20 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-    selector: 'app-clipboard-on-text-input',
-    imports: [CommonModule, FormsModule],
-    templateUrl: './clipboard-on-text-input.html',
-    styleUrl: './clipboard-on-text-input.scss'
+  selector: 'app-clipboard-on-text-input',
+  imports: [CommonModule, FormsModule],
+  templateUrl: './clipboard-on-text-input.html',
+  styleUrl: './clipboard-on-text-input.scss',
 })
 export class ClipboardOnTextInput {
-
   public clipboardExample1: string = '';
   public basic = false;
-  public copyText: string = ""
+  public copyText: string = '';
 
   private _clipboardService = inject(ClipboardService);
 
@@ -24,12 +23,13 @@ export class ClipboardOnTextInput {
 
   copyFunction(txt: string) {
     navigator.clipboard.writeText(txt);
-    alert("Copied")
-
+    alert('Copied');
   }
   cutFunction(data: string) {
     switch (data) {
-      case 'clipboardExample1': navigator.clipboard.writeText(this.clipboardExample1); this.clipboardExample1 = '';
+      case 'clipboardExample1':
+        navigator.clipboard.writeText(this.clipboardExample1);
+        this.clipboardExample1 = '';
         break;
       default:
         break;
@@ -43,6 +43,4 @@ export class ClipboardOnTextInput {
       }
     });
   }
-
-
 }

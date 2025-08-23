@@ -1,8 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject, DOCUMENT, inject } from '@angular/core';
-import { Menu, NavmenuService } from '../../services/navmenu.service';
+import { Component, DOCUMENT, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+
+import { Menu, NavmenuService } from '../../services/navmenu.service';
+import { Feathericon } from '../feathericon/feathericon';
+import { SvgIcon } from '../svg-icon/svg-icon';
 import { Bookmark } from './bookmark/bookmark';
 import { Cart } from './cart/cart';
 import { Language } from './language/language';
@@ -10,23 +13,32 @@ import { Notification } from './notification/notification';
 import { Profile } from './profile/profile';
 import { Search } from './search/search';
 import { Theme } from './theme/theme';
-import { Feathericon } from '../feathericon/feathericon';
-import { SvgIcon } from '../svg-icon/svg-icon';
 
 @Component({
-    selector: 'app-header',
-    imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule, Bookmark, Cart, Language,
-        Notification, Profile, Search, Theme, Feathericon, SvgIcon],
-    templateUrl: './header.html',
-    styleUrl: './header.scss'
+  selector: 'app-header',
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
+    Bookmark,
+    Cart,
+    Language,
+    Notification,
+    Profile,
+    Search,
+    Theme,
+    Feathericon,
+    SvgIcon,
+  ],
+  templateUrl: './header.html',
+  styleUrl: './header.scss',
 })
 export class Header {
-
   public navmenu = inject(NavmenuService);
   private document = inject(DOCUMENT);
 
-
-  public elem: HTMLElement
+  public elem: HTMLElement;
   public menuItems: Menu[] = [];
   public item: Menu[] = [];
   public open = false;
@@ -36,9 +48,7 @@ export class Header {
   public show = false;
 
   constructor() {
-    this.navmenu.item.subscribe((menuItems: Menu[]) =>
-      this.item = menuItems
-    );
+    this.navmenu.item.subscribe((menuItems: Menu[]) => (this.item = menuItems));
   }
 
   ngOnInit(): void {
@@ -72,7 +82,7 @@ export class Header {
     } else {
       if (!this.document.exitFullscreen) {
         this.document.exitFullscreen();
-      }else if ('mozCancelFullScreen' in this.document) {
+      } else if ('mozCancelFullScreen' in this.document) {
         (
           this.document as Document & {
             mozCancelFullScreen: () => Promise<void>;
@@ -85,9 +95,7 @@ export class Header {
           }
         ).webkitExitFullscreen();
       } else if ('msExitFullscreen' in this.document) {
-        (
-          this.document as Document & { msExitFullscreen: () => Promise<void> }
-        ).msExitFullscreen();
+        (this.document as Document & { msExitFullscreen: () => Promise<void> }).msExitFullscreen();
       }
     }
   }
@@ -108,39 +116,37 @@ export class Header {
     this.show = false;
   }
 
-  searchTerm(term: any) {
+  searchTerm(term: string) {
     term ? this.addFix() : this.removeFix();
-    if (!term) return this.menuItems = [];
+    if (!term) return (this.menuItems = []);
     let items: Menu[] = [];
     term = term.toLowerCase();
-    this.item.forEach((data) => {
+    this.item.forEach(data => {
       if (data.title?.toLowerCase().includes(term) && data.type === 'link') {
         items.push(data);
       }
       data.children?.filter(subItems => {
         if (subItems.title?.toLowerCase().includes(term) && subItems.type === 'link') {
-          subItems.icon = data.icon
+          subItems.icon = data.icon;
           items.push(subItems);
         }
         subItems.children?.filter(suSubItems => {
           if (suSubItems.title?.toLowerCase().includes(term)) {
-            suSubItems.icon = data.icon
+            suSubItems.icon = data.icon;
             items.push(suSubItems);
           }
-        })
-        return
-      })
-      this.checkSearchResultEmpty(items)
-      this.menuItems = items
-    })
-    return
+        });
+        return;
+      });
+      this.checkSearchResultEmpty(items);
+      this.menuItems = items;
+    });
+    return;
   }
 
   checkSearchResultEmpty(items: Menu[]) {
-    if (!items.length)
-      this.searchResultEmpty = true;
-    else
-      this.searchResultEmpty = false;
+    if (!items.length) this.searchResultEmpty = true;
+    else this.searchResultEmpty = false;
   }
 
   addFix() {
@@ -148,9 +154,9 @@ export class Header {
   }
 
   removeFix() {
-    document.body.classList.remove('offcanvas')
+    document.body.classList.remove('offcanvas');
     this.searchResult = false;
-    this.text = "";
+    this.text = '';
   }
 
   clickOutside(): void {
@@ -159,7 +165,6 @@ export class Header {
     this.searchResult = false;
     this.searchResultEmpty = false;
     this.navmenu.language = false;
-    document.body.classList.remove('offcanvas')
+    document.body.classList.remove('offcanvas');
   }
-
 }

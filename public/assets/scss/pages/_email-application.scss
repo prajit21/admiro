@@ -9,7 +9,7 @@
 .email-wrap {
   .row {
     .col-xl-3 {
-      &+.col-xl-3 {
+      & + .col-xl-3 {
         padding-right: 0;
       }
     }
@@ -31,9 +31,9 @@
         right: 10px;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-        content: "\f107";
+        content: '\f107';
         border: none;
-        font-family: "FontAwesome";
+        font-family: 'FontAwesome';
         font-size: 18px;
         margin: 0;
       }
@@ -67,7 +67,7 @@
       }
     }
     .main-menu {
-      >li {
+      > li {
         width: 100%;
         text-align: left;
         a {
@@ -77,7 +77,7 @@
           i {
             margin-right: 10px;
           }
-          &.active>a {
+          &.active > a {
             color: $black;
           }
           &:hover {
@@ -212,7 +212,7 @@
       float: right;
     }
     p {
-      &+p {
+      & + p {
         margin-bottom: 20px;
       }
     }
@@ -221,7 +221,7 @@
     }
   }
   .email-content .email-top .user-emailid:after {
-    content: "";
+    content: '';
     position: relative;
     height: 20px;
     width: 1px;

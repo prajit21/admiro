@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-multiple-collapse-accordion',
-    imports: [CommonModule],
-    templateUrl: './multiple-collapse-accordion.html',
-    styleUrl: './multiple-collapse-accordion.scss'
+  selector: 'app-multiple-collapse-accordion',
+  imports: [CommonModule],
+  templateUrl: './multiple-collapse-accordion.html',
+  styleUrl: './multiple-collapse-accordion.scss',
 })
 export class MultipleCollapseAccordion {
-
   public togglecollpese = false;
   public togglecollpese2 = false;
   public togglecollpese3 = false;
@@ -25,5 +24,4 @@ export class MultipleCollapseAccordion {
     this.togglecollpese = !this.togglecollpese;
     this.togglecollpese2 = !this.togglecollpese2;
   }
-
 }

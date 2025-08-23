@@ -1,39 +1,43 @@
 <div class="card overflow-hidden basic-with-border">
-    <div class="card-header card-no-border">
-        <h3>Inverse Table with Primary background</h3>
-        <p class="desc mb-0 mt-1"><span>use a
-                class</span><code>.bg-info, .bg-success, .bg-warning and .bg-danger classes.</code><span>To set the
-                light background color use .bg-[color] class where [color] is the value of your selected color from
-                stack color palette. So for teal color background class will be .bg-teal</span></p>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-striped bg-primary table-borderless">
-            <thead class="tbl-strip-thad-bdr">
-                <tr>
-                    <th class="bg-primary" scope="col">Id</th>
-                    <th class="bg-primary" scope="col">First Name</th>
-                    <th class="bg-primary" scope="col">Last Name</th>
-                    <th class="bg-primary" scope="col">Company</th>
-                    <th class="bg-primary" scope="col">Credit Volume&#x9; </th>
-                    <th class="bg-primary" scope="col">Username</th>
-                    <th class="bg-primary" scope="col">Role&#x9; </th>
-                    <th class="bg-primary" scope="col">Country</th>
-                </tr>
-            </thead>
-            <tbody>
-                @for( table of primaryData; track table){
-                <tr>
-                    <th class="alert-light-primary">{{table.id}}</th>
-                    <td class="alert-light-primary">{{table.name}} </td>
-                    <td class="alert-light-primary">{{table.lastname}}</td>
-                    <td class="alert-light-primary">{{table.company}} </td>
-                    <td class="alert-light-primary">{{table.credit}}</td>
-                    <td class="alert-light-primary">{{table.username}} </td>
-                    <td class="alert-light-primary">{{table.Role}}</td>
-                    <td class="alert-light-primary">{{table.country}}</td>
-                </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+  <div class="card-header card-no-border">
+    <h3>Inverse Table with Primary background</h3>
+    <p class="desc mb-0 mt-1">
+      <span>use a class</span><code>.bg-info, .bg-success, .bg-warning and .bg-danger classes.</code
+      ><span
+        >To set the light background color use .bg-[color] class where [color] is the value of your
+        selected color from stack color palette. So for teal color background class will be
+        .bg-teal</span
+      >
+    </p>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped bg-primary table-borderless">
+      <thead class="tbl-strip-thad-bdr">
+        <tr>
+          <th class="bg-primary" scope="col">Id</th>
+          <th class="bg-primary" scope="col">First Name</th>
+          <th class="bg-primary" scope="col">Last Name</th>
+          <th class="bg-primary" scope="col">Company</th>
+          <th class="bg-primary" scope="col">Credit Volume&#x9;</th>
+          <th class="bg-primary" scope="col">Username</th>
+          <th class="bg-primary" scope="col">Role&#x9;</th>
+          <th class="bg-primary" scope="col">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (table of primaryData; track table) {
+          <tr>
+            <th class="alert-light-primary">{{ table.id }}</th>
+            <td class="alert-light-primary">{{ table.name }}</td>
+            <td class="alert-light-primary">{{ table.lastname }}</td>
+            <td class="alert-light-primary">{{ table.company }}</td>
+            <td class="alert-light-primary">{{ table.credit }}</td>
+            <td class="alert-light-primary">{{ table.username }}</td>
+            <td class="alert-light-primary">{{ table.Role }}</td>
+            <td class="alert-light-primary">{{ table.country }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
 </div>
