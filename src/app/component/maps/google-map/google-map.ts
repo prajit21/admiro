@@ -27,7 +27,6 @@ export class GoogleMaps {
   }
 
   ngOnInit() {
-    // const bangalore = { lat: 12.97, lng: 77.59 };
     this.markers1.push({
       position: {
         lat: 12.97,

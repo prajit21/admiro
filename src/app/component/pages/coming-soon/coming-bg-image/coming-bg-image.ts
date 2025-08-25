@@ -21,25 +21,25 @@ export class ComingBgImage {
         const nowDate = new Date();
         const distance = currentDate.getTime() - nowDate.getTime();
 
-        document.querySelectorAll('#day').forEach(element => {
+        document.querySelectorAll('#days').forEach(element => {
           (element as HTMLElement).innerHTML = Math.floor(
             distance / (1000 * 60 * 60 * 24),
           ).toString();
         });
 
-        document.querySelectorAll('#hour').forEach(element => {
+        document.querySelectorAll('#hours').forEach(element => {
           (element as HTMLElement).innerHTML = Math.floor(
             (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
           ).toString();
         });
 
-        document.querySelectorAll('#minute').forEach(element => {
+        document.querySelectorAll('#minutes').forEach(element => {
           (element as HTMLElement).innerHTML = Math.floor(
             (distance % (1000 * 60 * 60)) / (1000 * 60),
           ).toString();
         });
 
-        document.querySelectorAll('#second').forEach(element => {
+        document.querySelectorAll('#seconds').forEach(element => {
           (element as HTMLElement).innerHTML = Math.floor(
             (distance % (1000 * 60)) / 1000,
           ).toString();
