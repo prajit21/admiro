@@ -1570,6 +1570,19 @@
     .angular-editor-textarea {
       border-color: var(--border-color) !important;
     }
+    .angular-editor {
+      .angular-editor-toolbar {
+        .angular-editor-toolbar-set {
+          .angular-editor-button {
+            svg {
+              color: #fff9;
+              fill: #fff9;
+              stroke: #fff9;
+            }
+          }
+        }
+      }
+    }
   }
   .meta-body {
     .custom-input {

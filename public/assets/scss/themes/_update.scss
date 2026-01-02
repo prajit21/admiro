@@ -242,6 +242,40 @@ pre[class*='language-'] {
     }
   }
 }
+// .owl-prev {
+//   .owl-prev-icon {
+//     &::after {
+//       content: 'prev';
+//     }
+//   }
+// }
+// .owl-next {
+//   .owl-next-icon {
+//     &::after {
+//       content: 'next';
+//     }
+//   }
+// }
+.page-main-header {
+  .nav-right {
+    .header-right {
+      .custom-dropdown {
+        .translate_wrapper {
+          .custom-menu {
+            &.language-menu {
+              border-radius: 0;
+              li {
+                .lang {
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .bookmark-flip {
   .Typeahead-menu {
     overflow: auto;
