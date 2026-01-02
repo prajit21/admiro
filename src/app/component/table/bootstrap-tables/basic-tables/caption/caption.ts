@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { caption } from '../../../../../shared/data/table/basic-tables';

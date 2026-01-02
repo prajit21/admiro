@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CurrentRatingbar } from './current-ratingbar/current-ratingbar';
@@ -16,8 +15,8 @@ import { StarRatingbar } from './star-ratingbar/star-ratingbar';
     MovieRatingbar,
     OneToTenRatingbar,
     SquareRatingbar,
-    StarRatingbar
-],
+    StarRatingbar,
+  ],
   templateUrl: './rating.html',
   styleUrl: './rating.scss',
 })

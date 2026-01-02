@@ -25,8 +25,8 @@ import { ProductListService } from '../../../../shared/services/ecommerce/produc
     ProductListDirective,
     RouterModule,
     AsyncPipe,
-    NgClass
-],
+    NgClass,
+  ],
   templateUrl: './productlist-datatable.html',
   styleUrl: './productlist-datatable.scss',
   providers: [ProductListService, DecimalPipe],
@@ -51,7 +51,7 @@ export class ProductlistDatatable {
   onSort({ column, direction }: SortEvent) {
     this.headers().forEach(header => {
       if (header.sortable() !== column) {
-        header.direction = '';
+        header.currentDirection.set('');
       }
     });
 

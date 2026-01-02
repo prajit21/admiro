@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BalanceModal } from './balance-modal/balance-modal';

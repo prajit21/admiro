@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { NoticeBoards } from '../../../../shared/data/dashboard/education/education';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { JobTodays } from '../../../../shared/data/dashboard/default/default';

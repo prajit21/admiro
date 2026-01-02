@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonBorderstyle } from './common-borderstyle/common-borderstyle';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicTooltip } from './basic-tooltip/basic-tooltip';
@@ -9,13 +8,7 @@ import { TooltipDirections } from './tooltip-directions/tooltip-directions';
 
 @Component({
   selector: 'app-tooltip',
-  imports: [
-    BasicTooltip,
-    ColoredTooltip,
-    FilledTooltip,
-    HtmlElementsClickEvent,
-    TooltipDirections
-],
+  imports: [BasicTooltip, ColoredTooltip, FilledTooltip, HtmlElementsClickEvent, TooltipDirections],
   templateUrl: './tooltip.html',
   styleUrl: './tooltip.scss',
 })

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { TimelineCenter } from './timeline-center/timeline-center';

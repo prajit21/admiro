@@ -1,5 +1,4 @@
-
-import { Component, inject, Output } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,8 +16,8 @@ import { NewTask } from '../task-modal/new-task/new-task';
   styleUrl: './task-sidebar.scss',
 })
 export class TaskSidebar {
-  @Output() selectedheading_id: number;
-  @Output() selectedTagId: number;
+  selectedheading_id: number;
+  selectedTagId: number;
 
   public taskSidemenu = Data.TaskData;
   public taskTagSidemenu = Data.TagData;

@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import { progress } from '../../../../shared/data/ui-kits/progress';

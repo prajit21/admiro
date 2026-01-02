@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonBorderDisplay } from './common-border-display/common-border-display';

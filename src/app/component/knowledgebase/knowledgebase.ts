@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BrowseArticalCategories } from './browse-artical-categories/browse-artical-categories';
@@ -13,8 +12,8 @@ import { FeaturedTutorials } from '../faq/featured-tutorials/featured-tutorials'
     KnowledgebaseTopData,
     KnowledgebaseFooterData,
     BrowseArticalCategories,
-    FeaturedTutorials
-],
+    FeaturedTutorials,
+  ],
   templateUrl: './knowledgebase.html',
   styleUrl: './knowledgebase.scss',
 })

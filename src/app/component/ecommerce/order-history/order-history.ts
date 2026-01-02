@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { DatatableOrderHistory } from './datatable-order-history/datatable-order-history';

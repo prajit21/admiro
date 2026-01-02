@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActivityFeed } from './activity-feed/activity-feed';

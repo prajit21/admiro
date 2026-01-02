@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Shape } from '../../../../shared/data/ui-kits/avavtar';

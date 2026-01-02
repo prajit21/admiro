@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import { button } from '../../../../shared/data/ui-kits/tag-pills';

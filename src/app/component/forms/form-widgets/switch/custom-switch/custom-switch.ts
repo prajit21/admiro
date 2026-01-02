@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { customSwitch } from '../../../../../shared/data/forms-widgets/switch';

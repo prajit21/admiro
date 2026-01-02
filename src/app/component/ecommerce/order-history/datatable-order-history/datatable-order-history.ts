@@ -17,14 +17,7 @@ import { OrderService } from '../../../../shared/services/ecommerce/order.servic
 
 @Component({
   selector: 'app-datatable-order-history',
-  imports: [
-    NgbModule,
-    OrderdataTableDirective,
-    Feathericon,
-    FormsModule,
-    RouterModule,
-    AsyncPipe
-],
+  imports: [NgbModule, OrderdataTableDirective, Feathericon, FormsModule, RouterModule, AsyncPipe],
   providers: [OrderService, DecimalPipe],
   templateUrl: './datatable-order-history.html',
   styleUrl: './datatable-order-history.scss',
@@ -87,7 +80,7 @@ export class DatatableOrderHistory {
   onSort({ column, direction }: SortEvent) {
     this.headers().forEach(header => {
       if (header.sortableOrder() !== column) {
-        header.direction = '';
+        header.currentDirection.set('');
       }
     });
     this.service.sortColumn = column;

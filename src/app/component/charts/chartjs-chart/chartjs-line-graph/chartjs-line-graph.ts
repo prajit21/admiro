@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BaseChartDirective } from 'ng2-charts';

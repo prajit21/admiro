@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { customheightprogress } from '../../../../shared/data/ui-kits/progress';

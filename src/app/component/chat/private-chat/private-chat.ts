@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ContactChatTab } from '../contact-chat-tab/contact-chat-tab';

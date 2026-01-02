@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Bordercolors } from '../../../../shared/data/ui-kits/helper-classes';

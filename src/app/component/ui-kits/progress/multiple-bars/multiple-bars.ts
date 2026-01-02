@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Multiplebars } from '../../../../shared/data/ui-kits/progress';

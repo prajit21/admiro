@@ -7,7 +7,7 @@
         [view]="view"
         [(viewDate)]="viewDate"
         (viewDateChange)="closeOpenMonthViewDay()"
-        >
+      >
         Previous
       </div>
       <div class="btn btn-outline-secondary" mwlCalendarToday [(viewDate)]="viewDate">Today</div>
@@ -17,7 +17,7 @@
         [view]="view"
         [(viewDate)]="viewDate"
         (viewDateChange)="closeOpenMonthViewDay()"
-        >
+      >
         Next
       </div>
     </div>
@@ -31,21 +31,21 @@
         class="btn btn-primary"
         (click)="setView(CalendarView.Month)"
         [class.active]="view === CalendarView.Month"
-        >
+      >
         Month
       </div>
       <div
         class="btn btn-primary"
         (click)="setView(CalendarView.Week)"
         [class.active]="view === CalendarView.Week"
-        >
+      >
         Week
       </div>
       <div
         class="btn btn-primary"
         (click)="setView(CalendarView.Day)"
         [class.active]="view === CalendarView.Day"
-        >
+      >
         Day
       </div>
     </div>
@@ -63,7 +63,7 @@
         (dayClicked)="dayClicked($event.day)"
         (eventClicked)="handleEvent('Clicked', $event.event)"
         (eventTimesChanged)="eventTimesChanged($event)"
-        />
+      />
     }
     @case (CalendarView.Week) {
       <mwl-calendar-week-view
@@ -72,7 +72,7 @@
         [refresh]="refresh"
         (eventClicked)="handleEvent('Clicked', $event.event)"
         (eventTimesChanged)="eventTimesChanged($event)"
-        />
+      />
     }
     @case (CalendarView.Day) {
       <mwl-calendar-day-view
@@ -81,7 +81,7 @@
         [refresh]="refresh"
         (eventClicked)="handleEvent('Clicked', $event.event)"
         (eventTimesChanged)="eventTimesChanged($event)"
-        />
+      />
     }
   }
 </div>
@@ -112,7 +112,7 @@
               class="form-control"
               [(ngModel)]="event.title"
               (keyup)="refresh.next()"
-              />
+            />
           </td>
           <td>
             @if (event.color) {
@@ -127,7 +127,7 @@
                 [ngModel]="event.color.secondaryText ?? '#1e90ff'"
                 (ngModelChange)="event.color.secondaryText = $event"
                 (change)="refresh.next()"
-                />
+              />
             }
           </td>
           <td>
@@ -143,7 +143,7 @@
               dateFormat="Y-m-dTH:i"
               altFormat="F j, Y H:i"
               placeholder="Not set"
-              />
+            />
           </td>
           <td>
             <input
@@ -158,7 +158,7 @@
               dateFormat="Y-m-dTH:i"
               altFormat="F j, Y H:i"
               placeholder="Not set"
-              />
+            />
           </td>
           <td>
             <button class="btn btn-danger" (click)="deleteEvent(event)">Delete</button>

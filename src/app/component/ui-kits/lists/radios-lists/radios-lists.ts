@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Listradios } from '../../../../shared/data/ui-kits/lists';

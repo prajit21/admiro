@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActivityTimeline } from './activity-timeline/activity-timeline';
@@ -32,8 +31,8 @@ import {
     SellingChart,
     TopEcommerceChart,
     TopSellingProducts,
-    UserStatus
-],
+    UserStatus,
+  ],
   templateUrl: './ecommerce.html',
   styleUrl: './ecommerce.scss',
 })

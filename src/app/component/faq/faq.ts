@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { FeaturedTutorials } from './featured-tutorials/featured-tutorials';
@@ -23,8 +22,8 @@ import {
     LatestUpdate,
     Navigation,
     Questions,
-    SerachArtical
-],
+    SerachArtical,
+  ],
   templateUrl: './faq.html',
   styleUrl: './faq.scss',
 })

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { breckpointSpecific } from '../../../../../shared/data/table/basic-tables';

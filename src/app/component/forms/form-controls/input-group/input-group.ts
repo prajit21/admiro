@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicInputGroups } from './basic-input-groups/basic-input-groups';
@@ -24,8 +23,8 @@ import { VariationAddons } from './variation-addons/variation-addons';
     InputGroupsSizing,
     SegmentedButtons,
     VariationAddons,
-    MultipleInputs
-],
+    MultipleInputs,
+  ],
   templateUrl: './input-group.html',
   styleUrl: './input-group.scss',
 })

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AdvanceSweetalert } from './advance-sweetalert/advance-sweetalert';
@@ -22,8 +21,8 @@ import { UniqueSweetalert } from './unique-sweetalert/unique-sweetalert';
     MessageTimer,
     ModalWithImage,
     RtlSupport,
-    UniqueSweetalert
-],
+    UniqueSweetalert,
+  ],
   templateUrl: './sweetalert2.html',
   styleUrl: './sweetalert2.scss',
 })

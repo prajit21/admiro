@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import { comments } from '../../../../shared/data/blog/blog-data';

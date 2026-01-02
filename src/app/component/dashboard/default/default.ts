@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AuditLog } from './audit-log/audit-log';
@@ -28,8 +27,8 @@ import { TransitionHistory } from './transition-history/transition-history';
     TotalInvest,
     TotalInvestment,
     TransitionHistory,
-    EarningTrend
-],
+    EarningTrend,
+  ],
   templateUrl: './default.html',
   styleUrl: './default.scss',
 })

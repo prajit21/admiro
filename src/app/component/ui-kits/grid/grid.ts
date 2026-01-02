@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { GridColumn } from './grid-column/grid-column';
@@ -11,15 +10,7 @@ import { VerticalAlignment } from './vertical-alignment/vertical-alignment';
 
 @Component({
   selector: 'app-grid',
-  imports: [
-    GridColumn,
-    GridOption,
-    HorizontalAlignment,
-    Nesting,
-    Offset,
-    Order,
-    VerticalAlignment
-],
+  imports: [GridColumn, GridOption, HorizontalAlignment, Nesting, Offset, Order, VerticalAlignment],
   templateUrl: './grid.html',
   styleUrl: './grid.scss',
 })

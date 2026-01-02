@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BarRatingModule } from 'ngx-bar-rating';

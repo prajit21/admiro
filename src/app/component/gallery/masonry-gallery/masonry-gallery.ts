@@ -1,4 +1,3 @@
-
 import { Component, viewChild } from '@angular/core';
 
 import { LightboxModule } from 'ng-gallery/lightbox';

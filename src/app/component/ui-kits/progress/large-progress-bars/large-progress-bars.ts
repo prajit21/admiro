@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { LargeProgressbars } from '../../../../shared/data/ui-kits/progress';

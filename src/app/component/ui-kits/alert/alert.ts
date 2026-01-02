@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AdditionalContent } from './additional-content/additional-content';
@@ -21,8 +20,8 @@ import * as Data from '../../../shared/data/ui-kits/alert';
     DismissingLightAlert,
     LeftBorderAlert,
     LiveAlert,
-    OutlineAlert
-],
+    OutlineAlert,
+  ],
   templateUrl: './alert.html',
   styleUrl: './alert.scss',
 })

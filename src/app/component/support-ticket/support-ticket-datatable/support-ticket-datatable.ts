@@ -21,8 +21,8 @@ import { SupportTicketService } from '../../../shared/services/support-ticket.se
     NgbModule,
     AsyncPipe,
     DecimalPipe,
-    NgClass
-],
+    NgClass,
+  ],
   providers: [SupportTicketService, DecimalPipe],
   templateUrl: './support-ticket-datatable.html',
   styleUrl: './support-ticket-datatable.scss',
@@ -78,7 +78,7 @@ export class SupportTicketDatatable {
   onSort({ column, direction }: SortEvent) {
     this.headers().forEach(header => {
       if (header.sortable() !== column) {
-        header.direction = '';
+        header.currentDirection.set('');
       }
     });
 

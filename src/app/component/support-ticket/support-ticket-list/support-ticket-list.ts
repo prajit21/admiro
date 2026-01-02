@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ticketListStatus } from '../../../shared/data/support-ticket/support-ticket';

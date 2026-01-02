@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { projectData } from '../../../../shared/data/user/users-edit';

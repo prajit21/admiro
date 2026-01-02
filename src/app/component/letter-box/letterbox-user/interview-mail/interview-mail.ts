@@ -1,4 +1,3 @@
-
 import { Component, output } from '@angular/core';
 
 import { UserDetails } from './user-details/user-details';

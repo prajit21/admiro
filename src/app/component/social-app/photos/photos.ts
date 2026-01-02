@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { GalleryModule } from 'ng-gallery';

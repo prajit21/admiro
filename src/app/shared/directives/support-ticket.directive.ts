@@ -1,4 +1,4 @@
-import { Directive, Input, input, output } from '@angular/core';
+import { Directive, HostBinding, HostListener, input, output, signal } from '@angular/core';
 
 import { supportDB } from '../data/support-ticket/support-ticket';
 
@@ -12,19 +12,24 @@ export interface SortEvent {
 }
 @Directive({
   selector: 'th[sortable]',
-  host: {
-    '[class.asc]': 'direction === "asc"',
-    '[class.desc]': 'direction === "desc"',
-    '(click)': 'rotate()',
-  },
 })
 export class NgbdSortableHeader2Directive {
   readonly sortable = input<SortColumn>('');
-  @Input() direction: SortDirection = '';
+  readonly direction = input<SortDirection>('');
   readonly sort = output<SortEvent>();
+  public currentDirection = signal<SortDirection>(this.direction());
 
-  rotate() {
-    this.direction = rotate[this.direction];
-    this.sort.emit({ column: this.sortable(), direction: this.direction });
+  @HostBinding('class.asc') get isAsc() {
+    return this.currentDirection() === 'asc';
+  }
+
+  @HostBinding('class.desc') get isDesc() {
+    return this.currentDirection() === 'desc';
+  }
+
+  @HostListener('click')
+  rotateColumn() {
+    this.currentDirection.set(rotate[this.currentDirection()]);
+    this.sort.emit({ column: this.sortable(), direction: this.currentDirection() });
   }
 }

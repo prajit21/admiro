@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommentOne } from './comment-one/comment-one';

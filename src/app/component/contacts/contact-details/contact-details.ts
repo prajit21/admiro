@@ -1,4 +1,3 @@
-
 import { Component, SimpleChanges, input } from '@angular/core';
 
 import { ProfileData } from './profile-data/profile-data';

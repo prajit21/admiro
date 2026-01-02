@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AvatarInitials } from '../../../../shared/data/ui-kits/avavtar';

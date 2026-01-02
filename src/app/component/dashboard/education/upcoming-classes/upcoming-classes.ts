@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { UpcomingClass } from '../../../../shared/data/dashboard/education/education';

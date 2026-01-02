@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicInputControl } from './basic-input-control/basic-input-control';
@@ -10,14 +9,7 @@ import { Sizing } from './sizing/sizing';
 
 @Component({
   selector: 'app-base-input',
-  imports: [
-    BasicInputControl,
-    EdgesStyle,
-    FlatStyle,
-    RaiseStyle,
-    SimpleExample,
-    Sizing
-],
+  imports: [BasicInputControl, EdgesStyle, FlatStyle, RaiseStyle, SimpleExample, Sizing],
   templateUrl: './base-input.html',
   styleUrl: './base-input.scss',
 })

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';

@@ -18,8 +18,8 @@ import { AddProducts } from '../../../shared/data/ecommerce/add-product';
     ProductsFormStepe,
     ProductsGallery,
     SellingPrice,
-    NgClass
-],
+    NgClass,
+  ],
   templateUrl: './add-product.html',
   styleUrl: './add-product.scss',
 })

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AlignmentBreadcrumb } from './alignment-breadcrumb/alignment-breadcrumb';
@@ -16,8 +15,8 @@ import { SimpleBreadcrumb } from './simple-breadcrumb/simple-breadcrumb';
     DefaultBreadcrumb,
     DividerBreadcrumb,
     IconsBreadcrumb,
-    SimpleBreadcrumb
-],
+    SimpleBreadcrumb,
+  ],
   templateUrl: './breadcrumb.html',
   styleUrl: './breadcrumb.scss',
 })

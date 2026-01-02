@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { allIcon } from '../../../shared/data/icons/thimify';

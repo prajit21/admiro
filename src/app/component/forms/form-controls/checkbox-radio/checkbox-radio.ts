@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AnimatedButtons } from './animated-buttons/animated-buttons';
@@ -28,8 +27,8 @@ import { RadioToggleButtons } from './radio-toggle-buttons/radio-toggle-buttons'
     InlineInputType,
     OutlinedCheckboxStyle,
     RadioToggleButtons,
-    ImagesRadio
-],
+    ImagesRadio,
+  ],
   templateUrl: './checkbox-radio.html',
   styleUrl: './checkbox-radio.scss',
 })

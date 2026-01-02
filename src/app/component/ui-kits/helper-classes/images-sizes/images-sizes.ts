@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ImageSize } from '../../../../shared/data/ui-kits/helper-classes';

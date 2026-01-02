@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ExtraLargeModal } from './extra-large-modal/extra-large-modal';

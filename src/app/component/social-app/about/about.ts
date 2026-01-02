@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AboutCenter } from './about-center/about-center';

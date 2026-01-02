@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { PrimaryBackground } from '../../../../../shared/data/table/basic-tables';

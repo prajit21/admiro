@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AvatarPings } from '../../../../shared/data/ui-kits/avavtar';

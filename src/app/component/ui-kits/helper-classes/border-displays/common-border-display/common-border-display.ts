@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import { titleData } from '../../../../../shared/data/ui-kits/helper-classes';

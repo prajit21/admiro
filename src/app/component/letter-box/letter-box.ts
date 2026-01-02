@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { LetterboxSidebar } from './letterbox-sidebar/letterbox-sidebar';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CustomContentList } from '../../../../shared/data/ui-kits/lists';

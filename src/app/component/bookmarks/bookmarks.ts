@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BookmarkData } from './bookmark-data/bookmark-data';

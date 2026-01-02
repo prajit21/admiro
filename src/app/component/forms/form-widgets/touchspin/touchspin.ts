@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ButtonsWithPrefixPostfix } from './buttons-with-prefix-postfix/buttons-with-prefix-postfix';
@@ -14,8 +13,8 @@ import { RoundedTouchspin } from './rounded-touchspin/rounded-touchspin';
     DefaultTouchspin,
     IconsWithPrefixPostfix,
     OutlinedTouchspin,
-    RoundedTouchspin
-],
+    RoundedTouchspin,
+  ],
   templateUrl: './touchspin.html',
   styleUrl: './touchspin.scss',
 })

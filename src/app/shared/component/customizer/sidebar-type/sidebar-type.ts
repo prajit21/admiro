@@ -1,4 +1,3 @@
-
 import { Component, HostListener, inject } from '@angular/core';
 
 import { LayoutService } from '../../../services/layout.service';

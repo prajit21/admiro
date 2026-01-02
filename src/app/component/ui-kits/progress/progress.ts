@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonProgressBar } from './common-progress-bar/common-progress-bar';
@@ -19,8 +18,8 @@ import * as data from '../../../shared/data/ui-kits/progress';
     LargeProgressBars,
     MultipleBars,
     ProgressNumberSteps,
-    SmallProgressBars
-],
+    SmallProgressBars,
+  ],
   templateUrl: './progress.html',
   styleUrl: './progress.scss',
 })

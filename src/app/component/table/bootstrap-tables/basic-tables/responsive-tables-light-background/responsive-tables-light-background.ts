@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { responsiveTable } from '../../../../../shared/data/table/basic-tables';

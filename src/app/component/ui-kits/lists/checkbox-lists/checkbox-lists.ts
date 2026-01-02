@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Listcheckbox } from '../../../../shared/data/ui-kits/lists';

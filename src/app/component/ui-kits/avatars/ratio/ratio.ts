@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Ratios } from '../../../../shared/data/ui-kits/avavtar';

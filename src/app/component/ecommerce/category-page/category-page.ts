@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CategoryDataTable } from './category-data-table/category-data-table';

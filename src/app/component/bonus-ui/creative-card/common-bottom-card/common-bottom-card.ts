@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { commonAbsoluteCardData } from '../../../../shared/data/bonus-ui/creative-cards';

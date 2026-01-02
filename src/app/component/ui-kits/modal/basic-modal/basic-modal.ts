@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { OpenModal } from './open-modal/open-modal';

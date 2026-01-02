@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { VariationsLeftRibbons } from './variations-left-ribbons/variations-left-ribbons';

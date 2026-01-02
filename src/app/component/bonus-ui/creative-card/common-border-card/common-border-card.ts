@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { commonBorderPositionCardData } from '../../../../shared/data/bonus-ui/creative-cards';

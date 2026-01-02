@@ -1,4 +1,3 @@
-
 import { Component, input } from '@angular/core';
 
 import * as data from '../../../../../../shared/data/contacts/all-contact';

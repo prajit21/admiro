@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { SupportTicketDatatable } from './support-ticket-datatable/support-ticket-datatable';

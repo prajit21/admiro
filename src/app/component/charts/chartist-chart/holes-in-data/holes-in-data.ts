@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ChartistModule } from 'ng-chartist';

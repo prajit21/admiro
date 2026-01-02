@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AutoHeightExample } from './auto-height-example/auto-height-example';
@@ -22,8 +21,8 @@ import { SlidesOnly } from './slides-only/slides-only';
     LazyLoadExample,
     ResponsiveExample,
     RightLeftExample,
-    SlidesOnly
-],
+    SlidesOnly,
+  ],
   templateUrl: './owl-carousel.html',
   styleUrl: './owl-carousel.scss',
 })

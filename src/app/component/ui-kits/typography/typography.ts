@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Blockquotes } from './blockquotes/blockquotes';
@@ -21,8 +20,8 @@ import { TextColor } from './text-color/text-color';
     ListingTypography,
     InlineTextElements,
     ListingTypography,
-    TextColor
-],
+    TextColor,
+  ],
   templateUrl: './typography.html',
   styleUrl: './typography.scss',
 })

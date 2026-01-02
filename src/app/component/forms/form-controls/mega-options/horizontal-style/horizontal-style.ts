@@ -1,4 +1,3 @@
-
 import { Component, inject } from '@angular/core';
 
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';

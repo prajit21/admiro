@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { icon } from '../../../shared/data/icons/flags';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { topUser } from '../../../../shared/data/dashboard/default/default';

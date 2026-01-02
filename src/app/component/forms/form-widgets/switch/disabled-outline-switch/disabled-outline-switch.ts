@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Disabledoutlineswitch } from '../../../../../shared/data/forms-widgets/switch';

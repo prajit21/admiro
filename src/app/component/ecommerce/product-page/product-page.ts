@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { GalleryModule, Image } from '@ks89/angular-modal-gallery';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActivityTimelines } from '../../../../shared/data/dashboard/ecommerce/ecommerce';

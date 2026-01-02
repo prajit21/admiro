@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { SoicalProfile } from './soical-profile/soical-profile';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { StripedData } from '../../../../../shared/data/table/basic-tables';

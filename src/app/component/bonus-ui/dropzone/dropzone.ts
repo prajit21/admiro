@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { DefaultFileUpload } from './default-file-upload/default-file-upload';

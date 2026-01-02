@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ChartjsBarChart } from './chartjs-bar-chart/chartjs-bar-chart';
@@ -16,8 +15,8 @@ import { RadarGraph } from './radar-graph/radar-graph';
     ChartjsLineChart,
     ChartjsLineGraph,
     ChartjsPolarChart,
-    RadarGraph
-],
+    RadarGraph,
+  ],
   templateUrl: './chartjs-chart.html',
   styleUrl: './chartjs-chart.scss',
 })

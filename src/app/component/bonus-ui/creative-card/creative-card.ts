@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BorderPrimaryState } from './border-primary-state/border-primary-state';
@@ -14,8 +13,8 @@ import { CommonBottomCard } from './common-bottom-card/common-bottom-card';
     BorderSecondaryState,
     BorderWarningState,
     CommonBorderCard,
-    CommonBottomCard
-],
+    CommonBottomCard,
+  ],
   templateUrl: './creative-card.html',
   styleUrl: './creative-card.scss',
 })

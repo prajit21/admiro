@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { learningTopData, learningData } from '../../../shared/data/learning/learning';

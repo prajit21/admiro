@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { FormattedResults } from './formatted-results/formatted-results';
@@ -20,8 +19,8 @@ import { WikipediaSearch } from './wikipedia-search/wikipedia-search';
     SelectOnExact,
     SimpleTypeahead,
     TemplateForResults,
-    WikipediaSearch
-],
+    WikipediaSearch,
+  ],
   templateUrl: './typeahead.html',
   styleUrl: './typeahead.scss',
 })

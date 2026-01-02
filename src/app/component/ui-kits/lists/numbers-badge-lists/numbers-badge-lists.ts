@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { NumberedBadgeLists } from '../../../../shared/data/ui-kits/lists';

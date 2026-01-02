@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Assignments } from './assignments/assignments';
@@ -29,8 +28,8 @@ import {
     StudentDetails,
     ToDoList,
     TopCommonEducationchart,
-    UpcomingClasses
-],
+    UpcomingClasses,
+  ],
   templateUrl: './education.html',
   styleUrl: './education.scss',
 })

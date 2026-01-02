@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonSwitch } from './common-switch/common-switch';
@@ -16,8 +15,8 @@ import { VariationOutlineSwitch } from './variation-outline-switch/variation-out
     CustomSwitch,
     SwitchSizing,
     SwitchWithIcons,
-    VariationOutlineSwitch
-],
+    VariationOutlineSwitch,
+  ],
   templateUrl: './switch.html',
   styleUrl: './switch.scss',
 })

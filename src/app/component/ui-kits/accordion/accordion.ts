@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CollapseAccordion } from './collapse-accordion/collapse-accordion';
@@ -18,8 +17,8 @@ import { SimpleAccordion } from './simple-accordion/simple-accordion';
     MultipleCollapseAccordion,
     CollapseAccordion,
     HorizontalAccordion,
-    OutlineAccordion
-],
+    OutlineAccordion,
+  ],
   templateUrl: './accordion.html',
   styleUrl: './accordion.scss',
 })

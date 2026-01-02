@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AvatarInitial } from './avatar-initial/avatar-initial';
@@ -20,8 +19,8 @@ import { StatusIndicator } from './status-indicator/status-indicator';
     Ratio,
     Shapes,
     Sizes,
-    StatusIndicator
-],
+    StatusIndicator,
+  ],
   templateUrl: './avatars.html',
   styleUrl: './avatars.scss',
 })

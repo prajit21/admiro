@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { sizingTable } from '../../../../../shared/data/table/basic-tables';

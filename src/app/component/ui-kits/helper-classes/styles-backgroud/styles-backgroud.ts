@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonStylesBackground } from './common-styles-background/common-styles-background';

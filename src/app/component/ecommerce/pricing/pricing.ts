@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BecomeMember } from './become-member/become-member';

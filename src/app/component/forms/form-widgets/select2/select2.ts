@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { DefultSelect2 } from './defult-select2/defult-select2';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BorderBottomColor } from './border-bottom-color/border-bottom-color';
@@ -28,8 +27,8 @@ import { TableHeadOptions } from './table-head-options/table-head-options';
     ResponsiveTablesLightBackground,
     SizingTables,
     StripedRowInverseTable,
-    TableHeadOptions
-],
+    TableHeadOptions,
+  ],
   templateUrl: './basic-tables.html',
   styleUrl: './basic-tables.scss',
 })

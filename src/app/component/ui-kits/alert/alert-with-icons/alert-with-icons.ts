@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { IconandTextAlert, Icons } from '../../../../shared/data/ui-kits/alert';

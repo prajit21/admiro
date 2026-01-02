@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BadgeHeadings } from './badge-headings/badge-headings';

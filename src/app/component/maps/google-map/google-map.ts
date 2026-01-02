@@ -1,4 +1,3 @@
-
 import { Component, viewChild } from '@angular/core';
 import { GoogleMap, GoogleMapsModule, MapMarker } from '@angular/google-maps';
 

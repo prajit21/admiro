@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { customHover } from '../../../../../shared/data/table/basic-tables';

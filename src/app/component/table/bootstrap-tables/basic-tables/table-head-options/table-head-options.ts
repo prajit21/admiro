@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { tablehead } from '../../../../../shared/data/table//basic-tables';

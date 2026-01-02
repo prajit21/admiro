@@ -1,4 +1,3 @@
-
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';

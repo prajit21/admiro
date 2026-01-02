@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { UserProfile1 } from './user-profile1/user-profile1';

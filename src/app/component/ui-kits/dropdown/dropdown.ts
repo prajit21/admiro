@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Alignments } from './alignments/alignments';
@@ -28,8 +27,8 @@ import { UniqueDropdown } from './unique-dropdown/unique-dropdown';
     RoundedDropdown,
     SizingDropdown,
     SplitDropdown,
-    UniqueDropdown
-],
+    UniqueDropdown,
+  ],
   templateUrl: './dropdown.html',
   styleUrl: './dropdown.scss',
 })

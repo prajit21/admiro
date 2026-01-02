@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { FontSizes } from '../../../../shared/data/ui-kits/helper-classes';

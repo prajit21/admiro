@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';

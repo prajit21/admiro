@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { Categories } from './categories/categories';

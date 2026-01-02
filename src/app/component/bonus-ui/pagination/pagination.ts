@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ActiveDisabledPagination } from './active-disabled-pagination/active-disabled-pagination';
@@ -20,8 +19,8 @@ import { WithOutline } from './with-outline/with-outline';
     RoundedPagination,
     SizingPagination,
     WithDisabled,
-    WithOutline
-],
+    WithOutline,
+  ],
   templateUrl: './pagination.html',
   styleUrl: './pagination.scss',
 })

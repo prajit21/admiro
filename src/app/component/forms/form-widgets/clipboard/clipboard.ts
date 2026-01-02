@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ClipboardOnParagraph } from './clipboard-on-paragraph/clipboard-on-paragraph';
@@ -12,8 +11,8 @@ import { CopyPortionFromParagraph } from './copy-portion-from-paragraph/copy-por
     ClipboardOnParagraph,
     ClipboardOnTextInput,
     ClipboardOnTextarea,
-    CopyPortionFromParagraph
-],
+    CopyPortionFromParagraph,
+  ],
   templateUrl: './clipboard.html',
   styleUrl: './clipboard.scss',
 })

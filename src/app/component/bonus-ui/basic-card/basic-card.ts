@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { CommonInfoCard } from './common-info-card/common-info-card';

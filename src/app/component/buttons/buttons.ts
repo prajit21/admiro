@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { buttons, buttonsGroup } from '../../shared/data/buttons/buttons';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { horizontalTimeline } from '../../../../shared/data/bonus-ui/timeline';

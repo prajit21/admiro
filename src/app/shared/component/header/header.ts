@@ -29,8 +29,8 @@ import { Theme } from './theme/theme';
     Theme,
     Feathericon,
     SvgIcon,
-    SlicePipe
-],
+    SlicePipe,
+  ],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

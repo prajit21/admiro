@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { ProductlistDatatable } from './productlist-datatable/productlist-datatable';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BasicTimeline } from './basic-timeline/basic-timeline';
@@ -9,13 +8,7 @@ import { VariationTimeline } from './variation-timeline/variation-timeline';
 
 @Component({
   selector: 'app-timeline',
-  imports: [
-    BasicTimeline,
-    HorizontalTimeline,
-    HoveringTimeline,
-    TimelineChart,
-    VariationTimeline
-],
+  imports: [BasicTimeline, HorizontalTimeline, HoveringTimeline, TimelineChart, VariationTimeline],
   templateUrl: './timeline.html',
   styleUrl: './timeline.scss',
 })

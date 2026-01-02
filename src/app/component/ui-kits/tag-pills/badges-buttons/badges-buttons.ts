@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BadgePartButtons } from '../../../../shared/data/ui-kits/tag-pills';

@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { AngularEditorModule } from '@kolkov/angular-editor';

@@ -15,8 +15,8 @@ import { SvgIcon } from '../../svg-icon/svg-icon';
     ReactiveFormsModule,
     RouterModule,
     ClickOutsideDirective,
-    SlicePipe
-],
+    SlicePipe,
+  ],
   templateUrl: './search.html',
   styleUrl: './search.scss',
 })

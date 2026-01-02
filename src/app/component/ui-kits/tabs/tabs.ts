@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { BorderTabs } from './border-tabs/border-tabs';
@@ -20,8 +19,8 @@ import { VerticalTabs } from './vertical-tabs/vertical-tabs';
     MaterialStyleTabs,
     PillsTabs,
     SimpleTabs,
-    VerticalTabs
-],
+    VerticalTabs,
+  ],
   templateUrl: './tabs.html',
   styleUrl: './tabs.scss',
 })

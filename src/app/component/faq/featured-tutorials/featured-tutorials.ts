@@ -1,4 +1,3 @@
-
 import { Component, inject, input } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';

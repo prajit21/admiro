@@ -45,7 +45,7 @@ export class CategoryDataTable {
   onSort({ column, direction }: SortEvent) {
     this.headers().forEach(header => {
       if (header.sortableCategory() !== column) {
-        header.direction = '';
+        header.currentDirection.set('');
       }
     });
 

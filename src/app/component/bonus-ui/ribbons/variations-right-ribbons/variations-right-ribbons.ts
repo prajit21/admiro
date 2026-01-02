@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import { RightRibbons } from '../../../../shared/data/bonus-ui/ribbons';
