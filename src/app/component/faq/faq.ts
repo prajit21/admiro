@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { FeaturedTutorials } from './featured-tutorials/featured-tutorials';
@@ -17,15 +17,14 @@ import {
 @Component({
   selector: 'app-faq',
   imports: [
-    CommonModule,
     TopCommonFaq,
     FeaturedTutorials,
     LatestArticalVideos,
     LatestUpdate,
     Navigation,
     Questions,
-    SerachArtical,
-  ],
+    SerachArtical
+],
   templateUrl: './faq.html',
   styleUrl: './faq.scss',
 })

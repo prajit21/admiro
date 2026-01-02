@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BalanceModal } from './balance-modal/balance-modal';
@@ -7,7 +7,7 @@ import { ResultModal } from './result-modal/result-modal';
 
 @Component({
   selector: 'app-custom-modals',
-  imports: [CommonModule, BalanceModal, ProfileModal, ResultModal],
+  imports: [BalanceModal, ProfileModal, ResultModal],
   templateUrl: './custom-modals.html',
   styleUrl: './custom-modals.scss',
 })

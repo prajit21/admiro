@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { StudentDetail } from '../../../../shared/data/dashboard/education/educa
 
 @Component({
   selector: 'app-student-details',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './student-details.html',
   styleUrl: './student-details.scss',
 })

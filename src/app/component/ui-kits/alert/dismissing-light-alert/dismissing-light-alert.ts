@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dismissing-light-alert',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './dismissing-light-alert.html',
   styleUrl: './dismissing-light-alert.scss',
 })

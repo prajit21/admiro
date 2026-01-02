@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-modal-with-image',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './modal-with-image.html',
   styleUrl: './modal-with-image.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Touchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 
 @Component({
   selector: 'app-default-touchspin',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './default-touchspin.html',
   styleUrl: './default-touchspin.scss',
 })

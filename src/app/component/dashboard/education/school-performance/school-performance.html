@@ -19,7 +19,7 @@
               class="nav-link"
               id="home-tab"
               (click)="tab('timeline')"
-              [ngClass]="{ active: openTab === 'timeline' }"
+              [class.active]="openTab === 'timeline'"
               >Yearly</a
             >
           </li>
@@ -28,7 +28,7 @@
               class="nav-link"
               id="profile-tabs"
               (click)="tab('Monthly')"
-              [ngClass]="{ active: openTab === 'Monthly' }"
+              [class.active]="openTab === 'Monthly'"
               >Monthly</a
             >
           </li>
@@ -37,7 +37,7 @@
               class="nav-link active"
               id="contact-tab"
               (click)="tab('Weekly')"
-              [ngClass]="{ active: openTab === 'Weekly' }"
+              [class.active]="openTab === 'Weekly'"
               >Weekly</a
             >
           </li>

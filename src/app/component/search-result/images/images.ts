@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { GalleryModule } from 'ng-gallery';
@@ -8,7 +8,7 @@ import * as Data from '../../../shared/data/social-media/social-media-data';
 
 @Component({
   selector: 'app-images',
-  imports: [CommonModule, GalleryModule, LightboxModule],
+  imports: [GalleryModule, LightboxModule],
   templateUrl: './images.html',
   styleUrl: './images.scss',
 })

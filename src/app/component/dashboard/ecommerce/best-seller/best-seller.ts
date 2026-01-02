@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { BestSellers } from '../../../../shared/data/dashboard/ecommerce/ecommer
 
 @Component({
   selector: 'app-best-seller',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './best-seller.html',
   styleUrl: './best-seller.scss',
 })

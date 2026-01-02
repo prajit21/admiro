@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
   selector: 'app-theme',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './theme.html',
   styleUrl: './theme.scss',
 })

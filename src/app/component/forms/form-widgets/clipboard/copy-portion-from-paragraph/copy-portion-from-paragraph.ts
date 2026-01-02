@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-copy-portion-from-paragraph',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './copy-portion-from-paragraph.html',
   styleUrl: './copy-portion-from-paragraph.scss',
 })

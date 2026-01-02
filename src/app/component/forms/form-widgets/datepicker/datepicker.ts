@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -14,7 +14,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
 
 @Component({
   selector: 'app-datepicker',
-  imports: [CommonModule, NgbModule, FormsModule, Feathericon],
+  imports: [NgbModule, FormsModule, Feathericon],
   templateUrl: './datepicker.html',
   styleUrl: './datepicker.scss',
 })

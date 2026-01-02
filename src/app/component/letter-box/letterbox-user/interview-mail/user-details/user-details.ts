@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { Feathericon } from '../../../../../shared/component/feathericon/feather
 
 @Component({
   selector: 'app-user-details',
-  imports: [CommonModule, NgxEditorModule, FormsModule, ReactiveFormsModule, Feathericon],
+  imports: [NgxEditorModule, FormsModule, ReactiveFormsModule, Feathericon],
   templateUrl: './user-details.html',
   styleUrl: './user-details.scss',
 })

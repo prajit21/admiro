@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BecomeMembers } from '../../../../shared/data/ecommerce/pricing';
 
 @Component({
   selector: 'app-become-member',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './become-member.html',
   styleUrl: './become-member.scss',
 })

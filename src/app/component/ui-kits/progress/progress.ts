@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CommonProgressBar } from './common-progress-bar/common-progress-bar';
@@ -13,15 +13,14 @@ import * as data from '../../../shared/data/ui-kits/progress';
 @Component({
   selector: 'app-progress',
   imports: [
-    CommonModule,
     CommonProgressBar,
     CustomHeightProgressBars,
     CustomProgressBars,
     LargeProgressBars,
     MultipleBars,
     ProgressNumberSteps,
-    SmallProgressBars,
-  ],
+    SmallProgressBars
+],
   templateUrl: './progress.html',
   styleUrl: './progress.scss',
 })

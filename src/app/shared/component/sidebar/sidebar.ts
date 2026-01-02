@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import { Component, HostListener, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { SvgIcon } from '../svg-icon/svg-icon';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [CommonModule, NgbModule, Feathericon, SvgIcon, RouterModule, TranslateModule],
+  imports: [NgbModule, Feathericon, SvgIcon, RouterModule, TranslateModule, NgTemplateOutlet],
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.scss',
 })
@@ -109,9 +109,9 @@ export class Sidebar {
     item.active = !item.active;
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: { target: { innerWidth: number } }) {
-    this.width = event.target.innerWidth - 500;
+  @HostListener('window:resize')
+  onResize() {
+    this.width = window.innerWidth - 500;
   }
 
   scrollToLeft() {

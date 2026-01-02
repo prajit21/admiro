@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-timeline-chart',
-  imports: [CommonModule, CarouselModule],
+  imports: [CarouselModule],
   templateUrl: './timeline-chart.html',
   styleUrl: './timeline-chart.scss',
 })

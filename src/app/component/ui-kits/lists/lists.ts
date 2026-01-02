@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CheckboxLists } from './checkbox-lists/checkbox-lists';
@@ -16,7 +16,6 @@ import { TopCommonLists } from './top-common-lists/top-common-lists';
 @Component({
   selector: 'app-lists',
   imports: [
-    CommonModule,
     CheckboxLists,
     ContextualClasses,
     CustomContentLists,
@@ -27,8 +26,8 @@ import { TopCommonLists } from './top-common-lists/top-common-lists';
     NumbersLists,
     RadiosLists,
     ScrollableLists,
-    TopCommonLists,
-  ],
+    TopCommonLists
+],
   templateUrl: './lists.html',
   styleUrl: './lists.scss',
 })

@@ -9,7 +9,7 @@
         id="initialCost"
         formControlName="initalcost"
         type="number"
-        [ngClass]="{
+        [class]="{
           'is-invalid': (initalcost?.touched || validate) && initalcost?.errors,
           'is-valid': !initalcost?.errors,
         }"
@@ -27,7 +27,7 @@
         id="sellingPrice"
         type="number"
         formControlName="sellingPrice"
-        [ngClass]="{
+        [class]="{
           'is-invalid': (sellingPrice?.touched || validate) && sellingPrice?.errors,
           'is-valid': !sellingPrice?.errors,
         }"
@@ -41,7 +41,7 @@
       <select
         class="form-select"
         formControlName="currency"
-        [ngClass]="{
+        [class]="{
           'is-invalid': (currency?.touched || validate) && currency?.errors,
           'is-valid': !currency?.errors,
         }"
@@ -67,7 +67,7 @@
         id="productStock1"
         type="number"
         formControlName="Productstocks"
-        [ngClass]="{
+        [class]="{
           'is-invalid': (Productstocks?.touched || validate) && Productstocks?.errors,
           'is-valid': !Productstocks?.errors,
         }"

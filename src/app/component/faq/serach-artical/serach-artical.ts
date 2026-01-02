@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-serach-artical',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './serach-artical.html',
   styleUrl: './serach-artical.scss',
 })

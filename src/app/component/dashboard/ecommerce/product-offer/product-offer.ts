@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -10,7 +10,7 @@ import {
 
 @Component({
   selector: 'app-product-offer',
-  imports: [CommonModule, CarouselModule],
+  imports: [CarouselModule],
   templateUrl: './product-offer.html',
   styleUrl: './product-offer.scss',
 })

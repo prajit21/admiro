@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { allIcon } from '../../../shared/data/icons/thimify';
 
 @Component({
   selector: 'app-themify-icon',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './themify-icon.html',
   styleUrl: './themify-icon.scss',
 })

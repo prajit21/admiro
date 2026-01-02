@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -8,7 +8,7 @@ import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
   selector: 'app-blog-add-post',
-  imports: [CommonModule, AngularEditorModule, FormsModule, DropzoneModule, NgSelectModule],
+  imports: [AngularEditorModule, FormsModule, DropzoneModule, NgSelectModule],
   templateUrl: './blog-add-post.html',
   styleUrl: './blog-add-post.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, output } from '@angular/core';
 
 import { UserDetails } from './user-details/user-details';
@@ -6,7 +6,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
 
 @Component({
   selector: 'app-interview-mail',
-  imports: [CommonModule, UserDetails, Feathericon],
+  imports: [UserDetails, Feathericon],
   templateUrl: './interview-mail.html',
   styleUrl: './interview-mail.scss',
 })

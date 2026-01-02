@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 
 @Component({
   selector: 'app-file-manager-sidebar',
-  imports: [CommonModule, ClickOutsideDirective, Feathericon],
+  imports: [ClickOutsideDirective, Feathericon],
   templateUrl: './file-manager-sidebar.html',
   styleUrl: './file-manager-sidebar.scss',
 })

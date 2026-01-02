@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sizing-pagination',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './sizing-pagination.html',
   styleUrl: './sizing-pagination.scss',
 })

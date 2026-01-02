@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, SimpleChanges, input } from '@angular/core';
 
 import { ProfileData } from './profile-data/profile-data';
@@ -6,7 +6,7 @@ import * as data from '../../../shared/data/contacts/all-contact';
 
 @Component({
   selector: 'app-contact-details',
-  imports: [CommonModule, ProfileData],
+  imports: [ProfileData],
   templateUrl: './contact-details.html',
   styleUrl: './contact-details.scss',
 })

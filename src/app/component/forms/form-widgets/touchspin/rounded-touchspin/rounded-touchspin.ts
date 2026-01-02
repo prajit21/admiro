@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { roundedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 
 @Component({
   selector: 'app-rounded-touchspin',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './rounded-touchspin.html',
   styleUrl: './rounded-touchspin.scss',
 })

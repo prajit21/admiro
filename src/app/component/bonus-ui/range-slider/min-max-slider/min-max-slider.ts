@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-min-max-slider',
-  imports: [CommonModule, NgxSliderModule],
+  imports: [NgxSliderModule],
   templateUrl: './min-max-slider.html',
   styleUrl: './min-max-slider.scss',
 })

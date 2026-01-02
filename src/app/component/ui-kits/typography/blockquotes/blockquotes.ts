@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-blockquotes',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './blockquotes.html',
   styleUrl: './blockquotes.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-top-selling-products',
-  imports: [CommonModule, RouterModule, ClickOutsideDirective],
+  imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './top-selling-products.html',
   styleUrl: './top-selling-products.scss',
 })

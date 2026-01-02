@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { LayoutService } from '../../../services/layout.service';
 
 @Component({
   selector: 'app-layout-type',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './layout-type.html',
   styleUrl: './layout-type.scss',
 })

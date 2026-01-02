@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
@@ -7,7 +7,7 @@ import { TopCommonFaq } from '../../faq/top-common-faq/top-common-faq';
 
 @Component({
   selector: 'app-knowledgebase-top-data',
-  imports: [CommonModule, Feathericon, TopCommonFaq],
+  imports: [Feathericon, TopCommonFaq],
   templateUrl: './knowledgebase-top-data.html',
   styleUrl: './knowledgebase-top-data.scss',
 })

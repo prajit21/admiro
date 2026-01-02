@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-clipboard-on-paragraph',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './clipboard-on-paragraph.html',
   styleUrl: './clipboard-on-paragraph.scss',
 })

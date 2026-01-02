@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -63,7 +63,7 @@ const states: {
 
 @Component({
   selector: 'app-select-on-exact',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './select-on-exact.html',
   styleUrl: './select-on-exact.scss',
 })

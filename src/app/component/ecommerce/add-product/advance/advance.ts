@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component, output } from '@angular/core';
 
 import { AdditionalOptions } from './additional-options/additional-options';
@@ -7,7 +7,7 @@ import { Shipping } from './shipping/shipping';
 
 @Component({
   selector: 'app-advance',
-  imports: [CommonModule, AdditionalOptions, Inventory, Shipping],
+  imports: [AdditionalOptions, Inventory, Shipping, NgClass],
   templateUrl: './advance.html',
   styleUrl: './advance.scss',
 })

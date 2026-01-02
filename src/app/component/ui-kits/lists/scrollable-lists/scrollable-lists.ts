@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ScrollableList } from '../../../../shared/data/ui-kits/lists';
 
 @Component({
   selector: 'app-scrollable-lists',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './scrollable-lists.html',
   styleUrl: './scrollable-lists.scss',
 })

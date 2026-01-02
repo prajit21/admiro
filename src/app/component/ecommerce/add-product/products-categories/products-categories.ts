@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, output, inject } from '@angular/core';
 import {
   FormControl,
@@ -15,7 +15,7 @@ import { NewCategoies } from './new-categoies/new-categoies';
 
 @Component({
   selector: 'app-products-categories',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, TagInputModule],
+  imports: [FormsModule, ReactiveFormsModule, TagInputModule],
   templateUrl: './products-categories.html',
   styleUrl: './products-categories.scss',
 })

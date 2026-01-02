@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-rtl-support',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './rtl-support.html',
   styleUrl: './rtl-support.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 
 import { staps } from '../../../../shared/data/ecommerce/add-product';
 
 @Component({
   selector: 'app-products-form-stepe',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './products-form-stepe.html',
   styleUrl: './products-form-stepe.scss',
 })

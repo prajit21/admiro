@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import * as Data from '../../../shared/data/job-search/job-search';
 
 @Component({
   selector: 'app-job-filter',
-  imports: [CommonModule, NgbModule, Feathericon],
+  imports: [NgbModule, Feathericon],
   templateUrl: './job-filter.html',
   styleUrl: './job-filter.scss',
 })

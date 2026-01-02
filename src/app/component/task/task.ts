@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { TaskSidebar } from './task-sidebar/task-sidebar';
 
 @Component({
   selector: 'app-task',
-  imports: [CommonModule, TaskSidebar],
+  imports: [TaskSidebar],
   templateUrl: './task.html',
   styleUrl: './task.scss',
 })

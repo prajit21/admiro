@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-badges-table',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './badges-table.html',
   styleUrl: './badges-table.scss',
 })

@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip-table',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './tooltip-table.html',
   styleUrl: './tooltip-table.scss',
 })

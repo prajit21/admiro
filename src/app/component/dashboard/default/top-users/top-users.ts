@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { topUser } from '../../../../shared/data/dashboard/default/default';
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-top-users',
-  imports: [CommonModule, ClickOutsideDirective],
+  imports: [ClickOutsideDirective],
   templateUrl: './top-users.html',
   styleUrl: './top-users.scss',
 })

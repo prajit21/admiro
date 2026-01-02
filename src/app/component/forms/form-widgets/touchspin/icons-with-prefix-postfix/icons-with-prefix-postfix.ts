@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-icons-with-prefix-postfix',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './icons-with-prefix-postfix.html',
   styleUrl: './icons-with-prefix-postfix.scss',
 })

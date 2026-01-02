@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ActivityTimelines } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-activity-timeline',
-  imports: [CommonModule, ClickOutsideDirective],
+  imports: [ClickOutsideDirective],
   templateUrl: './activity-timeline.html',
   styleUrl: './activity-timeline.scss',
 })

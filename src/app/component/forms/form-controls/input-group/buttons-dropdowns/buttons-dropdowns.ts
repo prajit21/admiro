@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttons-dropdowns',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './buttons-dropdowns.html',
   styleUrl: './buttons-dropdowns.scss',
 })

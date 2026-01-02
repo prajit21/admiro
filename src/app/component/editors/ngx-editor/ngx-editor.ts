@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { Editor, NgxEditorModule } from 'ngx-editor';
 
 @Component({
   selector: 'app-ngx-editor',
-  imports: [CommonModule, FormsModule, NgxEditorModule],
+  imports: [FormsModule, NgxEditorModule],
   templateUrl: './ngx-editor.html',
   styleUrl: './ngx-editor.scss',
 })

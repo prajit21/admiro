@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import * as Data from '../../../../shared/data/ui-kits/dropdown';
 
 @Component({
   selector: 'app-justify-content-dropdown',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './justify-content-dropdown.html',
   styleUrl: './justify-content-dropdown.scss',
 })

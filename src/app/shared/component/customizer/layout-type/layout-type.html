@@ -1,5 +1,5 @@
 <div class="radio-form checkbox-checked">
-  <div class="form-check ltr-setting" [ngClass]="{ active: layoutType === 'ltr' }">
+  <div class="form-check ltr-setting" [class.active]="layoutType === 'ltr'">
     <input
       class="form-check-input"
       id="flexRadioDefault1"
@@ -10,7 +10,7 @@
     />
     <label class="form-check-label" for="flexRadioDefault1">LTR</label>
   </div>
-  <div class="form-check rtl-setting" [ngClass]="{ active: layoutType === 'rtl' }">
+  <div class="form-check rtl-setting" [class.active]="layoutType === 'rtl'">
     <input
       class="form-check-input"
       id="flexRadioDefault2"
@@ -20,7 +20,7 @@
     />
     <label class="form-check-label" for="flexRadioDefault2">RTL</label>
   </div>
-  <div class="form-check box-setting" [ngClass]="{ active: layoutType === 'box-layout' }">
+  <div class="form-check box-setting" [class.active]="layoutType === 'box-layout'">
     <input
       class="form-check-input"
       id="flexRadioDefault3"

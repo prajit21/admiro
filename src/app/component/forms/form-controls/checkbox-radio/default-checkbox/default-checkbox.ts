@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { checkbox } from '../../../../../shared/data/form-controls/checkbox-radi
 
 @Component({
   selector: 'app-default-checkbox',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './default-checkbox.html',
   styleUrl: './default-checkbox.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ButtonsWithPrefixPostfix } from './buttons-with-prefix-postfix/buttons-with-prefix-postfix';
@@ -10,13 +10,12 @@ import { RoundedTouchspin } from './rounded-touchspin/rounded-touchspin';
 @Component({
   selector: 'app-touchspin',
   imports: [
-    CommonModule,
     ButtonsWithPrefixPostfix,
     DefaultTouchspin,
     IconsWithPrefixPostfix,
     OutlinedTouchspin,
-    RoundedTouchspin,
-  ],
+    RoundedTouchspin
+],
   templateUrl: './touchspin.html',
   styleUrl: './touchspin.scss',
 })

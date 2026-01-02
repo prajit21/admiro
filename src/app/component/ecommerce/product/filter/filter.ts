@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -13,7 +13,7 @@ import {
 
 @Component({
   selector: 'app-filter',
-  imports: [CommonModule, CarouselModule, NgxSliderModule, FormsModule],
+  imports: [CarouselModule, NgxSliderModule, FormsModule],
   templateUrl: './filter.html',
   styleUrl: './filter.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { PersonalDetails } from './personal-details/personal-details';
@@ -8,7 +8,7 @@ import { YourExprience } from './your-exprience/your-exprience';
 
 @Component({
   selector: 'app-apply-form',
-  imports: [CommonModule, PersonalDetails, UploadFiles, YourExprience, YourEduction],
+  imports: [PersonalDetails, UploadFiles, YourExprience, YourEduction],
   templateUrl: './apply-form.html',
   styleUrl: './apply-form.scss',
 })

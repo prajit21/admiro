@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { OpenModal } from './open-modal/open-modal';
@@ -8,7 +8,7 @@ import { TooltipsPopovers } from './tooltips-popovers/tooltips-popovers';
 
 @Component({
   selector: 'app-basic-modal',
-  imports: [CommonModule, OpenModal, ScrollingContent, Simple, TooltipsPopovers],
+  imports: [OpenModal, ScrollingContent, Simple, TooltipsPopovers],
   templateUrl: './basic-modal.html',
   styleUrl: './basic-modal.scss',
 })

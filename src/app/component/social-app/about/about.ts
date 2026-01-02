@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AboutCenter } from './about-center/about-center';
@@ -7,7 +7,7 @@ import { TimelineRight } from '../timeline/timeline-right/timeline-right';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule, TimelineLeft, TimelineRight, AboutCenter],
+  imports: [TimelineLeft, TimelineRight, AboutCenter],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })

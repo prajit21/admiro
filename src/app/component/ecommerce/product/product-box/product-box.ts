@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { QuickView } from '../quick-view/quick-view';
 
 @Component({
   selector: 'app-product-box',
-  imports: [CommonModule, RouterModule, NgbModule],
+  imports: [RouterModule, NgbModule],
   templateUrl: './product-box.html',
   styleUrl: './product-box.scss',
 })

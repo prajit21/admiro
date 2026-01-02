@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import { StackingToasts } from '../../../../shared/data/bonus-ui/toasts';
 
 @Component({
   selector: 'app-stacking-toast',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './stacking-toast.html',
   styleUrl: './stacking-toast.scss',
 })

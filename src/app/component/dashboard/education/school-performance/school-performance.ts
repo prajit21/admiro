@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { SchoolPerformanceChart } from '../../../../shared/data/dashboard/educat
 
 @Component({
   selector: 'app-school-performance',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './school-performance.html',
   styleUrl: './school-performance.scss',
 })

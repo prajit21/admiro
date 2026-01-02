@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { FullscreenLgModal } from './fullscreen-lg-modal/fullscreen-lg-modal';
@@ -11,14 +11,13 @@ import { FullscreenXxlModal } from './fullscreen-xxl-modal/fullscreen-xxl-modal'
 @Component({
   selector: 'app-fullscreen-modal',
   imports: [
-    CommonModule,
     FullscreenLgModal,
     FullscreenMdModal,
     FullscreenSimpleModal,
     FullscreenSmModal,
     FullscreenXlModal,
-    FullscreenXxlModal,
-  ],
+    FullscreenXxlModal
+],
   templateUrl: './fullscreen-modal.html',
   styleUrl: './fullscreen-modal.scss',
 })

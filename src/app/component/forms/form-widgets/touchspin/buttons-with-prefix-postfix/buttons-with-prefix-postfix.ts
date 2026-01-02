@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttons-with-prefix-postfix',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './buttons-with-prefix-postfix.html',
   styleUrl: './buttons-with-prefix-postfix.scss',
 })

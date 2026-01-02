@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-select-table',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './select-table.html',
   styleUrl: './select-table.scss',
 })

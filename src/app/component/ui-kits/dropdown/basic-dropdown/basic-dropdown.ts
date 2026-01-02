@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import * as Data from '../../../../shared/data/ui-kits/dropdown';
 
 @Component({
   selector: 'app-basic-dropdown',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './basic-dropdown.html',
   styleUrl: './basic-dropdown.scss',
 })

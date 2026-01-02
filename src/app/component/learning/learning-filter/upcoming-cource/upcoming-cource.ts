@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import { upcomingCourse } from '../../../../shared/data/learning/learning';
 
 @Component({
   selector: 'app-upcoming-cource',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './upcoming-cource.html',
   styleUrl: './upcoming-cource.scss',
 })

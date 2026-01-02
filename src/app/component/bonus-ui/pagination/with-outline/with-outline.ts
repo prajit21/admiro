@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-with-outline',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './with-outline.html',
   styleUrl: './with-outline.scss',
 })

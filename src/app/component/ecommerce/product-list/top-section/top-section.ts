@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
 
 @Component({
   selector: 'app-top-section',
-  imports: [CommonModule, RouterModule, Feathericon],
+  imports: [RouterModule, Feathericon, NgClass],
   templateUrl: './top-section.html',
   styleUrl: './top-section.scss',
 })

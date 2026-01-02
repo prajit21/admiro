@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -10,7 +10,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 
 @Component({
   selector: 'app-contact-chat-tab',
-  imports: [CommonModule, ContactSearch, NgbModule, Feathericon, ClickOutsideDirective],
+  imports: [ContactSearch, NgbModule, Feathericon, ClickOutsideDirective],
   templateUrl: './contact-chat-tab.html',
   styleUrl: './contact-chat-tab.scss',
 })

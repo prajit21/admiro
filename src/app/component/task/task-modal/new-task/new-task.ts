@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-new-task',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './new-task.html',
   styleUrl: './new-task.scss',
 })

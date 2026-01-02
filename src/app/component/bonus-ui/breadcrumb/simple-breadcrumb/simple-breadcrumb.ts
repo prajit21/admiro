@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-simple-breadcrumb',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './simple-breadcrumb.html',
   styleUrl: './simple-breadcrumb.scss',
 })

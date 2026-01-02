@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-simple-tabs',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './simple-tabs.html',
   styleUrl: './simple-tabs.scss',
 })

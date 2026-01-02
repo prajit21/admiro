@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-raise-style',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './raise-style.html',
   styleUrl: './raise-style.scss',
 })

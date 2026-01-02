@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { checkBox, themeSales } from '../../../../../shared/data/form-controls/m
 
 @Component({
   selector: 'app-variation-checknox',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './variation-checknox.html',
   styleUrl: './variation-checknox.scss',
 })

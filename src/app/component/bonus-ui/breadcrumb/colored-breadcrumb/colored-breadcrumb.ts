@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-colored-breadcrumb',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './colored-breadcrumb.html',
   styleUrl: './colored-breadcrumb.scss',
 })

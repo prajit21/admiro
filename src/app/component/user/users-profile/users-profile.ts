@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { UserProfile1 } from './user-profile1/user-profile1';
@@ -9,7 +9,7 @@ import { UserProfile5 } from './user-profile5/user-profile5';
 
 @Component({
   selector: 'app-users-profile',
-  imports: [CommonModule, UserProfile1, UserProfile2, UserProfile3, UserProfile4, UserProfile5],
+  imports: [UserProfile1, UserProfile2, UserProfile3, UserProfile4, UserProfile5],
   templateUrl: './users-profile.html',
   styleUrl: './users-profile.scss',
 })

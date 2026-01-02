@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-unloack-user',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './unloack-user.html',
   styleUrl: './unloack-user.scss',
 })

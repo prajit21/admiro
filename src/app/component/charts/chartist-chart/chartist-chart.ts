@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AdvancedSmilAnimations } from './advanced-smil-animations/advanced-smil-animations';
@@ -17,7 +17,6 @@ import { SvgPathAnimation } from './svg-path-animation/svg-path-animation';
 @Component({
   selector: 'app-chartist-chart',
   imports: [
-    CommonModule,
     AdvancedSmilAnimations,
     BiPolarBarChart,
     BiPolarLine,
@@ -29,8 +28,8 @@ import { SvgPathAnimation } from './svg-path-animation/svg-path-animation';
     LineAreaChart,
     LinesChart,
     StackedBarChart,
-    SvgPathAnimation,
-  ],
+    SvgPathAnimation
+],
   templateUrl: './chartist-chart.html',
   styleUrl: './chartist-chart.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, viewChild } from '@angular/core';
 
 import { LightboxModule } from 'ng-gallery/lightbox';
@@ -6,7 +6,7 @@ import { NgxMasonryComponent, NgxMasonryModule, NgxMasonryOptions } from 'ngx-ma
 
 @Component({
   selector: 'app-masonry-gallery',
-  imports: [CommonModule, NgxMasonryModule, LightboxModule],
+  imports: [NgxMasonryModule, LightboxModule],
   templateUrl: './masonry-gallery.html',
   styleUrl: './masonry-gallery.scss',
 })

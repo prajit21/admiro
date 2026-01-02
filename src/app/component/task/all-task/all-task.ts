@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, SimpleChanges, input } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import * as Data from '../../../shared/data/tasks/task-list';
 
 @Component({
   selector: 'app-all-task',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './all-task.html',
   styleUrl: './all-task.scss',
 })

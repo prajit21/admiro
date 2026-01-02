@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import * as Progresschart from '../../../../shared/data/widgets/chart';
 
 @Component({
   selector: 'app-order-status',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './order-status.html',
   styleUrl: './order-status.scss',
 })

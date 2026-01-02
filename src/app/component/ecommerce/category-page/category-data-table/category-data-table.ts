@@ -1,4 +1,4 @@
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { DecimalPipe, AsyncPipe } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -16,12 +16,12 @@ import { CategoriesService } from '../../../../shared/services/ecommerce/categor
 @Component({
   selector: 'app-category-data-table',
   imports: [
-    CommonModule,
     CategoriesDirective,
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
+    AsyncPipe,
   ],
   providers: [CategoriesService, DecimalPipe],
   templateUrl: './category-data-table.html',

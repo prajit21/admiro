@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-radio-table',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './radio-table.html',
   styleUrl: './radio-table.scss',
 })

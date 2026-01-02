@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, output, inject } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
 
 @Component({
   selector: 'app-products-gallery',
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, DropzoneModule],
+  imports: [FormsModule, ReactiveFormsModule, DropzoneModule],
   templateUrl: './products-gallery.html',
   styleUrl: './products-gallery.scss',
 })

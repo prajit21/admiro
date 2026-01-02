@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, SimpleChanges, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +12,7 @@ import { NewContact } from '../contact-modal/new-contact/new-contact';
 
 @Component({
   selector: 'app-contact-sidebar',
-  imports: [CommonModule, ClickOutsideDirective, Feathericon, ContactDetails],
+  imports: [ClickOutsideDirective, Feathericon, ContactDetails],
   templateUrl: './contact-sidebar.html',
   styleUrl: './contact-sidebar.scss',
 })

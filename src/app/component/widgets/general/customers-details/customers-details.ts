@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -8,7 +8,7 @@ import * as commonchat from '../../../../shared/data/widgets/general/general-cha
 
 @Component({
   selector: 'app-customers-details',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './customers-details.html',
   styleUrl: './customers-details.scss',
 })

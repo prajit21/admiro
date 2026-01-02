@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BorderColor } from './border-color/border-color';
@@ -14,7 +14,6 @@ import { TextColor } from './text-color/text-color';
 @Component({
   selector: 'app-helper-classes',
   imports: [
-    CommonModule,
     BorderColor,
     FontSize,
     BorderDisplays,
@@ -23,8 +22,8 @@ import { TextColor } from './text-color/text-color';
     ImagesSizes,
     StylesBackgroud,
     StylesBorders,
-    TextColor,
-  ],
+    TextColor
+],
   templateUrl: './helper-classes.html',
   styleUrl: './helper-classes.scss',
 })

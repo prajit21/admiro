@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-toggle-between-modals',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './toggle-between-modals.html',
   styleUrl: './toggle-between-modals.scss',
 })

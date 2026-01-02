@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-coming-bg-video',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './coming-bg-video.html',
   styleUrl: './coming-bg-video.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { sellingchart } from '../../../../shared/data/dashboard/ecommerce/ecomme
 
 @Component({
   selector: 'app-selling-chart',
-  imports: [CommonModule, NgApexchartsModule, RouterModule],
+  imports: [NgApexchartsModule, RouterModule],
   templateUrl: './selling-chart.html',
   styleUrl: './selling-chart.scss',
 })

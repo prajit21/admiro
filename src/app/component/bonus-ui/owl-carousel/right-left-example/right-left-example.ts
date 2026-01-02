@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -7,7 +7,7 @@ import { commonImg, RightToLeftoptions } from '../../../../shared/data/bonus-ui/
 
 @Component({
   selector: 'app-right-left-example',
-  imports: [CommonModule, CarouselModule],
+  imports: [CarouselModule],
   templateUrl: './right-left-example.html',
   styleUrl: './right-left-example.scss',
 })

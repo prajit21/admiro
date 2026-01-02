@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-reset-password',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './reset-password.html',
   styleUrl: './reset-password.scss',
 })

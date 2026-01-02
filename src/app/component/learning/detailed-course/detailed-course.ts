@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { commentsData } from '../../../shared/data/learning/learning';
@@ -7,7 +7,7 @@ import { LearningFilter } from '../learning-filter/learning-filter';
 
 @Component({
   selector: 'app-detailed-course',
-  imports: [CommonModule, BlogComment, LearningFilter],
+  imports: [BlogComment, LearningFilter],
   templateUrl: './detailed-course.html',
   styleUrl: './detailed-course.scss',
 })

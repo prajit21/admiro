@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-display-heading',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './display-heading.html',
   styleUrl: './display-heading.scss',
 })

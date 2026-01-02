@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AnimatedButtons } from './animated-buttons/animated-buttons';
@@ -17,7 +17,6 @@ import { RadioToggleButtons } from './radio-toggle-buttons/radio-toggle-buttons'
 @Component({
   selector: 'app-checkbox-radio',
   imports: [
-    CommonModule,
     AnimatedButtons,
     BasicRadioCheckbox,
     CustomCheckbox,
@@ -29,8 +28,8 @@ import { RadioToggleButtons } from './radio-toggle-buttons/radio-toggle-buttons'
     InlineInputType,
     OutlinedCheckboxStyle,
     RadioToggleButtons,
-    ImagesRadio,
-  ],
+    ImagesRadio
+],
   templateUrl: './checkbox-radio.html',
   styleUrl: './checkbox-radio.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-fullscreen-xxl-modal',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './fullscreen-xxl-modal.html',
   styleUrl: './fullscreen-xxl-modal.scss',
 })

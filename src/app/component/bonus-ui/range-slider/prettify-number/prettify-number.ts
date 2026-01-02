@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-prettify-number',
-  imports: [CommonModule, NgxSliderModule],
+  imports: [NgxSliderModule],
   templateUrl: './prettify-number.html',
   styleUrl: './prettify-number.scss',
 })

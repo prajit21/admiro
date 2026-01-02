@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BasicInputControl } from './basic-input-control/basic-input-control';
@@ -11,14 +11,13 @@ import { Sizing } from './sizing/sizing';
 @Component({
   selector: 'app-base-input',
   imports: [
-    CommonModule,
     BasicInputControl,
     EdgesStyle,
     FlatStyle,
     RaiseStyle,
     SimpleExample,
-    Sizing,
-  ],
+    Sizing
+],
   templateUrl: './base-input.html',
   styleUrl: './base-input.scss',
 })

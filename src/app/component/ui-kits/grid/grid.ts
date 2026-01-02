@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { GridColumn } from './grid-column/grid-column';
@@ -12,15 +12,14 @@ import { VerticalAlignment } from './vertical-alignment/vertical-alignment';
 @Component({
   selector: 'app-grid',
   imports: [
-    CommonModule,
     GridColumn,
     GridOption,
     HorizontalAlignment,
     Nesting,
     Offset,
     Order,
-    VerticalAlignment,
-  ],
+    VerticalAlignment
+],
   templateUrl: './grid.html',
   styleUrl: './grid.scss',
 })

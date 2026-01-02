@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-static-backdrop-modal',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './static-backdrop-modal.html',
   styleUrl: './static-backdrop-modal.scss',
 })

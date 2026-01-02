@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-edges-style',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './edges-style.html',
   styleUrl: './edges-style.scss',
 })

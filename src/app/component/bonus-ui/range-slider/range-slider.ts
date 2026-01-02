@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CustomValues } from './custom-values/custom-values';
@@ -9,7 +9,7 @@ import { PrettifyNumber } from './prettify-number/prettify-number';
 
 @Component({
   selector: 'app-range-slider',
-  imports: [CommonModule, CustomValues, DefaultRangeSlider, Disabled, MinMaxSlider, PrettifyNumber],
+  imports: [CustomValues, DefaultRangeSlider, Disabled, MinMaxSlider, PrettifyNumber],
   templateUrl: './range-slider.html',
   styleUrl: './range-slider.scss',
 })

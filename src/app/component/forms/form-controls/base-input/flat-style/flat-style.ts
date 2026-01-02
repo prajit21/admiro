@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-flat-style',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './flat-style.html',
   styleUrl: './flat-style.scss',
 })

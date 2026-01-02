@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import { descriptionData, reviewData, userDetailsData } from '../../../../shared
 
 @Component({
   selector: 'app-material-style-tabs',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './material-style-tabs.html',
   styleUrl: './material-style-tabs.scss',
 })

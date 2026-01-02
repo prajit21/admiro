@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import { JobFilter } from '../job-filter/job-filter';
 
 @Component({
   selector: 'app-cards-view',
-  imports: [CommonModule, JobFilter, NgbModule],
+  imports: [JobFilter, NgbModule],
   templateUrl: './cards-view.html',
   styleUrl: './cards-view.scss',
 })

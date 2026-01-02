@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-top-default-card',
-  imports: [CommonModule],
+  imports: [DatePipe],
   templateUrl: './top-default-card.html',
   styleUrl: './top-default-card.scss',
 })

@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-project-create-form',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './project-create-form.html',
   styleUrl: './project-create-form.scss',
 })

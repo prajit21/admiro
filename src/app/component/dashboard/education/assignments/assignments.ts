@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { Assignment } from '../../../../shared/data/dashboard/education/educatio
 
 @Component({
   selector: 'app-assignments',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './assignments.html',
   styleUrl: './assignments.scss',
 })

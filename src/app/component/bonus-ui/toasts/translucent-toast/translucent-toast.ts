@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import { TranslucentToasts } from '../../../../shared/data/bonus-ui/toasts';
 
 @Component({
   selector: 'app-translucent-toast',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './translucent-toast.html',
   styleUrl: './translucent-toast.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -79,7 +79,7 @@ const statesWithFlags: { name: string; flag: string }[] = [
 
 @Component({
   selector: 'app-template-for-results',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './template-for-results.html',
   styleUrl: './template-for-results.scss',
 })

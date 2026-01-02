@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-open-modal',
-  imports: [CommonModule],
   templateUrl: './open-modal.html',
   styleUrl: './open-modal.scss',
 })

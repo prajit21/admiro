@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { DefaultStyle } from './default-style/default-style';
@@ -14,7 +14,6 @@ import { WithoutBordersStyle } from './without-borders-style/without-borders-sty
 @Component({
   selector: 'app-mega-options',
   imports: [
-    CommonModule,
     DefaultStyle,
     HorizontalStyle,
     InlineStyle,
@@ -23,8 +22,8 @@ import { WithoutBordersStyle } from './without-borders-style/without-borders-sty
     VariationChecknox,
     VariationRadio,
     VerticalStyle,
-    WithoutBordersStyle,
-  ],
+    WithoutBordersStyle
+],
   templateUrl: './mega-options.html',
   styleUrl: './mega-options.scss',
 })

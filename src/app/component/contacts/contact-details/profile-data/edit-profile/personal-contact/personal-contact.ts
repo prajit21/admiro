@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 
 import * as data from '../../../../../../shared/data/contacts/all-contact';
 
 @Component({
   selector: 'app-personal-contact',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './personal-contact.html',
   styleUrl: './personal-contact.scss',
 })

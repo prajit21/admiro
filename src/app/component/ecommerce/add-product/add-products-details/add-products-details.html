@@ -10,7 +10,7 @@
         type="text"
         formControlName="productTitle"
         autocomplete="off"
-        [ngClass]="{
+        [class]="{
           'is-invalid': (productTitle?.touched || validate) && productTitle?.errors,
           'is-valid': !productTitle?.errors,
         }"

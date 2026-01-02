@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import * as Data from '../../../../shared/data/ui-kits/dropdown';
 
 @Component({
   selector: 'app-split-dropdown',
-  imports: [CommonModule, NgbModule, Feathericon],
+  imports: [NgbModule, Feathericon],
   templateUrl: './split-dropdown.html',
   styleUrl: './split-dropdown.scss',
 })

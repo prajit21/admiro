@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import {
@@ -15,7 +15,7 @@ import { gallerydes } from '../../../shared/data/gallery/gallery-grid';
 
 @Component({
   selector: 'app-gallery-grid-desc',
-  imports: [CommonModule, LightboxModule, GalleryModule],
+  imports: [LightboxModule, GalleryModule],
   templateUrl: './gallery-grid-desc.html',
   styleUrl: './gallery-grid-desc.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { topcommonlists } from '../../../../shared/data/ui-kits/lists';
 
 @Component({
   selector: 'app-top-common-lists',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './top-common-lists.html',
   styleUrl: './top-common-lists.scss',
 })

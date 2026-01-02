@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ActivityTimeline } from './activity-timeline/activity-timeline';
@@ -21,7 +21,6 @@ import {
 @Component({
   selector: 'app-ecommerce',
   imports: [
-    CommonModule,
     ActivityTimeline,
     BestSeller,
     CommonValueChart,
@@ -33,8 +32,8 @@ import {
     SellingChart,
     TopEcommerceChart,
     TopSellingProducts,
-    UserStatus,
-  ],
+    UserStatus
+],
   templateUrl: './ecommerce.html',
   styleUrl: './ecommerce.scss',
 })

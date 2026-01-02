@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AlertsTable } from './alerts-table/alerts-table';
@@ -15,7 +15,6 @@ import { UiTable } from './ui-table/ui-table';
 @Component({
   selector: 'app-table-component',
   imports: [
-    CommonModule,
     AlertsTable,
     BadgesTable,
     CheckboxTable,
@@ -25,8 +24,8 @@ import { UiTable } from './ui-table/ui-table';
     SelectTable,
     SwitchTable,
     TooltipTable,
-    UiTable,
-  ],
+    UiTable
+],
   templateUrl: './table-component.html',
   styleUrl: './table-component.scss',
 })

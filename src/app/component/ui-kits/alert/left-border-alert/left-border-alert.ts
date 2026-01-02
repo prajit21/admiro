@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-left-border-alert',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './left-border-alert.html',
   styleUrl: './left-border-alert.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { buttons, buttonsGroup } from '../../shared/data/buttons/buttons';
 
 @Component({
   selector: 'app-buttons',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './buttons.html',
   styleUrl: './buttons.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BasicModal } from './basic-modal/basic-modal';
@@ -12,15 +12,14 @@ import { ToggleBetweenModals } from './toggle-between-modals/toggle-between-moda
 @Component({
   selector: 'app-modal',
   imports: [
-    CommonModule,
     BasicModal,
     CenteredModal,
     CustomModals,
     FullscreenModal,
     SizesModal,
     StaticBackdropModal,
-    ToggleBetweenModals,
-  ],
+    ToggleBetweenModals
+],
   templateUrl: './modal.html',
   styleUrl: './modal.scss',
 })

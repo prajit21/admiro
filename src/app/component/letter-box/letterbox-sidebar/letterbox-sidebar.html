@@ -16,7 +16,7 @@
                       <a
                         class="nav-link active"
                         id="inbox-pill-tab"
-                        [ngClass]="{ active: data.status }"
+                        [class.active]="data.status"
                         (click)="letterbox(data)"
                       >
                         <svg class="stroke-icon">

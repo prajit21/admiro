@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-live-alert',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './live-alert.html',
   styleUrl: './live-alert.scss',
 })

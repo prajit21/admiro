@@ -13,7 +13,7 @@
                 id="validationDefault04"
                 formControlName="product"
                 name="something"
-                [ngClass]="{
+                [class]="{
                   'is-invalid': (product?.touched || validate) && product?.errors,
                   'is-valid': !product?.errors,
                 }"
@@ -47,7 +47,7 @@
                 formControlName="addTag"
                 name="add_Tag"
                 class="form-control"
-                [ngClass]="{
+                [class]="{
                   'is-invalid': (addTag?.touched || validate) && addTag?.errors,
                   'is-valid': !addTag?.errors,
                 }"
@@ -80,7 +80,7 @@
                 class="form-select"
                 id="publishStatus"
                 formControlName="productStatus"
-                [ngClass]="{
+                [class]="{
                   'is-invalid': (productStatus?.touched || validate) && productStatus?.errors,
                   'is-valid': !productStatus?.errors,
                 }"
@@ -108,7 +108,7 @@
                   id="datetime-local1"
                   type="date"
                   formControlName="date"
-                  [ngClass]="{
+                  [class]="{
                     'is-invalid': (date?.touched || validate) && date?.errors,
                     'is-valid': !date?.errors,
                   }"

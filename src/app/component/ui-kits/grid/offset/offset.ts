@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-offset',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './offset.html',
   styleUrl: './offset.scss',
 })

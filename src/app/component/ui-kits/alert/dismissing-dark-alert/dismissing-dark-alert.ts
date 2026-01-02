@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dismissing-dark-alert',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './dismissing-dark-alert.html',
   styleUrl: './dismissing-dark-alert.scss',
 })

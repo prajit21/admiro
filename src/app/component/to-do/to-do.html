@@ -18,7 +18,7 @@
                       class="mark-all-btn"
                       id="mark-all-finished"
                       role="button"
-                      [ngClass]="{ 'move-up': completed }"
+                      [class.move-up]="completed"
                     >
                       <span class="btn-label">Mark all as finished</span>
                       <span class="action-box completed" (click)="markAllAction(true)"
@@ -27,7 +27,7 @@
                     <span
                       class="mark-all-btn move-down"
                       id="mark-all-incomplete"
-                      [ngClass]="{ 'move-down': !completed }"
+                      [class.move-down]="!completed"
                     >
                       <span class="btn-label">Mark all as Incomplete</span
                       ><span class="action-box" (click)="markAllAction(false)">
@@ -77,7 +77,7 @@
                     @for (task of taskData; track task; let i = $index) {
                       <li
                         class="task"
-                        [ngClass]="{ completed: task.completed ? task.completed : completed }"
+                        [class.completed]="task.completed ? task.completed : completed"
                       >
                         <div class="task-container">
                           <h4 class="task-label">{{ task.text }}</h4>

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, SimpleChanges, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -11,7 +11,7 @@ import { LetterboxUser } from '../letterbox-user/letterbox-user';
 
 @Component({
   selector: 'app-letterbox-sidebar',
-  imports: [CommonModule, ClickOutsideDirective, LetterboxUser],
+  imports: [ClickOutsideDirective, LetterboxUser],
   templateUrl: './letterbox-sidebar.html',
   styleUrl: './letterbox-sidebar.scss',
 })

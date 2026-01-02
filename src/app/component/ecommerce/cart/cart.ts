@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { cartItem } from '../../../shared/data/ecommerce/cart';
 
 @Component({
   selector: 'app-cart',
-  imports: [CommonModule, RouterModule, Feathericon],
+  imports: [RouterModule, Feathericon],
   templateUrl: './cart.html',
   styleUrl: './cart.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -70,7 +70,7 @@ const states = [
 
 @Component({
   selector: 'app-simple-typeahead',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './simple-typeahead.html',
   styleUrl: './simple-typeahead.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { commonBorderPositionCardData } from '../../../../shared/data/bonus-ui/creative-cards';
 
 @Component({
   selector: 'app-common-border-card',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './common-border-card.html',
   styleUrl: './common-border-card.scss',
 })

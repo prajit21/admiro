@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-basic-sweetalert',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './basic-sweetalert.html',
   styleUrl: './basic-sweetalert.scss',
 })

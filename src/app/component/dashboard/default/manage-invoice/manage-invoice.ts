@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -7,7 +7,7 @@ import { ManageInvoices } from '../../../../shared/data/dashboard/default/defaul
 
 @Component({
   selector: 'app-manage-invoice',
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './manage-invoice.html',
   styleUrl: './manage-invoice.scss',
 })

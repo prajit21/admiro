@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AdditionalContents } from '../../../../shared/data/ui-kits/alert';
 
 @Component({
   selector: 'app-additional-content',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './additional-content.html',
   styleUrl: './additional-content.scss',
 })

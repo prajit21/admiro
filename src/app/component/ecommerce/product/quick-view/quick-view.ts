@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Products } from '../../../../shared/model/product.model';
 
 @Component({
   selector: 'app-quick-view',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './quick-view.html',
   styleUrl: './quick-view.scss',
 })

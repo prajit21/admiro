@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { icon } from '../../../shared/data/icons/flags';
 
 @Component({
   selector: 'app-flag-icon',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './flag-icon.html',
   styleUrl: './flag-icon.scss',
 })

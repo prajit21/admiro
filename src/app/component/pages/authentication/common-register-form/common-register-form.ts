@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-common-register-form',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './common-register-form.html',
   styleUrl: './common-register-form.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CurrentRatingbar } from './current-ratingbar/current-ratingbar';
@@ -11,14 +11,13 @@ import { StarRatingbar } from './star-ratingbar/star-ratingbar';
 @Component({
   selector: 'app-rating',
   imports: [
-    CommonModule,
     CurrentRatingbar,
     HorizontalRatingbar,
     MovieRatingbar,
     OneToTenRatingbar,
     SquareRatingbar,
-    StarRatingbar,
-  ],
+    StarRatingbar
+],
   templateUrl: './rating.html',
   styleUrl: './rating.scss',
 })

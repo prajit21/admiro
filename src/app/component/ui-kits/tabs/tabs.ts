@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BorderTabs } from './border-tabs/border-tabs';
@@ -13,7 +13,6 @@ import { VerticalTabs } from './vertical-tabs/vertical-tabs';
 @Component({
   selector: 'app-tabs',
   imports: [
-    CommonModule,
     BorderTabs,
     IconsTabs,
     JustifyTabs,
@@ -21,8 +20,8 @@ import { VerticalTabs } from './vertical-tabs/vertical-tabs';
     MaterialStyleTabs,
     PillsTabs,
     SimpleTabs,
-    VerticalTabs,
-  ],
+    VerticalTabs
+],
   templateUrl: './tabs.html',
   styleUrl: './tabs.scss',
 })

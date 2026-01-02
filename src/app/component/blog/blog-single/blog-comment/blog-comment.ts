@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 
 import { comments } from '../../../../shared/data/blog/blog-data';
 
 @Component({
   selector: 'app-blog-comment',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './blog-comment.html',
   styleUrl: './blog-comment.scss',
 })

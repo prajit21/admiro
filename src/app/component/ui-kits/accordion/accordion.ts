@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CollapseAccordion } from './collapse-accordion/collapse-accordion';
@@ -12,15 +12,14 @@ import { SimpleAccordion } from './simple-accordion/simple-accordion';
 @Component({
   selector: 'app-accordion',
   imports: [
-    CommonModule,
     SimpleAccordion,
     FlushAccordion,
     IconsAccordion,
     MultipleCollapseAccordion,
     CollapseAccordion,
     HorizontalAccordion,
-    OutlineAccordion,
-  ],
+    OutlineAccordion
+],
   templateUrl: './accordion.html',
   styleUrl: './accordion.scss',
 })

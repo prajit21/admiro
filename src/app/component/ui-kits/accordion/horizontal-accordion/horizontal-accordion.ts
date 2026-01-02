@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-horizontal-accordion',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './horizontal-accordion.html',
   styleUrl: './horizontal-accordion.scss',
 })

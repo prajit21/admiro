@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-color-schemes',
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './color-schemes.html',
   styleUrl: './color-schemes.scss',
 })

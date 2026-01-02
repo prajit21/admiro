@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-icons-breadcrumb',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './icons-breadcrumb.html',
   styleUrl: './icons-breadcrumb.scss',
 })

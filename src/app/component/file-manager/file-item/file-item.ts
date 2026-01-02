@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import * as fileData from '../../../shared/data/file-manager/file-manager';
 
 @Component({
   selector: 'app-file-item',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './file-item.html',
   styleUrl: './file-item.scss',
 })

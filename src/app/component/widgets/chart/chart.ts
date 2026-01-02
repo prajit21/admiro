@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CommonWidgetsChart } from './common-widgets-chart/common-widgets-chart';
@@ -19,7 +19,6 @@ import * as chartData from '../../../shared/data/widgets/chart';
 @Component({
   selector: 'app-chart',
   imports: [
-    CommonModule,
     CommonWidgetsChart,
     CryptAnnotations,
     CryptocurrencyPrices,
@@ -32,8 +31,8 @@ import * as chartData from '../../../shared/data/widgets/chart';
     SkillStatus,
     StockMarket,
     TrunOver,
-    Uses,
-  ],
+    Uses
+],
   templateUrl: './chart.html',
   styleUrl: './chart.scss',
 })

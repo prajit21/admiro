@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-centered-modal',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './centered-modal.html',
   styleUrl: './centered-modal.scss',
 })

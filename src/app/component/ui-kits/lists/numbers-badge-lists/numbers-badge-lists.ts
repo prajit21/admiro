@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NumberedBadgeLists } from '../../../../shared/data/ui-kits/lists';
 
 @Component({
   selector: 'app-numbers-badge-lists',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './numbers-badge-lists.html',
   styleUrl: './numbers-badge-lists.scss',
 })

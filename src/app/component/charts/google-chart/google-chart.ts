@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AreaChart1 } from './area-chart-1/area-chart-1';
@@ -16,7 +16,6 @@ import { PieChart4 } from './pie-chart-4/pie-chart-4';
 @Component({
   selector: 'app-google-chart',
   imports: [
-    CommonModule,
     AreaChart1,
     AreaChart2,
     BarChart2,
@@ -27,8 +26,8 @@ import { PieChart4 } from './pie-chart-4/pie-chart-4';
     PieChart1,
     PieChart2,
     PieChart3,
-    PieChart4,
-  ],
+    PieChart4
+],
   templateUrl: './google-chart.html',
   styleUrl: './google-chart.scss',
 })

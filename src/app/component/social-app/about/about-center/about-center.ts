@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -11,7 +11,7 @@ import * as data from '../../../../shared/data/social-media/social-media-data';
 
 @Component({
   selector: 'app-about-center',
-  imports: [CommonModule, ActivityLog, HobbiesInterests, CommonAddFriends, Feathericon, NgbModule],
+  imports: [ActivityLog, HobbiesInterests, CommonAddFriends, Feathericon, NgbModule],
   templateUrl: './about-center.html',
   styleUrl: './about-center.scss',
 })

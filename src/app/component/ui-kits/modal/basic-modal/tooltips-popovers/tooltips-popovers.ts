@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-tooltips-popovers',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './tooltips-popovers.html',
   styleUrl: './tooltips-popovers.scss',
 })

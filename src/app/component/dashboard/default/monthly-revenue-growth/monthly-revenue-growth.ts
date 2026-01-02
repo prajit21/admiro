@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { growthChart } from '../../../../shared/data/dashboard/default/default-c
 
 @Component({
   selector: 'app-monthly-revenue-growth',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './monthly-revenue-growth.html',
   styleUrl: './monthly-revenue-growth.scss',
 })

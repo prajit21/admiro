@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CommonBorderDisplay } from './common-border-display/common-border-display';
@@ -6,7 +6,7 @@ import * as borderData from '../../../../shared/data/ui-kits/helper-classes';
 
 @Component({
   selector: 'app-border-displays',
-  imports: [CommonModule, CommonBorderDisplay],
+  imports: [CommonBorderDisplay],
   templateUrl: './border-displays.html',
   styleUrl: './border-displays.scss',
 })

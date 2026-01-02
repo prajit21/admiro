@@ -1,9 +1,8 @@
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, inject } from '@angular/core';
 
 @Component({
   selector: 'app-tap-to-top',
-  imports: [CommonModule],
   templateUrl: './tap-to-top.html',
   styleUrl: './tap-to-top.scss',
 })

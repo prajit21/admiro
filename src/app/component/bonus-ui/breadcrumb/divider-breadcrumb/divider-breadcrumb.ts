@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-divider-breadcrumb',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './divider-breadcrumb.html',
   styleUrl: './divider-breadcrumb.scss',
 })

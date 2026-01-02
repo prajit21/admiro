@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -70,7 +70,7 @@ const states = [
 
 @Component({
   selector: 'app-global-configuration-typeaheads',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './global-configuration-typeaheads.html',
   styleUrl: './global-configuration-typeaheads.scss',
 })

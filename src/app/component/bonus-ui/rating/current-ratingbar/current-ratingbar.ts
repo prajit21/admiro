@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { FormControl, FormsModule, Validators } from '@angular/forms';
 
@@ -10,7 +10,7 @@ import { BarRatingModule } from 'ngx-bar-rating';
 
 @Component({
   selector: 'app-current-ratingbar',
-  imports: [CommonModule, FormsModule, NgbModule, BarRatingModule, FontAwesomeModule],
+  imports: [FormsModule, NgbModule, BarRatingModule, FontAwesomeModule],
   templateUrl: './current-ratingbar.html',
   styleUrl: './current-ratingbar.scss',
 })

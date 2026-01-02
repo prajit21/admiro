@@ -1,4 +1,4 @@
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { DecimalPipe, AsyncPipe } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -15,7 +15,7 @@ import { TableService } from '../../../shared/services/table.service';
 
 @Component({
   selector: 'app-data-table',
-  imports: [CommonModule, FormsModule, NgbdSortableHeaderDirective, ReactiveFormsModule, NgbModule],
+  imports: [FormsModule, NgbdSortableHeaderDirective, ReactiveFormsModule, NgbModule, AsyncPipe, DecimalPipe],
   templateUrl: './data-table.html',
   styleUrl: './data-table.scss',
   providers: [TableService, DecimalPipe],

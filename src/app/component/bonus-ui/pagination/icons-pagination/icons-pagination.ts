@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-icons-pagination',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './icons-pagination.html',
   styleUrl: './icons-pagination.scss',
 })

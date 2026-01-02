@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { UpcomingClass } from '../../../../shared/data/dashboard/education/education';
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-upcoming-classes',
-  imports: [CommonModule, ClickOutsideDirective],
+  imports: [ClickOutsideDirective],
   templateUrl: './upcoming-classes.html',
   styleUrl: './upcoming-classes.scss',
 })

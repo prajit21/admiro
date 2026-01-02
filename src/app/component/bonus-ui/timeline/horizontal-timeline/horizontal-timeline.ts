@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { horizontalTimeline } from '../../../../shared/data/bonus-ui/timeline';
 
 @Component({
   selector: 'app-horizontal-timeline',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './horizontal-timeline.html',
   styleUrl: './horizontal-timeline.scss',
 })

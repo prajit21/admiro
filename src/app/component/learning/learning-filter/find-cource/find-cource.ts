@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import { findCourse } from '../../../../shared/data/learning/learning';
 
 @Component({
   selector: 'app-find-cource',
-  imports: [CommonModule, Feathericon, NgbModule],
+  imports: [Feathericon, NgbModule],
   templateUrl: './find-cource.html',
   styleUrl: './find-cource.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Assignments } from './assignments/assignments';
@@ -20,7 +20,6 @@ import {
 @Component({
   selector: 'app-education',
   imports: [
-    CommonModule,
     Assignments,
     LearningChart,
     NewCourses,
@@ -30,8 +29,8 @@ import {
     StudentDetails,
     ToDoList,
     TopCommonEducationchart,
-    UpcomingClasses,
-  ],
+    UpcomingClasses
+],
   templateUrl: './education.html',
   styleUrl: './education.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ChartistModule } from 'ng-chartist';
@@ -7,7 +7,7 @@ import * as chartData from '../../../../shared/data/charts/chartist-chart';
 
 @Component({
   selector: 'app-bi-polar-bar-chart',
-  imports: [CommonModule, ChartistModule],
+  imports: [ChartistModule],
   templateUrl: './bi-polar-bar-chart.html',
   styleUrl: './bi-polar-bar-chart.scss',
 })

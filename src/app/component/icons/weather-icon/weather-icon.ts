@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-weather-icon',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './weather-icon.html',
   styleUrl: './weather-icon.scss',
 })

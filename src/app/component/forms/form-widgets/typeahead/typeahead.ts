@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { FormattedResults } from './formatted-results/formatted-results';
@@ -13,7 +13,6 @@ import { WikipediaSearch } from './wikipedia-search/wikipedia-search';
 @Component({
   selector: 'app-typeahead',
   imports: [
-    CommonModule,
     FormattedResults,
     GlobalConfigurationTypeaheads,
     OpenOnFocus,
@@ -21,8 +20,8 @@ import { WikipediaSearch } from './wikipedia-search/wikipedia-search';
     SelectOnExact,
     SimpleTypeahead,
     TemplateForResults,
-    WikipediaSearch,
-  ],
+    WikipediaSearch
+],
   templateUrl: './typeahead.html',
   styleUrl: './typeahead.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ColorSchemes } from './color-schemes/color-schemes';
@@ -11,14 +11,13 @@ import { UniqueToast } from './unique-toast/unique-toast';
 @Component({
   selector: 'app-toasts',
   imports: [
-    CommonModule,
     ColorSchemes,
     DefaultToast,
     LiveToast,
     StackingToast,
     TranslucentToast,
-    UniqueToast,
-  ],
+    UniqueToast
+],
   templateUrl: './toasts.html',
   styleUrl: './toasts.scss',
 })

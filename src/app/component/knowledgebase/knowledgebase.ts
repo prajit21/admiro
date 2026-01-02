@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BrowseArticalCategories } from './browse-artical-categories/browse-artical-categories';
@@ -10,12 +10,11 @@ import { FeaturedTutorials } from '../faq/featured-tutorials/featured-tutorials'
 @Component({
   selector: 'app-knowledgebase',
   imports: [
-    CommonModule,
     KnowledgebaseTopData,
     KnowledgebaseFooterData,
     BrowseArticalCategories,
-    FeaturedTutorials,
-  ],
+    FeaturedTutorials
+],
   templateUrl: './knowledgebase.html',
   styleUrl: './knowledgebase.scss',
 })

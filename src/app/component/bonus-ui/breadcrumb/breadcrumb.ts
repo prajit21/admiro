@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AlignmentBreadcrumb } from './alignment-breadcrumb/alignment-breadcrumb';
@@ -11,14 +11,13 @@ import { SimpleBreadcrumb } from './simple-breadcrumb/simple-breadcrumb';
 @Component({
   selector: 'app-breadcrumb',
   imports: [
-    CommonModule,
     AlignmentBreadcrumb,
     ColoredBreadcrumb,
     DefaultBreadcrumb,
     DividerBreadcrumb,
     IconsBreadcrumb,
-    SimpleBreadcrumb,
-  ],
+    SimpleBreadcrumb
+],
   templateUrl: './breadcrumb.html',
   styleUrl: './breadcrumb.scss',
 })

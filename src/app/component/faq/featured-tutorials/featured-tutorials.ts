@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, input } from '@angular/core';
 
 import { NgbModule, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import { featuredTutorial } from '../../../shared/data/faq/faq';
 
 @Component({
   selector: 'app-featured-tutorials',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   templateUrl: './featured-tutorials.html',
   styleUrl: './featured-tutorials.scss',
 })

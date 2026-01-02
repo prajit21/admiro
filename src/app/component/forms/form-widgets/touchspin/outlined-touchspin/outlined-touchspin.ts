@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { outlinedtouchspin } from '../../../../../shared/data/forms-widgets/touchspin';
 
 @Component({
   selector: 'app-outlined-touchspin',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './outlined-touchspin.html',
   styleUrl: './outlined-touchspin.scss',
 })

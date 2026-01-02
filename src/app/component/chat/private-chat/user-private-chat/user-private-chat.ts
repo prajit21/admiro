@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
@@ -7,7 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-user-private-chat',
-  imports: [CommonModule, Feathericon, ClickOutsideDirective],
+  imports: [Feathericon, ClickOutsideDirective],
   templateUrl: './user-private-chat.html',
   styleUrl: './user-private-chat.scss',
 })

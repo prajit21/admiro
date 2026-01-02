@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-multiple-collapse-accordion',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './multiple-collapse-accordion.html',
   styleUrl: './multiple-collapse-accordion.scss',
 })

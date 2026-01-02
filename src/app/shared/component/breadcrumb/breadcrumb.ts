@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import {
   ActivatedRoute,
@@ -15,7 +15,7 @@ import { NavmenuService } from '../../services/navmenu.service';
 
 @Component({
   selector: 'app-breadcrumb',
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './breadcrumb.html',
   styleUrl: './breadcrumb.scss',
 })

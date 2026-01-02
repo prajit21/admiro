@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { DefultSelect2 } from './defult-select2/defult-select2';
@@ -7,7 +7,7 @@ import { OutlineColorVariant } from './outline-color-variant/outline-color-varia
 
 @Component({
   selector: 'app-select2',
-  imports: [CommonModule, DefultSelect2, FullColoredVariant, OutlineColorVariant],
+  imports: [DefultSelect2, FullColoredVariant, OutlineColorVariant],
   templateUrl: './select2.html',
   styleUrl: './select2.scss',
 })

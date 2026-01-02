@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { JobTodays } from '../../../../shared/data/dashboard/default/default';
 
 @Component({
   selector: 'app-job-today',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './job-today.html',
   styleUrl: './job-today.scss',
 })

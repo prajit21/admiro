@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-coming-bg-image',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './coming-bg-image.html',
   styleUrl: './coming-bg-image.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { stockValue } from '../../../../shared/data/widgets/general/general-char
 
 @Component({
   selector: 'app-stock-value-chart',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './stock-value-chart.html',
   styleUrl: './stock-value-chart.scss',
 })

@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-font-style',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './font-style.html',
   styleUrl: './font-style.scss',
 })

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Groupings } from '../../../../shared/data/ui-kits/avavtar';
 
 @Component({
   selector: 'app-grouping',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './grouping.html',
   styleUrl: './grouping.scss',
 })

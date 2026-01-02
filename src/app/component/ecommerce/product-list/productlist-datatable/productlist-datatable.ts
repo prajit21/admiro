@@ -1,4 +1,4 @@
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { DecimalPipe, AsyncPipe, NgClass } from '@angular/common';
 import { Component, inject, viewChildren } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -19,13 +19,14 @@ import { ProductListService } from '../../../../shared/services/ecommerce/produc
 @Component({
   selector: 'app-productlist-datatable',
   imports: [
-    CommonModule,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
     ProductListDirective,
     RouterModule,
-  ],
+    AsyncPipe,
+    NgClass
+],
   templateUrl: './productlist-datatable.html',
   styleUrl: './productlist-datatable.scss',
   providers: [ProductListService, DecimalPipe],

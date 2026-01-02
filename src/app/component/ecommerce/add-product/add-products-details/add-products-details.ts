@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, output } from '@angular/core';
 import {
   FormControl,
@@ -12,7 +12,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @Component({
   selector: 'app-add-products-details',
-  imports: [CommonModule, AngularEditorModule, FormsModule, ReactiveFormsModule],
+  imports: [AngularEditorModule, FormsModule, ReactiveFormsModule],
   templateUrl: './add-products-details.html',
   styleUrl: './add-products-details.scss',
 })

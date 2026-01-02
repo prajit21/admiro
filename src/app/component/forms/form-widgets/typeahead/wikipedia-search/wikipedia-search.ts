@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, Injectable, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -41,7 +41,7 @@ export class WikipediaService {
 
 @Component({
   selector: 'app-wikipedia-search',
-  imports: [CommonModule, FormsModule, NgbModule],
+  imports: [FormsModule, NgbModule],
   templateUrl: './wikipedia-search.html',
   styleUrl: './wikipedia-search.scss',
   providers: [WikipediaService],

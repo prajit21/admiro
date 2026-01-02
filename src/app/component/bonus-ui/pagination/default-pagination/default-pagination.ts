@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-default-pagination',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './default-pagination.html',
   styleUrl: './default-pagination.scss',
 })

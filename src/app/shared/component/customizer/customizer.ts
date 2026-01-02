@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, TemplateRef } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +12,7 @@ import { ConfigData, LayoutService } from '../../services/layout.service';
 
 @Component({
   selector: 'app-customizer',
-  imports: [CommonModule, ColorPicker, LayoutType, SidebarIcon, SidebarType, ThemeMode],
+  imports: [ColorPicker, LayoutType, SidebarIcon, SidebarType, ThemeMode],
   templateUrl: './customizer.html',
   styleUrl: './customizer.scss',
 })

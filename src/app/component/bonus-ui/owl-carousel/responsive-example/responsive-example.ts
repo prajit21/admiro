@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -7,7 +7,7 @@ import { responsiveowl, responsiveOptions } from '../../../../shared/data/bonus-
 
 @Component({
   selector: 'app-responsive-example',
-  imports: [CommonModule, CarouselModule],
+  imports: [CarouselModule],
   templateUrl: './responsive-example.html',
   styleUrl: './responsive-example.scss',
 })

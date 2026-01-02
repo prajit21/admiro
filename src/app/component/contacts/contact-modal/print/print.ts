@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, TemplateRef, viewChild } from '@angular/core';
 
 import {
@@ -12,7 +12,7 @@ import * as data from '../../../../shared/data/contacts/all-contact';
 
 @Component({
   selector: 'app-print',
-  imports: [CommonModule, NgbModule],
+  imports: [NgbModule],
   providers: [NgbActiveModal],
   templateUrl: './print.html',
   styleUrl: './print.scss',

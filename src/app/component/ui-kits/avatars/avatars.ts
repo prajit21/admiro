@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AvatarInitial } from './avatar-initial/avatar-initial';
@@ -13,7 +13,6 @@ import { StatusIndicator } from './status-indicator/status-indicator';
 @Component({
   selector: 'app-avatars',
   imports: [
-    CommonModule,
     AvatarInitial,
     AvatarPing,
     AvatarProfile,
@@ -21,8 +20,8 @@ import { StatusIndicator } from './status-indicator/status-indicator';
     Ratio,
     Shapes,
     Sizes,
-    StatusIndicator,
-  ],
+    StatusIndicator
+],
   templateUrl: './avatars.html',
   styleUrl: './avatars.scss',
 })

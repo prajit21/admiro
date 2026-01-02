@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hovering-timeline',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './hovering-timeline.html',
   styleUrl: './hovering-timeline.scss',
 })

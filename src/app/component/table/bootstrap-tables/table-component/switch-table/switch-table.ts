@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-switch-table',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './switch-table.html',
   styleUrl: './switch-table.scss',
 })

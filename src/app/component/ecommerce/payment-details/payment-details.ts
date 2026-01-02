@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Cod } from './cod/cod';
@@ -9,7 +9,7 @@ import { NetBanking } from './net-banking/net-banking';
 
 @Component({
   selector: 'app-payment-details',
-  imports: [CommonModule, Cod, CreditCard, DebitCard, Emi, NetBanking],
+  imports: [Cod, CreditCard, DebitCard, Emi, NetBanking],
   templateUrl: './payment-details.html',
   styleUrl: './payment-details.scss',
 })

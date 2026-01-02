@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -10,7 +10,7 @@ import { EditBookmark } from '../bookmark-modal/edit-bookmark/edit-bookmark';
 
 @Component({
   selector: 'app-bookmark-data',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './bookmark-data.html',
   styleUrl: './bookmark-data.scss',
 })

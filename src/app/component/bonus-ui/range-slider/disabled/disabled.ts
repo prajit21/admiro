@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-disabled',
-  imports: [CommonModule, NgxSliderModule],
+  imports: [NgxSliderModule],
   templateUrl: './disabled.html',
   styleUrl: './disabled.scss',
 })

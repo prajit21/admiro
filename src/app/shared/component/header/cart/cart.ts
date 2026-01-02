@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -43,7 +43,7 @@ export const carts: cartitem[] = [
 
 @Component({
   selector: 'app-cart',
-  imports: [CommonModule, RouterModule, Feathericon, ClickOutsideDirective],
+  imports: [RouterModule, Feathericon, ClickOutsideDirective],
   templateUrl: './cart.html',
   styleUrl: './cart.scss',
 })

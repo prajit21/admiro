@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, Output } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +12,7 @@ import { NewTask } from '../task-modal/new-task/new-task';
 
 @Component({
   selector: 'app-task-sidebar',
-  imports: [CommonModule, ClickOutsideDirective, AllTask, Feathericon],
+  imports: [ClickOutsideDirective, AllTask, Feathericon],
   templateUrl: './task-sidebar.html',
   styleUrl: './task-sidebar.scss',
 })

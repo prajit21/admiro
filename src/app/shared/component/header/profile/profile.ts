@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { ClickOutsideDirective } from '../../../directives/outside.directive';
 
 @Component({
   selector: 'app-profile',
-  imports: [CommonModule, RouterModule, ClickOutsideDirective],
+  imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './profile.html',
   styleUrl: './profile.scss',
 })

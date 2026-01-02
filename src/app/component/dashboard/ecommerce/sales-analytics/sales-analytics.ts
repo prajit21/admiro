@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import { SalesAnalyticsChart } from '../../../../shared/data/dashboard/ecommerce
 
 @Component({
   selector: 'app-sales-analytics',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './sales-analytics.html',
   styleUrl: './sales-analytics.scss',
 })

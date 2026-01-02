@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgxSliderModule, Options } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-default-range-slider',
-  imports: [CommonModule, NgxSliderModule],
+  imports: [NgxSliderModule],
   templateUrl: './default-range-slider.html',
   styleUrl: './default-range-slider.scss',
 })

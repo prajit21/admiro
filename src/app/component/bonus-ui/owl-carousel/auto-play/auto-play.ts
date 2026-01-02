@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -7,7 +7,7 @@ import { autoPlayVariant, autovariantOption } from '../../../../shared/data/bonu
 
 @Component({
   selector: 'app-auto-play',
-  imports: [CommonModule, CarouselModule],
+  imports: [CarouselModule],
   templateUrl: './auto-play.html',
   styleUrl: './auto-play.scss',
 })

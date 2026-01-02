@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass, SlicePipe } from '@angular/common';
 import { Component, SimpleChanges, input } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -9,7 +9,7 @@ import { LetterTopSection } from '../letter-top-section/letter-top-section';
 
 @Component({
   selector: 'app-letterbox-user',
-  imports: [CommonModule, NgbModule, InterviewMail, LetterTopSection],
+  imports: [NgbModule, InterviewMail, LetterTopSection, NgClass, SlicePipe],
   templateUrl: './letterbox-user.html',
   styleUrl: './letterbox-user.scss',
 })

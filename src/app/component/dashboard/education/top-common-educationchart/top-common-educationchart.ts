@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -8,7 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
 
 @Component({
   selector: 'app-top-common-educationchart',
-  imports: [CommonModule, ClickOutsideDirective, NgApexchartsModule],
+  imports: [ClickOutsideDirective, NgApexchartsModule],
   templateUrl: './top-common-educationchart.html',
   styleUrl: './top-common-educationchart.scss',
 })

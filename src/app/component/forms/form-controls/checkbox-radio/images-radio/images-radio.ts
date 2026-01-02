@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { imageRadio } from '../../../../../shared/data/form-controls/checkbox-ra
 
 @Component({
   selector: 'app-images-radio',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './images-radio.html',
   styleUrl: './images-radio.scss',
 })

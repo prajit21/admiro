@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CommonBorderstyle } from './common-borderstyle/common-borderstyle';
@@ -6,7 +6,7 @@ import * as borderData from '../../../../shared/data/ui-kits/helper-classes';
 
 @Component({
   selector: 'app-styles-borders',
-  imports: [CommonModule, CommonBorderstyle],
+  imports: [CommonBorderstyle],
   templateUrl: './styles-borders.html',
   styleUrl: './styles-borders.scss',
 })

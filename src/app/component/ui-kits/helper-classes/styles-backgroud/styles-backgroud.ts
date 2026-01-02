@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CommonStylesBackground } from './common-styles-background/common-styles-background';
@@ -6,7 +6,7 @@ import * as borderData from '../../../../shared/data/ui-kits/helper-classes';
 
 @Component({
   selector: 'app-styles-backgroud',
-  imports: [CommonModule, CommonStylesBackground],
+  imports: [CommonStylesBackground],
   templateUrl: './styles-backgroud.html',
   styleUrl: './styles-backgroud.scss',
 })

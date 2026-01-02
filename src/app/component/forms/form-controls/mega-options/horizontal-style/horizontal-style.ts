@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +7,7 @@ import { HorizontalStylelDelivery } from '../../../../../shared/data/form-contro
 
 @Component({
   selector: 'app-horizontal-style',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './horizontal-style.html',
   styleUrl: './horizontal-style.scss',
 })

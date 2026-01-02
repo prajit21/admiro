@@ -4,10 +4,7 @@
 <div
   class="main-sidebar"
   id="main-sidebar"
-  [ngStyle]="{
-    marginLeft:
-      this.layout.config.settings.sidebar_type === 'horizontal-sidebar' ? margin + 'px' : '0px',
-  }"
+  [style.marginLeft]="this.layout.config.settings.sidebar_type === 'horizontal-sidebar' ? margin + 'px' : '0px'"
 >
   <ul class="sidebar-menu d-flex flex-column" id="simple-bar">
     <li class="pin-title sidebar-main-title" [class.show]="pined">
@@ -19,7 +16,7 @@
     <ng-template #recursiveMenu let-menuItems>
       @for (item of menuItems; track item) {
         <li
-          [ngClass]="{ 'sidebar-list': item.level === 1, 'sidebar-main-title': item.headTitle1 }"
+          [class]="{ 'sidebar-list': item.level === 1, 'sidebar-main-title': item.headTitle1 }"
           [class.pined]="isPined(item.id)"
         >
           @if (item.level === 1) {
@@ -36,7 +33,7 @@
             </a>
           } @else {
             <a
-              [ngClass]="{
+              [class]="{
                 'sidebar-link': item.level === 1,
                 'submenu-title': item.level === 2,
                 actived: item.active && item.level === 1,
@@ -64,7 +61,7 @@
           }
           @if (item.children) {
             <ul
-              [ngClass]="{
+              [class]="{
                 'sidebar-submenu': item.level === 1,
                 'according-submenu': item.level === 2,
               }"

@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { breckpointSpecific } from '../../../../../shared/data/table/basic-tables';
 
 @Component({
   selector: 'app-breckpoint-specific',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './breckpoint-specific.html',
   styleUrl: './breckpoint-specific.scss',
 })

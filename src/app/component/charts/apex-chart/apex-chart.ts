@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { ApexBarChart } from './apex-bar-chart/apex-bar-chart';
@@ -18,7 +18,6 @@ import { SteplineChart } from './stepline-chart/stepline-chart';
 @Component({
   selector: 'app-apex-chart',
   imports: [
-    CommonModule,
     ApexBarChart,
     ApexColumnChart,
     BasicAreaChart,
@@ -31,8 +30,8 @@ import { SteplineChart } from './stepline-chart/stepline-chart';
     PieChart,
     RadarChart,
     RadialChart,
-    SteplineChart,
-  ],
+    SteplineChart
+],
   templateUrl: './apex-chart.html',
   styleUrl: './apex-chart.scss',
 })

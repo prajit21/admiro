@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Listcheckbox } from '../../../../shared/data/ui-kits/lists';
 
 @Component({
   selector: 'app-checkbox-lists',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './checkbox-lists.html',
   styleUrl: './checkbox-lists.scss',
 })

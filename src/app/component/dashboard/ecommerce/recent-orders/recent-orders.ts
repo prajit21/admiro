@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { recentOrder } from '../../../../shared/data/dashboard/ecommerce/ecommer
 
 @Component({
   selector: 'app-recent-orders',
-  imports: [CommonModule, CarouselModule, RouterModule],
+  imports: [CarouselModule, RouterModule],
   templateUrl: './recent-orders.html',
   styleUrl: './recent-orders.scss',
 })

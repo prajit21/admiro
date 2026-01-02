@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -7,7 +7,7 @@ import * as chartData from '../../../../shared/data/charts/apex-chart';
 
 @Component({
   selector: 'app-column-chart',
-  imports: [CommonModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './column-chart.html',
   styleUrl: './column-chart.scss',
 })

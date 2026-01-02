@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,7 +8,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
 
 @Component({
   selector: 'app-letter-top-section',
-  imports: [CommonModule, NgbModule, ClickOutsideDirective, Feathericon],
+  imports: [NgbModule, ClickOutsideDirective, Feathericon],
   templateUrl: './letter-top-section.html',
   styleUrl: './letter-top-section.scss',
 })

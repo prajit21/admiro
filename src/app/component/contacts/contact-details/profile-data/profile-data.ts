@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Input, SimpleChanges, input, viewChild, inject } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -13,7 +13,7 @@ import { Print } from '../../contact-modal/print/print';
 
 @Component({
   selector: 'app-profile-data',
-  imports: [CommonModule, AddressContact, General, PersonalContact, Print],
+  imports: [AddressContact, General, PersonalContact, Print],
   templateUrl: './profile-data.html',
   styleUrl: './profile-data.scss',
 })

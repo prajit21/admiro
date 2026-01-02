@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BaseChartDirective } from 'ng2-charts';
@@ -7,7 +7,7 @@ import * as chartData from '../../../../shared/data/charts/chartjs';
 
 @Component({
   selector: 'app-chartjs-polar-chart',
-  imports: [CommonModule, BaseChartDirective],
+  imports: [BaseChartDirective],
   templateUrl: './chartjs-polar-chart.html',
   styleUrl: './chartjs-polar-chart.scss',
 })

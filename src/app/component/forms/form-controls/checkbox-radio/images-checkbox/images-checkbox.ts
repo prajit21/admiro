@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { imageChekbox } from '../../../../../shared/data/form-controls/checkbox-
 
 @Component({
   selector: 'app-images-checkbox',
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './images-checkbox.html',
   styleUrl: './images-checkbox.scss',
 })

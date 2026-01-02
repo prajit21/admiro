@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { AdvanceSweetalert } from './advance-sweetalert/advance-sweetalert';
@@ -14,7 +14,6 @@ import { UniqueSweetalert } from './unique-sweetalert/unique-sweetalert';
 @Component({
   selector: 'app-sweetalert2',
   imports: [
-    CommonModule,
     AdvanceSweetalert,
     BasicSweetalert,
     DirectionSweetalert,
@@ -23,8 +22,8 @@ import { UniqueSweetalert } from './unique-sweetalert/unique-sweetalert';
     MessageTimer,
     ModalWithImage,
     RtlSupport,
-    UniqueSweetalert,
-  ],
+    UniqueSweetalert
+],
   templateUrl: './sweetalert2.html',
   styleUrl: './sweetalert2.scss',
 })

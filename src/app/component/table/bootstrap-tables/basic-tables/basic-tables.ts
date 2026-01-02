@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { BorderBottomColor } from './border-bottom-color/border-bottom-color';
@@ -17,7 +17,6 @@ import { TableHeadOptions } from './table-head-options/table-head-options';
 @Component({
   selector: 'app-basic-tables',
   imports: [
-    CommonModule,
     BorderBottomColor,
     BreckpointSpecific,
     Caption,
@@ -29,8 +28,8 @@ import { TableHeadOptions } from './table-head-options/table-head-options';
     ResponsiveTablesLightBackground,
     SizingTables,
     StripedRowInverseTable,
-    TableHeadOptions,
-  ],
+    TableHeadOptions
+],
   templateUrl: './basic-tables.html',
   styleUrl: './basic-tables.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { CustomersDetails } from './customers-details/customers-details';
@@ -16,7 +16,6 @@ import { UpcomingClasses } from '../../dashboard/education/upcoming-classes/upco
 @Component({
   selector: 'app-general',
   imports: [
-    CommonModule,
     CustomersDetails,
     GeneralTotalTnvestment,
     SaleValueChart,
@@ -28,8 +27,8 @@ import { UpcomingClasses } from '../../dashboard/education/upcoming-classes/upco
     SellingChart,
     ScheduleLesson,
     UpcomingClasses,
-    MonthlyRevenueGrowth,
-  ],
+    MonthlyRevenueGrowth
+],
   templateUrl: './general.html',
   styleUrl: './general.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
@@ -6,7 +6,7 @@ import { browseArticlesData } from '../../../shared/data/knowledgebase/knowledge
 
 @Component({
   selector: 'app-browse-artical-categories',
-  imports: [CommonModule, Feathericon],
+  imports: [Feathericon],
   templateUrl: './browse-artical-categories.html',
   styleUrl: './browse-artical-categories.scss',
 })
