@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { Component, output, ChangeDetectionStrategy } from '@angular/core';
 
 import { UserDetails } from './user-details/user-details';
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
@@ -7,6 +7,7 @@ import { Feathericon } from '../../../../shared/component/feathericon/featherico
   selector: 'app-interview-mail',
   imports: [UserDetails, Feathericon],
   templateUrl: './interview-mail.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './interview-mail.scss',
 })
 export class InterviewMail {

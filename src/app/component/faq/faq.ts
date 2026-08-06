@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { FeaturedTutorials } from './featured-tutorials/featured-tutorials';
 import { LatestArticalVideos } from './latest-artical-videos/latest-artical-videos';
@@ -25,6 +25,7 @@ import {
     SerachArtical,
   ],
   templateUrl: './faq.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './faq.scss',
 })
 export class Faq {

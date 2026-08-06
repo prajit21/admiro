@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { All } from './all/all';
 import { Images } from './images/images';
@@ -9,6 +9,7 @@ import { Videos } from './videos/videos';
   selector: 'app-search-result',
   imports: [All, Images, Videos, NgClass],
   templateUrl: './search-result.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './search-result.scss',
 })
 export class SearchResult {

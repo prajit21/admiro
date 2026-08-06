@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { basictable } from '../../../../../shared/data/table/basic-tables';
 
@@ -6,6 +6,7 @@ import { basictable } from '../../../../../shared/data/table/basic-tables';
   selector: 'app-border-bottom-color',
   imports: [],
   templateUrl: './border-bottom-color.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './border-bottom-color.scss',
 })
 export class BorderBottomColor {

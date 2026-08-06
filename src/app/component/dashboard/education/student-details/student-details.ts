@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { StudentDetail } from '../../../../shared/data/dashboard/education/education';
@@ -7,6 +7,7 @@ import { StudentDetail } from '../../../../shared/data/dashboard/education/educa
   selector: 'app-student-details',
   imports: [RouterModule],
   templateUrl: './student-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './student-details.scss',
 })
 export class StudentDetails {

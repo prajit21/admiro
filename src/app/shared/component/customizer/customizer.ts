@@ -1,4 +1,4 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,6 +13,7 @@ import { ConfigData, LayoutService } from '../../services/layout.service';
   selector: 'app-customizer',
   imports: [ColorPicker, LayoutType, SidebarIcon, SidebarType, ThemeMode],
   templateUrl: './customizer.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './customizer.scss',
 })
 export class Customizer {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -9,6 +9,7 @@ import * as commonchat from '../../../../shared/data/widgets/general/general-cha
   selector: 'app-customers-details',
   imports: [NgApexchartsModule],
   templateUrl: './customers-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './customers-details.scss',
 })
 export class CustomersDetails {

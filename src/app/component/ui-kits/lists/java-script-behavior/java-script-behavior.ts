@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-java-script-behavior',
   imports: [NgbModule],
   templateUrl: './java-script-behavior.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './java-script-behavior.scss',
 })
 export class JavaScriptBehavior {

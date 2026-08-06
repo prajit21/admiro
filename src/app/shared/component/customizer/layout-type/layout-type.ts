@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { LayoutService } from '../../../services/layout.service';
@@ -7,6 +7,7 @@ import { LayoutService } from '../../../services/layout.service';
   selector: 'app-layout-type',
   imports: [FormsModule],
   templateUrl: './layout-type.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './layout-type.scss',
 })
 export class LayoutType {

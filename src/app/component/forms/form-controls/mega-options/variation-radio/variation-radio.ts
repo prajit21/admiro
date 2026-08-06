@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { Feathericon } from '../../../../../shared/component/feathericon/feathericon';
@@ -12,6 +12,7 @@ import {
   selector: 'app-variation-radio',
   imports: [FormsModule, Feathericon],
   templateUrl: './variation-radio.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './variation-radio.scss',
 })
 export class VariationRadio {

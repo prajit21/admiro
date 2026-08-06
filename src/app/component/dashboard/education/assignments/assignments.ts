@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { Assignment } from '../../../../shared/data/dashboard/education/education';
@@ -7,6 +7,7 @@ import { Assignment } from '../../../../shared/data/dashboard/education/educatio
   selector: 'app-assignments',
   imports: [RouterModule],
   templateUrl: './assignments.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './assignments.scss',
 })
 export class Assignments {

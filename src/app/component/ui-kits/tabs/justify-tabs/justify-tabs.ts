@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,6 +8,7 @@ import { webDesigner, UxDesigner, IOTdeveloper } from '../../../../shared/data/u
   selector: 'app-justify-tabs',
   imports: [NgbModule],
   templateUrl: './justify-tabs.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './justify-tabs.scss',
 })
 export class JustifyTabs {

@@ -1,4 +1,4 @@
-import { Component, SimpleChanges, input } from '@angular/core';
+import { Component, SimpleChanges, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { ProfileData } from './profile-data/profile-data';
 import * as data from '../../../shared/data/contacts/all-contact';
@@ -7,6 +7,7 @@ import * as data from '../../../shared/data/contacts/all-contact';
   selector: 'app-contact-details',
   imports: [ProfileData],
   templateUrl: './contact-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact-details.scss',
 })
 export class ContactDetails {

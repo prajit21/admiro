@@ -1,4 +1,4 @@
-import { Component, output, inject } from '@angular/core';
+import { Component, output, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
@@ -7,6 +7,7 @@ import { DropzoneConfigInterface, DropzoneModule } from 'ngx-dropzone-wrapper';
   selector: 'app-products-gallery',
   imports: [FormsModule, ReactiveFormsModule, DropzoneModule],
   templateUrl: './products-gallery.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './products-gallery.scss',
 })
 export class ProductsGallery {

@@ -1,5 +1,5 @@
 import { DecimalPipe, AsyncPipe, NgClass } from '@angular/common';
-import { Component, inject, viewChildren } from '@angular/core';
+import { Component, inject, viewChildren, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,6 +25,7 @@ import { SupportTicketService } from '../../../shared/services/support-ticket.se
   ],
   providers: [SupportTicketService, DecimalPipe],
   templateUrl: './support-ticket-datatable.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './support-ticket-datatable.scss',
 })
 export class SupportTicketDatatable {

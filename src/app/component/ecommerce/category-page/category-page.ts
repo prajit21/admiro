@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CategoryDataTable } from './category-data-table/category-data-table';
 import { TopSection } from '../product-list/top-section/top-section';
@@ -7,6 +7,7 @@ import { TopSection } from '../product-list/top-section/top-section';
   selector: 'app-category-page',
   imports: [TopSection, CategoryDataTable],
   templateUrl: './category-page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './category-page.scss',
 })
 export class CategoryPage {}

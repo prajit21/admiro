@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BadgePartButtons } from '../../../../shared/data/ui-kits/tag-pills';
 
@@ -6,6 +6,7 @@ import { BadgePartButtons } from '../../../../shared/data/ui-kits/tag-pills';
   selector: 'app-badges-buttons',
   imports: [],
   templateUrl: './badges-buttons.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './badges-buttons.scss',
 })
 export class BadgesButtons {

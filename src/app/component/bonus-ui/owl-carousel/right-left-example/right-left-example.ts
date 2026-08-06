@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -8,6 +8,7 @@ import { commonImg, RightToLeftoptions } from '../../../../shared/data/bonus-ui/
   selector: 'app-right-left-example',
   imports: [CarouselModule],
   templateUrl: './right-left-example.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './right-left-example.scss',
 })
 export class RightLeftExample {

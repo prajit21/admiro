@@ -1,4 +1,4 @@
-import { Component, output, inject } from '@angular/core';
+import { Component, output, inject, ChangeDetectionStrategy } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -16,6 +16,7 @@ import { NewCategoies } from './new-categoies/new-categoies';
   selector: 'app-products-categories',
   imports: [FormsModule, ReactiveFormsModule, TagInputModule],
   templateUrl: './products-categories.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './products-categories.scss',
 })
 export class ProductsCategories {

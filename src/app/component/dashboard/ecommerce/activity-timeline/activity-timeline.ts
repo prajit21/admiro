@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ActivityTimelines } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-activity-timeline',
   imports: [ClickOutsideDirective],
   templateUrl: './activity-timeline.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './activity-timeline.scss',
 })
 export class ActivityTimeline {

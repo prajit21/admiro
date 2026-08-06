@@ -1,4 +1,4 @@
-import { Component, output } from '@angular/core';
+import { Component, output, ChangeDetectionStrategy } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -13,6 +13,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
   selector: 'app-add-products-details',
   imports: [AngularEditorModule, FormsModule, ReactiveFormsModule],
   templateUrl: './add-products-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './add-products-details.scss',
 })
 export class AddProductsDetails {

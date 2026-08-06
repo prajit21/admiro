@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { avatarSize } from '../../../../shared/data/ui-kits/avavtar';
 
@@ -6,6 +6,7 @@ import { avatarSize } from '../../../../shared/data/ui-kits/avavtar';
   selector: 'app-sizes',
   imports: [],
   templateUrl: './sizes.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sizes.scss',
 })
 export class Sizes {

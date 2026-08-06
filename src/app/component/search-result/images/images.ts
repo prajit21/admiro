@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
@@ -9,6 +9,7 @@ import * as Data from '../../../shared/data/social-media/social-media-data';
   selector: 'app-images',
   imports: [GalleryModule, LightboxModule],
   templateUrl: './images.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './images.scss',
 })
 export class Images {

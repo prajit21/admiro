@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AuditLog } from './audit-log/audit-log';
 import { EarningTrend } from './earning-trend/earning-trend';
@@ -30,6 +30,7 @@ import { TransitionHistory } from './transition-history/transition-history';
     EarningTrend,
   ],
   templateUrl: './default.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './default.scss',
 })
 export class Default {}

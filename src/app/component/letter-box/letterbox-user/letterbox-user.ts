@@ -1,5 +1,5 @@
 import { NgClass, SlicePipe } from '@angular/common';
-import { Component, SimpleChanges, input } from '@angular/core';
+import { Component, SimpleChanges, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,6 +11,7 @@ import { LetterTopSection } from '../letter-top-section/letter-top-section';
   selector: 'app-letterbox-user',
   imports: [NgbModule, InterviewMail, LetterTopSection, NgClass, SlicePipe],
   templateUrl: './letterbox-user.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './letterbox-user.scss',
 })
 export class LetterboxUser {

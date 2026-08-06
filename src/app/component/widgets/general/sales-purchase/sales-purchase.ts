@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -8,6 +8,7 @@ import { commonData } from '../../../../shared/data/widgets/general/general';
   selector: 'app-sales-purchase',
   imports: [NgApexchartsModule],
   templateUrl: './sales-purchase.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sales-purchase.scss',
 })
 export class SalesPurchase {

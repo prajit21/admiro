@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BrowseArticalCategories } from './browse-artical-categories/browse-artical-categories';
 import { KnowledgebaseFooterData } from './knowledgebase-footer-data/knowledgebase-footer-data';
@@ -15,6 +15,7 @@ import { FeaturedTutorials } from '../faq/featured-tutorials/featured-tutorials'
     FeaturedTutorials,
   ],
   templateUrl: './knowledgebase.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './knowledgebase.scss',
 })
 export class Knowledgebase {

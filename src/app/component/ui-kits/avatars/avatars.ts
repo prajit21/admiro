@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AvatarInitial } from './avatar-initial/avatar-initial';
 import { AvatarPing } from './avatar-ping/avatar-ping';
@@ -22,6 +22,7 @@ import { StatusIndicator } from './status-indicator/status-indicator';
     StatusIndicator,
   ],
   templateUrl: './avatars.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './avatars.scss',
 })
 export class Avatars {}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CommonWidgetsChart } from './common-widgets-chart/common-widgets-chart';
 import { CryptAnnotations } from './crypt-annotations/crypt-annotations';
@@ -33,6 +33,7 @@ import * as chartData from '../../../shared/data/widgets/chart';
     Uses,
   ],
   templateUrl: './chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './chart.scss',
 })
 export class Chart {

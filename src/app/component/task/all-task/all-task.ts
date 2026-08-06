@@ -1,4 +1,4 @@
-import { Component, SimpleChanges, input } from '@angular/core';
+import { Component, SimpleChanges, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../shared/component/feathericon/feathericon';
 import * as Data from '../../../shared/data/tasks/task-list';
@@ -7,6 +7,7 @@ import * as Data from '../../../shared/data/tasks/task-list';
   selector: 'app-all-task',
   imports: [Feathericon],
   templateUrl: './all-task.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './all-task.scss',
 })
 export class AllTask {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { UpcomingClass } from '../../../../shared/data/dashboard/education/education';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-upcoming-classes',
   imports: [ClickOutsideDirective],
   templateUrl: './upcoming-classes.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './upcoming-classes.scss',
 })
 export class UpcomingClasses {

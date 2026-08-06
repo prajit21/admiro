@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -8,6 +8,7 @@ import { sildesOnly, sildesOptions } from '../../../../shared/data/bonus-ui/owl-
   selector: 'app-slides-only',
   imports: [CarouselModule],
   templateUrl: './slides-only.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './slides-only.scss',
 })
 export class SlidesOnly {

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../directives/outside.directive';
   selector: 'app-profile',
   imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './profile.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './profile.scss',
 })
 export class Profile {

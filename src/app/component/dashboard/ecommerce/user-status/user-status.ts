@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { userStatus } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-user-status',
   imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './user-status.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-status.scss',
 })
 export class UserStatus {

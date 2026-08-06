@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { newsupdate } from '../../../../shared/data/dashboard/default/default';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-news-update',
   imports: [ClickOutsideDirective, RouterModule],
   templateUrl: './news-update.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './news-update.scss',
 })
 export class NewsUpdate {

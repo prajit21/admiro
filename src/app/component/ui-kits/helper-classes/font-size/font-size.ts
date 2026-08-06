@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { FontSizes } from '../../../../shared/data/ui-kits/helper-classes';
 
@@ -6,6 +6,7 @@ import { FontSizes } from '../../../../shared/data/ui-kits/helper-classes';
   selector: 'app-font-size',
   imports: [],
   templateUrl: './font-size.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './font-size.scss',
 })
 export class FontSize {

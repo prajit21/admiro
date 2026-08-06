@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { topUser } from '../../../../shared/data/dashboard/default/default';
 import { ClickOutsideDirective } from '../../../../shared/directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-top-users',
   imports: [ClickOutsideDirective],
   templateUrl: './top-users.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './top-users.scss',
 })
 export class TopUsers {

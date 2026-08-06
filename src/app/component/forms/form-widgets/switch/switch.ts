@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CommonSwitch } from './common-switch/common-switch';
 import { CustomSwitch } from './custom-switch/custom-switch';
@@ -18,6 +18,7 @@ import { VariationOutlineSwitch } from './variation-outline-switch/variation-out
     VariationOutlineSwitch,
   ],
   templateUrl: './switch.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './switch.scss',
 })
 export class Switch {}

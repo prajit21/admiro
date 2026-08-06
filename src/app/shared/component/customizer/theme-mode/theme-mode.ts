@@ -1,10 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { LayoutService } from '../../../services/layout.service';
 
 @Component({
   selector: 'app-theme-mode',
   templateUrl: './theme-mode.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './theme-mode.scss',
 })
 export class ThemeMode {

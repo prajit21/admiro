@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BasicInputControl } from './basic-input-control/basic-input-control';
 import { EdgesStyle } from './edges-style/edges-style';
@@ -11,6 +11,7 @@ import { Sizing } from './sizing/sizing';
   selector: 'app-base-input',
   imports: [BasicInputControl, EdgesStyle, FlatStyle, RaiseStyle, SimpleExample, Sizing],
   templateUrl: './base-input.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './base-input.scss',
 })
 export class BaseInput {}

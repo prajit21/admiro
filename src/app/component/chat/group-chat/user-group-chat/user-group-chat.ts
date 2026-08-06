@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Feathericon } from '../../../../shared/component/feathericon/feathericon';
 import { massage } from '../../../../shared/data/chat/chat';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-user-group-chat',
   imports: [ClickOutsideDirective, Feathericon],
   templateUrl: './user-group-chat.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-group-chat.scss',
 })
 export class UserGroupChat {

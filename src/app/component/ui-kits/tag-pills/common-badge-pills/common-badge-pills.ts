@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import { button } from '../../../../shared/data/ui-kits/tag-pills';
 
@@ -6,6 +6,7 @@ import { button } from '../../../../shared/data/ui-kits/tag-pills';
   selector: 'app-common-badge-pills',
   imports: [],
   templateUrl: './common-badge-pills.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './common-badge-pills.scss',
 })
 export class CommonBadgePills {

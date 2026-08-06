@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ColorSchemes } from './color-schemes/color-schemes';
 import { DefaultToast } from './default-toast/default-toast';
@@ -11,6 +11,7 @@ import { UniqueToast } from './unique-toast/unique-toast';
   selector: 'app-toasts',
   imports: [ColorSchemes, DefaultToast, LiveToast, StackingToast, TranslucentToast, UniqueToast],
   templateUrl: './toasts.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './toasts.scss',
 })
 export class Toasts {}

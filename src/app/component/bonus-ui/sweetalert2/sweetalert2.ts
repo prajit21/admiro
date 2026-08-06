@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AdvanceSweetalert } from './advance-sweetalert/advance-sweetalert';
 import { BasicSweetalert } from './basic-sweetalert/basic-sweetalert';
@@ -24,6 +24,7 @@ import { UniqueSweetalert } from './unique-sweetalert/unique-sweetalert';
     UniqueSweetalert,
   ],
   templateUrl: './sweetalert2.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sweetalert2.scss',
 })
 export class Sweetalert2 {}

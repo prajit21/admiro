@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -9,6 +9,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-learning-chart',
   imports: [NgApexchartsModule, ClickOutsideDirective],
   templateUrl: './learning-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './learning-chart.scss',
 })
 export class LearningChart {

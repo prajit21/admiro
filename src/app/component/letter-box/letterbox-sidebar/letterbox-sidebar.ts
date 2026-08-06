@@ -1,4 +1,4 @@
-import { Component, SimpleChanges, inject } from '@angular/core';
+import { Component, SimpleChanges, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -12,6 +12,7 @@ import { LetterboxUser } from '../letterbox-user/letterbox-user';
   selector: 'app-letterbox-sidebar',
   imports: [ClickOutsideDirective, LetterboxUser],
   templateUrl: './letterbox-sidebar.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './letterbox-sidebar.scss',
 })
 export class LetterboxSidebar {

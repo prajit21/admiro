@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { allIcon } from '../../../shared/data/icons/thimify';
 
@@ -6,6 +6,7 @@ import { allIcon } from '../../../shared/data/icons/thimify';
   selector: 'app-ico-icon',
   imports: [],
   templateUrl: './ico-icon.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './ico-icon.scss',
 })
 export class IcoIcon {

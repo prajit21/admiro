@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -9,6 +9,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
   selector: 'app-letter-top-section',
   imports: [NgbModule, ClickOutsideDirective, Feathericon],
   templateUrl: './letter-top-section.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './letter-top-section.scss',
 })
 export class LetterTopSection {

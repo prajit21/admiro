@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { NewCourse } from '../../../../shared/data/dashboard/education/education';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-new-courses',
   imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './new-courses.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './new-courses.scss',
 })
 export class NewCourses {

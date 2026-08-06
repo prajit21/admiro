@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
@@ -44,6 +44,7 @@ export const carts: cartitem[] = [
   selector: 'app-cart',
   imports: [RouterModule, Feathericon, ClickOutsideDirective],
   templateUrl: './cart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './cart.scss',
 })
 export class Cart {

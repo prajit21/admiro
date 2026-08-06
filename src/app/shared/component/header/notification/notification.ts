@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { ClickOutsideDirective } from '../../../directives/outside.directive';
@@ -7,6 +7,7 @@ import { ClickOutsideDirective } from '../../../directives/outside.directive';
   selector: 'app-notification',
   imports: [RouterModule, ClickOutsideDirective],
   templateUrl: './notification.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './notification.scss',
 })
 export class Notification {

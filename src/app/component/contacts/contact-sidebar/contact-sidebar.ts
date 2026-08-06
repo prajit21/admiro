@@ -1,4 +1,4 @@
-import { Component, SimpleChanges, inject } from '@angular/core';
+import { Component, SimpleChanges, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,6 +13,7 @@ import { NewContact } from '../contact-modal/new-contact/new-contact';
   selector: 'app-contact-sidebar',
   imports: [ClickOutsideDirective, Feathericon, ContactDetails],
   templateUrl: './contact-sidebar.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact-sidebar.scss',
 })
 export class ContactSidebar {

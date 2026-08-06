@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ApplyForm } from './apply-form/apply-form';
 import { JobFilter } from '../job-filter/job-filter';
@@ -7,6 +7,7 @@ import { JobFilter } from '../job-filter/job-filter';
   selector: 'app-apply',
   imports: [ApplyForm, JobFilter],
   templateUrl: './apply.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './apply.scss',
 })
 export class Apply {}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,6 +8,7 @@ import { descriptionData, reviewData, userDetailsData } from '../../../../shared
   selector: 'app-material-style-tabs',
   imports: [NgbModule],
   templateUrl: './material-style-tabs.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './material-style-tabs.scss',
 })
 export class MaterialStyleTabs {

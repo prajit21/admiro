@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NumberedBadgeLists } from '../../../../shared/data/ui-kits/lists';
 
@@ -6,6 +6,7 @@ import { NumberedBadgeLists } from '../../../../shared/data/ui-kits/lists';
   selector: 'app-numbers-badge-lists',
   imports: [],
   templateUrl: './numbers-badge-lists.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './numbers-badge-lists.scss',
 })
 export class NumbersBadgeLists {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ActivityTimeline } from './activity-timeline/activity-timeline';
 import { BestSeller } from './best-seller/best-seller';
@@ -34,6 +34,7 @@ import {
     UserStatus,
   ],
   templateUrl: './ecommerce.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './ecommerce.scss',
 })
 export class Ecommerce {

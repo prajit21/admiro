@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 
@@ -8,6 +8,7 @@ import { SchoolPerformanceChart } from '../../../../shared/data/dashboard/educat
   selector: 'app-school-performance',
   imports: [NgApexchartsModule],
   templateUrl: './school-performance.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './school-performance.scss',
 })
 export class SchoolPerformance {

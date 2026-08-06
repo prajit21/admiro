@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CustomValues } from './custom-values/custom-values';
 import { DefaultRangeSlider } from './default-range-slider/default-range-slider';
@@ -10,6 +10,7 @@ import { PrettifyNumber } from './prettify-number/prettify-number';
   selector: 'app-range-slider',
   imports: [CustomValues, DefaultRangeSlider, Disabled, MinMaxSlider, PrettifyNumber],
   templateUrl: './range-slider.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './range-slider.scss',
 })
 export class RangeSlider {}

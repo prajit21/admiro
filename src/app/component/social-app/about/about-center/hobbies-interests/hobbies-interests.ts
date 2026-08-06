@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 import * as data from '../../../../../shared/data/social-media/social-media-data';
 
@@ -6,6 +6,7 @@ import * as data from '../../../../../shared/data/social-media/social-media-data
   selector: 'app-hobbies-interests',
   imports: [],
   templateUrl: './hobbies-interests.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hobbies-interests.scss',
 })
 export class HobbiesInterests {

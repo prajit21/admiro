@@ -1,5 +1,5 @@
 import { NgTemplateOutlet } from '@angular/common';
-import { Component, HostListener, inject } from '@angular/core';
+import { Component, HostListener, inject, ChangeDetectionStrategy } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +14,7 @@ import { SvgIcon } from '../svg-icon/svg-icon';
   selector: 'app-sidebar',
   imports: [NgbModule, Feathericon, SvgIcon, RouterModule, TranslateModule, NgTemplateOutlet],
   templateUrl: './sidebar.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sidebar.scss',
 })
 export class Sidebar {

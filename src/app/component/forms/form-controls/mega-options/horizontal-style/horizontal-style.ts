@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,6 +8,7 @@ import { HorizontalStylelDelivery } from '../../../../../shared/data/form-contro
   selector: 'app-horizontal-style',
   imports: [],
   templateUrl: './horizontal-style.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './horizontal-style.scss',
 })
 export class HorizontalStyle {

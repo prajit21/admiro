@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -80,6 +80,7 @@ const statesWithFlags: { name: string; flag: string }[] = [
   selector: 'app-template-for-results',
   imports: [FormsModule, NgbModule],
   templateUrl: './template-for-results.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './template-for-results.scss',
 })
 export class TemplateForResults {

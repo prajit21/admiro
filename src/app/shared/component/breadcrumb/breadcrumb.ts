@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import {
   ActivatedRoute,
   Router,
@@ -16,6 +16,7 @@ import { NavmenuService } from '../../services/navmenu.service';
   selector: 'app-breadcrumb',
   imports: [RouterModule],
   templateUrl: './breadcrumb.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './breadcrumb.scss',
 })
 export class Breadcrumb {

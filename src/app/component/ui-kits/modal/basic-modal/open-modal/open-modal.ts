@@ -1,10 +1,11 @@
-import { Component, TemplateRef, inject } from '@angular/core';
+import { Component, TemplateRef, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-open-modal',
   templateUrl: './open-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './open-modal.scss',
 })
 export class OpenModal {

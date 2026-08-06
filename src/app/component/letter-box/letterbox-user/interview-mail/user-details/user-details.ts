@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Editor, NgxEditorModule } from 'ngx-editor';
@@ -9,6 +9,7 @@ import { Feathericon } from '../../../../../shared/component/feathericon/feather
   selector: 'app-user-details',
   imports: [NgxEditorModule, FormsModule, ReactiveFormsModule, Feathericon],
   templateUrl: './user-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-details.scss',
 })
 export class UserDetails {

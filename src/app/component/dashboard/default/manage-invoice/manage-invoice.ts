@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -8,6 +8,7 @@ import { ManageInvoices } from '../../../../shared/data/dashboard/default/defaul
   selector: 'app-manage-invoice',
   imports: [FormsModule, RouterModule],
   templateUrl: './manage-invoice.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './manage-invoice.scss',
 })
 export class ManageInvoice {

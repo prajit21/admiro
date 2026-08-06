@@ -1,10 +1,11 @@
 import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-top-default-card',
   imports: [DatePipe],
   templateUrl: './top-default-card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './top-default-card.scss',
 })
 export class TopDefaultCard {

@@ -1,5 +1,5 @@
 import { DecimalPipe, AsyncPipe } from '@angular/common';
-import { Component, inject, viewChildren } from '@angular/core';
+import { Component, inject, viewChildren, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -25,6 +25,7 @@ import { CategoriesService } from '../../../../shared/services/ecommerce/categor
   ],
   providers: [CategoriesService, DecimalPipe],
   templateUrl: './category-data-table.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './category-data-table.scss',
 })
 export class CategoryDataTable {

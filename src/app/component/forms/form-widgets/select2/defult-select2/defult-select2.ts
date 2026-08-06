@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,6 +8,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
   selector: 'app-defult-select2',
   imports: [FormsModule, ReactiveFormsModule, NgSelectModule, NgbModule],
   templateUrl: './defult-select2.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './defult-select2.scss',
 })
 export class DefultSelect2 {

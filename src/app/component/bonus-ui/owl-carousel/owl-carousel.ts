@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AutoHeightExample } from './auto-height-example/auto-height-example';
 import { AutoPlay } from './auto-play/auto-play';
@@ -24,6 +24,7 @@ import { SlidesOnly } from './slides-only/slides-only';
     SlidesOnly,
   ],
   templateUrl: './owl-carousel.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './owl-carousel.scss',
 })
 export class OwlCarousel {}

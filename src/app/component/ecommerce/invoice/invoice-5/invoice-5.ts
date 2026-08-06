@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgxPrintModule } from 'ngx-print';
 
@@ -8,6 +8,7 @@ import { Invoice5Table } from './invoice5-table/invoice5-table';
   selector: 'app-invoice-5',
   imports: [Invoice5Table, NgxPrintModule],
   templateUrl: './invoice-5.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './invoice-5.scss',
 })
 export class Invoice5 {}

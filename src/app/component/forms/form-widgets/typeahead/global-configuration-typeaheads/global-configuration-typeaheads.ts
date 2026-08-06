@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NgbModule, NgbTypeaheadConfig } from '@ng-bootstrap/ng-bootstrap';
@@ -71,6 +71,7 @@ const states = [
   selector: 'app-global-configuration-typeaheads',
   imports: [FormsModule, NgbModule],
   templateUrl: './global-configuration-typeaheads.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './global-configuration-typeaheads.scss',
 })
 export class GlobalConfigurationTypeaheads {

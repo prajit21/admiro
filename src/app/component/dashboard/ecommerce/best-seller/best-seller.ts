@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { BestSellers } from '../../../../shared/data/dashboard/ecommerce/ecommerce';
@@ -7,6 +7,7 @@ import { BestSellers } from '../../../../shared/data/dashboard/ecommerce/ecommer
   selector: 'app-best-seller',
   imports: [RouterModule],
   templateUrl: './best-seller.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './best-seller.scss',
 })
 export class BestSeller {

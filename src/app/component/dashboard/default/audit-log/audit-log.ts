@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { Auditlog } from '../../../../shared/data/dashboard/default/default';
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-audit-log',
   imports: [ClickOutsideDirective, RouterModule],
   templateUrl: './audit-log.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './audit-log.scss',
 })
 export class AuditLog {

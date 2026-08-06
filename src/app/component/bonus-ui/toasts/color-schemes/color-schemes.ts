@@ -1,10 +1,11 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-color-schemes',
   imports: [NgClass],
   templateUrl: './color-schemes.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './color-schemes.scss',
 })
 export class ColorSchemes {

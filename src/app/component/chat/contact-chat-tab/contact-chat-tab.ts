@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,6 +11,7 @@ import { ClickOutsideDirective } from '../../../shared/directives/outside.direct
   selector: 'app-contact-chat-tab',
   imports: [ContactSearch, NgbModule, Feathericon, ClickOutsideDirective],
   templateUrl: './contact-chat-tab.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact-chat-tab.scss',
 })
 export class ContactChatTab {

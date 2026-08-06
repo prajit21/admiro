@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AvatarPings } from '../../../../shared/data/ui-kits/avavtar';
 
@@ -6,6 +6,7 @@ import { AvatarPings } from '../../../../shared/data/ui-kits/avavtar';
   selector: 'app-avatar-ping',
   imports: [],
   templateUrl: './avatar-ping.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './avatar-ping.scss',
 })
 export class AvatarPing {

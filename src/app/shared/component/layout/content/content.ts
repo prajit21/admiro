@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, HostListener, inject } from '@angular/core';
+import { Component, HostListener, inject, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { LayoutService } from '../../../../shared/services/layout.service';
@@ -14,6 +14,7 @@ import { Sidebar } from '../../sidebar/sidebar';
   selector: 'app-content',
   imports: [Header, Sidebar, Breadcrumb, Customizer, RouterOutlet, Footer, NgClass],
   templateUrl: './content.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './content.scss',
 })
 export class Content {

@@ -4,18 +4,18 @@
       <div class="col-6">
         <div class="visitor-chart" id="visitor-chart">
           <apx-chart
-            [series]="data()?.series!"
-            [chart]="data()?.chart!"
-            [plotOptions]="data()?.plotOptions!"
-            [grid]="data()?.grid!"
-            [states]="data()?.states!"
-            [dataLabels]="data()?.dataLabels!"
-            [legend]="data()?.legend!"
-            [colors]="data()?.colors!"
-            [yaxis]="data()?.yaxis!"
-            [xaxis]="data()?.xaxis!"
-            [tooltip]="data()?.tooltip!"
-            [responsive]="data()?.responsive!"
+            [series]="$safeNavigationMigration(data()?.series)!"
+            [chart]="$safeNavigationMigration(data()?.chart)!"
+            [plotOptions]="$safeNavigationMigration(data()?.plotOptions)!"
+            [grid]="$safeNavigationMigration(data()?.grid)!"
+            [states]="$safeNavigationMigration(data()?.states)!"
+            [dataLabels]="$safeNavigationMigration(data()?.dataLabels)!"
+            [legend]="$safeNavigationMigration(data()?.legend)!"
+            [colors]="$safeNavigationMigration(data()?.colors)!"
+            [yaxis]="$safeNavigationMigration(data()?.yaxis)!"
+            [xaxis]="$safeNavigationMigration(data()?.xaxis)!"
+            [tooltip]="$safeNavigationMigration(data()?.tooltip)!"
+            [responsive]="$safeNavigationMigration(data()?.responsive)!"
           />
         </div>
       </div>

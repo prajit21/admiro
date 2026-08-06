@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { ClipboardService } from 'ngx-clipboard';
@@ -7,6 +7,7 @@ import { ClipboardService } from 'ngx-clipboard';
   selector: 'app-copy-portion-from-paragraph',
   imports: [FormsModule],
   templateUrl: './copy-portion-from-paragraph.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './copy-portion-from-paragraph.scss',
 })
 export class CopyPortionFromParagraph {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -8,6 +8,7 @@ import { center, owlcarousel1ptions } from '../../../../shared/data/bonus-ui/owl
   selector: 'app-center-example',
   imports: [CarouselModule],
   templateUrl: './center-example.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './center-example.scss',
 })
 export class CenterExample {

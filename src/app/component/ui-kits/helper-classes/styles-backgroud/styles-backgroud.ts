@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CommonStylesBackground } from './common-styles-background/common-styles-background';
 import * as borderData from '../../../../shared/data/ui-kits/helper-classes';
@@ -7,6 +7,7 @@ import * as borderData from '../../../../shared/data/ui-kits/helper-classes';
   selector: 'app-styles-backgroud',
   imports: [CommonStylesBackground],
   templateUrl: './styles-backgroud.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './styles-backgroud.scss',
 })
 export class StylesBackgroud {

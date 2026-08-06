@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -11,6 +11,7 @@ import {
   selector: 'app-product-offer2',
   imports: [CarouselModule],
   templateUrl: './product-offer2.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-offer2.scss',
 })
 export class ProductOffer2 {

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { ClipboardService } from 'ngx-clipboard';
@@ -7,6 +7,7 @@ import { ClipboardService } from 'ngx-clipboard';
   selector: 'app-clipboard-on-paragraph',
   imports: [FormsModule],
   templateUrl: './clipboard-on-paragraph.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './clipboard-on-paragraph.scss',
 })
 export class ClipboardOnParagraph {

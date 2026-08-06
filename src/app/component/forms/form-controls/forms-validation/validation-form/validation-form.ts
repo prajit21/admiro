@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-validation-form',
   imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './validation-form.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './validation-form.scss',
 })
 export class ValidationForm {

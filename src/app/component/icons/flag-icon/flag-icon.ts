@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { icon } from '../../../shared/data/icons/flags';
 
@@ -6,6 +6,7 @@ import { icon } from '../../../shared/data/icons/flags';
   selector: 'app-flag-icon',
   imports: [],
   templateUrl: './flag-icon.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './flag-icon.scss',
 })
 export class FlagIcon {

@@ -46,18 +46,18 @@
     <div class="crypto-dashborad-chart">
       <div class="bitcoin-chart" id="bitcoin-chart">
         <apx-chart
-          [series]="data()?.series!"
-          [annotations]="data()?.annotations!"
-          [chart]="data()?.chart!"
-          [dataLabels]="data()?.dataLabels!"
-          [stroke]="data()?.stroke!"
-          [tooltip]="data()?.tooltip!"
-          [xaxis]="data()?.xaxis!"
-          [yaxis]="data()?.yaxis!"
-          [colors]="data()?.colors!"
-          [grid]="data()?.grid!"
-          [legend]="data()?.legend!"
-          [fill]="data()?.fill!"
+          [series]="$safeNavigationMigration(data()?.series)!"
+          [annotations]="$safeNavigationMigration(data()?.annotations)!"
+          [chart]="$safeNavigationMigration(data()?.chart)!"
+          [dataLabels]="$safeNavigationMigration(data()?.dataLabels)!"
+          [stroke]="$safeNavigationMigration(data()?.stroke)!"
+          [tooltip]="$safeNavigationMigration(data()?.tooltip)!"
+          [xaxis]="$safeNavigationMigration(data()?.xaxis)!"
+          [yaxis]="$safeNavigationMigration(data()?.yaxis)!"
+          [colors]="$safeNavigationMigration(data()?.colors)!"
+          [grid]="$safeNavigationMigration(data()?.grid)!"
+          [legend]="$safeNavigationMigration(data()?.legend)!"
+          [fill]="$safeNavigationMigration(data()?.fill)!"
         />
       </div>
     </div>

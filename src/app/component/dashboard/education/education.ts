@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Assignments } from './assignments/assignments';
 import { LearningChart } from './learning-chart/learning-chart';
@@ -31,6 +31,7 @@ import {
     UpcomingClasses,
   ],
   templateUrl: './education.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './education.scss',
 })
 export class Education {

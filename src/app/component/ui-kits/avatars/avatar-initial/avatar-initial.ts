@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AvatarInitials } from '../../../../shared/data/ui-kits/avavtar';
 
@@ -6,6 +6,7 @@ import { AvatarInitials } from '../../../../shared/data/ui-kits/avavtar';
   selector: 'app-avatar-initial',
   imports: [],
   templateUrl: './avatar-initial.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './avatar-initial.scss',
 })
 export class AvatarInitial {

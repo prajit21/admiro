@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CustomersDetails } from './customers-details/customers-details';
 import { GeneralTotalTnvestment } from './general-total-tnvestment/general-total-tnvestment';
@@ -29,6 +29,7 @@ import { UpcomingClasses } from '../../dashboard/education/upcoming-classes/upco
     MonthlyRevenueGrowth,
   ],
   templateUrl: './general.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './general.scss',
 })
 export class General {}

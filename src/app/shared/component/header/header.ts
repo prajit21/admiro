@@ -1,5 +1,5 @@
 import { SlicePipe } from '@angular/common';
-import { Component, DOCUMENT, inject } from '@angular/core';
+import { Component, DOCUMENT, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -32,6 +32,7 @@ import { Theme } from './theme/theme';
     SlicePipe,
   ],
   templateUrl: './header.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './header.scss',
 })
 export class Header {

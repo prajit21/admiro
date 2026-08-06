@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,6 +13,7 @@ import { NewTask } from '../task-modal/new-task/new-task';
   selector: 'app-task-sidebar',
   imports: [ClickOutsideDirective, AllTask, Feathericon],
   templateUrl: './task-sidebar.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './task-sidebar.scss',
 })
 export class TaskSidebar {

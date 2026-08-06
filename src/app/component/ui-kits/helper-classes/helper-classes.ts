@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { BorderColor } from './border-color/border-color';
 import { BorderDisplays } from './border-displays/border-displays';
@@ -24,6 +24,7 @@ import { TextColor } from './text-color/text-color';
     TextColor,
   ],
   templateUrl: './helper-classes.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './helper-classes.scss',
 })
 export class HelperClasses {}

@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, output } from '@angular/core';
+import { Component, output, ChangeDetectionStrategy } from '@angular/core';
 
 import { AdditionalOptions } from './additional-options/additional-options';
 import { Inventory } from './inventory/inventory';
@@ -9,6 +9,7 @@ import { Shipping } from './shipping/shipping';
   selector: 'app-advance',
   imports: [AdditionalOptions, Inventory, Shipping, NgClass],
   templateUrl: './advance.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './advance.scss',
 })
 export class Advance {

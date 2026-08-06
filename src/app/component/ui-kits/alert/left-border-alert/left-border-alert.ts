@@ -1,10 +1,11 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-left-border-alert',
   imports: [NgClass],
   templateUrl: './left-border-alert.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './left-border-alert.scss',
 })
 export class LeftBorderAlert {

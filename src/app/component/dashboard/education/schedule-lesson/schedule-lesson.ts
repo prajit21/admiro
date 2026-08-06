@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,6 +8,7 @@ import { ClickOutsideDirective } from '../../../../shared/directives/outside.dir
   selector: 'app-schedule-lesson',
   imports: [NgbModule, ClickOutsideDirective],
   templateUrl: './schedule-lesson.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './schedule-lesson.scss',
 })
 export class ScheduleLesson {

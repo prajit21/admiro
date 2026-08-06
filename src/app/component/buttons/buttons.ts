@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { buttons, buttonsGroup } from '../../shared/data/buttons/buttons';
 
@@ -6,6 +6,7 @@ import { buttons, buttonsGroup } from '../../shared/data/buttons/buttons';
   selector: 'app-buttons',
   imports: [],
   templateUrl: './buttons.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './buttons.scss',
 })
 export class Buttons {

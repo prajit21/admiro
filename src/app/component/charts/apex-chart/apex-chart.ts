@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ApexBarChart } from './apex-bar-chart/apex-bar-chart';
 import { ApexColumnChart } from './apex-column-chart/apex-column-chart';
@@ -32,6 +32,7 @@ import { SteplineChart } from './stepline-chart/stepline-chart';
     SteplineChart,
   ],
   templateUrl: './apex-chart.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './apex-chart.scss',
 })
 export class ApexChart {}

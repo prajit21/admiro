@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -8,6 +8,7 @@ import { commonImg, autoheigthoptions } from '../../../../shared/data/bonus-ui/o
   selector: 'app-auto-height-example',
   imports: [CarouselModule],
   templateUrl: './auto-height-example.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './auto-height-example.scss',
 })
 export class AutoHeightExample {

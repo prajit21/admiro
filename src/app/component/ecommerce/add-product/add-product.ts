@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AddProductsDetails } from './add-products-details/add-products-details';
 import { Advance } from './advance/advance';
@@ -21,6 +21,7 @@ import { AddProducts } from '../../../shared/data/ecommerce/add-product';
     NgClass,
   ],
   templateUrl: './add-product.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './add-product.scss',
 })
 export class AddProduct {
